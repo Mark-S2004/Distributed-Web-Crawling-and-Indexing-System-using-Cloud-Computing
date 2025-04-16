@@ -1,0 +1,18 @@
+[project]
+name = "crawdex"
+version = "0.1.0"
+description = "crawdex is a distributed web crawling and indexing system using cloud computing technologies. crawdex will use distributed task queues and storage to crawl websites and build a searchable index of web pages with high speed"
+readme = "README.md"
+authors = [
+    { name = "Mark Saleh", email = "mark-saleh@outlook.com" },
+    { name = "Ahmed Tarek Mahmoud", email = ""}
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+crawdex = "crawdex:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
