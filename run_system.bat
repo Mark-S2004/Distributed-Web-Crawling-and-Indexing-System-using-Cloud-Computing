@@ -6,6 +6,10 @@ set PROJECT_PATH=C:\Users\acer\Distributed-Web-Crawling-and-Indexing-System-usin
 
 cd %PROJECT_PATH%
 
+echo Setting up NLTK data...
+%PYTHON_PATH% setup_nltk.py
+
+echo Starting the crawler system...
 %MPI_PATH% -n 1 %PYTHON_PATH% masterNode.py : -n 3 %PYTHON_PATH% crawlerNode.py : -n 1 %PYTHON_PATH% indexerNode.py
 
 echo.
