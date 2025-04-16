@@ -6,7 +6,7 @@ set PROJECT_PATH=C:\Users\acer\Distributed-Web-Crawling-and-Indexing-System-usin
 
 cd %PROJECT_PATH%
 
-%MPI_PATH% -n 1 %PYTHON_PATH% masterNode.py : -n 2 %PYTHON_PATH% crawlerNode.py : -n 1 %PYTHON_PATH% indexerNode.py
+%MPI_PATH% -n 1 %PYTHON_PATH% masterNode.py : -n 3 %PYTHON_PATH% crawlerNode.py : -n 1 %PYTHON_PATH% indexerNode.py
 
 echo.
 echo Press any key to exit...
