@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Crawler Monitoring Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            padding-top: 20px;
+            background-color: #f5f5f5;
+        }
+        .card {
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .card-header {
+            background-color: #f8f9fa;
+            font-weight: bold;
+        }
+        .status-badge {
+            font-size: 0.9rem;
+            padding: 0.35rem 0.65rem;
+        }
+        .log-container {
+            background-color: #343a40;
+            color: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            height: 200px;
+            overflow-y: auto;
+        }
+        .log-line {
+            margin: 0;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+        .stats-value {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .stats-label {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+        .task-table {
+            font-size: 0.9rem;
+        }
+        #refreshIndicator {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="refreshIndicator">Updating...</div>
+        
+        <div class="row mb-4">
+            <div class="col-12">
+                <h1 class="text-center">Web Crawler Monitoring Dashboard</h1>
+                <p class="text-center text-muted">Real-time monitoring of the distributed web crawling system</p>
+            </div>
+        </div>
+        
+        <!-- System Status Overview -->
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <div class="card-header">Master Node</div>
+                    <div class="card-body text-center">
+                        <div id="masterStatus" class="status-badge badge bg-secondary">Unknown</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <div class="card-header">Crawler Nodes</div>
+                    <div class="card-body text-center">
+                        <span id="activeCrawlers" class="status-badge badge bg-success me-2">0 Active</span>
+                        <span id="failedCrawlers" class="status-badge badge bg-danger">0 Failed</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <div class="card-header">URLs Processed</div>
+                    <div class="card-body text-center">
+                        <div class="stats-value" id="urlsCrawled">0</div>
+                        <div class="stats-label">Crawled URLs</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <div class="card-header">Error Rate</div>
+                    <div class="card-body text-center">
+                        <div class="stats-value" id="errorRate">0%</div>
+                        <div class="stats-label" id="errorCount">0 Errors</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Stats Charts -->
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">Crawling Progress</div>
+                    <div class="card-body">
+                        <canvas id="progressChart" height="200"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">System Metrics</div>
+                    <div class="card-body">
+                        <canvas id="metricsChart" height="200"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Crawler Status Table -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">Crawler Node Status</div>
+                    <div class="card-body">
+                        <table class="table table-bordered table-hover" id="crawlerTable">
+                            <thead>
+                                <tr>
+                                    <th>Crawler ID</th>
+                                    <th>Status</th>
+                                    <th>URLs Assigned</th>
+                                    <th>URLs Completed</th>
+                                    <th>Failure Rate</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Will be populated by JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Recent Tasks -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">Recent Tasks</div>
+                    <div class="card-body">
+                        <table class="table table-striped table-sm task-table" id="tasksTable">
+                            <thead>
+                                <tr>
+                                    <th>Time</th>
+                                    <th>URL</th>
+                                    <th>Crawler</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Will be populated by JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- System Logs -->
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">Master Node Logs</div>
+                    <div class="card-body">
+                        <div class="log-container" id="masterLogs">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">Crawler Node Logs</div>
+                    <div class="card-body">
+                        <div class="log-container" id="crawlerLogs">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Global variables for charts
+        let progressChart, metricsChart;
+        
+        // Initialize the dashboard
+        document.addEventListener('DOMContentLoaded', function() {
+            // Setup charts
+            setupCharts();
+            
+            // Initial data load
+            fetchAndUpdateData();
+            
+            // Set interval for auto-refresh (every 3 seconds)
+            setInterval(fetchAndUpdateData, 3000);
+        });
+        
+        // Setup the charts
+        function setupCharts() {
+            // Progress chart
+            const progressCtx = document.getElementById('progressChart').getContext('2d');
+            progressChart = new Chart(progressCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Crawled', 'Indexed', 'Failed'],
+                    datasets: [{
+                        data: [0, 0, 0],
+                        backgroundColor: ['#28a745', '#17a2b8', '#dc3545']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false
+                }
+            });
+            
+            // Metrics chart
+            const metricsCtx = document.getElementById('metricsChart').getContext('2d');
+            metricsChart = new Chart(metricsCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['Active Crawlers', 'Failed Crawlers', 'URLs Crawled', 'URLs Indexed', 'Errors'],
+                    datasets: [{
+                        label: 'System Metrics',
+                        data: [0, 0, 0, 0, 0],
+                        backgroundColor: [
+                            '#28a745', '#dc3545', '#007bff', '#17a2b8', '#fd7e14'
+                        ]
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false
+                }
+            });
+        }
+        
+        // Fetch data and update the dashboard
+        function fetchAndUpdateData() {
+            // Show refresh indicator
+            document.getElementById('refreshIndicator').style.display = 'block';
+            
+            // Fetch the system data from the API
+            fetch('/api/data')
+                .then(response => response.json())
+                .then(data => {
+                    updateDashboard(data);
+                    // Hide refresh indicator
+                    document.getElementById('refreshIndicator').style.display = 'none';
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                    document.getElementById('refreshIndicator').style.display = 'none';
+                });
+        }
+        
+        // Update the dashboard with the latest data
+        function updateDashboard(data) {
+            // Update status indicators
+            updateStatusIndicators(data);
+            
+            // Update statistics
+            updateStatistics(data);
+            
+            // Update charts
+            updateCharts(data);
+            
+            // Update tables
+            updateCrawlerTable(data);
+            updateTasksTable(data);
+            
+            // Update logs
+            updateLogs(data);
+        }
+        
+        // Update status indicators
+        function updateStatusIndicators(data) {
+            // Master status
+            const masterStatusEl = document.getElementById('masterStatus');
+            masterStatusEl.textContent = data.master_status;
+            masterStatusEl.className = 'status-badge badge ' + 
+                (data.master_status === 'Running' ? 'bg-success' : 'bg-secondary');
+            
+            // Active crawlers
+            const activeCrawlers = Object.values(data.crawlers).filter(s => s === 'active').length;
+            document.getElementById('activeCrawlers').textContent = `${activeCrawlers} Active`;
+            
+            // Failed crawlers
+            const failedCrawlers = Object.values(data.crawlers).filter(s => s === 'failed').length;
+            document.getElementById('failedCrawlers').textContent = `${failedCrawlers} Failed`;
+        }
+        
+        // Update statistics
+        function updateStatistics(data) {
+            document.getElementById('urlsCrawled').textContent = data.urls_crawled;
+            
+            // Calculate and update error rate
+            const totalUrls = data.urls_crawled + data.urls_failed;
+            const errorRate = totalUrls > 0 ? ((data.error_count / totalUrls) * 100).toFixed(1) : '0.0';
+            document.getElementById('errorRate').textContent = `${errorRate}%`;
+            document.getElementById('errorCount').textContent = `${data.error_count} Errors`;
+        }
+        
+        // Update charts
+        function updateCharts(data) {
+            // Update progress chart
+            progressChart.data.datasets[0].data = [
+                data.urls_crawled,
+                data.urls_indexed,
+                data.urls_failed
+            ];
+            progressChart.update();
+            
+            // Update metrics chart
+            const activeCrawlers = Object.values(data.crawlers).filter(s => s === 'active').length;
+            const failedCrawlers = Object.values(data.crawlers).filter(s => s === 'failed').length;
+            
+            metricsChart.data.datasets[0].data = [
+                activeCrawlers,
+                failedCrawlers,
+                data.urls_crawled,
+                data.urls_indexed,
+                data.error_count
+            ];
+            metricsChart.update();
+        }
+        
+        // Update crawler table
+        function updateCrawlerTable(data) {
+            const tableBody = document.getElementById('crawlerTable').querySelector('tbody');
+            tableBody.innerHTML = '';
+            
+            // Get crawler performance data
+            const crawlerPerf = data.crawler_performance || {};
+            
+            Object.entries(data.crawlers).forEach(([id, status]) => {
+                const perf = crawlerPerf[id] || { assigned: 0, completed: 0, failed: 0 };
+                const row = document.createElement('tr');
+                
+                // Calculate failure rate
+                const failureRate = perf.assigned > 0 ? 
+                    ((perf.failed / perf.assigned) * 100).toFixed(1) + '%' : '0.0%';
+                
+                row.innerHTML = `
+                    <td>Crawler ${id}</td>
+                    <td><span class="badge ${status === 'active' ? 'bg-success' : 'bg-danger'}">${status}</span></td>
+                    <td>${perf.assigned || 0}</td>
+                    <td>${perf.completed || 0}</td>
+                    <td>${failureRate}</td>
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+        
+        // Update tasks table
+        function updateTasksTable(data) {
+            const tableBody = document.getElementById('tasksTable').querySelector('tbody');
+            tableBody.innerHTML = '';
+            
+            (data.recent_tasks || []).forEach(task => {
+                const row = document.createElement('tr');
+                
+                // Format timestamp
+                let timestamp = '';
+                if (task.time) {
+                    try {
+                        const date = new Date(task.time);
+                        timestamp = date.toLocaleTimeString();
+                    } catch (e) {
+                        timestamp = task.time;
+                    }
+                }
+                
+                // Determine status badge color
+                let statusBadgeClass = 'bg-secondary';
+                if (task.status === 'completed') statusBadgeClass = 'bg-success';
+                if (task.status === 'error' || task.status === 'timeout' || task.status === 'node_failed') statusBadgeClass = 'bg-danger';
+                if (task.status === 'assigned') statusBadgeClass = 'bg-primary';
+                
+                row.innerHTML = `
+                    <td>${timestamp}</td>
+                    <td>${task.url || 'N/A'}</td>
+                    <td>Crawler ${task.crawler || 'N/A'}</td>
+                    <td><span class="badge ${statusBadgeClass}">${task.status || 'Unknown'}</span></td>
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+        
+        // Update logs
+        function updateLogs(data) {
+            // Update master logs
+            const masterLogsEl = document.getElementById('masterLogs');
+            if (data.master_logs && data.master_logs.length) {
+                masterLogsEl.innerHTML = data.master_logs.map(log => 
+                    `<p class="log-line">${log}</p>`
+                ).join('');
+                masterLogsEl.scrollTop = masterLogsEl.scrollHeight;
+            }
+            
+            // Update crawler logs
+            const crawlerLogsEl = document.getElementById('crawlerLogs');
+            let crawlerLogsHTML = '';
+            
+            if (data.crawler_logs) {
+                Object.entries(data.crawler_logs).forEach(([crawlerId, logs]) => {
+                    crawlerLogsHTML += `<p class="log-line"><strong>Crawler ${crawlerId}:</strong></p>`;
+                    logs.forEach(log => {
+                        crawlerLogsHTML += `<p class="log-line">  ${log}</p>`;
+                    });
+                    crawlerLogsHTML += '<p class="log-line"> </p>';
+                });
+            }
+            
+            if (crawlerLogsHTML) {
+                crawlerLogsEl.innerHTML = crawlerLogsHTML;
+                crawlerLogsEl.scrollTop = crawlerLogsEl.scrollHeight;
+            }
+        }
+    </script>
+</body>
+</html> 

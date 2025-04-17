@@ -14,6 +14,8 @@ from nltk.tokenize import word_tokenize, sent_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 import json
+# Import CloudStorage for data persistence
+from cloud_storage import CloudStorage
 
 # Download required NLTK data
 try:
@@ -26,11 +28,13 @@ except LookupError:
     nltk.download('stopwords')
 
 class EnhancedIndexer:
-    def __init__(self, index_dir="search_index"):
+    def __init__(self, index_dir="search_index", cloud_storage=None):
         self.index_dir = index_dir
         self.setup_index()
         self.lemmatizer = WordNetLemmatizer()
         self.stop_words = set(stopwords.words('english'))
+        # Initialize cloud storage if provided
+        self.cloud_storage = cloud_storage
         
     def setup_index(self):
         """Initialize or open the Whoosh index"""
@@ -125,12 +129,31 @@ class EnhancedIndexer:
         return " ".join(summary)
     
     def index_document(self, url, content):
-        """Index a document with enhanced processing"""
+        """Index a document with enhanced processing and cloud storage"""
         try:
             title, extracted_text = self.extract_text_from_html(content)
             processed_words = self.process_text(extracted_text)
             keywords = self.extract_keywords(processed_words)
             summary = self.generate_summary(title, extracted_text)
+            
+            # Create metadata for storage
+            metadata = {
+                "title": title,
+                "keywords": keywords,
+                "summary": summary,
+                "last_updated": time.strftime("%Y-%m-%d %H:%M:%S"),
+                "word_count": len(processed_words),
+                "extracted_text_length": len(extracted_text)
+            }
+            
+            # Store the raw HTML in cloud storage if available
+            if self.cloud_storage:
+                raw_html_result = self.cloud_storage.store_raw_html(url, content)
+                logging.info(f"Stored raw HTML for {url} with result: {raw_html_result['storage_type']}")
+                
+                # Store processed text and metadata
+                processed_result = self.cloud_storage.store_processed_text(url, extracted_text, metadata)
+                logging.info(f"Stored processed text for {url} with result: {processed_result['storage_type']}")
             
             # Add document to index
             writer = self.ix.writer()
@@ -147,10 +170,12 @@ class EnhancedIndexer:
             return {
                 "status": "success",
                 "keywords": keywords,
-                "summary_length": len(summary.split())
+                "summary_length": len(summary.split()),
+                "cloud_storage": bool(self.cloud_storage)
             }
             
         except Exception as e:
+            logging.error(f"Error indexing document {url}: {str(e)}")
             return {
                 "status": "error",
                 "error": str(e)
@@ -197,10 +222,11 @@ class EnhancedIndexer:
 
 def indexer_process():
     """
-    Enhanced Indexer Node Process:
+    Enhanced Indexer Node Process with cloud storage:
     - Uses Whoosh for robust indexing
     - Implements advanced text processing
     - Provides enhanced search capabilities
+    - Stores crawled content in cloud storage for data durability
     """
     # Setup MPI and logging
     comm = MPI.COMM_WORLD
@@ -209,12 +235,24 @@ def indexer_process():
     
     logging.basicConfig(
         level=logging.INFO,
-        format='%(asctime)s - Indexer - %(levelname)s - %(message)s'
+        format='%(asctime)s - Indexer - %(levelname)s - %(message)s',
+        handlers=[
+            logging.FileHandler("indexer.log"),
+            logging.StreamHandler()
+        ]
     )
     logging.info(f"Enhanced Indexer node started with rank {rank} of {size}")
     
-    # Initialize the enhanced indexer
-    indexer = EnhancedIndexer()
+    # Initialize the cloud storage
+    try:
+        cloud_storage = CloudStorage()
+        logging.info(f"CloudStorage initialized for data persistence")
+    except Exception as e:
+        logging.error(f"Failed to initialize CloudStorage: {e}. Will continue without cloud storage.")
+        cloud_storage = None
+    
+    # Initialize the enhanced indexer with cloud storage
+    indexer = EnhancedIndexer(cloud_storage=cloud_storage)
     processed_urls = set()
     
     while True:
@@ -262,8 +300,13 @@ def indexer_process():
                             processed_urls.add(url)
                             logging.info(f"Successfully indexed {url}")
                             logging.info(f"Extracted {len(result['keywords'])} keywords")
+                            
+                            # Add cloud storage info to the success message
+                            storage_info = "with cloud storage" if result.get("cloud_storage") else "without cloud storage"
+                            success_msg = f"Indexed {url} with {len(result['keywords'])} keywords {storage_info}"
+                            
                             # Send success status to master
-                            comm.send(f"Indexed {url} with {len(result['keywords'])} keywords", dest=0, tag=99)
+                            comm.send(success_msg, dest=0, tag=99)
                         else:
                             logging.error(f"Failed to index {url}: {result['error']}")
                             comm.send(f"Failed to index {url}: {result['error']}", dest=0, tag=999)
