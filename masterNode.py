@@ -22,7 +22,9 @@ def master_process():
     status = MPI.Status()
 
     # Enhanced logging for Phase 3
-    log_file = "master.log"
+    log_file = "logs/master.log"
+    # Ensure logs directory exists
+    os.makedirs(os.path.dirname(log_file), exist_ok=True)
     logging.basicConfig(
         level=logging.INFO,
         format='%(asctime)s - Master - %(levelname)s - %(message)s',
@@ -86,7 +88,10 @@ def master_process():
 
     # Function to update monitoring data
     def update_monitoring_data():
-        with open("monitoring_data.json", "w") as f:
+        # Ensure data/monitoring directory exists
+        monitoring_data_path = "data/monitoring/monitoring_data.json"
+        os.makedirs(os.path.dirname(monitoring_data_path), exist_ok=True)
+        with open(monitoring_data_path, "w") as f:
             json.dump(system_metrics, f, indent=4)
 
     # Initialize monitoring data file

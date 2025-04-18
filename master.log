@@ -1,0 +1,988 @@
+2025-04-17 23:26:56,603 - Master - INFO - Master node started with rank 0 of 5
+2025-04-17 23:26:56,603 - Master - INFO - Active Crawler Nodes: [1, 2, 3]
+2025-04-17 23:26:56,604 - Master - INFO - Indexer Node: 4
+2025-04-17 23:26:56,610 - Master - INFO - Assigned task 0 to crawler 1 for URL: https://www.python.org
+2025-04-17 23:26:56,610 - Master - INFO - Assigned task 1 to crawler 2 for URL: https://www.github.com
+2025-04-17 23:26:56,617 - Master - INFO - Assigned task 2 to crawler 3 for URL: https://www.wikipedia.org
+2025-04-17 23:26:57,121 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-17 23:26:57,324 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-17 23:26:57,559 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-17 23:26:58,167 - Master - INFO - Received URLs from crawler 1. Queue size now: 7, Processed URLs: 1
+2025-04-17 23:26:58,168 - Master - INFO - Assigned task 3 to crawler 1 for URL: https://www.reddit.com
+2025-04-17 23:26:58,572 - Master - INFO - Received URLs from crawler 3. Queue size now: 11, Processed URLs: 2
+2025-04-17 23:26:58,574 - Master - INFO - Assigned task 4 to crawler 3 for URL: https://www.stackoverflow.com
+2025-04-17 23:26:59,277 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://www.python.org (found 71 URLs, 51308 bytes)
+2025-04-17 23:27:01,085 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-17 23:27:01,189 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-17 23:27:01,291 - Master - INFO - Received URLs from crawler 1. Queue size now: 15, Processed URLs: 3
+2025-04-17 23:27:01,292 - Master - INFO - Assigned task 5 to crawler 1 for URL: https://www.python.org/psf/
+2025-04-17 23:27:03,203 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-17 23:27:03,306 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://www.wikipedia.org (found 8 URLs, 90836 bytes)
+2025-04-17 23:27:03,408 - Master - INFO - Received URLs from crawler 2. Queue size now: 19, Processed URLs: 4
+2025-04-17 23:27:03,410 - Master - INFO - Assigned task 6 to crawler 2 for URL: https://docs.python.org
+2025-04-17 23:27:03,512 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://www.reddit.com (found 71 URLs, 641365 bytes)
+2025-04-17 23:27:03,614 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-17 23:27:03,817 - Master - INFO - Status from node 4: Indexed https://www.python.org with 10 keywords
+2025-04-17 23:27:03,920 - Master - INFO - Status from node 4: Indexed https://www.reddit.com with 10 keywords
+2025-04-17 23:27:04,022 - Master - INFO - Status from node 4: Indexed https://www.wikipedia.org with 10 keywords
+2025-04-17 23:27:04,124 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://www.github.com (found 68 URLs, 280109 bytes)
+2025-04-17 23:27:04,225 - Master - INFO - Status from node 4: Indexed https://www.github.com with 10 keywords
+2025-04-17 23:27:04,327 - Master - INFO - Received URLs from crawler 1. Queue size now: 23, Processed URLs: 5
+2025-04-17 23:27:04,328 - Master - INFO - Assigned task 7 to crawler 1 for URL: https://pypi.org/
+2025-04-17 23:27:04,431 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://www.python.org/psf/ (found 56 URLs, 52283 bytes)
+2025-04-17 23:27:04,533 - Master - INFO - Status from node 4: Indexed https://www.python.org/psf/ with 10 keywords
+2025-04-17 23:27:04,937 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-17 23:27:05,139 - Master - INFO - Received URLs from crawler 1. Queue size now: 27, Processed URLs: 6
+2025-04-17 23:27:05,140 - Master - INFO - Assigned task 8 to crawler 1 for URL: https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-17 23:27:05,242 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://pypi.org/ (found 26 URLs, 19849 bytes)
+2025-04-17 23:27:05,343 - Master - INFO - Received URLs from crawler 3. Queue size now: 31, Processed URLs: 7
+2025-04-17 23:27:05,350 - Master - INFO - Assigned task 9 to crawler 3 for URL: https://www.linkedin.com/company/python-software-foundation/
+2025-04-17 23:27:05,853 - Master - INFO - Status from node 4: Indexed https://pypi.org/ with 10 keywords
+2025-04-17 23:27:05,954 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://www.stackoverflow.com (found 87 URLs, 353664 bytes)
+2025-04-17 23:27:06,256 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-17 23:27:06,357 - Master - INFO - Status from node 4: Indexed https://www.stackoverflow.com with 10 keywords
+2025-04-17 23:27:06,874 - Master - INFO - Received URLs from crawler 3. Queue size now: 32, Processed URLs: 8
+2025-04-17 23:27:06,875 - Master - INFO - Assigned task 10 to crawler 3 for URL: https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-17 23:27:06,977 - Master - INFO - Status from node 4: Indexed https://www.linkedin.com/company/python-software-foundation/ with 0 keywords
+2025-04-17 23:27:07,078 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://www.linkedin.com/company/python-software-foundation/ (found 2 URLs, 1530 bytes)
+2025-04-17 23:27:07,180 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-17 23:27:07,482 - Master - INFO - Received URLs from crawler 1. Queue size now: 36, Processed URLs: 9
+2025-04-17 23:27:07,483 - Master - INFO - Assigned task 11 to crawler 1 for URL: https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter
+2025-04-17 23:27:07,586 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 (found 10 URLs, 154411 bytes)
+2025-04-17 23:27:07,688 - Master - INFO - Status from node 4: Indexed https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 with 10 keywords
+2025-04-17 23:27:07,790 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-17 23:27:08,394 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-17 23:27:08,496 - Master - INFO - Received URLs from crawler 1. Queue size now: 40, Processed URLs: 10
+2025-04-17 23:27:08,497 - Master - INFO - Assigned task 12 to crawler 1 for URL: https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-17 23:27:08,600 - Master - INFO - Received URLs from crawler 3. Queue size now: 44, Processed URLs: 11
+2025-04-17 23:27:08,603 - Master - INFO - Assigned task 13 to crawler 3 for URL: https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-17 23:27:08,707 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter (found 18 URLs, 69867 bytes)
+2025-04-17 23:27:08,810 - Master - INFO - Status from node 4: Indexed https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter with 10 keywords
+2025-04-17 23:27:08,912 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias (found 3371 URLs, 556622 bytes)
+2025-04-17 23:27:09,417 - Master - INFO - Received URLs from crawler 1. Queue size now: 48, Processed URLs: 12
+2025-04-17 23:27:09,419 - Master - INFO - Assigned task 14 to crawler 1 for URL: https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-17 23:27:09,722 - Master - INFO - Received URLs from crawler 3. Queue size now: 52, Processed URLs: 13
+2025-04-17 23:27:09,724 - Master - INFO - Assigned task 15 to crawler 3 for URL: https://www.reddit.com/login/
+2025-04-17 23:27:10,027 - Master - INFO - Status from node 4: Indexed https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias with 10 keywords
+2025-04-17 23:27:10,129 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob (found 17 URLs, 1164310 bytes)
+2025-04-17 23:27:10,231 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-17 23:27:10,334 - Master - INFO - Status from node 4: Indexed https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob with 10 keywords
+2025-04-17 23:27:10,436 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-17 23:27:10,539 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications (found 94 URLs, 136556 bytes)
+2025-04-17 23:27:10,642 - Master - INFO - Status from node 4: Indexed https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications with 10 keywords
+2025-04-17 23:27:10,945 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-17 23:27:12,149 - Master - INFO - Received URLs from crawler 3. Queue size now: 53, Processed URLs: 14
+2025-04-17 23:27:12,151 - Master - INFO - Assigned task 16 to crawler 3 for URL: https://reddit.app.link/?%24android_deeplink_path=reddit%2Fr%2Flaw%2Fcomments%2F1k11wg4%2Ftrumps_counterterrorism_czar_now_saying_that%2F&%24deeplink_path=%2Fr%2Flaw%2Fcomments%2F1k11wg4%2Ftrumps_counterterrorism_czar_now_saying_that%2F&%24og_redirect=https%3A%2F%2Fwww.reddit.com%2Fr%2Flaw%2Fcomments%2F1k11wg4%2Ftrumps_counterterrorism_czar_now_saying_that%2F&base_url=%2Fr%2Flaw%2Fcomments%2F1k11wg4%2Ftrumps_counterterrorism_czar_now_saying_that%2F&mweb_loid=t2_1nizu4gfiy&mweb_loid_created=1744925218595&referrer_domain=www.reddit.com&referrer_url=%2F&campaign=no_amp_test&utm_name=no_amp_test&channel=xpromo&utm_source=xpromo&feature=web3x&utm_medium=web3x&keyword=no_amp&utm_term=no_amp&tags=media_error_xpromo_post&utm_content=media_error
+2025-04-17 23:27:12,253 - Master - INFO - Status from node 4: Indexed https://www.reddit.com/login/ with 3 keywords
+2025-04-17 23:27:12,356 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://www.reddit.com/login/ (found 2 URLs, 351187 bytes)
+2025-04-17 23:27:12,458 - Master - INFO - Received URLs from crawler 1. Queue size now: 57, Processed URLs: 15
+2025-04-17 23:27:12,460 - Master - INFO - Assigned task 17 to crawler 1 for URL: https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/
+2025-04-17 23:27:12,562 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 (found 44 URLs, 733576 bytes)
+2025-04-17 23:27:12,665 - Master - INFO - Status from node 4: Indexed https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 with 10 keywords
+2025-04-17 23:27:12,767 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-17 23:27:13,572 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-17 23:27:13,987 - Master - INFO - Received URLs from crawler 1. Queue size now: 61, Processed URLs: 16
+2025-04-17 23:27:13,990 - Master - INFO - Assigned task 18 to crawler 1 for URL: https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/
+2025-04-17 23:27:14,094 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/ (found 235 URLs, 589371 bytes)
+2025-04-17 23:27:14,498 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-17 23:27:14,602 - Master - INFO - Received URLs from crawler 3. Queue size now: 65, Processed URLs: 17
+2025-04-17 23:27:14,605 - Master - INFO - Assigned task 19 to crawler 3 for URL: https://reddit.app.link/?%24android_deeplink_path=reddit%2Fr%2FMadeMeSmile%2Fcomments%2F1k1jcmd%2Fbarack_obama_gently_calms_a_crying_baby_in_seconds%2F&%24deeplink_path=%2Fr%2FMadeMeSmile%2Fcomments%2F1k1jcmd%2Fbarack_obama_gently_calms_a_crying_baby_in_seconds%2F&%24og_redirect=https%3A%2F%2Fwww.reddit.com%2Fr%2FMadeMeSmile%2Fcomments%2F1k1jcmd%2Fbarack_obama_gently_calms_a_crying_baby_in_seconds%2F&base_url=%2Fr%2FMadeMeSmile%2Fcomments%2F1k1jcmd%2Fbarack_obama_gently_calms_a_crying_baby_in_seconds%2F&mweb_loid=t2_1nizu4gfiy&mweb_loid_created=1744925218595&referrer_domain=www.reddit.com&referrer_url=%2F&campaign=no_amp_test&utm_name=no_amp_test&channel=xpromo&utm_source=xpromo&feature=web3x&utm_medium=web3x&keyword=no_amp&utm_term=no_amp&tags=media_error_xpromo_post&utm_content=media_error
+2025-04-17 23:27:15,008 - Master - INFO - Status from node 4: Indexed https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/ with 10 keywords
+2025-04-17 23:27:15,112 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://reddit.app.link/?%24android_deeplink_path=reddit%2Fr%2Flaw%2Fcomments%2F1k11wg4%2Ftrumps_counterterrorism_czar_now_saying_that%2F&%24deeplink_path=%2Fr%2Flaw%2Fcomments%2F1k11wg4%2Ftrumps_counterterrorism_czar_now_saying_that%2F&%24og_redirect=https%3A%2F%2Fwww.reddit.com%2Fr%2Flaw%2Fcomments%2F1k11wg4%2Ftrumps_counterterrorism_czar_now_saying_that%2F&base_url=%2Fr%2Flaw%2Fcomments%2F1k11wg4%2Ftrumps_counterterrorism_czar_now_saying_that%2F&mweb_loid=t2_1nizu4gfiy&mweb_loid_created=1744925218595&referrer_domain=www.reddit.com&referrer_url=%2F&campaign=no_amp_test&utm_name=no_amp_test&channel=xpromo&utm_source=xpromo&feature=web3x&utm_medium=web3x&keyword=no_amp&utm_term=no_amp&tags=media_error_xpromo_post&utm_content=media_error (found 70 URLs, 551209 bytes)
+2025-04-17 23:27:15,315 - Master - INFO - Status from node 4: Indexed https://reddit.app.link/?%24android_deeplink_path=reddit%2Fr%2Flaw%2Fcomments%2F1k11wg4%2Ftrumps_counterterrorism_czar_now_saying_that%2F&%24deeplink_path=%2Fr%2Flaw%2Fcomments%2F1k11wg4%2Ftrumps_counterterrorism_czar_now_saying_that%2F&%24og_redirect=https%3A%2F%2Fwww.reddit.com%2Fr%2Flaw%2Fcomments%2F1k11wg4%2Ftrumps_counterterrorism_czar_now_saying_that%2F&base_url=%2Fr%2Flaw%2Fcomments%2F1k11wg4%2Ftrumps_counterterrorism_czar_now_saying_that%2F&mweb_loid=t2_1nizu4gfiy&mweb_loid_created=1744925218595&referrer_domain=www.reddit.com&referrer_url=%2F&campaign=no_amp_test&utm_name=no_amp_test&channel=xpromo&utm_source=xpromo&feature=web3x&utm_medium=web3x&keyword=no_amp&utm_term=no_amp&tags=media_error_xpromo_post&utm_content=media_error with 10 keywords
+2025-04-17 23:27:15,419 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-17 23:27:15,542 - Master - INFO - Received URLs from crawler 1. Queue size now: 69, Processed URLs: 18
+2025-04-17 23:27:15,545 - Master - INFO - Assigned task 20 to crawler 1 for URL: https://github.com/features/copilot
+2025-04-17 23:27:15,649 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/ (found 235 URLs, 589371 bytes)
+2025-04-17 23:27:16,600 - Master - INFO - Received URLs from crawler 2. Queue size now: 73, Processed URLs: 19
+2025-04-17 23:27:16,601 - Master - INFO - Assigned task 21 to crawler 2 for URL: https://github.com/security/advanced-security
+2025-04-17 23:27:16,704 - Master - INFO - Status from node 4: Indexed https://docs.python.org with 10 keywords
+2025-04-17 23:27:16,821 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://docs.python.org (found 52 URLs, 17704 bytes)
+2025-04-17 23:27:16,924 - Master - INFO - Received URLs from crawler 1. Queue size now: 72, Processed URLs: 20
+2025-04-17 23:27:16,926 - Master - INFO - Assigned task 22 to crawler 1 for URL: https://github.com/features/actions
+2025-04-17 23:27:17,029 - Master - INFO - Crawling complete. Processed 20 URLs. Shutting down nodes...
+2025-04-17 23:27:17,031 - Master - INFO - Master node finished URL distribution. Shutting down.
+2025-04-17 23:32:33,710 - Master - INFO - Master node started with rank 0 of 5
+2025-04-17 23:32:33,710 - Master - INFO - Active Crawler Nodes: [1, 2, 3]
+2025-04-17 23:32:33,710 - Master - INFO - Indexer Node: 4
+2025-04-17 23:32:33,712 - Master - INFO - Assigned task 0 to crawler 1 for URL: https://www.python.org
+2025-04-17 23:32:33,717 - Master - INFO - Assigned task 1 to crawler 2 for URL: https://www.github.com
+2025-04-17 23:32:33,722 - Master - INFO - Assigned task 2 to crawler 3 for URL: https://www.wikipedia.org
+2025-04-17 23:32:34,238 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-17 23:32:34,464 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-17 23:32:34,667 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-17 23:32:35,272 - Master - INFO - Received URLs from crawler 1. Queue size now: 7, Processed URLs: 1
+2025-04-17 23:32:35,273 - Master - INFO - Assigned task 3 to crawler 1 for URL: https://www.reddit.com
+2025-04-17 23:32:35,475 - Master - INFO - Received URLs from crawler 3. Queue size now: 11, Processed URLs: 2
+2025-04-17 23:32:35,477 - Master - INFO - Assigned task 4 to crawler 3 for URL: https://www.stackoverflow.com
+2025-04-17 23:32:36,503 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://www.python.org (found 71 URLs, 50592 bytes)
+2025-04-17 23:32:36,907 - Master - INFO - Received URLs from crawler 2. Queue size now: 15, Processed URLs: 3
+2025-04-17 23:32:36,909 - Master - INFO - Assigned task 5 to crawler 2 for URL: https://www.python.org/psf/
+2025-04-17 23:32:38,977 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-17 23:32:39,079 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-17 23:32:39,787 - Master - INFO - Received URLs from crawler 1. Queue size now: 19, Processed URLs: 4
+2025-04-17 23:32:39,788 - Master - INFO - Assigned task 6 to crawler 1 for URL: https://docs.python.org
+2025-04-17 23:32:40,898 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-17 23:32:41,000 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://www.reddit.com (found 70 URLs, 636979 bytes)
+2025-04-17 23:32:41,102 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://www.wikipedia.org (found 8 URLs, 90836 bytes)
+2025-04-17 23:32:41,304 - Master - INFO - Status from node 4: Indexed https://www.python.org with 10 keywords
+2025-04-17 23:32:41,506 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-17 23:32:41,708 - Master - INFO - Received URLs from crawler 1. Queue size now: 23, Processed URLs: 5
+2025-04-17 23:32:41,710 - Master - INFO - Assigned task 7 to crawler 1 for URL: https://pypi.org/
+2025-04-17 23:32:41,914 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-17 23:32:42,317 - Master - INFO - Status from node 4: Indexed https://www.reddit.com with 10 keywords
+2025-04-17 23:32:42,620 - Master - INFO - Status from node 4: Indexed https://www.wikipedia.org with 10 keywords
+2025-04-17 23:32:42,723 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://docs.python.org (found 52 URLs, 17704 bytes)
+2025-04-17 23:32:42,827 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://www.github.com (found 68 URLs, 280109 bytes)
+2025-04-17 23:32:43,130 - Master - INFO - Status from node 4: Indexed https://www.github.com with 10 keywords
+2025-04-17 23:32:43,338 - Master - INFO - Status from node 4: Indexed https://docs.python.org with 10 keywords
+2025-04-17 23:32:43,541 - Master - INFO - Received URLs from crawler 3. Queue size now: 27, Processed URLs: 6
+2025-04-17 23:32:43,545 - Master - INFO - Assigned task 8 to crawler 3 for URL: https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-17 23:32:43,649 - Master - INFO - Received URLs from crawler 1. Queue size now: 31, Processed URLs: 7
+2025-04-17 23:32:43,650 - Master - INFO - Assigned task 9 to crawler 1 for URL: https://www.linkedin.com/company/python-software-foundation/
+2025-04-17 23:32:43,753 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-17 23:32:43,864 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://www.stackoverflow.com (found 87 URLs, 354261 bytes)
+2025-04-17 23:32:43,967 - Master - INFO - Received URLs from crawler 2. Queue size now: 35, Processed URLs: 8
+2025-04-17 23:32:43,968 - Master - INFO - Assigned task 10 to crawler 2 for URL: https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-17 23:32:44,171 - Master - INFO - Status from node 4: Indexed https://www.stackoverflow.com with 10 keywords
+2025-04-17 23:32:44,275 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://www.python.org/psf/ (found 56 URLs, 52283 bytes)
+2025-04-17 23:32:45,282 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-17 23:32:45,484 - Master - INFO - Status from node 4: Indexed https://www.python.org/psf/ with 10 keywords
+2025-04-17 23:32:45,587 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-17 23:32:45,690 - Master - INFO - Status from node 4: Indexed https://pypi.org/ with 10 keywords
+2025-04-17 23:32:45,793 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://pypi.org/ (found 26 URLs, 19849 bytes)
+2025-04-17 23:32:45,896 - Master - INFO - Received URLs from crawler 3. Queue size now: 39, Processed URLs: 9
+2025-04-17 23:32:45,898 - Master - INFO - Assigned task 11 to crawler 3 for URL: https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter
+2025-04-17 23:32:46,002 - Master - INFO - Status from node 4: Indexed https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 with 10 keywords
+2025-04-17 23:32:46,104 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 (found 10 URLs, 154412 bytes)
+2025-04-17 23:32:46,710 - Master - INFO - Received URLs from crawler 1. Queue size now: 40, Processed URLs: 10
+2025-04-17 23:32:46,713 - Master - INFO - Assigned task 12 to crawler 1 for URL: https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-17 23:32:46,817 - Master - INFO - Status from node 4: Indexed https://www.linkedin.com/company/python-software-foundation/ with 0 keywords
+2025-04-17 23:32:46,921 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://www.linkedin.com/company/python-software-foundation/ (found 2 URLs, 1530 bytes)
+2025-04-17 23:32:47,024 - Master - INFO - Received URLs from crawler 2. Queue size now: 44, Processed URLs: 11
+2025-04-17 23:32:47,027 - Master - INFO - Assigned task 13 to crawler 2 for URL: https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-17 23:32:47,130 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias (found 3371 URLs, 556622 bytes)
+2025-04-17 23:32:47,332 - Master - INFO - Received URLs from crawler 3. Queue size now: 48, Processed URLs: 12
+2025-04-17 23:32:47,334 - Master - INFO - Assigned task 14 to crawler 3 for URL: https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-17 23:32:47,640 - Master - INFO - Received URLs from crawler 1. Queue size now: 52, Processed URLs: 13
+2025-04-17 23:32:47,647 - Master - INFO - Assigned task 15 to crawler 1 for URL: https://github.com/features/copilot
+2025-04-17 23:32:47,752 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-17 23:32:48,487 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-17 23:32:48,589 - Master - INFO - Status from node 4: Indexed https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias with 10 keywords
+2025-04-17 23:32:48,691 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-17 23:32:48,793 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter (found 18 URLs, 69867 bytes)
+2025-04-17 23:32:48,998 - Master - INFO - Received URLs from crawler 2. Queue size now: 56, Processed URLs: 14
+2025-04-17 23:32:49,001 - Master - INFO - Assigned task 16 to crawler 2 for URL: https://github.com/security/advanced-security
+2025-04-17 23:32:50,110 - Master - INFO - Status from node 4: Indexed https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter with 10 keywords
+2025-04-17 23:32:50,213 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob (found 17 URLs, 1164273 bytes)
+2025-04-17 23:32:50,517 - Master - INFO - Status from node 4: Indexed https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob with 10 keywords
+2025-04-17 23:32:50,620 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications (found 94 URLs, 136556 bytes)
+2025-04-17 23:32:50,724 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-17 23:32:50,828 - Master - INFO - Status from node 4: Indexed https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications with 10 keywords
+2025-04-17 23:32:51,334 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-17 23:32:51,939 - Master - INFO - Received URLs from crawler 2. Queue size now: 60, Processed URLs: 15
+2025-04-17 23:32:51,941 - Master - INFO - Assigned task 17 to crawler 2 for URL: https://github.com/features/actions
+2025-04-17 23:32:52,044 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://github.com/security/advanced-security (found 76 URLs, 260279 bytes)
+2025-04-17 23:32:52,249 - Master - INFO - Status from node 4: Indexed https://github.com/security/advanced-security with 10 keywords
+2025-04-17 23:32:52,653 - Master - INFO - Received URLs from crawler 3. Queue size now: 64, Processed URLs: 16
+2025-04-17 23:32:52,656 - Master - INFO - Assigned task 18 to crawler 3 for URL: https://github.com/features/codespaces
+2025-04-17 23:32:52,764 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 (found 44 URLs, 733416 bytes)
+2025-04-17 23:32:52,967 - Master - INFO - Status from node 4: Indexed https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 with 10 keywords
+2025-04-17 23:32:53,071 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-17 23:32:53,175 - Master - INFO - Received URLs from crawler 1. Queue size now: 68, Processed URLs: 17
+2025-04-17 23:32:53,178 - Master - INFO - Assigned task 19 to crawler 1 for URL: https://github.com/features/issues
+2025-04-17 23:32:53,280 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://github.com/features/copilot (found 122 URLs, 668861 bytes)
+2025-04-17 23:32:53,484 - Master - INFO - Received URLs from crawler 2. Queue size now: 72, Processed URLs: 18
+2025-04-17 23:32:53,487 - Master - INFO - Assigned task 20 to crawler 2 for URL: https://www.reddit.com/login/
+2025-04-17 23:32:54,395 - Master - INFO - Received URLs from crawler 1. Queue size now: 76, Processed URLs: 19
+2025-04-17 23:32:54,397 - Master - INFO - Assigned task 21 to crawler 1 for URL: https://reddit.app.link/?%24android_deeplink_path=reddit%2Fr%2Flaw%2Fcomments%2F1k11wg4%2Ftrumps_counterterrorism_czar_now_saying_that%2F&%24deeplink_path=%2Fr%2Flaw%2Fcomments%2F1k11wg4%2Ftrumps_counterterrorism_czar_now_saying_that%2F&%24og_redirect=https%3A%2F%2Fwww.reddit.com%2Fr%2Flaw%2Fcomments%2F1k11wg4%2Ftrumps_counterterrorism_czar_now_saying_that%2F&base_url=%2Fr%2Flaw%2Fcomments%2F1k11wg4%2Ftrumps_counterterrorism_czar_now_saying_that%2F&mweb_loid=t2_1nj07b3vrr&mweb_loid_created=1744925556894&referrer_domain=www.reddit.com&referrer_url=%2F&campaign=no_amp_test&utm_name=no_amp_test&channel=xpromo&utm_source=xpromo&feature=web3x&utm_medium=web3x&keyword=no_amp&utm_term=no_amp&tags=media_error_xpromo_post&utm_content=media_error
+2025-04-17 23:32:54,502 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-17 23:32:54,606 - Master - INFO - Status from node 4: Indexed https://github.com/features/copilot with 10 keywords
+2025-04-17 23:32:54,708 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://github.com/features/actions (found 76 URLs, 284355 bytes)
+2025-04-17 23:32:54,811 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-17 23:32:55,014 - Master - INFO - Status from node 4: Indexed https://github.com/features/actions with 10 keywords
+2025-04-17 23:32:55,117 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://github.com/features/issues (found 76 URLs, 341627 bytes)
+2025-04-17 23:32:55,322 - Master - INFO - Status from node 4: Indexed https://github.com/features/issues with 10 keywords
+2025-04-17 23:32:56,353 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-17 23:32:56,458 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-17 23:32:56,663 - Master - INFO - Received URLs from crawler 3. Queue size now: 75, Processed URLs: 20
+2025-04-17 23:32:56,666 - Master - INFO - Assigned task 22 to crawler 3 for URL: https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/
+2025-04-17 23:32:56,771 - Master - INFO - Crawling complete. Processed 20 URLs. Shutting down nodes...
+2025-04-17 23:32:56,774 - Master - INFO - Master node finished URL distribution. Shutting down.
+2025-04-18 00:07:21,409 - Master - INFO - Master node started with rank 0 of 5
+2025-04-18 00:07:21,409 - Master - INFO - Active Crawler Nodes: [1, 2, 3]
+2025-04-18 00:07:21,409 - Master - INFO - Indexer Node: 4
+2025-04-18 00:07:21,411 - Master - INFO - Assigned task 0 to crawler 1 for URL: https://www.python.org
+2025-04-18 00:07:21,413 - Master - INFO - Assigned task 1 to crawler 2 for URL: https://www.github.com
+2025-04-18 00:07:21,415 - Master - INFO - Assigned task 2 to crawler 3 for URL: https://www.wikipedia.org
+2025-04-18 00:07:22,023 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:07:22,234 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:07:22,442 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:07:23,291 - Master - INFO - Received URLs from crawler 1. Queue size now: 7, Processed URLs: 1
+2025-04-18 00:07:23,293 - Master - INFO - Assigned task 3 to crawler 1 for URL: https://www.reddit.com
+2025-04-18 00:07:23,396 - Master - INFO - Received URLs from crawler 3. Queue size now: 11, Processed URLs: 2
+2025-04-18 00:07:23,397 - Master - INFO - Assigned task 4 to crawler 3 for URL: https://www.stackoverflow.com
+2025-04-18 00:07:24,101 - Master - INFO - Received URLs from crawler 2. Queue size now: 15, Processed URLs: 3
+2025-04-18 00:07:24,102 - Master - INFO - Assigned task 5 to crawler 2 for URL: https://www.python.org/psf/
+2025-04-18 00:07:26,514 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:07:26,716 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:07:26,818 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://www.python.org (found 71 URLs, 50592 bytes)
+2025-04-18 00:07:29,743 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:07:29,845 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:07:32,356 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:07:32,459 - Master - INFO - Received URLs from crawler 1. Queue size now: 19, Processed URLs: 4
+2025-04-18 00:07:32,460 - Master - INFO - Assigned task 6 to crawler 1 for URL: https://docs.python.org
+2025-04-18 00:07:32,763 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:07:32,865 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://www.reddit.com (found 69 URLs, 633399 bytes)
+2025-04-18 00:07:32,970 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://www.wikipedia.org (found 8 URLs, 90836 bytes)
+2025-04-18 00:07:33,072 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:07:33,278 - Master - INFO - Status from node 4: Indexed https://www.python.org with 10 keywords with cloud storage
+2025-04-18 00:07:33,380 - Master - INFO - Status from node 4: Indexed https://www.reddit.com with 10 keywords with cloud storage
+2025-04-18 00:07:33,683 - Master - INFO - Status from node 4: Indexed https://www.wikipedia.org with 10 keywords with cloud storage
+2025-04-18 00:07:33,785 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://www.github.com (found 68 URLs, 280060 bytes)
+2025-04-18 00:07:33,987 - Master - INFO - Received URLs from crawler 1. Queue size now: 23, Processed URLs: 5
+2025-04-18 00:07:33,988 - Master - INFO - Assigned task 7 to crawler 1 for URL: https://pypi.org/
+2025-04-18 00:07:34,196 - Master - INFO - Status from node 4: Indexed https://www.github.com with 10 keywords with cloud storage
+2025-04-18 00:07:34,301 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://docs.python.org (found 52 URLs, 17704 bytes)
+2025-04-18 00:07:34,504 - Master - INFO - Status from node 4: Indexed https://docs.python.org with 10 keywords with cloud storage
+2025-04-18 00:07:35,513 - Master - INFO - Received URLs from crawler 1. Queue size now: 27, Processed URLs: 6
+2025-04-18 00:07:35,513 - Master - INFO - Assigned task 8 to crawler 1 for URL: https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 00:07:35,619 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://pypi.org/ (found 26 URLs, 19849 bytes)
+2025-04-18 00:07:35,721 - Master - INFO - Received URLs from crawler 2. Queue size now: 31, Processed URLs: 7
+2025-04-18 00:07:35,723 - Master - INFO - Assigned task 9 to crawler 2 for URL: https://www.linkedin.com/company/python-software-foundation/
+2025-04-18 00:07:35,927 - Master - INFO - Received URLs from crawler 3. Queue size now: 35, Processed URLs: 8
+2025-04-18 00:07:35,930 - Master - INFO - Assigned task 10 to crawler 3 for URL: https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-18 00:07:36,734 - Master - INFO - Status from node 4: Indexed https://pypi.org/ with 10 keywords with cloud storage
+2025-04-18 00:07:36,837 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://www.python.org/psf/ (found 56 URLs, 52283 bytes)
+2025-04-18 00:07:36,940 - Master - INFO - Status from node 4: Indexed https://www.python.org/psf/ with 10 keywords with cloud storage
+2025-04-18 00:07:37,093 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:07:37,198 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://www.stackoverflow.com (found 87 URLs, 351688 bytes)
+2025-04-18 00:07:37,301 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:07:37,605 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:07:37,712 - Master - INFO - Received URLs from crawler 1. Queue size now: 39, Processed URLs: 9
+2025-04-18 00:07:37,714 - Master - INFO - Assigned task 11 to crawler 1 for URL: https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter
+2025-04-18 00:07:38,122 - Master - INFO - Status from node 4: Indexed https://www.stackoverflow.com with 10 keywords with cloud storage
+2025-04-18 00:07:38,224 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 (found 10 URLs, 154412 bytes)
+2025-04-18 00:07:38,427 - Master - INFO - Received URLs from crawler 2. Queue size now: 40, Processed URLs: 10
+2025-04-18 00:07:38,430 - Master - INFO - Assigned task 12 to crawler 2 for URL: https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-18 00:07:38,534 - Master - INFO - Status from node 4: Indexed https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 with 10 keywords with cloud storage
+2025-04-18 00:07:38,638 - Master - INFO - Status from node 4: Indexed https://www.linkedin.com/company/python-software-foundation/ with 0 keywords with cloud storage
+2025-04-18 00:07:38,741 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://www.linkedin.com/company/python-software-foundation/ (found 2 URLs, 1530 bytes)
+2025-04-18 00:07:39,252 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:07:39,658 - Master - INFO - Received URLs from crawler 2. Queue size now: 44, Processed URLs: 11
+2025-04-18 00:07:39,658 - Master - INFO - Assigned task 13 to crawler 2 for URL: https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-18 00:07:39,766 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications (found 94 URLs, 136556 bytes)
+2025-04-18 00:07:40,069 - Master - INFO - Received URLs from crawler 1. Queue size now: 48, Processed URLs: 12
+2025-04-18 00:07:40,072 - Master - INFO - Assigned task 14 to crawler 1 for URL: https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-18 00:07:40,780 - Master - INFO - Received URLs from crawler 3. Queue size now: 52, Processed URLs: 13
+2025-04-18 00:07:40,783 - Master - INFO - Assigned task 15 to crawler 3 for URL: https://github.com/features/copilot
+2025-04-18 00:07:40,988 - Master - INFO - Received URLs from crawler 2. Queue size now: 56, Processed URLs: 14
+2025-04-18 00:07:40,992 - Master - INFO - Assigned task 16 to crawler 2 for URL: https://github.com/security/advanced-security
+2025-04-18 00:07:41,195 - Master - INFO - Status from node 4: Indexed https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications with 10 keywords with cloud storage
+2025-04-18 00:07:41,299 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:07:41,402 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter (found 18 URLs, 69863 bytes)
+2025-04-18 00:07:41,507 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:07:41,610 - Master - INFO - Status from node 4: Indexed https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob with 10 keywords with cloud storage
+2025-04-18 00:07:41,714 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob (found 17 URLs, 1164273 bytes)
+2025-04-18 00:07:41,816 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias (found 3371 URLs, 556608 bytes)
+2025-04-18 00:07:42,019 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:07:42,826 - Master - INFO - Received URLs from crawler 2. Queue size now: 60, Processed URLs: 15
+2025-04-18 00:07:42,829 - Master - INFO - Assigned task 17 to crawler 2 for URL: https://github.com/features/actions
+2025-04-18 00:07:43,333 - Master - INFO - Status from node 4: Indexed https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias with 10 keywords with cloud storage
+2025-04-18 00:07:43,436 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:07:43,540 - Master - INFO - Received URLs from crawler 3. Queue size now: 64, Processed URLs: 16
+2025-04-18 00:07:43,544 - Master - INFO - Assigned task 18 to crawler 3 for URL: https://github.com/features/codespaces
+2025-04-18 00:07:43,649 - Master - INFO - Status from node 4: Indexed https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter with 10 keywords with cloud storage
+2025-04-18 00:07:43,751 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://github.com/security/advanced-security (found 76 URLs, 260229 bytes)
+2025-04-18 00:07:43,854 - Master - INFO - Received URLs from crawler 1. Queue size now: 68, Processed URLs: 17
+2025-04-18 00:07:43,858 - Master - INFO - Assigned task 19 to crawler 1 for URL: https://github.com/features/issues
+2025-04-18 00:07:44,064 - Master - INFO - Status from node 4: Indexed https://github.com/security/advanced-security with 10 keywords with cloud storage
+2025-04-18 00:07:44,169 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:07:44,271 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://github.com/features/copilot (found 122 URLs, 668838 bytes)
+2025-04-18 00:07:44,912 - Master - INFO - Received URLs from crawler 2. Queue size now: 72, Processed URLs: 18
+2025-04-18 00:07:44,914 - Master - INFO - Assigned task 20 to crawler 2 for URL: https://www.reddit.com/login/
+2025-04-18 00:07:45,519 - Master - INFO - Status from node 4: Indexed https://github.com/features/copilot with 10 keywords with cloud storage
+2025-04-18 00:07:45,621 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 (found 44 URLs, 733580 bytes)
+2025-04-18 00:07:45,724 - Master - INFO - Status from node 4: Indexed https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 with 10 keywords with cloud storage
+2025-04-18 00:07:45,829 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:07:45,932 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://github.com/features/actions (found 76 URLs, 284306 bytes)
+2025-04-18 00:07:46,036 - Master - INFO - Received URLs from crawler 3. Queue size now: 76, Processed URLs: 19
+2025-04-18 00:07:46,038 - Master - INFO - Assigned task 21 to crawler 3 for URL: https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/
+2025-04-18 00:07:46,142 - Master - INFO - Status from node 4: Indexed https://github.com/features/actions with 10 keywords with cloud storage
+2025-04-18 00:07:46,246 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://github.com/features/codespaces (found 86 URLs, 333789 bytes)
+2025-04-18 00:07:46,551 - Master - INFO - Status from node 4: Indexed https://github.com/features/codespaces with 10 keywords with cloud storage
+2025-04-18 00:07:46,855 - Master - INFO - Received URLs from crawler 1. Queue size now: 75, Processed URLs: 20
+2025-04-18 00:07:46,857 - Master - INFO - Assigned task 22 to crawler 1 for URL: https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/
+2025-04-18 00:07:46,961 - Master - INFO - Crawling complete. Processed 20 URLs. Shutting down nodes...
+2025-04-18 00:07:46,963 - Master - INFO - Master node finished URL distribution. Shutting down.
+2025-04-18 00:18:16,725 - Master - INFO - Master node started with rank 0 of 5
+2025-04-18 00:18:16,725 - Master - INFO - Active Crawler Nodes: [1, 2, 3]
+2025-04-18 00:18:16,725 - Master - INFO - Indexer Node: 4
+2025-04-18 00:18:16,728 - Master - INFO - Assigned task 0 to crawler 1 for URL: https://www.python.org
+2025-04-18 00:18:16,729 - Master - INFO - Assigned task 1 to crawler 2 for URL: https://www.github.com
+2025-04-18 00:18:16,734 - Master - INFO - Assigned task 2 to crawler 3 for URL: https://www.wikipedia.org
+2025-04-18 00:18:17,362 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:18:17,595 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:18:17,799 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:18:18,408 - Master - INFO - Received URLs from crawler 1. Queue size now: 7, Processed URLs: 1
+2025-04-18 00:18:18,411 - Master - INFO - Assigned task 3 to crawler 1 for URL: https://www.reddit.com
+2025-04-18 00:18:18,513 - Master - INFO - Received URLs from crawler 3. Queue size now: 11, Processed URLs: 2
+2025-04-18 00:18:18,515 - Master - INFO - Assigned task 4 to crawler 3 for URL: https://www.stackoverflow.com
+2025-04-18 00:18:19,321 - Master - INFO - Received URLs from crawler 2. Queue size now: 15, Processed URLs: 3
+2025-04-18 00:18:19,322 - Master - INFO - Assigned task 5 to crawler 2 for URL: https://www.python.org/psf/
+2025-04-18 00:18:20,127 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:18:21,332 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:18:21,434 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://www.python.org (found 71 URLs, 50592 bytes)
+2025-04-18 00:18:23,857 - Master - INFO - Received URLs from crawler 1. Queue size now: 19, Processed URLs: 4
+2025-04-18 00:18:23,858 - Master - INFO - Assigned task 6 to crawler 1 for URL: https://docs.python.org
+2025-04-18 00:18:23,960 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:18:24,365 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:18:26,375 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:18:27,782 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:18:28,586 - Master - WARNING - Heartbeat timeout for crawler 3. Marking as failed.
+2025-04-18 00:23:28,176 - Master - INFO - Master node started with rank 0 of 5
+2025-04-18 00:23:28,176 - Master - INFO - Active Crawler Nodes: [1, 2, 3]
+2025-04-18 00:23:28,176 - Master - INFO - Indexer Node: 4
+2025-04-18 00:23:28,223 - Master - INFO - Assigned task 0 to crawler 1 for URL: https://www.python.org
+2025-04-18 00:23:28,274 - Master - INFO - Assigned task 1 to crawler 2 for URL: https://www.github.com
+2025-04-18 00:23:28,277 - Master - INFO - Assigned task 2 to crawler 3 for URL: https://www.wikipedia.org
+2025-04-18 00:23:29,163 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:23:29,386 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:23:29,645 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:23:30,157 - Master - INFO - Received URLs from crawler 1. Queue size now: 7, Processed URLs: 1
+2025-04-18 00:23:30,158 - Master - INFO - Assigned task 3 to crawler 1 for URL: https://www.reddit.com
+2025-04-18 00:23:30,260 - Master - INFO - Received URLs from crawler 3. Queue size now: 11, Processed URLs: 2
+2025-04-18 00:23:30,260 - Master - INFO - Assigned task 4 to crawler 3 for URL: https://www.stackoverflow.com
+2025-04-18 00:23:31,526 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:23:31,630 - Master - INFO - Received URLs from crawler 2. Queue size now: 15, Processed URLs: 3
+2025-04-18 00:23:31,668 - Master - INFO - Assigned task 5 to crawler 2 for URL: https://www.python.org/psf/
+2025-04-18 00:23:34,416 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:23:34,520 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://www.python.org (found 71 URLs, 50592 bytes)
+2025-04-18 00:23:35,034 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:23:37,113 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:23:37,382 - Master - INFO - Received URLs from crawler 1. Queue size now: 19, Processed URLs: 4
+2025-04-18 00:23:37,384 - Master - INFO - Assigned task 6 to crawler 1 for URL: https://docs.python.org
+2025-04-18 00:23:37,741 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:23:40,091 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:23:40,294 - Master - WARNING - Heartbeat timeout for crawler 3. Marking as failed.
+2025-04-18 00:38:03,391 - Master - INFO - Master node started with rank 0 of 5
+2025-04-18 00:38:03,391 - Master - INFO - Active Crawler Nodes: [1, 2, 3]
+2025-04-18 00:38:03,391 - Master - INFO - Indexer Node: 4
+2025-04-18 00:38:03,393 - Master - INFO - Assigned task 0 to crawler 1 for URL: https://www.python.org
+2025-04-18 00:38:03,395 - Master - INFO - Assigned task 1 to crawler 2 for URL: https://www.github.com
+2025-04-18 00:38:03,397 - Master - INFO - Assigned task 2 to crawler 3 for URL: https://www.wikipedia.org
+2025-04-18 00:38:04,012 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:38:04,217 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:38:04,419 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:38:04,823 - Master - INFO - Received URLs from crawler 3. Queue size now: 7, Processed URLs: 1
+2025-04-18 00:38:04,826 - Master - INFO - Assigned task 3 to crawler 3 for URL: https://www.reddit.com
+2025-04-18 00:38:04,928 - Master - INFO - Received URLs from crawler 1. Queue size now: 11, Processed URLs: 2
+2025-04-18 00:38:04,929 - Master - INFO - Assigned task 4 to crawler 1 for URL: https://www.stackoverflow.com
+2025-04-18 00:38:05,533 - Master - INFO - Received URLs from crawler 2. Queue size now: 15, Processed URLs: 3
+2025-04-18 00:38:05,533 - Master - INFO - Assigned task 5 to crawler 2 for URL: https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-18 00:38:06,541 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:38:06,945 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:38:07,046 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://www.wikipedia.org (found 8 URLs, 90836 bytes)
+2025-04-18 00:38:09,160 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:38:09,262 - Master - INFO - Received URLs from crawler 3. Queue size now: 19, Processed URLs: 4
+2025-04-18 00:38:09,262 - Master - INFO - Assigned task 6 to crawler 3 for URL: https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter
+2025-04-18 00:38:10,971 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:38:12,188 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:38:12,289 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://www.reddit.com (found 69 URLs, 632369 bytes)
+2025-04-18 00:38:12,392 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://www.python.org (found 71 URLs, 50679 bytes)
+2025-04-18 00:38:12,597 - Master - INFO - Status from node 4: Indexed https://www.wikipedia.org with 10 keywords with cloud storage
+2025-04-18 00:38:13,502 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:38:13,805 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:38:14,209 - Master - INFO - Received URLs from crawler 3. Queue size now: 23, Processed URLs: 5
+2025-04-18 00:38:14,213 - Master - INFO - Assigned task 7 to crawler 3 for URL: https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-18 00:38:16,025 - Master - INFO - Status from node 4: Indexed https://www.reddit.com with 10 keywords with cloud storage
+2025-04-18 00:38:16,830 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:38:17,132 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:38:17,435 - Master - INFO - Status from node 4: Indexed https://www.python.org with 10 keywords with cloud storage
+2025-04-18 00:38:17,538 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter (found 18 URLs, 69867 bytes)
+2025-04-18 00:38:17,643 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://www.github.com (found 68 URLs, 280060 bytes)
+2025-04-18 00:38:18,146 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:38:18,449 - Master - INFO - Received URLs from crawler 3. Queue size now: 27, Processed URLs: 6
+2025-04-18 00:38:18,452 - Master - INFO - Assigned task 8 to crawler 3 for URL: https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-18 00:38:19,661 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:38:19,762 - Master - INFO - Received URLs from crawler 2. Queue size now: 31, Processed URLs: 7
+2025-04-18 00:38:19,765 - Master - INFO - Assigned task 9 to crawler 2 for URL: https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-18 00:38:20,773 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:38:20,875 - Master - INFO - Status from node 4: Indexed https://www.github.com with 10 keywords with cloud storage
+2025-04-18 00:38:20,977 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:38:22,284 - Master - INFO - Status from node 4: Indexed https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter with 10 keywords with cloud storage
+2025-04-18 00:38:22,387 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias (found 3371 URLs, 556608 bytes)
+2025-04-18 00:38:22,491 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:38:23,698 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:38:24,604 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:38:24,707 - Master - INFO - Received URLs from crawler 2. Queue size now: 35, Processed URLs: 8
+2025-04-18 00:38:24,710 - Master - INFO - Assigned task 10 to crawler 2 for URL: https://www.python.org/psf/
+2025-04-18 00:38:25,315 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:38:26,523 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:38:26,826 - Master - INFO - Received URLs from crawler 1. Queue size now: 39, Processed URLs: 9
+2025-04-18 00:38:26,827 - Master - INFO - Assigned task 11 to crawler 1 for URL: https://docs.python.org
+2025-04-18 00:38:27,532 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:38:28,539 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:38:28,741 - Master - INFO - Status from node 4: Indexed https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias with 10 keywords with cloud storage
+2025-04-18 00:38:28,845 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications (found 94 URLs, 136556 bytes)
+2025-04-18 00:38:28,948 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:38:29,855 - Master - INFO - Received URLs from crawler 3. Queue size now: 43, Processed URLs: 10
+2025-04-18 00:38:29,858 - Master - INFO - Assigned task 12 to crawler 3 for URL: https://pypi.org/
+2025-04-18 00:38:30,563 - Master - INFO - Status from node 4: Indexed https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications with 10 keywords with cloud storage
+2025-04-18 00:38:30,666 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 (found 44 URLs, 733580 bytes)
+2025-04-18 00:38:31,270 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:38:32,277 - Master - INFO - Received URLs from crawler 2. Queue size now: 47, Processed URLs: 11
+2025-04-18 00:38:32,278 - Master - INFO - Assigned task 13 to crawler 2 for URL: https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 00:38:32,783 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:38:33,388 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:38:35,198 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:38:35,701 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:38:35,804 - Master - INFO - Status from node 4: Indexed https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 with 10 keywords with cloud storage
+2025-04-18 00:38:35,916 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:38:36,033 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://www.python.org/psf/ (found 56 URLs, 52287 bytes)
+2025-04-18 00:38:36,137 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://www.stackoverflow.com (found 87 URLs, 349655 bytes)
+2025-04-18 00:38:37,045 - Master - INFO - Received URLs from crawler 1. Queue size now: 51, Processed URLs: 12
+2025-04-18 00:38:37,047 - Master - INFO - Assigned task 14 to crawler 1 for URL: https://www.linkedin.com/company/python-software-foundation/
+2025-04-18 00:38:38,560 - Master - INFO - Received URLs from crawler 2. Queue size now: 55, Processed URLs: 13
+2025-04-18 00:38:38,563 - Master - INFO - Assigned task 15 to crawler 2 for URL: https://github.com/features/copilot
+2025-04-18 00:38:38,666 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:38:38,871 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:38:39,576 - Master - INFO - Status from node 4: Indexed https://www.stackoverflow.com with 10 keywords with cloud storage
+2025-04-18 00:38:39,679 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob (found 17 URLs, 1164316 bytes)
+2025-04-18 00:38:39,783 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:38:39,886 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://docs.python.org (found 52 URLs, 17704 bytes)
+2025-04-18 00:38:40,792 - Master - INFO - Received URLs from crawler 3. Queue size now: 59, Processed URLs: 14
+2025-04-18 00:38:40,795 - Master - INFO - Assigned task 16 to crawler 3 for URL: https://github.com/security/advanced-security
+2025-04-18 00:38:40,896 - Master - INFO - Received URLs from crawler 1. Queue size now: 60, Processed URLs: 15
+2025-04-18 00:38:40,899 - Master - INFO - Assigned task 17 to crawler 1 for URL: https://github.com/features/actions
+2025-04-18 00:38:41,003 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://www.linkedin.com/company/python-software-foundation/ (found 2 URLs, 1530 bytes)
+2025-04-18 00:38:42,113 - Master - INFO - Received URLs from crawler 1. Queue size now: 64, Processed URLs: 16
+2025-04-18 00:38:42,115 - Master - INFO - Assigned task 18 to crawler 1 for URL: https://github.com/features/codespaces
+2025-04-18 00:38:42,420 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:38:44,031 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:38:45,639 - Master - INFO - Status from node 4: Indexed https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob with 10 keywords with cloud storage
+2025-04-18 00:38:46,042 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:38:46,846 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:38:46,949 - Master - INFO - Status from node 4: Indexed https://www.python.org/psf/ with 10 keywords with cloud storage
+2025-04-18 00:38:47,051 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:38:47,153 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://pypi.org/ (found 26 URLs, 19849 bytes)
+2025-04-18 00:38:47,255 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 (found 10 URLs, 154412 bytes)
+2025-04-18 00:38:48,177 - Master - INFO - Received URLs from crawler 3. Queue size now: 68, Processed URLs: 17
+2025-04-18 00:38:48,178 - Master - INFO - Assigned task 19 to crawler 3 for URL: https://github.com/features/issues
+2025-04-18 00:38:48,380 - Master - INFO - Received URLs from crawler 2. Queue size now: 72, Processed URLs: 18
+2025-04-18 00:38:48,381 - Master - INFO - Assigned task 20 to crawler 2 for URL: https://www.reddit.com/login/
+2025-04-18 00:38:48,583 - Master - INFO - Status from node 4: Indexed https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 with 10 keywords with cloud storage
+2025-04-18 00:38:49,389 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:38:49,792 - Master - INFO - Status from node 4: Indexed https://docs.python.org with 10 keywords with cloud storage
+2025-04-18 00:38:49,895 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:38:50,503 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:38:51,306 - Master - INFO - Status from node 4: Indexed https://www.linkedin.com/company/python-software-foundation/ with 0 keywords with cloud storage
+2025-04-18 00:38:51,408 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://github.com/features/actions (found 76 URLs, 284306 bytes)
+2025-04-18 00:38:51,911 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:38:52,114 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:38:52,718 - Master - INFO - Received URLs from crawler 1. Queue size now: 76, Processed URLs: 19
+2025-04-18 00:38:52,721 - Master - INFO - Assigned task 21 to crawler 1 for URL: https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/
+2025-04-18 00:38:53,727 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:38:53,930 - Master - INFO - Status from node 4: Indexed https://github.com/features/actions with 10 keywords with cloud storage
+2025-04-18 00:38:55,137 - Master - INFO - Status from node 4: Indexed https://pypi.org/ with 10 keywords with cloud storage
+2025-04-18 00:38:55,240 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://github.com/features/copilot (found 122 URLs, 668813 bytes)
+2025-04-18 00:38:55,342 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:38:55,746 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:38:56,751 - Master - INFO - Received URLs from crawler 2. Queue size now: 75, Processed URLs: 20
+2025-04-18 00:38:56,753 - Master - INFO - Assigned task 22 to crawler 2 for URL: https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/
+2025-04-18 00:38:56,856 - Master - INFO - Crawling complete. Processed 20 URLs. Shutting down nodes...
+2025-04-18 00:38:56,858 - Master - INFO - Master node finished URL distribution. Shutting down.
+2025-04-18 00:44:07,221 - Master - INFO - Master node started with rank 0 of 5
+2025-04-18 00:44:07,222 - Master - INFO - Active Crawler Nodes: [1, 2, 3]
+2025-04-18 00:44:07,222 - Master - INFO - Indexer Node: 4
+2025-04-18 00:44:07,224 - Master - INFO - Assigned task 0 to crawler 1 for URL: https://www.python.org
+2025-04-18 00:44:07,225 - Master - INFO - Assigned task 1 to crawler 2 for URL: https://www.github.com
+2025-04-18 00:44:07,226 - Master - INFO - Assigned task 2 to crawler 3 for URL: https://www.wikipedia.org
+2025-04-18 00:44:07,629 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:44:07,832 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:44:08,033 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:44:08,235 - Master - INFO - Received URLs from crawler 3. Queue size now: 7, Processed URLs: 1
+2025-04-18 00:44:08,237 - Master - INFO - Assigned task 3 to crawler 3 for URL: https://www.reddit.com
+2025-04-18 00:44:08,338 - Master - INFO - Received URLs from crawler 1. Queue size now: 11, Processed URLs: 2
+2025-04-18 00:44:08,338 - Master - INFO - Assigned task 4 to crawler 1 for URL: https://www.stackoverflow.com
+2025-04-18 00:44:09,142 - Master - INFO - Received URLs from crawler 2. Queue size now: 15, Processed URLs: 3
+2025-04-18 00:44:09,144 - Master - INFO - Assigned task 5 to crawler 2 for URL: https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-18 00:44:09,748 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:44:10,352 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://www.wikipedia.org (found 8 URLs, 90836 bytes)
+2025-04-18 00:44:10,654 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:44:11,963 - Master - INFO - Received URLs from crawler 3. Queue size now: 19, Processed URLs: 4
+2025-04-18 00:44:11,963 - Master - INFO - Assigned task 6 to crawler 3 for URL: https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter
+2025-04-18 00:44:13,269 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:44:15,279 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:44:15,380 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://www.python.org (found 71 URLs, 50679 bytes)
+2025-04-18 00:44:15,482 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://www.reddit.com (found 67 URLs, 629223 bytes)
+2025-04-18 00:44:15,583 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:44:15,785 - Master - INFO - Status from node 4: Indexed https://www.wikipedia.org with 10 keywords with cloud storage
+2025-04-18 00:44:15,987 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:44:16,393 - Master - INFO - Received URLs from crawler 3. Queue size now: 23, Processed URLs: 5
+2025-04-18 00:44:16,394 - Master - INFO - Assigned task 7 to crawler 3 for URL: https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-18 00:44:16,997 - Master - INFO - Received URLs from crawler 1. Queue size now: 27, Processed URLs: 6
+2025-04-18 00:44:17,000 - Master - INFO - Assigned task 8 to crawler 1 for URL: https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-18 00:44:18,811 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:44:18,913 - Master - INFO - Status from node 4: Indexed https://www.reddit.com with 10 keywords with cloud storage
+2025-04-18 00:44:19,918 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:44:20,221 - Master - INFO - Status from node 4: Indexed https://www.python.org with 10 keywords with cloud storage
+2025-04-18 00:44:20,322 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:44:20,424 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter (found 18 URLs, 69867 bytes)
+2025-04-18 00:44:20,528 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://www.github.com (found 68 URLs, 280059 bytes)
+2025-04-18 00:44:21,133 - Master - INFO - Received URLs from crawler 3. Queue size now: 31, Processed URLs: 7
+2025-04-18 00:44:21,135 - Master - INFO - Assigned task 9 to crawler 3 for URL: https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-18 00:44:22,142 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:44:22,446 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:44:22,751 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:44:23,556 - Master - INFO - Status from node 4: Indexed https://www.github.com with 10 keywords with cloud storage
+2025-04-18 00:44:23,658 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://www.stackoverflow.com (found 87 URLs, 350418 bytes)
+2025-04-18 00:44:24,665 - Master - INFO - Received URLs from crawler 1. Queue size now: 35, Processed URLs: 8
+2025-04-18 00:44:24,667 - Master - INFO - Assigned task 10 to crawler 1 for URL: https://www.python.org/psf/
+2025-04-18 00:44:24,769 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:44:26,079 - Master - INFO - Status from node 4: Indexed https://www.stackoverflow.com with 10 keywords with cloud storage
+2025-04-18 00:44:26,182 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:44:26,888 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:44:27,493 - Master - INFO - Status from node 4: Indexed https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter with 10 keywords with cloud storage
+2025-04-18 00:44:27,596 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications (found 94 URLs, 136556 bytes)
+2025-04-18 00:44:29,204 - Master - INFO - Status from node 4: Indexed https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications with 10 keywords with cloud storage
+2025-04-18 00:44:29,311 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob (found 17 URLs, 1164272 bytes)
+2025-04-18 00:44:29,414 - Master - INFO - Received URLs from crawler 3. Queue size now: 39, Processed URLs: 9
+2025-04-18 00:44:29,423 - Master - INFO - Assigned task 11 to crawler 3 for URL: https://docs.python.org
+2025-04-18 00:44:29,530 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:44:30,033 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:44:31,040 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:44:31,545 - Master - INFO - Received URLs from crawler 1. Queue size now: 43, Processed URLs: 10
+2025-04-18 00:44:31,546 - Master - INFO - Assigned task 12 to crawler 1 for URL: https://pypi.org/
+2025-04-18 00:44:32,954 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:44:33,558 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:44:35,568 - Master - INFO - Received URLs from crawler 2. Queue size now: 47, Processed URLs: 11
+2025-04-18 00:44:35,570 - Master - INFO - Assigned task 13 to crawler 2 for URL: https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 00:44:37,077 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:44:38,484 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:44:39,288 - Master - INFO - Status from node 4: Indexed https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob with 10 keywords with cloud storage
+2025-04-18 00:44:39,392 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:44:39,494 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://www.python.org/psf/ (found 56 URLs, 52287 bytes)
+2025-04-18 00:44:39,597 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias (found 3371 URLs, 556612 bytes)
+2025-04-18 00:44:40,904 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:44:41,007 - Master - INFO - Received URLs from crawler 1. Queue size now: 51, Processed URLs: 12
+2025-04-18 00:44:41,008 - Master - INFO - Assigned task 14 to crawler 1 for URL: https://www.linkedin.com/company/python-software-foundation/
+2025-04-18 00:44:42,115 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:44:42,317 - Master - INFO - Received URLs from crawler 2. Queue size now: 55, Processed URLs: 13
+2025-04-18 00:44:42,320 - Master - INFO - Assigned task 15 to crawler 2 for URL: https://github.com/features/copilot
+2025-04-18 00:44:45,035 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:44:45,437 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:44:48,655 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:44:49,962 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:44:50,767 - Master - INFO - Status from node 4: Indexed https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias with 10 keywords with cloud storage
+2025-04-18 00:44:51,071 - Master - WARNING - Heartbeat timeout for crawler 1. Marking as failed.
+2025-04-18 00:44:51,072 - Master - WARNING - No available crawler nodes found. Waiting for nodes to become available.
+2025-04-18 00:44:51,172 - Master - WARNING - No available crawler nodes found. Waiting for nodes to become available.
+2025-04-18 00:44:51,273 - Master - WARNING - No available crawler nodes found. Waiting for nodes to become available.
+2025-04-18 00:44:51,374 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:44:51,375 - Master - WARNING - No available crawler nodes found. Waiting for nodes to become available.
+2025-04-18 00:44:51,476 - Master - WARNING - No available crawler nodes found. Waiting for nodes to become available.
+2025-04-18 00:44:51,577 - Master - WARNING - No available crawler nodes found. Waiting for nodes to become available.
+2025-04-18 00:44:51,678 - Master - WARNING - No available crawler nodes found. Waiting for nodes to become available.
+2025-04-18 00:44:51,778 - Master - WARNING - No available crawler nodes found. Waiting for nodes to become available.
+2025-04-18 00:44:51,879 - Master - WARNING - No available crawler nodes found. Waiting for nodes to become available.
+2025-04-18 00:44:51,980 - Master - WARNING - No available crawler nodes found. Waiting for nodes to become available.
+2025-04-18 00:44:52,080 - Master - INFO - Status from node 4: Indexed https://www.python.org/psf/ with 10 keywords with cloud storage
+2025-04-18 00:44:52,081 - Master - WARNING - No available crawler nodes found. Waiting for nodes to become available.
+2025-04-18 00:44:52,182 - Master - INFO - Crawler 1 is back online.
+2025-04-18 00:44:52,182 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:44:52,183 - Master - INFO - Assigned task 16 to crawler 1 for URL: https://github.com/security/advanced-security
+2025-04-18 00:44:52,285 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://pypi.org/ (found 26 URLs, 19849 bytes)
+2025-04-18 00:44:52,387 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 (found 10 URLs, 154411 bytes)
+2025-04-18 00:44:53,493 - Master - INFO - Received URLs from crawler 2. Queue size now: 59, Processed URLs: 14
+2025-04-18 00:44:53,496 - Master - INFO - Assigned task 17 to crawler 2 for URL: https://github.com/features/actions
+2025-04-18 00:44:53,901 - Master - INFO - Status from node 4: Indexed https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 with 10 keywords with cloud storage
+2025-04-18 00:44:54,307 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:44:55,114 - Master - INFO - Status from node 4: Indexed https://pypi.org/ with 10 keywords with cloud storage
+2025-04-18 00:44:55,216 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 (found 44 URLs, 733580 bytes)
+2025-04-18 00:44:55,721 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:44:55,923 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:44:56,027 - Master - INFO - Received URLs from crawler 3. Queue size now: 63, Processed URLs: 15
+2025-04-18 00:44:56,030 - Master - INFO - Assigned task 18 to crawler 3 for URL: https://github.com/features/codespaces
+2025-04-18 00:44:59,047 - Master - INFO - Status from node 4: Indexed https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 with 10 keywords with cloud storage
+2025-04-18 00:44:59,148 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:44:59,251 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://docs.python.org (found 52 URLs, 17704 bytes)
+2025-04-18 00:44:59,353 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://github.com/features/copilot (found 122 URLs, 668812 bytes)
+2025-04-18 00:44:59,457 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:44:59,561 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:45:00,471 - Master - INFO - Received URLs from crawler 3. Queue size now: 67, Processed URLs: 16
+2025-04-18 00:45:00,474 - Master - INFO - Assigned task 19 to crawler 3 for URL: https://github.com/features/issues
+2025-04-18 00:45:00,578 - Master - INFO - Received URLs from crawler 2. Queue size now: 71, Processed URLs: 17
+2025-04-18 00:45:00,579 - Master - INFO - Assigned task 20 to crawler 2 for URL: https://www.reddit.com/login/
+2025-04-18 00:45:03,190 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:45:03,596 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 00:45:03,906 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:45:04,009 - Master - INFO - Status from node 4: Indexed https://github.com/features/copilot with 10 keywords with cloud storage
+2025-04-18 00:45:05,016 - Master - INFO - Received URLs from crawler 1. Queue size now: 72, Processed URLs: 18
+2025-04-18 00:45:05,022 - Master - INFO - Assigned task 21 to crawler 1 for URL: https://www.redditinc.com/policies/content-policy
+2025-04-18 00:45:05,127 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://www.linkedin.com/company/python-software-foundation/ (found 2 URLs, 1530 bytes)
+2025-04-18 00:45:05,229 - Master - INFO - Status from node 4: Indexed https://docs.python.org with 10 keywords with cloud storage
+2025-04-18 00:45:05,332 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://github.com/features/actions (found 76 URLs, 284305 bytes)
+2025-04-18 00:45:05,938 - Master - INFO - Received URLs from crawler 1. Queue size now: 76, Processed URLs: 19
+2025-04-18 00:45:05,939 - Master - INFO - Assigned task 22 to crawler 1 for URL: https://www.reddit.com/policies/privacy-policy
+2025-04-18 00:45:06,544 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 00:45:07,148 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 00:45:07,250 - Master - INFO - Received URLs from crawler 2. Queue size now: 75, Processed URLs: 20
+2025-04-18 00:45:07,253 - Master - INFO - Assigned task 23 to crawler 2 for URL: https://www.redditinc.com/policies/user-agreement
+2025-04-18 00:45:07,357 - Master - INFO - Crawling complete. Processed 20 URLs. Shutting down nodes...
+2025-04-18 00:45:07,360 - Master - INFO - Master node finished URL distribution. Shutting down.
+2025-04-18 23:08:44,027 - Master - INFO - Master node started with rank 0 of 5
+2025-04-18 23:08:44,027 - Master - INFO - Active Crawler Nodes: [1, 2, 3]
+2025-04-18 23:08:44,027 - Master - INFO - Indexer Node: 4
+2025-04-18 23:08:44,030 - Master - INFO - Assigned task 0 to crawler 1 for URL: https://www.python.org
+2025-04-18 23:08:44,031 - Master - INFO - Assigned task 1 to crawler 2 for URL: https://www.github.com
+2025-04-18 23:08:44,035 - Master - INFO - Assigned task 2 to crawler 3 for URL: https://www.wikipedia.org
+2025-04-18 23:08:44,525 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 23:08:44,729 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 23:08:44,932 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 23:08:45,235 - Master - INFO - Received URLs from crawler 3. Queue size now: 7, Processed URLs: 1
+2025-04-18 23:08:45,236 - Master - INFO - Assigned task 3 to crawler 3 for URL: https://www.reddit.com
+2025-04-18 23:08:45,337 - Master - INFO - Received URLs from crawler 1. Queue size now: 11, Processed URLs: 2
+2025-04-18 23:08:45,338 - Master - INFO - Assigned task 4 to crawler 1 for URL: https://www.stackoverflow.com
+2025-04-18 23:08:45,841 - Master - INFO - Received URLs from crawler 2. Queue size now: 15, Processed URLs: 3
+2025-04-18 23:08:45,842 - Master - INFO - Assigned task 5 to crawler 2 for URL: https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-18 23:08:47,350 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 23:08:47,452 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://www.wikipedia.org (found 8 URLs, 90836 bytes)
+2025-04-18 23:08:48,356 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 23:08:49,161 - Master - INFO - Received URLs from crawler 3. Queue size now: 19, Processed URLs: 4
+2025-04-18 23:08:49,162 - Master - INFO - Assigned task 6 to crawler 3 for URL: https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter
+2025-04-18 23:08:50,769 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 23:08:50,971 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 23:08:51,474 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 23:08:51,576 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://www.reddit.com (found 73 URLs, 648322 bytes)
+2025-04-18 23:08:51,678 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://www.python.org (found 71 URLs, 50745 bytes)
+2025-04-18 23:08:51,880 - Master - INFO - Status from node 4: Indexed https://www.wikipedia.org with 10 keywords with cloud storage
+2025-04-18 23:08:53,187 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 23:08:54,294 - Master - INFO - Received URLs from crawler 3. Queue size now: 23, Processed URLs: 5
+2025-04-18 23:08:54,296 - Master - INFO - Assigned task 7 to crawler 3 for URL: https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-18 23:08:54,399 - Master - INFO - Received URLs from crawler 1. Queue size now: 27, Processed URLs: 6
+2025-04-18 23:08:54,400 - Master - INFO - Assigned task 8 to crawler 1 for URL: https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-18 23:08:54,802 - Master - INFO - Status from node 4: Indexed https://www.reddit.com with 10 keywords with cloud storage
+2025-04-18 23:08:54,905 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 23:08:55,911 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 23:08:56,116 - Master - INFO - Status from node 4: Indexed https://www.python.org with 10 keywords with cloud storage
+2025-04-18 23:08:56,217 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://www.github.com (found 68 URLs, 281248 bytes)
+2025-04-18 23:08:56,319 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 23:08:56,421 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter (found 18 URLs, 69867 bytes)
+2025-04-18 23:08:57,329 - Master - INFO - Received URLs from crawler 3. Queue size now: 31, Processed URLs: 7
+2025-04-18 23:08:57,332 - Master - INFO - Assigned task 9 to crawler 3 for URL: https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-18 23:08:58,137 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 23:08:58,641 - Master - INFO - Received URLs from crawler 2. Queue size now: 35, Processed URLs: 8
+2025-04-18 23:08:58,642 - Master - INFO - Assigned task 10 to crawler 2 for URL: https://www.python.org/psf/
+2025-04-18 23:08:58,744 - Master - INFO - Status from node 4: Indexed https://www.github.com with 10 keywords with cloud storage
+2025-04-18 23:08:58,847 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://www.stackoverflow.com (found 87 URLs, 357009 bytes)
+2025-04-18 23:08:59,050 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 23:08:59,354 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 23:09:00,259 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 23:09:00,363 - Master - INFO - Received URLs from crawler 1. Queue size now: 39, Processed URLs: 9
+2025-04-18 23:09:00,366 - Master - INFO - Assigned task 11 to crawler 1 for URL: https://docs.python.org
+2025-04-18 23:09:01,272 - Master - INFO - Status from node 4: Indexed https://www.stackoverflow.com with 10 keywords with cloud storage
+2025-04-18 23:09:02,478 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 23:09:02,580 - Master - INFO - Status from node 4: Indexed https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter with 10 keywords with cloud storage
+2025-04-18 23:09:02,684 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias (found 3371 URLs, 556619 bytes)
+2025-04-18 23:09:03,389 - Master - INFO - Received URLs from crawler 2. Queue size now: 43, Processed URLs: 10
+2025-04-18 23:09:03,391 - Master - INFO - Assigned task 12 to crawler 2 for URL: https://pypi.org/
+2025-04-18 23:09:03,495 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 23:09:03,798 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 23:09:06,413 - Master - INFO - Status from node 4: Indexed https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias with 10 keywords with cloud storage
+2025-04-18 23:09:06,515 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 23:09:06,617 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://www.python.org/psf/ (found 56 URLs, 52283 bytes)
+2025-04-18 23:09:06,719 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications (found 94 URLs, 136664 bytes)
+2025-04-18 23:09:07,022 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 23:09:07,224 - Master - INFO - Received URLs from crawler 2. Queue size now: 47, Processed URLs: 11
+2025-04-18 23:09:07,226 - Master - INFO - Assigned task 13 to crawler 2 for URL: https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 23:09:08,133 - Master - INFO - Status from node 4: Indexed https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications with 10 keywords with cloud storage
+2025-04-18 23:09:08,236 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://pypi.org/ (found 26 URLs, 19849 bytes)
+2025-04-18 23:09:08,337 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 23:09:08,439 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob (found 17 URLs, 1164469 bytes)
+2025-04-18 23:09:09,244 - Master - INFO - Received URLs from crawler 1. Queue size now: 51, Processed URLs: 12
+2025-04-18 23:09:09,246 - Master - INFO - Assigned task 14 to crawler 1 for URL: https://www.linkedin.com/company/python-software-foundation/
+2025-04-18 23:09:09,549 - Master - INFO - Received URLs from crawler 3. Queue size now: 55, Processed URLs: 13
+2025-04-18 23:09:09,550 - Master - INFO - Assigned task 15 to crawler 3 for URL: https://github.com/features/copilot
+2025-04-18 23:09:10,557 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 23:09:10,668 - Master - INFO - Received URLs from crawler 2. Queue size now: 59, Processed URLs: 14
+2025-04-18 23:09:10,672 - Master - INFO - Assigned task 16 to crawler 2 for URL: https://github.com/security/advanced-security
+2025-04-18 23:09:11,780 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 23:09:12,885 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 23:09:14,294 - Master - INFO - Status from node 4: Indexed https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob with 10 keywords with cloud storage
+2025-04-18 23:09:14,399 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 23:09:16,711 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 23:09:17,316 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 23:09:18,422 - Master - INFO - Status from node 4: Indexed https://www.python.org/psf/ with 10 keywords with cloud storage
+2025-04-18 23:09:19,327 - Master - WARNING - Heartbeat timeout for crawler 1. Marking as failed.
+2025-04-18 23:09:19,329 - Master - WARNING - No available crawler nodes found. Waiting for nodes to become available.
+2025-04-18 23:09:19,430 - Master - WARNING - No available crawler nodes found. Waiting for nodes to become available.
+2025-04-18 23:09:19,530 - Master - WARNING - No available crawler nodes found. Waiting for nodes to become available.
+2025-04-18 23:09:19,632 - Master - WARNING - No available crawler nodes found. Waiting for nodes to become available.
+2025-04-18 23:09:19,732 - Master - WARNING - No available crawler nodes found. Waiting for nodes to become available.
+2025-04-18 23:09:19,832 - Master - WARNING - No available crawler nodes found. Waiting for nodes to become available.
+2025-04-18 23:09:19,933 - Master - WARNING - No available crawler nodes found. Waiting for nodes to become available.
+2025-04-18 23:09:20,034 - Master - WARNING - No available crawler nodes found. Waiting for nodes to become available.
+2025-04-18 23:09:20,134 - Master - WARNING - No available crawler nodes found. Waiting for nodes to become available.
+2025-04-18 23:09:20,234 - Master - WARNING - No available crawler nodes found. Waiting for nodes to become available.
+2025-04-18 23:09:20,335 - Master - WARNING - No available crawler nodes found. Waiting for nodes to become available.
+2025-04-18 23:09:20,436 - Master - WARNING - No available crawler nodes found. Waiting for nodes to become available.
+2025-04-18 23:09:20,536 - Master - WARNING - No available crawler nodes found. Waiting for nodes to become available.
+2025-04-18 23:09:20,637 - Master - WARNING - No available crawler nodes found. Waiting for nodes to become available.
+2025-04-18 23:09:20,738 - Master - WARNING - No available crawler nodes found. Waiting for nodes to become available.
+2025-04-18 23:09:20,838 - Master - WARNING - No available crawler nodes found. Waiting for nodes to become available.
+2025-04-18 23:09:20,939 - Master - WARNING - No available crawler nodes found. Waiting for nodes to become available.
+2025-04-18 23:09:21,039 - Master - INFO - Status from node 4: Indexed https://pypi.org/ with 10 keywords with cloud storage
+2025-04-18 23:09:21,042 - Master - WARNING - No available crawler nodes found. Waiting for nodes to become available.
+2025-04-18 23:09:21,143 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 (found 10 URLs, 154412 bytes)
+2025-04-18 23:09:21,146 - Master - WARNING - No available crawler nodes found. Waiting for nodes to become available.
+2025-04-18 23:09:21,246 - Master - INFO - Crawler 1 is back online.
+2025-04-18 23:09:21,246 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 23:09:21,248 - Master - INFO - Assigned task 17 to crawler 1 for URL: https://github.com/features/actions
+2025-04-18 23:09:21,351 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 23:09:21,453 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://docs.python.org (found 52 URLs, 17619 bytes)
+2025-04-18 23:09:21,656 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 23:09:22,264 - Master - INFO - Received URLs from crawler 2. Queue size now: 63, Processed URLs: 15
+2025-04-18 23:09:22,266 - Master - INFO - Assigned task 18 to crawler 2 for URL: https://github.com/features/codespaces
+2025-04-18 23:09:22,871 - Master - INFO - Status from node 4: Indexed https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 with 10 keywords with cloud storage
+2025-04-18 23:09:23,677 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 23:09:24,183 - Master - INFO - Status from node 4: Indexed https://docs.python.org with 10 keywords with cloud storage
+2025-04-18 23:09:24,286 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://github.com/security/advanced-security (found 76 URLs, 261419 bytes)
+2025-04-18 23:09:25,393 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 23:09:25,495 - Master - INFO - Received URLs from crawler 2. Queue size now: 67, Processed URLs: 16
+2025-04-18 23:09:25,499 - Master - INFO - Assigned task 19 to crawler 2 for URL: https://github.com/features/issues
+2025-04-18 23:09:25,804 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 23:09:25,906 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 23:09:26,712 - Master - INFO - Status from node 4: Indexed https://github.com/security/advanced-security with 10 keywords with cloud storage
+2025-04-18 23:09:26,814 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 (found 44 URLs, 734036 bytes)
+2025-04-18 23:09:28,761 - Master - INFO - Received URLs from crawler 3. Queue size now: 71, Processed URLs: 17
+2025-04-18 23:09:28,763 - Master - INFO - Assigned task 20 to crawler 3 for URL: https://www.reddit.com/login/
+2025-04-18 23:09:28,865 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 23:09:29,772 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 23:09:30,383 - Master - INFO - Status from node 4: Indexed https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 with 10 keywords with cloud storage
+2025-04-18 23:09:30,485 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://github.com/features/codespaces (found 86 URLs, 334978 bytes)
+2025-04-18 23:09:30,587 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 23:09:31,796 - Master - INFO - Received URLs from crawler 2. Queue size now: 75, Processed URLs: 18
+2025-04-18 23:09:31,799 - Master - INFO - Assigned task 21 to crawler 2 for URL: http://news.reddit.com
+2025-04-18 23:09:32,605 - Master - INFO - Status from node 4: Indexed https://github.com/features/codespaces with 10 keywords with cloud storage
+2025-04-18 23:09:32,708 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 23:09:32,810 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://github.com/features/copilot (found 122 URLs, 670028 bytes)
+2025-04-18 23:09:33,314 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 23:09:33,617 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 23:09:34,223 - Master - INFO - Received URLs from crawler 1. Queue size now: 76, Processed URLs: 19
+2025-04-18 23:09:34,225 - Master - INFO - Assigned task 22 to crawler 1 for URL: http://news.reddit.com
+2025-04-18 23:09:34,328 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://www.linkedin.com/company/python-software-foundation/ (found 2 URLs, 1530 bytes)
+2025-04-18 23:09:34,832 - Master - INFO - Received URLs from crawler 3. Queue size now: 75, Processed URLs: 20
+2025-04-18 23:09:34,834 - Master - INFO - Assigned task 23 to crawler 3 for URL: https://abcnews.go.com/US/judge-blocks-administration-deporting-noncitizens-3rd-countries-due/story?id=120951918
+2025-04-18 23:09:34,936 - Master - INFO - Crawling complete. Processed 20 URLs. Shutting down nodes...
+2025-04-18 23:09:34,937 - Master - INFO - Master node finished URL distribution. Shutting down.
+2025-04-18 23:21:42,392 - Master - INFO - Master node started with rank 0 of 5
+2025-04-18 23:21:42,393 - Master - INFO - Active Crawler Nodes: [1, 2, 3]
+2025-04-18 23:21:42,393 - Master - INFO - Indexer Node: 4
+2025-04-18 23:21:42,394 - Master - INFO - Assigned task 0 to crawler 1 for URL: https://www.python.org
+2025-04-18 23:21:42,397 - Master - INFO - Assigned task 1 to crawler 2 for URL: https://www.github.com
+2025-04-18 23:21:42,399 - Master - INFO - Assigned task 2 to crawler 3 for URL: https://www.wikipedia.org
+2025-04-18 23:21:42,815 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 23:21:43,022 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 23:21:43,225 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 23:21:43,526 - Master - INFO - Received URLs from crawler 3. Queue size now: 7, Processed URLs: 1
+2025-04-18 23:21:43,528 - Master - INFO - Assigned task 3 to crawler 3 for URL: https://www.reddit.com
+2025-04-18 23:21:43,629 - Master - INFO - Received URLs from crawler 1. Queue size now: 11, Processed URLs: 2
+2025-04-18 23:21:43,631 - Master - INFO - Assigned task 4 to crawler 1 for URL: https://www.stackoverflow.com
+2025-04-18 23:21:44,135 - Master - INFO - Received URLs from crawler 2. Queue size now: 15, Processed URLs: 3
+2025-04-18 23:21:44,136 - Master - INFO - Assigned task 5 to crawler 2 for URL: https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-18 23:21:46,046 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 23:21:46,147 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://www.wikipedia.org (found 8 URLs, 90836 bytes)
+2025-04-18 23:21:46,349 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 23:21:47,756 - Master - INFO - Received URLs from crawler 3. Queue size now: 19, Processed URLs: 4
+2025-04-18 23:21:47,757 - Master - INFO - Assigned task 6 to crawler 3 for URL: https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter
+2025-04-18 23:21:49,870 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 23:21:50,173 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 23:21:50,274 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://www.reddit.com (found 69 URLs, 645334 bytes)
+2025-04-18 23:21:50,376 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://www.python.org (found 71 URLs, 50745 bytes)
+2025-04-18 23:21:50,578 - Master - INFO - Status from node 4: Indexed https://www.wikipedia.org with 10 keywords with cloud storage
+2025-04-18 23:21:50,780 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 23:21:52,789 - Master - INFO - Received URLs from crawler 3. Queue size now: 23, Processed URLs: 5
+2025-04-18 23:21:52,790 - Master - INFO - Assigned task 7 to crawler 3 for URL: https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-18 23:21:52,992 - Master - INFO - Received URLs from crawler 1. Queue size now: 27, Processed URLs: 6
+2025-04-18 23:21:52,994 - Master - INFO - Assigned task 8 to crawler 1 for URL: https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-18 23:21:53,901 - Master - INFO - Status from node 4: Indexed https://www.reddit.com with 10 keywords with cloud storage
+2025-04-18 23:21:54,506 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 23:21:55,110 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 23:21:55,715 - Master - INFO - Status from node 4: Indexed https://www.python.org with 10 keywords with cloud storage
+2025-04-18 23:21:55,816 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 23:21:55,919 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter (found 18 URLs, 69867 bytes)
+2025-04-18 23:21:56,031 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://www.github.com (found 68 URLs, 281252 bytes)
+2025-04-18 23:21:56,535 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 23:21:56,838 - Master - INFO - Received URLs from crawler 3. Queue size now: 31, Processed URLs: 7
+2025-04-18 23:21:56,839 - Master - INFO - Assigned task 9 to crawler 3 for URL: https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-18 23:21:58,045 - Master - INFO - Received URLs from crawler 2. Queue size now: 35, Processed URLs: 8
+2025-04-18 23:21:58,047 - Master - INFO - Assigned task 10 to crawler 2 for URL: https://www.python.org/psf/
+2025-04-18 23:21:58,250 - Master - INFO - Status from node 4: Indexed https://www.github.com with 10 keywords with cloud storage
+2025-04-18 23:21:58,353 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://www.stackoverflow.com (found 87 URLs, 355025 bytes)
+2025-04-18 23:21:58,958 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 23:21:59,263 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 23:21:59,666 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 23:21:59,769 - Master - INFO - Received URLs from crawler 1. Queue size now: 39, Processed URLs: 9
+2025-04-18 23:21:59,771 - Master - INFO - Assigned task 11 to crawler 1 for URL: https://docs.python.org
+2025-04-18 23:22:01,187 - Master - INFO - Status from node 4: Indexed https://www.stackoverflow.com with 10 keywords with cloud storage
+2025-04-18 23:22:01,390 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 23:22:01,793 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 23:22:01,896 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 23:22:02,602 - Master - INFO - Status from node 4: Indexed https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter with 10 keywords with cloud storage
+2025-04-18 23:22:02,704 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias (found 3371 URLs, 556619 bytes)
+2025-04-18 23:22:03,408 - Master - INFO - Received URLs from crawler 2. Queue size now: 43, Processed URLs: 10
+2025-04-18 23:22:03,409 - Master - INFO - Assigned task 12 to crawler 2 for URL: https://pypi.org/
+2025-04-18 23:22:05,124 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 23:22:06,732 - Master - INFO - Status from node 4: Indexed https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias with 10 keywords with cloud storage
+2025-04-18 23:22:06,836 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications (found 94 URLs, 136664 bytes)
+2025-04-18 23:22:06,941 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 23:22:07,043 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://www.python.org/psf/ (found 56 URLs, 52283 bytes)
+2025-04-18 23:22:07,145 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 23:22:07,247 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 23:22:07,651 - Master - INFO - Received URLs from crawler 2. Queue size now: 47, Processed URLs: 11
+2025-04-18 23:22:07,654 - Master - INFO - Assigned task 13 to crawler 2 for URL: https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 23:22:08,763 - Master - INFO - Received URLs from crawler 3. Queue size now: 51, Processed URLs: 12
+2025-04-18 23:22:08,764 - Master - INFO - Assigned task 14 to crawler 3 for URL: https://www.linkedin.com/company/python-software-foundation/
+2025-04-18 23:22:09,067 - Master - INFO - Status from node 4: Indexed https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications with 10 keywords with cloud storage
+2025-04-18 23:22:09,169 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://pypi.org/ (found 26 URLs, 19849 bytes)
+2025-04-18 23:22:09,271 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob (found 17 URLs, 1164430 bytes)
+2025-04-18 23:22:09,372 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 23:22:09,775 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 23:22:10,380 - Master - INFO - Received URLs from crawler 1. Queue size now: 55, Processed URLs: 13
+2025-04-18 23:22:10,382 - Master - INFO - Assigned task 15 to crawler 1 for URL: https://github.com/features/copilot
+2025-04-18 23:22:11,689 - Master - INFO - Received URLs from crawler 2. Queue size now: 59, Processed URLs: 14
+2025-04-18 23:22:11,690 - Master - INFO - Assigned task 16 to crawler 2 for URL: https://github.com/security/advanced-security
+2025-04-18 23:22:12,396 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 23:22:13,604 - Master - INFO - Status from node 4: Indexed https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob with 10 keywords with cloud storage
+2025-04-18 23:22:14,208 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 23:22:14,912 - Master - INFO - Status from node 4: Indexed https://www.python.org/psf/ with 10 keywords with cloud storage
+2025-04-18 23:22:16,118 - Master - INFO - Status from node 4: Indexed https://pypi.org/ with 10 keywords with cloud storage
+2025-04-18 23:22:16,220 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 (found 10 URLs, 154411 bytes)
+2025-04-18 23:22:16,322 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 23:22:16,425 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 23:22:16,527 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://docs.python.org (found 52 URLs, 17619 bytes)
+2025-04-18 23:22:17,233 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 23:22:17,436 - Master - INFO - Received URLs from crawler 2. Queue size now: 63, Processed URLs: 15
+2025-04-18 23:22:17,437 - Master - INFO - Assigned task 17 to crawler 2 for URL: https://github.com/features/actions
+2025-04-18 23:22:17,539 - Master - INFO - Received URLs from crawler 1. Queue size now: 67, Processed URLs: 16
+2025-04-18 23:22:17,542 - Master - INFO - Assigned task 18 to crawler 1 for URL: https://github.com/features/codespaces
+2025-04-18 23:22:17,845 - Master - INFO - Status from node 4: Indexed https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 with 10 keywords with cloud storage
+2025-04-18 23:22:18,851 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 23:22:19,156 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 23:22:19,560 - Master - INFO - Status from node 4: Indexed https://docs.python.org with 10 keywords with cloud storage
+2025-04-18 23:22:19,663 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 (found 44 URLs, 734200 bytes)
+2025-04-18 23:25:06,629 - Master - INFO - Master node started with rank 0 of 5
+2025-04-18 23:25:06,629 - Master - INFO - Active Crawler Nodes: [1, 2, 3]
+2025-04-18 23:25:06,630 - Master - INFO - Indexer Node: 4
+2025-04-18 23:25:06,631 - Master - INFO - Assigned task 0 to crawler 1 for URL: https://www.python.org
+2025-04-18 23:25:06,632 - Master - INFO - Assigned task 1 to crawler 2 for URL: https://www.github.com
+2025-04-18 23:25:06,633 - Master - INFO - Assigned task 2 to crawler 3 for URL: https://www.wikipedia.org
+2025-04-18 23:25:07,049 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 23:25:07,257 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 23:25:07,497 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 23:25:07,901 - Master - INFO - Received URLs from crawler 3. Queue size now: 7, Processed URLs: 1
+2025-04-18 23:25:07,902 - Master - INFO - Assigned task 3 to crawler 3 for URL: https://www.reddit.com
+2025-04-18 23:25:08,109 - Master - INFO - Received URLs from crawler 1. Queue size now: 11, Processed URLs: 2
+2025-04-18 23:25:08,110 - Master - INFO - Assigned task 4 to crawler 1 for URL: https://www.stackoverflow.com
+2025-04-18 23:25:08,512 - Master - INFO - Received URLs from crawler 2. Queue size now: 15, Processed URLs: 3
+2025-04-18 23:25:08,513 - Master - INFO - Assigned task 5 to crawler 2 for URL: https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-18 23:25:09,819 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://www.wikipedia.org (found 8 URLs, 90836 bytes)
+2025-04-18 23:25:10,223 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 23:25:11,628 - Master - INFO - Received URLs from crawler 3. Queue size now: 19, Processed URLs: 4
+2025-04-18 23:25:11,629 - Master - INFO - Assigned task 6 to crawler 3 for URL: https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter
+2025-04-18 23:25:11,831 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 23:25:13,842 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 23:25:13,943 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://www.reddit.com (found 72 URLs, 640008 bytes)
+2025-04-18 23:25:14,045 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://www.python.org (found 71 URLs, 50745 bytes)
+2025-04-18 23:25:14,247 - Master - INFO - Status from node 4: Indexed https://www.wikipedia.org with 10 keywords with cloud storage
+2025-04-18 23:25:14,851 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 23:25:15,957 - Master - INFO - Received URLs from crawler 3. Queue size now: 23, Processed URLs: 5
+2025-04-18 23:25:15,958 - Master - INFO - Assigned task 7 to crawler 3 for URL: https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-18 23:25:17,665 - Master - INFO - Status from node 4: Indexed https://www.reddit.com with 10 keywords with cloud storage
+2025-04-18 23:25:18,570 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 23:25:18,973 - Master - INFO - Status from node 4: Indexed https://www.python.org with 10 keywords with cloud storage
+2025-04-18 23:25:19,075 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 23:25:19,177 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter (found 18 URLs, 69859 bytes)
+2025-04-18 23:25:19,278 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://www.github.com (found 68 URLs, 281226 bytes)
+2025-04-18 23:25:19,781 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 23:25:19,985 - Master - INFO - Received URLs from crawler 3. Queue size now: 27, Processed URLs: 6
+2025-04-18 23:25:19,985 - Master - INFO - Assigned task 8 to crawler 3 for URL: https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-18 23:25:21,093 - Master - INFO - Status from node 4: Indexed https://www.github.com with 10 keywords with cloud storage
+2025-04-18 23:25:21,196 - Master - INFO - Received URLs from crawler 2. Queue size now: 31, Processed URLs: 7
+2025-04-18 23:25:21,199 - Master - INFO - Assigned task 9 to crawler 2 for URL: https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-18 23:25:22,808 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 23:25:23,111 - Master - INFO - Status from node 4: Indexed https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter with 10 keywords with cloud storage
+2025-04-18 23:25:23,214 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias (found 3371 URLs, 556619 bytes)
+2025-04-18 23:25:23,416 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 23:25:24,120 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 23:25:25,747 - Master - INFO - Received URLs from crawler 2. Queue size now: 35, Processed URLs: 8
+2025-04-18 23:25:25,750 - Master - INFO - Assigned task 10 to crawler 2 for URL: https://www.python.org/psf/
+2025-04-18 23:25:26,356 - Master - INFO - Received URLs from crawler 1. Queue size now: 39, Processed URLs: 9
+2025-04-18 23:25:26,357 - Master - INFO - Assigned task 11 to crawler 1 for URL: https://docs.python.org
+2025-04-18 23:25:26,961 - Master - INFO - Status from node 4: Indexed https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias with 10 keywords with cloud storage
+2025-04-18 23:25:27,064 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications (found 94 URLs, 136664 bytes)
+2025-04-18 23:25:27,276 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 23:25:27,580 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 23:25:27,985 - Master - INFO - Received URLs from crawler 3. Queue size now: 43, Processed URLs: 10
+2025-04-18 23:25:27,987 - Master - INFO - Assigned task 12 to crawler 3 for URL: https://pypi.org/
+2025-04-18 23:25:28,292 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 23:25:29,899 - Master - INFO - Status from node 4: Indexed https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications with 10 keywords with cloud storage
+2025-04-18 23:25:30,002 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 (found 44 URLs, 734200 bytes)
+2025-04-18 23:25:30,706 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 23:25:31,209 - Master - INFO - Received URLs from crawler 2. Queue size now: 47, Processed URLs: 11
+2025-04-18 23:25:31,210 - Master - INFO - Assigned task 13 to crawler 2 for URL: https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 23:25:31,313 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 23:25:33,221 - Master - INFO - Status from node 4: Indexed https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 with 10 keywords with cloud storage
+2025-04-18 23:25:33,323 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 23:25:33,425 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://www.python.org/psf/ (found 56 URLs, 52283 bytes)
+2025-04-18 23:25:33,527 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://www.stackoverflow.com (found 87 URLs, 356209 bytes)
+2025-04-18 23:25:33,729 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 23:25:34,333 - Master - INFO - Received URLs from crawler 1. Queue size now: 51, Processed URLs: 12
+2025-04-18 23:25:34,336 - Master - INFO - Assigned task 14 to crawler 1 for URL: https://www.linkedin.com/company/python-software-foundation/
+2025-04-18 23:25:35,543 - Master - INFO - Received URLs from crawler 2. Queue size now: 55, Processed URLs: 13
+2025-04-18 23:25:35,544 - Master - INFO - Assigned task 15 to crawler 2 for URL: https://github.com/features/copilot
+2025-04-18 23:25:35,748 - Master - INFO - Status from node 4: Indexed https://www.stackoverflow.com with 10 keywords with cloud storage
+2025-04-18 23:25:35,851 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob (found 17 URLs, 1164431 bytes)
+2025-04-18 23:25:35,953 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 23:25:36,065 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://docs.python.org (found 52 URLs, 17619 bytes)
+2025-04-18 23:25:36,670 - Master - INFO - Received URLs from crawler 3. Queue size now: 59, Processed URLs: 14
+2025-04-18 23:25:36,673 - Master - INFO - Assigned task 16 to crawler 3 for URL: https://github.com/security/advanced-security
+2025-04-18 23:25:36,976 - Master - INFO - Received URLs from crawler 1. Queue size now: 60, Processed URLs: 15
+2025-04-18 23:25:36,977 - Master - INFO - Assigned task 17 to crawler 1 for URL: https://github.com/features/actions
+2025-04-18 23:25:37,079 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://www.linkedin.com/company/python-software-foundation/ (found 2 URLs, 1530 bytes)
+2025-04-18 23:25:37,584 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 23:25:38,289 - Master - INFO - Received URLs from crawler 1. Queue size now: 64, Processed URLs: 16
+2025-04-18 23:25:38,292 - Master - INFO - Assigned task 18 to crawler 1 for URL: https://github.com/features/codespaces
+2025-04-18 23:25:38,495 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 23:25:40,604 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 23:25:40,906 - Master - INFO - Status from node 4: Indexed https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob with 10 keywords with cloud storage
+2025-04-18 23:25:42,215 - Master - INFO - Status from node 4: Indexed https://www.python.org/psf/ with 10 keywords with cloud storage
+2025-04-18 23:25:42,317 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 23:25:42,420 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://pypi.org/ (found 26 URLs, 19849 bytes)
+2025-04-18 23:25:42,521 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 (found 10 URLs, 154412 bytes)
+2025-04-18 23:25:42,624 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 23:25:43,630 - Master - INFO - Received URLs from crawler 3. Queue size now: 68, Processed URLs: 17
+2025-04-18 23:25:43,634 - Master - INFO - Assigned task 19 to crawler 3 for URL: https://github.com/features/issues
+2025-04-18 23:25:43,739 - Master - INFO - Received URLs from crawler 2. Queue size now: 72, Processed URLs: 18
+2025-04-18 23:25:43,741 - Master - INFO - Assigned task 20 to crawler 2 for URL: https://www.reddit.com/login/
+2025-04-18 23:25:44,245 - Master - INFO - Status from node 4: Indexed https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 with 10 keywords with cloud storage
+2025-04-18 23:25:44,851 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 23:25:45,255 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 23:25:45,457 - Master - INFO - Status from node 4: Indexed https://docs.python.org with 10 keywords with cloud storage
+2025-04-18 23:25:46,262 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 23:25:46,665 - Master - INFO - Status from node 4: Indexed https://www.linkedin.com/company/python-software-foundation/ with 0 keywords with cloud storage
+2025-04-18 23:25:46,768 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://github.com/features/actions (found 76 URLs, 285472 bytes)
+2025-04-18 23:25:47,974 - Master - INFO - Received URLs from crawler 1. Queue size now: 76, Processed URLs: 19
+2025-04-18 23:25:47,975 - Master - INFO - Assigned task 21 to crawler 1 for URL: http://news.reddit.com
+2025-04-18 23:25:48,680 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-18 23:25:48,782 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-18 23:25:48,884 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 23:25:49,186 - Master - INFO - Status from node 4: Indexed https://github.com/features/actions with 10 keywords with cloud storage
+2025-04-18 23:25:50,302 - Master - INFO - Status from node 4: Indexed https://pypi.org/ with 10 keywords with cloud storage
+2025-04-18 23:25:50,404 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://github.com/features/copilot (found 122 URLs, 669978 bytes)
+2025-04-18 23:25:51,007 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-18 23:25:52,315 - Master - INFO - Received URLs from crawler 2. Queue size now: 75, Processed URLs: 20
+2025-04-18 23:25:52,319 - Master - INFO - Assigned task 22 to crawler 2 for URL: http://news.reddit.com
+2025-04-18 23:25:52,422 - Master - INFO - Crawling complete. Processed 20 URLs. Shutting down nodes...
+2025-04-18 23:25:52,424 - Master - INFO - Master node finished URL distribution. Shutting down.

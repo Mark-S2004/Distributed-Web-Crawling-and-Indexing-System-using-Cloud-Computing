@@ -1,8 +1,8 @@
 {
-    "start_time": "2025-04-18T00:44:07.222961",
+    "start_time": "2025-04-18T23:25:06.630176",
     "urls_crawled": 20,
-    "urls_indexed": 15,
-    "urls_failed": 1,
+    "urls_indexed": 16,
+    "urls_failed": 0,
     "crawler_status": {
         "1": "active",
         "2": "active",
@@ -11,330 +11,316 @@
     "error_count": 0,
     "task_assignments": [
         {
-            "time": "2025-04-18T00:44:07.224305",
+            "time": "2025-04-18T23:25:06.631373",
             "task_id": 0,
             "url": "https://www.python.org",
             "crawler": 1,
             "status": "assigned"
         },
         {
-            "time": "2025-04-18T00:44:07.225312",
+            "time": "2025-04-18T23:25:06.632384",
             "task_id": 1,
             "url": "https://www.github.com",
             "crawler": 2,
             "status": "assigned"
         },
         {
-            "time": "2025-04-18T00:44:07.226312",
+            "time": "2025-04-18T23:25:06.633384",
             "task_id": 2,
             "url": "https://www.wikipedia.org",
             "crawler": 3,
             "status": "assigned"
         },
         {
-            "time": "2025-04-18T00:44:08.235866",
+            "time": "2025-04-18T23:25:07.900645",
             "url": "https://www.wikipedia.org",
             "crawler": 3,
             "status": "completed",
             "urls_extracted": 8
         },
         {
-            "time": "2025-04-18T00:44:08.237143",
+            "time": "2025-04-18T23:25:07.902236",
             "task_id": 3,
             "url": "https://www.reddit.com",
             "crawler": 3,
             "status": "assigned"
         },
         {
-            "time": "2025-04-18T00:44:08.338168",
+            "time": "2025-04-18T23:25:08.109189",
             "url": "https://www.python.org",
             "crawler": 1,
             "status": "completed",
             "urls_extracted": 71
         },
         {
-            "time": "2025-04-18T00:44:08.338284",
+            "time": "2025-04-18T23:25:08.109696",
             "task_id": 4,
             "url": "https://www.stackoverflow.com",
             "crawler": 1,
             "status": "assigned"
         },
         {
-            "time": "2025-04-18T00:44:09.142835",
+            "time": "2025-04-18T23:25:08.512842",
             "url": "https://www.github.com",
             "crawler": 2,
             "status": "completed",
             "urls_extracted": 68
         },
         {
-            "time": "2025-04-18T00:44:09.144854",
+            "time": "2025-04-18T23:25:08.513345",
             "task_id": 5,
             "url": "https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias",
             "crawler": 2,
             "status": "assigned"
         },
         {
-            "time": "2025-04-18T00:44:11.963330",
+            "time": "2025-04-18T23:25:11.628740",
             "url": "https://www.reddit.com",
             "crawler": 3,
             "status": "completed",
-            "urls_extracted": 67
+            "urls_extracted": 72
         },
         {
-            "time": "2025-04-18T00:44:11.963330",
+            "time": "2025-04-18T23:25:11.629757",
             "task_id": 6,
             "url": "https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter",
             "crawler": 3,
             "status": "assigned"
         },
         {
-            "time": "2025-04-18T00:44:16.393181",
+            "time": "2025-04-18T23:25:15.957343",
             "url": "https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter",
             "crawler": 3,
             "status": "completed",
             "urls_extracted": 18
         },
         {
-            "time": "2025-04-18T00:44:16.394691",
+            "time": "2025-04-18T23:25:15.958349",
             "task_id": 7,
             "url": "https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications",
             "crawler": 3,
             "status": "assigned"
         },
         {
-            "time": "2025-04-18T00:44:16.997819",
-            "url": "https://www.stackoverflow.com",
-            "crawler": 1,
-            "status": "completed",
-            "urls_extracted": 87
-        },
-        {
-            "time": "2025-04-18T00:44:17.000847",
-            "task_id": 8,
-            "url": "https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob",
-            "crawler": 1,
-            "status": "assigned"
-        },
-        {
-            "time": "2025-04-18T00:44:21.133716",
+            "time": "2025-04-18T23:25:19.985716",
             "url": "https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications",
             "crawler": 3,
             "status": "completed",
             "urls_extracted": 94
         },
         {
-            "time": "2025-04-18T00:44:21.135813",
-            "task_id": 9,
-            "url": "https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8",
-            "crawler": 3,
-            "status": "assigned"
-        },
-        {
-            "time": "2025-04-18T00:44:24.665218",
+            "time": "2025-04-18T23:25:19.985716",
+            "task_id": 8,
             "url": "https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob",
-            "crawler": 1,
-            "status": "completed",
-            "urls_extracted": 17
-        },
-        {
-            "time": "2025-04-18T00:44:24.667130",
-            "task_id": 10,
-            "url": "https://www.python.org/psf/",
-            "crawler": 1,
-            "status": "assigned"
-        },
-        {
-            "time": "2025-04-18T00:44:29.414250",
-            "url": "https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8",
-            "crawler": 3,
-            "status": "completed",
-            "urls_extracted": 44
-        },
-        {
-            "time": "2025-04-18T00:44:29.423793",
-            "task_id": 11,
-            "url": "https://docs.python.org",
             "crawler": 3,
             "status": "assigned"
         },
         {
-            "time": "2025-04-18T00:44:31.545725",
-            "url": "https://www.python.org/psf/",
-            "crawler": 1,
-            "status": "completed",
-            "urls_extracted": 56
-        },
-        {
-            "time": "2025-04-18T00:44:31.546732",
-            "task_id": 12,
-            "url": "https://pypi.org/",
-            "crawler": 1,
-            "status": "assigned"
-        },
-        {
-            "time": "2025-04-18T00:44:35.568056",
+            "time": "2025-04-18T23:25:21.195661",
             "url": "https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias",
             "crawler": 2,
             "status": "completed",
             "urls_extracted": 3371
         },
         {
-            "time": "2025-04-18T00:44:35.570058",
+            "time": "2025-04-18T23:25:21.198682",
+            "task_id": 9,
+            "url": "https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8",
+            "crawler": 2,
+            "status": "assigned"
+        },
+        {
+            "time": "2025-04-18T23:25:25.747913",
+            "url": "https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8",
+            "crawler": 2,
+            "status": "completed",
+            "urls_extracted": 44
+        },
+        {
+            "time": "2025-04-18T23:25:25.749225",
+            "task_id": 10,
+            "url": "https://www.python.org/psf/",
+            "crawler": 2,
+            "status": "assigned"
+        },
+        {
+            "time": "2025-04-18T23:25:26.356854",
+            "url": "https://www.stackoverflow.com",
+            "crawler": 1,
+            "status": "completed",
+            "urls_extracted": 87
+        },
+        {
+            "time": "2025-04-18T23:25:26.357865",
+            "task_id": 11,
+            "url": "https://docs.python.org",
+            "crawler": 1,
+            "status": "assigned"
+        },
+        {
+            "time": "2025-04-18T23:25:27.985225",
+            "url": "https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob",
+            "crawler": 3,
+            "status": "completed",
+            "urls_extracted": 17
+        },
+        {
+            "time": "2025-04-18T23:25:27.987242",
+            "task_id": 12,
+            "url": "https://pypi.org/",
+            "crawler": 3,
+            "status": "assigned"
+        },
+        {
+            "time": "2025-04-18T23:25:31.209715",
+            "url": "https://www.python.org/psf/",
+            "crawler": 2,
+            "status": "completed",
+            "urls_extracted": 56
+        },
+        {
+            "time": "2025-04-18T23:25:31.210721",
             "task_id": 13,
             "url": "https://psfmember.org/civicrm/contribute/transact?reset=1&id=2",
             "crawler": 2,
             "status": "assigned"
         },
         {
-            "time": "2025-04-18T00:44:41.007375",
-            "url": "https://pypi.org/",
+            "time": "2025-04-18T23:25:34.333240",
+            "url": "https://docs.python.org",
             "crawler": 1,
             "status": "completed",
-            "urls_extracted": 26
+            "urls_extracted": 52
         },
         {
-            "time": "2025-04-18T00:44:41.008732",
+            "time": "2025-04-18T23:25:34.336299",
             "task_id": 14,
             "url": "https://www.linkedin.com/company/python-software-foundation/",
             "crawler": 1,
             "status": "assigned"
         },
         {
-            "time": "2025-04-18T00:44:42.317789",
+            "time": "2025-04-18T23:25:35.543626",
             "url": "https://psfmember.org/civicrm/contribute/transact?reset=1&id=2",
             "crawler": 2,
             "status": "completed",
             "urls_extracted": 10
         },
         {
-            "time": "2025-04-18T00:44:42.320791",
+            "time": "2025-04-18T23:25:35.544633",
             "task_id": 15,
             "url": "https://github.com/features/copilot",
             "crawler": 2,
             "status": "assigned"
         },
         {
-            "time": "2025-04-18T00:44:51.071015",
-            "task_id": 16,
-            "url": "https://www.linkedin.com/company/python-software-foundation/",
-            "crawler": 1,
-            "status": "node_failed"
+            "time": "2025-04-18T23:25:36.670581",
+            "url": "https://pypi.org/",
+            "crawler": 3,
+            "status": "completed",
+            "urls_extracted": 26
         },
         {
-            "time": "2025-04-18T00:44:52.183812",
+            "time": "2025-04-18T23:25:36.672593",
             "task_id": 16,
             "url": "https://github.com/security/advanced-security",
+            "crawler": 3,
+            "status": "assigned"
+        },
+        {
+            "time": "2025-04-18T23:25:36.976192",
+            "url": "https://www.linkedin.com/company/python-software-foundation/",
+            "crawler": 1,
+            "status": "completed",
+            "urls_extracted": 2
+        },
+        {
+            "time": "2025-04-18T23:25:36.977607",
+            "task_id": 17,
+            "url": "https://github.com/features/actions",
             "crawler": 1,
             "status": "assigned"
         },
         {
-            "time": "2025-04-18T00:44:53.493721",
-            "url": "https://github.com/features/copilot",
-            "crawler": 2,
-            "status": "completed",
-            "urls_extracted": 122
-        },
-        {
-            "time": "2025-04-18T00:44:53.495731",
-            "task_id": 17,
+            "time": "2025-04-18T23:25:38.289194",
             "url": "https://github.com/features/actions",
-            "crawler": 2,
-            "status": "assigned"
-        },
-        {
-            "time": "2025-04-18T00:44:56.027298",
-            "url": "https://docs.python.org",
-            "crawler": 3,
+            "crawler": 1,
             "status": "completed",
-            "urls_extracted": 52
+            "urls_extracted": 76
         },
         {
-            "time": "2025-04-18T00:44:56.030315",
+            "time": "2025-04-18T23:25:38.292318",
             "task_id": 18,
             "url": "https://github.com/features/codespaces",
-            "crawler": 3,
+            "crawler": 1,
             "status": "assigned"
         },
         {
-            "time": "2025-04-18T00:45:00.471871",
-            "url": "https://github.com/features/codespaces",
+            "time": "2025-04-18T23:25:43.630426",
+            "url": "https://github.com/security/advanced-security",
             "crawler": 3,
             "status": "completed",
-            "urls_extracted": 86
+            "urls_extracted": 76
         },
         {
-            "time": "2025-04-18T00:45:00.474890",
+            "time": "2025-04-18T23:25:43.634635",
             "task_id": 19,
             "url": "https://github.com/features/issues",
             "crawler": 3,
             "status": "assigned"
         },
         {
-            "time": "2025-04-18T00:45:00.577998",
-            "url": "https://github.com/features/actions",
+            "time": "2025-04-18T23:25:43.739393",
+            "url": "https://github.com/features/copilot",
             "crawler": 2,
             "status": "completed",
-            "urls_extracted": 76
+            "urls_extracted": 122
         },
         {
-            "time": "2025-04-18T00:45:00.579098",
+            "time": "2025-04-18T23:25:43.741087",
             "task_id": 20,
             "url": "https://www.reddit.com/login/",
             "crawler": 2,
             "status": "assigned"
         },
         {
-            "time": "2025-04-18T00:45:05.016477",
-            "url": "https://github.com/security/advanced-security",
+            "time": "2025-04-18T23:25:47.974420",
+            "url": "https://github.com/features/codespaces",
             "crawler": 1,
             "status": "completed",
-            "urls_extracted": 2
+            "urls_extracted": 86
         },
         {
-            "time": "2025-04-18T00:45:05.022510",
+            "time": "2025-04-18T23:25:47.975545",
             "task_id": 21,
-            "url": "https://www.redditinc.com/policies/content-policy",
+            "url": "http://news.reddit.com",
             "crawler": 1,
             "status": "assigned"
         },
         {
-            "time": "2025-04-18T00:45:05.938426",
-            "url": "https://www.redditinc.com/policies/content-policy",
-            "crawler": 1,
-            "status": "completed",
-            "urls_extracted": 76
-        },
-        {
-            "time": "2025-04-18T00:45:05.939548",
-            "task_id": 22,
-            "url": "https://www.reddit.com/policies/privacy-policy",
-            "crawler": 1,
-            "status": "assigned"
-        },
-        {
-            "time": "2025-04-18T00:45:07.250127",
+            "time": "2025-04-18T23:25:52.315073",
             "url": "https://www.reddit.com/login/",
             "crawler": 2,
             "status": "completed",
             "urls_extracted": 2
         },
         {
-            "time": "2025-04-18T00:45:07.253243",
-            "task_id": 23,
-            "url": "https://www.redditinc.com/policies/user-agreement",
+            "time": "2025-04-18T23:25:52.319111",
+            "task_id": 22,
+            "url": "http://news.reddit.com",
             "crawler": 2,
             "status": "assigned"
         }
     ],
     "crawler_performance": {
         "1": {
-            "assigned": 9,
-            "completed": 7,
-            "failed": 1
-        },
-        "2": {
             "assigned": 7,
             "completed": 6,
+            "failed": 0
+        },
+        "2": {
+            "assigned": 8,
+            "completed": 7,
             "failed": 0
         },
         "3": {
@@ -343,6 +329,6 @@
             "failed": 0
         }
     },
-    "end_time": "2025-04-18T00:45:07.357107",
-    "total_runtime_seconds": 60.134146
+    "end_time": "2025-04-18T23:25:52.422500",
+    "total_runtime_seconds": 45.792324
 }

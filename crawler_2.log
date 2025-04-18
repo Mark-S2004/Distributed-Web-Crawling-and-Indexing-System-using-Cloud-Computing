@@ -1,0 +1,443 @@
+2025-04-17 23:26:57,009 - Crawler-15452 - INFO - Crawler node started with rank 2 of 5
+2025-04-17 23:26:57,010 - Crawler-15452 - INFO - Heartbeat mechanism started
+2025-04-17 23:26:57,011 - Crawler-15452 - INFO - Crawler 2 received URL: https://www.github.com
+2025-04-17 23:26:57,011 - Crawler-15452 - INFO - Fetching content from https://www.github.com
+2025-04-17 23:27:02,987 - Crawler-15452 - INFO - Fetched 280109 bytes from https://www.github.com
+2025-04-17 23:27:02,987 - Crawler-15452 - INFO - Parsing content from https://www.github.com
+2025-04-17 23:27:03,113 - Crawler-15452 - INFO - Crawler 2 crawled https://www.github.com and extracted 68 URLs in 6.10 seconds
+2025-04-17 23:27:03,959 - Crawler-15452 - INFO - Sent content to indexer node for https://www.github.com
+2025-04-17 23:27:03,959 - Crawler-15452 - WARNING - Simulating a brief node failure (testing fault tolerance)
+2025-04-17 23:27:15,997 - Crawler-15452 - INFO - Task for https://www.github.com completed in 18.99 seconds
+2025-04-17 23:27:16,098 - Crawler-15452 - INFO - Crawler 2 received URL: https://docs.python.org
+2025-04-17 23:27:16,098 - Crawler-15452 - INFO - Fetching content from https://docs.python.org
+2025-04-17 23:27:16,579 - Crawler-15452 - INFO - Fetched 17704 bytes from https://docs.python.org
+2025-04-17 23:27:16,579 - Crawler-15452 - INFO - Parsing content from https://docs.python.org
+2025-04-17 23:27:16,591 - Crawler-15452 - INFO - Crawler 2 crawled https://docs.python.org and extracted 52 URLs in 0.49 seconds
+2025-04-17 23:27:16,591 - Crawler-15452 - INFO - Sent content to indexer node for https://docs.python.org
+2025-04-17 23:27:16,591 - Crawler-15452 - INFO - Task for https://docs.python.org completed in 0.49 seconds
+2025-04-17 23:27:16,692 - Crawler-15452 - INFO - Crawler 2 received URL: https://github.com/security/advanced-security
+2025-04-17 23:27:16,692 - Crawler-15452 - INFO - Fetching content from https://github.com/security/advanced-security
+2025-04-17 23:27:17,585 - Crawler-15452 - INFO - Fetched 260278 bytes from https://github.com/security/advanced-security
+2025-04-17 23:27:17,585 - Crawler-15452 - INFO - Parsing content from https://github.com/security/advanced-security
+2025-04-17 23:27:17,637 - Crawler-15452 - INFO - Crawler 2 crawled https://github.com/security/advanced-security and extracted 76 URLs in 0.95 seconds
+2025-04-17 23:32:34,116 - Crawler-24872 - INFO - Crawler node started with rank 2 of 5
+2025-04-17 23:32:34,117 - Crawler-24872 - INFO - Heartbeat mechanism started
+2025-04-17 23:32:34,117 - Crawler-24872 - INFO - Crawler 2 received URL: https://www.github.com
+2025-04-17 23:32:34,117 - Crawler-24872 - INFO - Fetching content from https://www.github.com
+2025-04-17 23:32:36,780 - Crawler-24872 - INFO - Fetched 280109 bytes from https://www.github.com
+2025-04-17 23:32:36,780 - Crawler-24872 - INFO - Parsing content from https://www.github.com
+2025-04-17 23:32:36,890 - Crawler-24872 - INFO - Crawler 2 crawled https://www.github.com and extracted 68 URLs in 2.77 seconds
+2025-04-17 23:32:42,689 - Crawler-24872 - INFO - Sent content to indexer node for https://www.github.com
+2025-04-17 23:32:42,689 - Crawler-24872 - INFO - Task for https://www.github.com completed in 8.57 seconds
+2025-04-17 23:32:42,790 - Crawler-24872 - INFO - Crawler 2 received URL: https://www.python.org/psf/
+2025-04-17 23:32:42,790 - Crawler-24872 - INFO - Fetching content from https://www.python.org/psf/
+2025-04-17 23:32:43,863 - Crawler-24872 - INFO - Fetched 52283 bytes from https://www.python.org/psf/
+2025-04-17 23:32:43,863 - Crawler-24872 - INFO - Parsing content from https://www.python.org/psf/
+2025-04-17 23:32:43,907 - Crawler-24872 - INFO - Crawler 2 crawled https://www.python.org/psf/ and extracted 56 URLs in 1.12 seconds
+2025-04-17 23:32:44,202 - Crawler-24872 - INFO - Sent content to indexer node for https://www.python.org/psf/
+2025-04-17 23:32:44,202 - Crawler-24872 - INFO - Task for https://www.python.org/psf/ completed in 1.41 seconds
+2025-04-17 23:32:44,303 - Crawler-24872 - INFO - Crawler 2 received URL: https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-17 23:32:44,303 - Crawler-24872 - INFO - Fetching content from https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-17 23:32:45,967 - Crawler-24872 - INFO - Fetched 556622 bytes from https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-17 23:32:45,967 - Crawler-24872 - INFO - Parsing content from https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-17 23:32:46,765 - Crawler-24872 - INFO - Crawler 2 crawled https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias and extracted 3371 URLs in 2.46 seconds
+2025-04-17 23:32:47,025 - Crawler-24872 - INFO - Sent content to indexer node for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-17 23:32:47,025 - Crawler-24872 - INFO - Task for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias completed in 2.72 seconds
+2025-04-17 23:32:47,127 - Crawler-24872 - INFO - Crawler 2 received URL: https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-17 23:32:47,127 - Crawler-24872 - INFO - Fetching content from https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-17 23:32:48,784 - Crawler-24872 - INFO - Fetched 1164273 bytes from https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-17 23:32:48,784 - Crawler-24872 - INFO - Parsing content from https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-17 23:32:48,916 - Crawler-24872 - INFO - Crawler 2 crawled https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob and extracted 17 URLs in 1.79 seconds
+2025-04-17 23:32:50,137 - Crawler-24872 - INFO - Sent content to indexer node for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-17 23:32:50,137 - Crawler-24872 - INFO - Task for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob completed in 3.01 seconds
+2025-04-17 23:32:50,238 - Crawler-24872 - INFO - Crawler 2 received URL: https://github.com/security/advanced-security
+2025-04-17 23:32:50,238 - Crawler-24872 - INFO - Fetching content from https://github.com/security/advanced-security
+2025-04-17 23:32:51,829 - Crawler-24872 - INFO - Fetched 260279 bytes from https://github.com/security/advanced-security
+2025-04-17 23:32:51,829 - Crawler-24872 - INFO - Parsing content from https://github.com/security/advanced-security
+2025-04-17 23:32:51,916 - Crawler-24872 - INFO - Crawler 2 crawled https://github.com/security/advanced-security and extracted 76 URLs in 1.68 seconds
+2025-04-17 23:32:51,918 - Crawler-24872 - INFO - Sent content to indexer node for https://github.com/security/advanced-security
+2025-04-17 23:32:51,918 - Crawler-24872 - INFO - Task for https://github.com/security/advanced-security completed in 1.68 seconds
+2025-04-17 23:32:52,020 - Crawler-24872 - INFO - Crawler 2 received URL: https://github.com/features/actions
+2025-04-17 23:32:52,020 - Crawler-24872 - INFO - Fetching content from https://github.com/features/actions
+2025-04-17 23:32:53,328 - Crawler-24872 - INFO - Fetched 284355 bytes from https://github.com/features/actions
+2025-04-17 23:32:53,329 - Crawler-24872 - INFO - Parsing content from https://github.com/features/actions
+2025-04-17 23:32:53,424 - Crawler-24872 - INFO - Crawler 2 crawled https://github.com/features/actions and extracted 76 URLs in 1.40 seconds
+2025-04-17 23:32:54,704 - Crawler-24872 - INFO - Sent content to indexer node for https://github.com/features/actions
+2025-04-17 23:32:54,704 - Crawler-24872 - INFO - Task for https://github.com/features/actions completed in 2.68 seconds
+2025-04-17 23:32:54,804 - Crawler-24872 - INFO - Crawler 2 received URL: https://www.reddit.com/login/
+2025-04-17 23:32:54,804 - Crawler-24872 - INFO - Fetching content from https://www.reddit.com/login/
+2025-04-17 23:32:56,854 - Crawler-24872 - INFO - Fetched 351189 bytes from https://www.reddit.com/login/
+2025-04-17 23:32:56,854 - Crawler-24872 - INFO - Parsing content from https://www.reddit.com/login/
+2025-04-17 23:32:56,869 - Crawler-24872 - INFO - No real URLs found, created 2 simulated URLs
+2025-04-17 23:32:56,870 - Crawler-24872 - INFO - Crawler 2 crawled https://www.reddit.com/login/ and extracted 2 URLs in 2.07 seconds
+2025-04-17 23:32:57,043 - Crawler-24872 - INFO - Sent content to indexer node for https://www.reddit.com/login/
+2025-04-17 23:32:57,043 - Crawler-24872 - INFO - Task for https://www.reddit.com/login/ completed in 2.24 seconds
+2025-04-17 23:32:57,144 - Crawler-24872 - INFO - Crawler 2 received shutdown signal. Exiting.
+2025-04-17 23:32:58,146 - Crawler-24872 - INFO - Crawler 2 shutting down. Final statistics:
+2025-04-17 23:32:58,146 - Crawler-24872 - INFO -   - Total runtime: 24.03 seconds
+2025-04-17 23:32:58,146 - Crawler-24872 - INFO -   - URLs processed: 7
+2025-04-17 23:32:58,146 - Crawler-24872 - INFO -   - URLs extracted: 3666
+2025-04-17 23:32:58,146 - Crawler-24872 - INFO -   - Errors encountered: 0
+2025-04-17 23:32:58,146 - Crawler-24872 - INFO - Crawler 2 exiting
+2025-04-18 00:07:21,908 - Crawler-37356 - INFO - Crawler node started with rank 2 of 5
+2025-04-18 00:07:21,910 - Crawler-37356 - INFO - Heartbeat mechanism started
+2025-04-18 00:07:21,911 - Crawler-37356 - INFO - Crawler 2 received URL: https://www.github.com
+2025-04-18 00:07:21,911 - Crawler-37356 - INFO - Fetching content from https://www.github.com
+2025-04-18 00:07:23,930 - Crawler-37356 - INFO - Fetched 280060 bytes from https://www.github.com
+2025-04-18 00:07:23,930 - Crawler-37356 - INFO - Parsing content from https://www.github.com
+2025-04-18 00:07:24,047 - Crawler-37356 - INFO - Crawler 2 crawled https://www.github.com and extracted 68 URLs in 2.14 seconds
+2025-04-18 00:07:33,715 - Crawler-37356 - INFO - Sent content to indexer node for https://www.github.com
+2025-04-18 00:07:33,715 - Crawler-37356 - INFO - Task for https://www.github.com completed in 11.80 seconds
+2025-04-18 00:07:33,816 - Crawler-37356 - INFO - Crawler 2 received URL: https://www.python.org/psf/
+2025-04-18 00:07:33,816 - Crawler-37356 - INFO - Fetching content from https://www.python.org/psf/
+2025-04-18 00:07:35,432 - Crawler-37356 - INFO - Fetched 52283 bytes from https://www.python.org/psf/
+2025-04-18 00:07:35,432 - Crawler-37356 - INFO - Parsing content from https://www.python.org/psf/
+2025-04-18 00:07:35,481 - Crawler-37356 - INFO - Crawler 2 crawled https://www.python.org/psf/ and extracted 56 URLs in 1.66 seconds
+2025-04-18 00:07:36,767 - Crawler-37356 - INFO - Sent content to indexer node for https://www.python.org/psf/
+2025-04-18 00:07:36,767 - Crawler-37356 - INFO - Task for https://www.python.org/psf/ completed in 2.95 seconds
+2025-04-18 00:07:36,868 - Crawler-37356 - INFO - Crawler 2 received URL: https://www.linkedin.com/company/python-software-foundation/
+2025-04-18 00:07:36,868 - Crawler-37356 - INFO - Fetching content from https://www.linkedin.com/company/python-software-foundation/
+2025-04-18 00:07:38,394 - Crawler-37356 - INFO - Fetched 1530 bytes from https://www.linkedin.com/company/python-software-foundation/
+2025-04-18 00:07:38,394 - Crawler-37356 - INFO - Parsing content from https://www.linkedin.com/company/python-software-foundation/
+2025-04-18 00:07:38,395 - Crawler-37356 - INFO - No real URLs found, created 2 simulated URLs
+2025-04-18 00:07:38,396 - Crawler-37356 - INFO - Crawler 2 crawled https://www.linkedin.com/company/python-software-foundation/ and extracted 2 URLs in 1.53 seconds
+2025-04-18 00:07:38,396 - Crawler-37356 - INFO - Sent content to indexer node for https://www.linkedin.com/company/python-software-foundation/
+2025-04-18 00:07:38,397 - Crawler-37356 - INFO - Task for https://www.linkedin.com/company/python-software-foundation/ completed in 1.53 seconds
+2025-04-18 00:07:38,497 - Crawler-37356 - INFO - Crawler 2 received URL: https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-18 00:07:38,497 - Crawler-37356 - INFO - Fetching content from https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-18 00:07:39,492 - Crawler-37356 - INFO - Fetched 136556 bytes from https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-18 00:07:39,492 - Crawler-37356 - INFO - Parsing content from https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-18 00:07:39,619 - Crawler-37356 - INFO - Crawler 2 crawled https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications and extracted 94 URLs in 1.12 seconds
+2025-04-18 00:07:39,658 - Crawler-37356 - INFO - Sent content to indexer node for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-18 00:07:39,658 - Crawler-37356 - INFO - Task for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications completed in 1.16 seconds
+2025-04-18 00:07:39,762 - Crawler-37356 - INFO - Crawler 2 received URL: https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-18 00:07:39,762 - Crawler-37356 - INFO - Fetching content from https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-18 00:07:40,852 - Crawler-37356 - INFO - Fetched 1164273 bytes from https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-18 00:07:40,852 - Crawler-37356 - INFO - Parsing content from https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-18 00:07:40,951 - Crawler-37356 - INFO - Crawler 2 crawled https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob and extracted 17 URLs in 1.19 seconds
+2025-04-18 00:07:41,261 - Crawler-37356 - INFO - Sent content to indexer node for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-18 00:07:41,263 - Crawler-37356 - INFO - Task for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob completed in 1.50 seconds
+2025-04-18 00:07:41,363 - Crawler-37356 - INFO - Crawler 2 received URL: https://github.com/security/advanced-security
+2025-04-18 00:07:41,363 - Crawler-37356 - INFO - Fetching content from https://github.com/security/advanced-security
+2025-04-18 00:07:42,693 - Crawler-37356 - INFO - Fetched 260229 bytes from https://github.com/security/advanced-security
+2025-04-18 00:07:42,693 - Crawler-37356 - INFO - Parsing content from https://github.com/security/advanced-security
+2025-04-18 00:07:42,810 - Crawler-37356 - INFO - Crawler 2 crawled https://github.com/security/advanced-security and extracted 76 URLs in 1.45 seconds
+2025-04-18 00:07:43,679 - Crawler-37356 - INFO - Sent content to indexer node for https://github.com/security/advanced-security
+2025-04-18 00:07:43,679 - Crawler-37356 - INFO - Task for https://github.com/security/advanced-security completed in 2.32 seconds
+2025-04-18 00:07:43,780 - Crawler-37356 - INFO - Crawler 2 received URL: https://github.com/features/actions
+2025-04-18 00:07:43,780 - Crawler-37356 - INFO - Fetching content from https://github.com/features/actions
+2025-04-18 00:07:44,731 - Crawler-37356 - INFO - Fetched 284306 bytes from https://github.com/features/actions
+2025-04-18 00:07:44,731 - Crawler-37356 - INFO - Parsing content from https://github.com/features/actions
+2025-04-18 00:07:44,860 - Crawler-37356 - INFO - Crawler 2 crawled https://github.com/features/actions and extracted 76 URLs in 1.08 seconds
+2025-04-18 00:07:45,807 - Crawler-37356 - INFO - Sent content to indexer node for https://github.com/features/actions
+2025-04-18 00:07:45,807 - Crawler-37356 - INFO - Task for https://github.com/features/actions completed in 2.03 seconds
+2025-04-18 00:07:45,908 - Crawler-37356 - INFO - Crawler 2 received URL: https://www.reddit.com/login/
+2025-04-18 00:07:45,908 - Crawler-37356 - INFO - Fetching content from https://www.reddit.com/login/
+2025-04-18 00:07:47,909 - Crawler-37356 - INFO - Fetched 351187 bytes from https://www.reddit.com/login/
+2025-04-18 00:07:47,910 - Crawler-37356 - INFO - Parsing content from https://www.reddit.com/login/
+2025-04-18 00:07:47,925 - Crawler-37356 - INFO - No real URLs found, created 2 simulated URLs
+2025-04-18 00:07:47,925 - Crawler-37356 - INFO - Crawler 2 crawled https://www.reddit.com/login/ and extracted 2 URLs in 2.02 seconds
+2025-04-18 00:18:17,222 - Crawler-32076 - INFO - Crawler node started with rank 2 of 5
+2025-04-18 00:18:17,224 - Crawler-32076 - INFO - Heartbeat mechanism started
+2025-04-18 00:18:17,224 - Crawler-32076 - INFO - Crawler 2 received URL: https://www.github.com
+2025-04-18 00:18:17,225 - Crawler-32076 - INFO - Fetching content from https://www.github.com
+2025-04-18 00:18:19,192 - Crawler-32076 - INFO - Fetched 280060 bytes from https://www.github.com
+2025-04-18 00:18:19,192 - Crawler-32076 - INFO - Parsing content from https://www.github.com
+2025-04-18 00:18:19,287 - Crawler-32076 - INFO - Crawler 2 crawled https://www.github.com and extracted 68 URLs in 2.06 seconds
+2025-04-18 00:18:36,402 - Crawler-32076 - INFO - Sent content to indexer node for https://www.github.com
+2025-04-18 00:18:36,402 - Crawler-32076 - INFO - Task for https://www.github.com completed in 19.18 seconds
+2025-04-18 00:18:36,503 - Crawler-32076 - INFO - Crawler 2 received URL: https://www.python.org/psf/
+2025-04-18 00:18:36,503 - Crawler-32076 - INFO - Fetching content from https://www.python.org/psf/
+2025-04-18 00:18:37,640 - Crawler-32076 - INFO - Fetched 52287 bytes from https://www.python.org/psf/
+2025-04-18 00:18:37,641 - Crawler-32076 - INFO - Parsing content from https://www.python.org/psf/
+2025-04-18 00:18:37,679 - Crawler-32076 - INFO - Crawler 2 crawled https://www.python.org/psf/ and extracted 56 URLs in 1.18 seconds
+2025-04-18 00:18:41,084 - Crawler-32076 - INFO - Sent content to indexer node for https://www.python.org/psf/
+2025-04-18 00:18:41,084 - Crawler-32076 - WARNING - Simulating a brief node failure (testing fault tolerance)
+2025-04-18 00:18:53,085 - Crawler-32076 - INFO - Task for https://www.python.org/psf/ completed in 16.58 seconds
+2025-04-18 00:23:29,038 - Crawler-41632 - INFO - Crawler node started with rank 2 of 5
+2025-04-18 00:23:29,038 - Crawler-41632 - INFO - Heartbeat mechanism started
+2025-04-18 00:23:29,045 - Crawler-41632 - INFO - Crawler 2 received URL: https://www.github.com
+2025-04-18 00:23:29,050 - Crawler-41632 - INFO - Fetching content from https://www.github.com
+2025-04-18 00:23:31,403 - Crawler-41632 - INFO - Fetched 280060 bytes from https://www.github.com
+2025-04-18 00:23:31,404 - Crawler-41632 - INFO - Parsing content from https://www.github.com
+2025-04-18 00:23:31,611 - Crawler-41632 - INFO - Crawler 2 crawled https://www.github.com and extracted 68 URLs in 2.56 seconds
+2025-04-18 00:23:50,946 - Crawler-41632 - INFO - Sent content to indexer node for https://www.github.com
+2025-04-18 00:23:50,946 - Crawler-41632 - INFO - Task for https://www.github.com completed in 21.90 seconds
+2025-04-18 00:23:51,047 - Crawler-41632 - INFO - Crawler 2 received URL: https://www.python.org/psf/
+2025-04-18 00:23:51,048 - Crawler-41632 - INFO - Fetching content from https://www.python.org/psf/
+2025-04-18 00:23:52,632 - Crawler-41632 - INFO - Fetched 52287 bytes from https://www.python.org/psf/
+2025-04-18 00:23:52,632 - Crawler-41632 - INFO - Parsing content from https://www.python.org/psf/
+2025-04-18 00:23:52,664 - Crawler-41632 - INFO - Crawler 2 crawled https://www.python.org/psf/ and extracted 56 URLs in 1.62 seconds
+2025-04-18 00:24:00,873 - Crawler-41632 - INFO - Sent content to indexer node for https://www.python.org/psf/
+2025-04-18 00:24:00,873 - Crawler-41632 - INFO - Task for https://www.python.org/psf/ completed in 9.83 seconds
+2025-04-18 00:38:03,809 - Crawler-35616 - INFO - Crawler node started with rank 2 of 5
+2025-04-18 00:38:03,811 - Crawler-35616 - INFO - Heartbeat mechanism started
+2025-04-18 00:38:03,811 - Crawler-35616 - INFO - Crawler 2 received URL: https://www.github.com
+2025-04-18 00:38:03,811 - Crawler-35616 - INFO - Fetching content from https://www.github.com
+2025-04-18 00:38:05,396 - Crawler-35616 - INFO - Fetched 280060 bytes from https://www.github.com
+2025-04-18 00:38:05,396 - Crawler-35616 - INFO - Parsing content from https://www.github.com
+2025-04-18 00:38:05,462 - Crawler-35616 - INFO - Crawler 2 crawled https://www.github.com and extracted 68 URLs in 1.65 seconds
+2025-04-18 00:38:17,454 - Crawler-35616 - INFO - Sent content to indexer node for https://www.github.com
+2025-04-18 00:38:17,454 - Crawler-35616 - INFO - Task for https://www.github.com completed in 13.64 seconds
+2025-04-18 00:38:17,556 - Crawler-35616 - INFO - Crawler 2 received URL: https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-18 00:38:17,557 - Crawler-35616 - INFO - Fetching content from https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-18 00:38:19,337 - Crawler-35616 - INFO - Fetched 556608 bytes from https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-18 00:38:19,337 - Crawler-35616 - INFO - Parsing content from https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-18 00:38:19,741 - Crawler-35616 - INFO - Crawler 2 crawled https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias and extracted 3371 URLs in 2.19 seconds
+2025-04-18 00:38:22,371 - Crawler-35616 - INFO - Sent content to indexer node for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-18 00:38:22,372 - Crawler-35616 - INFO - Task for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias completed in 4.82 seconds
+2025-04-18 00:38:22,473 - Crawler-35616 - INFO - Crawler 2 received URL: https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-18 00:38:22,473 - Crawler-35616 - INFO - Fetching content from https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-18 00:38:24,581 - Crawler-35616 - INFO - Fetched 733580 bytes from https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-18 00:38:24,581 - Crawler-35616 - INFO - Parsing content from https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-18 00:38:24,624 - Crawler-35616 - INFO - Crawler 2 crawled https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 and extracted 44 URLs in 2.15 seconds
+2025-04-18 00:38:30,574 - Crawler-35616 - INFO - Sent content to indexer node for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-18 00:38:30,575 - Crawler-35616 - INFO - Task for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 completed in 8.10 seconds
+2025-04-18 00:38:30,675 - Crawler-35616 - INFO - Crawler 2 received URL: https://www.python.org/psf/
+2025-04-18 00:38:30,675 - Crawler-35616 - INFO - Fetching content from https://www.python.org/psf/
+2025-04-18 00:38:32,140 - Crawler-35616 - INFO - Fetched 52287 bytes from https://www.python.org/psf/
+2025-04-18 00:38:32,140 - Crawler-35616 - INFO - Parsing content from https://www.python.org/psf/
+2025-04-18 00:38:32,178 - Crawler-35616 - INFO - Crawler 2 crawled https://www.python.org/psf/ and extracted 56 URLs in 1.50 seconds
+2025-04-18 00:38:35,833 - Crawler-35616 - INFO - Sent content to indexer node for https://www.python.org/psf/
+2025-04-18 00:38:35,833 - Crawler-35616 - INFO - Task for https://www.python.org/psf/ completed in 5.16 seconds
+2025-04-18 00:38:35,959 - Crawler-35616 - INFO - Crawler 2 received URL: https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 00:38:35,960 - Crawler-35616 - INFO - Fetching content from https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 00:38:38,479 - Crawler-35616 - INFO - Fetched 154412 bytes from https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 00:38:38,480 - Crawler-35616 - INFO - Parsing content from https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 00:38:38,537 - Crawler-35616 - INFO - Crawler 2 crawled https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 and extracted 10 URLs in 2.58 seconds
+2025-04-18 00:38:47,027 - Crawler-35616 - INFO - Sent content to indexer node for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 00:38:47,027 - Crawler-35616 - INFO - Task for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 completed in 11.07 seconds
+2025-04-18 00:38:47,128 - Crawler-35616 - INFO - Crawler 2 received URL: https://github.com/features/copilot
+2025-04-18 00:38:47,128 - Crawler-35616 - INFO - Fetching content from https://github.com/features/copilot
+2025-04-18 00:38:48,304 - Crawler-35616 - INFO - Fetched 668813 bytes from https://github.com/features/copilot
+2025-04-18 00:38:48,305 - Crawler-35616 - INFO - Parsing content from https://github.com/features/copilot
+2025-04-18 00:38:48,366 - Crawler-35616 - INFO - Crawler 2 crawled https://github.com/features/copilot and extracted 122 URLs in 1.24 seconds
+2025-04-18 00:38:55,168 - Crawler-35616 - INFO - Sent content to indexer node for https://github.com/features/copilot
+2025-04-18 00:38:55,168 - Crawler-35616 - INFO - Task for https://github.com/features/copilot completed in 8.04 seconds
+2025-04-18 00:38:55,269 - Crawler-35616 - INFO - Crawler 2 received URL: https://www.reddit.com/login/
+2025-04-18 00:38:55,269 - Crawler-35616 - INFO - Fetching content from https://www.reddit.com/login/
+2025-04-18 00:38:56,706 - Crawler-35616 - INFO - Fetched 351187 bytes from https://www.reddit.com/login/
+2025-04-18 00:38:56,706 - Crawler-35616 - INFO - Parsing content from https://www.reddit.com/login/
+2025-04-18 00:38:56,715 - Crawler-35616 - INFO - No real URLs found, created 2 simulated URLs
+2025-04-18 00:38:56,715 - Crawler-35616 - INFO - Crawler 2 crawled https://www.reddit.com/login/ and extracted 2 URLs in 1.45 seconds
+2025-04-18 00:39:08,881 - Crawler-35616 - INFO - Sent content to indexer node for https://www.reddit.com/login/
+2025-04-18 00:39:08,881 - Crawler-35616 - INFO - Task for https://www.reddit.com/login/ completed in 13.61 seconds
+2025-04-18 00:39:08,982 - Crawler-35616 - INFO - Crawler 2 received URL: https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/
+2025-04-18 00:39:08,982 - Crawler-35616 - INFO - Fetching content from https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/
+2025-04-18 00:39:09,894 - Crawler-35616 - INFO - Fetched 591489 bytes from https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/
+2025-04-18 00:39:09,894 - Crawler-35616 - INFO - Parsing content from https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/
+2025-04-18 00:39:09,945 - Crawler-35616 - INFO - Crawler 2 crawled https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/ and extracted 237 URLs in 0.96 seconds
+2025-04-18 00:44:07,487 - Crawler-8580 - INFO - Crawler node started with rank 2 of 5
+2025-04-18 00:44:07,488 - Crawler-8580 - INFO - Heartbeat mechanism started
+2025-04-18 00:44:07,488 - Crawler-8580 - INFO - Crawler 2 received URL: https://www.github.com
+2025-04-18 00:44:07,488 - Crawler-8580 - INFO - Fetching content from https://www.github.com
+2025-04-18 00:44:09,074 - Crawler-8580 - INFO - Fetched 280059 bytes from https://www.github.com
+2025-04-18 00:44:09,074 - Crawler-8580 - INFO - Parsing content from https://www.github.com
+2025-04-18 00:44:09,128 - Crawler-8580 - INFO - Crawler 2 crawled https://www.github.com and extracted 68 URLs in 1.64 seconds
+2025-04-18 00:44:20,268 - Crawler-8580 - INFO - Sent content to indexer node for https://www.github.com
+2025-04-18 00:44:20,269 - Crawler-8580 - WARNING - Simulating a brief node failure (testing fault tolerance)
+2025-04-18 00:44:32,270 - Crawler-8580 - INFO - Task for https://www.github.com completed in 24.78 seconds
+2025-04-18 00:44:32,371 - Crawler-8580 - INFO - Crawler 2 received URL: https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-18 00:44:32,371 - Crawler-8580 - INFO - Fetching content from https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-18 00:44:35,059 - Crawler-8580 - INFO - Fetched 556612 bytes from https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-18 00:44:35,059 - Crawler-8580 - INFO - Parsing content from https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-18 00:44:35,484 - Crawler-8580 - INFO - Crawler 2 crawled https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias and extracted 3371 URLs in 3.11 seconds
+2025-04-18 00:44:39,380 - Crawler-8580 - INFO - Sent content to indexer node for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-18 00:44:39,380 - Crawler-8580 - INFO - Task for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias completed in 7.01 seconds
+2025-04-18 00:44:39,481 - Crawler-8580 - INFO - Crawler 2 received URL: https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 00:44:39,481 - Crawler-8580 - INFO - Fetching content from https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 00:44:42,273 - Crawler-8580 - INFO - Fetched 154411 bytes from https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 00:44:42,273 - Crawler-8580 - INFO - Parsing content from https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 00:44:42,314 - Crawler-8580 - INFO - Crawler 2 crawled https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 and extracted 10 URLs in 2.83 seconds
+2025-04-18 00:44:52,132 - Crawler-8580 - INFO - Sent content to indexer node for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 00:44:52,132 - Crawler-8580 - INFO - Task for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 completed in 12.65 seconds
+2025-04-18 00:44:52,233 - Crawler-8580 - INFO - Crawler 2 received URL: https://github.com/features/copilot
+2025-04-18 00:44:52,234 - Crawler-8580 - INFO - Fetching content from https://github.com/features/copilot
+2025-04-18 00:44:53,303 - Crawler-8580 - INFO - Fetched 668812 bytes from https://github.com/features/copilot
+2025-04-18 00:44:53,303 - Crawler-8580 - INFO - Parsing content from https://github.com/features/copilot
+2025-04-18 00:44:53,432 - Crawler-8580 - INFO - Crawler 2 crawled https://github.com/features/copilot and extracted 122 URLs in 1.20 seconds
+2025-04-18 00:44:59,074 - Crawler-8580 - INFO - Sent content to indexer node for https://github.com/features/copilot
+2025-04-18 00:44:59,074 - Crawler-8580 - INFO - Task for https://github.com/features/copilot completed in 6.84 seconds
+2025-04-18 00:44:59,175 - Crawler-8580 - INFO - Crawler 2 received URL: https://github.com/features/actions
+2025-04-18 00:44:59,175 - Crawler-8580 - INFO - Fetching content from https://github.com/features/actions
+2025-04-18 00:45:00,322 - Crawler-8580 - INFO - Fetched 284305 bytes from https://github.com/features/actions
+2025-04-18 00:45:00,323 - Crawler-8580 - INFO - Parsing content from https://github.com/features/actions
+2025-04-18 00:45:00,429 - Crawler-8580 - INFO - Crawler 2 crawled https://github.com/features/actions and extracted 76 URLs in 1.25 seconds
+2025-04-18 00:45:05,290 - Crawler-8580 - INFO - Sent content to indexer node for https://github.com/features/actions
+2025-04-18 00:45:05,291 - Crawler-8580 - INFO - Task for https://github.com/features/actions completed in 6.12 seconds
+2025-04-18 00:45:05,391 - Crawler-8580 - INFO - Crawler 2 received URL: https://www.reddit.com/login/
+2025-04-18 00:45:05,391 - Crawler-8580 - INFO - Fetching content from https://www.reddit.com/login/
+2025-04-18 00:45:07,115 - Crawler-8580 - INFO - Fetched 351187 bytes from https://www.reddit.com/login/
+2025-04-18 00:45:07,115 - Crawler-8580 - INFO - Parsing content from https://www.reddit.com/login/
+2025-04-18 00:45:07,122 - Crawler-8580 - INFO - No real URLs found, created 2 simulated URLs
+2025-04-18 00:45:07,122 - Crawler-8580 - INFO - Crawler 2 crawled https://www.reddit.com/login/ and extracted 2 URLs in 1.73 seconds
+2025-04-18 00:45:12,078 - Crawler-8580 - INFO - Sent content to indexer node for https://www.reddit.com/login/
+2025-04-18 00:45:12,078 - Crawler-8580 - WARNING - Simulating a brief node failure (testing fault tolerance)
+2025-04-18 00:45:24,079 - Crawler-8580 - INFO - Task for https://www.reddit.com/login/ completed in 18.69 seconds
+2025-04-18 00:45:24,180 - Crawler-8580 - INFO - Crawler 2 received URL: https://www.redditinc.com/policies/user-agreement
+2025-04-18 00:45:24,180 - Crawler-8580 - INFO - Fetching content from https://www.redditinc.com/policies/user-agreement
+2025-04-18 00:45:25,217 - Crawler-8580 - INFO - Fetched 242336 bytes from https://www.redditinc.com/policies/user-agreement
+2025-04-18 00:45:25,218 - Crawler-8580 - INFO - Parsing content from https://www.redditinc.com/policies/user-agreement
+2025-04-18 00:45:25,293 - Crawler-8580 - INFO - Crawler 2 crawled https://www.redditinc.com/policies/user-agreement and extracted 648 URLs in 1.11 seconds
+2025-04-18 23:08:44,316 - Crawler-11696 - INFO - Crawler node started with rank 2 of 5
+2025-04-18 23:08:44,318 - Crawler-11696 - INFO - Heartbeat mechanism started
+2025-04-18 23:08:44,318 - Crawler-11696 - INFO - Crawler 2 received URL: https://www.github.com
+2025-04-18 23:08:44,319 - Crawler-11696 - INFO - Fetching content from https://www.github.com
+2025-04-18 23:08:45,698 - Crawler-11696 - INFO - Fetched 281248 bytes from https://www.github.com
+2025-04-18 23:08:45,698 - Crawler-11696 - INFO - Parsing content from https://www.github.com
+2025-04-18 23:08:45,764 - Crawler-11696 - INFO - Crawler 2 crawled https://www.github.com and extracted 68 URLs in 1.44 seconds
+2025-04-18 23:08:56,175 - Crawler-11696 - INFO - Sent content to indexer node for https://www.github.com
+2025-04-18 23:08:56,176 - Crawler-11696 - INFO - Task for https://www.github.com completed in 11.86 seconds
+2025-04-18 23:08:56,277 - Crawler-11696 - INFO - Crawler 2 received URL: https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-18 23:08:56,277 - Crawler-11696 - INFO - Fetching content from https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-18 23:08:58,245 - Crawler-11696 - INFO - Fetched 556619 bytes from https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-18 23:08:58,246 - Crawler-11696 - INFO - Parsing content from https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-18 23:08:58,600 - Crawler-11696 - INFO - Crawler 2 crawled https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias and extracted 3371 URLs in 2.32 seconds
+2025-04-18 23:09:02,621 - Crawler-11696 - INFO - Sent content to indexer node for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-18 23:09:02,621 - Crawler-11696 - INFO - Task for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias completed in 6.34 seconds
+2025-04-18 23:09:02,723 - Crawler-11696 - INFO - Crawler 2 received URL: https://www.python.org/psf/
+2025-04-18 23:09:02,723 - Crawler-11696 - INFO - Fetching content from https://www.python.org/psf/
+2025-04-18 23:09:03,325 - Crawler-11696 - INFO - Fetched 52283 bytes from https://www.python.org/psf/
+2025-04-18 23:09:03,325 - Crawler-11696 - INFO - Parsing content from https://www.python.org/psf/
+2025-04-18 23:09:03,347 - Crawler-11696 - INFO - Crawler 2 crawled https://www.python.org/psf/ and extracted 56 URLs in 0.62 seconds
+2025-04-18 23:09:06,441 - Crawler-11696 - INFO - Sent content to indexer node for https://www.python.org/psf/
+2025-04-18 23:09:06,441 - Crawler-11696 - INFO - Task for https://www.python.org/psf/ completed in 3.72 seconds
+2025-04-18 23:09:06,542 - Crawler-11696 - INFO - Crawler 2 received URL: https://pypi.org/
+2025-04-18 23:09:06,542 - Crawler-11696 - INFO - Fetching content from https://pypi.org/
+2025-04-18 23:09:07,203 - Crawler-11696 - INFO - Fetched 19849 bytes from https://pypi.org/
+2025-04-18 23:09:07,203 - Crawler-11696 - INFO - Parsing content from https://pypi.org/
+2025-04-18 23:09:07,210 - Crawler-11696 - INFO - Crawler 2 crawled https://pypi.org/ and extracted 26 URLs in 0.67 seconds
+2025-04-18 23:09:08,228 - Crawler-11696 - INFO - Sent content to indexer node for https://pypi.org/
+2025-04-18 23:09:08,228 - Crawler-11696 - INFO - Task for https://pypi.org/ completed in 1.69 seconds
+2025-04-18 23:09:08,329 - Crawler-11696 - INFO - Crawler 2 received URL: https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 23:09:08,329 - Crawler-11696 - INFO - Fetching content from https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 23:09:10,589 - Crawler-11696 - INFO - Fetched 154412 bytes from https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 23:09:10,589 - Crawler-11696 - INFO - Parsing content from https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 23:09:10,634 - Crawler-11696 - INFO - Crawler 2 crawled https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 and extracted 10 URLs in 2.30 seconds
+2025-04-18 23:09:21,122 - Crawler-11696 - INFO - Sent content to indexer node for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 23:09:21,123 - Crawler-11696 - INFO - Task for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 completed in 12.79 seconds
+2025-04-18 23:09:21,223 - Crawler-11696 - INFO - Crawler 2 received URL: https://github.com/security/advanced-security
+2025-04-18 23:09:21,223 - Crawler-11696 - INFO - Fetching content from https://github.com/security/advanced-security
+2025-04-18 23:09:22,165 - Crawler-11696 - INFO - Fetched 261419 bytes from https://github.com/security/advanced-security
+2025-04-18 23:09:22,165 - Crawler-11696 - INFO - Parsing content from https://github.com/security/advanced-security
+2025-04-18 23:09:22,207 - Crawler-11696 - INFO - Crawler 2 crawled https://github.com/security/advanced-security and extracted 76 URLs in 0.98 seconds
+2025-04-18 23:09:24,184 - Crawler-11696 - INFO - Sent content to indexer node for https://github.com/security/advanced-security
+2025-04-18 23:09:24,184 - Crawler-11696 - INFO - Task for https://github.com/security/advanced-security completed in 2.96 seconds
+2025-04-18 23:09:24,285 - Crawler-11696 - INFO - Crawler 2 received URL: https://github.com/features/codespaces
+2025-04-18 23:09:24,285 - Crawler-11696 - INFO - Fetching content from https://github.com/features/codespaces
+2025-04-18 23:09:25,377 - Crawler-11696 - INFO - Fetched 334978 bytes from https://github.com/features/codespaces
+2025-04-18 23:09:25,378 - Crawler-11696 - INFO - Parsing content from https://github.com/features/codespaces
+2025-04-18 23:09:25,439 - Crawler-11696 - INFO - Crawler 2 crawled https://github.com/features/codespaces and extracted 86 URLs in 1.15 seconds
+2025-04-18 23:09:30,418 - Crawler-11696 - INFO - Sent content to indexer node for https://github.com/features/codespaces
+2025-04-18 23:09:30,418 - Crawler-11696 - INFO - Task for https://github.com/features/codespaces completed in 6.13 seconds
+2025-04-18 23:09:30,519 - Crawler-11696 - INFO - Crawler 2 received URL: https://github.com/features/issues
+2025-04-18 23:09:30,519 - Crawler-11696 - INFO - Fetching content from https://github.com/features/issues
+2025-04-18 23:09:31,666 - Crawler-11696 - INFO - Fetched 342742 bytes from https://github.com/features/issues
+2025-04-18 23:09:31,666 - Crawler-11696 - INFO - Parsing content from https://github.com/features/issues
+2025-04-18 23:09:31,710 - Crawler-11696 - INFO - Crawler 2 crawled https://github.com/features/issues and extracted 76 URLs in 1.19 seconds
+2025-04-18 23:09:36,413 - Crawler-11696 - INFO - Sent content to indexer node for https://github.com/features/issues
+2025-04-18 23:09:36,413 - Crawler-11696 - INFO - Task for https://github.com/features/issues completed in 5.89 seconds
+2025-04-18 23:09:36,514 - Crawler-11696 - INFO - Crawler 2 received URL: http://news.reddit.com
+2025-04-18 23:09:36,514 - Crawler-11696 - INFO - Fetching content from http://news.reddit.com
+2025-04-18 23:09:39,237 - Crawler-11696 - INFO - Fetched 644017 bytes from http://news.reddit.com
+2025-04-18 23:09:39,238 - Crawler-11696 - INFO - Parsing content from http://news.reddit.com
+2025-04-18 23:09:39,324 - Crawler-11696 - INFO - Crawler 2 crawled http://news.reddit.com and extracted 73 URLs in 2.81 seconds
+2025-04-18 23:21:42,664 - Crawler-36892 - INFO - Crawler node started with rank 2 of 5
+2025-04-18 23:21:42,666 - Crawler-36892 - INFO - Heartbeat mechanism started
+2025-04-18 23:21:42,666 - Crawler-36892 - INFO - Crawler 2 received URL: https://www.github.com
+2025-04-18 23:21:42,666 - Crawler-36892 - INFO - Fetching content from https://www.github.com
+2025-04-18 23:21:44,060 - Crawler-36892 - INFO - Fetched 281252 bytes from https://www.github.com
+2025-04-18 23:21:44,060 - Crawler-36892 - INFO - Parsing content from https://www.github.com
+2025-04-18 23:21:44,125 - Crawler-36892 - INFO - Crawler 2 crawled https://www.github.com and extracted 68 URLs in 1.46 seconds
+2025-04-18 23:21:55,747 - Crawler-36892 - INFO - Sent content to indexer node for https://www.github.com
+2025-04-18 23:21:55,747 - Crawler-36892 - INFO - Task for https://www.github.com completed in 13.08 seconds
+2025-04-18 23:21:55,849 - Crawler-36892 - INFO - Crawler 2 received URL: https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-18 23:21:55,849 - Crawler-36892 - INFO - Fetching content from https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-18 23:21:57,541 - Crawler-36892 - INFO - Fetched 556619 bytes from https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-18 23:21:57,542 - Crawler-36892 - INFO - Parsing content from https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-18 23:21:57,999 - Crawler-36892 - INFO - Crawler 2 crawled https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias and extracted 3371 URLs in 2.15 seconds
+2025-04-18 23:22:02,694 - Crawler-36892 - INFO - Sent content to indexer node for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-18 23:22:02,694 - Crawler-36892 - INFO - Task for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias completed in 6.84 seconds
+2025-04-18 23:22:02,794 - Crawler-36892 - INFO - Crawler 2 received URL: https://www.python.org/psf/
+2025-04-18 23:22:02,795 - Crawler-36892 - INFO - Fetching content from https://www.python.org/psf/
+2025-04-18 23:22:03,372 - Crawler-36892 - INFO - Fetched 52283 bytes from https://www.python.org/psf/
+2025-04-18 23:22:03,372 - Crawler-36892 - INFO - Parsing content from https://www.python.org/psf/
+2025-04-18 23:22:03,395 - Crawler-36892 - INFO - Crawler 2 crawled https://www.python.org/psf/ and extracted 56 URLs in 0.60 seconds
+2025-04-18 23:22:06,828 - Crawler-36892 - INFO - Sent content to indexer node for https://www.python.org/psf/
+2025-04-18 23:22:06,828 - Crawler-36892 - INFO - Task for https://www.python.org/psf/ completed in 4.03 seconds
+2025-04-18 23:22:06,929 - Crawler-36892 - INFO - Crawler 2 received URL: https://pypi.org/
+2025-04-18 23:22:06,929 - Crawler-36892 - INFO - Fetching content from https://pypi.org/
+2025-04-18 23:22:07,559 - Crawler-36892 - INFO - Fetched 19849 bytes from https://pypi.org/
+2025-04-18 23:22:07,559 - Crawler-36892 - INFO - Parsing content from https://pypi.org/
+2025-04-18 23:22:07,568 - Crawler-36892 - INFO - Crawler 2 crawled https://pypi.org/ and extracted 26 URLs in 0.64 seconds
+2025-04-18 23:22:09,097 - Crawler-36892 - INFO - Sent content to indexer node for https://pypi.org/
+2025-04-18 23:22:09,097 - Crawler-36892 - INFO - Task for https://pypi.org/ completed in 2.17 seconds
+2025-04-18 23:22:09,198 - Crawler-36892 - INFO - Crawler 2 received URL: https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 23:22:09,199 - Crawler-36892 - INFO - Fetching content from https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 23:22:11,629 - Crawler-36892 - INFO - Fetched 154411 bytes from https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 23:22:11,630 - Crawler-36892 - INFO - Parsing content from https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 23:22:11,660 - Crawler-36892 - INFO - Crawler 2 crawled https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 and extracted 10 URLs in 2.46 seconds
+2025-04-18 23:22:16,210 - Crawler-36892 - INFO - Sent content to indexer node for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 23:22:16,210 - Crawler-36892 - INFO - Task for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 completed in 7.01 seconds
+2025-04-18 23:22:16,311 - Crawler-36892 - INFO - Crawler 2 received URL: https://github.com/security/advanced-security
+2025-04-18 23:22:16,311 - Crawler-36892 - INFO - Fetching content from https://github.com/security/advanced-security
+2025-04-18 23:22:17,306 - Crawler-36892 - INFO - Fetched 261396 bytes from https://github.com/security/advanced-security
+2025-04-18 23:22:17,307 - Crawler-36892 - INFO - Parsing content from https://github.com/security/advanced-security
+2025-04-18 23:22:17,369 - Crawler-36892 - INFO - Crawler 2 crawled https://github.com/security/advanced-security and extracted 76 URLs in 1.06 seconds
+2025-04-18 23:25:06,909 - Crawler-31264 - INFO - Crawler node started with rank 2 of 5
+2025-04-18 23:25:06,909 - Crawler-31264 - INFO - Heartbeat mechanism started
+2025-04-18 23:25:06,910 - Crawler-31264 - INFO - Crawler 2 received URL: https://www.github.com
+2025-04-18 23:25:06,910 - Crawler-31264 - INFO - Fetching content from https://www.github.com
+2025-04-18 23:25:08,450 - Crawler-31264 - INFO - Fetched 281226 bytes from https://www.github.com
+2025-04-18 23:25:08,450 - Crawler-31264 - INFO - Parsing content from https://www.github.com
+2025-04-18 23:25:08,507 - Crawler-31264 - INFO - Crawler 2 crawled https://www.github.com and extracted 68 URLs in 1.60 seconds
+2025-04-18 23:25:19,009 - Crawler-31264 - INFO - Sent content to indexer node for https://www.github.com
+2025-04-18 23:25:19,009 - Crawler-31264 - INFO - Task for https://www.github.com completed in 12.10 seconds
+2025-04-18 23:25:19,110 - Crawler-31264 - INFO - Crawler 2 received URL: https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-18 23:25:19,110 - Crawler-31264 - INFO - Fetching content from https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-18 23:25:20,803 - Crawler-31264 - INFO - Fetched 556619 bytes from https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-18 23:25:20,803 - Crawler-31264 - INFO - Parsing content from https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-18 23:25:21,114 - Crawler-31264 - INFO - Crawler 2 crawled https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias and extracted 3371 URLs in 2.00 seconds
+2025-04-18 23:25:23,130 - Crawler-31264 - INFO - Sent content to indexer node for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-18 23:25:23,130 - Crawler-31264 - INFO - Task for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias completed in 4.02 seconds
+2025-04-18 23:25:23,230 - Crawler-31264 - INFO - Crawler 2 received URL: https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-18 23:25:23,230 - Crawler-31264 - INFO - Fetching content from https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-18 23:25:25,691 - Crawler-31264 - INFO - Fetched 734200 bytes from https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-18 23:25:25,691 - Crawler-31264 - INFO - Parsing content from https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-18 23:25:25,726 - Crawler-31264 - INFO - Crawler 2 crawled https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 and extracted 44 URLs in 2.50 seconds
+2025-04-18 23:25:29,955 - Crawler-31264 - INFO - Sent content to indexer node for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-18 23:25:29,955 - Crawler-31264 - INFO - Task for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 completed in 6.72 seconds
+2025-04-18 23:25:30,056 - Crawler-31264 - INFO - Crawler 2 received URL: https://www.python.org/psf/
+2025-04-18 23:25:30,056 - Crawler-31264 - INFO - Fetching content from https://www.python.org/psf/
+2025-04-18 23:25:31,093 - Crawler-31264 - INFO - Fetched 52283 bytes from https://www.python.org/psf/
+2025-04-18 23:25:31,093 - Crawler-31264 - INFO - Parsing content from https://www.python.org/psf/
+2025-04-18 23:25:31,113 - Crawler-31264 - INFO - Crawler 2 crawled https://www.python.org/psf/ and extracted 56 URLs in 1.06 seconds
+2025-04-18 23:25:33,288 - Crawler-31264 - INFO - Sent content to indexer node for https://www.python.org/psf/
+2025-04-18 23:25:33,288 - Crawler-31264 - INFO - Task for https://www.python.org/psf/ completed in 3.23 seconds
+2025-04-18 23:25:33,389 - Crawler-31264 - INFO - Crawler 2 received URL: https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 23:25:33,389 - Crawler-31264 - INFO - Fetching content from https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 23:25:35,413 - Crawler-31264 - INFO - Fetched 154412 bytes from https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 23:25:35,415 - Crawler-31264 - INFO - Parsing content from https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 23:25:35,447 - Crawler-31264 - INFO - Crawler 2 crawled https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 and extracted 10 URLs in 2.06 seconds
+2025-04-18 23:25:42,299 - Crawler-31264 - INFO - Sent content to indexer node for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 23:25:42,299 - Crawler-31264 - INFO - Task for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 completed in 8.91 seconds
+2025-04-18 23:25:42,400 - Crawler-31264 - INFO - Crawler 2 received URL: https://github.com/features/copilot
+2025-04-18 23:25:42,400 - Crawler-31264 - INFO - Fetching content from https://github.com/features/copilot
+2025-04-18 23:25:43,594 - Crawler-31264 - INFO - Fetched 669978 bytes from https://github.com/features/copilot
+2025-04-18 23:25:43,594 - Crawler-31264 - INFO - Parsing content from https://github.com/features/copilot
+2025-04-18 23:25:43,688 - Crawler-31264 - INFO - Crawler 2 crawled https://github.com/features/copilot and extracted 122 URLs in 1.29 seconds
+2025-04-18 23:25:50,347 - Crawler-31264 - INFO - Sent content to indexer node for https://github.com/features/copilot
+2025-04-18 23:25:50,347 - Crawler-31264 - INFO - Task for https://github.com/features/copilot completed in 7.95 seconds
+2025-04-18 23:25:50,448 - Crawler-31264 - INFO - Crawler 2 received URL: https://www.reddit.com/login/
+2025-04-18 23:25:50,448 - Crawler-31264 - INFO - Fetching content from https://www.reddit.com/login/
+2025-04-18 23:25:52,225 - Crawler-31264 - INFO - Fetched 351189 bytes from https://www.reddit.com/login/
+2025-04-18 23:25:52,225 - Crawler-31264 - INFO - Parsing content from https://www.reddit.com/login/
+2025-04-18 23:25:52,239 - Crawler-31264 - INFO - No real URLs found, created 2 simulated URLs
+2025-04-18 23:25:52,239 - Crawler-31264 - INFO - Crawler 2 crawled https://www.reddit.com/login/ and extracted 2 URLs in 1.79 seconds
+2025-04-18 23:25:58,358 - Crawler-31264 - INFO - Sent content to indexer node for https://www.reddit.com/login/
+2025-04-18 23:25:58,359 - Crawler-31264 - INFO - Task for https://www.reddit.com/login/ completed in 7.91 seconds
+2025-04-18 23:25:58,460 - Crawler-31264 - INFO - Crawler 2 received URL: http://news.reddit.com
+2025-04-18 23:25:58,460 - Crawler-31264 - INFO - Fetching content from http://news.reddit.com
+2025-04-18 23:26:01,141 - Crawler-31264 - INFO - Fetched 642891 bytes from http://news.reddit.com
+2025-04-18 23:26:01,141 - Crawler-31264 - INFO - Parsing content from http://news.reddit.com
+2025-04-18 23:26:01,241 - Crawler-31264 - INFO - Crawler 2 crawled http://news.reddit.com and extracted 72 URLs in 2.78 seconds

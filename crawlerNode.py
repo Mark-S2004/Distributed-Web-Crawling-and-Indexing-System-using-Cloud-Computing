@@ -5,6 +5,7 @@ import requests
 from bs4 import BeautifulSoup
 import threading
 import random
+import os
 
 def crawler_process():
     """
@@ -25,7 +26,9 @@ def crawler_process():
     size = comm.Get_size()
     
     # Setup enhanced logging with file output
-    log_filename = f"crawler_{rank}.log"
+    log_filename = f"logs/crawler_{rank}.log"
+    # Ensure logs directory exists
+    os.makedirs(os.path.dirname(log_filename), exist_ok=True)
     logging.basicConfig(
         level=logging.INFO,
         format='%(asctime)s - Crawler-%(process)d - %(levelname)s - %(message)s',

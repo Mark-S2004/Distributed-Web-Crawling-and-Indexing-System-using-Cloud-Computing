@@ -6,6 +6,12 @@ set PROJECT_PATH=C:\Users\acer\Distributed-Web-Crawling-and-Indexing-System-usin
 
 cd %PROJECT_PATH%
 
+:: Create directories for logs and data
+echo Creating organized directory structure...
+if not exist logs mkdir logs
+if not exist data mkdir data
+if not exist data\monitoring mkdir data\monitoring
+
 echo Setting up NLTK data...
 %PYTHON_PATH% setup_nltk.py
 

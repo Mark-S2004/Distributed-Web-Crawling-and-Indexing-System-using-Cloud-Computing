@@ -1,0 +1,502 @@
+2025-04-17 23:26:57,006 - Crawler-13440 - INFO - Crawler node started with rank 1 of 5
+2025-04-17 23:26:57,009 - Crawler-13440 - INFO - Heartbeat mechanism started
+2025-04-17 23:26:57,009 - Crawler-13440 - INFO - Crawler 1 received URL: https://www.python.org
+2025-04-17 23:26:57,010 - Crawler-13440 - INFO - Fetching content from https://www.python.org
+2025-04-17 23:26:58,066 - Crawler-13440 - INFO - Fetched 51308 bytes from https://www.python.org
+2025-04-17 23:26:58,066 - Crawler-13440 - INFO - Parsing content from https://www.python.org
+2025-04-17 23:26:58,113 - Crawler-13440 - INFO - Crawler 1 crawled https://www.python.org and extracted 71 URLs in 1.10 seconds
+2025-04-17 23:26:59,238 - Crawler-13440 - INFO - Sent content to indexer node for https://www.python.org
+2025-04-17 23:26:59,238 - Crawler-13440 - INFO - Task for https://www.python.org completed in 2.23 seconds
+2025-04-17 23:26:59,340 - Crawler-13440 - INFO - Crawler 1 received URL: https://www.reddit.com
+2025-04-17 23:26:59,340 - Crawler-13440 - INFO - Fetching content from https://www.reddit.com
+2025-04-17 23:27:01,051 - Crawler-13440 - INFO - Fetched 641365 bytes from https://www.reddit.com
+2025-04-17 23:27:01,052 - Crawler-13440 - INFO - Parsing content from https://www.reddit.com
+2025-04-17 23:27:01,199 - Crawler-13440 - INFO - Crawler 1 crawled https://www.reddit.com and extracted 71 URLs in 1.86 seconds
+2025-04-17 23:27:03,280 - Crawler-13440 - INFO - Sent content to indexer node for https://www.reddit.com
+2025-04-17 23:27:03,281 - Crawler-13440 - INFO - Task for https://www.reddit.com completed in 3.94 seconds
+2025-04-17 23:27:03,381 - Crawler-13440 - INFO - Crawler 1 received URL: https://www.python.org/psf/
+2025-04-17 23:27:03,381 - Crawler-13440 - INFO - Fetching content from https://www.python.org/psf/
+2025-04-17 23:27:04,274 - Crawler-13440 - INFO - Fetched 52283 bytes from https://www.python.org/psf/
+2025-04-17 23:27:04,275 - Crawler-13440 - INFO - Parsing content from https://www.python.org/psf/
+2025-04-17 23:27:04,310 - Crawler-13440 - INFO - Crawler 1 crawled https://www.python.org/psf/ and extracted 56 URLs in 0.93 seconds
+2025-04-17 23:27:04,311 - Crawler-13440 - INFO - Sent content to indexer node for https://www.python.org/psf/
+2025-04-17 23:27:04,311 - Crawler-13440 - INFO - Task for https://www.python.org/psf/ completed in 0.93 seconds
+2025-04-17 23:27:04,412 - Crawler-13440 - INFO - Crawler 1 received URL: https://pypi.org/
+2025-04-17 23:27:04,412 - Crawler-13440 - INFO - Fetching content from https://pypi.org/
+2025-04-17 23:27:05,063 - Crawler-13440 - INFO - Fetched 19849 bytes from https://pypi.org/
+2025-04-17 23:27:05,063 - Crawler-13440 - INFO - Parsing content from https://pypi.org/
+2025-04-17 23:27:05,079 - Crawler-13440 - INFO - Crawler 1 crawled https://pypi.org/ and extracted 26 URLs in 0.67 seconds
+2025-04-17 23:27:05,079 - Crawler-13440 - INFO - Sent content to indexer node for https://pypi.org/
+2025-04-17 23:27:05,079 - Crawler-13440 - INFO - Task for https://pypi.org/ completed in 0.67 seconds
+2025-04-17 23:27:05,180 - Crawler-13440 - INFO - Crawler 1 received URL: https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-17 23:27:05,180 - Crawler-13440 - INFO - Fetching content from https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-17 23:27:07,374 - Crawler-13440 - INFO - Fetched 154411 bytes from https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-17 23:27:07,374 - Crawler-13440 - INFO - Parsing content from https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-17 23:27:07,408 - Crawler-13440 - INFO - Crawler 1 crawled https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 and extracted 10 URLs in 2.23 seconds
+2025-04-17 23:27:07,409 - Crawler-13440 - INFO - Sent content to indexer node for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-17 23:27:07,409 - Crawler-13440 - INFO - Task for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 completed in 2.23 seconds
+2025-04-17 23:27:07,510 - Crawler-13440 - INFO - Crawler 1 received URL: https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter
+2025-04-17 23:27:07,510 - Crawler-13440 - INFO - Fetching content from https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter
+2025-04-17 23:27:08,456 - Crawler-13440 - INFO - Fetched 69867 bytes from https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter
+2025-04-17 23:27:08,457 - Crawler-13440 - INFO - Parsing content from https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter
+2025-04-17 23:27:08,478 - Crawler-13440 - INFO - Crawler 1 crawled https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter and extracted 18 URLs in 0.97 seconds
+2025-04-17 23:27:08,479 - Crawler-13440 - INFO - Sent content to indexer node for https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter
+2025-04-17 23:27:08,479 - Crawler-13440 - INFO - Task for https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter completed in 0.97 seconds
+2025-04-17 23:27:08,580 - Crawler-13440 - INFO - Crawler 1 received URL: https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-17 23:27:08,580 - Crawler-13440 - INFO - Fetching content from https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-17 23:27:09,279 - Crawler-13440 - INFO - Fetched 136556 bytes from https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-17 23:27:09,279 - Crawler-13440 - INFO - Parsing content from https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-17 23:27:09,364 - Crawler-13440 - INFO - Crawler 1 crawled https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications and extracted 94 URLs in 0.78 seconds
+2025-04-17 23:27:10,414 - Crawler-13440 - INFO - Sent content to indexer node for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-17 23:27:10,414 - Crawler-13440 - INFO - Task for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications completed in 1.83 seconds
+2025-04-17 23:27:10,515 - Crawler-13440 - INFO - Crawler 1 received URL: https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-17 23:27:10,515 - Crawler-13440 - INFO - Fetching content from https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-17 23:27:12,351 - Crawler-13440 - INFO - Fetched 733576 bytes from https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-17 23:27:12,351 - Crawler-13440 - INFO - Parsing content from https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-17 23:27:12,398 - Crawler-13440 - INFO - Crawler 1 crawled https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 and extracted 44 URLs in 1.88 seconds
+2025-04-17 23:27:12,399 - Crawler-13440 - INFO - Sent content to indexer node for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-17 23:27:12,400 - Crawler-13440 - INFO - Task for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 completed in 1.88 seconds
+2025-04-17 23:27:12,500 - Crawler-13440 - INFO - Crawler 1 received URL: https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/
+2025-04-17 23:27:12,500 - Crawler-13440 - INFO - Fetching content from https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/
+2025-04-17 23:27:13,788 - Crawler-13440 - INFO - Fetched 589371 bytes from https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/
+2025-04-17 23:27:13,789 - Crawler-13440 - INFO - Parsing content from https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/
+2025-04-17 23:27:13,893 - Crawler-13440 - INFO - Crawler 1 crawled https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/ and extracted 235 URLs in 1.39 seconds
+2025-04-17 23:27:13,988 - Crawler-13440 - INFO - Sent content to indexer node for https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/
+2025-04-17 23:27:13,989 - Crawler-13440 - INFO - Task for https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/ completed in 1.49 seconds
+2025-04-17 23:27:14,090 - Crawler-13440 - INFO - Crawler 1 received URL: https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/
+2025-04-17 23:27:14,090 - Crawler-13440 - INFO - Fetching content from https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/
+2025-04-17 23:27:15,246 - Crawler-13440 - INFO - Fetched 589371 bytes from https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/
+2025-04-17 23:27:15,246 - Crawler-13440 - INFO - Parsing content from https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/
+2025-04-17 23:27:15,331 - Crawler-13440 - INFO - Crawler 1 crawled https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/ and extracted 235 URLs in 1.24 seconds
+2025-04-17 23:27:15,556 - Crawler-13440 - INFO - Sent content to indexer node for https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/
+2025-04-17 23:27:15,556 - Crawler-13440 - INFO - Task for https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/ completed in 1.47 seconds
+2025-04-17 23:27:15,657 - Crawler-13440 - INFO - Crawler 1 received URL: https://github.com/features/copilot
+2025-04-17 23:27:15,657 - Crawler-13440 - INFO - Fetching content from https://github.com/features/copilot
+2025-04-17 23:27:16,726 - Crawler-13440 - INFO - Fetched 668888 bytes from https://github.com/features/copilot
+2025-04-17 23:27:16,726 - Crawler-13440 - INFO - Parsing content from https://github.com/features/copilot
+2025-04-17 23:27:16,848 - Crawler-13440 - INFO - Crawler 1 crawled https://github.com/features/copilot and extracted 122 URLs in 1.19 seconds
+2025-04-17 23:27:16,926 - Crawler-13440 - INFO - Sent content to indexer node for https://github.com/features/copilot
+2025-04-17 23:27:16,926 - Crawler-13440 - INFO - Task for https://github.com/features/copilot completed in 1.27 seconds
+2025-04-17 23:27:17,027 - Crawler-13440 - INFO - Crawler 1 received URL: https://github.com/features/actions
+2025-04-17 23:27:17,027 - Crawler-13440 - INFO - Fetching content from https://github.com/features/actions
+2025-04-17 23:27:17,896 - Crawler-13440 - INFO - Fetched 284380 bytes from https://github.com/features/actions
+2025-04-17 23:27:17,896 - Crawler-13440 - INFO - Parsing content from https://github.com/features/actions
+2025-04-17 23:27:17,946 - Crawler-13440 - INFO - Crawler 1 crawled https://github.com/features/actions and extracted 76 URLs in 0.92 seconds
+2025-04-17 23:32:34,126 - Crawler-27880 - INFO - Crawler node started with rank 1 of 5
+2025-04-17 23:32:34,127 - Crawler-27880 - INFO - Heartbeat mechanism started
+2025-04-17 23:32:34,128 - Crawler-27880 - INFO - Crawler 1 received URL: https://www.python.org
+2025-04-17 23:32:34,128 - Crawler-27880 - INFO - Fetching content from https://www.python.org
+2025-04-17 23:32:35,218 - Crawler-27880 - INFO - Fetched 50592 bytes from https://www.python.org
+2025-04-17 23:32:35,219 - Crawler-27880 - INFO - Parsing content from https://www.python.org
+2025-04-17 23:32:35,262 - Crawler-27880 - INFO - Crawler 1 crawled https://www.python.org and extracted 71 URLs in 1.13 seconds
+2025-04-17 23:32:36,462 - Crawler-27880 - INFO - Sent content to indexer node for https://www.python.org
+2025-04-17 23:32:36,463 - Crawler-27880 - INFO - Task for https://www.python.org completed in 2.33 seconds
+2025-04-17 23:32:36,564 - Crawler-27880 - INFO - Crawler 1 received URL: https://www.reddit.com
+2025-04-17 23:32:36,564 - Crawler-27880 - INFO - Fetching content from https://www.reddit.com
+2025-04-17 23:32:39,502 - Crawler-27880 - INFO - Fetched 636979 bytes from https://www.reddit.com
+2025-04-17 23:32:39,502 - Crawler-27880 - INFO - Parsing content from https://www.reddit.com
+2025-04-17 23:32:39,703 - Crawler-27880 - INFO - Crawler 1 crawled https://www.reddit.com and extracted 70 URLs in 3.14 seconds
+2025-04-17 23:32:40,970 - Crawler-27880 - INFO - Sent content to indexer node for https://www.reddit.com
+2025-04-17 23:32:40,970 - Crawler-27880 - INFO - Task for https://www.reddit.com completed in 4.41 seconds
+2025-04-17 23:32:41,071 - Crawler-27880 - INFO - Crawler 1 received URL: https://docs.python.org
+2025-04-17 23:32:41,071 - Crawler-27880 - INFO - Fetching content from https://docs.python.org
+2025-04-17 23:32:41,641 - Crawler-27880 - INFO - Fetched 17704 bytes from https://docs.python.org
+2025-04-17 23:32:41,641 - Crawler-27880 - INFO - Parsing content from https://docs.python.org
+2025-04-17 23:32:41,660 - Crawler-27880 - INFO - Crawler 1 crawled https://docs.python.org and extracted 52 URLs in 0.59 seconds
+2025-04-17 23:32:42,688 - Crawler-27880 - INFO - Sent content to indexer node for https://docs.python.org
+2025-04-17 23:32:42,688 - Crawler-27880 - INFO - Task for https://docs.python.org completed in 1.62 seconds
+2025-04-17 23:32:42,789 - Crawler-27880 - INFO - Crawler 1 received URL: https://pypi.org/
+2025-04-17 23:32:42,790 - Crawler-27880 - INFO - Fetching content from https://pypi.org/
+2025-04-17 23:32:43,602 - Crawler-27880 - INFO - Fetched 19849 bytes from https://pypi.org/
+2025-04-17 23:32:43,602 - Crawler-27880 - INFO - Parsing content from https://pypi.org/
+2025-04-17 23:32:43,619 - Crawler-27880 - INFO - Crawler 1 crawled https://pypi.org/ and extracted 26 URLs in 0.83 seconds
+2025-04-17 23:32:45,487 - Crawler-27880 - INFO - Sent content to indexer node for https://pypi.org/
+2025-04-17 23:32:45,487 - Crawler-27880 - INFO - Task for https://pypi.org/ completed in 2.70 seconds
+2025-04-17 23:32:45,588 - Crawler-27880 - INFO - Crawler 1 received URL: https://www.linkedin.com/company/python-software-foundation/
+2025-04-17 23:32:45,588 - Crawler-27880 - INFO - Fetching content from https://www.linkedin.com/company/python-software-foundation/
+2025-04-17 23:32:46,630 - Crawler-27880 - INFO - Fetched 1530 bytes from https://www.linkedin.com/company/python-software-foundation/
+2025-04-17 23:32:46,630 - Crawler-27880 - INFO - Parsing content from https://www.linkedin.com/company/python-software-foundation/
+2025-04-17 23:32:46,631 - Crawler-27880 - INFO - No real URLs found, created 2 simulated URLs
+2025-04-17 23:32:46,631 - Crawler-27880 - INFO - Crawler 1 crawled https://www.linkedin.com/company/python-software-foundation/ and extracted 2 URLs in 1.04 seconds
+2025-04-17 23:32:46,631 - Crawler-27880 - INFO - Sent content to indexer node for https://www.linkedin.com/company/python-software-foundation/
+2025-04-17 23:32:46,632 - Crawler-27880 - INFO - Task for https://www.linkedin.com/company/python-software-foundation/ completed in 1.04 seconds
+2025-04-17 23:32:46,733 - Crawler-27880 - INFO - Crawler 1 received URL: https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-17 23:32:46,733 - Crawler-27880 - INFO - Fetching content from https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-17 23:32:47,467 - Crawler-27880 - INFO - Fetched 136556 bytes from https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-17 23:32:47,467 - Crawler-27880 - INFO - Parsing content from https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-17 23:32:47,604 - Crawler-27880 - INFO - Crawler 1 crawled https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications and extracted 94 URLs in 0.87 seconds
+2025-04-17 23:32:50,536 - Crawler-27880 - INFO - Sent content to indexer node for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-17 23:32:50,536 - Crawler-27880 - INFO - Task for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications completed in 3.80 seconds
+2025-04-17 23:32:50,637 - Crawler-27880 - INFO - Crawler 1 received URL: https://github.com/features/copilot
+2025-04-17 23:32:50,637 - Crawler-27880 - INFO - Fetching content from https://github.com/features/copilot
+2025-04-17 23:32:52,970 - Crawler-27880 - INFO - Fetched 668861 bytes from https://github.com/features/copilot
+2025-04-17 23:32:52,971 - Crawler-27880 - INFO - Parsing content from https://github.com/features/copilot
+2025-04-17 23:32:53,172 - Crawler-27880 - INFO - Crawler 1 crawled https://github.com/features/copilot and extracted 122 URLs in 2.53 seconds
+2025-04-17 23:32:53,178 - Crawler-27880 - INFO - Sent content to indexer node for https://github.com/features/copilot
+2025-04-17 23:32:53,178 - Crawler-27880 - INFO - Task for https://github.com/features/copilot completed in 2.54 seconds
+2025-04-17 23:32:53,278 - Crawler-27880 - INFO - Crawler 1 received URL: https://github.com/features/issues
+2025-04-17 23:32:53,278 - Crawler-27880 - INFO - Fetching content from https://github.com/features/issues
+2025-04-17 23:32:54,257 - Crawler-27880 - INFO - Fetched 341627 bytes from https://github.com/features/issues
+2025-04-17 23:32:54,257 - Crawler-27880 - INFO - Parsing content from https://github.com/features/issues
+2025-04-17 23:32:54,365 - Crawler-27880 - INFO - Crawler 1 crawled https://github.com/features/issues and extracted 76 URLs in 1.09 seconds
+2025-04-17 23:32:55,017 - Crawler-27880 - INFO - Sent content to indexer node for https://github.com/features/issues
+2025-04-17 23:32:55,017 - Crawler-27880 - INFO - Task for https://github.com/features/issues completed in 1.74 seconds
+2025-04-17 23:32:55,118 - Crawler-27880 - INFO - Crawler 1 received URL: https://reddit.app.link/?%24android_deeplink_path=reddit%2Fr%2Flaw%2Fcomments%2F1k11wg4%2Ftrumps_counterterrorism_czar_now_saying_that%2F&%24deeplink_path=%2Fr%2Flaw%2Fcomments%2F1k11wg4%2Ftrumps_counterterrorism_czar_now_saying_that%2F&%24og_redirect=https%3A%2F%2Fwww.reddit.com%2Fr%2Flaw%2Fcomments%2F1k11wg4%2Ftrumps_counterterrorism_czar_now_saying_that%2F&base_url=%2Fr%2Flaw%2Fcomments%2F1k11wg4%2Ftrumps_counterterrorism_czar_now_saying_that%2F&mweb_loid=t2_1nj07b3vrr&mweb_loid_created=1744925556894&referrer_domain=www.reddit.com&referrer_url=%2F&campaign=no_amp_test&utm_name=no_amp_test&channel=xpromo&utm_source=xpromo&feature=web3x&utm_medium=web3x&keyword=no_amp&utm_term=no_amp&tags=media_error_xpromo_post&utm_content=media_error
+2025-04-17 23:32:55,118 - Crawler-27880 - INFO - Fetching content from https://reddit.app.link/?%24android_deeplink_path=reddit%2Fr%2Flaw%2Fcomments%2F1k11wg4%2Ftrumps_counterterrorism_czar_now_saying_that%2F&%24deeplink_path=%2Fr%2Flaw%2Fcomments%2F1k11wg4%2Ftrumps_counterterrorism_czar_now_saying_that%2F&%24og_redirect=https%3A%2F%2Fwww.reddit.com%2Fr%2Flaw%2Fcomments%2F1k11wg4%2Ftrumps_counterterrorism_czar_now_saying_that%2F&base_url=%2Fr%2Flaw%2Fcomments%2F1k11wg4%2Ftrumps_counterterrorism_czar_now_saying_that%2F&mweb_loid=t2_1nj07b3vrr&mweb_loid_created=1744925556894&referrer_domain=www.reddit.com&referrer_url=%2F&campaign=no_amp_test&utm_name=no_amp_test&channel=xpromo&utm_source=xpromo&feature=web3x&utm_medium=web3x&keyword=no_amp&utm_term=no_amp&tags=media_error_xpromo_post&utm_content=media_error
+2025-04-17 23:33:02,751 - Crawler-27880 - INFO - Fetched 552280 bytes from https://reddit.app.link/?%24android_deeplink_path=reddit%2Fr%2Flaw%2Fcomments%2F1k11wg4%2Ftrumps_counterterrorism_czar_now_saying_that%2F&%24deeplink_path=%2Fr%2Flaw%2Fcomments%2F1k11wg4%2Ftrumps_counterterrorism_czar_now_saying_that%2F&%24og_redirect=https%3A%2F%2Fwww.reddit.com%2Fr%2Flaw%2Fcomments%2F1k11wg4%2Ftrumps_counterterrorism_czar_now_saying_that%2F&base_url=%2Fr%2Flaw%2Fcomments%2F1k11wg4%2Ftrumps_counterterrorism_czar_now_saying_that%2F&mweb_loid=t2_1nj07b3vrr&mweb_loid_created=1744925556894&referrer_domain=www.reddit.com&referrer_url=%2F&campaign=no_amp_test&utm_name=no_amp_test&channel=xpromo&utm_source=xpromo&feature=web3x&utm_medium=web3x&keyword=no_amp&utm_term=no_amp&tags=media_error_xpromo_post&utm_content=media_error
+2025-04-17 23:33:02,751 - Crawler-27880 - INFO - Parsing content from https://reddit.app.link/?%24android_deeplink_path=reddit%2Fr%2Flaw%2Fcomments%2F1k11wg4%2Ftrumps_counterterrorism_czar_now_saying_that%2F&%24deeplink_path=%2Fr%2Flaw%2Fcomments%2F1k11wg4%2Ftrumps_counterterrorism_czar_now_saying_that%2F&%24og_redirect=https%3A%2F%2Fwww.reddit.com%2Fr%2Flaw%2Fcomments%2F1k11wg4%2Ftrumps_counterterrorism_czar_now_saying_that%2F&base_url=%2Fr%2Flaw%2Fcomments%2F1k11wg4%2Ftrumps_counterterrorism_czar_now_saying_that%2F&mweb_loid=t2_1nj07b3vrr&mweb_loid_created=1744925556894&referrer_domain=www.reddit.com&referrer_url=%2F&campaign=no_amp_test&utm_name=no_amp_test&channel=xpromo&utm_source=xpromo&feature=web3x&utm_medium=web3x&keyword=no_amp&utm_term=no_amp&tags=media_error_xpromo_post&utm_content=media_error
+2025-04-17 23:33:02,855 - Crawler-27880 - INFO - Crawler 1 crawled https://reddit.app.link/?%24android_deeplink_path=reddit%2Fr%2Flaw%2Fcomments%2F1k11wg4%2Ftrumps_counterterrorism_czar_now_saying_that%2F&%24deeplink_path=%2Fr%2Flaw%2Fcomments%2F1k11wg4%2Ftrumps_counterterrorism_czar_now_saying_that%2F&%24og_redirect=https%3A%2F%2Fwww.reddit.com%2Fr%2Flaw%2Fcomments%2F1k11wg4%2Ftrumps_counterterrorism_czar_now_saying_that%2F&base_url=%2Fr%2Flaw%2Fcomments%2F1k11wg4%2Ftrumps_counterterrorism_czar_now_saying_that%2F&mweb_loid=t2_1nj07b3vrr&mweb_loid_created=1744925556894&referrer_domain=www.reddit.com&referrer_url=%2F&campaign=no_amp_test&utm_name=no_amp_test&channel=xpromo&utm_source=xpromo&feature=web3x&utm_medium=web3x&keyword=no_amp&utm_term=no_amp&tags=media_error_xpromo_post&utm_content=media_error and extracted 71 URLs in 7.74 seconds
+2025-04-18 00:07:21,916 - Crawler-36880 - INFO - Crawler node started with rank 1 of 5
+2025-04-18 00:07:21,921 - Crawler-36880 - INFO - Heartbeat mechanism started
+2025-04-18 00:07:21,921 - Crawler-36880 - INFO - Crawler 1 received URL: https://www.python.org
+2025-04-18 00:07:21,923 - Crawler-36880 - INFO - Fetching content from https://www.python.org
+2025-04-18 00:07:23,195 - Crawler-36880 - INFO - Fetched 50592 bytes from https://www.python.org
+2025-04-18 00:07:23,195 - Crawler-36880 - INFO - Parsing content from https://www.python.org
+2025-04-18 00:07:23,245 - Crawler-36880 - INFO - Crawler 1 crawled https://www.python.org and extracted 71 URLs in 1.32 seconds
+2025-04-18 00:07:26,632 - Crawler-36880 - INFO - Sent content to indexer node for https://www.python.org
+2025-04-18 00:07:26,632 - Crawler-36880 - INFO - Task for https://www.python.org completed in 4.71 seconds
+2025-04-18 00:07:26,734 - Crawler-36880 - INFO - Crawler 1 received URL: https://www.reddit.com
+2025-04-18 00:07:26,734 - Crawler-36880 - INFO - Fetching content from https://www.reddit.com
+2025-04-18 00:07:32,129 - Crawler-36880 - INFO - Fetched 633399 bytes from https://www.reddit.com
+2025-04-18 00:07:32,129 - Crawler-36880 - INFO - Parsing content from https://www.reddit.com
+2025-04-18 00:07:32,374 - Crawler-36880 - INFO - Crawler 1 crawled https://www.reddit.com and extracted 69 URLs in 5.64 seconds
+2025-04-18 00:07:32,851 - Crawler-36880 - INFO - Sent content to indexer node for https://www.reddit.com
+2025-04-18 00:07:32,852 - Crawler-36880 - INFO - Task for https://www.reddit.com completed in 6.12 seconds
+2025-04-18 00:07:32,952 - Crawler-36880 - INFO - Crawler 1 received URL: https://docs.python.org
+2025-04-18 00:07:32,952 - Crawler-36880 - INFO - Fetching content from https://docs.python.org
+2025-04-18 00:07:33,902 - Crawler-36880 - INFO - Fetched 17704 bytes from https://docs.python.org
+2025-04-18 00:07:33,902 - Crawler-36880 - INFO - Parsing content from https://docs.python.org
+2025-04-18 00:07:33,953 - Crawler-36880 - INFO - Crawler 1 crawled https://docs.python.org and extracted 52 URLs in 1.00 seconds
+2025-04-18 00:07:34,257 - Crawler-36880 - INFO - Sent content to indexer node for https://docs.python.org
+2025-04-18 00:07:34,258 - Crawler-36880 - INFO - Task for https://docs.python.org completed in 1.31 seconds
+2025-04-18 00:07:34,361 - Crawler-36880 - INFO - Crawler 1 received URL: https://pypi.org/
+2025-04-18 00:07:34,361 - Crawler-36880 - INFO - Fetching content from https://pypi.org/
+2025-04-18 00:07:35,439 - Crawler-36880 - INFO - Fetched 19849 bytes from https://pypi.org/
+2025-04-18 00:07:35,439 - Crawler-36880 - INFO - Parsing content from https://pypi.org/
+2025-04-18 00:07:35,460 - Crawler-36880 - INFO - Crawler 1 crawled https://pypi.org/ and extracted 26 URLs in 1.10 seconds
+2025-04-18 00:07:35,462 - Crawler-36880 - INFO - Sent content to indexer node for https://pypi.org/
+2025-04-18 00:07:35,462 - Crawler-36880 - INFO - Task for https://pypi.org/ completed in 1.10 seconds
+2025-04-18 00:07:35,563 - Crawler-36880 - INFO - Crawler 1 received URL: https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 00:07:35,563 - Crawler-36880 - INFO - Fetching content from https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 00:07:37,565 - Crawler-36880 - INFO - Fetched 154412 bytes from https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 00:07:37,566 - Crawler-36880 - INFO - Parsing content from https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 00:07:37,666 - Crawler-36880 - INFO - Crawler 1 crawled https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 and extracted 10 URLs in 2.10 seconds
+2025-04-18 00:07:38,132 - Crawler-36880 - INFO - Sent content to indexer node for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 00:07:38,132 - Crawler-36880 - INFO - Task for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 completed in 2.57 seconds
+2025-04-18 00:07:38,233 - Crawler-36880 - INFO - Crawler 1 received URL: https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter
+2025-04-18 00:07:38,233 - Crawler-36880 - INFO - Fetching content from https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter
+2025-04-18 00:07:39,917 - Crawler-36880 - INFO - Fetched 69863 bytes from https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter
+2025-04-18 00:07:39,918 - Crawler-36880 - INFO - Parsing content from https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter
+2025-04-18 00:07:40,000 - Crawler-36880 - INFO - Crawler 1 crawled https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter and extracted 18 URLs in 1.77 seconds
+2025-04-18 00:07:41,261 - Crawler-36880 - INFO - Sent content to indexer node for https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter
+2025-04-18 00:07:41,261 - Crawler-36880 - INFO - Task for https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter completed in 3.03 seconds
+2025-04-18 00:07:41,363 - Crawler-36880 - INFO - Crawler 1 received URL: https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-18 00:07:41,363 - Crawler-36880 - INFO - Fetching content from https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-18 00:07:43,727 - Crawler-36880 - INFO - Fetched 733580 bytes from https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-18 00:07:43,727 - Crawler-36880 - INFO - Parsing content from https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-18 00:07:43,814 - Crawler-36880 - INFO - Crawler 1 crawled https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 and extracted 44 URLs in 2.45 seconds
+2025-04-18 00:07:45,534 - Crawler-36880 - INFO - Sent content to indexer node for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-18 00:07:45,534 - Crawler-36880 - INFO - Task for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 completed in 4.17 seconds
+2025-04-18 00:07:45,635 - Crawler-36880 - INFO - Crawler 1 received URL: https://github.com/features/issues
+2025-04-18 00:07:45,635 - Crawler-36880 - INFO - Fetching content from https://github.com/features/issues
+2025-04-18 00:07:46,751 - Crawler-36880 - INFO - Fetched 341553 bytes from https://github.com/features/issues
+2025-04-18 00:07:46,752 - Crawler-36880 - INFO - Parsing content from https://github.com/features/issues
+2025-04-18 00:07:46,837 - Crawler-36880 - INFO - Crawler 1 crawled https://github.com/features/issues and extracted 76 URLs in 1.20 seconds
+2025-04-18 00:07:46,839 - Crawler-36880 - INFO - Sent content to indexer node for https://github.com/features/issues
+2025-04-18 00:07:46,839 - Crawler-36880 - INFO - Task for https://github.com/features/issues completed in 1.20 seconds
+2025-04-18 00:07:46,940 - Crawler-36880 - INFO - Crawler 1 received URL: https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/
+2025-04-18 00:07:46,941 - Crawler-36880 - INFO - Fetching content from https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/
+2025-04-18 00:07:48,154 - Crawler-36880 - INFO - Fetched 591455 bytes from https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/
+2025-04-18 00:07:48,154 - Crawler-36880 - INFO - Parsing content from https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/
+2025-04-18 00:07:48,229 - Crawler-36880 - INFO - Crawler 1 crawled https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/ and extracted 237 URLs in 1.29 seconds
+2025-04-18 00:18:17,227 - Crawler-38428 - INFO - Crawler node started with rank 1 of 5
+2025-04-18 00:18:17,236 - Crawler-38428 - INFO - Heartbeat mechanism started
+2025-04-18 00:18:17,237 - Crawler-38428 - INFO - Crawler 1 received URL: https://www.python.org
+2025-04-18 00:18:17,238 - Crawler-38428 - INFO - Fetching content from https://www.python.org
+2025-04-18 00:18:18,330 - Crawler-38428 - INFO - Fetched 50592 bytes from https://www.python.org
+2025-04-18 00:18:18,330 - Crawler-38428 - INFO - Parsing content from https://www.python.org
+2025-04-18 00:18:18,375 - Crawler-38428 - INFO - Crawler 1 crawled https://www.python.org and extracted 71 URLs in 1.14 seconds
+2025-04-18 00:18:21,260 - Crawler-38428 - INFO - Sent content to indexer node for https://www.python.org
+2025-04-18 00:18:21,260 - Crawler-38428 - INFO - Task for https://www.python.org completed in 4.02 seconds
+2025-04-18 00:18:21,361 - Crawler-38428 - INFO - Crawler 1 received URL: https://www.reddit.com
+2025-04-18 00:18:21,361 - Crawler-38428 - INFO - Fetching content from https://www.reddit.com
+2025-04-18 00:18:23,623 - Crawler-38428 - INFO - Fetched 638095 bytes from https://www.reddit.com
+2025-04-18 00:18:23,624 - Crawler-38428 - INFO - Parsing content from https://www.reddit.com
+2025-04-18 00:18:23,779 - Crawler-38428 - INFO - Crawler 1 crawled https://www.reddit.com and extracted 70 URLs in 2.42 seconds
+2025-04-18 00:18:29,915 - Crawler-38428 - INFO - Sent content to indexer node for https://www.reddit.com
+2025-04-18 00:18:29,916 - Crawler-38428 - INFO - Task for https://www.reddit.com completed in 8.56 seconds
+2025-04-18 00:18:30,018 - Crawler-38428 - INFO - Crawler 1 received URL: https://docs.python.org
+2025-04-18 00:18:30,018 - Crawler-38428 - INFO - Fetching content from https://docs.python.org
+2025-04-18 00:18:31,280 - Crawler-38428 - INFO - Fetched 17704 bytes from https://docs.python.org
+2025-04-18 00:18:31,280 - Crawler-38428 - INFO - Parsing content from https://docs.python.org
+2025-04-18 00:18:31,300 - Crawler-38428 - INFO - Crawler 1 crawled https://docs.python.org and extracted 52 URLs in 1.28 seconds
+2025-04-18 00:18:36,402 - Crawler-38428 - INFO - Sent content to indexer node for https://docs.python.org
+2025-04-18 00:18:36,402 - Crawler-38428 - INFO - Task for https://docs.python.org completed in 6.38 seconds
+2025-04-18 00:23:28,945 - Crawler-41784 - INFO - Crawler node started with rank 1 of 5
+2025-04-18 00:23:28,954 - Crawler-41784 - INFO - Heartbeat mechanism started
+2025-04-18 00:23:28,955 - Crawler-41784 - INFO - Crawler 1 received URL: https://www.python.org
+2025-04-18 00:23:28,956 - Crawler-41784 - INFO - Fetching content from https://www.python.org
+2025-04-18 00:23:30,029 - Crawler-41784 - INFO - Fetched 50592 bytes from https://www.python.org
+2025-04-18 00:23:30,029 - Crawler-41784 - INFO - Parsing content from https://www.python.org
+2025-04-18 00:23:30,091 - Crawler-41784 - INFO - Crawler 1 crawled https://www.python.org and extracted 71 URLs in 1.14 seconds
+2025-04-18 00:23:34,327 - Crawler-41784 - INFO - Sent content to indexer node for https://www.python.org
+2025-04-18 00:23:34,328 - Crawler-41784 - INFO - Task for https://www.python.org completed in 5.37 seconds
+2025-04-18 00:23:34,428 - Crawler-41784 - INFO - Crawler 1 received URL: https://www.reddit.com
+2025-04-18 00:23:34,428 - Crawler-41784 - INFO - Fetching content from https://www.reddit.com
+2025-04-18 00:23:37,058 - Crawler-41784 - INFO - Fetched 630515 bytes from https://www.reddit.com
+2025-04-18 00:23:37,058 - Crawler-41784 - INFO - Parsing content from https://www.reddit.com
+2025-04-18 00:23:37,375 - Crawler-41784 - INFO - Crawler 1 crawled https://www.reddit.com and extracted 69 URLs in 2.95 seconds
+2025-04-18 00:23:44,996 - Crawler-41784 - INFO - Sent content to indexer node for https://www.reddit.com
+2025-04-18 00:23:44,996 - Crawler-41784 - INFO - Task for https://www.reddit.com completed in 10.57 seconds
+2025-04-18 00:23:45,097 - Crawler-41784 - INFO - Crawler 1 received URL: https://docs.python.org
+2025-04-18 00:23:45,097 - Crawler-41784 - INFO - Fetching content from https://docs.python.org
+2025-04-18 00:23:46,507 - Crawler-41784 - INFO - Fetched 17704 bytes from https://docs.python.org
+2025-04-18 00:23:46,507 - Crawler-41784 - INFO - Parsing content from https://docs.python.org
+2025-04-18 00:23:46,534 - Crawler-41784 - INFO - Crawler 1 crawled https://docs.python.org and extracted 52 URLs in 1.44 seconds
+2025-04-18 00:23:50,936 - Crawler-41784 - INFO - Sent content to indexer node for https://docs.python.org
+2025-04-18 00:23:50,936 - Crawler-41784 - INFO - Task for https://docs.python.org completed in 5.84 seconds
+2025-04-18 00:38:03,806 - Crawler-43504 - INFO - Crawler node started with rank 1 of 5
+2025-04-18 00:38:03,808 - Crawler-43504 - INFO - Heartbeat mechanism started
+2025-04-18 00:38:03,809 - Crawler-43504 - INFO - Crawler 1 received URL: https://www.python.org
+2025-04-18 00:38:03,809 - Crawler-43504 - INFO - Fetching content from https://www.python.org
+2025-04-18 00:38:04,890 - Crawler-43504 - INFO - Fetched 50679 bytes from https://www.python.org
+2025-04-18 00:38:04,890 - Crawler-43504 - INFO - Parsing content from https://www.python.org
+2025-04-18 00:38:04,926 - Crawler-43504 - INFO - Crawler 1 crawled https://www.python.org and extracted 71 URLs in 1.12 seconds
+2025-04-18 00:38:12,152 - Crawler-43504 - INFO - Sent content to indexer node for https://www.python.org
+2025-04-18 00:38:12,152 - Crawler-43504 - WARNING - Simulating a brief node failure (testing fault tolerance)
+2025-04-18 00:38:24,153 - Crawler-43504 - INFO - Task for https://www.python.org completed in 20.34 seconds
+2025-04-18 00:38:24,253 - Crawler-43504 - INFO - Crawler 1 received URL: https://www.stackoverflow.com
+2025-04-18 00:38:24,253 - Crawler-43504 - INFO - Fetching content from https://www.stackoverflow.com
+2025-04-18 00:38:26,579 - Crawler-43504 - INFO - Fetched 349655 bytes from https://www.stackoverflow.com
+2025-04-18 00:38:26,580 - Crawler-43504 - INFO - Parsing content from https://www.stackoverflow.com
+2025-04-18 00:38:26,743 - Crawler-43504 - INFO - Crawler 1 crawled https://www.stackoverflow.com and extracted 87 URLs in 2.49 seconds
+2025-04-18 00:38:35,833 - Crawler-43504 - INFO - Sent content to indexer node for https://www.stackoverflow.com
+2025-04-18 00:38:35,834 - Crawler-43504 - INFO - Task for https://www.stackoverflow.com completed in 11.58 seconds
+2025-04-18 00:38:35,953 - Crawler-43504 - INFO - Crawler 1 received URL: https://docs.python.org
+2025-04-18 00:38:35,953 - Crawler-43504 - INFO - Fetching content from https://docs.python.org
+2025-04-18 00:38:36,929 - Crawler-43504 - INFO - Fetched 17704 bytes from https://docs.python.org
+2025-04-18 00:38:36,929 - Crawler-43504 - INFO - Parsing content from https://docs.python.org
+2025-04-18 00:38:36,948 - Crawler-43504 - INFO - Crawler 1 crawled https://docs.python.org and extracted 52 URLs in 0.99 seconds
+2025-04-18 00:38:39,661 - Crawler-43504 - INFO - Sent content to indexer node for https://docs.python.org
+2025-04-18 00:38:39,661 - Crawler-43504 - INFO - Task for https://docs.python.org completed in 3.71 seconds
+2025-04-18 00:38:39,762 - Crawler-43504 - INFO - Crawler 1 received URL: https://www.linkedin.com/company/python-software-foundation/
+2025-04-18 00:38:39,762 - Crawler-43504 - INFO - Fetching content from https://www.linkedin.com/company/python-software-foundation/
+2025-04-18 00:38:40,850 - Crawler-43504 - INFO - Fetched 1530 bytes from https://www.linkedin.com/company/python-software-foundation/
+2025-04-18 00:38:40,851 - Crawler-43504 - INFO - Parsing content from https://www.linkedin.com/company/python-software-foundation/
+2025-04-18 00:38:40,852 - Crawler-43504 - INFO - No real URLs found, created 2 simulated URLs
+2025-04-18 00:38:40,852 - Crawler-43504 - INFO - Crawler 1 crawled https://www.linkedin.com/company/python-software-foundation/ and extracted 2 URLs in 1.09 seconds
+2025-04-18 00:38:40,852 - Crawler-43504 - INFO - Sent content to indexer node for https://www.linkedin.com/company/python-software-foundation/
+2025-04-18 00:38:40,853 - Crawler-43504 - INFO - Task for https://www.linkedin.com/company/python-software-foundation/ completed in 1.09 seconds
+2025-04-18 00:38:40,954 - Crawler-43504 - INFO - Crawler 1 received URL: https://github.com/features/actions
+2025-04-18 00:38:40,955 - Crawler-43504 - INFO - Fetching content from https://github.com/features/actions
+2025-04-18 00:38:41,981 - Crawler-43504 - INFO - Fetched 284306 bytes from https://github.com/features/actions
+2025-04-18 00:38:41,981 - Crawler-43504 - INFO - Parsing content from https://github.com/features/actions
+2025-04-18 00:38:42,034 - Crawler-43504 - INFO - Crawler 1 crawled https://github.com/features/actions and extracted 76 URLs in 1.08 seconds
+2025-04-18 00:38:51,327 - Crawler-43504 - INFO - Sent content to indexer node for https://github.com/features/actions
+2025-04-18 00:38:51,327 - Crawler-43504 - INFO - Task for https://github.com/features/actions completed in 10.37 seconds
+2025-04-18 00:38:51,428 - Crawler-43504 - INFO - Crawler 1 received URL: https://github.com/features/codespaces
+2025-04-18 00:38:51,428 - Crawler-43504 - INFO - Fetching content from https://github.com/features/codespaces
+2025-04-18 00:38:52,639 - Crawler-43504 - INFO - Fetched 333789 bytes from https://github.com/features/codespaces
+2025-04-18 00:38:52,639 - Crawler-43504 - INFO - Parsing content from https://github.com/features/codespaces
+2025-04-18 00:38:52,686 - Crawler-43504 - INFO - Crawler 1 crawled https://github.com/features/codespaces and extracted 86 URLs in 1.26 seconds
+2025-04-18 00:39:04,019 - Crawler-43504 - INFO - Sent content to indexer node for https://github.com/features/codespaces
+2025-04-18 00:39:04,019 - Crawler-43504 - INFO - Task for https://github.com/features/codespaces completed in 12.59 seconds
+2025-04-18 00:39:04,121 - Crawler-43504 - INFO - Crawler 1 received URL: https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/
+2025-04-18 00:39:04,121 - Crawler-43504 - INFO - Fetching content from https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/
+2025-04-18 00:39:05,208 - Crawler-43504 - INFO - Fetched 591511 bytes from https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/
+2025-04-18 00:39:05,208 - Crawler-43504 - INFO - Parsing content from https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/
+2025-04-18 00:39:05,269 - Crawler-43504 - INFO - Crawler 1 crawled https://deadline.com/2025/04/gaza-photojournalist-cannes-doc-killed-israeli-strike-1236370699/ and extracted 237 URLs in 1.15 seconds
+2025-04-18 00:44:07,493 - Crawler-41624 - INFO - Crawler node started with rank 1 of 5
+2025-04-18 00:44:07,495 - Crawler-41624 - INFO - Heartbeat mechanism started
+2025-04-18 00:44:07,495 - Crawler-41624 - INFO - Crawler 1 received URL: https://www.python.org
+2025-04-18 00:44:07,495 - Crawler-41624 - INFO - Fetching content from https://www.python.org
+2025-04-18 00:44:08,258 - Crawler-41624 - INFO - Fetched 50679 bytes from https://www.python.org
+2025-04-18 00:44:08,259 - Crawler-41624 - INFO - Parsing content from https://www.python.org
+2025-04-18 00:44:08,288 - Crawler-41624 - INFO - Crawler 1 crawled https://www.python.org and extracted 71 URLs in 0.79 seconds
+2025-04-18 00:44:15,246 - Crawler-41624 - INFO - Sent content to indexer node for https://www.python.org
+2025-04-18 00:44:15,246 - Crawler-41624 - INFO - Task for https://www.python.org completed in 7.75 seconds
+2025-04-18 00:44:15,347 - Crawler-41624 - INFO - Crawler 1 received URL: https://www.stackoverflow.com
+2025-04-18 00:44:15,347 - Crawler-41624 - INFO - Fetching content from https://www.stackoverflow.com
+2025-04-18 00:44:16,774 - Crawler-41624 - INFO - Fetched 350418 bytes from https://www.stackoverflow.com
+2025-04-18 00:44:16,774 - Crawler-41624 - INFO - Parsing content from https://www.stackoverflow.com
+2025-04-18 00:44:16,945 - Crawler-41624 - INFO - Crawler 1 crawled https://www.stackoverflow.com and extracted 87 URLs in 1.60 seconds
+2025-04-18 00:44:23,584 - Crawler-41624 - INFO - Sent content to indexer node for https://www.stackoverflow.com
+2025-04-18 00:44:23,584 - Crawler-41624 - INFO - Task for https://www.stackoverflow.com completed in 8.24 seconds
+2025-04-18 00:44:23,686 - Crawler-41624 - INFO - Crawler 1 received URL: https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-18 00:44:23,686 - Crawler-41624 - INFO - Fetching content from https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-18 00:44:24,529 - Crawler-41624 - INFO - Fetched 1164272 bytes from https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-18 00:44:24,529 - Crawler-41624 - INFO - Parsing content from https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-18 00:44:24,589 - Crawler-41624 - INFO - Crawler 1 crawled https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob and extracted 17 URLs in 0.90 seconds
+2025-04-18 00:44:29,242 - Crawler-41624 - INFO - Sent content to indexer node for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-18 00:44:29,244 - Crawler-41624 - INFO - Task for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob completed in 5.56 seconds
+2025-04-18 00:44:29,351 - Crawler-41624 - INFO - Crawler 1 received URL: https://www.python.org/psf/
+2025-04-18 00:44:29,351 - Crawler-41624 - INFO - Fetching content from https://www.python.org/psf/
+2025-04-18 00:44:31,460 - Crawler-41624 - INFO - Fetched 52287 bytes from https://www.python.org/psf/
+2025-04-18 00:44:31,460 - Crawler-41624 - INFO - Parsing content from https://www.python.org/psf/
+2025-04-18 00:44:31,478 - Crawler-41624 - INFO - Crawler 1 crawled https://www.python.org/psf/ and extracted 56 URLs in 2.13 seconds
+2025-04-18 00:44:39,380 - Crawler-41624 - INFO - Sent content to indexer node for https://www.python.org/psf/
+2025-04-18 00:44:39,380 - Crawler-41624 - INFO - Task for https://www.python.org/psf/ completed in 10.03 seconds
+2025-04-18 00:44:39,481 - Crawler-41624 - INFO - Crawler 1 received URL: https://pypi.org/
+2025-04-18 00:44:39,481 - Crawler-41624 - INFO - Fetching content from https://pypi.org/
+2025-04-18 00:44:40,928 - Crawler-41624 - INFO - Fetched 19849 bytes from https://pypi.org/
+2025-04-18 00:44:40,929 - Crawler-41624 - INFO - Parsing content from https://pypi.org/
+2025-04-18 00:44:40,942 - Crawler-41624 - INFO - Crawler 1 crawled https://pypi.org/ and extracted 26 URLs in 1.46 seconds
+2025-04-18 00:44:52,132 - Crawler-41624 - INFO - Sent content to indexer node for https://pypi.org/
+2025-04-18 00:44:52,132 - Crawler-41624 - WARNING - Simulating a brief node failure (testing fault tolerance)
+2025-04-18 00:45:04,133 - Crawler-41624 - INFO - Task for https://pypi.org/ completed in 24.65 seconds
+2025-04-18 00:45:04,234 - Crawler-41624 - INFO - Crawler 1 received URL: https://www.linkedin.com/company/python-software-foundation/
+2025-04-18 00:45:04,234 - Crawler-41624 - INFO - Fetching content from https://www.linkedin.com/company/python-software-foundation/
+2025-04-18 00:45:04,945 - Crawler-41624 - INFO - Fetched 1530 bytes from https://www.linkedin.com/company/python-software-foundation/
+2025-04-18 00:45:04,945 - Crawler-41624 - INFO - Parsing content from https://www.linkedin.com/company/python-software-foundation/
+2025-04-18 00:45:04,946 - Crawler-41624 - INFO - No real URLs found, created 2 simulated URLs
+2025-04-18 00:45:04,946 - Crawler-41624 - INFO - Crawler 1 crawled https://www.linkedin.com/company/python-software-foundation/ and extracted 2 URLs in 0.71 seconds
+2025-04-18 00:45:04,947 - Crawler-41624 - INFO - Sent content to indexer node for https://www.linkedin.com/company/python-software-foundation/
+2025-04-18 00:45:04,947 - Crawler-41624 - INFO - Task for https://www.linkedin.com/company/python-software-foundation/ completed in 0.71 seconds
+2025-04-18 00:45:05,048 - Crawler-41624 - INFO - Crawler 1 received URL: https://github.com/security/advanced-security
+2025-04-18 00:45:05,048 - Crawler-41624 - INFO - Fetching content from https://github.com/security/advanced-security
+2025-04-18 00:45:05,887 - Crawler-41624 - INFO - Fetched 260255 bytes from https://github.com/security/advanced-security
+2025-04-18 00:45:05,887 - Crawler-41624 - INFO - Parsing content from https://github.com/security/advanced-security
+2025-04-18 00:45:05,932 - Crawler-41624 - INFO - Crawler 1 crawled https://github.com/security/advanced-security and extracted 76 URLs in 0.88 seconds
+2025-04-18 00:45:14,780 - Crawler-41624 - INFO - Sent content to indexer node for https://github.com/security/advanced-security
+2025-04-18 00:45:14,780 - Crawler-41624 - INFO - Task for https://github.com/security/advanced-security completed in 9.73 seconds
+2025-04-18 00:45:14,881 - Crawler-41624 - INFO - Crawler 1 received URL: https://www.redditinc.com/policies/content-policy
+2025-04-18 00:45:14,881 - Crawler-41624 - INFO - Fetching content from https://www.redditinc.com/policies/content-policy
+2025-04-18 00:45:17,290 - Crawler-41624 - INFO - Fetched 188903 bytes from https://www.redditinc.com/policies/content-policy
+2025-04-18 00:45:17,290 - Crawler-41624 - INFO - Parsing content from https://www.redditinc.com/policies/content-policy
+2025-04-18 00:45:17,376 - Crawler-41624 - INFO - Crawler 1 crawled https://www.redditinc.com/policies/content-policy and extracted 602 URLs in 2.49 seconds
+2025-04-18 23:08:44,306 - Crawler-21604 - INFO - Crawler node started with rank 1 of 5
+2025-04-18 23:08:44,307 - Crawler-21604 - INFO - Heartbeat mechanism started
+2025-04-18 23:08:44,308 - Crawler-21604 - INFO - Crawler 1 received URL: https://www.python.org
+2025-04-18 23:08:44,308 - Crawler-21604 - INFO - Fetching content from https://www.python.org
+2025-04-18 23:08:45,257 - Crawler-21604 - INFO - Fetched 50745 bytes from https://www.python.org
+2025-04-18 23:08:45,257 - Crawler-21604 - INFO - Parsing content from https://www.python.org
+2025-04-18 23:08:45,284 - Crawler-21604 - INFO - Crawler 1 crawled https://www.python.org and extracted 71 URLs in 0.98 seconds
+2025-04-18 23:08:51,434 - Crawler-21604 - INFO - Sent content to indexer node for https://www.python.org
+2025-04-18 23:08:51,434 - Crawler-21604 - INFO - Task for https://www.python.org completed in 7.13 seconds
+2025-04-18 23:08:51,534 - Crawler-21604 - INFO - Crawler 1 received URL: https://www.stackoverflow.com
+2025-04-18 23:08:51,534 - Crawler-21604 - INFO - Fetching content from https://www.stackoverflow.com
+2025-04-18 23:08:54,129 - Crawler-21604 - INFO - Fetched 357009 bytes from https://www.stackoverflow.com
+2025-04-18 23:08:54,129 - Crawler-21604 - INFO - Parsing content from https://www.stackoverflow.com
+2025-04-18 23:08:54,235 - Crawler-21604 - INFO - Crawler 1 crawled https://www.stackoverflow.com and extracted 87 URLs in 2.70 seconds
+2025-04-18 23:08:58,765 - Crawler-21604 - INFO - Sent content to indexer node for https://www.stackoverflow.com
+2025-04-18 23:08:58,766 - Crawler-21604 - INFO - Task for https://www.stackoverflow.com completed in 7.23 seconds
+2025-04-18 23:08:58,867 - Crawler-21604 - INFO - Crawler 1 received URL: https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-18 23:08:58,867 - Crawler-21604 - INFO - Fetching content from https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-18 23:09:00,259 - Crawler-21604 - INFO - Fetched 1164469 bytes from https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-18 23:09:00,260 - Crawler-21604 - INFO - Parsing content from https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-18 23:09:00,299 - Crawler-21604 - INFO - Crawler 1 crawled https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob and extracted 17 URLs in 1.43 seconds
+2025-04-18 23:09:08,229 - Crawler-21604 - INFO - Sent content to indexer node for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-18 23:09:08,229 - Crawler-21604 - INFO - Task for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob completed in 9.36 seconds
+2025-04-18 23:09:08,329 - Crawler-21604 - INFO - Crawler 1 received URL: https://docs.python.org
+2025-04-18 23:09:08,329 - Crawler-21604 - INFO - Fetching content from https://docs.python.org
+2025-04-18 23:09:09,180 - Crawler-21604 - INFO - Fetched 17619 bytes from https://docs.python.org
+2025-04-18 23:09:09,180 - Crawler-21604 - INFO - Parsing content from https://docs.python.org
+2025-04-18 23:09:09,189 - Crawler-21604 - INFO - Crawler 1 crawled https://docs.python.org and extracted 52 URLs in 0.86 seconds
+2025-04-18 23:09:21,122 - Crawler-21604 - INFO - Sent content to indexer node for https://docs.python.org
+2025-04-18 23:09:21,123 - Crawler-21604 - WARNING - Simulating a brief node failure (testing fault tolerance)
+2025-04-18 23:09:33,124 - Crawler-21604 - INFO - Task for https://docs.python.org completed in 24.79 seconds
+2025-04-18 23:09:33,225 - Crawler-21604 - INFO - Crawler 1 received URL: https://www.linkedin.com/company/python-software-foundation/
+2025-04-18 23:09:33,225 - Crawler-21604 - INFO - Fetching content from https://www.linkedin.com/company/python-software-foundation/
+2025-04-18 23:09:34,162 - Crawler-21604 - INFO - Fetched 1530 bytes from https://www.linkedin.com/company/python-software-foundation/
+2025-04-18 23:09:34,162 - Crawler-21604 - INFO - Parsing content from https://www.linkedin.com/company/python-software-foundation/
+2025-04-18 23:09:34,163 - Crawler-21604 - INFO - No real URLs found, created 2 simulated URLs
+2025-04-18 23:09:34,163 - Crawler-21604 - INFO - Crawler 1 crawled https://www.linkedin.com/company/python-software-foundation/ and extracted 2 URLs in 0.94 seconds
+2025-04-18 23:09:34,163 - Crawler-21604 - INFO - Sent content to indexer node for https://www.linkedin.com/company/python-software-foundation/
+2025-04-18 23:09:34,164 - Crawler-21604 - INFO - Task for https://www.linkedin.com/company/python-software-foundation/ completed in 0.94 seconds
+2025-04-18 23:09:34,264 - Crawler-21604 - INFO - Crawler 1 received URL: https://github.com/features/actions
+2025-04-18 23:09:34,264 - Crawler-21604 - INFO - Fetching content from https://github.com/features/actions
+2025-04-18 23:09:35,377 - Crawler-21604 - INFO - Fetched 285494 bytes from https://github.com/features/actions
+2025-04-18 23:09:35,377 - Crawler-21604 - INFO - Parsing content from https://github.com/features/actions
+2025-04-18 23:09:35,415 - Crawler-21604 - INFO - Crawler 1 crawled https://github.com/features/actions and extracted 76 URLs in 1.15 seconds
+2025-04-18 23:09:40,218 - Crawler-21604 - INFO - Sent content to indexer node for https://github.com/features/actions
+2025-04-18 23:09:40,218 - Crawler-21604 - INFO - Task for https://github.com/features/actions completed in 5.95 seconds
+2025-04-18 23:09:40,319 - Crawler-21604 - INFO - Crawler 1 received URL: http://news.reddit.com
+2025-04-18 23:09:40,319 - Crawler-21604 - INFO - Fetching content from http://news.reddit.com
+2025-04-18 23:09:42,735 - Crawler-21604 - INFO - Fetched 648154 bytes from http://news.reddit.com
+2025-04-18 23:09:42,735 - Crawler-21604 - INFO - Parsing content from http://news.reddit.com
+2025-04-18 23:09:42,844 - Crawler-21604 - INFO - Crawler 1 crawled http://news.reddit.com and extracted 73 URLs in 2.52 seconds
+2025-04-18 23:21:42,656 - Crawler-43672 - INFO - Crawler node started with rank 1 of 5
+2025-04-18 23:21:42,657 - Crawler-43672 - INFO - Heartbeat mechanism started
+2025-04-18 23:21:42,657 - Crawler-43672 - INFO - Crawler 1 received URL: https://www.python.org
+2025-04-18 23:21:42,657 - Crawler-43672 - INFO - Fetching content from https://www.python.org
+2025-04-18 23:21:43,504 - Crawler-43672 - INFO - Fetched 50745 bytes from https://www.python.org
+2025-04-18 23:21:43,504 - Crawler-43672 - INFO - Parsing content from https://www.python.org
+2025-04-18 23:21:43,533 - Crawler-43672 - INFO - Crawler 1 crawled https://www.python.org and extracted 71 URLs in 0.88 seconds
+2025-04-18 23:21:50,086 - Crawler-43672 - INFO - Sent content to indexer node for https://www.python.org
+2025-04-18 23:21:50,086 - Crawler-43672 - INFO - Task for https://www.python.org completed in 7.43 seconds
+2025-04-18 23:21:50,186 - Crawler-43672 - INFO - Crawler 1 received URL: https://www.stackoverflow.com
+2025-04-18 23:21:50,186 - Crawler-43672 - INFO - Fetching content from https://www.stackoverflow.com
+2025-04-18 23:21:52,802 - Crawler-43672 - INFO - Fetched 355025 bytes from https://www.stackoverflow.com
+2025-04-18 23:21:52,802 - Crawler-43672 - INFO - Parsing content from https://www.stackoverflow.com
+2025-04-18 23:21:52,909 - Crawler-43672 - INFO - Crawler 1 crawled https://www.stackoverflow.com and extracted 87 URLs in 2.72 seconds
+2025-04-18 23:21:58,327 - Crawler-43672 - INFO - Sent content to indexer node for https://www.stackoverflow.com
+2025-04-18 23:21:58,328 - Crawler-43672 - INFO - Task for https://www.stackoverflow.com completed in 8.14 seconds
+2025-04-18 23:21:58,429 - Crawler-43672 - INFO - Crawler 1 received URL: https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-18 23:21:58,429 - Crawler-43672 - INFO - Fetching content from https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-18 23:21:59,624 - Crawler-43672 - INFO - Fetched 1164430 bytes from https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-18 23:21:59,624 - Crawler-43672 - INFO - Parsing content from https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-18 23:21:59,685 - Crawler-43672 - INFO - Crawler 1 crawled https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob and extracted 17 URLs in 1.26 seconds
+2025-04-18 23:22:09,098 - Crawler-43672 - INFO - Sent content to indexer node for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-18 23:22:09,098 - Crawler-43672 - INFO - Task for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob completed in 10.67 seconds
+2025-04-18 23:22:09,198 - Crawler-43672 - INFO - Crawler 1 received URL: https://docs.python.org
+2025-04-18 23:22:09,199 - Crawler-43672 - INFO - Fetching content from https://docs.python.org
+2025-04-18 23:22:10,335 - Crawler-43672 - INFO - Fetched 17619 bytes from https://docs.python.org
+2025-04-18 23:22:10,335 - Crawler-43672 - INFO - Parsing content from https://docs.python.org
+2025-04-18 23:22:10,346 - Crawler-43672 - INFO - Crawler 1 crawled https://docs.python.org and extracted 52 URLs in 1.15 seconds
+2025-04-18 23:22:16,210 - Crawler-43672 - INFO - Sent content to indexer node for https://docs.python.org
+2025-04-18 23:22:16,210 - Crawler-43672 - INFO - Task for https://docs.python.org completed in 7.01 seconds
+2025-04-18 23:22:16,311 - Crawler-43672 - INFO - Crawler 1 received URL: https://github.com/features/copilot
+2025-04-18 23:22:16,311 - Crawler-43672 - INFO - Fetching content from https://github.com/features/copilot
+2025-04-18 23:22:17,417 - Crawler-43672 - INFO - Fetched 669979 bytes from https://github.com/features/copilot
+2025-04-18 23:22:17,418 - Crawler-43672 - INFO - Parsing content from https://github.com/features/copilot
+2025-04-18 23:22:17,516 - Crawler-43672 - INFO - Crawler 1 crawled https://github.com/features/copilot and extracted 122 URLs in 1.20 seconds
+2025-04-18 23:25:06,902 - Crawler-20012 - INFO - Crawler node started with rank 1 of 5
+2025-04-18 23:25:06,903 - Crawler-20012 - INFO - Heartbeat mechanism started
+2025-04-18 23:25:06,903 - Crawler-20012 - INFO - Crawler 1 received URL: https://www.python.org
+2025-04-18 23:25:06,904 - Crawler-20012 - INFO - Fetching content from https://www.python.org
+2025-04-18 23:25:07,980 - Crawler-20012 - INFO - Fetched 50745 bytes from https://www.python.org
+2025-04-18 23:25:07,980 - Crawler-20012 - INFO - Parsing content from https://www.python.org
+2025-04-18 23:25:08,008 - Crawler-20012 - INFO - Crawler 1 crawled https://www.python.org and extracted 71 URLs in 1.10 seconds
+2025-04-18 23:25:13,798 - Crawler-20012 - INFO - Sent content to indexer node for https://www.python.org
+2025-04-18 23:25:13,799 - Crawler-20012 - INFO - Task for https://www.python.org completed in 6.90 seconds
+2025-04-18 23:25:13,900 - Crawler-20012 - INFO - Crawler 1 received URL: https://www.stackoverflow.com
+2025-04-18 23:25:13,900 - Crawler-20012 - INFO - Fetching content from https://www.stackoverflow.com
+2025-04-18 23:25:26,162 - Crawler-20012 - INFO - Fetched 356209 bytes from https://www.stackoverflow.com
+2025-04-18 23:25:26,162 - Crawler-20012 - INFO - Parsing content from https://www.stackoverflow.com
+2025-04-18 23:25:26,283 - Crawler-20012 - INFO - Crawler 1 crawled https://www.stackoverflow.com and extracted 87 URLs in 12.38 seconds
+2025-04-18 23:25:33,288 - Crawler-20012 - INFO - Sent content to indexer node for https://www.stackoverflow.com
+2025-04-18 23:25:33,288 - Crawler-20012 - INFO - Task for https://www.stackoverflow.com completed in 19.39 seconds
+2025-04-18 23:25:33,389 - Crawler-20012 - INFO - Crawler 1 received URL: https://docs.python.org
+2025-04-18 23:25:33,389 - Crawler-20012 - INFO - Fetching content from https://docs.python.org
+2025-04-18 23:25:34,314 - Crawler-20012 - INFO - Fetched 17619 bytes from https://docs.python.org
+2025-04-18 23:25:34,314 - Crawler-20012 - INFO - Parsing content from https://docs.python.org
+2025-04-18 23:25:34,328 - Crawler-20012 - INFO - Crawler 1 crawled https://docs.python.org and extracted 52 URLs in 0.94 seconds
+2025-04-18 23:25:35,779 - Crawler-20012 - INFO - Sent content to indexer node for https://docs.python.org
+2025-04-18 23:25:35,779 - Crawler-20012 - INFO - Task for https://docs.python.org completed in 2.39 seconds
+2025-04-18 23:25:35,880 - Crawler-20012 - INFO - Crawler 1 received URL: https://www.linkedin.com/company/python-software-foundation/
+2025-04-18 23:25:35,880 - Crawler-20012 - INFO - Fetching content from https://www.linkedin.com/company/python-software-foundation/
+2025-04-18 23:25:36,881 - Crawler-20012 - INFO - Fetched 1530 bytes from https://www.linkedin.com/company/python-software-foundation/
+2025-04-18 23:25:36,881 - Crawler-20012 - INFO - Parsing content from https://www.linkedin.com/company/python-software-foundation/
+2025-04-18 23:25:36,882 - Crawler-20012 - INFO - No real URLs found, created 2 simulated URLs
+2025-04-18 23:25:36,882 - Crawler-20012 - INFO - Crawler 1 crawled https://www.linkedin.com/company/python-software-foundation/ and extracted 2 URLs in 1.00 seconds
+2025-04-18 23:25:36,883 - Crawler-20012 - INFO - Sent content to indexer node for https://www.linkedin.com/company/python-software-foundation/
+2025-04-18 23:25:36,883 - Crawler-20012 - INFO - Task for https://www.linkedin.com/company/python-software-foundation/ completed in 1.00 seconds
+2025-04-18 23:25:36,984 - Crawler-20012 - INFO - Crawler 1 received URL: https://github.com/features/actions
+2025-04-18 23:25:36,984 - Crawler-20012 - INFO - Fetching content from https://github.com/features/actions
+2025-04-18 23:25:38,198 - Crawler-20012 - INFO - Fetched 285472 bytes from https://github.com/features/actions
+2025-04-18 23:25:38,199 - Crawler-20012 - INFO - Parsing content from https://github.com/features/actions
+2025-04-18 23:25:38,253 - Crawler-20012 - INFO - Crawler 1 crawled https://github.com/features/actions and extracted 76 URLs in 1.27 seconds
+2025-04-18 23:25:46,676 - Crawler-20012 - INFO - Sent content to indexer node for https://github.com/features/actions
+2025-04-18 23:25:46,676 - Crawler-20012 - INFO - Task for https://github.com/features/actions completed in 9.69 seconds
+2025-04-18 23:25:46,777 - Crawler-20012 - INFO - Crawler 1 received URL: https://github.com/features/codespaces
+2025-04-18 23:25:46,777 - Crawler-20012 - INFO - Fetching content from https://github.com/features/codespaces
+2025-04-18 23:25:47,876 - Crawler-20012 - INFO - Fetched 334955 bytes from https://github.com/features/codespaces
+2025-04-18 23:25:47,876 - Crawler-20012 - INFO - Parsing content from https://github.com/features/codespaces
+2025-04-18 23:25:47,925 - Crawler-20012 - INFO - Crawler 1 crawled https://github.com/features/codespaces and extracted 86 URLs in 1.15 seconds
+2025-04-18 23:25:56,194 - Crawler-20012 - INFO - Sent content to indexer node for https://github.com/features/codespaces
+2025-04-18 23:25:56,194 - Crawler-20012 - INFO - Task for https://github.com/features/codespaces completed in 9.42 seconds
+2025-04-18 23:25:56,295 - Crawler-20012 - INFO - Crawler 1 received URL: http://news.reddit.com
+2025-04-18 23:25:56,295 - Crawler-20012 - INFO - Fetching content from http://news.reddit.com
+2025-04-18 23:25:59,151 - Crawler-20012 - INFO - Fetched 642891 bytes from http://news.reddit.com
+2025-04-18 23:25:59,151 - Crawler-20012 - INFO - Parsing content from http://news.reddit.com
+2025-04-18 23:25:59,269 - Crawler-20012 - INFO - Crawler 1 crawled http://news.reddit.com and extracted 72 URLs in 2.97 seconds

@@ -1,0 +1,1048 @@
+2025-04-18 00:07:24,858 - Indexer - INFO - Enhanced Indexer node started with rank 4 of 5
+2025-04-18 00:07:24,871 - Indexer - INFO - Loaded AWS configuration from aws_config.json
+2025-04-18 00:07:24,891 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-18 00:07:26,443 - Indexer - INFO - Bucket web-crawler-data-storage does not exist. Creating...
+2025-04-18 00:07:26,613 - Indexer - ERROR - Failed to create bucket: An error occurred (AccessDenied) when calling the CreateBucket operation: User: arn:aws:iam::405823273955:user/crawler-app is not authorized to perform: s3:CreateBucket on resource: "arn:aws:s3:::web-crawler-data-storage" because no identity-based policy allows the s3:CreateBucket action
+2025-04-18 00:07:26,613 - Indexer - ERROR - Failed to initialize S3 client: An error occurred (AccessDenied) when calling the CreateBucket operation: User: arn:aws:iam::405823273955:user/crawler-app is not authorized to perform: s3:CreateBucket on resource: "arn:aws:s3:::web-crawler-data-storage" because no identity-based policy allows the s3:CreateBucket action
+2025-04-18 00:07:26,617 - Indexer - INFO - CloudStorage initialized for data persistence
+2025-04-18 00:07:31,600 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:31,603 - Indexer - INFO - Successfully stored raw_html for https://www.python.org locally at crawled_data\raw_html\c137682bbb0946674f25d1d4bd9e07a0.html
+2025-04-18 00:07:31,603 - Indexer - INFO - Stored raw HTML for https://www.python.org with result: local
+2025-04-18 00:07:31,603 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:31,605 - Indexer - INFO - Successfully stored processed_text for https://www.python.org locally at crawled_data\processed_text\c137682bbb0946674f25d1d4bd9e07a0.txt
+2025-04-18 00:07:31,605 - Indexer - INFO - Stored processed text for https://www.python.org with result: local
+2025-04-18 00:07:32,748 - Indexer - INFO - Successfully indexed https://www.python.org
+2025-04-18 00:07:32,748 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:07:33,127 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:33,135 - Indexer - INFO - Successfully stored raw_html for https://www.reddit.com locally at crawled_data\raw_html\30dd8fd5626b7e36783516a6e238baf2.html
+2025-04-18 00:07:33,135 - Indexer - INFO - Stored raw HTML for https://www.reddit.com with result: local
+2025-04-18 00:07:33,136 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:33,139 - Indexer - INFO - Successfully stored processed_text for https://www.reddit.com locally at crawled_data\processed_text\30dd8fd5626b7e36783516a6e238baf2.txt
+2025-04-18 00:07:33,140 - Indexer - INFO - Stored processed text for https://www.reddit.com with result: local
+2025-04-18 00:07:33,264 - Indexer - INFO - Successfully indexed https://www.reddit.com
+2025-04-18 00:07:33,264 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:07:33,493 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:33,496 - Indexer - INFO - Successfully stored raw_html for https://www.wikipedia.org locally at crawled_data\raw_html\8d1d8a3956ab5668e1da4e3e7f856f08.html
+2025-04-18 00:07:33,496 - Indexer - INFO - Stored raw HTML for https://www.wikipedia.org with result: local
+2025-04-18 00:07:33,496 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:33,498 - Indexer - INFO - Successfully stored processed_text for https://www.wikipedia.org locally at crawled_data\processed_text\8d1d8a3956ab5668e1da4e3e7f856f08.txt
+2025-04-18 00:07:33,499 - Indexer - INFO - Stored processed text for https://www.wikipedia.org with result: local
+2025-04-18 00:07:33,613 - Indexer - INFO - Successfully indexed https://www.wikipedia.org
+2025-04-18 00:07:33,614 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:07:33,900 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:33,902 - Indexer - INFO - Successfully stored raw_html for https://www.github.com locally at crawled_data\raw_html\1895ab41ad3a81f6fd0a194bbc337a22.html
+2025-04-18 00:07:33,902 - Indexer - INFO - Stored raw HTML for https://www.github.com with result: local
+2025-04-18 00:07:33,902 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:33,902 - Indexer - INFO - Successfully stored processed_text for https://www.github.com locally at crawled_data\processed_text\1895ab41ad3a81f6fd0a194bbc337a22.txt
+2025-04-18 00:07:33,902 - Indexer - INFO - Stored processed text for https://www.github.com with result: local
+2025-04-18 00:07:34,156 - Indexer - INFO - Successfully indexed https://www.github.com
+2025-04-18 00:07:34,156 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:07:34,315 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:34,316 - Indexer - INFO - Successfully stored raw_html for https://docs.python.org locally at crawled_data\raw_html\ab87040aecf47a23a07dc06153094d21.html
+2025-04-18 00:07:34,317 - Indexer - INFO - Stored raw HTML for https://docs.python.org with result: local
+2025-04-18 00:07:34,317 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:34,321 - Indexer - INFO - Successfully stored processed_text for https://docs.python.org locally at crawled_data\processed_text\ab87040aecf47a23a07dc06153094d21.txt
+2025-04-18 00:07:34,322 - Indexer - INFO - Stored processed text for https://docs.python.org with result: local
+2025-04-18 00:07:34,488 - Indexer - INFO - Successfully indexed https://docs.python.org
+2025-04-18 00:07:34,488 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:07:35,500 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:35,502 - Indexer - INFO - Successfully stored raw_html for https://pypi.org/ locally at crawled_data\raw_html\419defafa8b1d9a6418edbb446e9db79.html
+2025-04-18 00:07:35,502 - Indexer - INFO - Stored raw HTML for https://pypi.org/ with result: local
+2025-04-18 00:07:35,502 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:35,502 - Indexer - INFO - Successfully stored processed_text for https://pypi.org/ locally at crawled_data\processed_text\419defafa8b1d9a6418edbb446e9db79.txt
+2025-04-18 00:07:35,502 - Indexer - INFO - Stored processed text for https://pypi.org/ with result: local
+2025-04-18 00:07:36,666 - Indexer - INFO - Successfully indexed https://pypi.org/
+2025-04-18 00:07:36,666 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:07:36,805 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:36,806 - Indexer - INFO - Successfully stored raw_html for https://www.python.org/psf/ locally at crawled_data\raw_html\491903eb8c7de2458019af2a1cd6a86c.html
+2025-04-18 00:07:36,806 - Indexer - INFO - Stored raw HTML for https://www.python.org/psf/ with result: local
+2025-04-18 00:07:36,808 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:36,811 - Indexer - INFO - Successfully stored processed_text for https://www.python.org/psf/ locally at crawled_data\processed_text\491903eb8c7de2458019af2a1cd6a86c.txt
+2025-04-18 00:07:36,812 - Indexer - INFO - Stored processed text for https://www.python.org/psf/ with result: local
+2025-04-18 00:07:36,930 - Indexer - INFO - Successfully indexed https://www.python.org/psf/
+2025-04-18 00:07:36,930 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:07:37,684 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:37,692 - Indexer - INFO - Successfully stored raw_html for https://www.stackoverflow.com locally at crawled_data\raw_html\2415620324baad2a5308e2c497763b12.html
+2025-04-18 00:07:37,693 - Indexer - INFO - Stored raw HTML for https://www.stackoverflow.com with result: local
+2025-04-18 00:07:37,693 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:37,699 - Indexer - INFO - Successfully stored processed_text for https://www.stackoverflow.com locally at crawled_data\processed_text\2415620324baad2a5308e2c497763b12.txt
+2025-04-18 00:07:37,700 - Indexer - INFO - Stored processed text for https://www.stackoverflow.com with result: local
+2025-04-18 00:07:38,031 - Indexer - INFO - Successfully indexed https://www.stackoverflow.com
+2025-04-18 00:07:38,031 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:07:38,245 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:38,248 - Indexer - INFO - Successfully stored raw_html for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 locally at crawled_data\raw_html\618bfe50d3538b5c56fc1f83e629ea52.html
+2025-04-18 00:07:38,249 - Indexer - INFO - Stored raw HTML for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 with result: local
+2025-04-18 00:07:38,249 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:38,251 - Indexer - INFO - Successfully stored processed_text for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 locally at crawled_data\processed_text\618bfe50d3538b5c56fc1f83e629ea52.txt
+2025-04-18 00:07:38,251 - Indexer - INFO - Stored processed text for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 with result: local
+2025-04-18 00:07:38,427 - Indexer - INFO - Successfully indexed https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 00:07:38,429 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:07:38,530 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:38,532 - Indexer - INFO - Successfully stored raw_html for https://www.linkedin.com/company/python-software-foundation/ locally at crawled_data\raw_html\d90ed6113df7505dad451d6f07e252ac.html
+2025-04-18 00:07:38,534 - Indexer - INFO - Stored raw HTML for https://www.linkedin.com/company/python-software-foundation/ with result: local
+2025-04-18 00:07:38,534 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:38,538 - Indexer - INFO - Successfully stored processed_text for https://www.linkedin.com/company/python-software-foundation/ locally at crawled_data\processed_text\d90ed6113df7505dad451d6f07e252ac.txt
+2025-04-18 00:07:38,538 - Indexer - INFO - Stored processed text for https://www.linkedin.com/company/python-software-foundation/ with result: local
+2025-04-18 00:07:38,607 - Indexer - INFO - Successfully indexed https://www.linkedin.com/company/python-software-foundation/
+2025-04-18 00:07:38,607 - Indexer - INFO - Extracted 0 keywords
+2025-04-18 00:07:39,873 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:39,874 - Indexer - INFO - Successfully stored raw_html for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications locally at crawled_data\raw_html\c3575c8005f0a1c5e66772e422fa23c8.html
+2025-04-18 00:07:39,875 - Indexer - INFO - Stored raw HTML for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications with result: local
+2025-04-18 00:07:39,875 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:39,877 - Indexer - INFO - Successfully stored processed_text for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications locally at crawled_data\processed_text\c3575c8005f0a1c5e66772e422fa23c8.txt
+2025-04-18 00:07:39,877 - Indexer - INFO - Stored processed text for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications with result: local
+2025-04-18 00:07:41,161 - Indexer - INFO - Successfully indexed https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-18 00:07:41,161 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:07:41,396 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:41,404 - Indexer - INFO - Successfully stored raw_html for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob locally at crawled_data\raw_html\999ec284cceaef3b439da23caa40004f.html
+2025-04-18 00:07:41,406 - Indexer - INFO - Stored raw HTML for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob with result: local
+2025-04-18 00:07:41,407 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:41,409 - Indexer - INFO - Successfully stored processed_text for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob locally at crawled_data\processed_text\999ec284cceaef3b439da23caa40004f.txt
+2025-04-18 00:07:41,410 - Indexer - INFO - Stored processed text for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob with result: local
+2025-04-18 00:07:41,591 - Indexer - INFO - Successfully indexed https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-18 00:07:41,591 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:07:42,840 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:42,848 - Indexer - INFO - Successfully stored raw_html for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias locally at crawled_data\raw_html\e89764c6976518e91ebe50251fa3fe33.html
+2025-04-18 00:07:42,849 - Indexer - INFO - Stored raw HTML for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias with result: local
+2025-04-18 00:07:42,849 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:42,855 - Indexer - INFO - Successfully stored processed_text for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias locally at crawled_data\processed_text\e89764c6976518e91ebe50251fa3fe33.txt
+2025-04-18 00:07:42,855 - Indexer - INFO - Stored processed text for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias with result: local
+2025-04-18 00:07:43,295 - Indexer - INFO - Successfully indexed https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-18 00:07:43,295 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:07:43,470 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:43,472 - Indexer - INFO - Successfully stored raw_html for https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter locally at crawled_data\raw_html\e80926e2c85c2736bd72ce8f1fda94c6.html
+2025-04-18 00:07:43,472 - Indexer - INFO - Stored raw HTML for https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter with result: local
+2025-04-18 00:07:43,472 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:43,474 - Indexer - INFO - Successfully stored processed_text for https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter locally at crawled_data\processed_text\e80926e2c85c2736bd72ce8f1fda94c6.txt
+2025-04-18 00:07:43,475 - Indexer - INFO - Stored processed text for https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter with result: local
+2025-04-18 00:07:43,578 - Indexer - INFO - Successfully indexed https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter
+2025-04-18 00:07:43,578 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:07:43,880 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:43,884 - Indexer - INFO - Successfully stored raw_html for https://github.com/security/advanced-security locally at crawled_data\raw_html\1fe3a393f05c47bb0a664cde7f830a83.html
+2025-04-18 00:07:43,885 - Indexer - INFO - Stored raw HTML for https://github.com/security/advanced-security with result: local
+2025-04-18 00:07:43,885 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:43,887 - Indexer - INFO - Successfully stored processed_text for https://github.com/security/advanced-security locally at crawled_data\processed_text\1fe3a393f05c47bb0a664cde7f830a83.txt
+2025-04-18 00:07:43,888 - Indexer - INFO - Stored processed text for https://github.com/security/advanced-security with result: local
+2025-04-18 00:07:44,012 - Indexer - INFO - Successfully indexed https://github.com/security/advanced-security
+2025-04-18 00:07:44,012 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:07:44,406 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:44,412 - Indexer - INFO - Successfully stored raw_html for https://github.com/features/copilot locally at crawled_data\raw_html\dba769c840ccac35bd2dae4b74d18025.html
+2025-04-18 00:07:44,412 - Indexer - INFO - Stored raw HTML for https://github.com/features/copilot with result: local
+2025-04-18 00:07:44,413 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:44,419 - Indexer - INFO - Successfully stored processed_text for https://github.com/features/copilot locally at crawled_data\processed_text\dba769c840ccac35bd2dae4b74d18025.txt
+2025-04-18 00:07:44,419 - Indexer - INFO - Stored processed text for https://github.com/features/copilot with result: local
+2025-04-18 00:07:45,433 - Indexer - INFO - Successfully indexed https://github.com/features/copilot
+2025-04-18 00:07:45,433 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:07:45,593 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:45,596 - Indexer - INFO - Successfully stored raw_html for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 locally at crawled_data\raw_html\4ab61f2e1910f4ba05089d1f2e2e5e61.html
+2025-04-18 00:07:45,596 - Indexer - INFO - Stored raw HTML for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 with result: local
+2025-04-18 00:07:45,596 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:45,597 - Indexer - INFO - Successfully stored processed_text for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 locally at crawled_data\processed_text\4ab61f2e1910f4ba05089d1f2e2e5e61.txt
+2025-04-18 00:07:45,598 - Indexer - INFO - Stored processed text for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 with result: local
+2025-04-18 00:07:45,706 - Indexer - INFO - Successfully indexed https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-18 00:07:45,706 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:07:45,944 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:45,947 - Indexer - INFO - Successfully stored raw_html for https://github.com/features/actions locally at crawled_data\raw_html\d7af0858294d18fa9f4dc16984f9a98d.html
+2025-04-18 00:07:45,947 - Indexer - INFO - Stored raw HTML for https://github.com/features/actions with result: local
+2025-04-18 00:07:45,947 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:45,950 - Indexer - INFO - Successfully stored processed_text for https://github.com/features/actions locally at crawled_data\processed_text\d7af0858294d18fa9f4dc16984f9a98d.txt
+2025-04-18 00:07:45,950 - Indexer - INFO - Stored processed text for https://github.com/features/actions with result: local
+2025-04-18 00:07:46,082 - Indexer - INFO - Successfully indexed https://github.com/features/actions
+2025-04-18 00:07:46,082 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:07:46,337 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:46,341 - Indexer - INFO - Successfully stored raw_html for https://github.com/features/codespaces locally at crawled_data\raw_html\9b0feeb833799d4ed2b4e16427b7032e.html
+2025-04-18 00:07:46,341 - Indexer - INFO - Stored raw HTML for https://github.com/features/codespaces with result: local
+2025-04-18 00:07:46,341 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:46,346 - Indexer - INFO - Successfully stored processed_text for https://github.com/features/codespaces locally at crawled_data\processed_text\9b0feeb833799d4ed2b4e16427b7032e.txt
+2025-04-18 00:07:46,346 - Indexer - INFO - Stored processed text for https://github.com/features/codespaces with result: local
+2025-04-18 00:07:46,475 - Indexer - INFO - Successfully indexed https://github.com/features/codespaces
+2025-04-18 00:07:46,475 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:07:46,964 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:46,967 - Indexer - INFO - Successfully stored raw_html for https://github.com/features/issues locally at crawled_data\raw_html\e2829aebb11ffc941af2d189e2298796.html
+2025-04-18 00:07:46,968 - Indexer - INFO - Stored raw HTML for https://github.com/features/issues with result: local
+2025-04-18 00:07:46,968 - Indexer - WARNING - S3 client not initialized. Falling back to local storage.
+2025-04-18 00:07:46,970 - Indexer - INFO - Successfully stored processed_text for https://github.com/features/issues locally at crawled_data\processed_text\e2829aebb11ffc941af2d189e2298796.txt
+2025-04-18 00:07:46,970 - Indexer - INFO - Stored processed text for https://github.com/features/issues with result: local
+2025-04-18 00:07:47,072 - Indexer - INFO - Successfully indexed https://github.com/features/issues
+2025-04-18 00:07:47,072 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:07:47,173 - Indexer - INFO - Indexer received shutdown signal. Generating final statistics...
+2025-04-18 00:07:47,205 - Indexer - INFO - Final Index Statistics:
+2025-04-18 00:07:47,206 - Indexer - INFO - Total documents indexed: 23
+2025-04-18 00:07:47,206 - Indexer - INFO - Total unique URLs processed: 20
+2025-04-18 00:07:47,206 - Indexer - INFO - 
+Example Search Results:
+2025-04-18 00:07:47,248 - Indexer - INFO - 
+Query: python AND programming
+2025-04-18 00:07:47,248 - Indexer - INFO - Found 5 results
+2025-04-18 00:07:47,253 - Indexer - INFO - 
+Query: title:github
+2025-04-18 00:07:47,254 - Indexer - INFO - Found 0 results
+2025-04-18 00:07:47,274 - Indexer - INFO - 
+Query: "open source"
+2025-04-18 00:07:47,274 - Indexer - INFO - Found 9 results
+2025-04-18 00:07:47,294 - Indexer - INFO - 
+Query: content:machine learning
+2025-04-18 00:07:47,294 - Indexer - INFO - Found 3 results
+2025-04-18 00:18:19,726 - Indexer - INFO - Enhanced Indexer node started with rank 4 of 5
+2025-04-18 00:18:19,728 - Indexer - INFO - Loaded AWS configuration from aws_config.json
+2025-04-18 00:18:19,747 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-18 00:18:20,928 - Indexer - INFO - Bucket web-crawler-data-storage does not exist. Creating...
+2025-04-18 00:18:21,245 - Indexer - INFO - Successfully created bucket web-crawler-data-storage
+2025-04-18 00:18:21,245 - Indexer - INFO - Successfully connected to AWS S3 in region us-east-1
+2025-04-18 00:18:21,246 - Indexer - INFO - CloudStorage initialized for data persistence
+2025-04-18 00:18:26,974 - Indexer - ERROR - Failed to store raw HTML for https://www.python.org: An error occurred (AccessDenied) when calling the PutObject operation: User: arn:aws:iam::405823273955:user/crawler-app is not authorized to perform: s3:PutObject on resource: "arn:aws:s3:::web-crawler-data-storage/raw_html/2025/04/18/c137682bbb0946674f25d1d4bd9e07a0.html" because no identity-based policy allows the s3:PutObject action
+2025-04-18 00:18:26,977 - Indexer - INFO - Successfully stored raw_html for https://www.python.org locally at crawled_data\raw_html\c137682bbb0946674f25d1d4bd9e07a0.html
+2025-04-18 00:18:26,977 - Indexer - INFO - Stored raw HTML for https://www.python.org with result: local
+2025-04-18 00:18:28,707 - Indexer - ERROR - Failed to store processed text for https://www.python.org: An error occurred (AccessDenied) when calling the PutObject operation: User: arn:aws:iam::405823273955:user/crawler-app is not authorized to perform: s3:PutObject on resource: "arn:aws:s3:::web-crawler-data-storage/processed_text/2025/04/18/c137682bbb0946674f25d1d4bd9e07a0.txt" because no identity-based policy allows the s3:PutObject action
+2025-04-18 00:18:28,710 - Indexer - INFO - Successfully stored processed_text for https://www.python.org locally at crawled_data\processed_text\c137682bbb0946674f25d1d4bd9e07a0.txt
+2025-04-18 00:18:28,710 - Indexer - INFO - Stored processed text for https://www.python.org with result: local
+2025-04-18 00:18:29,813 - Indexer - INFO - Successfully indexed https://www.python.org
+2025-04-18 00:18:29,813 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:18:31,523 - Indexer - ERROR - Failed to store raw HTML for https://www.reddit.com: An error occurred (AccessDenied) when calling the PutObject operation: User: arn:aws:iam::405823273955:user/crawler-app is not authorized to perform: s3:PutObject on resource: "arn:aws:s3:::web-crawler-data-storage/raw_html/2025/04/18/30dd8fd5626b7e36783516a6e238baf2.html" because no identity-based policy allows the s3:PutObject action
+2025-04-18 00:18:31,529 - Indexer - INFO - Successfully stored raw_html for https://www.reddit.com locally at crawled_data\raw_html\30dd8fd5626b7e36783516a6e238baf2.html
+2025-04-18 00:18:31,529 - Indexer - INFO - Stored raw HTML for https://www.reddit.com with result: local
+2025-04-18 00:18:33,210 - Indexer - ERROR - Failed to store processed text for https://www.reddit.com: An error occurred (AccessDenied) when calling the PutObject operation: User: arn:aws:iam::405823273955:user/crawler-app is not authorized to perform: s3:PutObject on resource: "arn:aws:s3:::web-crawler-data-storage/processed_text/2025/04/18/30dd8fd5626b7e36783516a6e238baf2.txt" because no identity-based policy allows the s3:PutObject action
+2025-04-18 00:18:33,212 - Indexer - INFO - Successfully stored processed_text for https://www.reddit.com locally at crawled_data\processed_text\30dd8fd5626b7e36783516a6e238baf2.txt
+2025-04-18 00:18:33,212 - Indexer - INFO - Stored processed text for https://www.reddit.com with result: local
+2025-04-18 00:18:33,330 - Indexer - INFO - Successfully indexed https://www.reddit.com
+2025-04-18 00:18:33,330 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:18:35,076 - Indexer - ERROR - Failed to store raw HTML for https://www.wikipedia.org: An error occurred (AccessDenied) when calling the PutObject operation: User: arn:aws:iam::405823273955:user/crawler-app is not authorized to perform: s3:PutObject on resource: "arn:aws:s3:::web-crawler-data-storage/raw_html/2025/04/18/8d1d8a3956ab5668e1da4e3e7f856f08.html" because no identity-based policy allows the s3:PutObject action
+2025-04-18 00:18:35,078 - Indexer - INFO - Successfully stored raw_html for https://www.wikipedia.org locally at crawled_data\raw_html\8d1d8a3956ab5668e1da4e3e7f856f08.html
+2025-04-18 00:18:35,078 - Indexer - INFO - Stored raw HTML for https://www.wikipedia.org with result: local
+2025-04-18 00:18:36,182 - Indexer - ERROR - Failed to store processed text for https://www.wikipedia.org: An error occurred (AccessDenied) when calling the PutObject operation: User: arn:aws:iam::405823273955:user/crawler-app is not authorized to perform: s3:PutObject on resource: "arn:aws:s3:::web-crawler-data-storage/processed_text/2025/04/18/8d1d8a3956ab5668e1da4e3e7f856f08.txt" because no identity-based policy allows the s3:PutObject action
+2025-04-18 00:18:36,184 - Indexer - INFO - Successfully stored processed_text for https://www.wikipedia.org locally at crawled_data\processed_text\8d1d8a3956ab5668e1da4e3e7f856f08.txt
+2025-04-18 00:18:36,185 - Indexer - INFO - Stored processed text for https://www.wikipedia.org with result: local
+2025-04-18 00:18:36,300 - Indexer - INFO - Successfully indexed https://www.wikipedia.org
+2025-04-18 00:18:36,301 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:18:37,688 - Indexer - ERROR - Failed to store raw HTML for https://www.github.com: An error occurred (AccessDenied) when calling the PutObject operation: User: arn:aws:iam::405823273955:user/crawler-app is not authorized to perform: s3:PutObject on resource: "arn:aws:s3:::web-crawler-data-storage/raw_html/2025/04/18/1895ab41ad3a81f6fd0a194bbc337a22.html" because no identity-based policy allows the s3:PutObject action
+2025-04-18 00:18:37,692 - Indexer - INFO - Successfully stored raw_html for https://www.github.com locally at crawled_data\raw_html\1895ab41ad3a81f6fd0a194bbc337a22.html
+2025-04-18 00:18:37,693 - Indexer - INFO - Stored raw HTML for https://www.github.com with result: local
+2025-04-18 00:18:38,645 - Indexer - ERROR - Failed to store processed text for https://www.github.com: An error occurred (AccessDenied) when calling the PutObject operation: User: arn:aws:iam::405823273955:user/crawler-app is not authorized to perform: s3:PutObject on resource: "arn:aws:s3:::web-crawler-data-storage/processed_text/2025/04/18/1895ab41ad3a81f6fd0a194bbc337a22.txt" because no identity-based policy allows the s3:PutObject action
+2025-04-18 00:18:38,647 - Indexer - INFO - Successfully stored processed_text for https://www.github.com locally at crawled_data\processed_text\1895ab41ad3a81f6fd0a194bbc337a22.txt
+2025-04-18 00:18:38,647 - Indexer - INFO - Stored processed text for https://www.github.com with result: local
+2025-04-18 00:18:38,780 - Indexer - INFO - Successfully indexed https://www.github.com
+2025-04-18 00:18:38,780 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:18:39,907 - Indexer - ERROR - Failed to store raw HTML for https://docs.python.org: An error occurred (AccessDenied) when calling the PutObject operation: User: arn:aws:iam::405823273955:user/crawler-app is not authorized to perform: s3:PutObject on resource: "arn:aws:s3:::web-crawler-data-storage/raw_html/2025/04/18/ab87040aecf47a23a07dc06153094d21.html" because no identity-based policy allows the s3:PutObject action
+2025-04-18 00:18:39,908 - Indexer - INFO - Successfully stored raw_html for https://docs.python.org locally at crawled_data\raw_html\ab87040aecf47a23a07dc06153094d21.html
+2025-04-18 00:18:39,908 - Indexer - INFO - Stored raw HTML for https://docs.python.org with result: local
+2025-04-18 00:18:40,846 - Indexer - ERROR - Failed to store processed text for https://docs.python.org: An error occurred (AccessDenied) when calling the PutObject operation: User: arn:aws:iam::405823273955:user/crawler-app is not authorized to perform: s3:PutObject on resource: "arn:aws:s3:::web-crawler-data-storage/processed_text/2025/04/18/ab87040aecf47a23a07dc06153094d21.txt" because no identity-based policy allows the s3:PutObject action
+2025-04-18 00:18:40,848 - Indexer - INFO - Successfully stored processed_text for https://docs.python.org locally at crawled_data\processed_text\ab87040aecf47a23a07dc06153094d21.txt
+2025-04-18 00:18:40,849 - Indexer - INFO - Stored processed text for https://docs.python.org with result: local
+2025-04-18 00:18:40,983 - Indexer - INFO - Successfully indexed https://docs.python.org
+2025-04-18 00:18:40,983 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:18:42,335 - Indexer - ERROR - Failed to store raw HTML for https://www.python.org/psf/: An error occurred (AccessDenied) when calling the PutObject operation: User: arn:aws:iam::405823273955:user/crawler-app is not authorized to perform: s3:PutObject on resource: "arn:aws:s3:::web-crawler-data-storage/raw_html/2025/04/18/491903eb8c7de2458019af2a1cd6a86c.html" because no identity-based policy allows the s3:PutObject action
+2025-04-18 00:18:42,337 - Indexer - INFO - Successfully stored raw_html for https://www.python.org/psf/ locally at crawled_data\raw_html\491903eb8c7de2458019af2a1cd6a86c.html
+2025-04-18 00:18:42,338 - Indexer - INFO - Stored raw HTML for https://www.python.org/psf/ with result: local
+2025-04-18 00:18:44,634 - Indexer - ERROR - Failed to store processed text for https://www.python.org/psf/: An error occurred (AccessDenied) when calling the PutObject operation: User: arn:aws:iam::405823273955:user/crawler-app is not authorized to perform: s3:PutObject on resource: "arn:aws:s3:::web-crawler-data-storage/processed_text/2025/04/18/491903eb8c7de2458019af2a1cd6a86c.txt" because no identity-based policy allows the s3:PutObject action
+2025-04-18 00:18:44,636 - Indexer - INFO - Successfully stored processed_text for https://www.python.org/psf/ locally at crawled_data\processed_text\491903eb8c7de2458019af2a1cd6a86c.txt
+2025-04-18 00:18:44,637 - Indexer - INFO - Stored processed text for https://www.python.org/psf/ with result: local
+2025-04-18 00:18:45,827 - Indexer - INFO - Successfully indexed https://www.python.org/psf/
+2025-04-18 00:18:45,827 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:23:32,490 - Indexer - INFO - Enhanced Indexer node started with rank 4 of 5
+2025-04-18 00:23:32,496 - Indexer - INFO - Loaded AWS configuration from aws_config.json
+2025-04-18 00:23:32,525 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-18 00:23:34,306 - Indexer - INFO - Bucket web-crawler-data-storage already exists
+2025-04-18 00:23:34,307 - Indexer - INFO - Successfully connected to AWS S3 in region us-east-1
+2025-04-18 00:23:34,307 - Indexer - INFO - CloudStorage initialized for data persistence
+2025-04-18 00:23:44,098 - Indexer - INFO - Successfully stored raw HTML for https://www.python.org at s3://web-crawler-data-storage/raw_html/2025/04/18/c137682bbb0946674f25d1d4bd9e07a0.html
+2025-04-18 00:23:44,098 - Indexer - INFO - Stored raw HTML for https://www.python.org with result: s3
+2025-04-18 00:23:44,421 - Indexer - INFO - Successfully stored processed text for https://www.python.org at s3://web-crawler-data-storage/processed_text/2025/04/18/c137682bbb0946674f25d1d4bd9e07a0.txt
+2025-04-18 00:23:44,780 - Indexer - INFO - Successfully stored metadata for https://www.python.org at s3://web-crawler-data-storage/metadata/2025/04/18/c137682bbb0946674f25d1d4bd9e07a0.json
+2025-04-18 00:23:44,780 - Indexer - INFO - Stored processed text for https://www.python.org with result: s3
+2025-04-18 00:23:44,889 - Indexer - INFO - Successfully indexed https://www.python.org
+2025-04-18 00:23:44,889 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:23:48,288 - Indexer - INFO - Successfully stored raw HTML for https://www.reddit.com at s3://web-crawler-data-storage/raw_html/2025/04/18/30dd8fd5626b7e36783516a6e238baf2.html
+2025-04-18 00:23:48,288 - Indexer - INFO - Stored raw HTML for https://www.reddit.com with result: s3
+2025-04-18 00:23:48,653 - Indexer - INFO - Successfully stored processed text for https://www.reddit.com at s3://web-crawler-data-storage/processed_text/2025/04/18/30dd8fd5626b7e36783516a6e238baf2.txt
+2025-04-18 00:23:49,002 - Indexer - INFO - Successfully stored metadata for https://www.reddit.com at s3://web-crawler-data-storage/metadata/2025/04/18/30dd8fd5626b7e36783516a6e238baf2.json
+2025-04-18 00:23:49,002 - Indexer - INFO - Stored processed text for https://www.reddit.com with result: s3
+2025-04-18 00:23:49,107 - Indexer - INFO - Successfully indexed https://www.reddit.com
+2025-04-18 00:23:49,107 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:23:50,011 - Indexer - INFO - Successfully stored raw HTML for https://www.wikipedia.org at s3://web-crawler-data-storage/raw_html/2025/04/18/8d1d8a3956ab5668e1da4e3e7f856f08.html
+2025-04-18 00:23:50,011 - Indexer - INFO - Stored raw HTML for https://www.wikipedia.org with result: s3
+2025-04-18 00:23:50,380 - Indexer - INFO - Successfully stored processed text for https://www.wikipedia.org at s3://web-crawler-data-storage/processed_text/2025/04/18/8d1d8a3956ab5668e1da4e3e7f856f08.txt
+2025-04-18 00:23:50,708 - Indexer - INFO - Successfully stored metadata for https://www.wikipedia.org at s3://web-crawler-data-storage/metadata/2025/04/18/8d1d8a3956ab5668e1da4e3e7f856f08.json
+2025-04-18 00:23:50,708 - Indexer - INFO - Stored processed text for https://www.wikipedia.org with result: s3
+2025-04-18 00:23:50,834 - Indexer - INFO - Successfully indexed https://www.wikipedia.org
+2025-04-18 00:23:50,834 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:23:53,115 - Indexer - INFO - Successfully stored raw HTML for https://www.github.com at s3://web-crawler-data-storage/raw_html/2025/04/18/1895ab41ad3a81f6fd0a194bbc337a22.html
+2025-04-18 00:23:53,115 - Indexer - INFO - Stored raw HTML for https://www.github.com with result: s3
+2025-04-18 00:23:53,599 - Indexer - INFO - Successfully stored processed text for https://www.github.com at s3://web-crawler-data-storage/processed_text/2025/04/18/1895ab41ad3a81f6fd0a194bbc337a22.txt
+2025-04-18 00:23:55,098 - Indexer - INFO - Successfully stored metadata for https://www.github.com at s3://web-crawler-data-storage/metadata/2025/04/18/1895ab41ad3a81f6fd0a194bbc337a22.json
+2025-04-18 00:23:55,098 - Indexer - INFO - Stored processed text for https://www.github.com with result: s3
+2025-04-18 00:23:55,251 - Indexer - INFO - Successfully indexed https://www.github.com
+2025-04-18 00:23:55,251 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:23:56,514 - Indexer - INFO - Successfully stored raw HTML for https://docs.python.org at s3://web-crawler-data-storage/raw_html/2025/04/18/ab87040aecf47a23a07dc06153094d21.html
+2025-04-18 00:23:56,514 - Indexer - INFO - Stored raw HTML for https://docs.python.org with result: s3
+2025-04-18 00:23:58,398 - Indexer - INFO - Successfully stored processed text for https://docs.python.org at s3://web-crawler-data-storage/processed_text/2025/04/18/ab87040aecf47a23a07dc06153094d21.txt
+2025-04-18 00:23:59,572 - Indexer - INFO - Successfully stored metadata for https://docs.python.org at s3://web-crawler-data-storage/metadata/2025/04/18/ab87040aecf47a23a07dc06153094d21.json
+2025-04-18 00:23:59,573 - Indexer - INFO - Stored processed text for https://docs.python.org with result: s3
+2025-04-18 00:24:00,771 - Indexer - INFO - Successfully indexed https://docs.python.org
+2025-04-18 00:24:00,772 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:24:02,873 - Indexer - INFO - Successfully stored raw HTML for https://www.python.org/psf/ at s3://web-crawler-data-storage/raw_html/2025/04/18/491903eb8c7de2458019af2a1cd6a86c.html
+2025-04-18 00:24:02,873 - Indexer - INFO - Stored raw HTML for https://www.python.org/psf/ with result: s3
+2025-04-18 00:24:05,392 - Indexer - INFO - Successfully stored processed text for https://www.python.org/psf/ at s3://web-crawler-data-storage/processed_text/2025/04/18/491903eb8c7de2458019af2a1cd6a86c.txt
+2025-04-18 00:24:06,100 - Indexer - INFO - Successfully stored metadata for https://www.python.org/psf/ at s3://web-crawler-data-storage/metadata/2025/04/18/491903eb8c7de2458019af2a1cd6a86c.json
+2025-04-18 00:24:06,101 - Indexer - INFO - Stored processed text for https://www.python.org/psf/ with result: s3
+2025-04-18 00:24:06,186 - Indexer - INFO - Successfully indexed https://www.python.org/psf/
+2025-04-18 00:24:06,186 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:38:05,766 - Indexer - INFO - Enhanced Indexer node started with rank 4 of 5
+2025-04-18 00:38:05,767 - Indexer - INFO - Loaded AWS configuration from aws_config.json
+2025-04-18 00:38:05,781 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-18 00:38:06,891 - Indexer - INFO - Bucket web-crawler-data-storage already exists
+2025-04-18 00:38:06,892 - Indexer - INFO - Successfully connected to AWS S3 in region us-east-1
+2025-04-18 00:38:06,892 - Indexer - INFO - CloudStorage initialized for data persistence
+2025-04-18 00:38:11,467 - Indexer - INFO - Successfully stored raw HTML for https://www.wikipedia.org at s3://web-crawler-data-storage/raw_html/2025/04/18/8d1d8a3956ab5668e1da4e3e7f856f08.html
+2025-04-18 00:38:11,468 - Indexer - INFO - Stored raw HTML for https://www.wikipedia.org with result: s3
+2025-04-18 00:38:11,772 - Indexer - INFO - Successfully stored processed text for https://www.wikipedia.org at s3://web-crawler-data-storage/processed_text/2025/04/18/8d1d8a3956ab5668e1da4e3e7f856f08.txt
+2025-04-18 00:38:12,080 - Indexer - INFO - Successfully stored metadata for https://www.wikipedia.org at s3://web-crawler-data-storage/metadata/2025/04/18/8d1d8a3956ab5668e1da4e3e7f856f08.json
+2025-04-18 00:38:12,081 - Indexer - INFO - Stored processed text for https://www.wikipedia.org with result: s3
+2025-04-18 00:38:12,151 - Indexer - INFO - Successfully indexed https://www.wikipedia.org
+2025-04-18 00:38:12,152 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:38:15,225 - Indexer - INFO - Successfully stored raw HTML for https://www.reddit.com at s3://web-crawler-data-storage/raw_html/2025/04/18/30dd8fd5626b7e36783516a6e238baf2.html
+2025-04-18 00:38:15,226 - Indexer - INFO - Stored raw HTML for https://www.reddit.com with result: s3
+2025-04-18 00:38:15,550 - Indexer - INFO - Successfully stored processed text for https://www.reddit.com at s3://web-crawler-data-storage/processed_text/2025/04/18/30dd8fd5626b7e36783516a6e238baf2.txt
+2025-04-18 00:38:15,876 - Indexer - INFO - Successfully stored metadata for https://www.reddit.com at s3://web-crawler-data-storage/metadata/2025/04/18/30dd8fd5626b7e36783516a6e238baf2.json
+2025-04-18 00:38:15,885 - Indexer - INFO - Stored processed text for https://www.reddit.com with result: s3
+2025-04-18 00:38:15,964 - Indexer - INFO - Successfully indexed https://www.reddit.com
+2025-04-18 00:38:15,965 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:38:16,633 - Indexer - INFO - Successfully stored raw HTML for https://www.python.org at s3://web-crawler-data-storage/raw_html/2025/04/18/c137682bbb0946674f25d1d4bd9e07a0.html
+2025-04-18 00:38:16,633 - Indexer - INFO - Stored raw HTML for https://www.python.org with result: s3
+2025-04-18 00:38:16,950 - Indexer - INFO - Successfully stored processed text for https://www.python.org at s3://web-crawler-data-storage/processed_text/2025/04/18/c137682bbb0946674f25d1d4bd9e07a0.txt
+2025-04-18 00:38:17,261 - Indexer - INFO - Successfully stored metadata for https://www.python.org at s3://web-crawler-data-storage/metadata/2025/04/18/c137682bbb0946674f25d1d4bd9e07a0.json
+2025-04-18 00:38:17,262 - Indexer - INFO - Stored processed text for https://www.python.org with result: s3
+2025-04-18 00:38:17,352 - Indexer - INFO - Successfully indexed https://www.python.org
+2025-04-18 00:38:17,352 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:38:19,326 - Indexer - INFO - Successfully stored raw HTML for https://www.github.com at s3://web-crawler-data-storage/raw_html/2025/04/18/1895ab41ad3a81f6fd0a194bbc337a22.html
+2025-04-18 00:38:19,326 - Indexer - INFO - Stored raw HTML for https://www.github.com with result: s3
+2025-04-18 00:38:19,663 - Indexer - INFO - Successfully stored processed text for https://www.github.com at s3://web-crawler-data-storage/processed_text/2025/04/18/1895ab41ad3a81f6fd0a194bbc337a22.txt
+2025-04-18 00:38:19,977 - Indexer - INFO - Successfully stored metadata for https://www.github.com at s3://web-crawler-data-storage/metadata/2025/04/18/1895ab41ad3a81f6fd0a194bbc337a22.json
+2025-04-18 00:38:19,978 - Indexer - INFO - Stored processed text for https://www.github.com with result: s3
+2025-04-18 00:38:20,786 - Indexer - INFO - Successfully indexed https://www.github.com
+2025-04-18 00:38:20,786 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:38:21,592 - Indexer - INFO - Successfully stored raw HTML for https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter at s3://web-crawler-data-storage/raw_html/2025/04/18/e80926e2c85c2736bd72ce8f1fda94c6.html
+2025-04-18 00:38:21,592 - Indexer - INFO - Stored raw HTML for https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter with result: s3
+2025-04-18 00:38:21,904 - Indexer - INFO - Successfully stored processed text for https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter at s3://web-crawler-data-storage/processed_text/2025/04/18/e80926e2c85c2736bd72ce8f1fda94c6.txt
+2025-04-18 00:38:22,204 - Indexer - INFO - Successfully stored metadata for https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter at s3://web-crawler-data-storage/metadata/2025/04/18/e80926e2c85c2736bd72ce8f1fda94c6.json
+2025-04-18 00:38:22,204 - Indexer - INFO - Stored processed text for https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter with result: s3
+2025-04-18 00:38:22,270 - Indexer - INFO - Successfully indexed https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter
+2025-04-18 00:38:22,270 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:38:27,555 - Indexer - INFO - Successfully stored raw HTML for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias at s3://web-crawler-data-storage/raw_html/2025/04/18/e89764c6976518e91ebe50251fa3fe33.html
+2025-04-18 00:38:27,556 - Indexer - INFO - Stored raw HTML for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias with result: s3
+2025-04-18 00:38:27,976 - Indexer - INFO - Successfully stored processed text for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias at s3://web-crawler-data-storage/processed_text/2025/04/18/e89764c6976518e91ebe50251fa3fe33.txt
+2025-04-18 00:38:28,424 - Indexer - INFO - Successfully stored metadata for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias at s3://web-crawler-data-storage/metadata/2025/04/18/e89764c6976518e91ebe50251fa3fe33.json
+2025-04-18 00:38:28,425 - Indexer - INFO - Stored processed text for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias with result: s3
+2025-04-18 00:38:28,717 - Indexer - INFO - Successfully indexed https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-18 00:38:28,717 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:38:29,740 - Indexer - INFO - Successfully stored raw HTML for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications at s3://web-crawler-data-storage/raw_html/2025/04/18/c3575c8005f0a1c5e66772e422fa23c8.html
+2025-04-18 00:38:29,740 - Indexer - INFO - Stored raw HTML for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications with result: s3
+2025-04-18 00:38:30,051 - Indexer - INFO - Successfully stored processed text for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications at s3://web-crawler-data-storage/processed_text/2025/04/18/c3575c8005f0a1c5e66772e422fa23c8.txt
+2025-04-18 00:38:30,367 - Indexer - INFO - Successfully stored metadata for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications at s3://web-crawler-data-storage/metadata/2025/04/18/c3575c8005f0a1c5e66772e422fa23c8.json
+2025-04-18 00:38:30,367 - Indexer - INFO - Stored processed text for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications with result: s3
+2025-04-18 00:38:30,471 - Indexer - INFO - Successfully indexed https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-18 00:38:30,472 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:38:34,902 - Indexer - INFO - Successfully stored raw HTML for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 at s3://web-crawler-data-storage/raw_html/2025/04/18/4ab61f2e1910f4ba05089d1f2e2e5e61.html
+2025-04-18 00:38:34,903 - Indexer - INFO - Stored raw HTML for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 with result: s3
+2025-04-18 00:38:35,228 - Indexer - INFO - Successfully stored processed text for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 at s3://web-crawler-data-storage/processed_text/2025/04/18/4ab61f2e1910f4ba05089d1f2e2e5e61.txt
+2025-04-18 00:38:35,555 - Indexer - INFO - Successfully stored metadata for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 at s3://web-crawler-data-storage/metadata/2025/04/18/4ab61f2e1910f4ba05089d1f2e2e5e61.json
+2025-04-18 00:38:35,556 - Indexer - INFO - Stored processed text for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 with result: s3
+2025-04-18 00:38:35,732 - Indexer - INFO - Successfully indexed https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-18 00:38:35,732 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:38:37,541 - Indexer - INFO - Successfully stored raw HTML for https://www.stackoverflow.com at s3://web-crawler-data-storage/raw_html/2025/04/18/2415620324baad2a5308e2c497763b12.html
+2025-04-18 00:38:37,541 - Indexer - INFO - Stored raw HTML for https://www.stackoverflow.com with result: s3
+2025-04-18 00:38:37,902 - Indexer - INFO - Successfully stored processed text for https://www.stackoverflow.com at s3://web-crawler-data-storage/processed_text/2025/04/18/2415620324baad2a5308e2c497763b12.txt
+2025-04-18 00:38:38,260 - Indexer - INFO - Successfully stored metadata for https://www.stackoverflow.com at s3://web-crawler-data-storage/metadata/2025/04/18/2415620324baad2a5308e2c497763b12.json
+2025-04-18 00:38:38,261 - Indexer - INFO - Stored processed text for https://www.stackoverflow.com with result: s3
+2025-04-18 00:38:39,560 - Indexer - INFO - Successfully indexed https://www.stackoverflow.com
+2025-04-18 00:38:39,560 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:38:44,723 - Indexer - INFO - Successfully stored raw HTML for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob at s3://web-crawler-data-storage/raw_html/2025/04/18/999ec284cceaef3b439da23caa40004f.html
+2025-04-18 00:38:44,723 - Indexer - INFO - Stored raw HTML for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob with result: s3
+2025-04-18 00:38:45,076 - Indexer - INFO - Successfully stored processed text for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob at s3://web-crawler-data-storage/processed_text/2025/04/18/999ec284cceaef3b439da23caa40004f.txt
+2025-04-18 00:38:45,445 - Indexer - INFO - Successfully stored metadata for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob at s3://web-crawler-data-storage/metadata/2025/04/18/999ec284cceaef3b439da23caa40004f.json
+2025-04-18 00:38:45,445 - Indexer - INFO - Stored processed text for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob with result: s3
+2025-04-18 00:38:45,579 - Indexer - INFO - Successfully indexed https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-18 00:38:45,579 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:38:46,178 - Indexer - INFO - Successfully stored raw HTML for https://www.python.org/psf/ at s3://web-crawler-data-storage/raw_html/2025/04/18/491903eb8c7de2458019af2a1cd6a86c.html
+2025-04-18 00:38:46,178 - Indexer - INFO - Stored raw HTML for https://www.python.org/psf/ with result: s3
+2025-04-18 00:38:46,535 - Indexer - INFO - Successfully stored processed text for https://www.python.org/psf/ at s3://web-crawler-data-storage/processed_text/2025/04/18/491903eb8c7de2458019af2a1cd6a86c.txt
+2025-04-18 00:38:46,837 - Indexer - INFO - Successfully stored metadata for https://www.python.org/psf/ at s3://web-crawler-data-storage/metadata/2025/04/18/491903eb8c7de2458019af2a1cd6a86c.json
+2025-04-18 00:38:46,837 - Indexer - INFO - Stored processed text for https://www.python.org/psf/ with result: s3
+2025-04-18 00:38:46,926 - Indexer - INFO - Successfully indexed https://www.python.org/psf/
+2025-04-18 00:38:46,926 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:38:47,832 - Indexer - INFO - Successfully stored raw HTML for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 at s3://web-crawler-data-storage/raw_html/2025/04/18/618bfe50d3538b5c56fc1f83e629ea52.html
+2025-04-18 00:38:47,832 - Indexer - INFO - Stored raw HTML for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 with result: s3
+2025-04-18 00:38:48,144 - Indexer - INFO - Successfully stored processed text for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 at s3://web-crawler-data-storage/processed_text/2025/04/18/618bfe50d3538b5c56fc1f83e629ea52.txt
+2025-04-18 00:38:48,457 - Indexer - INFO - Successfully stored metadata for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 at s3://web-crawler-data-storage/metadata/2025/04/18/618bfe50d3538b5c56fc1f83e629ea52.json
+2025-04-18 00:38:48,458 - Indexer - INFO - Stored processed text for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 with result: s3
+2025-04-18 00:38:48,557 - Indexer - INFO - Successfully indexed https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 00:38:48,557 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:38:49,036 - Indexer - INFO - Successfully stored raw HTML for https://docs.python.org at s3://web-crawler-data-storage/raw_html/2025/04/18/ab87040aecf47a23a07dc06153094d21.html
+2025-04-18 00:38:49,037 - Indexer - INFO - Stored raw HTML for https://docs.python.org with result: s3
+2025-04-18 00:38:49,337 - Indexer - INFO - Successfully stored processed text for https://docs.python.org at s3://web-crawler-data-storage/processed_text/2025/04/18/ab87040aecf47a23a07dc06153094d21.txt
+2025-04-18 00:38:49,640 - Indexer - INFO - Successfully stored metadata for https://docs.python.org at s3://web-crawler-data-storage/metadata/2025/04/18/ab87040aecf47a23a07dc06153094d21.json
+2025-04-18 00:38:49,640 - Indexer - INFO - Stored processed text for https://docs.python.org with result: s3
+2025-04-18 00:38:49,710 - Indexer - INFO - Successfully indexed https://docs.python.org
+2025-04-18 00:38:49,710 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:38:50,109 - Indexer - INFO - Successfully stored raw HTML for https://www.linkedin.com/company/python-software-foundation/ at s3://web-crawler-data-storage/raw_html/2025/04/18/d90ed6113df7505dad451d6f07e252ac.html
+2025-04-18 00:38:50,109 - Indexer - INFO - Stored raw HTML for https://www.linkedin.com/company/python-software-foundation/ with result: s3
+2025-04-18 00:38:50,406 - Indexer - INFO - Successfully stored processed text for https://www.linkedin.com/company/python-software-foundation/ at s3://web-crawler-data-storage/processed_text/2025/04/18/d90ed6113df7505dad451d6f07e252ac.txt
+2025-04-18 00:38:50,723 - Indexer - INFO - Successfully stored metadata for https://www.linkedin.com/company/python-software-foundation/ at s3://web-crawler-data-storage/metadata/2025/04/18/d90ed6113df7505dad451d6f07e252ac.json
+2025-04-18 00:38:50,723 - Indexer - INFO - Stored processed text for https://www.linkedin.com/company/python-software-foundation/ with result: s3
+2025-04-18 00:38:51,226 - Indexer - INFO - Successfully indexed https://www.linkedin.com/company/python-software-foundation/
+2025-04-18 00:38:51,226 - Indexer - INFO - Extracted 0 keywords
+2025-04-18 00:38:53,195 - Indexer - INFO - Successfully stored raw HTML for https://github.com/features/actions at s3://web-crawler-data-storage/raw_html/2025/04/18/d7af0858294d18fa9f4dc16984f9a98d.html
+2025-04-18 00:38:53,195 - Indexer - INFO - Stored raw HTML for https://github.com/features/actions with result: s3
+2025-04-18 00:38:53,508 - Indexer - INFO - Successfully stored processed text for https://github.com/features/actions at s3://web-crawler-data-storage/processed_text/2025/04/18/d7af0858294d18fa9f4dc16984f9a98d.txt
+2025-04-18 00:38:53,815 - Indexer - INFO - Successfully stored metadata for https://github.com/features/actions at s3://web-crawler-data-storage/metadata/2025/04/18/d7af0858294d18fa9f4dc16984f9a98d.json
+2025-04-18 00:38:53,816 - Indexer - INFO - Stored processed text for https://github.com/features/actions with result: s3
+2025-04-18 00:38:53,898 - Indexer - INFO - Successfully indexed https://github.com/features/actions
+2025-04-18 00:38:53,899 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:38:54,398 - Indexer - INFO - Successfully stored raw HTML for https://pypi.org/ at s3://web-crawler-data-storage/raw_html/2025/04/18/419defafa8b1d9a6418edbb446e9db79.html
+2025-04-18 00:38:54,399 - Indexer - INFO - Stored raw HTML for https://pypi.org/ with result: s3
+2025-04-18 00:38:54,693 - Indexer - INFO - Successfully stored processed text for https://pypi.org/ at s3://web-crawler-data-storage/processed_text/2025/04/18/419defafa8b1d9a6418edbb446e9db79.txt
+2025-04-18 00:38:54,998 - Indexer - INFO - Successfully stored metadata for https://pypi.org/ at s3://web-crawler-data-storage/metadata/2025/04/18/419defafa8b1d9a6418edbb446e9db79.json
+2025-04-18 00:38:54,998 - Indexer - INFO - Stored processed text for https://pypi.org/ with result: s3
+2025-04-18 00:38:55,068 - Indexer - INFO - Successfully indexed https://pypi.org/
+2025-04-18 00:38:55,068 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:38:58,215 - Indexer - INFO - Successfully stored raw HTML for https://github.com/features/copilot at s3://web-crawler-data-storage/raw_html/2025/04/18/dba769c840ccac35bd2dae4b74d18025.html
+2025-04-18 00:38:58,215 - Indexer - INFO - Stored raw HTML for https://github.com/features/copilot with result: s3
+2025-04-18 00:38:59,191 - Indexer - INFO - Successfully stored processed text for https://github.com/features/copilot at s3://web-crawler-data-storage/processed_text/2025/04/18/dba769c840ccac35bd2dae4b74d18025.txt
+2025-04-18 00:39:00,180 - Indexer - INFO - Successfully stored metadata for https://github.com/features/copilot at s3://web-crawler-data-storage/metadata/2025/04/18/dba769c840ccac35bd2dae4b74d18025.json
+2025-04-18 00:39:00,180 - Indexer - INFO - Stored processed text for https://github.com/features/copilot with result: s3
+2025-04-18 00:39:00,374 - Indexer - INFO - Successfully indexed https://github.com/features/copilot
+2025-04-18 00:39:00,374 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:39:02,622 - Indexer - INFO - Successfully stored raw HTML for https://github.com/security/advanced-security at s3://web-crawler-data-storage/raw_html/2025/04/18/1fe3a393f05c47bb0a664cde7f830a83.html
+2025-04-18 00:39:02,622 - Indexer - INFO - Stored raw HTML for https://github.com/security/advanced-security with result: s3
+2025-04-18 00:39:02,946 - Indexer - INFO - Successfully stored processed text for https://github.com/security/advanced-security at s3://web-crawler-data-storage/processed_text/2025/04/18/1fe3a393f05c47bb0a664cde7f830a83.txt
+2025-04-18 00:39:03,842 - Indexer - INFO - Successfully stored metadata for https://github.com/security/advanced-security at s3://web-crawler-data-storage/metadata/2025/04/18/1fe3a393f05c47bb0a664cde7f830a83.json
+2025-04-18 00:39:03,842 - Indexer - INFO - Stored processed text for https://github.com/security/advanced-security with result: s3
+2025-04-18 00:39:03,918 - Indexer - INFO - Successfully indexed https://github.com/security/advanced-security
+2025-04-18 00:39:03,918 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:39:07,651 - Indexer - INFO - Successfully stored raw HTML for https://github.com/features/codespaces at s3://web-crawler-data-storage/raw_html/2025/04/18/9b0feeb833799d4ed2b4e16427b7032e.html
+2025-04-18 00:39:07,651 - Indexer - INFO - Stored raw HTML for https://github.com/features/codespaces with result: s3
+2025-04-18 00:39:07,960 - Indexer - INFO - Successfully stored processed text for https://github.com/features/codespaces at s3://web-crawler-data-storage/processed_text/2025/04/18/9b0feeb833799d4ed2b4e16427b7032e.txt
+2025-04-18 00:39:08,278 - Indexer - INFO - Successfully stored metadata for https://github.com/features/codespaces at s3://web-crawler-data-storage/metadata/2025/04/18/9b0feeb833799d4ed2b4e16427b7032e.json
+2025-04-18 00:39:08,278 - Indexer - INFO - Stored processed text for https://github.com/features/codespaces with result: s3
+2025-04-18 00:39:08,779 - Indexer - INFO - Successfully indexed https://github.com/features/codespaces
+2025-04-18 00:39:08,779 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:39:10,846 - Indexer - INFO - Successfully stored raw HTML for https://www.reddit.com/login/ at s3://web-crawler-data-storage/raw_html/2025/04/18/686b8a13c276555c1986636287e1b566.html
+2025-04-18 00:39:10,846 - Indexer - INFO - Stored raw HTML for https://www.reddit.com/login/ with result: s3
+2025-04-18 00:39:11,137 - Indexer - INFO - Successfully stored processed text for https://www.reddit.com/login/ at s3://web-crawler-data-storage/processed_text/2025/04/18/686b8a13c276555c1986636287e1b566.txt
+2025-04-18 00:39:11,437 - Indexer - INFO - Successfully stored metadata for https://www.reddit.com/login/ at s3://web-crawler-data-storage/metadata/2025/04/18/686b8a13c276555c1986636287e1b566.json
+2025-04-18 00:39:11,437 - Indexer - INFO - Stored processed text for https://www.reddit.com/login/ with result: s3
+2025-04-18 00:39:11,492 - Indexer - INFO - Successfully indexed https://www.reddit.com/login/
+2025-04-18 00:39:11,492 - Indexer - INFO - Extracted 3 keywords
+2025-04-18 00:39:11,594 - Indexer - INFO - Indexer received shutdown signal. Generating final statistics...
+2025-04-18 00:39:11,613 - Indexer - INFO - Final Index Statistics:
+2025-04-18 00:39:11,613 - Indexer - INFO - Total documents indexed: 23
+2025-04-18 00:39:11,614 - Indexer - INFO - Total unique URLs processed: 20
+2025-04-18 00:39:11,614 - Indexer - INFO - 
+Example Search Results:
+2025-04-18 00:39:11,624 - Indexer - INFO - 
+Query: python AND programming
+2025-04-18 00:39:11,624 - Indexer - INFO - Found 5 results
+2025-04-18 00:39:11,627 - Indexer - INFO - 
+Query: title:github
+2025-04-18 00:39:11,627 - Indexer - INFO - Found 0 results
+2025-04-18 00:39:11,634 - Indexer - INFO - 
+Query: "open source"
+2025-04-18 00:39:11,634 - Indexer - INFO - Found 9 results
+2025-04-18 00:39:11,640 - Indexer - INFO - 
+Query: content:machine learning
+2025-04-18 00:39:11,641 - Indexer - INFO - Found 3 results
+2025-04-18 00:44:09,334 - Indexer - INFO - Enhanced Indexer node started with rank 4 of 5
+2025-04-18 00:44:09,335 - Indexer - INFO - Loaded AWS configuration from aws_config.json
+2025-04-18 00:44:09,346 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-18 00:44:10,311 - Indexer - INFO - Bucket web-crawler-data-storage already exists
+2025-04-18 00:44:10,311 - Indexer - INFO - Successfully connected to AWS S3 in region us-east-1
+2025-04-18 00:44:10,311 - Indexer - INFO - CloudStorage initialized for data persistence
+2025-04-18 00:44:14,540 - Indexer - INFO - Successfully stored raw HTML for https://www.wikipedia.org at s3://web-crawler-data-storage/raw_html/2025/04/18/8d1d8a3956ab5668e1da4e3e7f856f08.html
+2025-04-18 00:44:14,540 - Indexer - INFO - Stored raw HTML for https://www.wikipedia.org with result: s3
+2025-04-18 00:44:14,865 - Indexer - INFO - Successfully stored processed text for https://www.wikipedia.org at s3://web-crawler-data-storage/processed_text/2025/04/18/8d1d8a3956ab5668e1da4e3e7f856f08.txt
+2025-04-18 00:44:15,167 - Indexer - INFO - Successfully stored metadata for https://www.wikipedia.org at s3://web-crawler-data-storage/metadata/2025/04/18/8d1d8a3956ab5668e1da4e3e7f856f08.json
+2025-04-18 00:44:15,167 - Indexer - INFO - Stored processed text for https://www.wikipedia.org with result: s3
+2025-04-18 00:44:15,246 - Indexer - INFO - Successfully indexed https://www.wikipedia.org
+2025-04-18 00:44:15,246 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:44:18,131 - Indexer - INFO - Successfully stored raw HTML for https://www.reddit.com at s3://web-crawler-data-storage/raw_html/2025/04/18/30dd8fd5626b7e36783516a6e238baf2.html
+2025-04-18 00:44:18,132 - Indexer - INFO - Stored raw HTML for https://www.reddit.com with result: s3
+2025-04-18 00:44:18,438 - Indexer - INFO - Successfully stored processed text for https://www.reddit.com at s3://web-crawler-data-storage/processed_text/2025/04/18/30dd8fd5626b7e36783516a6e238baf2.txt
+2025-04-18 00:44:18,747 - Indexer - INFO - Successfully stored metadata for https://www.reddit.com at s3://web-crawler-data-storage/metadata/2025/04/18/30dd8fd5626b7e36783516a6e238baf2.json
+2025-04-18 00:44:18,748 - Indexer - INFO - Stored processed text for https://www.reddit.com with result: s3
+2025-04-18 00:44:18,827 - Indexer - INFO - Successfully indexed https://www.reddit.com
+2025-04-18 00:44:18,827 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:44:19,468 - Indexer - INFO - Successfully stored raw HTML for https://www.python.org at s3://web-crawler-data-storage/raw_html/2025/04/18/c137682bbb0946674f25d1d4bd9e07a0.html
+2025-04-18 00:44:19,468 - Indexer - INFO - Stored raw HTML for https://www.python.org with result: s3
+2025-04-18 00:44:19,773 - Indexer - INFO - Successfully stored processed text for https://www.python.org at s3://web-crawler-data-storage/processed_text/2025/04/18/c137682bbb0946674f25d1d4bd9e07a0.txt
+2025-04-18 00:44:20,076 - Indexer - INFO - Successfully stored metadata for https://www.python.org at s3://web-crawler-data-storage/metadata/2025/04/18/c137682bbb0946674f25d1d4bd9e07a0.json
+2025-04-18 00:44:20,076 - Indexer - INFO - Stored processed text for https://www.python.org with result: s3
+2025-04-18 00:44:20,167 - Indexer - INFO - Successfully indexed https://www.python.org
+2025-04-18 00:44:20,167 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:44:21,607 - Indexer - INFO - Successfully stored raw HTML for https://www.github.com at s3://web-crawler-data-storage/raw_html/2025/04/18/1895ab41ad3a81f6fd0a194bbc337a22.html
+2025-04-18 00:44:21,607 - Indexer - INFO - Stored raw HTML for https://www.github.com with result: s3
+2025-04-18 00:44:21,925 - Indexer - INFO - Successfully stored processed text for https://www.github.com at s3://web-crawler-data-storage/processed_text/2025/04/18/1895ab41ad3a81f6fd0a194bbc337a22.txt
+2025-04-18 00:44:22,678 - Indexer - INFO - Successfully stored metadata for https://www.github.com at s3://web-crawler-data-storage/metadata/2025/04/18/1895ab41ad3a81f6fd0a194bbc337a22.json
+2025-04-18 00:44:22,679 - Indexer - INFO - Stored processed text for https://www.github.com with result: s3
+2025-04-18 00:44:23,482 - Indexer - INFO - Successfully indexed https://www.github.com
+2025-04-18 00:44:23,483 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:44:25,140 - Indexer - INFO - Successfully stored raw HTML for https://www.stackoverflow.com at s3://web-crawler-data-storage/raw_html/2025/04/18/2415620324baad2a5308e2c497763b12.html
+2025-04-18 00:44:25,141 - Indexer - INFO - Stored raw HTML for https://www.stackoverflow.com with result: s3
+2025-04-18 00:44:25,510 - Indexer - INFO - Successfully stored processed text for https://www.stackoverflow.com at s3://web-crawler-data-storage/processed_text/2025/04/18/2415620324baad2a5308e2c497763b12.txt
+2025-04-18 00:44:25,892 - Indexer - INFO - Successfully stored metadata for https://www.stackoverflow.com at s3://web-crawler-data-storage/metadata/2025/04/18/2415620324baad2a5308e2c497763b12.json
+2025-04-18 00:44:25,893 - Indexer - INFO - Stored processed text for https://www.stackoverflow.com with result: s3
+2025-04-18 00:44:26,070 - Indexer - INFO - Successfully indexed https://www.stackoverflow.com
+2025-04-18 00:44:26,071 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:44:26,759 - Indexer - INFO - Successfully stored raw HTML for https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter at s3://web-crawler-data-storage/raw_html/2025/04/18/e80926e2c85c2736bd72ce8f1fda94c6.html
+2025-04-18 00:44:26,759 - Indexer - INFO - Stored raw HTML for https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter with result: s3
+2025-04-18 00:44:27,047 - Indexer - INFO - Successfully stored processed text for https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter at s3://web-crawler-data-storage/processed_text/2025/04/18/e80926e2c85c2736bd72ce8f1fda94c6.txt
+2025-04-18 00:44:27,341 - Indexer - INFO - Successfully stored metadata for https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter at s3://web-crawler-data-storage/metadata/2025/04/18/e80926e2c85c2736bd72ce8f1fda94c6.json
+2025-04-18 00:44:27,342 - Indexer - INFO - Stored processed text for https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter with result: s3
+2025-04-18 00:44:27,393 - Indexer - INFO - Successfully indexed https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter
+2025-04-18 00:44:27,394 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:44:28,415 - Indexer - INFO - Successfully stored raw HTML for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications at s3://web-crawler-data-storage/raw_html/2025/04/18/c3575c8005f0a1c5e66772e422fa23c8.html
+2025-04-18 00:44:28,416 - Indexer - INFO - Stored raw HTML for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications with result: s3
+2025-04-18 00:44:28,739 - Indexer - INFO - Successfully stored processed text for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications at s3://web-crawler-data-storage/processed_text/2025/04/18/c3575c8005f0a1c5e66772e422fa23c8.txt
+2025-04-18 00:44:29,052 - Indexer - INFO - Successfully stored metadata for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications at s3://web-crawler-data-storage/metadata/2025/04/18/c3575c8005f0a1c5e66772e422fa23c8.json
+2025-04-18 00:44:29,052 - Indexer - INFO - Stored processed text for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications with result: s3
+2025-04-18 00:44:29,142 - Indexer - INFO - Successfully indexed https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-18 00:44:29,142 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:44:38,482 - Indexer - INFO - Successfully stored raw HTML for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob at s3://web-crawler-data-storage/raw_html/2025/04/18/999ec284cceaef3b439da23caa40004f.html
+2025-04-18 00:44:38,482 - Indexer - INFO - Stored raw HTML for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob with result: s3
+2025-04-18 00:44:38,831 - Indexer - INFO - Successfully stored processed text for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob at s3://web-crawler-data-storage/processed_text/2025/04/18/999ec284cceaef3b439da23caa40004f.txt
+2025-04-18 00:44:39,172 - Indexer - INFO - Successfully stored metadata for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob at s3://web-crawler-data-storage/metadata/2025/04/18/999ec284cceaef3b439da23caa40004f.json
+2025-04-18 00:44:39,172 - Indexer - INFO - Stored processed text for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob with result: s3
+2025-04-18 00:44:39,279 - Indexer - INFO - Successfully indexed https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-18 00:44:39,279 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:44:48,180 - Indexer - INFO - Successfully stored raw HTML for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias at s3://web-crawler-data-storage/raw_html/2025/04/18/e89764c6976518e91ebe50251fa3fe33.html
+2025-04-18 00:44:48,181 - Indexer - INFO - Stored raw HTML for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias with result: s3
+2025-04-18 00:44:49,451 - Indexer - INFO - Successfully stored processed text for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias at s3://web-crawler-data-storage/processed_text/2025/04/18/e89764c6976518e91ebe50251fa3fe33.txt
+2025-04-18 00:44:49,925 - Indexer - INFO - Successfully stored metadata for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias at s3://web-crawler-data-storage/metadata/2025/04/18/e89764c6976518e91ebe50251fa3fe33.json
+2025-04-18 00:44:49,926 - Indexer - INFO - Stored processed text for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias with result: s3
+2025-04-18 00:44:50,692 - Indexer - INFO - Successfully indexed https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-18 00:44:50,692 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:44:51,322 - Indexer - INFO - Successfully stored raw HTML for https://www.python.org/psf/ at s3://web-crawler-data-storage/raw_html/2025/04/18/491903eb8c7de2458019af2a1cd6a86c.html
+2025-04-18 00:44:51,322 - Indexer - INFO - Stored raw HTML for https://www.python.org/psf/ with result: s3
+2025-04-18 00:44:51,650 - Indexer - INFO - Successfully stored processed text for https://www.python.org/psf/ at s3://web-crawler-data-storage/processed_text/2025/04/18/491903eb8c7de2458019af2a1cd6a86c.txt
+2025-04-18 00:44:51,952 - Indexer - INFO - Successfully stored metadata for https://www.python.org/psf/ at s3://web-crawler-data-storage/metadata/2025/04/18/491903eb8c7de2458019af2a1cd6a86c.json
+2025-04-18 00:44:51,952 - Indexer - INFO - Stored processed text for https://www.python.org/psf/ with result: s3
+2025-04-18 00:44:52,031 - Indexer - INFO - Successfully indexed https://www.python.org/psf/
+2025-04-18 00:44:52,032 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:44:53,070 - Indexer - INFO - Successfully stored raw HTML for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 at s3://web-crawler-data-storage/raw_html/2025/04/18/618bfe50d3538b5c56fc1f83e629ea52.html
+2025-04-18 00:44:53,070 - Indexer - INFO - Stored raw HTML for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 with result: s3
+2025-04-18 00:44:53,388 - Indexer - INFO - Successfully stored processed text for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 at s3://web-crawler-data-storage/processed_text/2025/04/18/618bfe50d3538b5c56fc1f83e629ea52.txt
+2025-04-18 00:44:53,698 - Indexer - INFO - Successfully stored metadata for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 at s3://web-crawler-data-storage/metadata/2025/04/18/618bfe50d3538b5c56fc1f83e629ea52.json
+2025-04-18 00:44:53,699 - Indexer - INFO - Stored processed text for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 with result: s3
+2025-04-18 00:44:53,850 - Indexer - INFO - Successfully indexed https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 00:44:53,850 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:44:54,366 - Indexer - INFO - Successfully stored raw HTML for https://pypi.org/ at s3://web-crawler-data-storage/raw_html/2025/04/18/419defafa8b1d9a6418edbb446e9db79.html
+2025-04-18 00:44:54,367 - Indexer - INFO - Stored raw HTML for https://pypi.org/ with result: s3
+2025-04-18 00:44:54,680 - Indexer - INFO - Successfully stored processed text for https://pypi.org/ at s3://web-crawler-data-storage/processed_text/2025/04/18/419defafa8b1d9a6418edbb446e9db79.txt
+2025-04-18 00:44:54,980 - Indexer - INFO - Successfully stored metadata for https://pypi.org/ at s3://web-crawler-data-storage/metadata/2025/04/18/419defafa8b1d9a6418edbb446e9db79.json
+2025-04-18 00:44:54,980 - Indexer - INFO - Stored processed text for https://pypi.org/ with result: s3
+2025-04-18 00:44:55,062 - Indexer - INFO - Successfully indexed https://pypi.org/
+2025-04-18 00:44:55,062 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:44:58,198 - Indexer - INFO - Successfully stored raw HTML for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 at s3://web-crawler-data-storage/raw_html/2025/04/18/4ab61f2e1910f4ba05089d1f2e2e5e61.html
+2025-04-18 00:44:58,198 - Indexer - INFO - Stored raw HTML for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 with result: s3
+2025-04-18 00:44:58,521 - Indexer - INFO - Successfully stored processed text for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 at s3://web-crawler-data-storage/processed_text/2025/04/18/4ab61f2e1910f4ba05089d1f2e2e5e61.txt
+2025-04-18 00:44:58,841 - Indexer - INFO - Successfully stored metadata for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 at s3://web-crawler-data-storage/metadata/2025/04/18/4ab61f2e1910f4ba05089d1f2e2e5e61.json
+2025-04-18 00:44:58,842 - Indexer - INFO - Stored processed text for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 with result: s3
+2025-04-18 00:44:58,972 - Indexer - INFO - Successfully indexed https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-18 00:44:58,972 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:45:01,439 - Indexer - INFO - Successfully stored raw HTML for https://github.com/features/copilot at s3://web-crawler-data-storage/raw_html/2025/04/18/dba769c840ccac35bd2dae4b74d18025.html
+2025-04-18 00:45:01,439 - Indexer - INFO - Stored raw HTML for https://github.com/features/copilot with result: s3
+2025-04-18 00:45:02,637 - Indexer - INFO - Successfully stored processed text for https://github.com/features/copilot at s3://web-crawler-data-storage/processed_text/2025/04/18/dba769c840ccac35bd2dae4b74d18025.txt
+2025-04-18 00:45:03,161 - Indexer - INFO - Successfully stored metadata for https://github.com/features/copilot at s3://web-crawler-data-storage/metadata/2025/04/18/dba769c840ccac35bd2dae4b74d18025.json
+2025-04-18 00:45:03,161 - Indexer - INFO - Stored processed text for https://github.com/features/copilot with result: s3
+2025-04-18 00:45:03,975 - Indexer - INFO - Successfully indexed https://github.com/features/copilot
+2025-04-18 00:45:03,975 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:45:04,462 - Indexer - INFO - Successfully stored raw HTML for https://docs.python.org at s3://web-crawler-data-storage/raw_html/2025/04/18/ab87040aecf47a23a07dc06153094d21.html
+2025-04-18 00:45:04,462 - Indexer - INFO - Stored raw HTML for https://docs.python.org with result: s3
+2025-04-18 00:45:04,765 - Indexer - INFO - Successfully stored processed text for https://docs.python.org at s3://web-crawler-data-storage/processed_text/2025/04/18/ab87040aecf47a23a07dc06153094d21.txt
+2025-04-18 00:45:05,096 - Indexer - INFO - Successfully stored metadata for https://docs.python.org at s3://web-crawler-data-storage/metadata/2025/04/18/ab87040aecf47a23a07dc06153094d21.json
+2025-04-18 00:45:05,096 - Indexer - INFO - Stored processed text for https://docs.python.org with result: s3
+2025-04-18 00:45:05,186 - Indexer - INFO - Successfully indexed https://docs.python.org
+2025-04-18 00:45:05,187 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:45:06,688 - Indexer - INFO - Successfully stored raw HTML for https://github.com/features/actions at s3://web-crawler-data-storage/raw_html/2025/04/18/d7af0858294d18fa9f4dc16984f9a98d.html
+2025-04-18 00:45:06,688 - Indexer - INFO - Stored raw HTML for https://github.com/features/actions with result: s3
+2025-04-18 00:45:07,201 - Indexer - INFO - Successfully stored processed text for https://github.com/features/actions at s3://web-crawler-data-storage/processed_text/2025/04/18/d7af0858294d18fa9f4dc16984f9a98d.txt
+2025-04-18 00:45:07,514 - Indexer - INFO - Successfully stored metadata for https://github.com/features/actions at s3://web-crawler-data-storage/metadata/2025/04/18/d7af0858294d18fa9f4dc16984f9a98d.json
+2025-04-18 00:45:07,515 - Indexer - INFO - Stored processed text for https://github.com/features/actions with result: s3
+2025-04-18 00:45:07,585 - Indexer - INFO - Successfully indexed https://github.com/features/actions
+2025-04-18 00:45:07,585 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:45:07,984 - Indexer - INFO - Successfully stored raw HTML for https://www.linkedin.com/company/python-software-foundation/ at s3://web-crawler-data-storage/raw_html/2025/04/18/d90ed6113df7505dad451d6f07e252ac.html
+2025-04-18 00:45:07,984 - Indexer - INFO - Stored raw HTML for https://www.linkedin.com/company/python-software-foundation/ with result: s3
+2025-04-18 00:45:08,270 - Indexer - INFO - Successfully stored processed text for https://www.linkedin.com/company/python-software-foundation/ at s3://web-crawler-data-storage/processed_text/2025/04/18/d90ed6113df7505dad451d6f07e252ac.txt
+2025-04-18 00:45:08,566 - Indexer - INFO - Successfully stored metadata for https://www.linkedin.com/company/python-software-foundation/ at s3://web-crawler-data-storage/metadata/2025/04/18/d90ed6113df7505dad451d6f07e252ac.json
+2025-04-18 00:45:08,566 - Indexer - INFO - Stored processed text for https://www.linkedin.com/company/python-software-foundation/ with result: s3
+2025-04-18 00:45:08,612 - Indexer - INFO - Successfully indexed https://www.linkedin.com/company/python-software-foundation/
+2025-04-18 00:45:08,612 - Indexer - INFO - Extracted 0 keywords
+2025-04-18 00:45:10,665 - Indexer - INFO - Successfully stored raw HTML for https://github.com/features/codespaces at s3://web-crawler-data-storage/raw_html/2025/04/18/9b0feeb833799d4ed2b4e16427b7032e.html
+2025-04-18 00:45:10,665 - Indexer - INFO - Stored raw HTML for https://github.com/features/codespaces with result: s3
+2025-04-18 00:45:10,982 - Indexer - INFO - Successfully stored processed text for https://github.com/features/codespaces at s3://web-crawler-data-storage/processed_text/2025/04/18/9b0feeb833799d4ed2b4e16427b7032e.txt
+2025-04-18 00:45:11,887 - Indexer - INFO - Successfully stored metadata for https://github.com/features/codespaces at s3://web-crawler-data-storage/metadata/2025/04/18/9b0feeb833799d4ed2b4e16427b7032e.json
+2025-04-18 00:45:11,888 - Indexer - INFO - Stored processed text for https://github.com/features/codespaces with result: s3
+2025-04-18 00:45:11,977 - Indexer - INFO - Successfully indexed https://github.com/features/codespaces
+2025-04-18 00:45:11,977 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:45:13,559 - Indexer - INFO - Successfully stored raw HTML for https://www.reddit.com/login/ at s3://web-crawler-data-storage/raw_html/2025/04/18/686b8a13c276555c1986636287e1b566.html
+2025-04-18 00:45:13,560 - Indexer - INFO - Stored raw HTML for https://www.reddit.com/login/ with result: s3
+2025-04-18 00:45:13,857 - Indexer - INFO - Successfully stored processed text for https://www.reddit.com/login/ at s3://web-crawler-data-storage/processed_text/2025/04/18/686b8a13c276555c1986636287e1b566.txt
+2025-04-18 00:45:14,155 - Indexer - INFO - Successfully stored metadata for https://www.reddit.com/login/ at s3://web-crawler-data-storage/metadata/2025/04/18/686b8a13c276555c1986636287e1b566.json
+2025-04-18 00:45:14,156 - Indexer - INFO - Stored processed text for https://www.reddit.com/login/ with result: s3
+2025-04-18 00:45:14,679 - Indexer - INFO - Successfully indexed https://www.reddit.com/login/
+2025-04-18 00:45:14,679 - Indexer - INFO - Extracted 3 keywords
+2025-04-18 00:45:17,147 - Indexer - INFO - Successfully stored raw HTML for https://github.com/security/advanced-security at s3://web-crawler-data-storage/raw_html/2025/04/18/1fe3a393f05c47bb0a664cde7f830a83.html
+2025-04-18 00:45:17,147 - Indexer - INFO - Stored raw HTML for https://github.com/security/advanced-security with result: s3
+2025-04-18 00:45:17,574 - Indexer - INFO - Successfully stored processed text for https://github.com/security/advanced-security at s3://web-crawler-data-storage/processed_text/2025/04/18/1fe3a393f05c47bb0a664cde7f830a83.txt
+2025-04-18 00:45:18,593 - Indexer - INFO - Successfully stored metadata for https://github.com/security/advanced-security at s3://web-crawler-data-storage/metadata/2025/04/18/1fe3a393f05c47bb0a664cde7f830a83.json
+2025-04-18 00:45:18,594 - Indexer - INFO - Stored processed text for https://github.com/security/advanced-security with result: s3
+2025-04-18 00:45:18,669 - Indexer - INFO - Successfully indexed https://github.com/security/advanced-security
+2025-04-18 00:45:18,669 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 00:45:18,770 - Indexer - INFO - Indexer received shutdown signal. Generating final statistics...
+2025-04-18 00:45:18,806 - Indexer - INFO - Final Index Statistics:
+2025-04-18 00:45:18,806 - Indexer - INFO - Total documents indexed: 23
+2025-04-18 00:45:18,806 - Indexer - INFO - Total unique URLs processed: 20
+2025-04-18 00:45:18,807 - Indexer - INFO - 
+Example Search Results:
+2025-04-18 00:45:18,822 - Indexer - INFO - 
+Query: python AND programming
+2025-04-18 00:45:18,822 - Indexer - INFO - Found 5 results
+2025-04-18 00:45:18,825 - Indexer - INFO - 
+Query: title:github
+2025-04-18 00:45:18,825 - Indexer - INFO - Found 0 results
+2025-04-18 00:45:18,831 - Indexer - INFO - 
+Query: "open source"
+2025-04-18 00:45:18,831 - Indexer - INFO - Found 9 results
+2025-04-18 00:45:18,838 - Indexer - INFO - 
+Query: content:machine learning
+2025-04-18 00:45:18,838 - Indexer - INFO - Found 3 results
+2025-04-18 23:08:46,083 - Indexer - INFO - Enhanced Indexer node started with rank 4 of 5
+2025-04-18 23:08:46,083 - Indexer - INFO - Loaded AWS configuration from aws_config.json
+2025-04-18 23:08:46,101 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-18 23:08:47,276 - Indexer - INFO - Bucket web-crawler-data-storage already exists
+2025-04-18 23:08:47,277 - Indexer - INFO - Successfully connected to AWS S3 in region us-east-1
+2025-04-18 23:08:47,277 - Indexer - INFO - CloudStorage initialized for data persistence
+2025-04-18 23:08:50,741 - Indexer - INFO - Successfully stored raw HTML for https://www.wikipedia.org at s3://web-crawler-data-storage/raw_html/2025/04/18/8d1d8a3956ab5668e1da4e3e7f856f08.html
+2025-04-18 23:08:50,742 - Indexer - INFO - Stored raw HTML for https://www.wikipedia.org with result: s3
+2025-04-18 23:08:51,042 - Indexer - INFO - Successfully stored processed text for https://www.wikipedia.org at s3://web-crawler-data-storage/processed_text/2025/04/18/8d1d8a3956ab5668e1da4e3e7f856f08.txt
+2025-04-18 23:08:51,371 - Indexer - INFO - Successfully stored metadata for https://www.wikipedia.org at s3://web-crawler-data-storage/metadata/2025/04/18/8d1d8a3956ab5668e1da4e3e7f856f08.json
+2025-04-18 23:08:51,371 - Indexer - INFO - Stored processed text for https://www.wikipedia.org with result: s3
+2025-04-18 23:08:51,433 - Indexer - INFO - Successfully indexed https://www.wikipedia.org
+2025-04-18 23:08:51,433 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:08:54,053 - Indexer - INFO - Successfully stored raw HTML for https://www.reddit.com at s3://web-crawler-data-storage/raw_html/2025/04/18/30dd8fd5626b7e36783516a6e238baf2.html
+2025-04-18 23:08:54,053 - Indexer - INFO - Stored raw HTML for https://www.reddit.com with result: s3
+2025-04-18 23:08:54,354 - Indexer - INFO - Successfully stored processed text for https://www.reddit.com at s3://web-crawler-data-storage/processed_text/2025/04/18/30dd8fd5626b7e36783516a6e238baf2.txt
+2025-04-18 23:08:54,658 - Indexer - INFO - Successfully stored metadata for https://www.reddit.com at s3://web-crawler-data-storage/metadata/2025/04/18/30dd8fd5626b7e36783516a6e238baf2.json
+2025-04-18 23:08:54,658 - Indexer - INFO - Stored processed text for https://www.reddit.com with result: s3
+2025-04-18 23:08:54,761 - Indexer - INFO - Successfully indexed https://www.reddit.com
+2025-04-18 23:08:54,761 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:08:55,393 - Indexer - INFO - Successfully stored raw HTML for https://www.python.org at s3://web-crawler-data-storage/raw_html/2025/04/18/c137682bbb0946674f25d1d4bd9e07a0.html
+2025-04-18 23:08:55,393 - Indexer - INFO - Stored raw HTML for https://www.python.org with result: s3
+2025-04-18 23:08:55,699 - Indexer - INFO - Successfully stored processed text for https://www.python.org at s3://web-crawler-data-storage/processed_text/2025/04/18/c137682bbb0946674f25d1d4bd9e07a0.txt
+2025-04-18 23:08:56,011 - Indexer - INFO - Successfully stored metadata for https://www.python.org at s3://web-crawler-data-storage/metadata/2025/04/18/c137682bbb0946674f25d1d4bd9e07a0.json
+2025-04-18 23:08:56,011 - Indexer - INFO - Stored processed text for https://www.python.org with result: s3
+2025-04-18 23:08:56,074 - Indexer - INFO - Successfully indexed https://www.python.org
+2025-04-18 23:08:56,075 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:08:57,411 - Indexer - INFO - Successfully stored raw HTML for https://www.github.com at s3://web-crawler-data-storage/raw_html/2025/04/18/1895ab41ad3a81f6fd0a194bbc337a22.html
+2025-04-18 23:08:57,412 - Indexer - INFO - Stored raw HTML for https://www.github.com with result: s3
+2025-04-18 23:08:57,729 - Indexer - INFO - Successfully stored processed text for https://www.github.com at s3://web-crawler-data-storage/processed_text/2025/04/18/1895ab41ad3a81f6fd0a194bbc337a22.txt
+2025-04-18 23:08:58,043 - Indexer - INFO - Successfully stored metadata for https://www.github.com at s3://web-crawler-data-storage/metadata/2025/04/18/1895ab41ad3a81f6fd0a194bbc337a22.json
+2025-04-18 23:08:58,044 - Indexer - INFO - Stored processed text for https://www.github.com with result: s3
+2025-04-18 23:08:58,664 - Indexer - INFO - Successfully indexed https://www.github.com
+2025-04-18 23:08:58,664 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:09:00,340 - Indexer - INFO - Successfully stored raw HTML for https://www.stackoverflow.com at s3://web-crawler-data-storage/raw_html/2025/04/18/2415620324baad2a5308e2c497763b12.html
+2025-04-18 23:09:00,342 - Indexer - INFO - Stored raw HTML for https://www.stackoverflow.com with result: s3
+2025-04-18 23:09:00,695 - Indexer - INFO - Successfully stored processed text for https://www.stackoverflow.com at s3://web-crawler-data-storage/processed_text/2025/04/18/2415620324baad2a5308e2c497763b12.txt
+2025-04-18 23:09:01,051 - Indexer - INFO - Successfully stored metadata for https://www.stackoverflow.com at s3://web-crawler-data-storage/metadata/2025/04/18/2415620324baad2a5308e2c497763b12.json
+2025-04-18 23:09:01,051 - Indexer - INFO - Stored processed text for https://www.stackoverflow.com with result: s3
+2025-04-18 23:09:01,209 - Indexer - INFO - Successfully indexed https://www.stackoverflow.com
+2025-04-18 23:09:01,209 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:09:01,849 - Indexer - INFO - Successfully stored raw HTML for https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter at s3://web-crawler-data-storage/raw_html/2025/04/18/e80926e2c85c2736bd72ce8f1fda94c6.html
+2025-04-18 23:09:01,849 - Indexer - INFO - Stored raw HTML for https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter with result: s3
+2025-04-18 23:09:02,150 - Indexer - INFO - Successfully stored processed text for https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter at s3://web-crawler-data-storage/processed_text/2025/04/18/e80926e2c85c2736bd72ce8f1fda94c6.txt
+2025-04-18 23:09:02,459 - Indexer - INFO - Successfully stored metadata for https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter at s3://web-crawler-data-storage/metadata/2025/04/18/e80926e2c85c2736bd72ce8f1fda94c6.json
+2025-04-18 23:09:02,459 - Indexer - INFO - Stored processed text for https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter with result: s3
+2025-04-18 23:09:02,520 - Indexer - INFO - Successfully indexed https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter
+2025-04-18 23:09:02,520 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:09:05,135 - Indexer - INFO - Successfully stored raw HTML for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias at s3://web-crawler-data-storage/raw_html/2025/04/18/e89764c6976518e91ebe50251fa3fe33.html
+2025-04-18 23:09:05,135 - Indexer - INFO - Stored raw HTML for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias with result: s3
+2025-04-18 23:09:05,654 - Indexer - INFO - Successfully stored processed text for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias at s3://web-crawler-data-storage/processed_text/2025/04/18/e89764c6976518e91ebe50251fa3fe33.txt
+2025-04-18 23:09:06,093 - Indexer - INFO - Successfully stored metadata for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias at s3://web-crawler-data-storage/metadata/2025/04/18/e89764c6976518e91ebe50251fa3fe33.json
+2025-04-18 23:09:06,093 - Indexer - INFO - Stored processed text for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias with result: s3
+2025-04-18 23:09:06,340 - Indexer - INFO - Successfully indexed https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-18 23:09:06,340 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:09:07,357 - Indexer - INFO - Successfully stored raw HTML for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications at s3://web-crawler-data-storage/raw_html/2025/04/18/c3575c8005f0a1c5e66772e422fa23c8.html
+2025-04-18 23:09:07,358 - Indexer - INFO - Stored raw HTML for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications with result: s3
+2025-04-18 23:09:07,747 - Indexer - INFO - Successfully stored processed text for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications at s3://web-crawler-data-storage/processed_text/2025/04/18/c3575c8005f0a1c5e66772e422fa23c8.txt
+2025-04-18 23:09:08,054 - Indexer - INFO - Successfully stored metadata for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications at s3://web-crawler-data-storage/metadata/2025/04/18/c3575c8005f0a1c5e66772e422fa23c8.json
+2025-04-18 23:09:08,055 - Indexer - INFO - Stored processed text for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications with result: s3
+2025-04-18 23:09:08,126 - Indexer - INFO - Successfully indexed https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-18 23:09:08,126 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:09:12,568 - Indexer - INFO - Successfully stored raw HTML for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob at s3://web-crawler-data-storage/raw_html/2025/04/18/999ec284cceaef3b439da23caa40004f.html
+2025-04-18 23:09:12,569 - Indexer - INFO - Stored raw HTML for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob with result: s3
+2025-04-18 23:09:13,033 - Indexer - INFO - Successfully stored processed text for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob at s3://web-crawler-data-storage/processed_text/2025/04/18/999ec284cceaef3b439da23caa40004f.txt
+2025-04-18 23:09:13,394 - Indexer - INFO - Successfully stored metadata for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob at s3://web-crawler-data-storage/metadata/2025/04/18/999ec284cceaef3b439da23caa40004f.json
+2025-04-18 23:09:13,395 - Indexer - INFO - Stored processed text for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob with result: s3
+2025-04-18 23:09:14,236 - Indexer - INFO - Successfully indexed https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-18 23:09:14,237 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:09:14,885 - Indexer - INFO - Successfully stored raw HTML for https://www.python.org/psf/ at s3://web-crawler-data-storage/raw_html/2025/04/18/491903eb8c7de2458019af2a1cd6a86c.html
+2025-04-18 23:09:14,885 - Indexer - INFO - Stored raw HTML for https://www.python.org/psf/ with result: s3
+2025-04-18 23:09:16,735 - Indexer - INFO - Successfully stored processed text for https://www.python.org/psf/ at s3://web-crawler-data-storage/processed_text/2025/04/18/491903eb8c7de2458019af2a1cd6a86c.txt
+2025-04-18 23:09:18,300 - Indexer - INFO - Successfully stored metadata for https://www.python.org/psf/ at s3://web-crawler-data-storage/metadata/2025/04/18/491903eb8c7de2458019af2a1cd6a86c.json
+2025-04-18 23:09:18,301 - Indexer - INFO - Stored processed text for https://www.python.org/psf/ with result: s3
+2025-04-18 23:09:18,370 - Indexer - INFO - Successfully indexed https://www.python.org/psf/
+2025-04-18 23:09:18,370 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:09:20,218 - Indexer - INFO - Successfully stored raw HTML for https://pypi.org/ at s3://web-crawler-data-storage/raw_html/2025/04/18/419defafa8b1d9a6418edbb446e9db79.html
+2025-04-18 23:09:20,219 - Indexer - INFO - Stored raw HTML for https://pypi.org/ with result: s3
+2025-04-18 23:09:20,650 - Indexer - INFO - Successfully stored processed text for https://pypi.org/ at s3://web-crawler-data-storage/processed_text/2025/04/18/419defafa8b1d9a6418edbb446e9db79.txt
+2025-04-18 23:09:20,959 - Indexer - INFO - Successfully stored metadata for https://pypi.org/ at s3://web-crawler-data-storage/metadata/2025/04/18/419defafa8b1d9a6418edbb446e9db79.json
+2025-04-18 23:09:20,959 - Indexer - INFO - Stored processed text for https://pypi.org/ with result: s3
+2025-04-18 23:09:21,021 - Indexer - INFO - Successfully indexed https://pypi.org/
+2025-04-18 23:09:21,021 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:09:22,038 - Indexer - INFO - Successfully stored raw HTML for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 at s3://web-crawler-data-storage/raw_html/2025/04/18/618bfe50d3538b5c56fc1f83e629ea52.html
+2025-04-18 23:09:22,038 - Indexer - INFO - Stored raw HTML for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 with result: s3
+2025-04-18 23:09:22,368 - Indexer - INFO - Successfully stored processed text for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 at s3://web-crawler-data-storage/processed_text/2025/04/18/618bfe50d3538b5c56fc1f83e629ea52.txt
+2025-04-18 23:09:22,680 - Indexer - INFO - Successfully stored metadata for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 at s3://web-crawler-data-storage/metadata/2025/04/18/618bfe50d3538b5c56fc1f83e629ea52.json
+2025-04-18 23:09:22,680 - Indexer - INFO - Stored processed text for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 with result: s3
+2025-04-18 23:09:22,787 - Indexer - INFO - Successfully indexed https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 23:09:22,788 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:09:23,279 - Indexer - INFO - Successfully stored raw HTML for https://docs.python.org at s3://web-crawler-data-storage/raw_html/2025/04/18/ab87040aecf47a23a07dc06153094d21.html
+2025-04-18 23:09:23,279 - Indexer - INFO - Stored raw HTML for https://docs.python.org with result: s3
+2025-04-18 23:09:23,604 - Indexer - INFO - Successfully stored processed text for https://docs.python.org at s3://web-crawler-data-storage/processed_text/2025/04/18/ab87040aecf47a23a07dc06153094d21.txt
+2025-04-18 23:09:23,913 - Indexer - INFO - Successfully stored metadata for https://docs.python.org at s3://web-crawler-data-storage/metadata/2025/04/18/ab87040aecf47a23a07dc06153094d21.json
+2025-04-18 23:09:23,913 - Indexer - INFO - Stored processed text for https://docs.python.org with result: s3
+2025-04-18 23:09:24,083 - Indexer - INFO - Successfully indexed https://docs.python.org
+2025-04-18 23:09:24,083 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:09:25,411 - Indexer - INFO - Successfully stored raw HTML for https://github.com/security/advanced-security at s3://web-crawler-data-storage/raw_html/2025/04/18/1fe3a393f05c47bb0a664cde7f830a83.html
+2025-04-18 23:09:25,411 - Indexer - INFO - Stored raw HTML for https://github.com/security/advanced-security with result: s3
+2025-04-18 23:09:25,732 - Indexer - INFO - Successfully stored processed text for https://github.com/security/advanced-security at s3://web-crawler-data-storage/processed_text/2025/04/18/1fe3a393f05c47bb0a664cde7f830a83.txt
+2025-04-18 23:09:26,045 - Indexer - INFO - Successfully stored metadata for https://github.com/security/advanced-security at s3://web-crawler-data-storage/metadata/2025/04/18/1fe3a393f05c47bb0a664cde7f830a83.json
+2025-04-18 23:09:26,045 - Indexer - INFO - Stored processed text for https://github.com/security/advanced-security with result: s3
+2025-04-18 23:09:26,663 - Indexer - INFO - Successfully indexed https://github.com/security/advanced-security
+2025-04-18 23:09:26,663 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:09:29,450 - Indexer - INFO - Successfully stored raw HTML for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 at s3://web-crawler-data-storage/raw_html/2025/04/18/4ab61f2e1910f4ba05089d1f2e2e5e61.html
+2025-04-18 23:09:29,450 - Indexer - INFO - Stored raw HTML for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 with result: s3
+2025-04-18 23:09:29,798 - Indexer - INFO - Successfully stored processed text for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 at s3://web-crawler-data-storage/processed_text/2025/04/18/4ab61f2e1910f4ba05089d1f2e2e5e61.txt
+2025-04-18 23:09:30,216 - Indexer - INFO - Successfully stored metadata for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 at s3://web-crawler-data-storage/metadata/2025/04/18/4ab61f2e1910f4ba05089d1f2e2e5e61.json
+2025-04-18 23:09:30,216 - Indexer - INFO - Stored processed text for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 with result: s3
+2025-04-18 23:09:30,317 - Indexer - INFO - Successfully indexed https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-18 23:09:30,317 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:09:31,882 - Indexer - INFO - Successfully stored raw HTML for https://github.com/features/codespaces at s3://web-crawler-data-storage/raw_html/2025/04/18/9b0feeb833799d4ed2b4e16427b7032e.html
+2025-04-18 23:09:31,882 - Indexer - INFO - Stored raw HTML for https://github.com/features/codespaces with result: s3
+2025-04-18 23:09:32,200 - Indexer - INFO - Successfully stored processed text for https://github.com/features/codespaces at s3://web-crawler-data-storage/processed_text/2025/04/18/9b0feeb833799d4ed2b4e16427b7032e.txt
+2025-04-18 23:09:32,511 - Indexer - INFO - Successfully stored metadata for https://github.com/features/codespaces at s3://web-crawler-data-storage/metadata/2025/04/18/9b0feeb833799d4ed2b4e16427b7032e.json
+2025-04-18 23:09:32,511 - Indexer - INFO - Stored processed text for https://github.com/features/codespaces with result: s3
+2025-04-18 23:09:32,588 - Indexer - INFO - Successfully indexed https://github.com/features/codespaces
+2025-04-18 23:09:32,589 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:09:35,201 - Indexer - INFO - Successfully stored raw HTML for https://github.com/features/copilot at s3://web-crawler-data-storage/raw_html/2025/04/18/dba769c840ccac35bd2dae4b74d18025.html
+2025-04-18 23:09:35,201 - Indexer - INFO - Stored raw HTML for https://github.com/features/copilot with result: s3
+2025-04-18 23:09:35,682 - Indexer - INFO - Successfully stored processed text for https://github.com/features/copilot at s3://web-crawler-data-storage/processed_text/2025/04/18/dba769c840ccac35bd2dae4b74d18025.txt
+2025-04-18 23:09:36,155 - Indexer - INFO - Successfully stored metadata for https://github.com/features/copilot at s3://web-crawler-data-storage/metadata/2025/04/18/dba769c840ccac35bd2dae4b74d18025.json
+2025-04-18 23:09:36,155 - Indexer - INFO - Stored processed text for https://github.com/features/copilot with result: s3
+2025-04-18 23:09:36,313 - Indexer - INFO - Successfully indexed https://github.com/features/copilot
+2025-04-18 23:09:36,313 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:09:37,840 - Indexer - INFO - Successfully stored raw HTML for https://github.com/features/issues at s3://web-crawler-data-storage/raw_html/2025/04/18/e2829aebb11ffc941af2d189e2298796.html
+2025-04-18 23:09:37,840 - Indexer - INFO - Stored raw HTML for https://github.com/features/issues with result: s3
+2025-04-18 23:09:38,169 - Indexer - INFO - Successfully stored processed text for https://github.com/features/issues at s3://web-crawler-data-storage/processed_text/2025/04/18/e2829aebb11ffc941af2d189e2298796.txt
+2025-04-18 23:09:38,485 - Indexer - INFO - Successfully stored metadata for https://github.com/features/issues at s3://web-crawler-data-storage/metadata/2025/04/18/e2829aebb11ffc941af2d189e2298796.json
+2025-04-18 23:09:38,486 - Indexer - INFO - Stored processed text for https://github.com/features/issues with result: s3
+2025-04-18 23:09:38,554 - Indexer - INFO - Successfully indexed https://github.com/features/issues
+2025-04-18 23:09:38,554 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:09:38,961 - Indexer - INFO - Successfully stored raw HTML for https://www.linkedin.com/company/python-software-foundation/ at s3://web-crawler-data-storage/raw_html/2025/04/18/d90ed6113df7505dad451d6f07e252ac.html
+2025-04-18 23:09:38,962 - Indexer - INFO - Stored raw HTML for https://www.linkedin.com/company/python-software-foundation/ with result: s3
+2025-04-18 23:09:39,255 - Indexer - INFO - Successfully stored processed text for https://www.linkedin.com/company/python-software-foundation/ at s3://web-crawler-data-storage/processed_text/2025/04/18/d90ed6113df7505dad451d6f07e252ac.txt
+2025-04-18 23:09:39,565 - Indexer - INFO - Successfully stored metadata for https://www.linkedin.com/company/python-software-foundation/ at s3://web-crawler-data-storage/metadata/2025/04/18/d90ed6113df7505dad451d6f07e252ac.json
+2025-04-18 23:09:39,565 - Indexer - INFO - Stored processed text for https://www.linkedin.com/company/python-software-foundation/ with result: s3
+2025-04-18 23:09:40,117 - Indexer - INFO - Successfully indexed https://www.linkedin.com/company/python-software-foundation/
+2025-04-18 23:09:40,117 - Indexer - INFO - Extracted 0 keywords
+2025-04-18 23:09:41,451 - Indexer - INFO - Successfully stored raw HTML for https://github.com/features/actions at s3://web-crawler-data-storage/raw_html/2025/04/18/d7af0858294d18fa9f4dc16984f9a98d.html
+2025-04-18 23:09:41,451 - Indexer - INFO - Stored raw HTML for https://github.com/features/actions with result: s3
+2025-04-18 23:09:41,758 - Indexer - INFO - Successfully stored processed text for https://github.com/features/actions at s3://web-crawler-data-storage/processed_text/2025/04/18/d7af0858294d18fa9f4dc16984f9a98d.txt
+2025-04-18 23:09:42,065 - Indexer - INFO - Successfully stored metadata for https://github.com/features/actions at s3://web-crawler-data-storage/metadata/2025/04/18/d7af0858294d18fa9f4dc16984f9a98d.json
+2025-04-18 23:09:42,065 - Indexer - INFO - Stored processed text for https://github.com/features/actions with result: s3
+2025-04-18 23:09:42,146 - Indexer - INFO - Successfully indexed https://github.com/features/actions
+2025-04-18 23:09:42,146 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:09:43,645 - Indexer - INFO - Successfully stored raw HTML for https://www.reddit.com/login/ at s3://web-crawler-data-storage/raw_html/2025/04/18/686b8a13c276555c1986636287e1b566.html
+2025-04-18 23:09:43,646 - Indexer - INFO - Stored raw HTML for https://www.reddit.com/login/ with result: s3
+2025-04-18 23:09:43,958 - Indexer - INFO - Successfully stored processed text for https://www.reddit.com/login/ at s3://web-crawler-data-storage/processed_text/2025/04/18/686b8a13c276555c1986636287e1b566.txt
+2025-04-18 23:09:44,250 - Indexer - INFO - Successfully stored metadata for https://www.reddit.com/login/ at s3://web-crawler-data-storage/metadata/2025/04/18/686b8a13c276555c1986636287e1b566.json
+2025-04-18 23:09:44,250 - Indexer - INFO - Stored processed text for https://www.reddit.com/login/ with result: s3
+2025-04-18 23:09:44,315 - Indexer - INFO - Successfully indexed https://www.reddit.com/login/
+2025-04-18 23:09:44,316 - Indexer - INFO - Extracted 3 keywords
+2025-04-18 23:09:44,416 - Indexer - INFO - Indexer received shutdown signal. Generating final statistics...
+2025-04-18 23:09:44,445 - Indexer - INFO - Final Index Statistics:
+2025-04-18 23:09:44,445 - Indexer - INFO - Total documents indexed: 23
+2025-04-18 23:09:44,445 - Indexer - INFO - Total unique URLs processed: 21
+2025-04-18 23:09:44,445 - Indexer - INFO - 
+Example Search Results:
+2025-04-18 23:09:44,471 - Indexer - INFO - 
+Query: python AND programming
+2025-04-18 23:09:44,471 - Indexer - INFO - Found 6 results
+2025-04-18 23:09:44,475 - Indexer - INFO - 
+Query: title:github
+2025-04-18 23:09:44,475 - Indexer - INFO - Found 0 results
+2025-04-18 23:09:44,484 - Indexer - INFO - 
+Query: "open source"
+2025-04-18 23:09:44,484 - Indexer - INFO - Found 8 results
+2025-04-18 23:09:44,491 - Indexer - INFO - 
+Query: content:machine learning
+2025-04-18 23:09:44,491 - Indexer - INFO - Found 4 results
+2025-04-18 23:21:45,025 - Indexer - INFO - Enhanced Indexer node started with rank 4 of 5
+2025-04-18 23:21:45,026 - Indexer - INFO - Loaded AWS configuration from aws_config.json
+2025-04-18 23:21:45,037 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-18 23:21:45,950 - Indexer - INFO - Bucket web-crawler-data-storage already exists
+2025-04-18 23:21:45,951 - Indexer - INFO - Successfully connected to AWS S3 in region us-east-1
+2025-04-18 23:21:45,951 - Indexer - INFO - CloudStorage initialized for data persistence
+2025-04-18 23:21:49,390 - Indexer - INFO - Successfully stored raw HTML for https://www.wikipedia.org at s3://web-crawler-data-storage/raw_html/2025/04/18/8d1d8a3956ab5668e1da4e3e7f856f08.html
+2025-04-18 23:21:49,390 - Indexer - INFO - Stored raw HTML for https://www.wikipedia.org with result: s3
+2025-04-18 23:21:49,703 - Indexer - INFO - Successfully stored processed text for https://www.wikipedia.org at s3://web-crawler-data-storage/processed_text/2025/04/18/8d1d8a3956ab5668e1da4e3e7f856f08.txt
+2025-04-18 23:21:50,017 - Indexer - INFO - Successfully stored metadata for https://www.wikipedia.org at s3://web-crawler-data-storage/metadata/2025/04/18/8d1d8a3956ab5668e1da4e3e7f856f08.json
+2025-04-18 23:21:50,017 - Indexer - INFO - Stored processed text for https://www.wikipedia.org with result: s3
+2025-04-18 23:21:50,085 - Indexer - INFO - Successfully indexed https://www.wikipedia.org
+2025-04-18 23:21:50,085 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:21:53,023 - Indexer - INFO - Successfully stored raw HTML for https://www.reddit.com at s3://web-crawler-data-storage/raw_html/2025/04/18/30dd8fd5626b7e36783516a6e238baf2.html
+2025-04-18 23:21:53,023 - Indexer - INFO - Stored raw HTML for https://www.reddit.com with result: s3
+2025-04-18 23:21:53,344 - Indexer - INFO - Successfully stored processed text for https://www.reddit.com at s3://web-crawler-data-storage/processed_text/2025/04/18/30dd8fd5626b7e36783516a6e238baf2.txt
+2025-04-18 23:21:53,660 - Indexer - INFO - Successfully stored metadata for https://www.reddit.com at s3://web-crawler-data-storage/metadata/2025/04/18/30dd8fd5626b7e36783516a6e238baf2.json
+2025-04-18 23:21:53,660 - Indexer - INFO - Stored processed text for https://www.reddit.com with result: s3
+2025-04-18 23:21:53,800 - Indexer - INFO - Successfully indexed https://www.reddit.com
+2025-04-18 23:21:53,802 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:21:54,438 - Indexer - INFO - Successfully stored raw HTML for https://www.python.org at s3://web-crawler-data-storage/raw_html/2025/04/18/c137682bbb0946674f25d1d4bd9e07a0.html
+2025-04-18 23:21:54,438 - Indexer - INFO - Stored raw HTML for https://www.python.org with result: s3
+2025-04-18 23:21:54,759 - Indexer - INFO - Successfully stored processed text for https://www.python.org at s3://web-crawler-data-storage/processed_text/2025/04/18/c137682bbb0946674f25d1d4bd9e07a0.txt
+2025-04-18 23:21:55,066 - Indexer - INFO - Successfully stored metadata for https://www.python.org at s3://web-crawler-data-storage/metadata/2025/04/18/c137682bbb0946674f25d1d4bd9e07a0.json
+2025-04-18 23:21:55,067 - Indexer - INFO - Stored processed text for https://www.python.org with result: s3
+2025-04-18 23:21:55,646 - Indexer - INFO - Successfully indexed https://www.python.org
+2025-04-18 23:21:55,646 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:21:57,423 - Indexer - INFO - Successfully stored raw HTML for https://www.github.com at s3://web-crawler-data-storage/raw_html/2025/04/18/1895ab41ad3a81f6fd0a194bbc337a22.html
+2025-04-18 23:21:57,423 - Indexer - INFO - Stored raw HTML for https://www.github.com with result: s3
+2025-04-18 23:21:57,758 - Indexer - INFO - Successfully stored processed text for https://www.github.com at s3://web-crawler-data-storage/processed_text/2025/04/18/1895ab41ad3a81f6fd0a194bbc337a22.txt
+2025-04-18 23:21:58,107 - Indexer - INFO - Successfully stored metadata for https://www.github.com at s3://web-crawler-data-storage/metadata/2025/04/18/1895ab41ad3a81f6fd0a194bbc337a22.json
+2025-04-18 23:21:58,107 - Indexer - INFO - Stored processed text for https://www.github.com with result: s3
+2025-04-18 23:21:58,226 - Indexer - INFO - Successfully indexed https://www.github.com
+2025-04-18 23:21:58,226 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:22:00,257 - Indexer - INFO - Successfully stored raw HTML for https://www.stackoverflow.com at s3://web-crawler-data-storage/raw_html/2025/04/18/2415620324baad2a5308e2c497763b12.html
+2025-04-18 23:22:00,257 - Indexer - INFO - Stored raw HTML for https://www.stackoverflow.com with result: s3
+2025-04-18 23:22:00,629 - Indexer - INFO - Successfully stored processed text for https://www.stackoverflow.com at s3://web-crawler-data-storage/processed_text/2025/04/18/2415620324baad2a5308e2c497763b12.txt
+2025-04-18 23:22:00,999 - Indexer - INFO - Successfully stored metadata for https://www.stackoverflow.com at s3://web-crawler-data-storage/metadata/2025/04/18/2415620324baad2a5308e2c497763b12.json
+2025-04-18 23:22:00,999 - Indexer - INFO - Stored processed text for https://www.stackoverflow.com with result: s3
+2025-04-18 23:22:01,167 - Indexer - INFO - Successfully indexed https://www.stackoverflow.com
+2025-04-18 23:22:01,167 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:22:01,902 - Indexer - INFO - Successfully stored raw HTML for https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter at s3://web-crawler-data-storage/raw_html/2025/04/18/e80926e2c85c2736bd72ce8f1fda94c6.html
+2025-04-18 23:22:01,902 - Indexer - INFO - Stored raw HTML for https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter with result: s3
+2025-04-18 23:22:02,223 - Indexer - INFO - Successfully stored processed text for https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter at s3://web-crawler-data-storage/processed_text/2025/04/18/e80926e2c85c2736bd72ce8f1fda94c6.txt
+2025-04-18 23:22:02,544 - Indexer - INFO - Successfully stored metadata for https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter at s3://web-crawler-data-storage/metadata/2025/04/18/e80926e2c85c2736bd72ce8f1fda94c6.json
+2025-04-18 23:22:02,544 - Indexer - INFO - Stored processed text for https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter with result: s3
+2025-04-18 23:22:02,592 - Indexer - INFO - Successfully indexed https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter
+2025-04-18 23:22:02,592 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:22:05,572 - Indexer - INFO - Successfully stored raw HTML for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias at s3://web-crawler-data-storage/raw_html/2025/04/18/e89764c6976518e91ebe50251fa3fe33.html
+2025-04-18 23:22:05,572 - Indexer - INFO - Stored raw HTML for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias with result: s3
+2025-04-18 23:22:06,011 - Indexer - INFO - Successfully stored processed text for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias at s3://web-crawler-data-storage/processed_text/2025/04/18/e89764c6976518e91ebe50251fa3fe33.txt
+2025-04-18 23:22:06,452 - Indexer - INFO - Successfully stored metadata for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias at s3://web-crawler-data-storage/metadata/2025/04/18/e89764c6976518e91ebe50251fa3fe33.json
+2025-04-18 23:22:06,452 - Indexer - INFO - Stored processed text for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias with result: s3
+2025-04-18 23:22:06,727 - Indexer - INFO - Successfully indexed https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-18 23:22:06,727 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:22:07,697 - Indexer - INFO - Successfully stored raw HTML for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications at s3://web-crawler-data-storage/raw_html/2025/04/18/c3575c8005f0a1c5e66772e422fa23c8.html
+2025-04-18 23:22:07,697 - Indexer - INFO - Stored raw HTML for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications with result: s3
+2025-04-18 23:22:08,011 - Indexer - INFO - Successfully stored processed text for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications at s3://web-crawler-data-storage/processed_text/2025/04/18/c3575c8005f0a1c5e66772e422fa23c8.txt
+2025-04-18 23:22:08,321 - Indexer - INFO - Successfully stored metadata for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications at s3://web-crawler-data-storage/metadata/2025/04/18/c3575c8005f0a1c5e66772e422fa23c8.json
+2025-04-18 23:22:08,321 - Indexer - INFO - Stored processed text for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications with result: s3
+2025-04-18 23:22:08,996 - Indexer - INFO - Successfully indexed https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-18 23:22:08,996 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:22:12,829 - Indexer - INFO - Successfully stored raw HTML for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob at s3://web-crawler-data-storage/raw_html/2025/04/18/999ec284cceaef3b439da23caa40004f.html
+2025-04-18 23:22:12,830 - Indexer - INFO - Stored raw HTML for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob with result: s3
+2025-04-18 23:22:13,151 - Indexer - INFO - Successfully stored processed text for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob at s3://web-crawler-data-storage/processed_text/2025/04/18/999ec284cceaef3b439da23caa40004f.txt
+2025-04-18 23:22:13,501 - Indexer - INFO - Successfully stored metadata for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob at s3://web-crawler-data-storage/metadata/2025/04/18/999ec284cceaef3b439da23caa40004f.json
+2025-04-18 23:22:13,502 - Indexer - INFO - Stored processed text for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob with result: s3
+2025-04-18 23:22:13,590 - Indexer - INFO - Successfully indexed https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-18 23:22:13,590 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:22:14,192 - Indexer - INFO - Successfully stored raw HTML for https://www.python.org/psf/ at s3://web-crawler-data-storage/raw_html/2025/04/18/491903eb8c7de2458019af2a1cd6a86c.html
+2025-04-18 23:22:14,192 - Indexer - INFO - Stored raw HTML for https://www.python.org/psf/ with result: s3
+2025-04-18 23:22:14,496 - Indexer - INFO - Successfully stored processed text for https://www.python.org/psf/ at s3://web-crawler-data-storage/processed_text/2025/04/18/491903eb8c7de2458019af2a1cd6a86c.txt
+2025-04-18 23:22:14,809 - Indexer - INFO - Successfully stored metadata for https://www.python.org/psf/ at s3://web-crawler-data-storage/metadata/2025/04/18/491903eb8c7de2458019af2a1cd6a86c.json
+2025-04-18 23:22:14,809 - Indexer - INFO - Stored processed text for https://www.python.org/psf/ with result: s3
+2025-04-18 23:22:14,886 - Indexer - INFO - Successfully indexed https://www.python.org/psf/
+2025-04-18 23:22:14,886 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:22:15,358 - Indexer - INFO - Successfully stored raw HTML for https://pypi.org/ at s3://web-crawler-data-storage/raw_html/2025/04/18/419defafa8b1d9a6418edbb446e9db79.html
+2025-04-18 23:22:15,359 - Indexer - INFO - Stored raw HTML for https://pypi.org/ with result: s3
+2025-04-18 23:22:15,745 - Indexer - INFO - Successfully stored processed text for https://pypi.org/ at s3://web-crawler-data-storage/processed_text/2025/04/18/419defafa8b1d9a6418edbb446e9db79.txt
+2025-04-18 23:22:16,052 - Indexer - INFO - Successfully stored metadata for https://pypi.org/ at s3://web-crawler-data-storage/metadata/2025/04/18/419defafa8b1d9a6418edbb446e9db79.json
+2025-04-18 23:22:16,052 - Indexer - INFO - Stored processed text for https://pypi.org/ with result: s3
+2025-04-18 23:22:16,109 - Indexer - INFO - Successfully indexed https://pypi.org/
+2025-04-18 23:22:16,109 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:22:17,052 - Indexer - INFO - Successfully stored raw HTML for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 at s3://web-crawler-data-storage/raw_html/2025/04/18/618bfe50d3538b5c56fc1f83e629ea52.html
+2025-04-18 23:22:17,053 - Indexer - INFO - Stored raw HTML for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 with result: s3
+2025-04-18 23:22:17,378 - Indexer - INFO - Successfully stored processed text for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 at s3://web-crawler-data-storage/processed_text/2025/04/18/618bfe50d3538b5c56fc1f83e629ea52.txt
+2025-04-18 23:22:17,703 - Indexer - INFO - Successfully stored metadata for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 at s3://web-crawler-data-storage/metadata/2025/04/18/618bfe50d3538b5c56fc1f83e629ea52.json
+2025-04-18 23:22:17,703 - Indexer - INFO - Stored processed text for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 with result: s3
+2025-04-18 23:22:17,817 - Indexer - INFO - Successfully indexed https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 23:22:17,818 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:22:18,292 - Indexer - INFO - Successfully stored raw HTML for https://docs.python.org at s3://web-crawler-data-storage/raw_html/2025/04/18/ab87040aecf47a23a07dc06153094d21.html
+2025-04-18 23:22:18,293 - Indexer - INFO - Stored raw HTML for https://docs.python.org with result: s3
+2025-04-18 23:22:18,598 - Indexer - INFO - Successfully stored processed text for https://docs.python.org at s3://web-crawler-data-storage/processed_text/2025/04/18/ab87040aecf47a23a07dc06153094d21.txt
+2025-04-18 23:22:18,905 - Indexer - INFO - Successfully stored metadata for https://docs.python.org at s3://web-crawler-data-storage/metadata/2025/04/18/ab87040aecf47a23a07dc06153094d21.json
+2025-04-18 23:22:18,906 - Indexer - INFO - Stored processed text for https://docs.python.org with result: s3
+2025-04-18 23:22:19,522 - Indexer - INFO - Successfully indexed https://docs.python.org
+2025-04-18 23:22:19,522 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:25:08,885 - Indexer - INFO - Enhanced Indexer node started with rank 4 of 5
+2025-04-18 23:25:08,886 - Indexer - INFO - Loaded AWS configuration from aws_config.json
+2025-04-18 23:25:08,901 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-18 23:25:09,788 - Indexer - INFO - Bucket web-crawler-data-storage already exists
+2025-04-18 23:25:09,789 - Indexer - INFO - Successfully connected to AWS S3 in region us-east-1
+2025-04-18 23:25:09,789 - Indexer - INFO - CloudStorage initialized for data persistence
+2025-04-18 23:25:13,077 - Indexer - INFO - Successfully stored raw HTML for https://www.wikipedia.org at s3://web-crawler-data-storage/raw_html/2025/04/18/8d1d8a3956ab5668e1da4e3e7f856f08.html
+2025-04-18 23:25:13,078 - Indexer - INFO - Stored raw HTML for https://www.wikipedia.org with result: s3
+2025-04-18 23:25:13,377 - Indexer - INFO - Successfully stored processed text for https://www.wikipedia.org at s3://web-crawler-data-storage/processed_text/2025/04/18/8d1d8a3956ab5668e1da4e3e7f856f08.txt
+2025-04-18 23:25:13,736 - Indexer - INFO - Successfully stored metadata for https://www.wikipedia.org at s3://web-crawler-data-storage/metadata/2025/04/18/8d1d8a3956ab5668e1da4e3e7f856f08.json
+2025-04-18 23:25:13,736 - Indexer - INFO - Stored processed text for https://www.wikipedia.org with result: s3
+2025-04-18 23:25:13,798 - Indexer - INFO - Successfully indexed https://www.wikipedia.org
+2025-04-18 23:25:13,798 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:25:16,865 - Indexer - INFO - Successfully stored raw HTML for https://www.reddit.com at s3://web-crawler-data-storage/raw_html/2025/04/18/30dd8fd5626b7e36783516a6e238baf2.html
+2025-04-18 23:25:16,866 - Indexer - INFO - Stored raw HTML for https://www.reddit.com with result: s3
+2025-04-18 23:25:17,227 - Indexer - INFO - Successfully stored processed text for https://www.reddit.com at s3://web-crawler-data-storage/processed_text/2025/04/18/30dd8fd5626b7e36783516a6e238baf2.txt
+2025-04-18 23:25:17,566 - Indexer - INFO - Successfully stored metadata for https://www.reddit.com at s3://web-crawler-data-storage/metadata/2025/04/18/30dd8fd5626b7e36783516a6e238baf2.json
+2025-04-18 23:25:17,566 - Indexer - INFO - Stored processed text for https://www.reddit.com with result: s3
+2025-04-18 23:25:17,640 - Indexer - INFO - Successfully indexed https://www.reddit.com
+2025-04-18 23:25:17,640 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:25:18,223 - Indexer - INFO - Successfully stored raw HTML for https://www.python.org at s3://web-crawler-data-storage/raw_html/2025/04/18/c137682bbb0946674f25d1d4bd9e07a0.html
+2025-04-18 23:25:18,223 - Indexer - INFO - Stored raw HTML for https://www.python.org with result: s3
+2025-04-18 23:25:18,523 - Indexer - INFO - Successfully stored processed text for https://www.python.org at s3://web-crawler-data-storage/processed_text/2025/04/18/c137682bbb0946674f25d1d4bd9e07a0.txt
+2025-04-18 23:25:18,830 - Indexer - INFO - Successfully stored metadata for https://www.python.org at s3://web-crawler-data-storage/metadata/2025/04/18/c137682bbb0946674f25d1d4bd9e07a0.json
+2025-04-18 23:25:18,830 - Indexer - INFO - Stored processed text for https://www.python.org with result: s3
+2025-04-18 23:25:18,908 - Indexer - INFO - Successfully indexed https://www.python.org
+2025-04-18 23:25:18,908 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:25:20,250 - Indexer - INFO - Successfully stored raw HTML for https://www.github.com at s3://web-crawler-data-storage/raw_html/2025/04/18/1895ab41ad3a81f6fd0a194bbc337a22.html
+2025-04-18 23:25:20,250 - Indexer - INFO - Stored raw HTML for https://www.github.com with result: s3
+2025-04-18 23:25:20,582 - Indexer - INFO - Successfully stored processed text for https://www.github.com at s3://web-crawler-data-storage/processed_text/2025/04/18/1895ab41ad3a81f6fd0a194bbc337a22.txt
+2025-04-18 23:25:20,910 - Indexer - INFO - Successfully stored metadata for https://www.github.com at s3://web-crawler-data-storage/metadata/2025/04/18/1895ab41ad3a81f6fd0a194bbc337a22.json
+2025-04-18 23:25:20,910 - Indexer - INFO - Stored processed text for https://www.github.com with result: s3
+2025-04-18 23:25:20,999 - Indexer - INFO - Successfully indexed https://www.github.com
+2025-04-18 23:25:20,999 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:25:21,640 - Indexer - INFO - Successfully stored raw HTML for https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter at s3://web-crawler-data-storage/raw_html/2025/04/18/e80926e2c85c2736bd72ce8f1fda94c6.html
+2025-04-18 23:25:21,640 - Indexer - INFO - Stored raw HTML for https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter with result: s3
+2025-04-18 23:25:22,020 - Indexer - INFO - Successfully stored processed text for https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter at s3://web-crawler-data-storage/processed_text/2025/04/18/e80926e2c85c2736bd72ce8f1fda94c6.txt
+2025-04-18 23:25:22,338 - Indexer - INFO - Successfully stored metadata for https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter at s3://web-crawler-data-storage/metadata/2025/04/18/e80926e2c85c2736bd72ce8f1fda94c6.json
+2025-04-18 23:25:22,339 - Indexer - INFO - Stored processed text for https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter with result: s3
+2025-04-18 23:25:23,028 - Indexer - INFO - Successfully indexed https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter
+2025-04-18 23:25:23,028 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:25:25,741 - Indexer - INFO - Successfully stored raw HTML for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias at s3://web-crawler-data-storage/raw_html/2025/04/18/e89764c6976518e91ebe50251fa3fe33.html
+2025-04-18 23:25:25,741 - Indexer - INFO - Stored raw HTML for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias with result: s3
+2025-04-18 23:25:26,213 - Indexer - INFO - Successfully stored processed text for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias at s3://web-crawler-data-storage/processed_text/2025/04/18/e89764c6976518e91ebe50251fa3fe33.txt
+2025-04-18 23:25:26,641 - Indexer - INFO - Successfully stored metadata for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias at s3://web-crawler-data-storage/metadata/2025/04/18/e89764c6976518e91ebe50251fa3fe33.json
+2025-04-18 23:25:26,642 - Indexer - INFO - Stored processed text for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias with result: s3
+2025-04-18 23:25:26,886 - Indexer - INFO - Successfully indexed https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-18 23:25:26,886 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:25:29,168 - Indexer - INFO - Successfully stored raw HTML for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications at s3://web-crawler-data-storage/raw_html/2025/04/18/c3575c8005f0a1c5e66772e422fa23c8.html
+2025-04-18 23:25:29,168 - Indexer - INFO - Stored raw HTML for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications with result: s3
+2025-04-18 23:25:29,465 - Indexer - INFO - Successfully stored processed text for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications at s3://web-crawler-data-storage/processed_text/2025/04/18/c3575c8005f0a1c5e66772e422fa23c8.txt
+2025-04-18 23:25:29,777 - Indexer - INFO - Successfully stored metadata for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications at s3://web-crawler-data-storage/metadata/2025/04/18/c3575c8005f0a1c5e66772e422fa23c8.json
+2025-04-18 23:25:29,777 - Indexer - INFO - Stored processed text for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications with result: s3
+2025-04-18 23:25:29,853 - Indexer - INFO - Successfully indexed https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-18 23:25:29,854 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:25:32,433 - Indexer - INFO - Successfully stored raw HTML for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 at s3://web-crawler-data-storage/raw_html/2025/04/18/4ab61f2e1910f4ba05089d1f2e2e5e61.html
+2025-04-18 23:25:32,433 - Indexer - INFO - Stored raw HTML for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 with result: s3
+2025-04-18 23:25:32,759 - Indexer - INFO - Successfully stored processed text for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 at s3://web-crawler-data-storage/processed_text/2025/04/18/4ab61f2e1910f4ba05089d1f2e2e5e61.txt
+2025-04-18 23:25:33,084 - Indexer - INFO - Successfully stored metadata for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 at s3://web-crawler-data-storage/metadata/2025/04/18/4ab61f2e1910f4ba05089d1f2e2e5e61.json
+2025-04-18 23:25:33,084 - Indexer - INFO - Stored processed text for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 with result: s3
+2025-04-18 23:25:33,187 - Indexer - INFO - Successfully indexed https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-18 23:25:33,187 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:25:34,807 - Indexer - INFO - Successfully stored raw HTML for https://www.stackoverflow.com at s3://web-crawler-data-storage/raw_html/2025/04/18/2415620324baad2a5308e2c497763b12.html
+2025-04-18 23:25:34,807 - Indexer - INFO - Stored raw HTML for https://www.stackoverflow.com with result: s3
+2025-04-18 23:25:35,167 - Indexer - INFO - Successfully stored processed text for https://www.stackoverflow.com at s3://web-crawler-data-storage/processed_text/2025/04/18/2415620324baad2a5308e2c497763b12.txt
+2025-04-18 23:25:35,524 - Indexer - INFO - Successfully stored metadata for https://www.stackoverflow.com at s3://web-crawler-data-storage/metadata/2025/04/18/2415620324baad2a5308e2c497763b12.json
+2025-04-18 23:25:35,524 - Indexer - INFO - Stored processed text for https://www.stackoverflow.com with result: s3
+2025-04-18 23:25:35,677 - Indexer - INFO - Successfully indexed https://www.stackoverflow.com
+2025-04-18 23:25:35,678 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:25:39,518 - Indexer - INFO - Successfully stored raw HTML for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob at s3://web-crawler-data-storage/raw_html/2025/04/18/999ec284cceaef3b439da23caa40004f.html
+2025-04-18 23:25:39,518 - Indexer - INFO - Stored raw HTML for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob with result: s3
+2025-04-18 23:25:39,854 - Indexer - INFO - Successfully stored processed text for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob at s3://web-crawler-data-storage/processed_text/2025/04/18/999ec284cceaef3b439da23caa40004f.txt
+2025-04-18 23:25:40,178 - Indexer - INFO - Successfully stored metadata for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob at s3://web-crawler-data-storage/metadata/2025/04/18/999ec284cceaef3b439da23caa40004f.json
+2025-04-18 23:25:40,178 - Indexer - INFO - Stored processed text for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob with result: s3
+2025-04-18 23:25:40,886 - Indexer - INFO - Successfully indexed https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-18 23:25:40,886 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:25:41,490 - Indexer - INFO - Successfully stored raw HTML for https://www.python.org/psf/ at s3://web-crawler-data-storage/raw_html/2025/04/18/491903eb8c7de2458019af2a1cd6a86c.html
+2025-04-18 23:25:41,490 - Indexer - INFO - Stored raw HTML for https://www.python.org/psf/ with result: s3
+2025-04-18 23:25:41,787 - Indexer - INFO - Successfully stored processed text for https://www.python.org/psf/ at s3://web-crawler-data-storage/processed_text/2025/04/18/491903eb8c7de2458019af2a1cd6a86c.txt
+2025-04-18 23:25:42,136 - Indexer - INFO - Successfully stored metadata for https://www.python.org/psf/ at s3://web-crawler-data-storage/metadata/2025/04/18/491903eb8c7de2458019af2a1cd6a86c.json
+2025-04-18 23:25:42,137 - Indexer - INFO - Stored processed text for https://www.python.org/psf/ with result: s3
+2025-04-18 23:25:42,197 - Indexer - INFO - Successfully indexed https://www.python.org/psf/
+2025-04-18 23:25:42,199 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:25:43,491 - Indexer - INFO - Successfully stored raw HTML for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 at s3://web-crawler-data-storage/raw_html/2025/04/18/618bfe50d3538b5c56fc1f83e629ea52.html
+2025-04-18 23:25:43,491 - Indexer - INFO - Stored raw HTML for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 with result: s3
+2025-04-18 23:25:43,808 - Indexer - INFO - Successfully stored processed text for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 at s3://web-crawler-data-storage/processed_text/2025/04/18/618bfe50d3538b5c56fc1f83e629ea52.txt
+2025-04-18 23:25:44,125 - Indexer - INFO - Successfully stored metadata for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 at s3://web-crawler-data-storage/metadata/2025/04/18/618bfe50d3538b5c56fc1f83e629ea52.json
+2025-04-18 23:25:44,125 - Indexer - INFO - Stored processed text for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 with result: s3
+2025-04-18 23:25:44,225 - Indexer - INFO - Successfully indexed https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-18 23:25:44,225 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:25:44,696 - Indexer - INFO - Successfully stored raw HTML for https://docs.python.org at s3://web-crawler-data-storage/raw_html/2025/04/18/ab87040aecf47a23a07dc06153094d21.html
+2025-04-18 23:25:44,696 - Indexer - INFO - Stored raw HTML for https://docs.python.org with result: s3
+2025-04-18 23:25:45,006 - Indexer - INFO - Successfully stored processed text for https://docs.python.org at s3://web-crawler-data-storage/processed_text/2025/04/18/ab87040aecf47a23a07dc06153094d21.txt
+2025-04-18 23:25:45,352 - Indexer - INFO - Successfully stored metadata for https://docs.python.org at s3://web-crawler-data-storage/metadata/2025/04/18/ab87040aecf47a23a07dc06153094d21.json
+2025-04-18 23:25:45,352 - Indexer - INFO - Stored processed text for https://docs.python.org with result: s3
+2025-04-18 23:25:45,439 - Indexer - INFO - Successfully indexed https://docs.python.org
+2025-04-18 23:25:45,439 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:25:45,882 - Indexer - INFO - Successfully stored raw HTML for https://www.linkedin.com/company/python-software-foundation/ at s3://web-crawler-data-storage/raw_html/2025/04/18/d90ed6113df7505dad451d6f07e252ac.html
+2025-04-18 23:25:45,883 - Indexer - INFO - Stored raw HTML for https://www.linkedin.com/company/python-software-foundation/ with result: s3
+2025-04-18 23:25:46,186 - Indexer - INFO - Successfully stored processed text for https://www.linkedin.com/company/python-software-foundation/ at s3://web-crawler-data-storage/processed_text/2025/04/18/d90ed6113df7505dad451d6f07e252ac.txt
+2025-04-18 23:25:46,519 - Indexer - INFO - Successfully stored metadata for https://www.linkedin.com/company/python-software-foundation/ at s3://web-crawler-data-storage/metadata/2025/04/18/d90ed6113df7505dad451d6f07e252ac.json
+2025-04-18 23:25:46,520 - Indexer - INFO - Stored processed text for https://www.linkedin.com/company/python-software-foundation/ with result: s3
+2025-04-18 23:25:46,576 - Indexer - INFO - Successfully indexed https://www.linkedin.com/company/python-software-foundation/
+2025-04-18 23:25:46,576 - Indexer - INFO - Extracted 0 keywords
+2025-04-18 23:25:47,904 - Indexer - INFO - Successfully stored raw HTML for https://github.com/features/actions at s3://web-crawler-data-storage/raw_html/2025/04/18/d7af0858294d18fa9f4dc16984f9a98d.html
+2025-04-18 23:25:47,905 - Indexer - INFO - Stored raw HTML for https://github.com/features/actions with result: s3
+2025-04-18 23:25:48,222 - Indexer - INFO - Successfully stored processed text for https://github.com/features/actions at s3://web-crawler-data-storage/processed_text/2025/04/18/d7af0858294d18fa9f4dc16984f9a98d.txt
+2025-04-18 23:25:48,540 - Indexer - INFO - Successfully stored metadata for https://github.com/features/actions at s3://web-crawler-data-storage/metadata/2025/04/18/d7af0858294d18fa9f4dc16984f9a98d.json
+2025-04-18 23:25:48,540 - Indexer - INFO - Stored processed text for https://github.com/features/actions with result: s3
+2025-04-18 23:25:49,105 - Indexer - INFO - Successfully indexed https://github.com/features/actions
+2025-04-18 23:25:49,105 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:25:49,585 - Indexer - INFO - Successfully stored raw HTML for https://pypi.org/ at s3://web-crawler-data-storage/raw_html/2025/04/18/419defafa8b1d9a6418edbb446e9db79.html
+2025-04-18 23:25:49,586 - Indexer - INFO - Stored raw HTML for https://pypi.org/ with result: s3
+2025-04-18 23:25:49,886 - Indexer - INFO - Successfully stored processed text for https://pypi.org/ at s3://web-crawler-data-storage/processed_text/2025/04/18/419defafa8b1d9a6418edbb446e9db79.txt
+2025-04-18 23:25:50,185 - Indexer - INFO - Successfully stored metadata for https://pypi.org/ at s3://web-crawler-data-storage/metadata/2025/04/18/419defafa8b1d9a6418edbb446e9db79.json
+2025-04-18 23:25:50,186 - Indexer - INFO - Stored processed text for https://pypi.org/ with result: s3
+2025-04-18 23:25:50,245 - Indexer - INFO - Successfully indexed https://pypi.org/
+2025-04-18 23:25:50,245 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:25:53,047 - Indexer - INFO - Successfully stored raw HTML for https://github.com/features/copilot at s3://web-crawler-data-storage/raw_html/2025/04/18/dba769c840ccac35bd2dae4b74d18025.html
+2025-04-18 23:25:53,047 - Indexer - INFO - Stored raw HTML for https://github.com/features/copilot with result: s3
+2025-04-18 23:25:53,520 - Indexer - INFO - Successfully stored processed text for https://github.com/features/copilot at s3://web-crawler-data-storage/processed_text/2025/04/18/dba769c840ccac35bd2dae4b74d18025.txt
+2025-04-18 23:25:53,985 - Indexer - INFO - Successfully stored metadata for https://github.com/features/copilot at s3://web-crawler-data-storage/metadata/2025/04/18/dba769c840ccac35bd2dae4b74d18025.json
+2025-04-18 23:25:53,985 - Indexer - INFO - Stored processed text for https://github.com/features/copilot with result: s3
+2025-04-18 23:25:54,110 - Indexer - INFO - Successfully indexed https://github.com/features/copilot
+2025-04-18 23:25:54,110 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:25:55,384 - Indexer - INFO - Successfully stored raw HTML for https://github.com/security/advanced-security at s3://web-crawler-data-storage/raw_html/2025/04/18/1fe3a393f05c47bb0a664cde7f830a83.html
+2025-04-18 23:25:55,385 - Indexer - INFO - Stored raw HTML for https://github.com/security/advanced-security with result: s3
+2025-04-18 23:25:55,692 - Indexer - INFO - Successfully stored processed text for https://github.com/security/advanced-security at s3://web-crawler-data-storage/processed_text/2025/04/18/1fe3a393f05c47bb0a664cde7f830a83.txt
+2025-04-18 23:25:56,009 - Indexer - INFO - Successfully stored metadata for https://github.com/security/advanced-security at s3://web-crawler-data-storage/metadata/2025/04/18/1fe3a393f05c47bb0a664cde7f830a83.json
+2025-04-18 23:25:56,010 - Indexer - INFO - Stored processed text for https://github.com/security/advanced-security with result: s3
+2025-04-18 23:25:56,093 - Indexer - INFO - Successfully indexed https://github.com/security/advanced-security
+2025-04-18 23:25:56,093 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:25:57,524 - Indexer - INFO - Successfully stored raw HTML for https://github.com/features/codespaces at s3://web-crawler-data-storage/raw_html/2025/04/18/9b0feeb833799d4ed2b4e16427b7032e.html
+2025-04-18 23:25:57,524 - Indexer - INFO - Stored raw HTML for https://github.com/features/codespaces with result: s3
+2025-04-18 23:25:57,840 - Indexer - INFO - Successfully stored processed text for https://github.com/features/codespaces at s3://web-crawler-data-storage/processed_text/2025/04/18/9b0feeb833799d4ed2b4e16427b7032e.txt
+2025-04-18 23:25:58,168 - Indexer - INFO - Successfully stored metadata for https://github.com/features/codespaces at s3://web-crawler-data-storage/metadata/2025/04/18/9b0feeb833799d4ed2b4e16427b7032e.json
+2025-04-18 23:25:58,168 - Indexer - INFO - Stored processed text for https://github.com/features/codespaces with result: s3
+2025-04-18 23:25:58,256 - Indexer - INFO - Successfully indexed https://github.com/features/codespaces
+2025-04-18 23:25:58,258 - Indexer - INFO - Extracted 10 keywords
+2025-04-18 23:25:59,819 - Indexer - INFO - Successfully stored raw HTML for https://www.reddit.com/login/ at s3://web-crawler-data-storage/raw_html/2025/04/18/686b8a13c276555c1986636287e1b566.html
+2025-04-18 23:25:59,819 - Indexer - INFO - Stored raw HTML for https://www.reddit.com/login/ with result: s3
+2025-04-18 23:26:00,111 - Indexer - INFO - Successfully stored processed text for https://www.reddit.com/login/ at s3://web-crawler-data-storage/processed_text/2025/04/18/686b8a13c276555c1986636287e1b566.txt
+2025-04-18 23:26:00,413 - Indexer - INFO - Successfully stored metadata for https://www.reddit.com/login/ at s3://web-crawler-data-storage/metadata/2025/04/18/686b8a13c276555c1986636287e1b566.json
+2025-04-18 23:26:00,413 - Indexer - INFO - Stored processed text for https://www.reddit.com/login/ with result: s3
+2025-04-18 23:26:01,102 - Indexer - INFO - Successfully indexed https://www.reddit.com/login/
+2025-04-18 23:26:01,102 - Indexer - INFO - Extracted 3 keywords
+2025-04-18 23:26:01,203 - Indexer - INFO - Indexer received shutdown signal. Generating final statistics...
+2025-04-18 23:26:01,228 - Indexer - INFO - Final Index Statistics:
+2025-04-18 23:26:01,228 - Indexer - INFO - Total documents indexed: 23
+2025-04-18 23:26:01,228 - Indexer - INFO - Total unique URLs processed: 20
+2025-04-18 23:26:01,228 - Indexer - INFO - 
+Example Search Results:
+2025-04-18 23:26:01,241 - Indexer - INFO - 
+Query: python AND programming
+2025-04-18 23:26:01,241 - Indexer - INFO - Found 5 results
+2025-04-18 23:26:01,243 - Indexer - INFO - 
+Query: title:github
+2025-04-18 23:26:01,244 - Indexer - INFO - Found 0 results
+2025-04-18 23:26:01,250 - Indexer - INFO - 
+Query: "open source"
+2025-04-18 23:26:01,250 - Indexer - INFO - Found 8 results
+2025-04-18 23:26:01,255 - Indexer - INFO - 
+Query: content:machine learning
+2025-04-18 23:26:01,255 - Indexer - INFO - Found 4 results

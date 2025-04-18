@@ -25,8 +25,9 @@ def load_monitoring_data():
     """Load and parse the monitoring data JSON file"""
     global system_data
     try:
-        if os.path.exists("monitoring_data.json"):
-            with open("monitoring_data.json", "r") as f:
+        monitoring_data_path = "data/monitoring/monitoring_data.json"
+        if os.path.exists(monitoring_data_path):
+            with open(monitoring_data_path, "r") as f:
                 data = json.load(f)
                 
             # Update system_data with the loaded data
@@ -68,8 +69,9 @@ def read_log_files():
     
     try:
         # Check for master log
-        if os.path.exists("master.log"):
-            with open("master.log", "r") as f:
+        master_log = "logs/master.log"
+        if os.path.exists(master_log):
+            with open(master_log, "r") as f:
                 lines = f.readlines()
                 if lines:
                     # Get the last 5 lines
@@ -83,7 +85,7 @@ def read_log_files():
         # Check crawler logs
         crawler_logs = {}
         for crawler_id in system_data["crawlers"].keys():
-            log_file = f"crawler_{crawler_id}.log"
+            log_file = f"logs/crawler_{crawler_id}.log"
             if os.path.exists(log_file):
                 with open(log_file, "r") as f:
                     lines = f.readlines()

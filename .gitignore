@@ -1,0 +1,45 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local Logs
+logs/*.log
+
+# Local Data (Keep the directories but not the content)
+data/monitoring/*.json
+!data/monitoring/.gitkeep
+crawled_data/raw_html/*
+!crawled_data/raw_html/.gitkeep
+crawled_data/processed_text/*
+!crawled_data/processed_text/.gitkeep
+crawled_data/metadata/*
+!crawled_data/metadata/.gitkeep
+
+# AWS credentials
+aws_config.json
+
+# Search index
+search_index/
+
+# NLTK data
+nltk_data/
+
+# Keep empty directories with .gitkeep files
+!logs/.gitkeep 

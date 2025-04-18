@@ -237,10 +237,13 @@ def indexer_process():
         level=logging.INFO,
         format='%(asctime)s - Indexer - %(levelname)s - %(message)s',
         handlers=[
-            logging.FileHandler("indexer.log"),
+            logging.FileHandler("logs/indexer.log"),
             logging.StreamHandler()
         ]
     )
+    # Ensure logs directory exists
+    os.makedirs("logs", exist_ok=True)
+    
     logging.info(f"Enhanced Indexer node started with rank {rank} of {size}")
     
     # Initialize the cloud storage

@@ -32,7 +32,8 @@ class CloudStorage:
             self.logger.addHandler(handler)
             
             # Add file handler
-            file_handler = logging.FileHandler('storage.log')
+            os.makedirs("logs", exist_ok=True)
+            file_handler = logging.FileHandler('logs/storage.log')
             file_handler.setFormatter(formatter)
             self.logger.addHandler(file_handler)
         
