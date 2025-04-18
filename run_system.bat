@@ -27,9 +27,11 @@ if not exist crawled_data (
     mkdir crawled_data\metadata
 )
 
-:: Start the monitoring dashboard in the background
+:: Start the monitoring dashboard and search interface in the background
 start "" %PYTHON_PATH% monitoring_dashboard.py
+start "" %PYTHON_PATH% search_interface.py
 echo Monitoring dashboard started on http://localhost:5001
+echo Search interface started on http://localhost:5000
 
 echo Starting the crawler system...
 %MPI_PATH% -n 1 %PYTHON_PATH% masterNode.py : -n 3 %PYTHON_PATH% crawlerNode.py : -n 1 %PYTHON_PATH% indexerNode.py
