@@ -233,16 +233,18 @@ def indexer_process():
     rank = comm.Get_rank()
     size = comm.Get_size()
     
+    # Ensure logs directory exists
+    log_file = os.path.join("logs", "indexer.log")
+    os.makedirs(os.path.dirname(log_file), exist_ok=True)
+    
     logging.basicConfig(
         level=logging.INFO,
         format='%(asctime)s - Indexer - %(levelname)s - %(message)s',
         handlers=[
-            logging.FileHandler("logs/indexer.log"),
+            logging.FileHandler(log_file),
             logging.StreamHandler()
         ]
     )
-    # Ensure logs directory exists
-    os.makedirs("logs", exist_ok=True)
     
     logging.info(f"Enhanced Indexer node started with rank {rank} of {size}")
     

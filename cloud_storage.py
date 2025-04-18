@@ -32,8 +32,9 @@ class CloudStorage:
             self.logger.addHandler(handler)
             
             # Add file handler
-            os.makedirs("logs", exist_ok=True)
-            file_handler = logging.FileHandler('logs/storage.log')
+            log_dir = "logs"
+            os.makedirs(log_dir, exist_ok=True)
+            file_handler = logging.FileHandler(os.path.join(log_dir, 'storage.log'))
             file_handler.setFormatter(formatter)
             self.logger.addHandler(file_handler)
         
@@ -254,9 +255,10 @@ class CloudStorage:
             
             # Store metadata if provided
             if metadata:
+                meta_dir = os.path.join('crawled_data', 'metadata')
                 meta_filename = f"{url_hash}.json"
-                meta_filepath = os.path.join('crawled_data', 'metadata', meta_filename)
-                os.makedirs(os.path.join('crawled_data', 'metadata'), exist_ok=True)
+                meta_filepath = os.path.join(meta_dir, meta_filename)
+                os.makedirs(meta_dir, exist_ok=True)
                 
                 with open(meta_filepath, 'w', encoding='utf-8') as f:
                     json.dump(metadata, f, indent=2)
