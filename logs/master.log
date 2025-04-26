@@ -986,3 +986,882 @@
 2025-04-18 23:25:52,319 - Master - INFO - Assigned task 22 to crawler 2 for URL: http://news.reddit.com
 2025-04-18 23:25:52,422 - Master - INFO - Crawling complete. Processed 20 URLs. Shutting down nodes...
 2025-04-18 23:25:52,424 - Master - INFO - Master node finished URL distribution. Shutting down.
+2025-04-26 03:31:26,340 - Master - INFO - Master node started with rank 0 of 5
+2025-04-26 03:31:26,340 - Master - INFO - Active Crawler Nodes: [1, 2, 3]
+2025-04-26 03:31:26,340 - Master - INFO - Indexer Node: 4
+2025-04-26 03:31:26,343 - Master - INFO - Assigned task 0 to crawler 1 for URL: https://www.python.org
+2025-04-26 03:31:26,343 - Master - INFO - Assigned task 1 to crawler 2 for URL: https://www.github.com
+2025-04-26 03:31:26,346 - Master - INFO - Assigned task 2 to crawler 3 for URL: https://www.wikipedia.org
+2025-04-26 03:31:27,371 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:31:27,577 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:31:27,783 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:31:27,987 - Master - INFO - Received URLs from crawler 1. Queue size now: 7, Processed URLs: 1
+2025-04-26 03:31:27,987 - Master - INFO - Assigned task 3 to crawler 1 for URL: https://www.reddit.com
+2025-04-26 03:31:28,090 - Master - INFO - Received URLs from crawler 3. Queue size now: 11, Processed URLs: 2
+2025-04-26 03:31:28,090 - Master - INFO - Assigned task 4 to crawler 3 for URL: https://www.stackoverflow.com
+2025-04-26 03:31:28,695 - Master - INFO - Received URLs from crawler 2. Queue size now: 15, Processed URLs: 3
+2025-04-26 03:31:28,695 - Master - INFO - Assigned task 5 to crawler 2 for URL: https://www.python.org/psf/
+2025-04-26 03:31:31,007 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://www.python.org (found 71 URLs, 51211 bytes)
+2025-04-26 03:31:31,210 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:31:31,914 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:31:33,938 - Master - INFO - Received URLs from crawler 1. Queue size now: 19, Processed URLs: 4
+2025-04-26 03:31:33,938 - Master - INFO - Assigned task 6 to crawler 1 for URL: https://docs.python.org
+2025-04-26 03:31:34,945 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:31:35,849 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:31:36,754 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:31:36,858 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://www.wikipedia.org (found 8 URLs, 90836 bytes)
+2025-04-26 03:31:36,960 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://www.reddit.com (found 71 URLs, 632642 bytes)
+2025-04-26 03:31:37,162 - Master - INFO - Status from node 4: Indexed https://www.python.org with 10 keywords with cloud storage
+2025-04-26 03:31:37,666 - Master - INFO - Received URLs from crawler 1. Queue size now: 23, Processed URLs: 5
+2025-04-26 03:31:37,668 - Master - INFO - Assigned task 7 to crawler 1 for URL: https://pypi.org/
+2025-04-26 03:31:38,879 - Master - INFO - Received URLs from crawler 3. Queue size now: 27, Processed URLs: 6
+2025-04-26 03:31:38,879 - Master - INFO - Assigned task 8 to crawler 3 for URL: https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-26 03:31:39,535 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:31:40,343 - Master - INFO - Status from node 4: Indexed https://www.reddit.com with 10 keywords with cloud storage
+2025-04-26 03:31:41,550 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:31:41,853 - Master - INFO - Status from node 4: Indexed https://www.wikipedia.org with 10 keywords with cloud storage
+2025-04-26 03:31:41,955 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://www.github.com (found 68 URLs, 282252 bytes)
+2025-04-26 03:31:42,058 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:31:42,160 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://docs.python.org (found 52 URLs, 17619 bytes)
+2025-04-26 03:31:42,663 - Master - INFO - Received URLs from crawler 1. Queue size now: 31, Processed URLs: 7
+2025-04-26 03:31:42,663 - Master - INFO - Assigned task 9 to crawler 1 for URL: https://www.linkedin.com/company/python-software-foundation/
+2025-04-26 03:31:43,069 - Master - INFO - Received URLs from crawler 2. Queue size now: 35, Processed URLs: 8
+2025-04-26 03:31:43,071 - Master - INFO - Assigned task 10 to crawler 2 for URL: https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-26 03:31:44,076 - Master - INFO - Status from node 4: Indexed https://www.github.com with 10 keywords with cloud storage
+2025-04-26 03:31:44,177 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://www.stackoverflow.com (found 88 URLs, 359962 bytes)
+2025-04-26 03:31:44,280 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:31:44,382 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://www.python.org/psf/ (found 56 URLs, 52262 bytes)
+2025-04-26 03:31:44,485 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://pypi.org/ (found 26 URLs, 19818 bytes)
+2025-04-26 03:31:44,688 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:31:45,194 - Master - INFO - Received URLs from crawler 1. Queue size now: 36, Processed URLs: 9
+2025-04-26 03:31:45,194 - Master - INFO - Assigned task 11 to crawler 1 for URL: https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter
+2025-04-26 03:31:45,298 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://www.linkedin.com/company/python-software-foundation/ (found 2 URLs, 1530 bytes)
+2025-04-26 03:31:45,601 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:31:46,205 - Master - INFO - Received URLs from crawler 3. Queue size now: 40, Processed URLs: 10
+2025-04-26 03:31:46,205 - Master - INFO - Assigned task 12 to crawler 3 for URL: https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-26 03:31:46,309 - Master - INFO - Received URLs from crawler 2. Queue size now: 44, Processed URLs: 11
+2025-04-26 03:31:46,309 - Master - INFO - Assigned task 13 to crawler 2 for URL: https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-26 03:31:46,718 - Master - INFO - Received URLs from crawler 1. Queue size now: 48, Processed URLs: 12
+2025-04-26 03:31:46,722 - Master - INFO - Assigned task 14 to crawler 1 for URL: https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-26 03:31:47,528 - Master - INFO - Status from node 4: Indexed https://www.stackoverflow.com with 10 keywords with cloud storage
+2025-04-26 03:31:47,831 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:31:49,037 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:31:49,239 - Master - INFO - Status from node 4: Indexed https://docs.python.org with 10 keywords with cloud storage
+2025-04-26 03:31:50,747 - Master - INFO - Status from node 4: Indexed https://www.python.org/psf/ with 10 keywords with cloud storage
+2025-04-26 03:31:52,255 - Master - INFO - Status from node 4: Indexed https://pypi.org/ with 10 keywords with cloud storage
+2025-04-26 03:31:52,359 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias (found 3380 URLs, 557777 bytes)
+2025-04-26 03:31:52,461 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:31:52,563 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:31:52,665 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter (found 18 URLs, 69873 bytes)
+2025-04-26 03:31:53,472 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:31:53,775 - Master - INFO - Received URLs from crawler 2. Queue size now: 52, Processed URLs: 13
+2025-04-26 03:31:53,775 - Master - INFO - Assigned task 15 to crawler 2 for URL: https://github.com/features/copilot
+2025-04-26 03:31:54,819 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:31:55,023 - Master - INFO - Received URLs from crawler 1. Queue size now: 56, Processed URLs: 14
+2025-04-26 03:31:55,023 - Master - INFO - Assigned task 16 to crawler 1 for URL: https://github.com/security/advanced-security
+2025-04-26 03:31:55,932 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:31:56,438 - Master - INFO - Status from node 4: Indexed https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias with 10 keywords with cloud storage
+2025-04-26 03:31:56,541 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 (found 10 URLs, 154412 bytes)
+2025-04-26 03:31:56,645 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:31:57,248 - Master - INFO - Received URLs from crawler 3. Queue size now: 60, Processed URLs: 15
+2025-04-26 03:31:57,250 - Master - INFO - Assigned task 17 to crawler 3 for URL: https://github.com/features/actions
+2025-04-26 03:31:58,761 - Master - INFO - Status from node 4: Indexed https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 with 10 keywords with cloud storage
+2025-04-26 03:31:59,265 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:31:59,470 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:31:59,673 - Master - INFO - Status from node 4: Indexed https://www.linkedin.com/company/python-software-foundation/ with 0 keywords with cloud storage
+2025-04-26 03:32:00,982 - Master - INFO - Status from node 4: Indexed https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter with 10 keywords with cloud storage
+2025-04-26 03:32:01,085 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob (found 17 URLs, 1166131 bytes)
+2025-04-26 03:32:01,187 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:32:01,808 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:32:02,312 - Master - INFO - Received URLs from crawler 2. Queue size now: 64, Processed URLs: 16
+2025-04-26 03:32:02,312 - Master - INFO - Assigned task 18 to crawler 2 for URL: https://github.com/features/codespaces
+2025-04-26 03:32:03,925 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:32:05,135 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:32:05,237 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:32:06,245 - Master - INFO - Status from node 4: Indexed https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob with 10 keywords with cloud storage
+2025-04-26 03:32:06,348 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 (found 44 URLs, 713839 bytes)
+2025-04-26 03:32:07,557 - Master - INFO - Received URLs from crawler 1. Queue size now: 68, Processed URLs: 17
+2025-04-26 03:32:07,557 - Master - INFO - Assigned task 19 to crawler 1 for URL: https://github.com/features/issues
+2025-04-26 03:32:07,662 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:32:08,982 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:32:09,386 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:32:09,752 - Master - INFO - Status from node 4: Indexed https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 with 10 keywords with cloud storage
+2025-04-26 03:32:09,857 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications (found 94 URLs, 136534 bytes)
+2025-04-26 03:32:11,094 - Master - INFO - Received URLs from crawler 3. Queue size now: 72, Processed URLs: 18
+2025-04-26 03:32:11,094 - Master - INFO - Assigned task 20 to crawler 3 for URL: https://www.reddit.com/login/
+2025-04-26 03:32:12,204 - Master - INFO - Status from node 4: Indexed https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications with 10 keywords with cloud storage
+2025-04-26 03:32:12,308 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://github.com/features/copilot (found 122 URLs, 674540 bytes)
+2025-04-26 03:32:12,610 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:32:13,346 - Master - INFO - Received URLs from crawler 2. Queue size now: 76, Processed URLs: 19
+2025-04-26 03:32:13,346 - Master - INFO - Assigned task 21 to crawler 2 for URL: https://www.reddit.com/r/HollowKnight/comments/1k7oewp/rhollowknight_giveaway_discussion_celebration/
+2025-04-26 03:32:13,854 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:32:13,956 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:32:16,168 - Master - INFO - Status from node 4: Indexed https://github.com/features/copilot with 10 keywords with cloud storage
+2025-04-26 03:32:16,271 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:32:16,373 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://github.com/security/advanced-security (found 76 URLs, 262212 bytes)
+2025-04-26 03:32:16,676 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:32:18,186 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:32:18,491 - Master - INFO - Status from node 4: Indexed https://github.com/security/advanced-security with 10 keywords with cloud storage
+2025-04-26 03:32:18,610 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://github.com/features/actions (found 76 URLs, 283323 bytes)
+2025-04-26 03:32:20,124 - Master - INFO - Received URLs from crawler 3. Queue size now: 75, Processed URLs: 20
+2025-04-26 03:32:20,125 - Master - INFO - Assigned task 22 to crawler 3 for URL: https://www.reddit.com/r/HollowKnight/comments/1k7oewp/rhollowknight_giveaway_discussion_celebration/
+2025-04-26 03:32:20,245 - Master - INFO - Crawling complete. Processed 20 URLs. Shutting down nodes...
+2025-04-26 03:32:20,254 - Master - INFO - Master node finished URL distribution. Shutting down.
+2025-04-26 03:38:18,980 - Master - INFO - Master node started with rank 0 of 5
+2025-04-26 03:38:18,980 - Master - INFO - Active Crawler Nodes: [1, 2, 3]
+2025-04-26 03:38:18,980 - Master - INFO - Indexer Node: 4
+2025-04-26 03:38:18,985 - Master - INFO - Loaded AWS configuration from aws_config.json
+2025-04-26 03:38:19,112 - Master - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-26 03:38:20,266 - Master - INFO - Queue web-crawler-task-queue does not exist. Creating...
+2025-04-26 03:38:20,478 - Master - INFO - Successfully created queue web-crawler-task-queue
+2025-04-26 03:38:20,486 - Master - INFO - Successfully connected to AWS SQS in region us-east-1
+2025-04-26 03:38:20,495 - Master - INFO - Task queue initialized in cloud mode
+2025-04-26 03:38:21,816 - Master - INFO - Added 5 seed URLs to the task queue
+2025-04-26 03:38:22,321 - Master - INFO - Assigned URL https://www.python.org to crawler 1.
+2025-04-26 03:38:22,602 - Master - INFO - Assigned URL https://www.stackoverflow.com to crawler 2.
+2025-04-26 03:38:22,885 - Master - INFO - Assigned URL https://www.github.com to crawler 3.
+2025-04-26 03:38:23,129 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:38:23,231 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:38:23,335 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:38:23,437 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:38:23,543 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:38:24,519 - Master - INFO - Received URLs from crawler 1. Queue size now: 5, Processed URLs: 1
+2025-04-26 03:38:24,869 - Master - INFO - Assigned URL https://www.wikipedia.org to crawler 1.
+2025-04-26 03:38:25,119 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://www.python.org (found 71 URLs, 51211 bytes)
+2025-04-26 03:38:26,325 - Master - INFO - Received URLs from crawler 2. Queue size now: 11, Processed URLs: 2
+2025-04-26 03:38:26,620 - Master - INFO - Assigned URL https://www.python.org/psf/ to crawler 2.
+2025-04-26 03:38:27,776 - Master - INFO - Received URLs from crawler 1. Queue size now: 15, Processed URLs: 3
+2025-04-26 03:38:28,162 - Master - INFO - Assigned URL https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications to crawler 1.
+2025-04-26 03:38:28,469 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:38:28,573 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:38:28,676 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:38:29,798 - Master - INFO - Received URLs from crawler 3. Queue size now: 5, Processed URLs: 4
+2025-04-26 03:38:30,090 - Master - INFO - Assigned URL https://www.linkedin.com/company/python-software-foundation/ to crawler 3.
+2025-04-26 03:38:30,405 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:38:30,508 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:38:30,612 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:38:31,922 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:38:32,125 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:38:32,227 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://www.wikipedia.org (found 8 URLs, 90836 bytes)
+2025-04-26 03:38:32,330 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:38:32,538 - Master - INFO - Status from node 4: Indexed https://www.python.org with 10 keywords with cloud storage
+2025-04-26 03:38:33,819 - Master - INFO - Received URLs from crawler 1. Queue size now: 11, Processed URLs: 5
+2025-04-26 03:38:34,248 - Master - INFO - Assigned URL https://github.com/security/advanced-security to crawler 1.
+2025-04-26 03:38:34,539 - Master - INFO - Status from node 4: Indexed https://www.wikipedia.org with 10 keywords with cloud storage
+2025-04-26 03:38:34,641 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://www.github.com (found 68 URLs, 282238 bytes)
+2025-04-26 03:38:35,205 - Master - INFO - Received URLs from crawler 3. Queue size now: 19, Processed URLs: 6
+2025-04-26 03:38:35,488 - Master - INFO - Assigned URL https://stackoverflow.co/teams/ai/?utm_medium=referral&utm_source=stackoverflow-community&utm_campaign=top-nav-bar&utm_content=overflowai to crawler 3.
+2025-04-26 03:38:35,750 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://www.linkedin.com/company/python-software-foundation/ (found 2 URLs, 1530 bytes)
+2025-04-26 03:38:35,852 - Master - INFO - Status from node 4: Indexed https://www.github.com with 10 keywords with cloud storage
+2025-04-26 03:38:35,954 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:38:36,057 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://www.stackoverflow.com (found 88 URLs, 359458 bytes)
+2025-04-26 03:38:36,259 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:38:37,493 - Master - INFO - Received URLs from crawler 3. Queue size now: 22, Processed URLs: 7
+2025-04-26 03:38:37,868 - Master - INFO - Assigned URL https://www.reddit.com to crawler 3.
+2025-04-26 03:38:38,118 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:38:40,228 - Master - INFO - Received URLs from crawler 2. Queue size now: 23, Processed URLs: 8
+2025-04-26 03:38:40,581 - Master - INFO - Assigned URL https://bn.wikipedia.org/wiki/%E0%A6%89%E0%A6%87%E0%A6%95%E0%A6%BF%E0%A6%AA%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE_%E0%A6%AE%E0%A7%8B%E0%A6%AC%E0%A6%BE%E0%A6%87%E0%A6%B2_%E0%A6%85%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%AA%E0%A7%8D%E0%A6%B2%E0%A6%BF%E0%A6%95%E0%A7%87%E0%A6%B6%E0%A6%A8%E0%A7%87%E0%A6%B0_%E0%A6%A4%E0%A6%BE%E0%A6%B2%E0%A6%BF%E0%A6%95%E0%A6%BE to crawler 2.
+2025-04-26 03:38:41,035 - Master - INFO - Status from node 4: Indexed https://www.stackoverflow.com with 10 keywords with cloud storage
+2025-04-26 03:38:41,137 - Master - INFO - Status from node 4: Indexed https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications with 10 keywords with cloud storage
+2025-04-26 03:38:41,239 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications (found 94 URLs, 136534 bytes)
+2025-04-26 03:38:41,341 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:38:42,596 - Master - INFO - Received URLs from crawler 1. Queue size now: 22, Processed URLs: 9
+2025-04-26 03:38:42,907 - Master - INFO - Assigned URL https://stackoverflow.co/ to crawler 1.
+2025-04-26 03:38:43,158 - Master - INFO - Status from node 4: Indexed https://www.linkedin.com/company/python-software-foundation/ with 0 keywords with cloud storage
+2025-04-26 03:38:43,262 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:38:43,365 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://www.python.org/psf/ (found 56 URLs, 52262 bytes)
+2025-04-26 03:38:43,467 - Master - INFO - Status from node 4: Indexed https://www.python.org/psf/ with 10 keywords with cloud storage
+2025-04-26 03:38:43,570 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:38:44,803 - Master - INFO - Received URLs from crawler 2. Queue size now: 23, Processed URLs: 10
+2025-04-26 03:38:45,089 - Master - INFO - Assigned URL https://github.com/features/copilot to crawler 2.
+2025-04-26 03:38:45,342 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:38:45,445 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:38:45,549 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:38:45,651 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://stackoverflow.co/teams/ai/?utm_medium=referral&utm_source=stackoverflow-community&utm_campaign=top-nav-bar&utm_content=overflowai (found 78 URLs, 303232 bytes)
+2025-04-26 03:38:45,753 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:38:46,156 - Master - INFO - Status from node 4: Indexed https://stackoverflow.co/teams/ai/?utm_medium=referral&utm_source=stackoverflow-community&utm_campaign=top-nav-bar&utm_content=overflowai with 10 keywords with cloud storage
+2025-04-26 03:38:46,258 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://github.com/security/advanced-security (found 76 URLs, 262179 bytes)
+2025-04-26 03:38:47,445 - Master - INFO - Received URLs from crawler 3. Queue size now: 40, Processed URLs: 11
+2025-04-26 03:38:47,733 - Master - INFO - Assigned URL https://stackoverflow.co/advertising/?utm_medium=referral&utm_source=stackoverflow-community&utm_campaign=top-nav&utm_content=stack-overflow-advertising to crawler 3.
+2025-04-26 03:38:48,942 - Master - INFO - Received URLs from crawler 1. Queue size now: 36, Processed URLs: 12
+2025-04-26 03:38:49,261 - Master - INFO - Assigned URL https://stackoverflow.com to crawler 1.
+2025-04-26 03:38:49,509 - Master - INFO - Status from node 4: Indexed https://github.com/security/advanced-security with 10 keywords with cloud storage
+2025-04-26 03:38:49,613 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:38:49,718 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:38:49,822 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://bn.wikipedia.org/wiki/%E0%A6%89%E0%A6%87%E0%A6%95%E0%A6%BF%E0%A6%AA%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE_%E0%A6%AE%E0%A7%8B%E0%A6%AC%E0%A6%BE%E0%A6%87%E0%A6%B2_%E0%A6%85%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%AA%E0%A7%8D%E0%A6%B2%E0%A6%BF%E0%A6%95%E0%A7%87%E0%A6%B6%E0%A6%A8%E0%A7%87%E0%A6%B0_%E0%A6%A4%E0%A6%BE%E0%A6%B2%E0%A6%BF%E0%A6%95%E0%A6%BE (found 185 URLs, 164990 bytes)
+2025-04-26 03:38:50,841 - Master - INFO - Received URLs from crawler 2. Queue size now: 39, Processed URLs: 13
+2025-04-26 03:38:51,710 - Master - INFO - Assigned URL https://stackoverflow.help/ to crawler 2.
+2025-04-26 03:38:52,012 - Master - INFO - Status from node 4: Indexed https://bn.wikipedia.org/wiki/%E0%A6%89%E0%A6%87%E0%A6%95%E0%A6%BF%E0%A6%AA%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE_%E0%A6%AE%E0%A7%8B%E0%A6%AC%E0%A6%BE%E0%A6%87%E0%A6%B2_%E0%A6%85%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%AA%E0%A7%8D%E0%A6%B2%E0%A6%BF%E0%A6%95%E0%A7%87%E0%A6%B6%E0%A6%A8%E0%A7%87%E0%A6%B0_%E0%A6%A4%E0%A6%BE%E0%A6%B2%E0%A6%BF%E0%A6%95%E0%A6%BE with 10 keywords with cloud storage
+2025-04-26 03:38:52,114 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:38:52,216 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:38:52,318 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://www.reddit.com (found 70 URLs, 633098 bytes)
+2025-04-26 03:38:52,421 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:38:53,503 - Master - INFO - Received URLs from crawler 3. Queue size now: 47, Processed URLs: 14
+2025-04-26 03:38:53,799 - Master - INFO - Assigned URL https://docs.python.org to crawler 3.
+2025-04-26 03:38:54,047 - Master - INFO - Status from node 4: Indexed https://www.reddit.com with 10 keywords with cloud storage
+2025-04-26 03:38:54,150 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:38:54,252 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://stackoverflow.co/ (found 85 URLs, 274354 bytes)
+2025-04-26 03:38:54,354 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:38:56,062 - Master - INFO - Received URLs from crawler 1. Queue size now: 35, Processed URLs: 15
+2025-04-26 03:38:56,361 - Master - INFO - Assigned URL https://www.python.org/psf/ to crawler 1.
+2025-04-26 03:38:56,715 - Master - INFO - Status from node 4: Indexed https://stackoverflow.co/ with 10 keywords with cloud storage
+2025-04-26 03:38:56,817 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:38:56,919 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://github.com/features/copilot (found 122 URLs, 674532 bytes)
+2025-04-26 03:38:57,022 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:38:57,727 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:38:57,833 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:38:58,140 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:39:00,066 - Master - INFO - Received URLs from crawler 2. Queue size now: 59, Processed URLs: 16
+2025-04-26 03:39:00,446 - Master - INFO - Assigned URL https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias to crawler 2.
+2025-04-26 03:39:00,746 - Master - INFO - Status from node 4: Indexed https://github.com/features/copilot with 10 keywords with cloud storage
+2025-04-26 03:39:00,849 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://stackoverflow.help/ (found 8 URLs, 51818 bytes)
+2025-04-26 03:39:00,952 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://stackoverflow.co/advertising/?utm_medium=referral&utm_source=stackoverflow-community&utm_campaign=top-nav&utm_content=stack-overflow-advertising (found 69 URLs, 257759 bytes)
+2025-04-26 03:39:02,861 - Master - INFO - Received URLs from crawler 3. Queue size now: 59, Processed URLs: 17
+2025-04-26 03:39:03,272 - Master - INFO - Assigned URL https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en to crawler 3.
+2025-04-26 03:39:03,522 - Master - INFO - Status from node 4: Indexed https://stackoverflow.co/advertising/?utm_medium=referral&utm_source=stackoverflow-community&utm_campaign=top-nav&utm_content=stack-overflow-advertising with 10 keywords with cloud storage
+2025-04-26 03:39:03,624 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://stackoverflow.com (found 88 URLs, 359840 bytes)
+2025-04-26 03:39:03,727 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:39:04,821 - Master - INFO - Received URLs from crawler 1. Queue size now: 48, Processed URLs: 18
+2025-04-26 03:39:05,107 - Master - INFO - Assigned URL https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter to crawler 1.
+2025-04-26 03:39:05,434 - Master - INFO - Status from node 4: Indexed https://stackoverflow.com with 10 keywords with cloud storage
+2025-04-26 03:39:05,536 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:39:06,600 - Master - INFO - Received URLs from crawler 2. Queue size now: 68, Processed URLs: 19
+2025-04-26 03:39:06,884 - Master - INFO - Assigned URL https://github.com/features/copilot to crawler 2.
+2025-04-26 03:39:07,128 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://docs.python.org (found 52 URLs, 17619 bytes)
+2025-04-26 03:39:07,230 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:39:07,332 - Master - INFO - Received URLs from crawler 3. Queue size now: 47, Processed URLs: 20
+2025-04-26 03:39:07,793 - Master - INFO - Assigned URL https://github.com/features/issues to crawler 3.
+2025-04-26 03:39:08,034 - Master - INFO - Sending shutdown signals to crawler nodes...
+2025-04-26 03:39:08,034 - Master - INFO - Shutdown signal sent to crawler 1
+2025-04-26 03:39:08,035 - Master - INFO - Shutdown signal sent to crawler 2
+2025-04-26 03:39:08,035 - Master - INFO - Shutdown signal sent to crawler 3
+2025-04-26 03:39:08,035 - Master - INFO - Sending shutdown signal to indexer node...
+2025-04-26 03:39:08,035 - Master - INFO - Master node shutting down. Total URLs processed: 20
+2025-04-26 03:39:08,035 - Master - INFO - Crawled: 20, Indexed: 15, Failed: 0
+2025-04-26 03:43:30,812 - Master - INFO - Master node started with rank 0 of 5
+2025-04-26 03:43:30,812 - Master - INFO - Active Crawler Nodes: [1, 2, 3]
+2025-04-26 03:43:30,812 - Master - INFO - Indexer Node: 4
+2025-04-26 03:43:30,812 - Master - INFO - Loaded AWS configuration from aws_config.json
+2025-04-26 03:43:30,943 - Master - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-26 03:43:32,884 - Master - INFO - Queue web-crawler-task-queue already exists
+2025-04-26 03:43:32,885 - Master - INFO - Successfully connected to AWS SQS in region us-east-1
+2025-04-26 03:43:32,885 - Master - INFO - Task queue initialized in cloud mode
+2025-04-26 03:43:33,029 - Master - INFO - Sent message to SQS: 0ff18419-ec3f-4cd4-a0bb-776f38371517, content: https://www.python.org
+2025-04-26 03:43:33,166 - Master - INFO - Sent message to SQS: 9ad93257-ccb1-4f10-a72e-4a3fce5bed49, content: https://www.github.com
+2025-04-26 03:43:33,313 - Master - INFO - Sent message to SQS: 7295b134-1258-4af4-92fe-24b2d497e2e0, content: https://www.wikipedia.org
+2025-04-26 03:43:33,452 - Master - INFO - Sent message to SQS: 2b1876b4-63e0-4e60-841b-8b872f3395c3, content: https://www.reddit.com
+2025-04-26 03:43:33,605 - Master - INFO - Sent message to SQS: 17280eee-6cac-4620-afb9-9bb0adb0cfd0, content: https://www.stackoverflow.com
+2025-04-26 03:43:33,605 - Master - INFO - Added 5 seed URLs to the task queue
+2025-04-26 03:43:33,772 - Master - INFO - SQS queue size: 79
+2025-04-26 03:43:33,930 - Master - INFO - Received 1 messages from SQS: ['https://stackoverflow.co/teams...']
+2025-04-26 03:43:34,090 - Master - INFO - Deleted message from SQS: https://stackoverflow.co/teams...
+2025-04-26 03:43:34,091 - Master - INFO - Assigned URL https://stackoverflow.co/teams/?utm_medium=referral&utm_source=stackoverflow-community&utm_campaign=top-nav&utm_content=stack-overflow-for-teams to crawler 1.
+2025-04-26 03:43:34,237 - Master - INFO - Received 1 messages from SQS: ['https://stackoverflowteams.com...']
+2025-04-26 03:43:34,400 - Master - INFO - Deleted message from SQS: https://stackoverflowteams.com...
+2025-04-26 03:43:34,400 - Master - INFO - Assigned URL https://stackoverflowteams.com/users/login/?utm_source=so-owned&utm_medium=referral&utm_campaign=teams-nav-link to crawler 2.
+2025-04-26 03:43:34,554 - Master - INFO - Received 1 messages from SQS: ['https://pypi.org/']
+2025-04-26 03:43:34,707 - Master - INFO - Deleted message from SQS: https://pypi.org/
+2025-04-26 03:43:34,707 - Master - INFO - Assigned URL https://pypi.org/ to crawler 3.
+2025-04-26 03:43:34,853 - Master - INFO - SQS queue size: 74
+2025-04-26 03:43:34,954 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:43:34,954 - Master - INFO - SQS queue size: 74
+2025-04-26 03:43:35,056 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:43:35,056 - Master - INFO - SQS queue size: 74
+2025-04-26 03:43:35,158 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:43:35,160 - Master - INFO - SQS queue size: 74
+2025-04-26 03:43:35,262 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:43:35,262 - Master - INFO - SQS queue size: 74
+2025-04-26 03:43:35,507 - Master - INFO - Sent message to SQS: 9603a2b5-136f-4cfd-b6df-445248e8133b, content: https://packaging.python.org/tutorials/installing-...
+2025-04-26 03:43:35,641 - Master - INFO - Sent message to SQS: d893fc9a-47f8-4ddb-8b9e-4d0bacbf5b4c, content: https://packaging.python.org/tutorials/packaging-p...
+2025-04-26 03:43:35,786 - Master - INFO - Sent message to SQS: 8d2aeb29-c962-4d52-99f7-777d33821896, content: https://packaging.python.org/tutorials/installing-...
+2025-04-26 03:43:35,932 - Master - INFO - Sent message to SQS: 7d82c8e4-c1ef-4924-8e61-b9bc0d148393, content: https://packaging.python.org/tutorials/packaging-p...
+2025-04-26 03:43:36,153 - Master - INFO - Sent message to SQS: fc488289-1a98-45f7-a021-9311f7d61f75, content: https://packaging.python.org/
+2025-04-26 03:43:36,300 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:36,300 - Master - INFO - Received URLs from crawler 3. Queue size now: 81, Processed URLs: 1
+2025-04-26 03:43:36,455 - Master - INFO - Received 1 messages from SQS: ['https://stackoverflow.co/teams...']
+2025-04-26 03:43:36,602 - Master - INFO - Deleted message from SQS: https://stackoverflow.co/teams...
+2025-04-26 03:43:36,602 - Master - INFO - Assigned URL https://stackoverflow.co/teams/resources/faq/ to crawler 3.
+2025-04-26 03:43:36,807 - Master - INFO - SQS queue size: 80
+2025-04-26 03:43:36,909 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:43:36,909 - Master - INFO - SQS queue size: 80
+2025-04-26 03:43:37,153 - Master - INFO - Sent message to SQS: 7e1d9003-e74a-4875-ac99-04b7cd478dfc, content: https://stackoverflowteams.com
+2025-04-26 03:43:37,295 - Master - INFO - Sent message to SQS: 533352ad-3dca-4ec2-a5af-89f5996abcda, content: https://stackoverflowteams.com
+2025-04-26 03:43:37,458 - Master - INFO - Sent message to SQS: 995e119c-fe67-4479-9fba-4c26cce3a5f3, content: https://stackoverflowteams.com
+2025-04-26 03:43:37,604 - Master - INFO - SQS queue size: 83
+2025-04-26 03:43:37,604 - Master - INFO - Received URLs from crawler 2. Queue size now: 83, Processed URLs: 2
+2025-04-26 03:43:37,749 - Master - INFO - Received 1 messages from SQS: ['https://az.wikipedia.org/wiki/...']
+2025-04-26 03:43:37,902 - Master - INFO - Deleted message from SQS: https://az.wikipedia.org/wiki/...
+2025-04-26 03:43:37,902 - Master - INFO - Assigned URL https://az.wikipedia.org/wiki/Vikipediya_mobil_t%C9%99tbiql%C9%99rinin_siyah%C4%B1s%C4%B1 to crawler 2.
+2025-04-26 03:43:38,042 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:38,341 - Master - INFO - Sent message to SQS: 1e02462d-ae6c-4346-a2de-da4728c21d61, content: https://stackoverflow.co/teams/resources/
+2025-04-26 03:43:38,513 - Master - INFO - Sent message to SQS: 9f2b392d-7dd4-4056-933f-a61521fbd60f, content: https://stackoverflow.help/
+2025-04-26 03:43:38,693 - Master - INFO - Sent message to SQS: 50ff7756-d669-4947-9d2b-97e671088bd2, content: https://stackoverflow.co/teams/resources/faq/
+2025-04-26 03:43:38,847 - Master - INFO - Sent message to SQS: d88821f9-5e0a-4a56-87ff-ee67c4d26953, content: https://stackoverflowteams.com/users/login/?utm_so...
+2025-04-26 03:43:39,016 - Master - INFO - Sent message to SQS: fb048f62-281d-4b4b-a385-32b0f9ee5137, content: https://stackoverflowteams.com/teams/create/free/?...
+2025-04-26 03:43:39,245 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:39,245 - Master - INFO - Received URLs from crawler 1. Queue size now: 87, Processed URLs: 3
+2025-04-26 03:43:39,402 - Master - INFO - Received 1 messages from SQS: ['https://pypi.org/']
+2025-04-26 03:43:39,572 - Master - INFO - Deleted message from SQS: https://pypi.org/
+2025-04-26 03:43:39,572 - Master - INFO - Assigned URL https://pypi.org/ to crawler 1.
+2025-04-26 03:43:39,773 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:39,874 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:43:39,874 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:39,979 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:43:39,979 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:40,081 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:43:40,081 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:40,183 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:40,283 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:40,384 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:40,484 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:40,585 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:40,685 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:40,786 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:40,886 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:40,987 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:41,088 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:41,189 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:41,290 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:41,391 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:41,492 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:41,593 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:41,693 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:41,794 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:41,894 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:41,995 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:42,096 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:42,197 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:42,298 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:42,398 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:42,499 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:42,600 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:42,701 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:42,802 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:42,902 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:43,003 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:43,104 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:43,204 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:43,305 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:43,406 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:43,513 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:43,615 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:43,718 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:43,822 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:43,928 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:44,042 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:44,145 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:44,245 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:43:44,252 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:44,354 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:44,455 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:44,570 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:44,678 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:44,780 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:44,881 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:44,985 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:45,086 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:45,187 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:45,288 - Master - INFO - SQS queue size: 81
+2025-04-26 03:43:45,388 - Master - WARNING - Heartbeat timeout for crawler 3. Marking as failed.
+2025-04-26 03:43:45,540 - Master - INFO - Sent message to SQS: 70483a0c-4b4d-4dbe-b13e-d025b85399bb, content: https://stackoverflow.co/teams/resources/faq/
+2025-04-26 03:43:45,703 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:45,808 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:45,910 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:46,010 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:46,111 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:46,212 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:46,313 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:46,415 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:46,517 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:46,618 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:46,776 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:46,889 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:46,990 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:47,090 - Master - WARNING - Heartbeat timeout for crawler 2. Marking as failed.
+2025-04-26 03:43:47,241 - Master - INFO - Sent message to SQS: 245ec060-7b9c-440d-be0a-17ae7a134755, content: https://az.wikipedia.org/wiki/Vikipediya_mobil_t%C...
+2025-04-26 03:43:47,380 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:47,488 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:47,589 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:47,689 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:47,790 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:47,891 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:47,998 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:43:47,998 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:48,100 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:48,201 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:48,302 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:48,403 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:48,503 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:48,604 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:48,705 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:48,805 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:48,906 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:49,009 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:49,110 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:49,211 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:49,311 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:49,413 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:49,513 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:49,614 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:49,716 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:49,817 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:49,918 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:50,018 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:50,119 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:50,220 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:50,320 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:50,421 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:50,522 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:50,622 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:50,723 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:50,824 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:50,925 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:51,027 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:51,128 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:51,229 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:51,330 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:51,505 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:43:51,505 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:51,610 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:51,711 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:51,812 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:51,913 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:52,013 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:52,114 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:52,215 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:52,315 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:52,416 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:52,517 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:52,620 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:52,721 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:52,821 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:52,922 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:53,023 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:53,124 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:53,226 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:53,327 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:53,434 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:53,535 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:53,635 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:53,739 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:53,840 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:53,941 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:54,043 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:54,143 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:54,244 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:54,345 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:54,445 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:43:54,445 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:54,547 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:54,648 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:54,749 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:54,850 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:54,950 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:55,051 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:55,153 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:55,254 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:55,355 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:55,456 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:55,559 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:55,669 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:55,771 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:55,878 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:55,979 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:56,082 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:56,183 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:56,284 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:56,385 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:56,486 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:56,587 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:56,688 - Master - INFO - Crawler 3 is back online.
+2025-04-26 03:43:56,688 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:43:56,833 - Master - INFO - Received 1 messages from SQS: ['https://cs.wikipedia.org/wiki/...']
+2025-04-26 03:43:56,988 - Master - INFO - Deleted message from SQS: https://cs.wikipedia.org/wiki/...
+2025-04-26 03:43:56,988 - Master - INFO - Assigned URL https://cs.wikipedia.org/wiki/Seznam_mobiln%C3%ADch_aplikac%C3%AD_Wikipedie to crawler 3.
+2025-04-26 03:43:57,133 - Master - INFO - SQS queue size: 80
+2025-04-26 03:43:57,240 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://pypi.org/ (found 26 URLs, 19818 bytes)
+2025-04-26 03:43:57,240 - Master - INFO - SQS queue size: 80
+2025-04-26 03:43:57,343 - Master - INFO - Crawler 2 is back online.
+2025-04-26 03:43:57,343 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:43:57,803 - Master - INFO - Received 1 messages from SQS: ['https://donate.wikimedia.org/?...']
+2025-04-26 03:43:57,949 - Master - INFO - Deleted message from SQS: https://donate.wikimedia.org/?...
+2025-04-26 03:43:57,949 - Master - INFO - Assigned URL https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=bn.wikipedia.org&uselang=en to crawler 2.
+2025-04-26 03:43:58,102 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:58,205 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://stackoverflowteams.com/users/login/?utm_source=so-owned&utm_medium=referral&utm_campaign=teams-nav-link (found 3 URLs, 23140 bytes)
+2025-04-26 03:43:58,205 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:58,308 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://stackoverflow.co/teams/?utm_medium=referral&utm_source=stackoverflow-community&utm_campaign=top-nav&utm_content=stack-overflow-for-teams (found 72 URLs, 288497 bytes)
+2025-04-26 03:43:58,308 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:58,411 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:43:58,411 - Master - INFO - SQS queue size: 87
+2025-04-26 03:43:58,712 - Master - INFO - Sent message to SQS: fcd5b023-aa21-4a41-84cf-f19c02901676, content: https://donate.wikimedia.org/?wmf_source=donate&wm...
+2025-04-26 03:43:58,860 - Master - INFO - Sent message to SQS: e3b58b86-3121-4639-967b-2789df6182ca, content: https://donate.wikimedia.org/?wmf_source=donate&wm...
+2025-04-26 03:43:59,079 - Master - INFO - Sent message to SQS: 5ce9587d-1161-4104-88e0-33b2cb7a59fc, content: https://ar.wikipedia.org/wiki/%D9%82%D8%A7%D8%A6%D...
+2025-04-26 03:43:59,236 - Master - INFO - Sent message to SQS: 940fd505-1542-4227-ab1b-b2cf71380323, content: https://bn.wikipedia.org/wiki/%E0%A6%89%E0%A6%87%E...
+2025-04-26 03:43:59,392 - Master - INFO - Sent message to SQS: 8a0e4bed-b1f6-4616-a723-0c273bc04d58, content: https://cs.wikipedia.org/wiki/Seznam_mobiln%C3%ADc...
+2025-04-26 03:43:59,735 - Master - INFO - SQS queue size: 83
+2025-04-26 03:43:59,735 - Master - INFO - Received URLs from crawler 2. Queue size now: 83, Processed URLs: 4
+2025-04-26 03:43:59,888 - Master - INFO - Received 1 messages from SQS: ['https://dailyboulder.com/ice-c...']
+2025-04-26 03:44:00,050 - Master - INFO - Deleted message from SQS: https://dailyboulder.com/ice-c...
+2025-04-26 03:44:00,051 - Master - INFO - Assigned URL https://dailyboulder.com/ice-can-now-enter-your-home-without-a-warrant-to-find-migrants-doj-memo-says/ to crawler 2.
+2025-04-26 03:44:00,213 - Master - INFO - SQS queue size: 79
+2025-04-26 03:44:00,461 - Master - INFO - Sent message to SQS: c0f91e81-a860-4a47-9df8-36e9cf5a527e, content: https://stackoverflow.co/teams/
+2025-04-26 03:44:00,609 - Master - INFO - Sent message to SQS: 33ce48ba-bb88-4f21-bfa0-43cab4b2f705, content: https://stackoverflow.co/teams/our-solution/
+2025-04-26 03:44:00,764 - Master - INFO - Sent message to SQS: 47213ea3-e5a0-42d6-81f2-63fdb130c520, content: https://stackoverflow.co/teams/integrations/
+2025-04-26 03:44:00,909 - Master - INFO - Sent message to SQS: 5df5d676-81ad-4895-9d7e-6eff12778901, content: https://stackoverflow.co/teams/features/
+2025-04-26 03:44:01,186 - Master - INFO - Sent message to SQS: d9c2b872-897d-4dcc-804f-eecb0bd8d307, content: https://stackoverflow.co/teams/customer-success/
+2025-04-26 03:44:01,333 - Master - INFO - SQS queue size: 86
+2025-04-26 03:44:01,333 - Master - INFO - Received URLs from crawler 3. Queue size now: 86, Processed URLs: 5
+2025-04-26 03:44:01,490 - Master - INFO - Received 1 messages from SQS: ['https://psfmember.org/civicrm/...']
+2025-04-26 03:44:01,644 - Master - INFO - Deleted message from SQS: https://psfmember.org/civicrm/...
+2025-04-26 03:44:01,644 - Master - INFO - Assigned URL https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 to crawler 3.
+2025-04-26 03:44:01,824 - Master - INFO - SQS queue size: 88
+2025-04-26 03:44:01,928 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:44:01,930 - Master - INFO - SQS queue size: 88
+2025-04-26 03:44:02,201 - Master - INFO - Sent message to SQS: 1370dd3c-bf7b-4bd7-8096-a35e07e34f36, content: https://packaging.python.org/tutorials/installing-...
+2025-04-26 03:44:02,373 - Master - INFO - Sent message to SQS: 565a5ed7-35e6-43ff-9f70-00d34cf59af5, content: https://packaging.python.org/tutorials/packaging-p...
+2025-04-26 03:44:02,528 - Master - INFO - Sent message to SQS: 71f6aa2e-7ffd-41ff-a162-1253bd9d5c40, content: https://packaging.python.org/tutorials/installing-...
+2025-04-26 03:44:02,675 - Master - INFO - Sent message to SQS: 57c486cf-4f44-4ecf-8db7-7337ff67c6e3, content: https://packaging.python.org/tutorials/packaging-p...
+2025-04-26 03:44:02,889 - Master - INFO - Sent message to SQS: 8d324967-1690-4d69-8dcc-804474b46f9f, content: https://packaging.python.org/
+2025-04-26 03:44:03,062 - Master - INFO - SQS queue size: 91
+2025-04-26 03:44:03,062 - Master - INFO - Received URLs from crawler 1. Queue size now: 91, Processed URLs: 6
+2025-04-26 03:44:03,249 - Master - INFO - Received 1 messages from SQS: ['https://play.google.com/store/...']
+2025-04-26 03:44:03,396 - Master - INFO - Deleted message from SQS: https://play.google.com/store/...
+2025-04-26 03:44:03,396 - Master - INFO - Assigned URL https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob to crawler 1.
+2025-04-26 03:44:03,552 - Master - INFO - SQS queue size: 87
+2025-04-26 03:44:03,658 - Master - INFO - SQS queue size: 87
+2025-04-26 03:44:03,759 - Master - INFO - SQS queue size: 87
+2025-04-26 03:44:03,859 - Master - INFO - SQS queue size: 87
+2025-04-26 03:44:03,960 - Master - INFO - SQS queue size: 87
+2025-04-26 03:44:04,061 - Master - INFO - SQS queue size: 87
+2025-04-26 03:44:04,257 - Master - INFO - SQS queue size: 87
+2025-04-26 03:44:04,382 - Master - INFO - SQS queue size: 87
+2025-04-26 03:44:04,483 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:44:04,484 - Master - INFO - SQS queue size: 87
+2025-04-26 03:44:04,586 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://az.wikipedia.org/wiki/Vikipediya_mobil_t%C9%99tbiql%C9%99rinin_siyah%C4%B1s%C4%B1 (found 73 URLs, 123925 bytes)
+2025-04-26 03:44:04,587 - Master - INFO - SQS queue size: 87
+2025-04-26 03:44:04,688 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:44:04,688 - Master - INFO - SQS queue size: 87
+2025-04-26 03:44:04,791 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://pypi.org/ (found 26 URLs, 19818 bytes)
+2025-04-26 03:44:04,791 - Master - INFO - SQS queue size: 87
+2025-04-26 03:44:04,895 - Master - INFO - SQS queue size: 87
+2025-04-26 03:44:04,996 - Master - INFO - Status from node 4: Indexed https://stackoverflow.co/teams/?utm_medium=referral&utm_source=stackoverflow-community&utm_campaign=top-nav&utm_content=stack-overflow-for-teams with 10 keywords with cloud storage
+2025-04-26 03:44:04,996 - Master - INFO - SQS queue size: 87
+2025-04-26 03:44:05,098 - Master - INFO - SQS queue size: 87
+2025-04-26 03:44:05,199 - Master - INFO - SQS queue size: 87
+2025-04-26 03:44:05,300 - Master - INFO - SQS queue size: 87
+2025-04-26 03:44:05,401 - Master - INFO - SQS queue size: 87
+2025-04-26 03:44:05,501 - Master - INFO - SQS queue size: 87
+2025-04-26 03:44:05,762 - Master - INFO - Sent message to SQS: bf91a05e-d44d-47da-8e7b-bccf718bf025, content: https://policies.google.com/privacy
+2025-04-26 03:44:05,910 - Master - INFO - Sent message to SQS: ae3694f1-3db4-43fc-874d-521116f18495, content: https://myaccount.google.com/termsofservice
+2025-04-26 03:44:06,083 - Master - INFO - Sent message to SQS: aff3f8d0-5dca-4a87-893e-e7b104343cfa, content: https://support.google.com/googleplay?p=data-safet...
+2025-04-26 03:44:06,229 - Master - INFO - Sent message to SQS: 435f12d3-77d4-468a-bd72-8705c75e9119, content: https://support.google.com/googleplay?p=data-safet...
+2025-04-26 03:44:07,400 - Master - INFO - Sent message to SQS: b76d4d28-3b09-4fa2-9832-ed2bbe719d12, content: https://support.google.com/googleplay/?p=report_co...
+2025-04-26 03:44:07,630 - Master - INFO - SQS queue size: 90
+2025-04-26 03:44:07,630 - Master - INFO - Received URLs from crawler 1. Queue size now: 90, Processed URLs: 7
+2025-04-26 03:44:07,818 - Master - INFO - Received 1 messages from SQS: ['https://github.com/features/ac...']
+2025-04-26 03:44:07,964 - Master - INFO - Deleted message from SQS: https://github.com/features/ac...
+2025-04-26 03:44:07,964 - Master - INFO - Assigned URL https://github.com/features/actions to crawler 1.
+2025-04-26 03:44:08,105 - Master - INFO - SQS queue size: 86
+2025-04-26 03:44:08,208 - Master - INFO - Status from node 4: Indexed https://pypi.org/ with 10 keywords with cloud storage
+2025-04-26 03:44:08,208 - Master - INFO - SQS queue size: 86
+2025-04-26 03:44:08,310 - Master - INFO - Status from node 4: Indexed https://stackoverflowteams.com/users/login/?utm_source=so-owned&utm_medium=referral&utm_campaign=teams-nav-link with 9 keywords with cloud storage
+2025-04-26 03:44:08,310 - Master - INFO - SQS queue size: 86
+2025-04-26 03:44:08,413 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:44:08,416 - Master - INFO - SQS queue size: 86
+2025-04-26 03:44:08,760 - Master - INFO - Sent message to SQS: 0e5c6b07-3d51-45df-bee5-1d7709151261, content: https://donate.wikimedia.org/wiki/Special:LandingC...
+2025-04-26 03:44:08,907 - Master - INFO - Sent message to SQS: ec4220e0-873d-40c7-9635-513afbc7585c, content: https://foundation.wikimedia.org/wiki/Special:Land...
+2025-04-26 03:44:09,094 - Master - INFO - Sent message to SQS: f22c2691-d157-4ee0-9b01-7b6a2a342494, content: https://foundation.wikimedia.org/wiki/Special:Land...
+2025-04-26 03:44:09,242 - Master - INFO - Sent message to SQS: 4887accd-64ee-457d-b9da-3974db1fb635, content: https://foundation.wikimedia.org/wiki/Policy:Donor...
+2025-04-26 03:44:09,388 - Master - INFO - Sent message to SQS: d369ac70-88b2-4834-acfd-43a575c8c2e0, content: https://donate.wikimedia.org/wiki/Special:LandingC...
+2025-04-26 03:44:09,536 - Master - INFO - SQS queue size: 102
+2025-04-26 03:44:09,536 - Master - INFO - Received URLs from crawler 2. Queue size now: 102, Processed URLs: 8
+2025-04-26 03:44:09,683 - Master - INFO - Received 1 messages from SQS: ['https://itunes.apple.com/app/a...']
+2025-04-26 03:44:09,844 - Master - INFO - Deleted message from SQS: https://itunes.apple.com/app/a...
+2025-04-26 03:44:09,844 - Master - INFO - Assigned URL https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 to crawler 2.
+2025-04-26 03:44:10,057 - Master - INFO - SQS queue size: 94
+2025-04-26 03:44:10,162 - Master - INFO - Status from node 4: Indexed https://az.wikipedia.org/wiki/Vikipediya_mobil_t%C9%99tbiql%C9%99rinin_siyah%C4%B1s%C4%B1 with 10 keywords with cloud storage
+2025-04-26 03:44:10,162 - Master - INFO - SQS queue size: 94
+2025-04-26 03:44:10,264 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://stackoverflow.co/teams/resources/faq/ (found 106 URLs, 476087 bytes)
+2025-04-26 03:44:10,264 - Master - INFO - SQS queue size: 94
+2025-04-26 03:44:10,367 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:44:10,368 - Master - INFO - SQS queue size: 94
+2025-04-26 03:44:10,470 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:44:10,474 - Master - INFO - SQS queue size: 94
+2025-04-26 03:44:10,575 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=bn.wikipedia.org&uselang=en (found 18 URLs, 69957 bytes)
+2025-04-26 03:44:10,575 - Master - INFO - SQS queue size: 94
+2025-04-26 03:44:10,678 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:44:10,678 - Master - INFO - SQS queue size: 94
+2025-04-26 03:44:10,780 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:44:10,783 - Master - INFO - SQS queue size: 94
+2025-04-26 03:44:10,884 - Master - INFO - SQS queue size: 94
+2025-04-26 03:44:10,985 - Master - INFO - SQS queue size: 94
+2025-04-26 03:44:11,085 - Master - INFO - SQS queue size: 94
+2025-04-26 03:44:11,433 - Master - INFO - Sent message to SQS: 06fa89e2-9b4b-4649-adc4-1dd3b67f6b48, content: https://dailyboulder.com/
+2025-04-26 03:44:11,801 - Master - INFO - Sent message to SQS: 15e15784-491f-49d9-be19-ba80ed8bcae0, content: https://dailyboulder.com/category/news/
+2025-04-26 03:44:12,579 - Master - INFO - Sent message to SQS: eb22f4c9-4140-4193-9e2c-e20176bd2f28, content: https://dailyboulder.com/category/politics/
+2025-04-26 03:44:12,735 - Master - INFO - Sent message to SQS: d6ca16e7-c0fe-497f-8fd0-b2ca4b9591d8, content: https://dailyboulder.com/category/blunt/
+2025-04-26 03:44:12,907 - Master - INFO - Sent message to SQS: 0a4ef350-0ed5-4bbd-82f7-1f66b5993779, content: https://dailyboulder.com/category/entertainment/
+2025-04-26 03:44:13,053 - Master - INFO - SQS queue size: 98
+2025-04-26 03:44:13,053 - Master - INFO - Received URLs from crawler 2. Queue size now: 98, Processed URLs: 9
+2025-04-26 03:44:13,201 - Master - INFO - Received 1 messages from SQS: ['https://github.com/features/ac...']
+2025-04-26 03:44:13,356 - Master - INFO - Deleted message from SQS: https://github.com/features/ac...
+2025-04-26 03:44:13,356 - Master - INFO - Assigned URL https://github.com/features/actions to crawler 2.
+2025-04-26 03:44:13,503 - Master - INFO - SQS queue size: 103
+2025-04-26 03:44:13,756 - Master - INFO - Sent message to SQS: f5e57612-95b3-4a2a-9a16-aef9f4d57ffb, content: https://donate.wikimedia.org/?wmf_source=donate&wm...
+2025-04-26 03:44:13,984 - Master - INFO - Sent message to SQS: ab8f25dd-fda3-47fb-9e7b-775fd46adb4f, content: https://donate.wikimedia.org/?wmf_source=donate&wm...
+2025-04-26 03:44:14,155 - Master - INFO - Sent message to SQS: 840e7391-e712-49d8-b6ae-2a5a58be7e53, content: https://ar.wikipedia.org/wiki/%D9%82%D8%A7%D8%A6%D...
+2025-04-26 03:44:14,562 - Master - INFO - Sent message to SQS: b141d0b6-5e29-4fe2-a345-797bc63126ca, content: https://az.wikipedia.org/wiki/Vikipediya_mobil_t%C...
+2025-04-26 03:44:14,800 - Master - INFO - Sent message to SQS: 68783b7b-8b6b-427f-92ca-6cdb397db846, content: https://bn.wikipedia.org/wiki/%E0%A6%89%E0%A6%87%E...
+2025-04-26 03:44:14,949 - Master - INFO - SQS queue size: 110
+2025-04-26 03:44:14,949 - Master - INFO - Received URLs from crawler 3. Queue size now: 110, Processed URLs: 10
+2025-04-26 03:44:15,093 - Master - INFO - Received 1 messages from SQS: ['https://github.com/features/co...']
+2025-04-26 03:44:15,240 - Master - INFO - Deleted message from SQS: https://github.com/features/co...
+2025-04-26 03:44:15,240 - Master - INFO - Assigned URL https://github.com/features/codespaces to crawler 3.
+2025-04-26 03:44:15,396 - Master - INFO - SQS queue size: 111
+2025-04-26 03:44:15,503 - Master - INFO - Status from node 4: Indexed https://stackoverflow.co/teams/resources/faq/ with 10 keywords with cloud storage
+2025-04-26 03:44:15,506 - Master - INFO - SQS queue size: 111
+2025-04-26 03:44:15,607 - Master - INFO - Status from node 4: Indexed https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=bn.wikipedia.org&uselang=en with 10 keywords with cloud storage
+2025-04-26 03:44:15,609 - Master - INFO - SQS queue size: 111
+2025-04-26 03:44:15,709 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:44:15,709 - Master - INFO - SQS queue size: 111
+2025-04-26 03:44:15,860 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://cs.wikipedia.org/wiki/Seznam_mobiln%C3%ADch_aplikac%C3%AD_Wikipedie (found 57 URLs, 75401 bytes)
+2025-04-26 03:44:15,860 - Master - INFO - SQS queue size: 111
+2025-04-26 03:44:15,978 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:44:15,978 - Master - INFO - SQS queue size: 111
+2025-04-26 03:44:16,083 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://dailyboulder.com/ice-can-now-enter-your-home-without-a-warrant-to-find-migrants-doj-memo-says/ (found 81 URLs, 122212 bytes)
+2025-04-26 03:44:16,084 - Master - INFO - SQS queue size: 111
+2025-04-26 03:44:16,186 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:44:16,190 - Master - INFO - SQS queue size: 111
+2025-04-26 03:44:16,291 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob (found 17 URLs, 1166108 bytes)
+2025-04-26 03:44:16,291 - Master - INFO - SQS queue size: 111
+2025-04-26 03:44:16,394 - Master - INFO - SQS queue size: 111
+2025-04-26 03:44:16,494 - Master - INFO - SQS queue size: 111
+2025-04-26 03:44:16,596 - Master - INFO - SQS queue size: 111
+2025-04-26 03:44:16,696 - Master - INFO - SQS queue size: 111
+2025-04-26 03:44:16,797 - Master - INFO - SQS queue size: 111
+2025-04-26 03:44:16,897 - Master - INFO - SQS queue size: 111
+2025-04-26 03:44:16,998 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:44:16,998 - Master - INFO - SQS queue size: 111
+2025-04-26 03:44:17,101 - Master - INFO - SQS queue size: 111
+2025-04-26 03:44:17,202 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:44:17,202 - Master - INFO - SQS queue size: 111
+2025-04-26 03:44:17,307 - Master - INFO - SQS queue size: 111
+2025-04-26 03:44:17,408 - Master - INFO - SQS queue size: 111
+2025-04-26 03:44:17,509 - Master - INFO - SQS queue size: 111
+2025-04-26 03:44:17,610 - Master - INFO - SQS queue size: 111
+2025-04-26 03:44:17,710 - Master - INFO - SQS queue size: 111
+2025-04-26 03:44:18,025 - Master - INFO - Sent message to SQS: 2aedd30f-d458-4087-91d0-f3a42057c247, content: https://psfmember.org/
+2025-04-26 03:44:18,195 - Master - INFO - Sent message to SQS: b3bc43c3-0997-49b8-8d94-542a2bed6a94, content: https://psfmember.org/
+2025-04-26 03:44:18,392 - Master - INFO - Sent message to SQS: 08eb9bef-5403-4dbc-9f0d-b4239f038f59, content: https://psfmember.org/wp-login.php?redirect_to=htt...
+2025-04-26 03:44:18,580 - Master - INFO - Sent message to SQS: f41ce65b-3935-4aeb-8993-b430b133db7a, content: https://psfmember.org/wp-login.php?action=register...
+2025-04-26 03:44:18,774 - Master - INFO - Sent message to SQS: 190c3057-9101-429d-a711-6d2784080b33, content: http://python.org/psf/
+2025-04-26 03:44:18,979 - Master - INFO - SQS queue size: 111
+2025-04-26 03:44:18,979 - Master - INFO - Received URLs from crawler 3. Queue size now: 111, Processed URLs: 11
+2025-04-26 03:44:19,166 - Master - INFO - Received 1 messages from SQS: ['https://stackoverflow.co/']
+2025-04-26 03:44:19,366 - Master - INFO - Deleted message from SQS: https://stackoverflow.co/
+2025-04-26 03:44:19,374 - Master - INFO - Assigned URL https://stackoverflow.co/ to crawler 3.
+2025-04-26 03:44:19,572 - Master - INFO - SQS queue size: 106
+2025-04-26 03:44:19,673 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:44:19,673 - Master - INFO - SQS queue size: 106
+2025-04-26 03:44:19,923 - Master - INFO - Sent message to SQS: deb5c62b-9548-49c1-82be-26228cc1775a, content: https://www.apple.com/
+2025-04-26 03:44:20,068 - Master - INFO - Sent message to SQS: d2fb79bb-47a4-4348-9294-555cc2b29468, content: https://www.apple.com/us/shop/goto/store
+2025-04-26 03:44:20,224 - Master - INFO - Sent message to SQS: 386d6d5b-bad1-4bd3-9890-05a85c2c29ad, content: https://www.apple.com/mac/
+2025-04-26 03:44:20,418 - Master - INFO - Sent message to SQS: 28d80ab2-d01b-46e0-9f5f-66677f7f7829, content: https://www.apple.com/ipad/
+2025-04-26 03:44:20,581 - Master - INFO - Sent message to SQS: acaafaab-3284-4fa2-85d6-98e6e9d34bea, content: https://www.apple.com/iphone/
+2025-04-26 03:44:20,727 - Master - INFO - SQS queue size: 91
+2025-04-26 03:44:20,727 - Master - INFO - Received URLs from crawler 2. Queue size now: 91, Processed URLs: 12
+2025-04-26 03:44:20,883 - Master - INFO - Received 1 messages from SQS: ['https://github.com/features/co...']
+2025-04-26 03:44:21,062 - Master - INFO - Deleted message from SQS: https://github.com/features/co...
+2025-04-26 03:44:21,062 - Master - INFO - Assigned URL https://github.com/features/codespaces to crawler 2.
+2025-04-26 03:44:21,346 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:21,447 - Master - INFO - Status from node 4: Indexed https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob with 10 keywords with cloud storage
+2025-04-26 03:44:21,447 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:21,549 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:44:21,549 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:21,651 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:44:21,651 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:21,754 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:44:21,754 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:21,856 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:21,957 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:22,057 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:22,157 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:22,258 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:22,359 - Master - INFO - Status from node 4: Indexed https://dailyboulder.com/ice-can-now-enter-your-home-without-a-warrant-to-find-migrants-doj-memo-says/ with 10 keywords with cloud storage
+2025-04-26 03:44:22,359 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:22,461 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:22,562 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:22,662 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:22,763 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:22,864 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:22,965 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:23,065 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:23,166 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:23,267 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:23,368 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:23,469 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:23,576 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:23,677 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:23,777 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:44:23,777 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:23,880 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:23,981 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:24,081 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:24,182 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:24,282 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:24,383 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:24,484 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:44:24,484 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:24,587 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:24,687 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:24,788 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:24,889 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:24,990 - Master - INFO - Status from node 4: Indexed https://cs.wikipedia.org/wiki/Seznam_mobiln%C3%ADch_aplikac%C3%AD_Wikipedie with 10 keywords with cloud storage
+2025-04-26 03:44:24,990 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:25,094 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 (found 44 URLs, 713839 bytes)
+2025-04-26 03:44:25,095 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:25,197 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:44:25,197 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:25,298 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:25,399 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:25,500 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:25,601 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:25,701 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:25,802 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:25,925 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:26,026 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:26,130 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:26,231 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:26,515 - Master - INFO - Sent message to SQS: bd1ceaa8-0730-47b0-a91f-dda4dfdfdd39, content: https://github.com/features/copilot
+2025-04-26 03:44:26,705 - Master - INFO - Sent message to SQS: cdcd96da-d84f-45d0-abc7-263399d39964, content: https://github.com/security/advanced-security
+2025-04-26 03:44:26,888 - Master - INFO - Sent message to SQS: aa45262a-754b-4ae7-96c6-551bdc1dde65, content: https://github.com/features/actions
+2025-04-26 03:44:27,087 - Master - INFO - Sent message to SQS: d417ae40-6276-47d9-a13a-17f16acb3b13, content: https://github.com/features/codespaces
+2025-04-26 03:44:27,270 - Master - INFO - Sent message to SQS: 452220f5-1d44-4d36-bd19-0008db4b4028, content: https://github.com/features/issues
+2025-04-26 03:44:27,441 - Master - INFO - SQS queue size: 102
+2025-04-26 03:44:27,441 - Master - INFO - Received URLs from crawler 2. Queue size now: 102, Processed URLs: 13
+2025-04-26 03:44:27,590 - Master - INFO - Received 1 messages from SQS: ['https://psfmember.org/civicrm/...']
+2025-04-26 03:44:27,738 - Master - INFO - Deleted message from SQS: https://psfmember.org/civicrm/...
+2025-04-26 03:44:27,738 - Master - INFO - Assigned URL https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 to crawler 2.
+2025-04-26 03:44:27,894 - Master - INFO - SQS queue size: 123
+2025-04-26 03:44:27,995 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:44:27,995 - Master - INFO - SQS queue size: 123
+2025-04-26 03:44:28,097 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-26 03:44:28,098 - Master - INFO - SQS queue size: 123
+2025-04-26 03:44:28,199 - Master - INFO - SQS queue size: 123
+2025-04-26 03:44:28,300 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:44:28,300 - Master - INFO - SQS queue size: 123
+2025-04-26 03:44:28,403 - Master - INFO - Status from node 4: Indexed https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 with 10 keywords with cloud storage
+2025-04-26 03:44:28,403 - Master - INFO - SQS queue size: 123
+2025-04-26 03:44:28,507 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 (found 10 URLs, 154411 bytes)
+2025-04-26 03:44:28,509 - Master - INFO - SQS queue size: 123
+2025-04-26 03:44:28,763 - Master - INFO - Sent message to SQS: d71cd0a6-0cd3-45d6-bb1a-da584c30eae0, content: https://github.com/features/copilot
+2025-04-26 03:44:29,048 - Master - INFO - Sent message to SQS: 2b5e51ad-2af2-42ec-8463-7e57985444ca, content: https://github.com/security/advanced-security
+2025-04-26 03:44:29,772 - Master - INFO - Sent message to SQS: 8288fd27-e874-439b-a673-84781ea5b5e9, content: https://github.com/features/actions
+2025-04-26 03:44:29,921 - Master - INFO - Sent message to SQS: df0f0382-97b1-453f-8332-b7d2a7e337f5, content: https://github.com/features/codespaces
+2025-04-26 03:44:30,060 - Master - INFO - Sent message to SQS: 31364c49-ff52-423c-af19-70b49d881101, content: https://github.com/features/issues
+2025-04-26 03:44:30,249 - Master - INFO - SQS queue size: 126
+2025-04-26 03:44:30,249 - Master - INFO - Received URLs from crawler 1. Queue size now: 126, Processed URLs: 14
+2025-04-26 03:44:30,396 - Master - INFO - Received 1 messages from SQS: ['https://donate.wikimedia.org/?...']
+2025-04-26 03:44:30,545 - Master - INFO - Deleted message from SQS: https://donate.wikimedia.org/?...
+2025-04-26 03:44:30,545 - Master - INFO - Assigned URL https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en to crawler 1.
+2025-04-26 03:44:30,824 - Master - INFO - SQS queue size: 118
+2025-04-26 03:44:30,926 - Master - INFO - Status from node 4: Indexed https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 with 10 keywords with cloud storage
+2025-04-26 03:44:30,926 - Master - INFO - SQS queue size: 118
+2025-04-26 03:44:31,222 - Master - INFO - Sent message to SQS: 32b18e33-4f00-4ec0-a731-cfa075b013e9, content: https://github.com/features/copilot
+2025-04-26 03:44:31,432 - Master - INFO - Sent message to SQS: 7485ad56-78b6-401c-b42b-044a8fe19f26, content: https://github.com/security/advanced-security
+2025-04-26 03:44:31,589 - Master - INFO - Sent message to SQS: 8391478d-480e-4cee-88f6-63bdd00c38a7, content: https://github.com/features/actions
+2025-04-26 03:44:31,752 - Master - INFO - Sent message to SQS: b09bc1a4-3526-4679-8d36-416b7386985a, content: https://github.com/features/codespaces
+2025-04-26 03:44:31,904 - Master - INFO - Sent message to SQS: 8b433d2a-9ce0-43e1-954b-62d6dccc1f67, content: https://github.com/features/issues
+2025-04-26 03:44:32,043 - Master - INFO - SQS queue size: 110
+2025-04-26 03:44:32,043 - Master - INFO - Received URLs from crawler 3. Queue size now: 110, Processed URLs: 15
+2025-04-26 03:44:32,192 - Master - INFO - Received 1 messages from SQS: ['https://www.redditinc.com/poli...']
+2025-04-26 03:44:32,356 - Master - INFO - Deleted message from SQS: https://www.redditinc.com/poli...
+2025-04-26 03:44:32,356 - Master - INFO - Assigned URL https://www.redditinc.com/policies/content-policy to crawler 3.
+2025-04-26 03:44:32,504 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:32,605 - Master - INFO - Status from node 4: Indexed https://github.com/features/actions with 10 keywords with cloud storage
+2025-04-26 03:44:32,605 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:32,708 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:44:32,708 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:32,812 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://github.com/features/codespaces (found 86 URLs, 333250 bytes)
+2025-04-26 03:44:32,814 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:32,915 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://github.com/features/actions (found 76 URLs, 283322 bytes)
+2025-04-26 03:44:32,915 - Master - INFO - SQS queue size: 119
+2025-04-26 03:44:33,215 - Master - INFO - Sent message to SQS: 58ca13b5-3aa4-4f05-9f7d-f3c2d88c3efa, content: https://github.com/features/copilot
+2025-04-26 03:44:33,461 - Master - INFO - Sent message to SQS: 169601b0-8422-4b3c-8d67-0eb4f018d9cc, content: https://github.com/security/advanced-security
+2025-04-26 03:44:33,683 - Master - INFO - Sent message to SQS: 47d3503e-f911-4b3a-b1d1-cd18ba91eb47, content: https://github.com/features/actions
+2025-04-26 03:44:34,753 - Master - INFO - Sent message to SQS: f3a43b6a-0a63-49ea-aba2-7cb873f90309, content: https://github.com/features/codespaces
+2025-04-26 03:44:34,902 - Master - INFO - Sent message to SQS: 12ca8a9c-d23b-4450-bc7a-0f56acc34c8b, content: https://github.com/features/issues
+2025-04-26 03:44:35,057 - Master - INFO - SQS queue size: 127
+2025-04-26 03:44:35,057 - Master - INFO - Received URLs from crawler 2. Queue size now: 127, Processed URLs: 16
+2025-04-26 03:44:35,206 - Master - INFO - Received 1 messages from SQS: ['https://stackoverflow.co/teams...']
+2025-04-26 03:44:35,345 - Master - INFO - Deleted message from SQS: https://stackoverflow.co/teams...
+2025-04-26 03:44:35,345 - Master - INFO - Assigned URL https://stackoverflow.co/teams/resources/ to crawler 2.
+2025-04-26 03:44:35,584 - Master - INFO - SQS queue size: 135
+2025-04-26 03:44:35,700 - Master - INFO - Status from node 4: Indexed https://github.com/features/codespaces with 10 keywords with cloud storage
+2025-04-26 03:44:35,702 - Master - INFO - SQS queue size: 135
+2025-04-26 03:44:35,977 - Master - INFO - Sent message to SQS: b25145d7-d552-4dc6-91e8-b1b4d056f159, content: https://stackoverflow.co/
+2025-04-26 03:44:36,191 - Master - INFO - Sent message to SQS: 83201552-5cf8-4371-94bc-4c5de12f2269, content: https://stackoverflow.co/company/careers/
+2025-04-26 03:44:36,332 - Master - INFO - Sent message to SQS: bf8ba607-c1dd-408b-9d8d-4b333cb5ac3b, content: https://stackoverflow.co/company/press/
+2025-04-26 03:44:36,604 - Master - INFO - Sent message to SQS: 502e4771-882a-49a9-91c8-1d8719648335, content: https://stackoverflow.co/company/leadership/
+2025-04-26 03:44:36,762 - Master - INFO - Sent message to SQS: 82a71fd0-4fc9-401c-8ece-a42f7f3072d1, content: https://stackoverflow.co/company/social-impact/
+2025-04-26 03:44:37,467 - Master - INFO - SQS queue size: 130
+2025-04-26 03:44:37,467 - Master - INFO - Received URLs from crawler 3. Queue size now: 130, Processed URLs: 17
+2025-04-26 03:44:37,616 - Master - INFO - Received 1 messages from SQS: ['https://docs.python.org']
+2025-04-26 03:44:37,763 - Master - INFO - Deleted message from SQS: https://docs.python.org
+2025-04-26 03:44:37,763 - Master - INFO - Assigned URL https://docs.python.org to crawler 3.
+2025-04-26 03:44:37,935 - Master - INFO - SQS queue size: 143
+2025-04-26 03:44:38,041 - Master - INFO - Status from node 4: Indexed https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en with 10 keywords with cloud storage
+2025-04-26 03:44:38,041 - Master - INFO - SQS queue size: 143
+2025-04-26 03:44:38,144 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:44:38,147 - Master - INFO - SQS queue size: 143
+2025-04-26 03:44:38,248 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://stackoverflow.co/ (found 85 URLs, 274354 bytes)
+2025-04-26 03:44:38,248 - Master - INFO - SQS queue size: 143
+2025-04-26 03:44:38,350 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:44:38,360 - Master - INFO - SQS queue size: 143
+2025-04-26 03:44:38,464 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://github.com/features/codespaces (found 86 URLs, 333250 bytes)
+2025-04-26 03:44:38,467 - Master - INFO - SQS queue size: 143
+2025-04-26 03:44:38,570 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-26 03:44:38,570 - Master - INFO - SQS queue size: 143
+2025-04-26 03:44:38,672 - Master - WARNING - Heartbeat timeout for crawler 1. Marking as failed.
+2025-04-26 03:44:38,870 - Master - INFO - Sent message to SQS: 310774ef-f540-42c1-b76a-9e12b2f2af3a, content: https://donate.wikimedia.org/?wmf_source=donate&wm...
+2025-04-26 03:44:39,068 - Master - INFO - Sent message to SQS: 3a09abe1-cd18-4311-ba41-a68becdc4d4d, content: https://psfmember.org/
+2025-04-26 03:44:39,207 - Master - INFO - Sent message to SQS: 22e256ce-1f91-45bf-9092-39a29ee42634, content: https://psfmember.org/
+2025-04-26 03:44:39,356 - Master - INFO - Sent message to SQS: 908ab8f8-f4e0-46bd-a2cb-9bf630a0af71, content: https://psfmember.org/wp-login.php?redirect_to=htt...
+2025-04-26 03:44:39,495 - Master - INFO - Sent message to SQS: 17c60ed2-f39b-4349-a927-79c266a9ceeb, content: https://psfmember.org/wp-login.php?action=register...
+2025-04-26 03:44:39,642 - Master - INFO - Sent message to SQS: b2faee15-9308-4363-8833-5f3325a2c8b0, content: http://python.org/psf/
+2025-04-26 03:44:39,788 - Master - INFO - SQS queue size: 135
+2025-04-26 03:44:39,788 - Master - INFO - Received URLs from crawler 2. Queue size now: 135, Processed URLs: 18
+2025-04-26 03:44:39,934 - Master - INFO - Received 1 messages from SQS: ['https://stackoverflow.co/compa...']
+2025-04-26 03:44:40,077 - Master - INFO - Deleted message from SQS: https://stackoverflow.co/compa...
+2025-04-26 03:44:40,077 - Master - INFO - Assigned URL https://stackoverflow.co/company/social-impact/ to crawler 2.
+2025-04-26 03:44:40,215 - Master - INFO - SQS queue size: 148
+2025-04-26 03:44:40,323 - Master - INFO - Status from node 4: Indexed https://stackoverflow.co/ with 10 keywords with cloud storage
+2025-04-26 03:44:40,323 - Master - INFO - SQS queue size: 148
+2025-04-26 03:44:40,561 - Master - INFO - Sent message to SQS: 5174a894-051e-4f0f-a35e-84eb532bb024, content: https://redditinc.com
+2025-04-26 03:44:40,708 - Master - INFO - Sent message to SQS: f98d183c-87c8-43f3-ab3d-cc0655ee86b9, content: https://redditinc.com/press
+2025-04-26 03:44:40,851 - Master - INFO - Sent message to SQS: 7fe0ff4a-e1d3-443f-a30d-c5550c03e909, content: https://redditinc.com/careers
+2025-04-26 03:44:41,112 - Master - INFO - Sent message to SQS: fa625572-0faa-4acd-8ab7-65d9a8f145c5, content: https://redditinc.com/brand
+2025-04-26 03:44:41,300 - Master - INFO - Sent message to SQS: 0452814e-b1f0-45b8-aa9f-db3e1d558d4d, content: https://investor.redditinc.com/?_ga=2.3313267.2789...
+2025-04-26 03:44:41,497 - Master - INFO - SQS queue size: 148
+2025-04-26 03:44:41,497 - Master - INFO - Received URLs from crawler 3. Queue size now: 148, Processed URLs: 19
+2025-04-26 03:44:41,644 - Master - INFO - Received 1 messages from SQS: ['https://github.com/features/co...']
+2025-04-26 03:44:41,791 - Master - INFO - Deleted message from SQS: https://github.com/features/co...
+2025-04-26 03:44:41,791 - Master - INFO - Assigned URL https://github.com/features/copilot to crawler 3.
+2025-04-26 03:44:41,931 - Master - INFO - SQS queue size: 139
+2025-04-26 03:44:42,039 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-26 03:44:42,039 - Master - INFO - SQS queue size: 139
+2025-04-26 03:44:42,142 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://www.redditinc.com/policies/content-policy (found 602 URLs, 188903 bytes)
+2025-04-26 03:44:42,145 - Master - INFO - SQS queue size: 139
+2025-04-26 03:44:42,246 - Master - INFO - SQS queue size: 139
+2025-04-26 03:44:42,246 - Master - INFO - Received URLs from crawler 3. Queue size now: 139, Processed URLs: 20
+2025-04-26 03:44:42,388 - Master - INFO - Received 1 messages from SQS: ['https://www.reddit.com/login/']
+2025-04-26 03:44:42,531 - Master - INFO - Deleted message from SQS: https://www.reddit.com/login/
+2025-04-26 03:44:42,531 - Master - INFO - Assigned URL https://www.reddit.com/login/ to crawler 3.
+2025-04-26 03:44:42,671 - Master - INFO - SQS queue size: 151
+2025-04-26 03:44:42,778 - Master - INFO - Sending shutdown signals to crawler nodes...
+2025-04-26 03:44:42,778 - Master - INFO - Shutdown signal sent to crawler 1
+2025-04-26 03:44:42,778 - Master - INFO - Shutdown signal sent to crawler 2
+2025-04-26 03:44:42,778 - Master - INFO - Shutdown signal sent to crawler 3
+2025-04-26 03:44:42,778 - Master - INFO - Sending shutdown signal to indexer node...
+2025-04-26 03:44:42,778 - Master - INFO - Master node shutting down. Total URLs processed: 20
+2025-04-26 03:44:42,778 - Master - INFO - Crawled: 20, Indexed: 15, Failed: 3

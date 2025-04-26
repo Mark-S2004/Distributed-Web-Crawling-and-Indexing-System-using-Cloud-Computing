@@ -500,3 +500,178 @@
 2025-04-18 23:25:59,151 - Crawler-20012 - INFO - Fetched 642891 bytes from http://news.reddit.com
 2025-04-18 23:25:59,151 - Crawler-20012 - INFO - Parsing content from http://news.reddit.com
 2025-04-18 23:25:59,269 - Crawler-20012 - INFO - Crawler 1 crawled http://news.reddit.com and extracted 72 URLs in 2.97 seconds
+2025-04-26 03:31:27,145 - Crawler-9684 - INFO - Crawler node started with rank 1 of 5
+2025-04-26 03:31:27,167 - Crawler-9684 - INFO - Heartbeat mechanism started
+2025-04-26 03:31:27,176 - Crawler-9684 - INFO - Crawler 1 received URL: https://www.python.org
+2025-04-26 03:31:27,176 - Crawler-9684 - INFO - Fetching content from https://www.python.org
+2025-04-26 03:31:27,936 - Crawler-9684 - INFO - Fetched 51211 bytes from https://www.python.org
+2025-04-26 03:31:27,936 - Crawler-9684 - INFO - Parsing content from https://www.python.org
+2025-04-26 03:31:27,969 - Crawler-9684 - INFO - Crawler 1 crawled https://www.python.org and extracted 71 URLs in 0.79 seconds
+2025-04-26 03:31:30,990 - Crawler-9684 - INFO - Sent content to indexer node for https://www.python.org
+2025-04-26 03:31:30,990 - Crawler-9684 - INFO - Task for https://www.python.org completed in 3.81 seconds
+2025-04-26 03:31:31,091 - Crawler-9684 - INFO - Crawler 1 received URL: https://www.reddit.com
+2025-04-26 03:31:31,091 - Crawler-9684 - INFO - Fetching content from https://www.reddit.com
+2025-04-26 03:31:33,795 - Crawler-9684 - INFO - Fetched 632642 bytes from https://www.reddit.com
+2025-04-26 03:31:33,795 - Crawler-9684 - INFO - Parsing content from https://www.reddit.com
+2025-04-26 03:31:33,885 - Crawler-9684 - INFO - Crawler 1 crawled https://www.reddit.com and extracted 71 URLs in 2.79 seconds
+2025-04-26 03:31:36,794 - Crawler-9684 - INFO - Sent content to indexer node for https://www.reddit.com
+2025-04-26 03:31:36,794 - Crawler-9684 - INFO - Task for https://www.reddit.com completed in 5.70 seconds
+2025-04-26 03:31:36,896 - Crawler-9684 - INFO - Crawler 1 received URL: https://docs.python.org
+2025-04-26 03:31:36,896 - Crawler-9684 - INFO - Fetching content from https://docs.python.org
+2025-04-26 03:31:37,622 - Crawler-9684 - INFO - Fetched 17619 bytes from https://docs.python.org
+2025-04-26 03:31:37,622 - Crawler-9684 - INFO - Parsing content from https://docs.python.org
+2025-04-26 03:31:37,639 - Crawler-9684 - INFO - Crawler 1 crawled https://docs.python.org and extracted 52 URLs in 0.74 seconds
+2025-04-26 03:31:41,871 - Crawler-9684 - INFO - Sent content to indexer node for https://docs.python.org
+2025-04-26 03:31:41,871 - Crawler-9684 - INFO - Task for https://docs.python.org completed in 4.98 seconds
+2025-04-26 03:31:41,973 - Crawler-9684 - INFO - Crawler 1 received URL: https://pypi.org/
+2025-04-26 03:31:41,973 - Crawler-9684 - INFO - Fetching content from https://pypi.org/
+2025-04-26 03:31:42,553 - Crawler-9684 - INFO - Fetched 19818 bytes from https://pypi.org/
+2025-04-26 03:31:42,553 - Crawler-9684 - INFO - Parsing content from https://pypi.org/
+2025-04-26 03:31:42,563 - Crawler-9684 - INFO - Crawler 1 crawled https://pypi.org/ and extracted 26 URLs in 0.59 seconds
+2025-04-26 03:31:44,151 - Crawler-9684 - INFO - Sent content to indexer node for https://pypi.org/
+2025-04-26 03:31:44,151 - Crawler-9684 - INFO - Task for https://pypi.org/ completed in 2.18 seconds
+2025-04-26 03:31:44,252 - Crawler-9684 - INFO - Crawler 1 received URL: https://www.linkedin.com/company/python-software-foundation/
+2025-04-26 03:31:44,252 - Crawler-9684 - INFO - Fetching content from https://www.linkedin.com/company/python-software-foundation/
+2025-04-26 03:31:45,165 - Crawler-9684 - INFO - Fetched 1530 bytes from https://www.linkedin.com/company/python-software-foundation/
+2025-04-26 03:31:45,165 - Crawler-9684 - INFO - Parsing content from https://www.linkedin.com/company/python-software-foundation/
+2025-04-26 03:31:45,165 - Crawler-9684 - INFO - No real URLs found, created 2 simulated URLs
+2025-04-26 03:31:45,165 - Crawler-9684 - INFO - Crawler 1 crawled https://www.linkedin.com/company/python-software-foundation/ and extracted 2 URLs in 0.91 seconds
+2025-04-26 03:31:45,173 - Crawler-9684 - INFO - Sent content to indexer node for https://www.linkedin.com/company/python-software-foundation/
+2025-04-26 03:31:45,174 - Crawler-9684 - INFO - Task for https://www.linkedin.com/company/python-software-foundation/ completed in 0.92 seconds
+2025-04-26 03:31:45,275 - Crawler-9684 - INFO - Crawler 1 received URL: https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter
+2025-04-26 03:31:45,275 - Crawler-9684 - INFO - Fetching content from https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter
+2025-04-26 03:31:46,684 - Crawler-9684 - INFO - Fetched 69873 bytes from https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter
+2025-04-26 03:31:46,684 - Crawler-9684 - INFO - Parsing content from https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter
+2025-04-26 03:31:46,709 - Crawler-9684 - INFO - Crawler 1 crawled https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter and extracted 18 URLs in 1.43 seconds
+2025-04-26 03:31:52,327 - Crawler-9684 - INFO - Sent content to indexer node for https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter
+2025-04-26 03:31:52,327 - Crawler-9684 - INFO - Task for https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter completed in 7.05 seconds
+2025-04-26 03:31:52,428 - Crawler-9684 - INFO - Crawler 1 received URL: https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-26 03:31:52,428 - Crawler-9684 - INFO - Fetching content from https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-26 03:31:54,926 - Crawler-9684 - INFO - Fetched 713839 bytes from https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-26 03:31:54,926 - Crawler-9684 - INFO - Parsing content from https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-26 03:31:54,983 - Crawler-9684 - INFO - Crawler 1 crawled https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 and extracted 44 URLs in 2.55 seconds
+2025-04-26 03:32:06,296 - Crawler-9684 - INFO - Sent content to indexer node for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-26 03:32:06,296 - Crawler-9684 - INFO - Task for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 completed in 13.87 seconds
+2025-04-26 03:32:06,397 - Crawler-9684 - INFO - Crawler 1 received URL: https://github.com/security/advanced-security
+2025-04-26 03:32:06,397 - Crawler-9684 - INFO - Fetching content from https://github.com/security/advanced-security
+2025-04-26 03:32:07,414 - Crawler-9684 - INFO - Fetched 262212 bytes from https://github.com/security/advanced-security
+2025-04-26 03:32:07,414 - Crawler-9684 - INFO - Parsing content from https://github.com/security/advanced-security
+2025-04-26 03:32:07,464 - Crawler-9684 - INFO - Crawler 1 crawled https://github.com/security/advanced-security and extracted 76 URLs in 1.07 seconds
+2025-04-26 03:32:16,195 - Crawler-9684 - INFO - Sent content to indexer node for https://github.com/security/advanced-security
+2025-04-26 03:32:16,195 - Crawler-9684 - WARNING - Simulating a brief node failure (testing fault tolerance)
+2025-04-26 03:32:28,196 - Crawler-9684 - INFO - Task for https://github.com/security/advanced-security completed in 21.80 seconds
+2025-04-26 03:32:28,297 - Crawler-9684 - INFO - Crawler 1 received URL: https://github.com/features/issues
+2025-04-26 03:32:28,297 - Crawler-9684 - INFO - Fetching content from https://github.com/features/issues
+2025-04-26 03:32:29,200 - Crawler-9684 - INFO - Fetched 340478 bytes from https://github.com/features/issues
+2025-04-26 03:32:29,200 - Crawler-9684 - INFO - Parsing content from https://github.com/features/issues
+2025-04-26 03:32:29,280 - Crawler-9684 - INFO - Crawler 1 crawled https://github.com/features/issues and extracted 76 URLs in 0.98 seconds
+2025-04-26 03:38:18,977 - Crawler-20204 - INFO - Crawler node started with rank 1 of 5
+2025-04-26 03:38:18,977 - Crawler-20204 - INFO - Heartbeat mechanism started
+2025-04-26 03:38:22,321 - Crawler-20204 - INFO - Crawler 1 received URL: https://www.python.org
+2025-04-26 03:38:22,321 - Crawler-20204 - INFO - Fetching content from https://www.python.org
+2025-04-26 03:38:22,857 - Crawler-20204 - INFO - Fetched 51211 bytes from https://www.python.org
+2025-04-26 03:38:22,857 - Crawler-20204 - INFO - Parsing content from https://www.python.org
+2025-04-26 03:38:22,889 - Crawler-20204 - INFO - Crawler 1 crawled https://www.python.org and extracted 71 URLs in 0.57 seconds
+2025-04-26 03:38:23,146 - Crawler-20204 - INFO - Sent content to indexer node for https://www.python.org
+2025-04-26 03:38:23,146 - Crawler-20204 - INFO - Task for https://www.python.org completed in 0.82 seconds
+2025-04-26 03:38:24,869 - Crawler-20204 - INFO - Crawler 1 received URL: https://www.wikipedia.org
+2025-04-26 03:38:24,869 - Crawler-20204 - INFO - Fetching content from https://www.wikipedia.org
+2025-04-26 03:38:25,403 - Crawler-20204 - INFO - Fetched 90836 bytes from https://www.wikipedia.org
+2025-04-26 03:38:25,403 - Crawler-20204 - INFO - Parsing content from https://www.wikipedia.org
+2025-04-26 03:38:25,452 - Crawler-20204 - INFO - Crawler 1 crawled https://www.wikipedia.org and extracted 8 URLs in 0.58 seconds
+2025-04-26 03:38:32,123 - Crawler-20204 - INFO - Sent content to indexer node for https://www.wikipedia.org
+2025-04-26 03:38:32,125 - Crawler-20204 - INFO - Task for https://www.wikipedia.org completed in 7.26 seconds
+2025-04-26 03:38:32,225 - Crawler-20204 - INFO - Crawler 1 received URL: https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-26 03:38:32,225 - Crawler-20204 - INFO - Fetching content from https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-26 03:38:32,856 - Crawler-20204 - INFO - Fetched 136534 bytes from https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-26 03:38:32,856 - Crawler-20204 - INFO - Parsing content from https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-26 03:38:32,939 - Crawler-20204 - INFO - Crawler 1 crawled https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications and extracted 94 URLs in 0.71 seconds
+2025-04-26 03:38:38,468 - Crawler-20204 - INFO - Sent content to indexer node for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-26 03:38:38,468 - Crawler-20204 - INFO - Task for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications completed in 6.24 seconds
+2025-04-26 03:38:38,570 - Crawler-20204 - INFO - Crawler 1 received URL: https://github.com/security/advanced-security
+2025-04-26 03:38:38,570 - Crawler-20204 - INFO - Fetching content from https://github.com/security/advanced-security
+2025-04-26 03:38:39,530 - Crawler-20204 - INFO - Fetched 262179 bytes from https://github.com/security/advanced-security
+2025-04-26 03:38:39,530 - Crawler-20204 - INFO - Parsing content from https://github.com/security/advanced-security
+2025-04-26 03:38:39,581 - Crawler-20204 - INFO - Crawler 1 crawled https://github.com/security/advanced-security and extracted 76 URLs in 1.01 seconds
+2025-04-26 03:38:46,166 - Crawler-20204 - INFO - Sent content to indexer node for https://github.com/security/advanced-security
+2025-04-26 03:38:46,166 - Crawler-20204 - INFO - Task for https://github.com/security/advanced-security completed in 7.60 seconds
+2025-04-26 03:38:46,267 - Crawler-20204 - INFO - Crawler 1 received URL: https://stackoverflow.co/
+2025-04-26 03:38:46,267 - Crawler-20204 - INFO - Fetching content from https://stackoverflow.co/
+2025-04-26 03:38:46,880 - Crawler-20204 - INFO - Fetched 274354 bytes from https://stackoverflow.co/
+2025-04-26 03:38:46,880 - Crawler-20204 - INFO - Parsing content from https://stackoverflow.co/
+2025-04-26 03:38:46,902 - Crawler-20204 - INFO - Crawler 1 crawled https://stackoverflow.co/ and extracted 85 URLs in 0.63 seconds
+2025-04-26 03:38:53,902 - Crawler-20204 - INFO - Sent content to indexer node for https://stackoverflow.co/
+2025-04-26 03:38:53,902 - Crawler-20204 - INFO - Task for https://stackoverflow.co/ completed in 7.63 seconds
+2025-04-26 03:38:54,003 - Crawler-20204 - INFO - Crawler 1 received URL: https://stackoverflow.com
+2025-04-26 03:38:54,003 - Crawler-20204 - INFO - Fetching content from https://stackoverflow.com
+2025-04-26 03:38:55,007 - Crawler-20204 - INFO - Fetched 359840 bytes from https://stackoverflow.com
+2025-04-26 03:38:55,007 - Crawler-20204 - INFO - Parsing content from https://stackoverflow.com
+2025-04-26 03:38:55,137 - Crawler-20204 - INFO - Crawler 1 crawled https://stackoverflow.com and extracted 88 URLs in 1.13 seconds
+2025-04-26 03:39:01,714 - Crawler-20204 - INFO - Sent content to indexer node for https://stackoverflow.com
+2025-04-26 03:39:01,714 - Crawler-20204 - INFO - Task for https://stackoverflow.com completed in 7.71 seconds
+2025-04-26 03:39:01,815 - Crawler-20204 - INFO - Crawler 1 received URL: https://www.python.org/psf/
+2025-04-26 03:39:01,815 - Crawler-20204 - INFO - Fetching content from https://www.python.org/psf/
+2025-04-26 03:39:02,796 - Crawler-20204 - INFO - Fetched 52262 bytes from https://www.python.org/psf/
+2025-04-26 03:39:02,804 - Crawler-20204 - INFO - Parsing content from https://www.python.org/psf/
+2025-04-26 03:39:02,837 - Crawler-20204 - INFO - Crawler 1 crawled https://www.python.org/psf/ and extracted 56 URLs in 1.02 seconds
+2025-04-26 03:39:13,290 - Crawler-20204 - INFO - Sent content to indexer node for https://www.python.org/psf/
+2025-04-26 03:39:13,290 - Crawler-20204 - INFO - Task for https://www.python.org/psf/ completed in 11.48 seconds
+2025-04-26 03:39:13,391 - Crawler-20204 - INFO - Crawler 1 received URL: https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter
+2025-04-26 03:39:13,392 - Crawler-20204 - INFO - Fetching content from https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter
+2025-04-26 03:39:14,398 - Crawler-20204 - INFO - Fetched 69873 bytes from https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter
+2025-04-26 03:39:14,398 - Crawler-20204 - INFO - Parsing content from https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter
+2025-04-26 03:39:14,436 - Crawler-20204 - INFO - Crawler 1 crawled https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter and extracted 18 URLs in 1.04 seconds
+2025-04-26 03:39:16,524 - Crawler-20204 - INFO - Sent content to indexer node for https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter
+2025-04-26 03:39:16,524 - Crawler-20204 - INFO - Task for https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter completed in 3.13 seconds
+2025-04-26 03:39:16,624 - Crawler-20204 - INFO - Crawler 1 received shutdown signal. Exiting.
+2025-04-26 03:39:16,709 - Crawler-20204 - INFO - Crawler 1 shutting down. Final statistics:
+2025-04-26 03:39:16,709 - Crawler-20204 - INFO -   - Total runtime: 57.73 seconds
+2025-04-26 03:39:16,709 - Crawler-20204 - INFO -   - URLs processed: 8
+2025-04-26 03:39:16,709 - Crawler-20204 - INFO -   - URLs extracted: 496
+2025-04-26 03:39:16,709 - Crawler-20204 - INFO -   - Errors encountered: 0
+2025-04-26 03:39:16,709 - Crawler-20204 - INFO - Crawler 1 exiting
+2025-04-26 03:43:30,554 - Crawler-17136 - INFO - Crawler node started with rank 1 of 5
+2025-04-26 03:43:30,561 - Crawler-17136 - INFO - Heartbeat mechanism started
+2025-04-26 03:43:34,091 - Crawler-17136 - INFO - Crawler 1 received URL: https://stackoverflow.co/teams/?utm_medium=referral&utm_source=stackoverflow-community&utm_campaign=top-nav&utm_content=stack-overflow-for-teams
+2025-04-26 03:43:34,092 - Crawler-17136 - INFO - Fetching content from https://stackoverflow.co/teams/?utm_medium=referral&utm_source=stackoverflow-community&utm_campaign=top-nav&utm_content=stack-overflow-for-teams
+2025-04-26 03:43:34,747 - Crawler-17136 - INFO - Fetched 288497 bytes from https://stackoverflow.co/teams/?utm_medium=referral&utm_source=stackoverflow-community&utm_campaign=top-nav&utm_content=stack-overflow-for-teams
+2025-04-26 03:43:34,747 - Crawler-17136 - INFO - Parsing content from https://stackoverflow.co/teams/?utm_medium=referral&utm_source=stackoverflow-community&utm_campaign=top-nav&utm_content=stack-overflow-for-teams
+2025-04-26 03:43:34,788 - Crawler-17136 - INFO - Crawler 1 crawled https://stackoverflow.co/teams/?utm_medium=referral&utm_source=stackoverflow-community&utm_campaign=top-nav&utm_content=stack-overflow-for-teams and extracted 72 URLs in 0.70 seconds
+2025-04-26 03:43:56,623 - Crawler-17136 - INFO - Sent content to indexer node for https://stackoverflow.co/teams/?utm_medium=referral&utm_source=stackoverflow-community&utm_campaign=top-nav&utm_content=stack-overflow-for-teams
+2025-04-26 03:43:56,624 - Crawler-17136 - INFO - Task for https://stackoverflow.co/teams/?utm_medium=referral&utm_source=stackoverflow-community&utm_campaign=top-nav&utm_content=stack-overflow-for-teams completed in 22.53 seconds
+2025-04-26 03:43:56,724 - Crawler-17136 - INFO - Crawler 1 received URL: https://pypi.org/
+2025-04-26 03:43:56,724 - Crawler-17136 - INFO - Fetching content from https://pypi.org/
+2025-04-26 03:43:57,868 - Crawler-17136 - INFO - Fetched 19818 bytes from https://pypi.org/
+2025-04-26 03:43:57,868 - Crawler-17136 - INFO - Parsing content from https://pypi.org/
+2025-04-26 03:43:57,892 - Crawler-17136 - INFO - Crawler 1 crawled https://pypi.org/ and extracted 26 URLs in 1.17 seconds
+2025-04-26 03:44:04,382 - Crawler-17136 - INFO - Sent content to indexer node for https://pypi.org/
+2025-04-26 03:44:04,382 - Crawler-17136 - INFO - Task for https://pypi.org/ completed in 7.66 seconds
+2025-04-26 03:44:04,484 - Crawler-17136 - INFO - Crawler 1 received URL: https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-26 03:44:04,484 - Crawler-17136 - INFO - Fetching content from https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-26 03:44:05,519 - Crawler-17136 - INFO - Fetched 1166108 bytes from https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-26 03:44:05,519 - Crawler-17136 - INFO - Parsing content from https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-26 03:44:05,575 - Crawler-17136 - INFO - Crawler 1 crawled https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob and extracted 17 URLs in 1.09 seconds
+2025-04-26 03:44:15,707 - Crawler-17136 - INFO - Sent content to indexer node for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-26 03:44:15,707 - Crawler-17136 - WARNING - Simulating a brief node failure (testing fault tolerance)
+2025-04-26 03:44:27,709 - Crawler-17136 - INFO - Task for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob completed in 23.22 seconds
+2025-04-26 03:44:27,809 - Crawler-17136 - INFO - Crawler 1 received URL: https://github.com/features/actions
+2025-04-26 03:44:27,809 - Crawler-17136 - INFO - Fetching content from https://github.com/features/actions
+2025-04-26 03:44:28,461 - Crawler-17136 - INFO - Fetched 283323 bytes from https://github.com/features/actions
+2025-04-26 03:44:28,461 - Crawler-17136 - INFO - Parsing content from https://github.com/features/actions
+2025-04-26 03:44:28,525 - Crawler-17136 - INFO - Crawler 1 crawled https://github.com/features/actions and extracted 76 URLs in 0.72 seconds
+2025-04-26 03:44:32,375 - Crawler-17136 - INFO - Sent content to indexer node for https://github.com/features/actions
+2025-04-26 03:44:32,375 - Crawler-17136 - INFO - Task for https://github.com/features/actions completed in 4.57 seconds
+2025-04-26 03:44:32,476 - Crawler-17136 - INFO - Crawler 1 received URL: https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en
+2025-04-26 03:44:32,476 - Crawler-17136 - INFO - Fetching content from https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en
+2025-04-26 03:44:33,741 - Crawler-17136 - INFO - Fetched 69942 bytes from https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en
+2025-04-26 03:44:33,741 - Crawler-17136 - INFO - Parsing content from https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en
+2025-04-26 03:44:33,765 - Crawler-17136 - INFO - Crawler 1 crawled https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en and extracted 18 URLs in 1.29 seconds
+2025-04-26 03:44:34,971 - Crawler-17136 - INFO - Sent content to indexer node for https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en
+2025-04-26 03:44:34,971 - Crawler-17136 - INFO - Task for https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en completed in 2.50 seconds
+2025-04-26 03:44:42,778 - Crawler-17136 - INFO - Crawler 1 received shutdown signal. Exiting.
+2025-04-26 03:44:43,243 - Crawler-17136 - INFO - Crawler 1 shutting down. Final statistics:
+2025-04-26 03:44:43,243 - Crawler-17136 - INFO -   - Total runtime: 72.69 seconds
+2025-04-26 03:44:43,243 - Crawler-17136 - INFO -   - URLs processed: 5
+2025-04-26 03:44:43,243 - Crawler-17136 - INFO -   - URLs extracted: 209
+2025-04-26 03:44:43,243 - Crawler-17136 - INFO -   - Errors encountered: 0
+2025-04-26 03:44:43,243 - Crawler-17136 - INFO - Crawler 1 exiting

@@ -441,3 +441,200 @@
 2025-04-18 23:26:07,082 - Crawler-23004 - INFO - Fetched 342719 bytes from https://github.com/features/issues
 2025-04-18 23:26:07,082 - Crawler-23004 - INFO - Parsing content from https://github.com/features/issues
 2025-04-18 23:26:07,145 - Crawler-23004 - INFO - Crawler 3 crawled https://github.com/features/issues and extracted 76 URLs in 0.83 seconds
+2025-04-26 03:31:27,198 - Crawler-6480 - INFO - Crawler node started with rank 3 of 5
+2025-04-26 03:31:27,200 - Crawler-6480 - INFO - Heartbeat mechanism started
+2025-04-26 03:31:27,203 - Crawler-6480 - INFO - Crawler 3 received URL: https://www.wikipedia.org
+2025-04-26 03:31:27,203 - Crawler-6480 - INFO - Fetching content from https://www.wikipedia.org
+2025-04-26 03:31:27,994 - Crawler-6480 - INFO - Fetched 90836 bytes from https://www.wikipedia.org
+2025-04-26 03:31:27,994 - Crawler-6480 - INFO - Parsing content from https://www.wikipedia.org
+2025-04-26 03:31:28,042 - Crawler-6480 - INFO - Crawler 3 crawled https://www.wikipedia.org and extracted 8 URLs in 0.83 seconds
+2025-04-26 03:31:36,690 - Crawler-6480 - INFO - Sent content to indexer node for https://www.wikipedia.org
+2025-04-26 03:31:36,690 - Crawler-6480 - INFO - Task for https://www.wikipedia.org completed in 9.49 seconds
+2025-04-26 03:31:36,794 - Crawler-6480 - INFO - Crawler 3 received URL: https://www.stackoverflow.com
+2025-04-26 03:31:36,794 - Crawler-6480 - INFO - Fetching content from https://www.stackoverflow.com
+2025-04-26 03:31:38,702 - Crawler-6480 - INFO - Fetched 359962 bytes from https://www.stackoverflow.com
+2025-04-26 03:31:38,702 - Crawler-6480 - INFO - Parsing content from https://www.stackoverflow.com
+2025-04-26 03:31:38,803 - Crawler-6480 - INFO - Crawler 3 crawled https://www.stackoverflow.com and extracted 88 URLs in 2.01 seconds
+2025-04-26 03:31:44,151 - Crawler-6480 - INFO - Sent content to indexer node for https://www.stackoverflow.com
+2025-04-26 03:31:44,151 - Crawler-6480 - INFO - Task for https://www.stackoverflow.com completed in 7.36 seconds
+2025-04-26 03:31:44,253 - Crawler-6480 - INFO - Crawler 3 received URL: https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-26 03:31:44,254 - Crawler-6480 - INFO - Fetching content from https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-26 03:31:46,166 - Crawler-6480 - INFO - Fetched 154412 bytes from https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-26 03:31:46,166 - Crawler-6480 - INFO - Parsing content from https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-26 03:31:46,191 - Crawler-6480 - INFO - Crawler 3 crawled https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 and extracted 10 URLs in 1.94 seconds
+2025-04-26 03:31:56,452 - Crawler-6480 - INFO - Sent content to indexer node for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-26 03:31:56,452 - Crawler-6480 - INFO - Task for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 completed in 12.20 seconds
+2025-04-26 03:31:56,554 - Crawler-6480 - INFO - Crawler 3 received URL: https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-26 03:31:56,554 - Crawler-6480 - INFO - Fetching content from https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-26 03:31:57,140 - Crawler-6480 - INFO - Fetched 136534 bytes from https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-26 03:31:57,140 - Crawler-6480 - INFO - Parsing content from https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-26 03:31:57,205 - Crawler-6480 - INFO - Crawler 3 crawled https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications and extracted 94 URLs in 0.65 seconds
+2025-04-26 03:32:09,845 - Crawler-6480 - INFO - Sent content to indexer node for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications
+2025-04-26 03:32:09,845 - Crawler-6480 - INFO - Task for https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications completed in 13.29 seconds
+2025-04-26 03:32:09,946 - Crawler-6480 - INFO - Crawler 3 received URL: https://github.com/features/actions
+2025-04-26 03:32:09,946 - Crawler-6480 - INFO - Fetching content from https://github.com/features/actions
+2025-04-26 03:32:10,927 - Crawler-6480 - INFO - Fetched 283323 bytes from https://github.com/features/actions
+2025-04-26 03:32:10,927 - Crawler-6480 - INFO - Parsing content from https://github.com/features/actions
+2025-04-26 03:32:11,002 - Crawler-6480 - INFO - Crawler 3 crawled https://github.com/features/actions and extracted 76 URLs in 1.06 seconds
+2025-04-26 03:32:18,547 - Crawler-6480 - INFO - Sent content to indexer node for https://github.com/features/actions
+2025-04-26 03:32:18,547 - Crawler-6480 - INFO - Task for https://github.com/features/actions completed in 8.60 seconds
+2025-04-26 03:32:18,650 - Crawler-6480 - INFO - Crawler 3 received URL: https://www.reddit.com/login/
+2025-04-26 03:32:18,650 - Crawler-6480 - INFO - Fetching content from https://www.reddit.com/login/
+2025-04-26 03:32:20,044 - Crawler-6480 - INFO - Fetched 352431 bytes from https://www.reddit.com/login/
+2025-04-26 03:32:20,044 - Crawler-6480 - INFO - Parsing content from https://www.reddit.com/login/
+2025-04-26 03:32:20,046 - Crawler-6480 - INFO - No real URLs found, created 2 simulated URLs
+2025-04-26 03:32:20,046 - Crawler-6480 - INFO - Crawler 3 crawled https://www.reddit.com/login/ and extracted 2 URLs in 1.40 seconds
+2025-04-26 03:32:22,898 - Crawler-6480 - INFO - Sent content to indexer node for https://www.reddit.com/login/
+2025-04-26 03:32:22,898 - Crawler-6480 - INFO - Task for https://www.reddit.com/login/ completed in 4.25 seconds
+2025-04-26 03:32:23,000 - Crawler-6480 - INFO - Crawler 3 received URL: https://www.reddit.com/r/HollowKnight/comments/1k7oewp/rhollowknight_giveaway_discussion_celebration/
+2025-04-26 03:32:23,000 - Crawler-6480 - INFO - Fetching content from https://www.reddit.com/r/HollowKnight/comments/1k7oewp/rhollowknight_giveaway_discussion_celebration/
+2025-04-26 03:32:24,695 - Crawler-6480 - INFO - Fetched 525339 bytes from https://www.reddit.com/r/HollowKnight/comments/1k7oewp/rhollowknight_giveaway_discussion_celebration/
+2025-04-26 03:32:24,695 - Crawler-6480 - INFO - Parsing content from https://www.reddit.com/r/HollowKnight/comments/1k7oewp/rhollowknight_giveaway_discussion_celebration/
+2025-04-26 03:32:24,752 - Crawler-6480 - INFO - Crawler 3 crawled https://www.reddit.com/r/HollowKnight/comments/1k7oewp/rhollowknight_giveaway_discussion_celebration/ and extracted 72 URLs in 1.75 seconds
+2025-04-26 03:38:18,866 - Crawler-9424 - INFO - Crawler node started with rank 3 of 5
+2025-04-26 03:38:18,870 - Crawler-9424 - INFO - Heartbeat mechanism started
+2025-04-26 03:38:22,885 - Crawler-9424 - INFO - Crawler 3 received URL: https://www.github.com
+2025-04-26 03:38:22,885 - Crawler-9424 - INFO - Fetching content from https://www.github.com
+2025-04-26 03:38:24,070 - Crawler-9424 - INFO - Fetched 282238 bytes from https://www.github.com
+2025-04-26 03:38:24,070 - Crawler-9424 - INFO - Parsing content from https://www.github.com
+2025-04-26 03:38:24,149 - Crawler-9424 - INFO - Crawler 3 crawled https://www.github.com and extracted 68 URLs in 1.26 seconds
+2025-04-26 03:38:33,681 - Crawler-9424 - INFO - Sent content to indexer node for https://www.github.com
+2025-04-26 03:38:33,681 - Crawler-9424 - INFO - Task for https://www.github.com completed in 10.80 seconds
+2025-04-26 03:38:33,785 - Crawler-9424 - INFO - Crawler 3 received URL: https://www.linkedin.com/company/python-software-foundation/
+2025-04-26 03:38:33,785 - Crawler-9424 - INFO - Fetching content from https://www.linkedin.com/company/python-software-foundation/
+2025-04-26 03:38:34,435 - Crawler-9424 - INFO - Fetched 1530 bytes from https://www.linkedin.com/company/python-software-foundation/
+2025-04-26 03:38:34,435 - Crawler-9424 - INFO - Parsing content from https://www.linkedin.com/company/python-software-foundation/
+2025-04-26 03:38:34,435 - Crawler-9424 - INFO - No real URLs found, created 2 simulated URLs
+2025-04-26 03:38:34,435 - Crawler-9424 - INFO - Crawler 3 crawled https://www.linkedin.com/company/python-software-foundation/ and extracted 2 URLs in 0.65 seconds
+2025-04-26 03:38:34,435 - Crawler-9424 - INFO - Sent content to indexer node for https://www.linkedin.com/company/python-software-foundation/
+2025-04-26 03:38:34,435 - Crawler-9424 - INFO - Task for https://www.linkedin.com/company/python-software-foundation/ completed in 0.65 seconds
+2025-04-26 03:38:35,488 - Crawler-9424 - INFO - Crawler 3 received URL: https://stackoverflow.co/teams/ai/?utm_medium=referral&utm_source=stackoverflow-community&utm_campaign=top-nav-bar&utm_content=overflowai
+2025-04-26 03:38:35,488 - Crawler-9424 - INFO - Fetching content from https://stackoverflow.co/teams/ai/?utm_medium=referral&utm_source=stackoverflow-community&utm_campaign=top-nav-bar&utm_content=overflowai
+2025-04-26 03:38:36,246 - Crawler-9424 - INFO - Fetched 303232 bytes from https://stackoverflow.co/teams/ai/?utm_medium=referral&utm_source=stackoverflow-community&utm_campaign=top-nav-bar&utm_content=overflowai
+2025-04-26 03:38:36,246 - Crawler-9424 - INFO - Parsing content from https://stackoverflow.co/teams/ai/?utm_medium=referral&utm_source=stackoverflow-community&utm_campaign=top-nav-bar&utm_content=overflowai
+2025-04-26 03:38:36,286 - Crawler-9424 - INFO - Crawler 3 crawled https://stackoverflow.co/teams/ai/?utm_medium=referral&utm_source=stackoverflow-community&utm_campaign=top-nav-bar&utm_content=overflowai and extracted 78 URLs in 0.80 seconds
+2025-04-26 03:38:43,561 - Crawler-9424 - INFO - Sent content to indexer node for https://stackoverflow.co/teams/ai/?utm_medium=referral&utm_source=stackoverflow-community&utm_campaign=top-nav-bar&utm_content=overflowai
+2025-04-26 03:38:43,561 - Crawler-9424 - INFO - Task for https://stackoverflow.co/teams/ai/?utm_medium=referral&utm_source=stackoverflow-community&utm_campaign=top-nav-bar&utm_content=overflowai completed in 8.07 seconds
+2025-04-26 03:38:43,663 - Crawler-9424 - INFO - Crawler 3 received URL: https://www.reddit.com
+2025-04-26 03:38:43,663 - Crawler-9424 - INFO - Fetching content from https://www.reddit.com
+2025-04-26 03:38:46,108 - Crawler-9424 - INFO - Fetched 633098 bytes from https://www.reddit.com
+2025-04-26 03:38:46,109 - Crawler-9424 - INFO - Parsing content from https://www.reddit.com
+2025-04-26 03:38:46,213 - Crawler-9424 - INFO - Crawler 3 crawled https://www.reddit.com and extracted 70 URLs in 2.55 seconds
+2025-04-26 03:38:50,778 - Crawler-9424 - INFO - Sent content to indexer node for https://www.reddit.com
+2025-04-26 03:38:50,778 - Crawler-9424 - INFO - Task for https://www.reddit.com completed in 7.11 seconds
+2025-04-26 03:38:50,879 - Crawler-9424 - INFO - Crawler 3 received URL: https://stackoverflow.co/advertising/?utm_medium=referral&utm_source=stackoverflow-community&utm_campaign=top-nav&utm_content=stack-overflow-advertising
+2025-04-26 03:38:50,879 - Crawler-9424 - INFO - Fetching content from https://stackoverflow.co/advertising/?utm_medium=referral&utm_source=stackoverflow-community&utm_campaign=top-nav&utm_content=stack-overflow-advertising
+2025-04-26 03:38:51,546 - Crawler-9424 - INFO - Fetched 257759 bytes from https://stackoverflow.co/advertising/?utm_medium=referral&utm_source=stackoverflow-community&utm_campaign=top-nav&utm_content=stack-overflow-advertising
+2025-04-26 03:38:51,546 - Crawler-9424 - INFO - Parsing content from https://stackoverflow.co/advertising/?utm_medium=referral&utm_source=stackoverflow-community&utm_campaign=top-nav&utm_content=stack-overflow-advertising
+2025-04-26 03:38:51,578 - Crawler-9424 - INFO - Crawler 3 crawled https://stackoverflow.co/advertising/?utm_medium=referral&utm_source=stackoverflow-community&utm_campaign=top-nav&utm_content=stack-overflow-advertising and extracted 69 URLs in 0.70 seconds
+2025-04-26 03:38:59,662 - Crawler-9424 - INFO - Sent content to indexer node for https://stackoverflow.co/advertising/?utm_medium=referral&utm_source=stackoverflow-community&utm_campaign=top-nav&utm_content=stack-overflow-advertising
+2025-04-26 03:38:59,662 - Crawler-9424 - INFO - Task for https://stackoverflow.co/advertising/?utm_medium=referral&utm_source=stackoverflow-community&utm_campaign=top-nav&utm_content=stack-overflow-advertising completed in 8.78 seconds
+2025-04-26 03:38:59,763 - Crawler-9424 - INFO - Crawler 3 received URL: https://docs.python.org
+2025-04-26 03:38:59,763 - Crawler-9424 - INFO - Fetching content from https://docs.python.org
+2025-04-26 03:39:00,520 - Crawler-9424 - INFO - Fetched 17619 bytes from https://docs.python.org
+2025-04-26 03:39:00,520 - Crawler-9424 - INFO - Parsing content from https://docs.python.org
+2025-04-26 03:39:00,536 - Crawler-9424 - INFO - Crawler 3 crawled https://docs.python.org and extracted 52 URLs in 0.77 seconds
+2025-04-26 03:39:01,714 - Crawler-9424 - INFO - Sent content to indexer node for https://docs.python.org
+2025-04-26 03:39:01,714 - Crawler-9424 - INFO - Task for https://docs.python.org completed in 1.95 seconds
+2025-04-26 03:39:03,272 - Crawler-9424 - INFO - Crawler 3 received URL: https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en
+2025-04-26 03:39:03,272 - Crawler-9424 - INFO - Fetching content from https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en
+2025-04-26 03:39:04,634 - Crawler-9424 - INFO - Fetched 69942 bytes from https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en
+2025-04-26 03:39:04,634 - Crawler-9424 - INFO - Parsing content from https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en
+2025-04-26 03:39:04,668 - Crawler-9424 - INFO - Crawler 3 crawled https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en and extracted 18 URLs in 1.40 seconds
+2025-04-26 03:39:07,987 - Crawler-9424 - INFO - Sent content to indexer node for https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en
+2025-04-26 03:39:07,987 - Crawler-9424 - INFO - Task for https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en completed in 4.71 seconds
+2025-04-26 03:39:08,088 - Crawler-9424 - INFO - Crawler 3 received URL: https://github.com/features/issues
+2025-04-26 03:39:08,088 - Crawler-9424 - INFO - Fetching content from https://github.com/features/issues
+2025-04-26 03:39:09,196 - Crawler-9424 - INFO - Fetched 340470 bytes from https://github.com/features/issues
+2025-04-26 03:39:09,196 - Crawler-9424 - INFO - Parsing content from https://github.com/features/issues
+2025-04-26 03:39:09,286 - Crawler-9424 - INFO - Crawler 3 crawled https://github.com/features/issues and extracted 76 URLs in 1.20 seconds
+2025-04-26 03:39:13,392 - Crawler-9424 - INFO - Sent content to indexer node for https://github.com/features/issues
+2025-04-26 03:39:13,392 - Crawler-9424 - INFO - Task for https://github.com/features/issues completed in 5.30 seconds
+2025-04-26 03:39:13,493 - Crawler-9424 - INFO - Crawler 3 received shutdown signal. Exiting.
+2025-04-26 03:39:14,497 - Crawler-9424 - INFO - Crawler 3 shutting down. Final statistics:
+2025-04-26 03:39:14,497 - Crawler-9424 - INFO -   - Total runtime: 55.63 seconds
+2025-04-26 03:39:14,497 - Crawler-9424 - INFO -   - URLs processed: 8
+2025-04-26 03:39:14,497 - Crawler-9424 - INFO -   - URLs extracted: 433
+2025-04-26 03:39:14,497 - Crawler-9424 - INFO -   - Errors encountered: 0
+2025-04-26 03:39:14,497 - Crawler-9424 - INFO - Crawler 3 exiting
+2025-04-26 03:43:30,803 - Crawler-9568 - INFO - Crawler node started with rank 3 of 5
+2025-04-26 03:43:30,803 - Crawler-9568 - INFO - Heartbeat mechanism started
+2025-04-26 03:43:34,707 - Crawler-9568 - INFO - Crawler 3 received URL: https://pypi.org/
+2025-04-26 03:43:34,707 - Crawler-9568 - INFO - Fetching content from https://pypi.org/
+2025-04-26 03:43:35,274 - Crawler-9568 - INFO - Fetched 19818 bytes from https://pypi.org/
+2025-04-26 03:43:35,274 - Crawler-9568 - INFO - Parsing content from https://pypi.org/
+2025-04-26 03:43:35,307 - Crawler-9568 - INFO - Crawler 3 crawled https://pypi.org/ and extracted 26 URLs in 0.60 seconds
+2025-04-26 03:43:56,622 - Crawler-9568 - INFO - Sent content to indexer node for https://pypi.org/
+2025-04-26 03:43:56,622 - Crawler-9568 - INFO - Task for https://pypi.org/ completed in 21.91 seconds
+2025-04-26 03:43:56,723 - Crawler-9568 - INFO - Crawler 3 received URL: https://stackoverflow.co/teams/resources/faq/
+2025-04-26 03:43:56,723 - Crawler-9568 - INFO - Fetching content from https://stackoverflow.co/teams/resources/faq/
+2025-04-26 03:43:58,777 - Crawler-9568 - INFO - Fetched 476087 bytes from https://stackoverflow.co/teams/resources/faq/
+2025-04-26 03:43:58,777 - Crawler-9568 - INFO - Parsing content from https://stackoverflow.co/teams/resources/faq/
+2025-04-26 03:43:58,826 - Crawler-9568 - INFO - Crawler 3 crawled https://stackoverflow.co/teams/resources/faq/ and extracted 106 URLs in 2.10 seconds
+2025-04-26 03:44:09,653 - Crawler-9568 - INFO - Sent content to indexer node for https://stackoverflow.co/teams/resources/faq/
+2025-04-26 03:44:09,653 - Crawler-9568 - INFO - Task for https://stackoverflow.co/teams/resources/faq/ completed in 12.93 seconds
+2025-04-26 03:44:09,780 - Crawler-9568 - INFO - Crawler 3 received URL: https://cs.wikipedia.org/wiki/Seznam_mobiln%C3%ADch_aplikac%C3%AD_Wikipedie
+2025-04-26 03:44:09,780 - Crawler-9568 - INFO - Fetching content from https://cs.wikipedia.org/wiki/Seznam_mobiln%C3%ADch_aplikac%C3%AD_Wikipedie
+2025-04-26 03:44:11,441 - Crawler-9568 - INFO - Fetched 75401 bytes from https://cs.wikipedia.org/wiki/Seznam_mobiln%C3%ADch_aplikac%C3%AD_Wikipedie
+2025-04-26 03:44:11,441 - Crawler-9568 - INFO - Parsing content from https://cs.wikipedia.org/wiki/Seznam_mobiln%C3%ADch_aplikac%C3%AD_Wikipedie
+2025-04-26 03:44:11,477 - Crawler-9568 - INFO - Crawler 3 crawled https://cs.wikipedia.org/wiki/Seznam_mobiln%C3%ADch_aplikac%C3%AD_Wikipedie and extracted 57 URLs in 1.70 seconds
+2025-04-26 03:44:15,707 - Crawler-9568 - INFO - Sent content to indexer node for https://cs.wikipedia.org/wiki/Seznam_mobiln%C3%ADch_aplikac%C3%AD_Wikipedie
+2025-04-26 03:44:15,707 - Crawler-9568 - INFO - Task for https://cs.wikipedia.org/wiki/Seznam_mobiln%C3%ADch_aplikac%C3%AD_Wikipedie completed in 5.93 seconds
+2025-04-26 03:44:15,828 - Crawler-9568 - INFO - Crawler 3 received URL: https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-26 03:44:15,828 - Crawler-9568 - INFO - Fetching content from https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-26 03:44:17,764 - Crawler-9568 - INFO - Fetched 154411 bytes from https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-26 03:44:17,764 - Crawler-9568 - INFO - Parsing content from https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-26 03:44:17,805 - Crawler-9568 - INFO - Crawler 3 crawled https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 and extracted 10 URLs in 1.98 seconds
+2025-04-26 03:44:28,498 - Crawler-9568 - INFO - Sent content to indexer node for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-26 03:44:28,498 - Crawler-9568 - INFO - Task for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 completed in 12.67 seconds
+2025-04-26 03:44:28,599 - Crawler-9568 - INFO - Crawler 3 received URL: https://github.com/features/codespaces
+2025-04-26 03:44:28,599 - Crawler-9568 - INFO - Fetching content from https://github.com/features/codespaces
+2025-04-26 03:44:29,665 - Crawler-9568 - INFO - Fetched 333250 bytes from https://github.com/features/codespaces
+2025-04-26 03:44:29,665 - Crawler-9568 - INFO - Parsing content from https://github.com/features/codespaces
+2025-04-26 03:44:29,723 - Crawler-9568 - INFO - Crawler 3 crawled https://github.com/features/codespaces and extracted 86 URLs in 1.12 seconds
+2025-04-26 03:44:32,476 - Crawler-9568 - INFO - Sent content to indexer node for https://github.com/features/codespaces
+2025-04-26 03:44:32,476 - Crawler-9568 - INFO - Task for https://github.com/features/codespaces completed in 3.88 seconds
+2025-04-26 03:44:32,577 - Crawler-9568 - INFO - Crawler 3 received URL: https://stackoverflow.co/
+2025-04-26 03:44:32,577 - Crawler-9568 - INFO - Fetching content from https://stackoverflow.co/
+2025-04-26 03:44:33,486 - Crawler-9568 - INFO - Fetched 274354 bytes from https://stackoverflow.co/
+2025-04-26 03:44:33,486 - Crawler-9568 - INFO - Parsing content from https://stackoverflow.co/
+2025-04-26 03:44:33,511 - Crawler-9568 - INFO - Crawler 3 crawled https://stackoverflow.co/ and extracted 85 URLs in 0.93 seconds
+2025-04-26 03:44:37,628 - Crawler-9568 - INFO - Sent content to indexer node for https://stackoverflow.co/
+2025-04-26 03:44:37,629 - Crawler-9568 - INFO - Task for https://stackoverflow.co/ completed in 5.05 seconds
+2025-04-26 03:44:37,729 - Crawler-9568 - INFO - Crawler 3 received URL: https://www.redditinc.com/policies/content-policy
+2025-04-26 03:44:37,730 - Crawler-9568 - INFO - Fetching content from https://www.redditinc.com/policies/content-policy
+2025-04-26 03:44:39,207 - Crawler-9568 - INFO - Fetched 188903 bytes from https://www.redditinc.com/policies/content-policy
+2025-04-26 03:44:39,207 - Crawler-9568 - INFO - Parsing content from https://www.redditinc.com/policies/content-policy
+2025-04-26 03:44:39,298 - Crawler-9568 - INFO - Crawler 3 crawled https://www.redditinc.com/policies/content-policy and extracted 602 URLs in 1.57 seconds
+2025-04-26 03:44:40,426 - Crawler-9568 - INFO - Sent content to indexer node for https://www.redditinc.com/policies/content-policy
+2025-04-26 03:44:40,426 - Crawler-9568 - INFO - Task for https://www.redditinc.com/policies/content-policy completed in 2.70 seconds
+2025-04-26 03:44:40,527 - Crawler-9568 - INFO - Crawler 3 received URL: https://docs.python.org
+2025-04-26 03:44:40,527 - Crawler-9568 - INFO - Fetching content from https://docs.python.org
+2025-04-26 03:44:41,325 - Crawler-9568 - INFO - Fetched 17619 bytes from https://docs.python.org
+2025-04-26 03:44:41,325 - Crawler-9568 - INFO - Parsing content from https://docs.python.org
+2025-04-26 03:44:41,342 - Crawler-9568 - INFO - Crawler 3 crawled https://docs.python.org and extracted 52 URLs in 0.81 seconds
+2025-04-26 03:44:42,476 - Crawler-9568 - INFO - Sent content to indexer node for https://docs.python.org
+2025-04-26 03:44:42,476 - Crawler-9568 - INFO - Task for https://docs.python.org completed in 1.95 seconds
+2025-04-26 03:44:42,577 - Crawler-9568 - INFO - Crawler 3 received URL: https://github.com/features/copilot
+2025-04-26 03:44:42,577 - Crawler-9568 - INFO - Fetching content from https://github.com/features/copilot
+2025-04-26 03:44:43,559 - Crawler-9568 - INFO - Fetched 674531 bytes from https://github.com/features/copilot
+2025-04-26 03:44:43,559 - Crawler-9568 - INFO - Parsing content from https://github.com/features/copilot
+2025-04-26 03:44:43,788 - Crawler-9568 - INFO - Crawler 3 crawled https://github.com/features/copilot and extracted 122 URLs in 1.21 seconds
+2025-04-26 03:44:49,692 - Crawler-9568 - INFO - Sent content to indexer node for https://github.com/features/copilot
+2025-04-26 03:44:49,692 - Crawler-9568 - INFO - Task for https://github.com/features/copilot completed in 7.11 seconds
+2025-04-26 03:44:49,793 - Crawler-9568 - INFO - Crawler 3 received URL: https://www.reddit.com/login/
+2025-04-26 03:44:49,793 - Crawler-9568 - INFO - Fetching content from https://www.reddit.com/login/
+2025-04-26 03:44:51,469 - Crawler-9568 - INFO - Fetched 352433 bytes from https://www.reddit.com/login/
+2025-04-26 03:44:51,469 - Crawler-9568 - INFO - Parsing content from https://www.reddit.com/login/
+2025-04-26 03:44:51,471 - Crawler-9568 - INFO - No real URLs found, created 2 simulated URLs
+2025-04-26 03:44:51,471 - Crawler-9568 - INFO - Crawler 3 crawled https://www.reddit.com/login/ and extracted 2 URLs in 1.68 seconds
+2025-04-26 03:44:53,761 - Crawler-9568 - INFO - Sent content to indexer node for https://www.reddit.com/login/
+2025-04-26 03:44:53,761 - Crawler-9568 - WARNING - Simulating a brief node failure (testing fault tolerance)
+2025-04-26 03:45:05,762 - Crawler-9568 - INFO - Task for https://www.reddit.com/login/ completed in 15.97 seconds
+2025-04-26 03:45:05,862 - Crawler-9568 - INFO - Crawler 3 received shutdown signal. Exiting.
+2025-04-26 03:45:06,871 - Crawler-9568 - INFO - Crawler 3 shutting down. Final statistics:
+2025-04-26 03:45:06,872 - Crawler-9568 - INFO -   - Total runtime: 96.07 seconds
+2025-04-26 03:45:06,872 - Crawler-9568 - INFO -   - URLs processed: 10
+2025-04-26 03:45:06,872 - Crawler-9568 - INFO -   - URLs extracted: 1148
+2025-04-26 03:45:06,872 - Crawler-9568 - INFO -   - Errors encountered: 0
+2025-04-26 03:45:06,872 - Crawler-9568 - INFO - Crawler 3 exiting

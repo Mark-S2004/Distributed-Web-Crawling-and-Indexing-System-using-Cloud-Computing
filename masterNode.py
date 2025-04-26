@@ -4,11 +4,12 @@ import logging
 import json
 import os
 from datetime import datetime, timedelta
+from cloud_queue import CloudQueue
 
 def master_process():
     """
     Phase 3 Master Node:
-      - Distributes crawling tasks (URLs) to the crawler nodes.
+      - Distributes crawling tasks (URLs) to the crawler nodes via cloud queue.
       - Receives extracted URLs and status messages from crawler nodes.
       - Implements fault tolerance through heartbeat monitoring and task re-queueing.
       - Tracks crawler node health and re-assigns tasks from failed nodes.
@@ -49,6 +50,10 @@ def master_process():
     logging.info(f"Active Crawler Nodes: {active_crawler_nodes}")
     logging.info(f"Indexer Node: {indexer_rank}")
 
+    # Initialize the cloud queue
+    task_queue = CloudQueue()
+    logging.info(f"Task queue initialized in {'cloud' if task_queue.is_cloud_mode() else 'local'} mode")
+
     # Real seed URLs for testing
     seed_urls = [
         "https://www.python.org",
@@ -57,8 +62,12 @@ def master_process():
         "https://www.reddit.com",
         "https://www.stackoverflow.com"
     ]
-    # We use a simple Python list to simulate a distributed URL queue.
-    urls_to_crawl_queue = seed_urls.copy()
+    
+    # Add seed URLs to the cloud queue
+    for url in seed_urls:
+        task_queue.send_message(url, {"type": "seed"})
+    
+    logging.info(f"Added {len(seed_urls)} seed URLs to the task queue")
 
     task_id = 0
     # Keep track of which URLs are being processed by which crawlers
@@ -98,7 +107,8 @@ def master_process():
     update_monitoring_data()
 
     # Main processing loop
-    while (urls_to_crawl_queue or any(assignment is not None for assignment in crawler_assignments.values())) and processed_urls < max_urls_to_process:
+    queue_size = task_queue.get_queue_size()
+    while (queue_size > 0 or any(assignment is not None for assignment in crawler_assignments.values())) and processed_urls < max_urls_to_process:
         current_time = datetime.now()
         
         # Check for timeouts and failed nodes
@@ -108,7 +118,7 @@ def master_process():
                 if task_start_times[node] and (current_time - task_start_times[node]).total_seconds() > task_timeout_seconds:
                     logging.warning(f"Task timeout for crawler {node} on URL: {assignment}")
                     # Re-queue the URL
-                    urls_to_crawl_queue.append(assignment)
+                    task_queue.send_message(assignment, {"type": "retry", "failed_node": str(node)})
                     crawler_assignments[node] = None
                     task_start_times[node] = None
                     system_metrics["urls_failed"] += 1
@@ -130,7 +140,7 @@ def master_process():
                     system_metrics["crawler_status"][str(node)] = "failed"
                     # Re-queue any assigned URL
                     if assignment is not None:
-                        urls_to_crawl_queue.append(assignment)
+                        task_queue.send_message(assignment, {"type": "retry", "failed_node": str(node)})
                         system_metrics["urls_failed"] += 1
                         system_metrics["crawler_performance"][str(node)]["failed"] += 1
                         system_metrics["task_assignments"].append({
@@ -180,10 +190,12 @@ def master_process():
                 if processed_urls < max_urls_to_process:
                     new_urls = message
                     if new_urls:
-                        urls_to_crawl_queue.extend(new_urls[:5])  # Limit to 5 new URLs per page
+                        # Add up to 5 new URLs to the queue
+                        for url in new_urls[:5]:
+                            task_queue.send_message(url, {"type": "discovered", "source_url": url_processed})
                 
                 logging.info(f"Received URLs from crawler {sender}. "
-                             f"Queue size now: {len(urls_to_crawl_queue)}, "
+                             f"Queue size now: {task_queue.get_queue_size()}, "
                              f"Processed URLs: {processed_urls}")
                 update_monitoring_data()
                 
@@ -198,100 +210,67 @@ def master_process():
                 # Error message received.
                 logging.error(f"Error reported from node {sender}: {message}")
                 system_metrics["error_count"] += 1
-                
-                if sender in crawler_assignments and crawler_assignments[sender] is not None:
-                    url_failed = crawler_assignments[sender]
-                    # Re-queue the failed URL
-                    urls_to_crawl_queue.append(url_failed)
-                    system_metrics["urls_failed"] += 1
-                    system_metrics["crawler_performance"][str(sender)]["failed"] += 1
+                update_monitoring_data()
+
+        # Assign tasks to available crawlers from the queue
+        for node in active_crawler_nodes:
+            if crawler_assignments[node] is None and system_metrics["crawler_status"][str(node)] == "active":
+                # Retrieve a message from the queue
+                messages = task_queue.receive_messages(max_messages=1, wait_time=0)
+                if messages:
+                    message = messages[0]
+                    # Extract the URL from the message body
+                    if hasattr(message, 'body'):
+                        url_to_crawl = message.body
+                    else:
+                        url_to_crawl = message.get('MessageBody', '')
                     
-                    # Record task failure
+                    # Delete the message from the queue
+                    task_queue.delete_message(message)
+                    
+                    task_id += 1
+                    # Assign URL to crawler
+                    crawler_assignments[node] = url_to_crawl
+                    task_start_times[node] = datetime.now()
+                    
+                    # Send the URL to the crawler for processing.
+                    comm.send(url_to_crawl, dest=node, tag=0)
+                    
+                    # Update metrics
+                    system_metrics["crawler_performance"][str(node)]["assigned"] += 1
                     system_metrics["task_assignments"].append({
                         "time": datetime.now().isoformat(),
-                        "url": url_failed,
-                        "crawler": sender,
-                        "status": "error",
-                        "error_message": str(message)
+                        "task_id": task_id,
+                        "url": url_to_crawl,
+                        "crawler": node,
+                        "status": "assigned"
                     })
-                    
-                    crawler_assignments[sender] = None  # Mark crawler as available
-                    task_start_times[sender] = None
-                    processed_urls += 1
-                update_monitoring_data()
-                
-            else:
-                logging.warning(f"Master received a message with unexpected tag {tag} from {sender}.")
+                    logging.info(f"Assigned URL {url_to_crawl} to crawler {node}.")
+                    update_monitoring_data()
 
-        # Assign new crawl tasks to available crawlers if there are URLs in the queue
-        while urls_to_crawl_queue and any(assignment is None for assignment in crawler_assignments.values()):
-            # Find next available crawler using round-robin
-            found_available_crawler = False
-            tries = 0
-            
-            # Prevent infinite loop by limiting the number of attempts to the number of crawlers
-            while not found_available_crawler and tries < num_crawlers:
-                tries += 1
-                
-                # Check if crawler is available
-                current_node = active_crawler_nodes[next_crawler_index]
-                if crawler_assignments[current_node] is None and system_metrics["crawler_status"][str(current_node)] == "active":
-                    found_available_crawler = True
-                else:
-                    # Move to next crawler
-                    next_crawler_index = (next_crawler_index + 1) % num_crawlers
-            
-            # If no available crawler was found after checking all nodes, break the loop
-            if not found_available_crawler:
-                logging.warning("No available crawler nodes found. Waiting for nodes to become available.")
-                break
-                
-            assigned_node = active_crawler_nodes[next_crawler_index]
-            url = urls_to_crawl_queue.pop(0)
-            comm.send(url, dest=assigned_node, tag=0)  # tag 0 for task assignment
-            crawler_assignments[assigned_node] = url
-            task_start_times[assigned_node] = datetime.now()
-            
-            # Update metrics
-            system_metrics["crawler_performance"][str(assigned_node)]["assigned"] += 1
-            system_metrics["task_assignments"].append({
-                "time": datetime.now().isoformat(),
-                "task_id": task_id,
-                "url": url,
-                "crawler": assigned_node,
-                "status": "assigned"
-            })
-            
-            logging.info(f"Assigned task {task_id} to crawler {assigned_node} for URL: {url}")
-            task_id += 1
-            # Move to next crawler for next assignment
-            next_crawler_index = (next_crawler_index + 1) % num_crawlers
-            update_monitoring_data()
+        # Update queue size for the next iteration
+        queue_size = task_queue.get_queue_size()
+        
+        # Pause briefly to prevent CPU overutilization
+        time.sleep(0.1)
 
-        time.sleep(0.1)  # Delay to prevent busy waiting
+    # Send shutdown signals to the crawlers.
+    logging.info("Sending shutdown signals to crawler nodes...")
+    for node in range(1, size - 1):
+        comm.send(None, dest=node, tag=0)
+        logging.info(f"Shutdown signal sent to crawler {node}")
 
-    # Once all crawling is done, send shutdown signals.
-    logging.info(f"Crawling complete. Processed {processed_urls} URLs. Shutting down nodes...")
+    # Send shutdown signal to the indexer.
+    logging.info("Sending shutdown signal to indexer node...")
+    comm.send(None, dest=indexer_rank, tag=2)
     
     # Final metrics update
     system_metrics["end_time"] = datetime.now().isoformat()
     system_metrics["total_runtime_seconds"] = (datetime.now() - datetime.fromisoformat(system_metrics["start_time"])).total_seconds()
     update_monitoring_data()
     
-    # Signal to crawler nodes to exit (by sending "None" as the URL).
-    for node in active_crawler_nodes:
-        try:
-            comm.send(None, dest=node, tag=0)
-        except Exception as e:
-            logging.error(f"Error sending shutdown signal to crawler {node}: {e}")
-            
-    # Signal indexer node to shut down (we use tag 0 here to indicate shutdown).
-    try:
-        comm.send(None, dest=indexer_rank, tag=0)
-    except Exception as e:
-        logging.error(f"Error sending shutdown signal to indexer {indexer_rank}: {e}")
-
-    logging.info("Master node finished URL distribution. Shutting down.")
+    logging.info(f"Master node shutting down. Total URLs processed: {processed_urls}")
+    logging.info(f"Crawled: {system_metrics['urls_crawled']}, Indexed: {system_metrics['urls_indexed']}, Failed: {system_metrics['urls_failed']}")
 
 if __name__ == "__main__":
     master_process()

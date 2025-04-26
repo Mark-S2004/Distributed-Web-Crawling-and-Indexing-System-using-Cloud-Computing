@@ -441,3 +441,189 @@
 2025-04-18 23:26:01,141 - Crawler-31264 - INFO - Fetched 642891 bytes from http://news.reddit.com
 2025-04-18 23:26:01,141 - Crawler-31264 - INFO - Parsing content from http://news.reddit.com
 2025-04-18 23:26:01,241 - Crawler-31264 - INFO - Crawler 2 crawled http://news.reddit.com and extracted 72 URLs in 2.78 seconds
+2025-04-26 03:31:27,172 - Crawler-16628 - INFO - Crawler node started with rank 2 of 5
+2025-04-26 03:31:27,183 - Crawler-16628 - INFO - Heartbeat mechanism started
+2025-04-26 03:31:27,191 - Crawler-16628 - INFO - Crawler 2 received URL: https://www.github.com
+2025-04-26 03:31:27,191 - Crawler-16628 - INFO - Fetching content from https://www.github.com
+2025-04-26 03:31:28,594 - Crawler-16628 - INFO - Fetched 282252 bytes from https://www.github.com
+2025-04-26 03:31:28,594 - Crawler-16628 - INFO - Parsing content from https://www.github.com
+2025-04-26 03:31:28,674 - Crawler-16628 - INFO - Crawler 2 crawled https://www.github.com and extracted 68 URLs in 1.48 seconds
+2025-04-26 03:31:41,871 - Crawler-16628 - INFO - Sent content to indexer node for https://www.github.com
+2025-04-26 03:31:41,871 - Crawler-16628 - INFO - Task for https://www.github.com completed in 14.68 seconds
+2025-04-26 03:31:41,973 - Crawler-16628 - INFO - Crawler 2 received URL: https://www.python.org/psf/
+2025-04-26 03:31:41,973 - Crawler-16628 - INFO - Fetching content from https://www.python.org/psf/
+2025-04-26 03:31:43,020 - Crawler-16628 - INFO - Fetched 52262 bytes from https://www.python.org/psf/
+2025-04-26 03:31:43,020 - Crawler-16628 - INFO - Parsing content from https://www.python.org/psf/
+2025-04-26 03:31:43,036 - Crawler-16628 - INFO - Crawler 2 crawled https://www.python.org/psf/ and extracted 56 URLs in 1.06 seconds
+2025-04-26 03:31:44,151 - Crawler-16628 - INFO - Sent content to indexer node for https://www.python.org/psf/
+2025-04-26 03:31:44,151 - Crawler-16628 - INFO - Task for https://www.python.org/psf/ completed in 2.18 seconds
+2025-04-26 03:31:44,252 - Crawler-16628 - INFO - Crawler 2 received URL: https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-26 03:31:44,252 - Crawler-16628 - INFO - Fetching content from https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-26 03:31:45,960 - Crawler-16628 - INFO - Fetched 557777 bytes from https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-26 03:31:45,960 - Crawler-16628 - INFO - Parsing content from https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-26 03:31:46,265 - Crawler-16628 - INFO - Crawler 2 crawled https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias and extracted 3380 URLs in 2.01 seconds
+2025-04-26 03:31:52,327 - Crawler-16628 - INFO - Sent content to indexer node for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-26 03:31:52,327 - Crawler-16628 - INFO - Task for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias completed in 8.07 seconds
+2025-04-26 03:31:52,428 - Crawler-16628 - INFO - Crawler 2 received URL: https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-26 03:31:52,428 - Crawler-16628 - INFO - Fetching content from https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-26 03:31:53,700 - Crawler-16628 - INFO - Fetched 1166131 bytes from https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-26 03:31:53,700 - Crawler-16628 - INFO - Parsing content from https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-26 03:31:53,756 - Crawler-16628 - INFO - Crawler 2 crawled https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob and extracted 17 URLs in 1.33 seconds
+2025-04-26 03:32:01,042 - Crawler-16628 - INFO - Sent content to indexer node for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob
+2025-04-26 03:32:01,042 - Crawler-16628 - INFO - Task for https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob completed in 8.61 seconds
+2025-04-26 03:32:01,144 - Crawler-16628 - INFO - Crawler 2 received URL: https://github.com/features/copilot
+2025-04-26 03:32:01,144 - Crawler-16628 - INFO - Fetching content from https://github.com/features/copilot
+2025-04-26 03:32:02,188 - Crawler-16628 - INFO - Fetched 674540 bytes from https://github.com/features/copilot
+2025-04-26 03:32:02,188 - Crawler-16628 - INFO - Parsing content from https://github.com/features/copilot
+2025-04-26 03:32:02,269 - Crawler-16628 - INFO - Crawler 2 crawled https://github.com/features/copilot and extracted 122 URLs in 1.13 seconds
+2025-04-26 03:32:12,244 - Crawler-16628 - INFO - Sent content to indexer node for https://github.com/features/copilot
+2025-04-26 03:32:12,244 - Crawler-16628 - INFO - Task for https://github.com/features/copilot completed in 11.10 seconds
+2025-04-26 03:32:12,346 - Crawler-16628 - INFO - Crawler 2 received URL: https://github.com/features/codespaces
+2025-04-26 03:32:12,346 - Crawler-16628 - INFO - Fetching content from https://github.com/features/codespaces
+2025-04-26 03:32:13,253 - Crawler-16628 - INFO - Fetched 333558 bytes from https://github.com/features/codespaces
+2025-04-26 03:32:13,253 - Crawler-16628 - INFO - Parsing content from https://github.com/features/codespaces
+2025-04-26 03:32:13,295 - Crawler-16628 - INFO - Crawler 2 crawled https://github.com/features/codespaces and extracted 86 URLs in 0.95 seconds
+2025-04-26 03:32:20,656 - Crawler-16628 - INFO - Sent content to indexer node for https://github.com/features/codespaces
+2025-04-26 03:32:20,656 - Crawler-16628 - INFO - Task for https://github.com/features/codespaces completed in 8.31 seconds
+2025-04-26 03:32:20,757 - Crawler-16628 - INFO - Crawler 2 received URL: https://www.reddit.com/r/HollowKnight/comments/1k7oewp/rhollowknight_giveaway_discussion_celebration/
+2025-04-26 03:32:20,757 - Crawler-16628 - INFO - Fetching content from https://www.reddit.com/r/HollowKnight/comments/1k7oewp/rhollowknight_giveaway_discussion_celebration/
+2025-04-26 03:32:23,309 - Crawler-16628 - INFO - Fetched 525339 bytes from https://www.reddit.com/r/HollowKnight/comments/1k7oewp/rhollowknight_giveaway_discussion_celebration/
+2025-04-26 03:32:23,309 - Crawler-16628 - INFO - Parsing content from https://www.reddit.com/r/HollowKnight/comments/1k7oewp/rhollowknight_giveaway_discussion_celebration/
+2025-04-26 03:32:23,366 - Crawler-16628 - INFO - Crawler 2 crawled https://www.reddit.com/r/HollowKnight/comments/1k7oewp/rhollowknight_giveaway_discussion_celebration/ and extracted 72 URLs in 2.61 seconds
+2025-04-26 03:38:18,936 - Crawler-6792 - INFO - Crawler node started with rank 2 of 5
+2025-04-26 03:38:18,936 - Crawler-6792 - INFO - Heartbeat mechanism started
+2025-04-26 03:38:22,602 - Crawler-6792 - INFO - Crawler 2 received URL: https://www.stackoverflow.com
+2025-04-26 03:38:22,602 - Crawler-6792 - INFO - Fetching content from https://www.stackoverflow.com
+2025-04-26 03:38:24,193 - Crawler-6792 - INFO - Fetched 359458 bytes from https://www.stackoverflow.com
+2025-04-26 03:38:24,193 - Crawler-6792 - INFO - Parsing content from https://www.stackoverflow.com
+2025-04-26 03:38:24,325 - Crawler-6792 - INFO - Crawler 2 crawled https://www.stackoverflow.com and extracted 88 URLs in 1.72 seconds
+2025-04-26 03:38:35,875 - Crawler-6792 - INFO - Sent content to indexer node for https://www.stackoverflow.com
+2025-04-26 03:38:35,875 - Crawler-6792 - INFO - Task for https://www.stackoverflow.com completed in 13.27 seconds
+2025-04-26 03:38:35,977 - Crawler-6792 - INFO - Crawler 2 received URL: https://www.python.org/psf/
+2025-04-26 03:38:35,977 - Crawler-6792 - INFO - Fetching content from https://www.python.org/psf/
+2025-04-26 03:38:36,880 - Crawler-6792 - INFO - Fetched 52262 bytes from https://www.python.org/psf/
+2025-04-26 03:38:36,880 - Crawler-6792 - INFO - Parsing content from https://www.python.org/psf/
+2025-04-26 03:38:36,901 - Crawler-6792 - INFO - Crawler 2 crawled https://www.python.org/psf/ and extracted 56 URLs in 0.92 seconds
+2025-04-26 03:38:38,468 - Crawler-6792 - INFO - Sent content to indexer node for https://www.python.org/psf/
+2025-04-26 03:38:38,468 - Crawler-6792 - INFO - Task for https://www.python.org/psf/ completed in 2.49 seconds
+2025-04-26 03:38:40,581 - Crawler-6792 - INFO - Crawler 2 received URL: https://bn.wikipedia.org/wiki/%E0%A6%89%E0%A6%87%E0%A6%95%E0%A6%BF%E0%A6%AA%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE_%E0%A6%AE%E0%A7%8B%E0%A6%AC%E0%A6%BE%E0%A6%87%E0%A6%B2_%E0%A6%85%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%AA%E0%A7%8D%E0%A6%B2%E0%A6%BF%E0%A6%95%E0%A7%87%E0%A6%B6%E0%A6%A8%E0%A7%87%E0%A6%B0_%E0%A6%A4%E0%A6%BE%E0%A6%B2%E0%A6%BF%E0%A6%95%E0%A6%BE
+2025-04-26 03:38:40,589 - Crawler-6792 - INFO - Fetching content from https://bn.wikipedia.org/wiki/%E0%A6%89%E0%A6%87%E0%A6%95%E0%A6%BF%E0%A6%AA%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE_%E0%A6%AE%E0%A7%8B%E0%A6%AC%E0%A6%BE%E0%A6%87%E0%A6%B2_%E0%A6%85%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%AA%E0%A7%8D%E0%A6%B2%E0%A6%BF%E0%A6%95%E0%A7%87%E0%A6%B6%E0%A6%A8%E0%A7%87%E0%A6%B0_%E0%A6%A4%E0%A6%BE%E0%A6%B2%E0%A6%BF%E0%A6%95%E0%A6%BE
+2025-04-26 03:38:41,643 - Crawler-6792 - INFO - Fetched 164990 bytes from https://bn.wikipedia.org/wiki/%E0%A6%89%E0%A6%87%E0%A6%95%E0%A6%BF%E0%A6%AA%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE_%E0%A6%AE%E0%A7%8B%E0%A6%AC%E0%A6%BE%E0%A6%87%E0%A6%B2_%E0%A6%85%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%AA%E0%A7%8D%E0%A6%B2%E0%A6%BF%E0%A6%95%E0%A7%87%E0%A6%B6%E0%A6%A8%E0%A7%87%E0%A6%B0_%E0%A6%A4%E0%A6%BE%E0%A6%B2%E0%A6%BF%E0%A6%95%E0%A6%BE
+2025-04-26 03:38:41,643 - Crawler-6792 - INFO - Parsing content from https://bn.wikipedia.org/wiki/%E0%A6%89%E0%A6%87%E0%A6%95%E0%A6%BF%E0%A6%AA%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE_%E0%A6%AE%E0%A7%8B%E0%A6%AC%E0%A6%BE%E0%A6%87%E0%A6%B2_%E0%A6%85%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%AA%E0%A7%8D%E0%A6%B2%E0%A6%BF%E0%A6%95%E0%A7%87%E0%A6%B6%E0%A6%A8%E0%A7%87%E0%A6%B0_%E0%A6%A4%E0%A6%BE%E0%A6%B2%E0%A6%BF%E0%A6%95%E0%A6%BE
+2025-04-26 03:38:41,696 - Crawler-6792 - INFO - Crawler 2 crawled https://bn.wikipedia.org/wiki/%E0%A6%89%E0%A6%87%E0%A6%95%E0%A6%BF%E0%A6%AA%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE_%E0%A6%AE%E0%A7%8B%E0%A6%AC%E0%A6%BE%E0%A6%87%E0%A6%B2_%E0%A6%85%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%AA%E0%A7%8D%E0%A6%B2%E0%A6%BF%E0%A6%95%E0%A7%87%E0%A6%B6%E0%A6%A8%E0%A7%87%E0%A6%B0_%E0%A6%A4%E0%A6%BE%E0%A6%B2%E0%A6%BF%E0%A6%95%E0%A6%BE and extracted 185 URLs in 1.11 seconds
+2025-04-26 03:38:48,190 - Crawler-6792 - INFO - Sent content to indexer node for https://bn.wikipedia.org/wiki/%E0%A6%89%E0%A6%87%E0%A6%95%E0%A6%BF%E0%A6%AA%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE_%E0%A6%AE%E0%A7%8B%E0%A6%AC%E0%A6%BE%E0%A6%87%E0%A6%B2_%E0%A6%85%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%AA%E0%A7%8D%E0%A6%B2%E0%A6%BF%E0%A6%95%E0%A7%87%E0%A6%B6%E0%A6%A8%E0%A7%87%E0%A6%B0_%E0%A6%A4%E0%A6%BE%E0%A6%B2%E0%A6%BF%E0%A6%95%E0%A6%BE
+2025-04-26 03:38:48,191 - Crawler-6792 - INFO - Task for https://bn.wikipedia.org/wiki/%E0%A6%89%E0%A6%87%E0%A6%95%E0%A6%BF%E0%A6%AA%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE_%E0%A6%AE%E0%A7%8B%E0%A6%AC%E0%A6%BE%E0%A6%87%E0%A6%B2_%E0%A6%85%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%AA%E0%A7%8D%E0%A6%B2%E0%A6%BF%E0%A6%95%E0%A7%87%E0%A6%B6%E0%A6%A8%E0%A7%87%E0%A6%B0_%E0%A6%A4%E0%A6%BE%E0%A6%B2%E0%A6%BF%E0%A6%95%E0%A6%BE completed in 7.60 seconds
+2025-04-26 03:38:48,292 - Crawler-6792 - INFO - Crawler 2 received URL: https://github.com/features/copilot
+2025-04-26 03:38:48,292 - Crawler-6792 - INFO - Fetching content from https://github.com/features/copilot
+2025-04-26 03:38:49,313 - Crawler-6792 - INFO - Fetched 674532 bytes from https://github.com/features/copilot
+2025-04-26 03:38:49,318 - Crawler-6792 - INFO - Parsing content from https://github.com/features/copilot
+2025-04-26 03:38:49,417 - Crawler-6792 - INFO - Crawler 2 crawled https://github.com/features/copilot and extracted 122 URLs in 1.13 seconds
+2025-04-26 03:38:55,976 - Crawler-6792 - INFO - Sent content to indexer node for https://github.com/features/copilot
+2025-04-26 03:38:55,978 - Crawler-6792 - INFO - Task for https://github.com/features/copilot completed in 7.69 seconds
+2025-04-26 03:38:56,079 - Crawler-6792 - INFO - Crawler 2 received URL: https://stackoverflow.help/
+2025-04-26 03:38:56,079 - Crawler-6792 - INFO - Fetching content from https://stackoverflow.help/
+2025-04-26 03:38:59,075 - Crawler-6792 - INFO - Fetched 51818 bytes from https://stackoverflow.help/
+2025-04-26 03:38:59,075 - Crawler-6792 - INFO - Parsing content from https://stackoverflow.help/
+2025-04-26 03:38:59,083 - Crawler-6792 - INFO - Crawler 2 crawled https://stackoverflow.help/ and extracted 8 URLs in 3.00 seconds
+2025-04-26 03:38:59,662 - Crawler-6792 - INFO - Sent content to indexer node for https://stackoverflow.help/
+2025-04-26 03:38:59,662 - Crawler-6792 - INFO - Task for https://stackoverflow.help/ completed in 3.58 seconds
+2025-04-26 03:39:00,446 - Crawler-6792 - INFO - Crawler 2 received URL: https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-26 03:39:00,446 - Crawler-6792 - INFO - Fetching content from https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-26 03:39:05,083 - Crawler-6792 - INFO - Fetched 557777 bytes from https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-26 03:39:05,083 - Crawler-6792 - INFO - Parsing content from https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-26 03:39:05,384 - Crawler-6792 - INFO - Crawler 2 crawled https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias and extracted 3380 URLs in 4.94 seconds
+2025-04-26 03:39:07,987 - Crawler-6792 - INFO - Sent content to indexer node for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias
+2025-04-26 03:39:07,987 - Crawler-6792 - INFO - Task for https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias completed in 7.54 seconds
+2025-04-26 03:39:08,088 - Crawler-6792 - INFO - Crawler 2 received URL: https://github.com/features/copilot
+2025-04-26 03:39:08,088 - Crawler-6792 - INFO - Fetching content from https://github.com/features/copilot
+2025-04-26 03:39:08,984 - Crawler-6792 - INFO - Fetched 674531 bytes from https://github.com/features/copilot
+2025-04-26 03:39:08,984 - Crawler-6792 - INFO - Parsing content from https://github.com/features/copilot
+2025-04-26 03:39:09,081 - Crawler-6792 - INFO - Crawler 2 crawled https://github.com/features/copilot and extracted 122 URLs in 0.99 seconds
+2025-04-26 03:39:13,290 - Crawler-6792 - INFO - Sent content to indexer node for https://github.com/features/copilot
+2025-04-26 03:39:13,290 - Crawler-6792 - INFO - Task for https://github.com/features/copilot completed in 5.20 seconds
+2025-04-26 03:39:13,391 - Crawler-6792 - INFO - Crawler 2 received shutdown signal. Exiting.
+2025-04-26 03:39:14,398 - Crawler-6792 - INFO - Crawler 2 shutting down. Final statistics:
+2025-04-26 03:39:14,398 - Crawler-6792 - INFO -   - Total runtime: 55.46 seconds
+2025-04-26 03:39:14,398 - Crawler-6792 - INFO -   - URLs processed: 7
+2025-04-26 03:39:14,398 - Crawler-6792 - INFO -   - URLs extracted: 3961
+2025-04-26 03:39:14,398 - Crawler-6792 - INFO -   - Errors encountered: 0
+2025-04-26 03:39:14,398 - Crawler-6792 - INFO - Crawler 2 exiting
+2025-04-26 03:43:30,619 - Crawler-18612 - INFO - Crawler node started with rank 2 of 5
+2025-04-26 03:43:30,644 - Crawler-18612 - INFO - Heartbeat mechanism started
+2025-04-26 03:43:34,400 - Crawler-18612 - INFO - Crawler 2 received URL: https://stackoverflowteams.com/users/login/?utm_source=so-owned&utm_medium=referral&utm_campaign=teams-nav-link
+2025-04-26 03:43:34,400 - Crawler-18612 - INFO - Fetching content from https://stackoverflowteams.com/users/login/?utm_source=so-owned&utm_medium=referral&utm_campaign=teams-nav-link
+2025-04-26 03:43:35,560 - Crawler-18612 - INFO - Fetched 23140 bytes from https://stackoverflowteams.com/users/login/?utm_source=so-owned&utm_medium=referral&utm_campaign=teams-nav-link
+2025-04-26 03:43:35,560 - Crawler-18612 - INFO - Parsing content from https://stackoverflowteams.com/users/login/?utm_source=so-owned&utm_medium=referral&utm_campaign=teams-nav-link
+2025-04-26 03:43:35,568 - Crawler-18612 - INFO - Crawler 2 crawled https://stackoverflowteams.com/users/login/?utm_source=so-owned&utm_medium=referral&utm_campaign=teams-nav-link and extracted 3 URLs in 1.17 seconds
+2025-04-26 03:43:56,622 - Crawler-18612 - INFO - Sent content to indexer node for https://stackoverflowteams.com/users/login/?utm_source=so-owned&utm_medium=referral&utm_campaign=teams-nav-link
+2025-04-26 03:43:56,623 - Crawler-18612 - INFO - Task for https://stackoverflowteams.com/users/login/?utm_source=so-owned&utm_medium=referral&utm_campaign=teams-nav-link completed in 22.22 seconds
+2025-04-26 03:43:56,723 - Crawler-18612 - INFO - Crawler 2 received URL: https://az.wikipedia.org/wiki/Vikipediya_mobil_t%C9%99tbiql%C9%99rinin_siyah%C4%B1s%C4%B1
+2025-04-26 03:43:56,723 - Crawler-18612 - INFO - Fetching content from https://az.wikipedia.org/wiki/Vikipediya_mobil_t%C9%99tbiql%C9%99rinin_siyah%C4%B1s%C4%B1
+2025-04-26 03:43:58,422 - Crawler-18612 - INFO - Fetched 123925 bytes from https://az.wikipedia.org/wiki/Vikipediya_mobil_t%C9%99tbiql%C9%99rinin_siyah%C4%B1s%C4%B1
+2025-04-26 03:43:58,422 - Crawler-18612 - INFO - Parsing content from https://az.wikipedia.org/wiki/Vikipediya_mobil_t%C9%99tbiql%C9%99rinin_siyah%C4%B1s%C4%B1
+2025-04-26 03:43:58,494 - Crawler-18612 - INFO - Crawler 2 crawled https://az.wikipedia.org/wiki/Vikipediya_mobil_t%C9%99tbiql%C9%99rinin_siyah%C4%B1s%C4%B1 and extracted 73 URLs in 1.77 seconds
+2025-04-26 03:44:04,382 - Crawler-18612 - INFO - Sent content to indexer node for https://az.wikipedia.org/wiki/Vikipediya_mobil_t%C9%99tbiql%C9%99rinin_siyah%C4%B1s%C4%B1
+2025-04-26 03:44:04,382 - Crawler-18612 - INFO - Task for https://az.wikipedia.org/wiki/Vikipediya_mobil_t%C9%99tbiql%C9%99rinin_siyah%C4%B1s%C4%B1 completed in 7.66 seconds
+2025-04-26 03:44:04,484 - Crawler-18612 - INFO - Crawler 2 received URL: https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=bn.wikipedia.org&uselang=en
+2025-04-26 03:44:04,484 - Crawler-18612 - INFO - Fetching content from https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=bn.wikipedia.org&uselang=en
+2025-04-26 03:44:06,229 - Crawler-18612 - INFO - Fetched 69957 bytes from https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=bn.wikipedia.org&uselang=en
+2025-04-26 03:44:06,229 - Crawler-18612 - INFO - Parsing content from https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=bn.wikipedia.org&uselang=en
+2025-04-26 03:44:06,262 - Crawler-18612 - INFO - Crawler 2 crawled https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=bn.wikipedia.org&uselang=en and extracted 18 URLs in 1.78 seconds
+2025-04-26 03:44:09,653 - Crawler-18612 - INFO - Sent content to indexer node for https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=bn.wikipedia.org&uselang=en
+2025-04-26 03:44:09,653 - Crawler-18612 - INFO - Task for https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=bn.wikipedia.org&uselang=en completed in 5.17 seconds
+2025-04-26 03:44:09,780 - Crawler-18612 - INFO - Crawler 2 received URL: https://dailyboulder.com/ice-can-now-enter-your-home-without-a-warrant-to-find-migrants-doj-memo-says/
+2025-04-26 03:44:09,780 - Crawler-18612 - INFO - Fetching content from https://dailyboulder.com/ice-can-now-enter-your-home-without-a-warrant-to-find-migrants-doj-memo-says/
+2025-04-26 03:44:11,062 - Crawler-18612 - INFO - Fetched 122212 bytes from https://dailyboulder.com/ice-can-now-enter-your-home-without-a-warrant-to-find-migrants-doj-memo-says/
+2025-04-26 03:44:11,062 - Crawler-18612 - INFO - Parsing content from https://dailyboulder.com/ice-can-now-enter-your-home-without-a-warrant-to-find-migrants-doj-memo-says/
+2025-04-26 03:44:11,103 - Crawler-18612 - INFO - Crawler 2 crawled https://dailyboulder.com/ice-can-now-enter-your-home-without-a-warrant-to-find-migrants-doj-memo-says/ and extracted 81 URLs in 1.32 seconds
+2025-04-26 03:44:15,707 - Crawler-18612 - INFO - Sent content to indexer node for https://dailyboulder.com/ice-can-now-enter-your-home-without-a-warrant-to-find-migrants-doj-memo-says/
+2025-04-26 03:44:15,707 - Crawler-18612 - INFO - Task for https://dailyboulder.com/ice-can-now-enter-your-home-without-a-warrant-to-find-migrants-doj-memo-says/ completed in 5.93 seconds
+2025-04-26 03:44:15,821 - Crawler-18612 - INFO - Crawler 2 received URL: https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-26 03:44:15,821 - Crawler-18612 - INFO - Fetching content from https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-26 03:44:18,318 - Crawler-18612 - INFO - Fetched 713839 bytes from https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-26 03:44:18,318 - Crawler-18612 - INFO - Parsing content from https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-26 03:44:18,354 - Crawler-18612 - INFO - Crawler 2 crawled https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 and extracted 44 URLs in 2.53 seconds
+2025-04-26 03:44:25,045 - Crawler-18612 - INFO - Sent content to indexer node for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-26 03:44:25,046 - Crawler-18612 - INFO - Task for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 completed in 9.22 seconds
+2025-04-26 03:44:25,147 - Crawler-18612 - INFO - Crawler 2 received URL: https://github.com/features/actions
+2025-04-26 03:44:25,147 - Crawler-18612 - INFO - Fetching content from https://github.com/features/actions
+2025-04-26 03:44:26,220 - Crawler-18612 - INFO - Fetched 283322 bytes from https://github.com/features/actions
+2025-04-26 03:44:26,220 - Crawler-18612 - INFO - Parsing content from https://github.com/features/actions
+2025-04-26 03:44:26,284 - Crawler-18612 - INFO - Crawler 2 crawled https://github.com/features/actions and extracted 76 URLs in 1.14 seconds
+2025-04-26 03:44:30,257 - Crawler-18612 - INFO - Sent content to indexer node for https://github.com/features/actions
+2025-04-26 03:44:30,257 - Crawler-18612 - INFO - Task for https://github.com/features/actions completed in 5.11 seconds
+2025-04-26 03:44:30,358 - Crawler-18612 - INFO - Crawler 2 received URL: https://github.com/features/codespaces
+2025-04-26 03:44:30,358 - Crawler-18612 - INFO - Fetching content from https://github.com/features/codespaces
+2025-04-26 03:44:31,177 - Crawler-18612 - INFO - Fetched 333250 bytes from https://github.com/features/codespaces
+2025-04-26 03:44:31,177 - Crawler-18612 - INFO - Parsing content from https://github.com/features/codespaces
+2025-04-26 03:44:31,235 - Crawler-18612 - INFO - Crawler 2 crawled https://github.com/features/codespaces and extracted 86 URLs in 0.88 seconds
+2025-04-26 03:44:34,971 - Crawler-18612 - INFO - Sent content to indexer node for https://github.com/features/codespaces
+2025-04-26 03:44:34,971 - Crawler-18612 - INFO - Task for https://github.com/features/codespaces completed in 4.61 seconds
+2025-04-26 03:44:35,072 - Crawler-18612 - INFO - Crawler 2 received URL: https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-26 03:44:35,072 - Crawler-18612 - INFO - Fetching content from https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-26 03:44:36,782 - Crawler-18612 - INFO - Fetched 154412 bytes from https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-26 03:44:36,782 - Crawler-18612 - INFO - Parsing content from https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-26 03:44:36,819 - Crawler-18612 - INFO - Crawler 2 crawled https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 and extracted 10 URLs in 1.75 seconds
+2025-04-26 03:44:37,528 - Crawler-18612 - INFO - Sent content to indexer node for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2
+2025-04-26 03:44:37,528 - Crawler-18612 - INFO - Task for https://psfmember.org/civicrm/contribute/transact?reset=1&id=2 completed in 2.46 seconds
+2025-04-26 03:44:37,629 - Crawler-18612 - INFO - Crawler 2 received URL: https://stackoverflow.co/teams/resources/
+2025-04-26 03:44:37,629 - Crawler-18612 - INFO - Fetching content from https://stackoverflow.co/teams/resources/
+2025-04-26 03:44:39,092 - Crawler-18612 - INFO - Fetched 356435 bytes from https://stackoverflow.co/teams/resources/
+2025-04-26 03:44:39,092 - Crawler-18612 - INFO - Parsing content from https://stackoverflow.co/teams/resources/
+2025-04-26 03:44:39,168 - Crawler-18612 - INFO - Crawler 2 crawled https://stackoverflow.co/teams/resources/ and extracted 92 URLs in 1.54 seconds
+2025-04-26 03:44:43,763 - Crawler-18612 - INFO - Sent content to indexer node for https://stackoverflow.co/teams/resources/
+2025-04-26 03:44:43,763 - Crawler-18612 - INFO - Task for https://stackoverflow.co/teams/resources/ completed in 6.13 seconds
+2025-04-26 03:44:43,864 - Crawler-18612 - INFO - Crawler 2 received URL: https://stackoverflow.co/company/social-impact/
+2025-04-26 03:44:43,864 - Crawler-18612 - INFO - Fetching content from https://stackoverflow.co/company/social-impact/
+2025-04-26 03:44:44,740 - Crawler-18612 - INFO - Fetched 230955 bytes from https://stackoverflow.co/company/social-impact/
+2025-04-26 03:44:44,740 - Crawler-18612 - INFO - Parsing content from https://stackoverflow.co/company/social-impact/
+2025-04-26 03:44:44,756 - Crawler-18612 - INFO - Crawler 2 crawled https://stackoverflow.co/company/social-impact/ and extracted 86 URLs in 0.89 seconds
+2025-04-26 03:44:46,424 - Crawler-18612 - INFO - Sent content to indexer node for https://stackoverflow.co/company/social-impact/
+2025-04-26 03:44:46,424 - Crawler-18612 - INFO - Task for https://stackoverflow.co/company/social-impact/ completed in 2.56 seconds
+2025-04-26 03:44:46,525 - Crawler-18612 - INFO - Crawler 2 received shutdown signal. Exiting.
+2025-04-26 03:44:46,751 - Crawler-18612 - INFO - Crawler 2 shutting down. Final statistics:
+2025-04-26 03:44:46,751 - Crawler-18612 - INFO -   - Total runtime: 76.13 seconds
+2025-04-26 03:44:46,751 - Crawler-18612 - INFO -   - URLs processed: 10
+2025-04-26 03:44:46,751 - Crawler-18612 - INFO -   - URLs extracted: 569
+2025-04-26 03:44:46,751 - Crawler-18612 - INFO -   - Errors encountered: 0
+2025-04-26 03:44:46,751 - Crawler-18612 - INFO - Crawler 2 exiting

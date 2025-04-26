@@ -6,15 +6,15 @@ from pathlib import Path
 
 def setup_aws_credentials():
     """
-    Set up AWS credentials for cloud storage.
+    Set up AWS credentials for cloud storage and queue.
     This will create the necessary credentials file and configure environment variables.
     """
     logging.basicConfig(level=logging.INFO, 
                         format='%(asctime)s - %(levelname)s - %(message)s')
     
-    print("AWS S3 Storage Configuration Setup")
-    print("==================================")
-    print("This script will help you set up AWS credentials for cloud storage.")
+    print("AWS Cloud Services Configuration Setup")
+    print("====================================")
+    print("This script will help you set up AWS credentials for cloud storage and queue services.")
     print("You will need your AWS Access Key ID and Secret Access Key.")
     print("If you don't have these, you can create them in the AWS IAM console.")
     print()
@@ -24,6 +24,7 @@ def setup_aws_credentials():
     secret_key = input("Enter your AWS Secret Access Key: ").strip()
     region = input("Enter your preferred AWS region (default: us-east-1): ").strip() or "us-east-1"
     bucket_name = input("Enter your S3 bucket name (default: web-crawler-data-storage): ").strip() or "web-crawler-data-storage"
+    queue_name = input("Enter your SQS queue name (default: web-crawler-task-queue): ").strip() or "web-crawler-task-queue"
     
     # Create AWS credentials directory if it doesn't exist
     aws_dir = Path.home() / ".aws"
@@ -54,12 +55,14 @@ def setup_aws_credentials():
     os.environ["AWS_SECRET_ACCESS_KEY"] = secret_key
     os.environ["AWS_DEFAULT_REGION"] = region
     os.environ["AWS_S3_BUCKET"] = bucket_name
+    os.environ["AWS_SQS_QUEUE"] = queue_name
     
     # Create a local config file for the web crawler
     config = {
         "aws": {
             "region": region,
-            "bucket_name": bucket_name
+            "bucket_name": bucket_name,
+            "queue_name": queue_name
         }
     }
     
@@ -70,14 +73,15 @@ def setup_aws_credentials():
     logging.info(f"AWS credentials file created at: {credentials_path}")
     logging.info(f"Local configuration file created at: aws_config.json")
     logging.info(f"S3 bucket name set to: {bucket_name}")
+    logging.info(f"SQS queue name set to: {queue_name}")
     
     print()
     print("Configuration complete!")
     print(f"AWS credentials have been saved to: {credentials_path}")
     print(f"Local configuration has been saved to: aws_config.json")
     print()
-    print("You can now run the web crawler with cloud storage enabled.")
-    print("The crawler will store raw HTML and processed text in your S3 bucket.")
+    print("You can now run the web crawler with cloud storage and cloud queue enabled.")
+    print("The crawler will store data in S3 and use SQS for task distribution.")
 
 if __name__ == "__main__":
     setup_aws_credentials() 

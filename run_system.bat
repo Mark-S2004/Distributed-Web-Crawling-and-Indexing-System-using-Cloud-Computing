@@ -18,7 +18,7 @@ echo Setting up NLTK data...
 :: Check if AWS configuration is needed
 if not exist aws_config.json (
     echo AWS configuration not found. Setting up AWS credentials...
-    echo You can press Ctrl+C to skip this step if you don't want to use cloud storage.
+    echo You can press Ctrl+C to skip this step if you don't want to use cloud storage and cloud queue.
     %PYTHON_PATH% setup_aws.py
 ) else (
     echo AWS configuration found. Using existing credentials.
@@ -32,6 +32,10 @@ if not exist crawled_data (
     mkdir crawled_data\processed_text
     mkdir crawled_data\metadata
 )
+
+:: Verify AWS connectivity and check cloud queue
+echo Verifying cloud queue setup...
+%PYTHON_PATH% -c "from cloud_queue import CloudQueue; q = CloudQueue(); print(f'Cloud Queue is running in {\"cloud\" if q.is_cloud_mode() else \"local\"} mode')"
 
 :: Start the monitoring dashboard and search interface in the background
 start "" %PYTHON_PATH% monitoring_dashboard.py
