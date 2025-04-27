@@ -1,0 +1,57 @@
+Phase 3: Enhanced Indexing, Fault Tolerance, and Monitoring (Weeks 5-6) 
+● Focus: Improve indexing capabilities for better search, implement fault tolerance for Crawler 
+Nodes (and start considering Indexer fault tolerance), and add basic monitoring. 
+● Activities: 
+1. Enhanced Indexer Node Implementation (Improved Index & Search): 
+■ Replace the very basic index with a more robust indexing library like Whoosh 
+(single node still, or explore a very basic Elasticsearch setup if ambitious and time 
+allows). 
+■ Improve content processing for indexing: more robust text extraction, basic 
+keyword analysis or stemming. 
+■ Enhance search functionality: implement slightly more advanced search (e.g., 
+boolean operators, phrase search - depending on chosen index library). 
+2. Fault Tolerance Implementation (Crawler Nodes): 
+■ Implement heartbeat monitoring in the Master Node to track Crawler Node health. 
+■ Implement Task Timeout in Master Node: if a Crawler doesn't respond within a 
+timeout, assume failure. 
+■ Implement Task Re-queueing in Master Node: re-assign URLs from failed crawlers 
+to available ones. 
+■ Basic Monitoring Implementation: 
+■ Implement basic logging in Master, Crawler, and Indexer Nodes (more detailed 
+logging than Phase 2). 
+■ Create simple monitoring dashboards or scripts to track: 
+■ Number of URLs crawled. 
+■ Number of URLs indexed. 
+■ Crawler Node status (active, failed). 
+■ Error rates. 
+3. Data Persistence for Crawled Data: 
+■ Implement storage of crawled content (raw HTML and/or processed text) in cloud 
+storage (e.g., AWS S3). This is for data durability and potential re-indexing later. 
+4. Client Interface Development (Basic Search Interface): 
+Ain Shams University  
+Faculty of Engineering  
+CSE354: Distributed Computing – 2nd Semester 2024/2025 
+■ Develop a very basic web interface or command-line client for users to: 
+■ Submit search queries. 
+■ Potentially view basic crawling/indexing status. 
+5. Testing (Fault Tolerance and Scalability (Basic)): 
+■ Simulate Crawler Node failures during a crawl and verify task re-queueing and 
+continued crawling. 
+■ Test the enhanced indexing and search functionality. 
+■ Perform basic "scalability" testing by running with more Crawler Nodes and 
+observe if crawl rate increases (basic observation, not rigorous benchmarking yet). 
+6. Phase 3 Deliverables: 
+■ Phase 3 Report: Answer Phase 3 Deliverable Questions (Advanced operations, 
+distributed processing, scalability/fault tolerance). 
+■ Enhanced Indexer (Whoosh or similar): More robust index and search. 
+■ Crawler Node Fault Tolerance: Heartbeat, timeout, task re-queueing 
+implemented. 
+■ Basic Monitoring System: Logging and basic dashboards/scripts. 
+■ Basic Search Interface (Client): For querying the index. 
+■ Updated Test Results (Fault Tolerance and Basic Scalability): Report on 
+testing fault tolerance and basic scalability observations. 
+■ Updated System Architecture Document (Version 3): Reflecting fault tolerance 
+and monitoring components. 
+● Software Engineering Process Element: Construction - Iteration 2 and Transition - Preparation 
+for Release. Focus on enhancing features, adding robustness, and preparing for user interaction 
+and testing. 

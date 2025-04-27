@@ -1,0 +1,49 @@
+Phase 2: Core Crawling and Basic Indexing Functionality (Weeks 3-4) 
+● Focus: Implement the fundamental crawling process in a distributed manner, and establish a 
+basic, functional (but not necessarily scalable or robust yet) indexing mechanism. 
+● Activities: 
+1. Crawler Node Implementation (Core Crawling): 
+■ Implement web page fetching (using requests or Scrapy). 
+■ Implement basic HTML parsing and text extraction (using Beautiful Soup). 
+■ Implement URL extraction from web pages (basic link finding). 
+■ Implement basic politeness measures (crawl delay - simple). 
+■ Implement communication to report crawled content and extracted URLs back to 
+the Master. 
+2. Master Node Implementation (Task Distribution and Worker Management): 
+■ Implement task queue integration (e.g., using Celery or cloud queue service). 
+■ Develop logic for dividing seed URLs into crawling tasks. 
+■ Implement task assignment to Crawler Nodes via the task queue. 
+■ Implement basic Crawler Node lifecycle management (start, stop, basic monitoring - ping/heartbeat). 
+3. Basic Indexer Node Implementation (Single Node, Simple Index): 
+■ Implement a single Indexer Node for simplicity initially. 
+■ Implement data ingestion from Crawler Nodes (via queue or direct communication - simpler method initially). 
+■ Implement a very basic in-memory index or file-based index (e.g., Python 
+dictionary, or a basic Whoosh index if time allows) for storing keywords and 
+associating them with URLs. 
+■ Implement a very simple keyword search functionality against the index (exact 
+match). 
+4. Basic Communication and Workflow Integration: 
+■ Establish communication flow: Master -> Task Queue -> Crawlers, Crawlers -> 
+Indexer (initially direct or via queue), Client (for basic testing and monitoring) -> 
+Master. 
+■ Integrate components to create a functional, albeit basic, crawling and indexing 
+pipeline. 
+5. Initial Testing and Debugging: 
+■ Test the basic crawling process with a small set of seed URLs. 
+■ Test basic indexing functionality and search. 
+■ Debug core crawling and indexing workflows. 
+Ain Shams University  
+Faculty of Engineering  
+CSE354: Distributed Computing – 2nd Semester 2024/2025 
+6. Phase 2 Deliverables: 
+■ Phase 2 Report: Answer Phase 2 Deliverable Questions (Worker thread, basic 
+operations, cloud setup). !!!!!!
+■ Functional Distributed Crawler (Basic Politeness): Crawls websites in a 
+distributed manner. 
+■ Basic Indexer (Single Node, Simple Index): Indexes crawled content and 
+provides basic search. 
+■ Initial Integration Test Results: Report on basic functionality testing. 
+■ Updated System Architecture Document (Version 2): Reflecting any changes 
+during implementation. 
+● Software Engineering Process Element: Construction - Iteration 1. Focus on building the core 
+functionality and integrating basic components. 
