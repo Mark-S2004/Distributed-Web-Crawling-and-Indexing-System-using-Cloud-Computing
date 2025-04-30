@@ -1,0 +1,128 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'Single Crawler Node for Distributed Web Crawler'
+
+Parameters:
+  InstanceType:
+    Description: EC2 instance type
+    Type: String
+    Default: t2.micro
+    AllowedValues:
+      - t2.micro
+      - t2.small
+      - t3.micro
+    ConstraintDescription: Must be a valid EC2 instance type.
+    
+  KeyName:
+    Description: Name of an existing EC2 KeyPair to enable SSH access
+    Type: AWS::EC2::KeyPair::KeyName
+    ConstraintDescription: Must be the name of an existing EC2 KeyPair.
+    
+  SQSQueueName:
+    Description: Name of the SQS queue for task distribution
+    Type: String
+    Default: crawler-url-queue
+    
+  StatusQueueName:
+    Description: Name of the SQS queue for status updates
+    Type: String
+    Default: crawler-status-queue
+    
+  S3BucketName:
+    Description: Name of the S3 bucket for crawler data
+    Type: String
+    Default: web-crawler-data-storage
+
+Resources:
+  CrawlerNodeRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: ec2.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/AmazonS3FullAccess
+        - arn:aws:iam::aws:policy/AmazonSQSFullAccess
+        - arn:aws:iam::aws:policy/CloudWatchFullAccess
+      Path: /
+
+  CrawlerNodeInstanceProfile:
+    Type: AWS::IAM::InstanceProfile
+    Properties:
+      Path: /
+      Roles:
+        - !Ref CrawlerNodeRole
+
+  CrawlerNodeSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Security group for crawler node
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: 0.0.0.0/0  # Restrict this to your IP in production
+        - IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          CidrIp: 0.0.0.0/0  # HTTP access
+        - IpProtocol: tcp
+          FromPort: 443
+          ToPort: 443
+          CidrIp: 0.0.0.0/0  # HTTPS access
+
+  CrawlerNode:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-05548f9cecf47b442  # Amazon Linux 2 AMI for us-east-1 (N. Virginia)
+      InstanceType: !Ref InstanceType
+      KeyName: !Ref KeyName
+      SecurityGroupIds:
+        - !GetAtt CrawlerNodeSecurityGroup.GroupId
+      IamInstanceProfile: !Ref CrawlerNodeInstanceProfile
+      Tags:
+        - Key: Name
+          Value: WebCrawlerNode
+      UserData:
+        Fn::Base64: !Sub |
+          #!/bin/bash -xe
+          # Install dependencies
+          yum update -y
+          yum install -y git python3 python3-pip
+          pip3 install --upgrade pip
+          
+          # Clone repository
+          mkdir -p /home/ec2-user/crawler
+          cd /home/ec2-user/crawler
+          # Using the correct repository URL
+          git clone https://github.com/Mark-S2004/Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing.git .
+          git checkout aws-cloud-imp
+          
+          # Install Python dependencies
+          pip3 install -r requirements.txt
+          pip3 install boto3 requests beautifulsoup4 nltk
+          
+          # Configure NLTK data
+          python3 -c "import nltk; nltk.download('punkt'); nltk.download('wordnet'); nltk.download('stopwords')"
+          
+          # Create necessary directories
+          mkdir -p logs data data/monitoring data/queue search_index
+          
+          # Start crawler node
+          nohup python3 main.py --role crawler --sqs-queue ${SQSQueueName} --status-queue ${StatusQueueName} --bucket ${S3BucketName} > /home/ec2-user/crawler.log 2>&1 &
+
+Outputs:
+  InstanceId:
+    Description: ID of the crawler instance
+    Value: !Ref CrawlerNode
+    
+  PublicDNS:
+    Description: Public DNS of the crawler instance
+    Value: !GetAtt CrawlerNode.PublicDnsName
+    
+  PublicIP:
+    Description: Public IP address of the crawler instance
+    Value: !GetAtt CrawlerNode.PublicIp 
