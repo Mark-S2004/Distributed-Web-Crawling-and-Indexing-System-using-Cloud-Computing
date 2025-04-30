@@ -5,289 +5,233 @@ import os
 import time
 import uuid
 from botocore.exceptions import ClientError
+from datetime import datetime
+from collections import deque
 
 class CloudQueue:
     """
-    Cloud-based task queue using AWS SQS (Simple Queue Service).
-    Provides methods to create, send messages to, and receive messages from SQS queues.
-    Includes fallback to local queue if SQS is unavailable.
+    CloudQueue class for managing URL queues using AWS SQS.
+    Provides methods to enqueue and dequeue URLs for crawler nodes.
+    Falls back to local in-memory queue if SQS is not available.
     """
     
-    def __init__(self, queue_name="web-crawler-task-queue", region_name=None):
-        """
-        Initialize the CloudQueue class.
+    def __init__(self, queue_name='crawler-url-queue', status_queue_name='crawler-status-queue'):
+        """Initialize the CloudQueue with SQS queues"""
+        self.use_cloud = True
+        self.local_queue = deque()  # Fallback local queue
+        self.local_status_queue = deque()  # Fallback local status queue
         
-        Args:
-            queue_name (str): The SQS queue name to use.
-            region_name (str): The AWS region to use.
-        """
-        self.logger = logging.getLogger('CloudQueue')
-        self.logger.setLevel(logging.INFO)
-        
-        # Make sure the logger has a handler
-        if not self.logger.handlers:
-            handler = logging.StreamHandler()
-            formatter = logging.Formatter('%(asctime)s - CloudQueue - %(levelname)s - %(message)s')
-            handler.setFormatter(formatter)
-            self.logger.addHandler(handler)
-            
-            # Add file handler
-            log_dir = "logs"
-            os.makedirs(log_dir, exist_ok=True)
-            file_handler = logging.FileHandler(os.path.join(log_dir, 'queue.log'))
-            file_handler.setFormatter(formatter)
-            self.logger.addHandler(file_handler)
-        
-        # Try to load AWS configuration from file
         try:
-            if os.path.exists('aws_config.json'):
-                with open('aws_config.json', 'r') as f:
-                    aws_config = json.load(f)
-                    self.logger.info("Loaded AWS configuration from aws_config.json")
-                    config_region = aws_config.get('aws', {}).get('region')
-                    
-                    # Use provided value or config value
-                    region_name = region_name or config_region
+            self.sqs = boto3.client('sqs')
+            # Set up the URL queue
+            self.queue_url = self._get_queue_url(queue_name)
+            # Set up the status queue
+            self.status_queue_url = self._get_queue_url(status_queue_name)
+            logging.info(f"CloudQueue initialized with SQS queues: {queue_name}, {status_queue_name}")
         except Exception as e:
-            self.logger.warning(f"Failed to load AWS configuration file: {e}")
-        
-        # Get region from environment variable if not provided
-        self.region_name = region_name or os.environ.get('AWS_DEFAULT_REGION', 'us-east-1')
-        self.queue_name = queue_name
-        
-        # Initialize local queue as fallback
-        self.local_queue = []
-        
-        # Try to connect to AWS SQS
-        try:
-            self.sqs = boto3.resource('sqs', region_name=self.region_name)
-            self.queue = self._ensure_queue_exists()
-            self.cloud_mode = True
-            self.logger.info(f"Successfully connected to AWS SQS in region {self.region_name}")
-        except Exception as e:
-            self.logger.error(f"Failed to initialize SQS client: {e}")
-            # Initialize to None to allow graceful fallback to local queue
-            self.sqs = None
-            self.queue = None
-            self.cloud_mode = False
-            self.logger.warning("Falling back to local queue mode")
+            logging.warning(f"Failed to initialize SQS, falling back to local queue: {e}")
+            self.use_cloud = False
+            # Create data directory for local queue persistence
+            os.makedirs('data/queue', exist_ok=True)
     
-    def _ensure_queue_exists(self):
-        """Ensure the SQS queue exists, creating it if necessary."""
+    def _get_queue_url(self, queue_name):
+        """Get the URL for an existing queue or create a new one"""
         try:
-            # Try to get the queue first
-            for queue in self.sqs.queues.filter(QueueNamePrefix=self.queue_name):
-                if queue.url.endswith(self.queue_name):
-                    self.logger.info(f"Queue {self.queue_name} already exists")
-                    return queue
-            
-            # Queue doesn't exist, create it
-            self.logger.info(f"Queue {self.queue_name} does not exist. Creating...")
-            queue = self.sqs.create_queue(
-                QueueName=self.queue_name,
-                Attributes={
-                    'DelaySeconds': '0',
-                    'MessageRetentionPeriod': '86400',  # 24 hours
-                    'VisibilityTimeout': '60'  # 60 seconds
-                }
-            )
-            self.logger.info(f"Successfully created queue {self.queue_name}")
-            return queue
+            response = self.sqs.get_queue_url(QueueName=queue_name)
+            return response['QueueUrl']
         except ClientError as e:
-            self.logger.error(f"Error with SQS queue: {e}")
-            raise
+            if e.response['Error']['Code'] == 'AWS.SimpleQueueService.NonExistentQueue':
+                # Queue doesn't exist, create it
+                response = self.sqs.create_queue(QueueName=queue_name)
+                return response['QueueUrl']
+            else:
+                # Some other error
+                raise
     
-    def send_message(self, message, attributes=None):
-        """
-        Send a message to the queue.
+    def send_message(self, message_body, message_attributes=None):
+        """Send a message to the queue"""
+        if isinstance(message_body, dict) or isinstance(message_body, list):
+            message_body = json.dumps(message_body)
         
-        Args:
-            message (dict or str): The message to send to the queue
-            attributes (dict): Optional message attributes
-            
-        Returns:
-            dict: Information about the sent message including MessageId
-        """
-        if not isinstance(message, str):
-            message = json.dumps(message)
-        
-        # If SQS is available, use it
-        if self.cloud_mode and self.queue:
+        if self.use_cloud:
             try:
-                msg_attributes = {}
-                if attributes:
-                    for key, value in attributes.items():
-                        msg_attributes[key] = {
-                            'DataType': 'String',
-                            'StringValue': str(value)
-                        }
+                # Check if message is too large for SQS (262144 bytes)
+                encoded_message = message_body.encode('utf-8')
+                message_size = len(encoded_message)
                 
-                response = self.queue.send_message(
-                    MessageBody=message,
-                    MessageAttributes=msg_attributes if msg_attributes else {}
-                )
-                self.logger.info(f"Sent message to SQS: {response.get('MessageId')}, content: {message[:50]}{'...' if len(message) > 50 else ''}")
-                return {
-                    'success': True,
-                    'message_id': response.get('MessageId'),
-                    'queue_type': 'sqs'
-                }
+                if message_size > 250000:  # Use a slightly lower limit than 262144 for safety
+                    logging.warning(f"Message size ({message_size} bytes) exceeds SQS limit, truncating content")
+                    # Truncate message body if too large
+                    if isinstance(message_body, str):
+                        try:
+                            # If JSON, extract metadata and truncate content
+                            message_dict = json.loads(message_body)
+                            if 'content' in message_dict:
+                                # Truncate content field to fit within limits
+                                message_dict['content'] = message_dict['content'][:100000]  # Truncate to 100K
+                                message_dict['truncated'] = True
+                                message_body = json.dumps(message_dict)
+                            else:
+                                # Simple truncation
+                                message_body = message_body[:250000]
+                        except json.JSONDecodeError:
+                            # Not valid JSON, just truncate
+                            message_body = message_body[:250000]
+                
+                if message_attributes:
+                    response = self.sqs.send_message(
+                        QueueUrl=self.queue_url,
+                        MessageBody=message_body,
+                        MessageAttributes=message_attributes
+                    )
+                else:
+                    response = self.sqs.send_message(
+                        QueueUrl=self.queue_url,
+                        MessageBody=message_body
+                    )
+                return {"status": "success", "message_id": response.get('MessageId')}
             except Exception as e:
-                self.logger.error(f"Failed to send message to SQS: {e}")
-                self.cloud_mode = False
-                self.logger.warning("Falling back to local queue mode")
-        
-        # Fall back to local queue
-        message_id = str(uuid.uuid4())
-        self.local_queue.append({
-            'Id': message_id,
-            'MessageBody': message,
-            'Attributes': attributes or {}
-        })
-        self.logger.info(f"Added message to local queue: {message_id}, content: {message[:50]}{'...' if len(message) > 50 else ''}")
-        return {
-            'success': True,
-            'message_id': message_id,
-            'queue_type': 'local'
-        }
+                logging.error(f"Error sending message to SQS: {e}")
+                # Fall back to local queue
+                self.local_queue.append(message_body)
+                self._persist_local_queue()  # Persist changes to disk
+                return {"status": "success_local", "message_id": str(uuid.uuid4())}
+        else:
+            # Use local queue
+            self.local_queue.append(message_body)
+            self._persist_local_queue()  # Persist changes to disk
+            return {"status": "success_local", "message_id": str(uuid.uuid4())}
     
-    def receive_messages(self, max_messages=1, wait_time=0):
-        """
-        Receive messages from the queue.
-        
-        Args:
-            max_messages (int): Maximum number of messages to receive (1-10)
-            wait_time (int): Time in seconds to wait for messages (0-20)
-            
-        Returns:
-            list: List of received message objects
-        """
-        # If SQS is available, use it
-        if self.cloud_mode and self.queue:
+    def receive_messages(self, max_messages=10, wait_time=5):
+        """Receive messages from the queue"""
+        if self.use_cloud:
             try:
-                messages = self.queue.receive_messages(
-                    MaxNumberOfMessages=min(max_messages, 10),
-                    WaitTimeSeconds=min(wait_time, 20),
-                    AttributeNames=['All'],
-                    MessageAttributeNames=['All']
+                response = self.sqs.receive_message(
+                    QueueUrl=self.queue_url,
+                    MaxNumberOfMessages=max_messages,
+                    WaitTimeSeconds=wait_time,
+                    VisibilityTimeout=30  # 30 seconds to process the message
                 )
                 
-                if messages:
-                    message_bodies = [m.body[:30] + ('...' if len(m.body) > 30 else '') for m in messages]
-                    self.logger.info(f"Received {len(messages)} messages from SQS: {message_bodies}")
-                    return messages
-                return []
+                messages = response.get('Messages', [])
+                return messages
             except Exception as e:
-                self.logger.error(f"Failed to receive messages from SQS: {e}")
-                self.cloud_mode = False
-                self.logger.warning("Falling back to local queue mode")
+                logging.error(f"Error receiving messages from SQS: {e}")
+                # Fall back to local queue
+                return self._receive_local_messages(max_messages)
+        else:
+            # Use local queue
+            return self._receive_local_messages(max_messages)
+    
+    def _receive_local_messages(self, max_messages):
+        """Receive messages from the local queue"""
+        messages = []
+        # Load the latest state from disk
+        self._load_local_queue()
         
-        # Fall back to local queue
-        if not self.local_queue:
-            if wait_time > 0:
-                time.sleep(wait_time)  # Simulate wait time
-            return []
+        # Get up to max_messages from the local queue
+        for _ in range(min(max_messages, len(self.local_queue))):
+            if self.local_queue:
+                message_body = self.local_queue.popleft()
+                message_id = str(uuid.uuid4())
+                messages.append({
+                    'MessageId': message_id,
+                    'ReceiptHandle': message_id,  # Use the same ID for receipt handle
+                    'Body': message_body,
+                    'Attributes': {
+                        'SentTimestamp': str(int(time.time() * 1000))
+                    }
+                })
         
-        # Return up to max_messages from the local queue
-        num_msgs = min(max_messages, len(self.local_queue))
-        messages = self.local_queue[:num_msgs]
-        
-        if messages:
-            message_bodies = [m.get('MessageBody', '')[:30] + ('...' if len(m.get('MessageBody', '')) > 30 else '') for m in messages]
-            self.logger.info(f"Received {len(messages)} messages from local queue: {message_bodies}")
-        
+        # Persist changes to disk
+        self._persist_local_queue()
         return messages
     
     def delete_message(self, message):
-        """
-        Delete a message from the queue.
-        
-        Args:
-            message: The message object to delete
-        
-        Returns:
-            bool: True if successful, False otherwise
-        """
-        # If SQS is available, use it
-        if self.cloud_mode and self.queue and hasattr(message, 'delete'):
+        """Delete a message from the queue after processing"""
+        if self.use_cloud:
             try:
-                message_body = message.body[:30] + ('...' if len(message.body) > 30 else '')
-                message.delete()
-                self.logger.info(f"Deleted message from SQS: {message_body}")
+                self.sqs.delete_message(
+                    QueueUrl=self.queue_url,
+                    ReceiptHandle=message['ReceiptHandle']
+                )
                 return True
             except Exception as e:
-                self.logger.error(f"Failed to delete message from SQS: {e}")
-                self.cloud_mode = False
-                self.logger.warning("Falling back to local queue mode")
-        
-        # Fall back to local queue
-        try:
-            message_id = message.get('Id') if isinstance(message, dict) else None
-            message_body = message.get('MessageBody', '')[:30] + ('...' if len(message.get('MessageBody', '')) > 30 else '') if isinstance(message, dict) else str(message)[:30]
-            
-            if message_id:
-                self.local_queue = [m for m in self.local_queue if m.get('Id') != message_id]
-            else:
-                if message in self.local_queue:
-                    self.local_queue.remove(message)
-            self.logger.info(f"Removed message from local queue: {message_body}")
+                logging.error(f"Error deleting message from SQS: {e}")
+                return False
+        else:
+            # For local queue, messages are already removed during receive
             return True
-        except Exception as e:
-            self.logger.error(f"Failed to delete message from local queue: {e}")
-            return False
+    
+    def send_status_update(self, node_id, status_data):
+        """Send a status update to the status queue"""
+        message_body = {
+            'node_id': node_id,
+            'timestamp': datetime.now().isoformat(),
+            'status': status_data
+        }
+        
+        if self.use_cloud:
+            try:
+                response = self.sqs.send_message(
+                    QueueUrl=self.status_queue_url,
+                    MessageBody=json.dumps(message_body)
+                )
+                return {"status": "success", "message_id": response.get('MessageId')}
+            except Exception as e:
+                logging.error(f"Error sending status update to SQS: {e}")
+                # Fall back to local status queue
+                self.local_status_queue.append(message_body)
+                return {"status": "success_local", "message_id": str(uuid.uuid4())}
+        else:
+            # Use local status queue
+            self.local_status_queue.append(message_body)
+            return {"status": "success_local", "message_id": str(uuid.uuid4())}
     
     def get_queue_size(self):
-        """
-        Get the approximate number of messages in the queue.
-        
-        Returns:
-            int: Approximate number of messages
-        """
-        # If SQS is available, use it
-        if self.cloud_mode and self.queue:
+        """Get the approximate number of messages in the queue"""
+        if self.use_cloud:
             try:
-                attributes = self.queue.attributes
-                queue_size = int(attributes.get('ApproximateNumberOfMessages', 0))
-                self.logger.info(f"SQS queue size: {queue_size}")
-                return queue_size
+                response = self.sqs.get_queue_attributes(
+                    QueueUrl=self.queue_url,
+                    AttributeNames=['ApproximateNumberOfMessages']
+                )
+                return int(response['Attributes']['ApproximateNumberOfMessages'])
             except Exception as e:
-                self.logger.error(f"Failed to get queue size from SQS: {e}")
-                self.cloud_mode = False
-                self.logger.warning("Falling back to local queue mode")
-        
-        # Fall back to local queue
-        queue_size = len(self.local_queue)
-        self.logger.info(f"Local queue size: {queue_size}")
-        return queue_size
+                logging.error(f"Error getting queue size from SQS: {e}")
+                # Fall back to local queue size
+                return len(self.local_queue)
+        else:
+            # Use local queue size
+            return len(self.local_queue)
     
-    def purge_queue(self):
-        """
-        Purge the queue of all messages.
-        
-        Returns:
-            bool: True if successful, False otherwise
-        """
-        # If SQS is available, use it
-        if self.cloud_mode and self.queue:
-            try:
-                self.queue.purge()
-                self.logger.info(f"Purged SQS queue {self.queue_name}")
-                return True
-            except Exception as e:
-                self.logger.error(f"Failed to purge SQS queue: {e}")
-                self.cloud_mode = False
-                self.logger.warning("Falling back to local queue mode")
-        
-        # Fall back to local queue
-        self.local_queue = []
-        self.logger.info("Cleared local queue")
-        return True
+    def enqueue_url(self, url, metadata=None):
+        """Enqueue a URL with optional metadata"""
+        message = {
+            'url': url,
+            'timestamp': datetime.now().isoformat(),
+            'metadata': metadata or {}
+        }
+        return self.send_message(json.dumps(message))
+    
+    def _persist_local_queue(self):
+        """Persist the local queue to disk"""
+        try:
+            with open('data/queue/local_queue.json', 'w') as f:
+                json.dump(list(self.local_queue), f)
+        except Exception as e:
+            logging.error(f"Error persisting local queue: {e}")
+    
+    def _load_local_queue(self):
+        """Load the local queue from disk"""
+        try:
+            if os.path.exists('data/queue/local_queue.json'):
+                with open('data/queue/local_queue.json', 'r') as f:
+                    queue_data = json.load(f)
+                    self.local_queue = deque(queue_data)
+        except Exception as e:
+            logging.error(f"Error loading local queue: {e}")
     
     def is_cloud_mode(self):
-        """
-        Check if the queue is operating in cloud mode.
-        
-        Returns:
-            bool: True if using SQS, False if using local queue
-        """
-        return self.cloud_mode 
+        """Check if the queue is operating in cloud mode"""
+        return self.use_cloud 

@@ -1865,3 +1865,1249 @@
 2025-04-26 03:44:42,778 - Master - INFO - Sending shutdown signal to indexer node...
 2025-04-26 03:44:42,778 - Master - INFO - Master node shutting down. Total URLs processed: 20
 2025-04-26 03:44:42,778 - Master - INFO - Crawled: 20, Indexed: 15, Failed: 3
+2025-04-27 02:55:40,067 - Master - INFO - Master node started with rank 0 of 5
+2025-04-27 02:55:40,067 - Master - INFO - Active Crawler Nodes: [1, 2, 3]
+2025-04-27 02:55:40,067 - Master - INFO - Indexer Node: 4
+2025-04-27 02:55:40,067 - Master - INFO - Loaded AWS configuration from aws_config.json
+2025-04-27 02:55:40,166 - Master - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-27 02:55:41,641 - Master - INFO - Queue web-crawler-task-queue already exists
+2025-04-27 02:55:41,641 - Master - INFO - Successfully connected to AWS SQS in region us-east-1
+2025-04-27 02:55:41,641 - Master - INFO - Task queue initialized in cloud mode
+2025-04-27 02:55:41,804 - Master - INFO - Sent message to SQS: 764cc9a7-48fc-4477-9eb7-7567c6f7b535, content: https://www.python.org
+2025-04-27 02:55:41,999 - Master - INFO - Sent message to SQS: 534f53da-6fd6-4eb9-a21a-bd89261e18e3, content: https://www.github.com
+2025-04-27 02:55:42,146 - Master - INFO - Sent message to SQS: d3f0f7c7-c985-4491-b15f-41162defa426, content: https://www.wikipedia.org
+2025-04-27 02:55:42,284 - Master - INFO - Sent message to SQS: d53f5986-ae3c-4508-aa48-da5a3e8fa6be, content: https://www.reddit.com
+2025-04-27 02:55:42,512 - Master - INFO - Sent message to SQS: 94477704-0ec8-4489-82b7-229bbadf95fd, content: https://www.stackoverflow.com
+2025-04-27 02:55:42,512 - Master - INFO - Added 5 seed URLs to the task queue
+2025-04-27 02:55:42,700 - Master - INFO - SQS queue size: 155
+2025-04-27 02:55:42,849 - Master - INFO - Received 1 messages from SQS: ['https://stackoverflow.co/adver...']
+2025-04-27 02:55:42,996 - Master - INFO - Deleted message from SQS: https://stackoverflow.co/adver...
+2025-04-27 02:55:42,996 - Master - INFO - Assigned URL https://stackoverflow.co/advertising/resources/ to crawler 1.
+2025-04-27 02:55:43,153 - Master - INFO - Received 1 messages from SQS: ['https://donate.wikimedia.org/?...']
+2025-04-27 02:55:43,332 - Master - INFO - Deleted message from SQS: https://donate.wikimedia.org/?...
+2025-04-27 02:55:43,332 - Master - INFO - Assigned URL https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=bn.wikipedia.org&uselang=en to crawler 2.
+2025-04-27 02:55:43,489 - Master - INFO - Received 1 messages from SQS: ['https://ar.wikipedia.org/wiki/...']
+2025-04-27 02:55:43,628 - Master - INFO - Deleted message from SQS: https://ar.wikipedia.org/wiki/...
+2025-04-27 02:55:43,628 - Master - INFO - Assigned URL https://ar.wikipedia.org/wiki/%D9%82%D8%A7%D8%A6%D9%85%D8%A9_%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA_%D9%88%D9%8A%D9%83%D9%8A%D8%A8%D9%8A%D8%AF%D9%8A%D8%A7_%D9%84%D9%84%D9%87%D8%A7%D8%AA%D9%81 to crawler 3.
+2025-04-27 02:55:43,783 - Master - INFO - SQS queue size: 152
+2025-04-27 02:55:43,884 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-27 02:55:43,884 - Master - INFO - SQS queue size: 152
+2025-04-27 02:55:43,986 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-27 02:55:43,987 - Master - INFO - SQS queue size: 152
+2025-04-27 02:55:44,088 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-27 02:55:44,088 - Master - INFO - SQS queue size: 152
+2025-04-27 02:55:44,191 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-27 02:55:44,191 - Master - INFO - SQS queue size: 152
+2025-04-27 02:55:44,293 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-27 02:55:44,293 - Master - INFO - SQS queue size: 152
+2025-04-27 02:55:44,395 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-27 02:55:44,395 - Master - INFO - SQS queue size: 152
+2025-04-27 02:55:44,497 - Master - INFO - SQS queue size: 152
+2025-04-27 02:55:44,597 - Master - INFO - SQS queue size: 152
+2025-04-27 02:55:44,698 - Master - INFO - SQS queue size: 152
+2025-04-27 02:55:44,799 - Master - INFO - SQS queue size: 152
+2025-04-27 02:55:45,078 - Master - INFO - Sent message to SQS: f65b9568-f4c2-4c5f-8c4f-4d44fd078e82, content: https://donate.wikimedia.org/wiki/Special:LandingC...
+2025-04-27 02:55:45,250 - Master - INFO - Sent message to SQS: 280e4358-fa1a-4371-be5e-07df5b58e3fe, content: https://foundation.wikimedia.org/wiki/Special:Land...
+2025-04-27 02:55:45,447 - Master - INFO - Sent message to SQS: 63facdca-b8f2-4a86-8179-c99308e0522c, content: https://foundation.wikimedia.org/wiki/Special:Land...
+2025-04-27 02:55:45,594 - Master - INFO - Sent message to SQS: b995d1ff-3319-47e8-935e-6d16b292527b, content: https://foundation.wikimedia.org/wiki/Policy:Donor...
+2025-04-27 02:55:45,750 - Master - INFO - Sent message to SQS: 653a4466-04ac-4dba-a297-4e669278cc96, content: https://donate.wikimedia.org/wiki/Special:LandingC...
+2025-04-27 02:55:46,000 - Master - INFO - SQS queue size: 157
+2025-04-27 02:55:46,000 - Master - INFO - Received URLs from crawler 2. Queue size now: 157, Processed URLs: 1
+2025-04-27 02:55:46,207 - Master - INFO - Received 1 messages from SQS: ['https://stackoverflow.blog/']
+2025-04-27 02:55:46,352 - Master - INFO - Deleted message from SQS: https://stackoverflow.blog/
+2025-04-27 02:55:46,352 - Master - INFO - Assigned URL https://stackoverflow.blog/ to crawler 2.
+2025-04-27 02:55:46,499 - Master - INFO - SQS queue size: 150
+2025-04-27 02:55:46,602 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=bn.wikipedia.org&uselang=en (found 18 URLs, 69957 bytes)
+2025-04-27 02:55:46,602 - Master - INFO - SQS queue size: 150
+2025-04-27 02:55:46,843 - Master - INFO - Sent message to SQS: be34f066-15d8-4465-8407-23789d57c510, content: https://donate.wikimedia.org/?wmf_source=donate&wm...
+2025-04-27 02:55:46,993 - Master - INFO - Sent message to SQS: b34adef3-16a2-47dd-80b6-83008fd32b19, content: https://donate.wikimedia.org/?wmf_source=donate&wm...
+2025-04-27 02:55:47,150 - Master - INFO - Sent message to SQS: e304327c-eb99-464b-9a1c-992baf9c5276, content: https://az.wikipedia.org/wiki/Vikipediya_mobil_t%C...
+2025-04-27 02:55:47,296 - Master - INFO - Sent message to SQS: 77c8c484-918a-4993-8436-ad9cd29f66e6, content: https://bn.wikipedia.org/wiki/%E0%A6%89%E0%A6%87%E...
+2025-04-27 02:55:47,519 - Master - INFO - Sent message to SQS: 85bbc9f4-5f7c-4df1-b5df-71f682f5dc65, content: https://cs.wikipedia.org/wiki/Seznam_mobiln%C3%ADc...
+2025-04-27 02:55:47,739 - Master - INFO - SQS queue size: 160
+2025-04-27 02:55:47,739 - Master - INFO - Received URLs from crawler 3. Queue size now: 160, Processed URLs: 2
+2025-04-27 02:55:47,944 - Master - INFO - Received 1 messages from SQS: ['https://www.wikipedia.org']
+2025-04-27 02:55:48,148 - Master - INFO - Deleted message from SQS: https://www.wikipedia.org
+2025-04-27 02:55:48,148 - Master - INFO - Assigned URL https://www.wikipedia.org to crawler 3.
+2025-04-27 02:55:48,288 - Master - INFO - SQS queue size: 160
+2025-04-27 02:55:48,575 - Master - INFO - Sent message to SQS: 76488524-795a-4a5d-8c2e-68fb3228de61, content: https://stackoverflow.com
+2025-04-27 02:55:48,720 - Master - INFO - Sent message to SQS: 4df5fc80-8ac9-438c-a524-97256d93eb4d, content: https://stackoverflow.com/users/email/settings/cur...
+2025-04-27 02:55:48,863 - Master - INFO - Sent message to SQS: df41be4d-6a9c-43c2-942d-a75c5ca4dae1, content: https://stackoverflow.co/teams/?utm_source=so-owne...
+2025-04-27 02:55:49,076 - Master - INFO - Sent message to SQS: 9197a9c8-fb09-4f8f-a0f2-7f431093e8f0, content: https://stackoverflow.co/advertising/?utm_source=s...
+2025-04-27 02:55:49,281 - Master - INFO - Sent message to SQS: d8a2e901-064c-4c01-afab-4be8da6ae325, content: https://stackoverflow.co/advertising/employer-bran...
+2025-04-27 02:55:49,486 - Master - INFO - SQS queue size: 156
+2025-04-27 02:55:49,486 - Master - INFO - Received URLs from crawler 2. Queue size now: 156, Processed URLs: 3
+2025-04-27 02:55:49,624 - Master - INFO - Received 1 messages from SQS: ['https://foundation.wikimedia.o...']
+2025-04-27 02:55:49,767 - Master - INFO - Deleted message from SQS: https://foundation.wikimedia.o...
+2025-04-27 02:55:49,767 - Master - INFO - Assigned URL https://foundation.wikimedia.org/wiki/Policy:Donor_privacy_policy/Supplement to crawler 2.
+2025-04-27 02:55:49,913 - Master - INFO - SQS queue size: 164
+2025-04-27 02:55:50,019 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-27 02:55:50,019 - Master - INFO - SQS queue size: 164
+2025-04-27 02:55:50,122 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-27 02:55:50,122 - Master - INFO - SQS queue size: 164
+2025-04-27 02:55:50,362 - Master - INFO - Sent message to SQS: 484b0d9d-b71f-4120-98d3-105fdd4d796d, content: https://stackoverflow.co/advertising/
+2025-04-27 02:55:50,609 - Master - INFO - Sent message to SQS: e7efb141-131f-4eb9-9688-587482e6363b, content: https://stackoverflow.co/advertising/why-stack/
+2025-04-27 02:55:50,813 - Master - INFO - Sent message to SQS: c241a11b-567d-4bb1-8766-240c1c073221, content: https://stackoverflow.co/advertising/advertise-to-...
+2025-04-27 02:55:51,010 - Master - INFO - Sent message to SQS: fb6c9ee9-3d1d-4ddd-b3ee-b7cc95052d0f, content: https://stackoverflow.co/advertising/employer-bran...
+2025-04-27 02:55:51,158 - Master - INFO - Sent message to SQS: 10fb2479-f61f-4fc8-984b-50170b72cf59, content: https://stackoverflow.co/advertising/use-cases/mar...
+2025-04-27 02:55:51,305 - Master - INFO - SQS queue size: 157
+2025-04-27 02:55:51,305 - Master - INFO - Received URLs from crawler 1. Queue size now: 157, Processed URLs: 4
+2025-04-27 02:55:51,472 - Master - INFO - Received 1 messages from SQS: ['https://foundation.wikimedia.o...']
+2025-04-27 02:55:51,617 - Master - INFO - Deleted message from SQS: https://foundation.wikimedia.o...
+2025-04-27 02:55:51,617 - Master - INFO - Assigned URL https://foundation.wikimedia.org/wiki/Special:LandingCheck?landing_page=Donor_privacy_policy&basic=true&language=en to crawler 1.
+2025-04-27 02:55:51,939 - Master - INFO - SQS queue size: 156
+2025-04-27 02:55:52,044 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://stackoverflow.blog/ (found 91 URLs, 342595 bytes)
+2025-04-27 02:55:52,046 - Master - INFO - SQS queue size: 156
+2025-04-27 02:55:52,148 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-27 02:55:52,149 - Master - INFO - SQS queue size: 156
+2025-04-27 02:55:52,252 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-27 02:55:52,254 - Master - INFO - SQS queue size: 156
+2025-04-27 02:55:52,355 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-27 02:55:52,357 - Master - INFO - SQS queue size: 156
+2025-04-27 02:55:52,458 - Master - INFO - SQS queue size: 156
+2025-04-27 02:55:52,559 - Master - INFO - Status from node 4: Indexed https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=bn.wikipedia.org&uselang=en with 10 keywords with cloud storage
+2025-04-27 02:55:52,559 - Master - INFO - SQS queue size: 156
+2025-04-27 02:55:52,662 - Master - INFO - SQS queue size: 156
+2025-04-27 02:55:52,763 - Master - INFO - SQS queue size: 156
+2025-04-27 02:55:52,864 - Master - INFO - SQS queue size: 156
+2025-04-27 02:55:52,991 - Master - INFO - SQS queue size: 156
+2025-04-27 02:55:53,405 - Master - INFO - Sent message to SQS: 868a9404-c1d6-43cb-9344-af21d395f41e, content: https://wikimediafoundation.org/
+2025-04-27 02:55:54,058 - Master - INFO - Sent message to SQS: ed986e6a-5d4c-43e0-9906-70caa0734d4b, content: https://wikimediafoundation.org/about/contact/
+2025-04-27 02:55:54,256 - Master - INFO - Sent message to SQS: 00fddb12-4a74-4322-b1a6-6e5dcdfb68d6, content: https://wikimediafoundation.org/news/
+2025-04-27 02:55:54,525 - Master - INFO - Sent message to SQS: 99f32dfb-d0af-48e9-afe0-53a0434f3d05, content: https://diff.wikimedia.org/
+2025-04-27 02:55:54,786 - Master - INFO - Sent message to SQS: dcc1db01-1428-4774-a47d-03794f7879a8, content: https://diff.wikimedia.org/calendar
+2025-04-27 02:55:54,990 - Master - INFO - SQS queue size: 156
+2025-04-27 02:55:54,990 - Master - INFO - Received URLs from crawler 2. Queue size now: 156, Processed URLs: 5
+2025-04-27 02:55:55,148 - Master - INFO - Received 1 messages from SQS: ['https://diff.wikimedia.org/cal...']
+2025-04-27 02:55:55,291 - Master - INFO - Deleted message from SQS: https://diff.wikimedia.org/cal...
+2025-04-27 02:55:55,291 - Master - INFO - Assigned URL https://diff.wikimedia.org/calendar to crawler 2.
+2025-04-27 02:55:55,451 - Master - INFO - SQS queue size: 168
+2025-04-27 02:55:55,553 - Master - INFO - Status from node 4: Indexed https://stackoverflow.blog/ with 10 keywords with cloud storage
+2025-04-27 02:55:55,554 - Master - INFO - SQS queue size: 168
+2025-04-27 02:55:55,656 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://foundation.wikimedia.org/wiki/Policy:Donor_privacy_policy/Supplement (found 23 URLs, 53300 bytes)
+2025-04-27 02:55:55,658 - Master - INFO - SQS queue size: 168
+2025-04-27 02:55:55,759 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-27 02:55:55,759 - Master - INFO - SQS queue size: 168
+2025-04-27 02:55:55,862 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://ar.wikipedia.org/wiki/%D9%82%D8%A7%D8%A6%D9%85%D8%A9_%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA_%D9%88%D9%8A%D9%83%D9%8A%D8%A8%D9%8A%D8%AF%D9%8A%D8%A7_%D9%84%D9%84%D9%87%D8%A7%D8%AA%D9%81 (found 49 URLs, 170535 bytes)
+2025-04-27 02:55:55,862 - Master - INFO - SQS queue size: 168
+2025-04-27 02:55:56,109 - Master - INFO - Sent message to SQS: 5d01bb90-af40-4f0d-bef1-572e20368fe3, content: https://meta.wikimedia.org/wiki/Special:MyLanguage...
+2025-04-27 02:55:56,252 - Master - INFO - Sent message to SQS: c1ef6c56-b05e-4f39-9927-3671e47cf613, content: https://donate.wikimedia.org/?wmf_medium=portal&wm...
+2025-04-27 02:55:56,391 - Master - INFO - Sent message to SQS: 4f1cdf1a-cfb0-4d7a-95f1-aa7a1d610ae9, content: https://en.wikipedia.org/wiki/List_of_Wikipedia_mo...
+2025-04-27 02:55:56,647 - Master - INFO - Sent message to SQS: d87a9637-b3e1-44b8-a520-005e4ffc04b4, content: https://play.google.com/store/apps/details?id=org....
+2025-04-27 02:55:56,802 - Master - INFO - Sent message to SQS: adaeed9a-5896-4ec2-a8a7-80721d0944d7, content: https://itunes.apple.com/app/apple-store/id3247152...
+2025-04-27 02:55:57,090 - Master - INFO - SQS queue size: 151
+2025-04-27 02:55:57,090 - Master - INFO - Received URLs from crawler 3. Queue size now: 151, Processed URLs: 6
+2025-04-27 02:55:57,263 - Master - INFO - Received 1 messages from SQS: ['https://az.wikipedia.org/wiki/...']
+2025-04-27 02:55:57,410 - Master - INFO - Deleted message from SQS: https://az.wikipedia.org/wiki/...
+2025-04-27 02:55:57,410 - Master - INFO - Assigned URL https://az.wikipedia.org/wiki/Vikipediya_mobil_t%C9%99tbiql%C9%99rinin_siyah%C4%B1s%C4%B1 to crawler 3.
+2025-04-27 02:55:58,136 - Master - INFO - SQS queue size: 168
+2025-04-27 02:55:58,239 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-27 02:55:58,240 - Master - INFO - SQS queue size: 168
+2025-04-27 02:55:58,343 - Master - INFO - SQS queue size: 168
+2025-04-27 02:55:58,445 - Master - INFO - Status from node 4: Indexed https://ar.wikipedia.org/wiki/%D9%82%D8%A7%D8%A6%D9%85%D8%A9_%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA_%D9%88%D9%8A%D9%83%D9%8A%D8%A8%D9%8A%D8%AF%D9%8A%D8%A7_%D9%84%D9%84%D9%87%D8%A7%D8%AA%D9%81 with 10 keywords with cloud storage
+2025-04-27 02:55:58,447 - Master - INFO - SQS queue size: 168
+2025-04-27 02:55:58,548 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-27 02:55:58,552 - Master - INFO - SQS queue size: 168
+2025-04-27 02:55:58,653 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://www.wikipedia.org (found 8 URLs, 90836 bytes)
+2025-04-27 02:55:58,654 - Master - INFO - SQS queue size: 168
+2025-04-27 02:55:58,911 - Master - INFO - Sent message to SQS: 71456e16-5592-45b7-a375-c90bbd436876, content: https://diff.wikimedia.org/
+2025-04-27 02:55:59,134 - Master - INFO - Sent message to SQS: c95989b5-7f31-40eb-9138-4cbf92275310, content: https://diff.wikimedia.org/
+2025-04-27 02:55:59,313 - Master - INFO - Sent message to SQS: 70ba77d5-d3b3-45bc-b3fa-16285976304b, content: https://diff.wikimedia.org/category/equity-inclusi...
+2025-04-27 02:55:59,519 - Master - INFO - Sent message to SQS: 7acf340e-f0f9-4aee-a6a3-ecd582e42672, content: https://diff.wikimedia.org/category/education-open...
+2025-04-27 02:55:59,727 - Master - INFO - Sent message to SQS: 6dd0e696-2974-4dcc-b2fa-0d055e145970, content: https://diff.wikimedia.org/category/technology/
+2025-04-27 02:55:59,908 - Master - INFO - SQS queue size: 177
+2025-04-27 02:55:59,908 - Master - INFO - Received URLs from crawler 2. Queue size now: 177, Processed URLs: 7
+2025-04-27 02:56:00,091 - Master - INFO - Received 1 messages from SQS: ['https://www.python.org']
+2025-04-27 02:56:00,243 - Master - INFO - Deleted message from SQS: https://www.python.org
+2025-04-27 02:56:00,243 - Master - INFO - Assigned URL https://www.python.org to crawler 2.
+2025-04-27 02:56:00,392 - Master - INFO - SQS queue size: 177
+2025-04-27 02:56:00,497 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-27 02:56:00,498 - Master - INFO - SQS queue size: 177
+2025-04-27 02:56:00,747 - Master - INFO - Sent message to SQS: e1623902-75dc-4800-b400-67c96b724b71, content: https://donate.wikimedia.org/?wmf_source=donate&wm...
+2025-04-27 02:56:00,993 - Master - INFO - Sent message to SQS: c89b1d5f-125f-407e-ac3c-1fefd2f4717b, content: https://donate.wikimedia.org/?wmf_source=donate&wm...
+2025-04-27 02:56:01,139 - Master - INFO - Sent message to SQS: f627939f-cf52-49d9-bb57-72ed57551456, content: https://ar.wikipedia.org/wiki/%D9%82%D8%A7%D8%A6%D...
+2025-04-27 02:56:02,716 - Master - INFO - Sent message to SQS: 075be848-e9ad-445e-ade8-b5244d19f2e2, content: https://bn.wikipedia.org/wiki/%E0%A6%89%E0%A6%87%E...
+2025-04-27 02:56:02,867 - Master - INFO - Sent message to SQS: 2465df23-5f33-4b67-92da-e43ae8aece48, content: https://cs.wikipedia.org/wiki/Seznam_mobiln%C3%ADc...
+2025-04-27 02:56:03,020 - Master - INFO - SQS queue size: 178
+2025-04-27 02:56:03,020 - Master - INFO - Received URLs from crawler 3. Queue size now: 178, Processed URLs: 8
+2025-04-27 02:56:04,178 - Master - INFO - Received 1 messages from SQS: ['http://example.com/page_3_0']
+2025-04-27 02:56:04,360 - Master - INFO - Deleted message from SQS: http://example.com/page_3_0
+2025-04-27 02:56:04,360 - Master - INFO - Assigned URL http://example.com/page_3_0 to crawler 3.
+2025-04-27 02:56:04,536 - Master - INFO - SQS queue size: 177
+2025-04-27 02:56:04,636 - Master - INFO - Status from node 4: Indexed https://stackoverflow.co/advertising/resources/ with 10 keywords with cloud storage
+2025-04-27 02:56:04,636 - Master - INFO - SQS queue size: 177
+2025-04-27 02:56:04,741 - Master - INFO - Status from node 4: Indexed https://foundation.wikimedia.org/wiki/Policy:Donor_privacy_policy/Supplement with 10 keywords with cloud storage
+2025-04-27 02:56:04,744 - Master - INFO - SQS queue size: 177
+2025-04-27 02:56:04,846 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-27 02:56:04,847 - Master - INFO - SQS queue size: 177
+2025-04-27 02:56:04,999 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://stackoverflow.co/advertising/resources/ (found 84 URLs, 328280 bytes)
+2025-04-27 02:56:04,999 - Master - INFO - SQS queue size: 177
+2025-04-27 02:56:05,105 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-27 02:56:05,112 - Master - INFO - SQS queue size: 177
+2025-04-27 02:56:05,375 - Master - INFO - Sent message to SQS: 61f163c9-7507-4876-aec9-766204b49d34, content: https://wikimediafoundation.org/
+2025-04-27 02:56:05,544 - Master - INFO - Sent message to SQS: 34f939f4-d719-4b22-87ba-6300fb177024, content: https://wikimediafoundation.org/about/contact/
+2025-04-27 02:56:05,764 - Master - INFO - Sent message to SQS: 002fa4b2-797a-432d-9da1-d8b2265ae0f2, content: https://wikimediafoundation.org/news/
+2025-04-27 02:56:06,096 - Master - INFO - Sent message to SQS: 3b564589-c326-4d3d-b555-57399e198760, content: https://diff.wikimedia.org/
+2025-04-27 02:56:06,295 - Master - INFO - Sent message to SQS: c39a9dc7-807b-48fd-afcb-0c1e19471cb3, content: https://diff.wikimedia.org/calendar
+2025-04-27 02:56:06,460 - Master - INFO - SQS queue size: 171
+2025-04-27 02:56:06,460 - Master - INFO - Received URLs from crawler 1. Queue size now: 171, Processed URLs: 9
+2025-04-27 02:56:06,601 - Master - INFO - Received 1 messages from SQS: ['https://itunes.apple.com/app/a...']
+2025-04-27 02:56:06,825 - Master - INFO - Deleted message from SQS: https://itunes.apple.com/app/a...
+2025-04-27 02:56:06,825 - Master - INFO - Assigned URL https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 to crawler 1.
+2025-04-27 02:56:06,990 - Master - INFO - SQS queue size: 176
+2025-04-27 02:56:07,092 - Master - INFO - Status from node 4: Indexed https://www.wikipedia.org with 10 keywords with cloud storage
+2025-04-27 02:56:07,096 - Master - INFO - SQS queue size: 176
+2025-04-27 02:56:07,197 - Master - INFO - Status from node 4: Indexed https://foundation.wikimedia.org/wiki/Special:LandingCheck?landing_page=Donor_privacy_policy&basic=true&language=en with 10 keywords with cloud storage
+2025-04-27 02:56:07,202 - Master - INFO - SQS queue size: 176
+2025-04-27 02:56:07,306 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-27 02:56:07,309 - Master - INFO - SQS queue size: 176
+2025-04-27 02:56:07,413 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-27 02:56:07,420 - Master - INFO - SQS queue size: 176
+2025-04-27 02:56:07,523 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://az.wikipedia.org/wiki/Vikipediya_mobil_t%C9%99tbiql%C9%99rinin_siyah%C4%B1s%C4%B1 (found 73 URLs, 123925 bytes)
+2025-04-27 02:56:07,523 - Master - INFO - SQS queue size: 176
+2025-04-27 02:56:07,627 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-27 02:56:07,627 - Master - INFO - SQS queue size: 176
+2025-04-27 02:56:07,731 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://foundation.wikimedia.org/wiki/Special:LandingCheck?landing_page=Donor_privacy_policy&basic=true&language=en (found 44 URLs, 116457 bytes)
+2025-04-27 02:56:07,734 - Master - INFO - SQS queue size: 176
+2025-04-27 02:56:07,837 - Master - INFO - SQS queue size: 176
+2025-04-27 02:56:07,939 - Master - INFO - SQS queue size: 176
+2025-04-27 02:56:08,040 - Master - INFO - SQS queue size: 176
+2025-04-27 02:56:08,291 - Master - INFO - Sent message to SQS: 0aa8f172-1f68-417b-9037-a0f2ad4084f6, content: https://www.iana.org/domains/example
+2025-04-27 02:56:08,434 - Master - INFO - SQS queue size: 158
+2025-04-27 02:56:08,434 - Master - INFO - Received URLs from crawler 3. Queue size now: 158, Processed URLs: 10
+2025-04-27 02:56:08,588 - Master - INFO - Received 1 messages from SQS: ['https://diff.wikimedia.org/']
+2025-04-27 02:56:08,745 - Master - INFO - Deleted message from SQS: https://diff.wikimedia.org/
+2025-04-27 02:56:08,745 - Master - INFO - Assigned URL https://diff.wikimedia.org/ to crawler 3.
+2025-04-27 02:56:08,892 - Master - INFO - SQS queue size: 190
+2025-04-27 02:56:08,997 - Master - INFO - Status from node 3: Crawler 3 completed URL: http://example.com/page_3_0 (found 1 URLs, 1256 bytes)
+2025-04-27 02:56:08,997 - Master - INFO - SQS queue size: 190
+2025-04-27 02:56:09,119 - Master - INFO - SQS queue size: 190
+2025-04-27 02:56:09,221 - Master - INFO - SQS queue size: 190
+2025-04-27 02:56:09,323 - Master - INFO - SQS queue size: 190
+2025-04-27 02:56:09,445 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-27 02:56:09,445 - Master - INFO - SQS queue size: 190
+2025-04-27 02:56:09,549 - Master - INFO - SQS queue size: 190
+2025-04-27 02:56:09,651 - Master - INFO - SQS queue size: 190
+2025-04-27 02:56:09,752 - Master - INFO - SQS queue size: 190
+2025-04-27 02:56:09,852 - Master - INFO - SQS queue size: 190
+2025-04-27 02:56:10,138 - Master - INFO - Sent message to SQS: ea78009a-0df4-4738-bb4e-5101e8be7a96, content: https://www.apple.com/
+2025-04-27 02:56:10,288 - Master - INFO - Sent message to SQS: 9a12b25c-72a9-4f29-b990-b2581422938b, content: https://www.apple.com/us/shop/goto/store
+2025-04-27 02:56:10,446 - Master - INFO - Sent message to SQS: 2f333f74-9a85-4ea5-837b-7783d64f0a95, content: https://www.apple.com/mac/
+2025-04-27 02:56:10,769 - Master - INFO - Sent message to SQS: 1e309e27-3356-42b1-96ef-fab0434055aa, content: https://www.apple.com/ipad/
+2025-04-27 02:56:11,008 - Master - INFO - Sent message to SQS: 4356acd0-25d0-4457-b6b1-1e9ce0d5ae70, content: https://www.apple.com/iphone/
+2025-04-27 02:56:11,144 - Master - INFO - SQS queue size: 188
+2025-04-27 02:56:11,144 - Master - INFO - Received URLs from crawler 1. Queue size now: 188, Processed URLs: 11
+2025-04-27 02:56:11,333 - Master - INFO - Received 1 messages from SQS: ['https://www.iana.org/domains/e...']
+2025-04-27 02:56:11,473 - Master - INFO - Deleted message from SQS: https://www.iana.org/domains/e...
+2025-04-27 02:56:11,473 - Master - INFO - Assigned URL https://www.iana.org/domains/example to crawler 1.
+2025-04-27 02:56:11,629 - Master - INFO - SQS queue size: 149
+2025-04-27 02:56:11,732 - Master - INFO - Status from node 4: Indexed https://az.wikipedia.org/wiki/Vikipediya_mobil_t%C9%99tbiql%C9%99rinin_siyah%C4%B1s%C4%B1 with 10 keywords with cloud storage
+2025-04-27 02:56:11,732 - Master - INFO - SQS queue size: 149
+2025-04-27 02:56:11,836 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-27 02:56:11,836 - Master - INFO - SQS queue size: 149
+2025-04-27 02:56:11,941 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-27 02:56:11,941 - Master - INFO - SQS queue size: 149
+2025-04-27 02:56:12,349 - Master - INFO - Sent message to SQS: c3159248-a915-406a-bc46-155247c334dc, content: https://diff.wikimedia.org/
+2025-04-27 02:56:12,538 - Master - INFO - Sent message to SQS: e1b76c4e-f870-4601-8bd3-b1d2bbb461c9, content: https://diff.wikimedia.org/
+2025-04-27 02:56:12,720 - Master - INFO - Sent message to SQS: 041ba84f-6a91-4380-a954-cd0069a0caa3, content: https://diff.wikimedia.org/category/equity-inclusi...
+2025-04-27 02:56:12,902 - Master - INFO - Sent message to SQS: 64d4f335-85cf-472a-b170-e8b51d521dc5, content: https://diff.wikimedia.org/category/education-open...
+2025-04-27 02:56:13,099 - Master - INFO - Sent message to SQS: 719cc9ce-f287-460d-a8d4-de1b3dfada6e, content: https://diff.wikimedia.org/category/technology/
+2025-04-27 02:56:13,289 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:13,289 - Master - INFO - Received URLs from crawler 3. Queue size now: 197, Processed URLs: 12
+2025-04-27 02:56:13,469 - Master - INFO - Received 1 messages from SQS: ['https://www.github.com']
+2025-04-27 02:56:13,653 - Master - INFO - Deleted message from SQS: https://www.github.com
+2025-04-27 02:56:13,653 - Master - INFO - Assigned URL https://www.github.com to crawler 3.
+2025-04-27 02:56:13,842 - Master - INFO - SQS queue size: 192
+2025-04-27 02:56:13,943 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-27 02:56:13,945 - Master - INFO - SQS queue size: 192
+2025-04-27 02:56:14,048 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-27 02:56:14,049 - Master - INFO - SQS queue size: 192
+2025-04-27 02:56:14,151 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 (found 44 URLs, 714000 bytes)
+2025-04-27 02:56:14,155 - Master - INFO - SQS queue size: 192
+2025-04-27 02:56:14,469 - Master - INFO - Sent message to SQS: bd12d721-4da6-4065-a371-3bbc937f9638, content: https://pti.icann.org
+2025-04-27 02:56:14,667 - Master - INFO - Sent message to SQS: aba3111b-1815-4fe2-9f0b-024a307cfd24, content: http://www.icann.org/
+2025-04-27 02:56:14,882 - Master - INFO - Sent message to SQS: 9c56d573-8c7c-450a-a7ed-0bba40b2aaf8, content: https://www.icann.org/privacy/policy
+2025-04-27 02:56:15,105 - Master - INFO - Sent message to SQS: 5a413ae1-5437-44ec-b274-7fc5311054cd, content: https://www.icann.org/privacy/tos
+2025-04-27 02:56:15,246 - Master - INFO - SQS queue size: 189
+2025-04-27 02:56:15,246 - Master - INFO - Received URLs from crawler 1. Queue size now: 189, Processed URLs: 13
+2025-04-27 02:56:15,404 - Master - INFO - Received 1 messages from SQS: ['https://github.com/security/ad...']
+2025-04-27 02:56:15,585 - Master - INFO - Deleted message from SQS: https://github.com/security/ad...
+2025-04-27 02:56:15,585 - Master - INFO - Assigned URL https://github.com/security/advanced-security to crawler 1.
+2025-04-27 02:56:15,724 - Master - INFO - SQS queue size: 162
+2025-04-27 02:56:15,832 - Master - INFO - Status from node 4: Indexed https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 with 10 keywords with cloud storage
+2025-04-27 02:56:15,832 - Master - INFO - SQS queue size: 162
+2025-04-27 02:56:15,936 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-27 02:56:15,936 - Master - INFO - SQS queue size: 162
+2025-04-27 02:56:16,042 - Master - INFO - SQS queue size: 162
+2025-04-27 02:56:16,143 - Master - INFO - SQS queue size: 162
+2025-04-27 02:56:16,245 - Master - INFO - SQS queue size: 162
+2025-04-27 02:56:16,345 - Master - INFO - SQS queue size: 162
+2025-04-27 02:56:16,446 - Master - INFO - SQS queue size: 162
+2025-04-27 02:56:16,547 - Master - INFO - SQS queue size: 162
+2025-04-27 02:56:16,649 - Master - INFO - SQS queue size: 162
+2025-04-27 02:56:16,749 - Master - INFO - SQS queue size: 162
+2025-04-27 02:56:16,850 - Master - INFO - SQS queue size: 162
+2025-04-27 02:56:16,951 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-27 02:56:16,951 - Master - INFO - SQS queue size: 162
+2025-04-27 02:56:17,057 - Master - INFO - SQS queue size: 162
+2025-04-27 02:56:17,158 - Master - INFO - SQS queue size: 162
+2025-04-27 02:56:17,259 - Master - INFO - SQS queue size: 162
+2025-04-27 02:56:17,360 - Master - INFO - SQS queue size: 162
+2025-04-27 02:56:17,462 - Master - INFO - Status from node 4: Indexed http://example.com/page_3_0 with 10 keywords with cloud storage
+2025-04-27 02:56:17,462 - Master - INFO - SQS queue size: 162
+2025-04-27 02:56:17,567 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://diff.wikimedia.org/calendar (found 241 URLs, 452859 bytes)
+2025-04-27 02:56:17,570 - Master - INFO - SQS queue size: 162
+2025-04-27 02:56:17,672 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-27 02:56:17,677 - Master - INFO - SQS queue size: 162
+2025-04-27 02:56:17,779 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://www.iana.org/domains/example (found 4 URLs, 4651 bytes)
+2025-04-27 02:56:17,784 - Master - INFO - SQS queue size: 162
+2025-04-27 02:56:17,885 - Master - INFO - SQS queue size: 162
+2025-04-27 02:56:17,986 - Master - INFO - SQS queue size: 162
+2025-04-27 02:56:18,087 - Master - INFO - SQS queue size: 162
+2025-04-27 02:56:18,187 - Master - INFO - SQS queue size: 162
+2025-04-27 02:56:18,288 - Master - INFO - SQS queue size: 162
+2025-04-27 02:56:18,389 - Master - INFO - SQS queue size: 162
+2025-04-27 02:56:18,490 - Master - INFO - SQS queue size: 162
+2025-04-27 02:56:18,591 - Master - INFO - SQS queue size: 162
+2025-04-27 02:56:18,692 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-27 02:56:18,695 - Master - INFO - SQS queue size: 162
+2025-04-27 02:56:18,796 - Master - INFO - SQS queue size: 162
+2025-04-27 02:56:18,897 - Master - INFO - SQS queue size: 162
+2025-04-27 02:56:18,998 - Master - INFO - SQS queue size: 162
+2025-04-27 02:56:19,099 - Master - INFO - SQS queue size: 162
+2025-04-27 02:56:19,200 - Master - INFO - SQS queue size: 162
+2025-04-27 02:56:19,301 - Master - INFO - SQS queue size: 162
+2025-04-27 02:56:19,595 - Master - INFO - Sent message to SQS: 3f0fa13f-d593-4571-90ee-026df3ffa245, content: https://www.python.org/psf/
+2025-04-27 02:56:19,746 - Master - INFO - Sent message to SQS: 73ba2b60-2c43-4eb3-bf08-52196cb31159, content: https://docs.python.org
+2025-04-27 02:56:19,894 - Master - INFO - Sent message to SQS: 6f51c632-28af-4315-886f-d5a0cee0237c, content: https://pypi.org/
+2025-04-27 02:56:20,067 - Master - INFO - Sent message to SQS: 1fb0f95d-f3ef-4d6b-be1c-8db58ef2acb1, content: https://psfmember.org/civicrm/contribute/transact?...
+2025-04-27 02:56:20,254 - Master - INFO - Sent message to SQS: 9a12609b-2d54-479b-bf25-eb34b8d1a90e, content: https://www.linkedin.com/company/python-software-f...
+2025-04-27 02:56:20,396 - Master - INFO - SQS queue size: 193
+2025-04-27 02:56:20,396 - Master - INFO - Received URLs from crawler 2. Queue size now: 193, Processed URLs: 14
+2025-04-27 02:56:20,545 - Master - INFO - Received 1 messages from SQS: ['https://donate.wikimedia.org/w...']
+2025-04-27 02:56:20,686 - Master - INFO - Deleted message from SQS: https://donate.wikimedia.org/w...
+2025-04-27 02:56:20,686 - Master - INFO - Assigned URL https://donate.wikimedia.org/wiki/Special:LandingCheck?landing_page=Problems_donating&basic=true&language=en to crawler 2.
+2025-04-27 02:56:20,835 - Master - INFO - SQS queue size: 191
+2025-04-27 02:56:20,936 - Master - INFO - Status from node 4: Indexed https://diff.wikimedia.org/calendar with 10 keywords with cloud storage
+2025-04-27 02:56:20,937 - Master - INFO - SQS queue size: 191
+2025-04-27 02:56:21,042 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-27 02:56:21,042 - Master - INFO - SQS queue size: 191
+2025-04-27 02:56:21,297 - Master - INFO - Sent message to SQS: 455aec88-d92e-4c6c-85c2-53d5aeec0f40, content: https://github.com/features/copilot
+2025-04-27 02:56:21,461 - Master - INFO - Sent message to SQS: 7ef0b953-5f5d-4dee-bfc3-975372245222, content: https://github.com/security/advanced-security
+2025-04-27 02:56:21,626 - Master - INFO - Sent message to SQS: 291e4139-dee0-4645-985e-1b7c8d397dab, content: https://github.com/features/actions
+2025-04-27 02:56:21,772 - Master - INFO - Sent message to SQS: ecd8a708-c0b5-4fc0-b5eb-b522f9423408, content: https://github.com/features/codespaces
+2025-04-27 02:56:21,921 - Master - INFO - Sent message to SQS: 5009467f-4716-4db9-8a1f-1cb6bb881a24, content: https://github.com/features/issues
+2025-04-27 02:56:22,128 - Master - INFO - SQS queue size: 199
+2025-04-27 02:56:22,128 - Master - INFO - Received URLs from crawler 1. Queue size now: 199, Processed URLs: 15
+2025-04-27 02:56:22,478 - Master - INFO - Received 1 messages from SQS: ['https://stackoverflowteams.hel...']
+2025-04-27 02:56:22,664 - Master - INFO - Deleted message from SQS: https://stackoverflowteams.hel...
+2025-04-27 02:56:22,664 - Master - INFO - Assigned URL https://stackoverflowteams.help/en/collections/4145545-enterprise to crawler 1.
+2025-04-27 02:56:22,849 - Master - INFO - SQS queue size: 200
+2025-04-27 02:56:22,952 - Master - INFO - Status from node 4: Indexed https://www.iana.org/domains/example with 10 keywords with cloud storage
+2025-04-27 02:56:22,952 - Master - INFO - SQS queue size: 200
+2025-04-27 02:56:23,058 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://www.python.org (found 71 URLs, 51390 bytes)
+2025-04-27 02:56:23,059 - Master - INFO - SQS queue size: 200
+2025-04-27 02:56:23,373 - Master - INFO - Sent message to SQS: 11ebbd7a-3183-49e2-a8b1-f5dd82e4f48d, content: https://wikimediafoundation.org/
+2025-04-27 02:56:23,580 - Master - INFO - Sent message to SQS: 8e905296-1bae-4c1b-8d00-e4fd51e18147, content: https://donate.wikimedia.org/?uselang=en&wmf_mediu...
+2025-04-27 02:56:23,730 - Master - INFO - Sent message to SQS: 08a60957-9de4-48b6-9ca5-97af36bebd4d, content: https://www.paypal.com/cgi-bin/helpscr?cmd=_help&t...
+2025-04-27 02:56:24,085 - Master - INFO - Sent message to SQS: aba4e611-4f3c-4afb-bd4f-25c040767f97, content: https://en.wikipedia.org/wiki/Zendesk
+2025-04-27 02:56:24,298 - Master - INFO - Sent message to SQS: 989caec4-7968-44c0-a601-9b242ac6ad28, content: https://www.zendesk.com/company/customers-partners...
+2025-04-27 02:56:24,495 - Master - INFO - SQS queue size: 203
+2025-04-27 02:56:24,503 - Master - INFO - Received URLs from crawler 2. Queue size now: 203, Processed URLs: 16
+2025-04-27 02:56:24,709 - Master - INFO - Received 1 messages from SQS: ['https://cs.wikipedia.org/wiki/...']
+2025-04-27 02:56:24,906 - Master - INFO - Deleted message from SQS: https://cs.wikipedia.org/wiki/...
+2025-04-27 02:56:24,906 - Master - INFO - Assigned URL https://cs.wikipedia.org/wiki/Seznam_mobiln%C3%ADch_aplikac%C3%AD_Wikipedie to crawler 2.
+2025-04-27 02:56:25,098 - Master - INFO - SQS queue size: 186
+2025-04-27 02:56:25,199 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-27 02:56:25,202 - Master - INFO - SQS queue size: 186
+2025-04-27 02:56:25,304 - Master - INFO - Status from node 3: Crawler 3 completed URL: https://diff.wikimedia.org/ (found 66 URLs, 203674 bytes)
+2025-04-27 02:56:25,308 - Master - INFO - SQS queue size: 186
+2025-04-27 02:56:25,411 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-27 02:56:25,416 - Master - INFO - SQS queue size: 186
+2025-04-27 02:56:25,517 - Master - INFO - SQS queue size: 186
+2025-04-27 02:56:25,618 - Master - INFO - SQS queue size: 186
+2025-04-27 02:56:25,719 - Master - INFO - SQS queue size: 186
+2025-04-27 02:56:25,820 - Master - INFO - SQS queue size: 186
+2025-04-27 02:56:25,921 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-27 02:56:25,926 - Master - INFO - SQS queue size: 186
+2025-04-27 02:56:26,028 - Master - INFO - SQS queue size: 186
+2025-04-27 02:56:26,128 - Master - INFO - SQS queue size: 186
+2025-04-27 02:56:26,229 - Master - INFO - SQS queue size: 186
+2025-04-27 02:56:26,331 - Master - INFO - SQS queue size: 186
+2025-04-27 02:56:26,432 - Master - INFO - Status from node 4: Indexed https://diff.wikimedia.org/ with 10 keywords with cloud storage
+2025-04-27 02:56:26,435 - Master - INFO - SQS queue size: 186
+2025-04-27 02:56:26,538 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-27 02:56:26,542 - Master - INFO - SQS queue size: 186
+2025-04-27 02:56:26,643 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://donate.wikimedia.org/wiki/Special:LandingCheck?landing_page=Problems_donating&basic=true&language=en (found 23 URLs, 59420 bytes)
+2025-04-27 02:56:26,648 - Master - INFO - SQS queue size: 186
+2025-04-27 02:56:26,749 - Master - INFO - Status from node 1: Crawler 1 completed URL: https://github.com/security/advanced-security (found 76 URLs, 262187 bytes)
+2025-04-27 02:56:26,752 - Master - INFO - SQS queue size: 186
+2025-04-27 02:56:26,854 - Master - INFO - SQS queue size: 186
+2025-04-27 02:56:26,955 - Master - INFO - SQS queue size: 186
+2025-04-27 02:56:27,056 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-27 02:56:27,056 - Master - INFO - SQS queue size: 186
+2025-04-27 02:56:27,161 - Master - INFO - SQS queue size: 186
+2025-04-27 02:56:27,262 - Master - INFO - SQS queue size: 186
+2025-04-27 02:56:27,363 - Master - INFO - SQS queue size: 186
+2025-04-27 02:56:27,464 - Master - INFO - SQS queue size: 186
+2025-04-27 02:56:27,565 - Master - INFO - SQS queue size: 186
+2025-04-27 02:56:27,666 - Master - INFO - SQS queue size: 186
+2025-04-27 02:56:27,766 - Master - INFO - SQS queue size: 186
+2025-04-27 02:56:27,867 - Master - INFO - SQS queue size: 186
+2025-04-27 02:56:27,969 - Master - INFO - SQS queue size: 186
+2025-04-27 02:56:28,214 - Master - INFO - Sent message to SQS: bd572fb2-3eae-4919-a84d-f3cdd641ded1, content: https://donate.wikimedia.org/?wmf_source=donate&wm...
+2025-04-27 02:56:28,367 - Master - INFO - Sent message to SQS: 400aace7-da01-47e0-ab44-f0f96080f017, content: https://donate.wikimedia.org/?wmf_source=donate&wm...
+2025-04-27 02:56:28,637 - Master - INFO - Sent message to SQS: 8dd51f20-8069-429e-a9d7-5e14fd498cc5, content: https://ar.wikipedia.org/wiki/%D9%82%D8%A7%D8%A6%D...
+2025-04-27 02:56:28,802 - Master - INFO - Sent message to SQS: 709bd1c7-d6f0-4987-a6ca-dd1669f29a64, content: https://az.wikipedia.org/wiki/Vikipediya_mobil_t%C...
+2025-04-27 02:56:28,951 - Master - INFO - Sent message to SQS: f3e3658b-3f1b-4eba-b518-f7170d8c7651, content: https://bn.wikipedia.org/wiki/%E0%A6%89%E0%A6%87%E...
+2025-04-27 02:56:29,111 - Master - INFO - SQS queue size: 212
+2025-04-27 02:56:29,111 - Master - INFO - Received URLs from crawler 2. Queue size now: 212, Processed URLs: 17
+2025-04-27 02:56:29,293 - Master - INFO - Received 1 messages from SQS: ['https://diff.wikimedia.org/cat...']
+2025-04-27 02:56:30,986 - Master - INFO - Deleted message from SQS: https://diff.wikimedia.org/cat...
+2025-04-27 02:56:30,986 - Master - INFO - Assigned URL https://diff.wikimedia.org/category/technology/ to crawler 2.
+2025-04-27 02:56:31,162 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:31,264 - Master - INFO - Status from node 4: Indexed https://github.com/security/advanced-security with 10 keywords with cloud storage
+2025-04-27 02:56:31,268 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:31,372 - Master - INFO - Status from node 4: Indexed https://www.python.org with 10 keywords with cloud storage
+2025-04-27 02:56:31,376 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:31,478 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-27 02:56:31,483 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:31,584 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-27 02:56:31,584 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:31,689 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:31,790 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:31,890 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:31,991 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:32,092 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:32,193 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:32,294 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:32,395 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:32,496 - Master - INFO - Status from node 1: Heartbeat from crawler 1: Active
+2025-04-27 02:56:32,499 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:32,601 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:32,702 - Master - INFO - Status from node 4: Indexed https://donate.wikimedia.org/wiki/Special:LandingCheck?landing_page=Problems_donating&basic=true&language=en with 10 keywords with cloud storage
+2025-04-27 02:56:32,706 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:32,808 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-27 02:56:32,810 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:32,915 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://cs.wikipedia.org/wiki/Seznam_mobiln%C3%ADch_aplikac%C3%AD_Wikipedie (found 57 URLs, 75401 bytes)
+2025-04-27 02:56:32,918 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:33,022 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:33,123 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:33,224 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:33,324 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:33,425 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:33,526 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:33,627 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:33,728 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:33,829 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:33,930 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:34,031 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:34,133 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:34,233 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:34,334 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:34,436 - Master - INFO - Status from node 4: Indexed https://cs.wikipedia.org/wiki/Seznam_mobiln%C3%ADch_aplikac%C3%AD_Wikipedie with 10 keywords with cloud storage
+2025-04-27 02:56:34,440 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:34,543 - Master - INFO - Status from node 3: Heartbeat from crawler 3: Active
+2025-04-27 02:56:34,546 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:34,648 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:34,749 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:34,850 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:34,951 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:35,052 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:35,153 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:35,254 - Master - INFO - Status from node 2: Heartbeat from crawler 2: Active
+2025-04-27 02:56:35,256 - Master - INFO - SQS queue size: 197
+2025-04-27 02:56:35,494 - Master - INFO - Sent message to SQS: 59d5b114-362f-47e4-8871-52cc83108d36, content: https://diff.wikimedia.org/
+2025-04-27 02:56:35,667 - Master - INFO - Sent message to SQS: 66235ac2-150a-498f-a4ef-1e7505ea51ac, content: https://diff.wikimedia.org/
+2025-04-27 02:56:35,999 - Master - INFO - Sent message to SQS: 6c36be93-6550-4347-8418-00a90f6bffcc, content: https://diff.wikimedia.org/category/equity-inclusi...
+2025-04-27 02:56:36,215 - Master - INFO - Sent message to SQS: 5e184381-57ba-45e7-90a5-95ecd3f8b804, content: https://diff.wikimedia.org/category/education-open...
+2025-04-27 02:56:36,421 - Master - INFO - Sent message to SQS: 4c70601f-c3a6-40c7-84e8-71cf9286e7c6, content: https://diff.wikimedia.org/category/technology/
+2025-04-27 02:56:36,576 - Master - INFO - SQS queue size: 211
+2025-04-27 02:56:36,576 - Master - INFO - Received URLs from crawler 2. Queue size now: 211, Processed URLs: 18
+2025-04-27 02:56:36,726 - Master - INFO - Received 1 messages from SQS: ['https://stackoverflow.co/teams...']
+2025-04-27 02:56:36,900 - Master - INFO - Deleted message from SQS: https://stackoverflow.co/teams...
+2025-04-27 02:56:36,900 - Master - INFO - Assigned URL https://stackoverflow.co/teams/?utm_source=so-owned&utm_medium=blog&utm_campaign=nav-side-bar to crawler 2.
+2025-04-27 02:56:37,051 - Master - INFO - SQS queue size: 215
+2025-04-27 02:56:37,153 - Master - INFO - Status from node 2: Crawler 2 completed URL: https://diff.wikimedia.org/category/technology/ (found 76 URLs, 198117 bytes)
+2025-04-27 02:56:37,159 - Master - INFO - SQS queue size: 215
+2025-04-27 02:56:37,540 - Master - INFO - Sent message to SQS: f5bc6e24-9b67-43b7-ba83-58e00ddb061b, content: https://github.com/features/copilot
+2025-04-27 02:56:37,720 - Master - INFO - Sent message to SQS: f5e0464a-226d-43e2-a868-84e2fe218819, content: https://github.com/security/advanced-security
+2025-04-27 02:56:37,934 - Master - INFO - Sent message to SQS: 991cd232-2c05-40d7-8340-517e6192ff82, content: https://github.com/features/actions
+2025-04-27 02:56:38,083 - Master - INFO - Sent message to SQS: 757b499d-5be6-4f71-a910-91c940f3a7bc, content: https://github.com/features/codespaces
+2025-04-27 02:56:38,299 - Master - INFO - Sent message to SQS: 9330ec0a-b3b3-4565-b373-158facb5ede9, content: https://github.com/features/issues
+2025-04-27 02:56:38,675 - Master - INFO - SQS queue size: 220
+2025-04-27 02:56:38,675 - Master - INFO - Received URLs from crawler 3. Queue size now: 220, Processed URLs: 19
+2025-04-27 02:56:38,840 - Master - INFO - Received 1 messages from SQS: ['https://stackoverflowteams.hel...']
+2025-04-27 02:56:38,982 - Master - INFO - Deleted message from SQS: https://stackoverflowteams.hel...
+2025-04-27 02:56:38,982 - Master - INFO - Assigned URL https://stackoverflowteams.help/en/collections/7850240-stack-overflow-for-teams-university to crawler 3.
+2025-04-27 02:56:39,236 - Master - INFO - SQS queue size: 222
+2025-04-27 02:56:39,338 - Master - INFO - SQS queue size: 222
+2025-04-27 02:56:39,338 - Master - INFO - Received URLs from crawler 2. Queue size now: 222, Processed URLs: 20
+2025-04-27 02:56:39,574 - Master - INFO - Received 1 messages from SQS: ['https://stackoverflow.co/adver...']
+2025-04-27 02:56:39,738 - Master - INFO - Deleted message from SQS: https://stackoverflow.co/adver...
+2025-04-27 02:56:39,738 - Master - INFO - Assigned URL https://stackoverflow.co/advertising/use-cases/marketing-teams/ to crawler 2.
+2025-04-27 02:56:39,886 - Master - INFO - SQS queue size: 220
+2025-04-27 02:56:39,993 - Master - INFO - Sending shutdown signals to crawler nodes...
+2025-04-27 02:56:39,993 - Master - INFO - Shutdown signal sent to crawler 1
+2025-04-27 02:56:39,993 - Master - INFO - Shutdown signal sent to crawler 2
+2025-04-27 02:56:39,993 - Master - INFO - Shutdown signal sent to crawler 3
+2025-04-27 02:56:39,993 - Master - INFO - Sending shutdown signal to indexer node...
+2025-04-27 02:56:40,091 - Master - INFO - Master node shutting down. Total URLs processed: 20
+2025-04-27 02:56:40,091 - Master - INFO - Crawled: 20, Indexed: 17, Failed: 0
+2025-04-28 00:09:58,622 - Master - INFO - Master node started with rank 0 of 5
+2025-04-28 00:09:58,622 - Master - INFO - Active Crawler Nodes: [1, 2, 3]
+2025-04-28 00:09:58,622 - Master - INFO - Indexer Node: 4
+2025-04-28 00:09:58,688 - Master - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-28 00:10:00,587 - Master - INFO - CloudQueue initialized with SQS queues: crawler-url-queue, crawler-status-queue
+2025-04-28 00:10:00,587 - Master - INFO - Task queue initialized in cloud mode
+2025-04-28 00:10:00,587 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Invalid type for parameter MessageAttributes.type, value: seed, type: <class 'str'>, valid types: <class 'dict'>
+2025-04-28 00:10:00,587 - Master - ERROR - Error persisting local queue: [Errno 2] No such file or directory: 'data/queue/local_queue.json'
+2025-04-28 00:10:00,587 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Invalid type for parameter MessageAttributes.type, value: seed, type: <class 'str'>, valid types: <class 'dict'>
+2025-04-28 00:10:00,587 - Master - ERROR - Error persisting local queue: [Errno 2] No such file or directory: 'data/queue/local_queue.json'
+2025-04-28 00:10:00,587 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Invalid type for parameter MessageAttributes.type, value: seed, type: <class 'str'>, valid types: <class 'dict'>
+2025-04-28 00:10:00,587 - Master - ERROR - Error persisting local queue: [Errno 2] No such file or directory: 'data/queue/local_queue.json'
+2025-04-28 00:10:00,587 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Invalid type for parameter MessageAttributes.type, value: seed, type: <class 'str'>, valid types: <class 'dict'>
+2025-04-28 00:10:00,587 - Master - ERROR - Error persisting local queue: [Errno 2] No such file or directory: 'data/queue/local_queue.json'
+2025-04-28 00:10:00,587 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Invalid type for parameter MessageAttributes.type, value: seed, type: <class 'str'>, valid types: <class 'dict'>
+2025-04-28 00:10:00,587 - Master - ERROR - Error persisting local queue: [Errno 2] No such file or directory: 'data/queue/local_queue.json'
+2025-04-28 00:10:00,587 - Master - INFO - Added 5 seed URLs to the task queue
+2025-04-28 00:10:00,791 - Master - INFO - Sending shutdown signals to crawler nodes...
+2025-04-28 00:10:00,791 - Master - INFO - Shutdown signal sent to crawler 1
+2025-04-28 00:10:00,791 - Master - INFO - Shutdown signal sent to crawler 2
+2025-04-28 00:10:00,791 - Master - INFO - Shutdown signal sent to crawler 3
+2025-04-28 00:10:00,791 - Master - INFO - Sending shutdown signal to indexer node...
+2025-04-28 00:10:00,799 - Master - INFO - Master node shutting down. Total URLs processed: 0
+2025-04-28 00:10:00,799 - Master - INFO - Crawled: 0, Indexed: 0, Failed: 0
+2025-04-28 00:20:36,414 - Master - INFO - Master node started with rank 0 of 5
+2025-04-28 00:20:36,414 - Master - INFO - Active Crawler Nodes: [1, 2, 3]
+2025-04-28 00:20:36,414 - Master - INFO - Indexer Node: 4
+2025-04-28 00:20:36,745 - Master - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-28 00:20:38,673 - Master - INFO - CloudQueue initialized with SQS queues: crawler-url-queue, crawler-status-queue
+2025-04-28 00:20:38,673 - Master - INFO - Task queue initialized in cloud mode
+2025-04-28 00:20:38,673 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Invalid type for parameter MessageAttributes.type, value: seed, type: <class 'str'>, valid types: <class 'dict'>
+2025-04-28 00:20:38,673 - Master - ERROR - Error persisting local queue: [Errno 2] No such file or directory: 'data/queue/local_queue.json'
+2025-04-28 00:20:38,673 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Invalid type for parameter MessageAttributes.type, value: seed, type: <class 'str'>, valid types: <class 'dict'>
+2025-04-28 00:20:38,673 - Master - ERROR - Error persisting local queue: [Errno 2] No such file or directory: 'data/queue/local_queue.json'
+2025-04-28 00:20:38,675 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Invalid type for parameter MessageAttributes.type, value: seed, type: <class 'str'>, valid types: <class 'dict'>
+2025-04-28 00:20:38,675 - Master - ERROR - Error persisting local queue: [Errno 2] No such file or directory: 'data/queue/local_queue.json'
+2025-04-28 00:20:38,675 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Invalid type for parameter MessageAttributes.type, value: seed, type: <class 'str'>, valid types: <class 'dict'>
+2025-04-28 00:20:38,675 - Master - ERROR - Error persisting local queue: [Errno 2] No such file or directory: 'data/queue/local_queue.json'
+2025-04-28 00:20:38,675 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Invalid type for parameter MessageAttributes.type, value: seed, type: <class 'str'>, valid types: <class 'dict'>
+2025-04-28 00:20:38,675 - Master - ERROR - Error persisting local queue: [Errno 2] No such file or directory: 'data/queue/local_queue.json'
+2025-04-28 00:20:38,675 - Master - INFO - Added 5 seed URLs to the task queue
+2025-04-28 00:20:39,159 - Master - INFO - Assigned URL  to crawler 1.
+2025-04-28 00:20:39,559 - Master - INFO - Assigned URL  to crawler 2.
+2025-04-28 00:20:39,942 - Master - INFO - Assigned URL  to crawler 3.
+2025-04-28 00:20:40,280 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 00:22:17,642 - Master - INFO - Master node started with rank 0 of 5
+2025-04-28 00:22:17,645 - Master - INFO - Active Crawler Nodes: [1, 2, 3]
+2025-04-28 00:22:17,646 - Master - INFO - Indexer Node: 4
+2025-04-28 00:22:17,763 - Master - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-28 00:22:19,247 - Master - INFO - CloudQueue initialized with SQS queues: crawler-url-queue, crawler-status-queue
+2025-04-28 00:22:19,247 - Master - INFO - Task queue initialized in cloud mode
+2025-04-28 00:22:19,247 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Invalid type for parameter MessageAttributes.type, value: seed, type: <class 'str'>, valid types: <class 'dict'>
+2025-04-28 00:22:19,247 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Invalid type for parameter MessageAttributes.type, value: seed, type: <class 'str'>, valid types: <class 'dict'>
+2025-04-28 00:22:19,247 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Invalid type for parameter MessageAttributes.type, value: seed, type: <class 'str'>, valid types: <class 'dict'>
+2025-04-28 00:22:19,247 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Invalid type for parameter MessageAttributes.type, value: seed, type: <class 'str'>, valid types: <class 'dict'>
+2025-04-28 00:22:19,247 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Invalid type for parameter MessageAttributes.type, value: seed, type: <class 'str'>, valid types: <class 'dict'>
+2025-04-28 00:22:19,247 - Master - INFO - Added 5 seed URLs to the task queue
+2025-04-28 00:22:20,371 - Master - INFO - Assigned URL  to crawler 1.
+2025-04-28 00:22:20,731 - Master - INFO - Assigned URL  to crawler 2.
+2025-04-28 00:22:21,066 - Master - INFO - Assigned URL  to crawler 3.
+2025-04-28 00:22:21,332 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 00:24:46,819 - Master - INFO - Master node started with rank 0 of 5
+2025-04-28 00:24:46,820 - Master - INFO - Active Crawler Nodes: [1, 2, 3]
+2025-04-28 00:24:46,820 - Master - INFO - Indexer Node: 4
+2025-04-28 00:24:46,905 - Master - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-28 00:24:48,610 - Master - INFO - CloudQueue initialized with SQS queues: crawler-url-queue, crawler-status-queue
+2025-04-28 00:24:48,610 - Master - INFO - Task queue initialized in cloud mode
+2025-04-28 00:24:48,610 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Invalid type for parameter MessageAttributes.type, value: seed, type: <class 'str'>, valid types: <class 'dict'>
+2025-04-28 00:24:48,611 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Invalid type for parameter MessageAttributes.type, value: seed, type: <class 'str'>, valid types: <class 'dict'>
+2025-04-28 00:24:48,611 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Invalid type for parameter MessageAttributes.type, value: seed, type: <class 'str'>, valid types: <class 'dict'>
+2025-04-28 00:24:48,613 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Invalid type for parameter MessageAttributes.type, value: seed, type: <class 'str'>, valid types: <class 'dict'>
+2025-04-28 00:24:48,613 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Invalid type for parameter MessageAttributes.type, value: seed, type: <class 'str'>, valid types: <class 'dict'>
+2025-04-28 00:24:48,613 - Master - INFO - Added 5 seed URLs to the task queue
+2025-04-28 00:24:49,110 - Master - INFO - Assigned URL  to crawler 1.
+2025-04-28 00:24:49,494 - Master - INFO - Assigned URL  to crawler 2.
+2025-04-28 00:24:49,869 - Master - INFO - Assigned URL  to crawler 3.
+2025-04-28 00:24:50,242 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 00:24:51,136 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 00:24:51,467 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 00:24:51,776 - Master - ERROR - Error from 1: Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-28 00:24:52,051 - Master - ERROR - Error from 2: Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-28 00:24:52,390 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 00:24:52,922 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 00:24:53,221 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 00:24:53,484 - Master - ERROR - Error from 3: Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-28 00:24:53,783 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 00:24:54,059 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 00:24:54,819 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 00:24:55,097 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 00:24:56,359 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 00:24:58,346 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 00:24:59,048 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 00:24:59,352 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 00:25:02,643 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 00:25:02,915 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 00:25:03,248 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 00:25:04,941 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 00:25:05,461 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 00:25:06,318 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 00:25:09,871 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 00:25:10,138 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 00:25:12,057 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 00:25:12,370 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 00:25:13,892 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 00:25:14,465 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 00:25:16,554 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 00:25:16,825 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 00:25:17,091 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 00:25:19,578 - Master - WARNING - Task timeout for crawler 1 on URL: 
+2025-04-28 00:25:19,578 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Invalid type for parameter MessageAttributes.type, value: retry, type: <class 'str'>, valid types: <class 'dict'>
+Invalid type for parameter MessageAttributes.failed_node, value: 1, type: <class 'str'>, valid types: <class 'dict'>
+2025-04-28 00:25:19,578 - Master - WARNING - Task timeout for crawler 2 on URL: 
+2025-04-28 00:25:19,578 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Invalid type for parameter MessageAttributes.type, value: retry, type: <class 'str'>, valid types: <class 'dict'>
+Invalid type for parameter MessageAttributes.failed_node, value: 2, type: <class 'str'>, valid types: <class 'dict'>
+2025-04-28 00:25:19,583 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 00:25:19,912 - Master - INFO - Assigned URL  to crawler 1.
+2025-04-28 00:25:20,260 - Master - INFO - Assigned URL  to crawler 2.
+2025-04-28 00:25:20,519 - Master - WARNING - Task timeout for crawler 3 on URL: 
+2025-04-28 00:25:20,519 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Invalid type for parameter MessageAttributes.type, value: retry, type: <class 'str'>, valid types: <class 'dict'>
+Invalid type for parameter MessageAttributes.failed_node, value: 3, type: <class 'str'>, valid types: <class 'dict'>
+2025-04-28 00:25:20,519 - Master - ERROR - Error from 2: Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-28 00:25:20,880 - Master - INFO - Assigned URL  to crawler 3.
+2025-04-28 00:25:21,525 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 00:25:21,788 - Master - ERROR - Error from 3: Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-28 00:25:22,087 - Master - ERROR - Error from 1: Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-28 23:46:26,381 - Master - INFO - Master node started with rank 0 of 5
+2025-04-28 23:46:26,382 - Master - INFO - Active Crawler Nodes: [1, 2, 3]
+2025-04-28 23:46:26,382 - Master - INFO - Indexer Node: 4
+2025-04-28 23:46:26,669 - Master - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-28 23:46:27,902 - Master - INFO - CloudQueue initialized with SQS queues: crawler-url-queue, crawler-status-queue
+2025-04-28 23:46:27,902 - Master - INFO - Task queue initialized in cloud mode
+2025-04-28 23:46:27,902 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Invalid type for parameter MessageAttributes.type, value: seed, type: <class 'str'>, valid types: <class 'dict'>
+2025-04-28 23:46:27,903 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Invalid type for parameter MessageAttributes.type, value: seed, type: <class 'str'>, valid types: <class 'dict'>
+2025-04-28 23:46:27,904 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Invalid type for parameter MessageAttributes.type, value: seed, type: <class 'str'>, valid types: <class 'dict'>
+2025-04-28 23:46:27,904 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Invalid type for parameter MessageAttributes.type, value: seed, type: <class 'str'>, valid types: <class 'dict'>
+2025-04-28 23:46:27,905 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Invalid type for parameter MessageAttributes.type, value: seed, type: <class 'str'>, valid types: <class 'dict'>
+2025-04-28 23:46:27,906 - Master - INFO - Added 5 seed URLs to the task queue
+2025-04-28 23:46:28,337 - Master - INFO - Assigned URL  to crawler 1.
+2025-04-28 23:46:28,626 - Master - INFO - Assigned URL  to crawler 2.
+2025-04-28 23:46:28,906 - Master - INFO - Assigned URL  to crawler 3.
+2025-04-28 23:46:29,152 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 23:46:29,391 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:46:29,633 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 23:46:29,872 - Master - ERROR - Error from 1: Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-28 23:46:30,114 - Master - ERROR - Error from 2: Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-28 23:46:30,354 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 23:46:30,599 - Master - ERROR - Error from 3: Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-28 23:46:30,846 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:46:31,097 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 23:46:33,273 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 23:46:33,757 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:46:34,006 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 23:46:38,128 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 23:46:38,604 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:46:38,846 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 23:46:41,011 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 23:46:42,683 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:46:43,166 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 23:46:44,607 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:46:44,850 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 23:46:46,066 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 23:46:46,993 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 23:46:47,717 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:46:49,177 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 23:47:30,123 - Master - INFO - Master node started with rank 0 of 5
+2025-04-28 23:47:30,124 - Master - INFO - Active Crawler Nodes: [1, 2, 3]
+2025-04-28 23:47:30,124 - Master - INFO - Indexer Node: 4
+2025-04-28 23:47:30,267 - Master - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-28 23:47:31,394 - Master - INFO - CloudQueue initialized with SQS queues: crawler-url-queue, crawler-status-queue
+2025-04-28 23:47:31,394 - Master - INFO - Task queue initialized in cloud mode
+2025-04-28 23:47:31,395 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Invalid type for parameter MessageAttributes.type, value: seed, type: <class 'str'>, valid types: <class 'dict'>
+2025-04-28 23:47:31,396 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Invalid type for parameter MessageAttributes.type, value: seed, type: <class 'str'>, valid types: <class 'dict'>
+2025-04-28 23:47:31,396 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Invalid type for parameter MessageAttributes.type, value: seed, type: <class 'str'>, valid types: <class 'dict'>
+2025-04-28 23:47:31,396 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Invalid type for parameter MessageAttributes.type, value: seed, type: <class 'str'>, valid types: <class 'dict'>
+2025-04-28 23:47:31,398 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Invalid type for parameter MessageAttributes.type, value: seed, type: <class 'str'>, valid types: <class 'dict'>
+2025-04-28 23:47:31,399 - Master - INFO - Added 5 seed URLs to the task queue
+2025-04-28 23:47:31,851 - Master - INFO - Assigned URL  to crawler 1.
+2025-04-28 23:47:32,147 - Master - INFO - Assigned URL  to crawler 2.
+2025-04-28 23:47:32,431 - Master - INFO - Assigned URL  to crawler 3.
+2025-04-28 23:47:32,674 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 23:47:32,915 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:47:33,157 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 23:47:33,400 - Master - ERROR - Error from 1: Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-28 23:47:33,642 - Master - ERROR - Error from 2: Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-28 23:47:33,883 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 23:47:34,131 - Master - ERROR - Error from 3: Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-28 23:47:34,375 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:47:34,617 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 23:47:35,349 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:47:37,076 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 23:47:38,781 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 23:47:39,278 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:47:40,012 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 23:47:41,772 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:47:43,951 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 23:47:44,679 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 23:47:44,923 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:47:47,349 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:47:47,595 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 23:47:48,327 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 23:47:50,971 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 23:47:51,213 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:47:51,453 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 23:47:52,663 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 23:47:53,882 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:47:54,850 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 23:47:56,058 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 23:47:56,782 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:47:58,966 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 23:47:59,454 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 23:48:00,421 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:48:01,870 - Master - WARNING - Task timeout for crawler 1 on URL: 
+2025-04-28 23:48:01,870 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Invalid type for parameter MessageAttributes.type, value: retry, type: <class 'str'>, valid types: <class 'dict'>
+Invalid type for parameter MessageAttributes.failed_node, value: 1, type: <class 'str'>, valid types: <class 'dict'>
+2025-04-28 23:48:02,155 - Master - INFO - Assigned URL  to crawler 1.
+2025-04-28 23:48:02,706 - Master - WARNING - Task timeout for crawler 2 on URL: 
+2025-04-28 23:48:02,706 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Invalid type for parameter MessageAttributes.type, value: retry, type: <class 'str'>, valid types: <class 'dict'>
+Invalid type for parameter MessageAttributes.failed_node, value: 2, type: <class 'str'>, valid types: <class 'dict'>
+2025-04-28 23:48:02,707 - Master - WARNING - Task timeout for crawler 3 on URL: 
+2025-04-28 23:48:02,707 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Invalid type for parameter MessageAttributes.type, value: retry, type: <class 'str'>, valid types: <class 'dict'>
+Invalid type for parameter MessageAttributes.failed_node, value: 3, type: <class 'str'>, valid types: <class 'dict'>
+2025-04-28 23:48:02,709 - Master - ERROR - Error from 1: Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-28 23:48:03,330 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 23:48:03,951 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 23:48:04,570 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:48:05,826 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 23:48:07,065 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 23:48:08,940 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:48:10,237 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 23:48:10,855 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:48:11,480 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 23:48:13,330 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:48:14,248 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 23:48:15,526 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:48:16,143 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 23:48:19,208 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 23:48:19,826 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:48:20,440 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 23:48:21,665 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 23:48:22,279 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:48:23,818 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 23:48:25,043 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:48:26,323 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 23:48:26,940 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 23:48:27,917 - Master - INFO - Assigned URL  to crawler 2.
+2025-04-28 23:48:28,350 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:48:28,779 - Master - ERROR - Error from 2: Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-28 23:48:30,078 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 23:48:31,363 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 23:48:31,793 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:48:32,224 - Master - WARNING - Task timeout for crawler 1 on URL: 
+2025-04-28 23:48:32,224 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Invalid type for parameter MessageAttributes.type, value: retry, type: <class 'str'>, valid types: <class 'dict'>
+Invalid type for parameter MessageAttributes.failed_node, value: 1, type: <class 'str'>, valid types: <class 'dict'>
+2025-04-28 23:48:34,092 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 23:48:35,335 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:48:35,959 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 23:48:36,581 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 23:48:38,492 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 23:48:39,138 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 23:48:39,772 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:48:41,645 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 23:48:43,031 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 23:48:44,315 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:48:46,222 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 23:48:46,838 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:48:47,449 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 23:48:48,064 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 23:48:49,290 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:48:49,911 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 23:48:52,366 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 23:48:52,980 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:48:54,218 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 23:48:56,663 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 23:48:57,278 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:48:58,504 - Master - WARNING - Task timeout for crawler 2 on URL: 
+2025-04-28 23:48:58,504 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Invalid type for parameter MessageAttributes.type, value: retry, type: <class 'str'>, valid types: <class 'dict'>
+Invalid type for parameter MessageAttributes.failed_node, value: 2, type: <class 'str'>, valid types: <class 'dict'>
+2025-04-28 23:48:58,506 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 23:48:59,331 - Master - INFO - Sending shutdown signals to crawler nodes...
+2025-04-28 23:48:59,331 - Master - INFO - Shutdown signal sent to crawler 1
+2025-04-28 23:48:59,331 - Master - INFO - Shutdown signal sent to crawler 2
+2025-04-28 23:48:59,332 - Master - INFO - Shutdown signal sent to crawler 3
+2025-04-28 23:48:59,332 - Master - INFO - Sending shutdown signal to indexer node...
+2025-04-28 23:48:59,385 - Master - INFO - Master node shutting down. Total URLs processed: 0
+2025-04-28 23:48:59,385 - Master - INFO - Crawled: 0, Indexed: 0, Failed: 5
+2025-04-28 23:54:02,646 - Master - INFO - Master node started with rank 0 of 5
+2025-04-28 23:54:02,646 - Master - INFO - Active Crawler Nodes: [1, 2, 3]
+2025-04-28 23:54:02,646 - Master - INFO - Indexer Node: 4
+2025-04-28 23:54:02,755 - Master - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-28 23:54:04,146 - Master - INFO - CloudQueue initialized with SQS queues: crawler-url-queue, crawler-status-queue
+2025-04-28 23:54:04,146 - Master - INFO - Task queue initialized in cloud mode
+2025-04-28 23:54:04,147 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Missing required parameter in MessageAttributes.MessageAttributes: "DataType"
+Unknown parameter in MessageAttributes.MessageAttributes: "type", must be one of: StringValue, BinaryValue, StringListValues, BinaryListValues, DataType
+2025-04-28 23:54:04,148 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Missing required parameter in MessageAttributes.MessageAttributes: "DataType"
+Unknown parameter in MessageAttributes.MessageAttributes: "type", must be one of: StringValue, BinaryValue, StringListValues, BinaryListValues, DataType
+2025-04-28 23:54:04,149 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Missing required parameter in MessageAttributes.MessageAttributes: "DataType"
+Unknown parameter in MessageAttributes.MessageAttributes: "type", must be one of: StringValue, BinaryValue, StringListValues, BinaryListValues, DataType
+2025-04-28 23:54:04,150 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Missing required parameter in MessageAttributes.MessageAttributes: "DataType"
+Unknown parameter in MessageAttributes.MessageAttributes: "type", must be one of: StringValue, BinaryValue, StringListValues, BinaryListValues, DataType
+2025-04-28 23:54:04,151 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Missing required parameter in MessageAttributes.MessageAttributes: "DataType"
+Unknown parameter in MessageAttributes.MessageAttributes: "type", must be one of: StringValue, BinaryValue, StringListValues, BinaryListValues, DataType
+2025-04-28 23:54:04,151 - Master - INFO - Added 5 seed URLs to the task queue
+2025-04-28 23:54:04,297 - Master - INFO - Sending shutdown signals to crawler nodes...
+2025-04-28 23:54:04,298 - Master - INFO - Shutdown signal sent to crawler 1
+2025-04-28 23:54:04,298 - Master - INFO - Shutdown signal sent to crawler 2
+2025-04-28 23:54:04,299 - Master - INFO - Shutdown signal sent to crawler 3
+2025-04-28 23:54:04,299 - Master - INFO - Sending shutdown signal to indexer node...
+2025-04-28 23:54:04,300 - Master - INFO - Master node shutting down. Total URLs processed: 0
+2025-04-28 23:54:04,301 - Master - INFO - Crawled: 0, Indexed: 0, Failed: 0
+2025-04-28 23:54:35,215 - Master - INFO - Master node started with rank 0 of 5
+2025-04-28 23:54:35,215 - Master - INFO - Active Crawler Nodes: [1, 2, 3]
+2025-04-28 23:54:35,215 - Master - INFO - Indexer Node: 4
+2025-04-28 23:54:35,339 - Master - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-28 23:54:36,816 - Master - INFO - CloudQueue initialized with SQS queues: crawler-url-queue, crawler-status-queue
+2025-04-28 23:54:36,817 - Master - INFO - Task queue initialized in cloud mode
+2025-04-28 23:54:36,817 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Missing required parameter in MessageAttributes.MessageAttributes: "DataType"
+Unknown parameter in MessageAttributes.MessageAttributes: "type", must be one of: StringValue, BinaryValue, StringListValues, BinaryListValues, DataType
+2025-04-28 23:54:36,819 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Missing required parameter in MessageAttributes.MessageAttributes: "DataType"
+Unknown parameter in MessageAttributes.MessageAttributes: "type", must be one of: StringValue, BinaryValue, StringListValues, BinaryListValues, DataType
+2025-04-28 23:54:36,819 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Missing required parameter in MessageAttributes.MessageAttributes: "DataType"
+Unknown parameter in MessageAttributes.MessageAttributes: "type", must be one of: StringValue, BinaryValue, StringListValues, BinaryListValues, DataType
+2025-04-28 23:54:36,821 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Missing required parameter in MessageAttributes.MessageAttributes: "DataType"
+Unknown parameter in MessageAttributes.MessageAttributes: "type", must be one of: StringValue, BinaryValue, StringListValues, BinaryListValues, DataType
+2025-04-28 23:54:36,822 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Missing required parameter in MessageAttributes.MessageAttributes: "DataType"
+Unknown parameter in MessageAttributes.MessageAttributes: "type", must be one of: StringValue, BinaryValue, StringListValues, BinaryListValues, DataType
+2025-04-28 23:54:36,822 - Master - INFO - Added 5 seed URLs to the task queue
+2025-04-28 23:54:36,967 - Master - INFO - Sending shutdown signals to crawler nodes...
+2025-04-28 23:54:36,968 - Master - INFO - Shutdown signal sent to crawler 1
+2025-04-28 23:54:36,969 - Master - INFO - Shutdown signal sent to crawler 2
+2025-04-28 23:54:36,969 - Master - INFO - Shutdown signal sent to crawler 3
+2025-04-28 23:54:36,970 - Master - INFO - Sending shutdown signal to indexer node...
+2025-04-28 23:54:36,971 - Master - INFO - Master node shutting down. Total URLs processed: 0
+2025-04-28 23:54:36,971 - Master - INFO - Crawled: 0, Indexed: 0, Failed: 0
+2025-04-28 23:55:19,904 - Master - INFO - Master node started with rank 0 of 5
+2025-04-28 23:55:19,905 - Master - INFO - Active Crawler Nodes: [1, 2, 3]
+2025-04-28 23:55:19,906 - Master - INFO - Indexer Node: 4
+2025-04-28 23:55:20,003 - Master - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-28 23:55:21,339 - Master - INFO - CloudQueue initialized with SQS queues: crawler-url-queue, crawler-status-queue
+2025-04-28 23:55:21,339 - Master - INFO - Task queue initialized in cloud mode
+2025-04-28 23:55:21,341 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Missing required parameter in MessageAttributes.MessageAttributes: "DataType"
+Unknown parameter in MessageAttributes.MessageAttributes: "type", must be one of: StringValue, BinaryValue, StringListValues, BinaryListValues, DataType
+2025-04-28 23:55:21,342 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Missing required parameter in MessageAttributes.MessageAttributes: "DataType"
+Unknown parameter in MessageAttributes.MessageAttributes: "type", must be one of: StringValue, BinaryValue, StringListValues, BinaryListValues, DataType
+2025-04-28 23:55:21,343 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Missing required parameter in MessageAttributes.MessageAttributes: "DataType"
+Unknown parameter in MessageAttributes.MessageAttributes: "type", must be one of: StringValue, BinaryValue, StringListValues, BinaryListValues, DataType
+2025-04-28 23:55:21,343 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Missing required parameter in MessageAttributes.MessageAttributes: "DataType"
+Unknown parameter in MessageAttributes.MessageAttributes: "type", must be one of: StringValue, BinaryValue, StringListValues, BinaryListValues, DataType
+2025-04-28 23:55:21,344 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Missing required parameter in MessageAttributes.MessageAttributes: "DataType"
+Unknown parameter in MessageAttributes.MessageAttributes: "type", must be one of: StringValue, BinaryValue, StringListValues, BinaryListValues, DataType
+2025-04-28 23:55:21,345 - Master - INFO - Added 5 seed URLs to the task queue
+2025-04-28 23:55:21,489 - Master - INFO - Sending shutdown signals to crawler nodes...
+2025-04-28 23:55:21,490 - Master - INFO - Shutdown signal sent to crawler 1
+2025-04-28 23:55:21,490 - Master - INFO - Shutdown signal sent to crawler 2
+2025-04-28 23:55:21,492 - Master - INFO - Shutdown signal sent to crawler 3
+2025-04-28 23:55:21,492 - Master - INFO - Sending shutdown signal to indexer node...
+2025-04-28 23:55:21,494 - Master - INFO - Master node shutting down. Total URLs processed: 0
+2025-04-28 23:55:21,494 - Master - INFO - Crawled: 0, Indexed: 0, Failed: 0
+2025-04-28 23:56:30,942 - Master - INFO - Master node started with rank 0 of 5
+2025-04-28 23:56:30,942 - Master - INFO - Active Crawler Nodes: [1, 2, 3]
+2025-04-28 23:56:30,942 - Master - INFO - Indexer Node: 4
+2025-04-28 23:56:31,062 - Master - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-28 23:56:32,340 - Master - INFO - CloudQueue initialized with SQS queues: crawler-url-queue, crawler-status-queue
+2025-04-28 23:56:32,340 - Master - INFO - Task queue initialized in cloud mode
+2025-04-28 23:56:32,341 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Missing required parameter in MessageAttributes.MessageAttributes: "DataType"
+Unknown parameter in MessageAttributes.MessageAttributes: "type", must be one of: StringValue, BinaryValue, StringListValues, BinaryListValues, DataType
+2025-04-28 23:56:32,342 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Missing required parameter in MessageAttributes.MessageAttributes: "DataType"
+Unknown parameter in MessageAttributes.MessageAttributes: "type", must be one of: StringValue, BinaryValue, StringListValues, BinaryListValues, DataType
+2025-04-28 23:56:32,343 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Missing required parameter in MessageAttributes.MessageAttributes: "DataType"
+Unknown parameter in MessageAttributes.MessageAttributes: "type", must be one of: StringValue, BinaryValue, StringListValues, BinaryListValues, DataType
+2025-04-28 23:56:32,344 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Missing required parameter in MessageAttributes.MessageAttributes: "DataType"
+Unknown parameter in MessageAttributes.MessageAttributes: "type", must be one of: StringValue, BinaryValue, StringListValues, BinaryListValues, DataType
+2025-04-28 23:56:32,348 - Master - ERROR - Error sending message to SQS: Parameter validation failed:
+Missing required parameter in MessageAttributes.MessageAttributes: "DataType"
+Unknown parameter in MessageAttributes.MessageAttributes: "type", must be one of: StringValue, BinaryValue, StringListValues, BinaryListValues, DataType
+2025-04-28 23:56:32,349 - Master - INFO - Added 5 seed URLs to the task queue
+2025-04-28 23:56:32,494 - Master - INFO - Sending shutdown signals to crawler nodes...
+2025-04-28 23:56:32,496 - Master - INFO - Shutdown signal sent to crawler 1
+2025-04-28 23:56:32,497 - Master - INFO - Shutdown signal sent to crawler 2
+2025-04-28 23:56:32,497 - Master - INFO - Shutdown signal sent to crawler 3
+2025-04-28 23:56:32,497 - Master - INFO - Sending shutdown signal to indexer node...
+2025-04-28 23:56:32,499 - Master - INFO - Master node shutting down. Total URLs processed: 0
+2025-04-28 23:56:32,499 - Master - INFO - Crawled: 0, Indexed: 0, Failed: 0
+2025-04-28 23:59:00,126 - Master - INFO - Master node started with rank 0 of 5
+2025-04-28 23:59:00,127 - Master - INFO - Active Crawler Nodes: [1, 2, 3]
+2025-04-28 23:59:00,128 - Master - INFO - Indexer Node: 4
+2025-04-28 23:59:00,339 - Master - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-28 23:59:01,802 - Master - INFO - CloudQueue initialized with SQS queues: crawler-url-queue, crawler-status-queue
+2025-04-28 23:59:01,802 - Master - INFO - Task queue initialized in cloud mode
+2025-04-28 23:59:02,564 - Master - INFO - Added 5 seed URLs to the task queue
+2025-04-28 23:59:02,706 - Master - INFO - Sending shutdown signals to crawler nodes...
+2025-04-28 23:59:02,707 - Master - INFO - Shutdown signal sent to crawler 1
+2025-04-28 23:59:02,707 - Master - INFO - Shutdown signal sent to crawler 2
+2025-04-28 23:59:02,707 - Master - INFO - Shutdown signal sent to crawler 3
+2025-04-28 23:59:02,707 - Master - INFO - Sending shutdown signal to indexer node...
+2025-04-28 23:59:02,709 - Master - INFO - Master node shutting down. Total URLs processed: 0
+2025-04-28 23:59:02,709 - Master - INFO - Crawled: 0, Indexed: 0, Failed: 0
+2025-04-28 23:59:36,908 - Master - INFO - Master node started with rank 0 of 5
+2025-04-28 23:59:36,908 - Master - INFO - Active Crawler Nodes: [1, 2, 3]
+2025-04-28 23:59:36,908 - Master - INFO - Indexer Node: 4
+2025-04-28 23:59:37,010 - Master - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-28 23:59:38,407 - Master - INFO - CloudQueue initialized with SQS queues: crawler-url-queue, crawler-status-queue
+2025-04-28 23:59:38,408 - Master - INFO - Task queue initialized in cloud mode
+2025-04-28 23:59:39,133 - Master - INFO - Added 5 seed URLs to the task queue
+2025-04-28 23:59:39,561 - Master - INFO - Assigned URL  to crawler 1.
+2025-04-28 23:59:39,846 - Master - INFO - Assigned URL  to crawler 2.
+2025-04-28 23:59:40,141 - Master - INFO - Assigned URL  to crawler 3.
+2025-04-28 23:59:40,383 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:59:40,622 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 23:59:40,864 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 23:59:41,108 - Master - ERROR - Error from 1: Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-28 23:59:41,349 - Master - ERROR - Error from 2: Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-28 23:59:41,591 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 23:59:41,833 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 23:59:42,074 - Master - ERROR - Error from 3: Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-28 23:59:42,315 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:59:42,794 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:59:43,531 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 23:59:45,452 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 23:59:46,899 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:59:47,379 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 23:59:47,860 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 23:59:50,262 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:59:51,710 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 23:59:52,191 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 23:59:54,412 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 23:59:54,664 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-28 23:59:57,165 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-28 23:59:57,407 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-28 23:59:58,613 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:00:00,544 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:00:01,027 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:00:01,269 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:00:03,686 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:00:04,170 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:00:05,138 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:00:07,552 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:00:07,795 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:00:08,517 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:00:09,488 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:00:09,730 - Master - WARNING - Task timeout for crawler 1 on URL: 
+2025-04-29 00:00:09,873 - Master - ERROR - Error sending message to SQS: An error occurred (MissingParameter) when calling the SendMessage operation: The request must contain the parameter MessageBody.
+2025-04-29 00:00:28,549 - Master - INFO - Master node started with rank 0 of 5
+2025-04-29 00:00:28,549 - Master - INFO - Active Crawler Nodes: [1, 2, 3]
+2025-04-29 00:00:28,549 - Master - INFO - Indexer Node: 4
+2025-04-29 00:00:28,777 - Master - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-29 00:00:30,188 - Master - INFO - CloudQueue initialized with SQS queues: crawler-url-queue, crawler-status-queue
+2025-04-29 00:00:30,188 - Master - INFO - Task queue initialized in cloud mode
+2025-04-29 00:00:30,908 - Master - INFO - Added 5 seed URLs to the task queue
+2025-04-29 00:00:31,334 - Master - INFO - Assigned URL  to crawler 1.
+2025-04-29 00:00:31,615 - Master - INFO - Assigned URL  to crawler 2.
+2025-04-29 00:00:31,900 - Master - INFO - Assigned URL  to crawler 3.
+2025-04-29 00:00:32,142 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:00:32,382 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:00:32,622 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:00:32,861 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:00:33,101 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:00:33,343 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:00:33,582 - Master - ERROR - Error from 1: Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-29 00:00:33,824 - Master - ERROR - Error from 2: Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-29 00:00:34,065 - Master - ERROR - Error from 3: Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-29 00:00:34,305 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:00:34,544 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:00:34,785 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:00:37,273 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:00:38,234 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:00:38,716 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:00:40,160 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:00:40,399 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:00:43,551 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:00:43,794 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:00:44,036 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:00:46,943 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:00:47,665 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:00:48,864 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:00:49,833 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:00:52,241 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:00:52,721 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:00:53,205 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:00:55,153 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:00:56,114 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:00:56,839 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:00:59,006 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:00:59,248 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:01:00,935 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:01:01,418 - Master - WARNING - Task timeout for crawler 1 on URL: 
+2025-04-29 00:01:01,558 - Master - ERROR - Error sending message to SQS: An error occurred (MissingParameter) when calling the SendMessage operation: The request must contain the parameter MessageBody.
+2025-04-29 00:01:01,860 - Master - INFO - Assigned URL  to crawler 1.
+2025-04-29 00:01:02,103 - Master - WARNING - Task timeout for crawler 2 on URL: 
+2025-04-29 00:01:02,241 - Master - ERROR - Error sending message to SQS: An error occurred (MissingParameter) when calling the SendMessage operation: The request must contain the parameter MessageBody.
+2025-04-29 00:01:02,244 - Master - WARNING - Task timeout for crawler 3 on URL: 
+2025-04-29 00:01:02,384 - Master - ERROR - Error sending message to SQS: An error occurred (MissingParameter) when calling the SendMessage operation: The request must contain the parameter MessageBody.
+2025-04-29 00:01:02,385 - Master - ERROR - Error from 1: Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-29 00:01:02,672 - Master - INFO - Assigned URL  to crawler 2.
+2025-04-29 00:01:02,955 - Master - INFO - Assigned URL  to crawler 3.
+2025-04-29 00:01:03,198 - Master - ERROR - Error from 3: Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-29 00:01:03,439 - Master - ERROR - Error from 2: Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-29 00:01:03,681 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:01:03,921 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:01:05,121 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:01:06,806 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:01:07,952 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:01:08,193 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:01:10,845 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:01:12,085 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:01:12,326 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:01:14,011 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:01:16,432 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:01:16,673 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:01:16,916 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:01:19,176 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:01:20,626 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:01:21,589 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:01:23,520 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:01:24,000 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:01:26,168 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:01:26,408 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:01:28,549 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:01:28,791 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:01:30,957 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:01:31,437 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:01:31,678 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:01:31,918 - Master - WARNING - Task timeout for crawler 1 on URL: 
+2025-04-29 00:01:32,057 - Master - ERROR - Error sending message to SQS: An error occurred (MissingParameter) when calling the SendMessage operation: The request must contain the parameter MessageBody.
+2025-04-29 00:01:32,343 - Master - INFO - Assigned URL  to crawler 1.
+2025-04-29 00:01:32,584 - Master - ERROR - Error from 1: Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-29 00:01:32,826 - Master - WARNING - Task timeout for crawler 2 on URL: 
+2025-04-29 00:01:32,965 - Master - ERROR - Error sending message to SQS: An error occurred (MissingParameter) when calling the SendMessage operation: The request must contain the parameter MessageBody.
+2025-04-29 00:01:33,258 - Master - INFO - Assigned URL  to crawler 2.
+2025-04-29 00:01:33,500 - Master - WARNING - Task timeout for crawler 3 on URL: 
+2025-04-29 00:01:33,638 - Master - ERROR - Error sending message to SQS: An error occurred (MissingParameter) when calling the SendMessage operation: The request must contain the parameter MessageBody.
+2025-04-29 00:01:33,641 - Master - ERROR - Error from 2: Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-29 00:01:33,930 - Master - INFO - Assigned URL  to crawler 3.
+2025-04-29 00:01:34,173 - Master - ERROR - Error from 3: Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-29 00:01:34,412 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:01:34,896 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:01:36,340 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:01:36,824 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:01:37,782 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:01:40,192 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:01:41,151 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:01:42,121 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:01:44,039 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:01:44,280 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:01:45,240 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:01:47,597 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:01:47,837 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:01:49,273 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:01:49,990 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:01:51,433 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:01:53,354 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:01:53,593 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:01:54,551 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:01:56,013 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:01:58,167 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:01:59,129 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:01:59,369 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:02:00,808 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:02:01,528 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:02:02,494 - Master - WARNING - Task timeout for crawler 1 on URL: 
+2025-04-29 00:02:02,633 - Master - ERROR - Error sending message to SQS: An error occurred (MissingParameter) when calling the SendMessage operation: The request must contain the parameter MessageBody.
+2025-04-29 00:02:02,918 - Master - INFO - Assigned URL  to crawler 1.
+2025-04-29 00:02:03,162 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:02:03,400 - Master - WARNING - Task timeout for crawler 2 on URL: 
+2025-04-29 00:02:03,539 - Master - ERROR - Error sending message to SQS: An error occurred (MissingParameter) when calling the SendMessage operation: The request must contain the parameter MessageBody.
+2025-04-29 00:02:03,541 - Master - ERROR - Error from 1: Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-29 00:02:03,819 - Master - INFO - Assigned URL  to crawler 2.
+2025-04-29 00:02:04,062 - Master - WARNING - Task timeout for crawler 3 on URL: 
+2025-04-29 00:02:04,207 - Master - ERROR - Error sending message to SQS: An error occurred (MissingParameter) when calling the SendMessage operation: The request must contain the parameter MessageBody.
+2025-04-29 00:02:04,209 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:02:04,493 - Master - INFO - Assigned URL  to crawler 3.
+2025-04-29 00:02:04,735 - Master - ERROR - Error from 3: Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-29 00:02:04,978 - Master - ERROR - Error from 2: Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-29 00:02:05,219 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:02:05,460 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:02:06,897 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:02:08,568 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:02:09,526 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:02:10,498 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:02:12,417 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:02:14,331 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:02:15,048 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:02:16,006 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:02:16,483 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:02:17,921 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:02:20,793 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:02:21,032 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:02:22,229 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:02:23,438 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:02:24,155 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:02:25,360 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:02:26,652 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:02:28,861 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:02:29,342 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:02:30,302 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:02:32,952 - Master - WARNING - Task timeout for crawler 1 on URL: 
+2025-04-29 00:02:33,091 - Master - ERROR - Error sending message to SQS: An error occurred (MissingParameter) when calling the SendMessage operation: The request must contain the parameter MessageBody.
+2025-04-29 00:02:33,093 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:02:33,955 - Master - WARNING - Task timeout for crawler 2 on URL: 
+2025-04-29 00:02:34,093 - Master - ERROR - Error sending message to SQS: An error occurred (MissingParameter) when calling the SendMessage operation: The request must contain the parameter MessageBody.
+2025-04-29 00:02:34,713 - Master - WARNING - Task timeout for crawler 3 on URL: 
+2025-04-29 00:02:34,854 - Master - ERROR - Error sending message to SQS: An error occurred (MissingParameter) when calling the SendMessage operation: The request must contain the parameter MessageBody.
+2025-04-29 00:02:34,856 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:02:35,661 - Master - INFO - Sending shutdown signals to crawler nodes...
+2025-04-29 00:02:35,661 - Master - INFO - Shutdown signal sent to crawler 1
+2025-04-29 00:02:35,661 - Master - INFO - Shutdown signal sent to crawler 2
+2025-04-29 00:02:35,661 - Master - INFO - Shutdown signal sent to crawler 3
+2025-04-29 00:02:35,661 - Master - INFO - Sending shutdown signal to indexer node...
+2025-04-29 00:02:35,663 - Master - INFO - Master node shutting down. Total URLs processed: 0
+2025-04-29 00:02:35,663 - Master - INFO - Crawled: 0, Indexed: 0, Failed: 12
+2025-04-29 00:02:48,007 - Master - INFO - Master node started with rank 0 of 5
+2025-04-29 00:02:48,007 - Master - INFO - Active Crawler Nodes: [1, 2, 3]
+2025-04-29 00:02:48,007 - Master - INFO - Indexer Node: 4
+2025-04-29 00:02:48,130 - Master - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-29 00:02:49,437 - Master - INFO - CloudQueue initialized with SQS queues: crawler-url-queue, crawler-status-queue
+2025-04-29 00:02:49,437 - Master - INFO - Task queue initialized in cloud mode
+2025-04-29 00:02:50,205 - Master - INFO - Added 5 seed URLs to the task queue
+2025-04-29 00:02:50,345 - Master - INFO - Sending shutdown signals to crawler nodes...
+2025-04-29 00:02:50,346 - Master - INFO - Shutdown signal sent to crawler 1
+2025-04-29 00:02:50,346 - Master - INFO - Shutdown signal sent to crawler 2
+2025-04-29 00:02:50,347 - Master - INFO - Shutdown signal sent to crawler 3
+2025-04-29 00:02:50,347 - Master - INFO - Sending shutdown signal to indexer node...
+2025-04-29 00:02:50,349 - Master - INFO - Master node shutting down. Total URLs processed: 0
+2025-04-29 00:02:50,349 - Master - INFO - Crawled: 0, Indexed: 0, Failed: 0
+2025-04-29 00:03:41,221 - Master - INFO - Master node started with rank 0 of 5
+2025-04-29 00:03:41,221 - Master - INFO - Active Crawler Nodes: [1, 2, 3]
+2025-04-29 00:03:41,222 - Master - INFO - Indexer Node: 4
+2025-04-29 00:03:41,304 - Master - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-29 00:03:42,666 - Master - INFO - CloudQueue initialized with SQS queues: crawler-url-queue, crawler-status-queue
+2025-04-29 00:03:42,666 - Master - INFO - Task queue initialized in cloud mode
+2025-04-29 00:03:43,426 - Master - INFO - Added 5 seed URLs to the task queue
+2025-04-29 00:03:43,725 - Master - WARNING - Received invalid URL from queue: ''. Skipping.
+2025-04-29 00:03:44,010 - Master - WARNING - Received invalid URL from queue: ''. Skipping.
+2025-04-29 00:03:44,297 - Master - WARNING - Received invalid URL from queue: ''. Skipping.
+2025-04-29 00:03:44,678 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:03:44,819 - Master - WARNING - Received invalid URL from queue: ''. Skipping.
+2025-04-29 00:03:45,123 - Master - WARNING - Received invalid URL from queue: ''. Skipping.
+2025-04-29 00:03:45,407 - Master - WARNING - Received invalid URL from queue: ''. Skipping.
+2025-04-29 00:03:45,802 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:03:45,958 - Master - WARNING - Received invalid URL from queue: ''. Skipping.
+2025-04-29 00:03:46,240 - Master - WARNING - Received invalid URL from queue: ''. Skipping.
+2025-04-29 00:03:46,529 - Master - WARNING - Received invalid URL from queue: ''. Skipping.
+2025-04-29 00:03:47,080 - Master - WARNING - Received invalid URL from queue: ''. Skipping.
+2025-04-29 00:03:47,835 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:03:48,647 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:03:49,454 - Master - INFO - Status update from 1: Heartbeat from crawler 1: Active
+2025-04-29 00:03:50,351 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:03:51,964 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:03:52,766 - Master - INFO - Sending shutdown signals to crawler nodes...
+2025-04-29 00:03:52,766 - Master - INFO - Shutdown signal sent to crawler 1
+2025-04-29 00:03:52,766 - Master - INFO - Shutdown signal sent to crawler 2
+2025-04-29 00:03:52,767 - Master - INFO - Shutdown signal sent to crawler 3
+2025-04-29 00:03:52,767 - Master - INFO - Sending shutdown signal to indexer node...
+2025-04-29 00:03:52,769 - Master - INFO - Master node shutting down. Total URLs processed: 0
+2025-04-29 00:03:52,769 - Master - INFO - Crawled: 0, Indexed: 0, Failed: 0
+2025-04-29 00:36:07,351 - Master - INFO - Master node started with rank 0 of 5
+2025-04-29 00:36:07,352 - Master - INFO - Active Crawler Nodes: [1, 2, 3]
+2025-04-29 00:36:07,352 - Master - INFO - Indexer Node: 4
+2025-04-29 00:36:07,625 - Master - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-29 00:36:09,069 - Master - INFO - CloudQueue initialized with SQS queues: crawler-url-queue, crawler-status-queue
+2025-04-29 00:36:09,069 - Master - INFO - Task queue initialized in cloud mode
+2025-04-29 00:36:09,819 - Master - INFO - Added 5 seed URLs to the task queue
+2025-04-29 00:36:10,117 - Master - WARNING - Received invalid URL from queue: ''. Skipping.
+2025-04-29 00:36:10,404 - Master - WARNING - Received invalid URL from queue: ''. Skipping.
+2025-04-29 00:36:10,691 - Master - WARNING - Received invalid URL from queue: ''. Skipping.
+2025-04-29 00:36:11,077 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:36:11,221 - Master - WARNING - Received invalid URL from queue: ''. Skipping.
+2025-04-29 00:36:11,504 - Master - WARNING - Received invalid URL from queue: ''. Skipping.
+2025-04-29 00:36:11,815 - Master - WARNING - Received invalid URL from queue: ''. Skipping.
+2025-04-29 00:36:12,199 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:36:12,339 - Master - WARNING - Received invalid URL from queue: ''. Skipping.
+2025-04-29 00:36:12,625 - Master - WARNING - Received invalid URL from queue: ''. Skipping.
+2025-04-29 00:36:12,910 - Master - WARNING - Received invalid URL from queue: ''. Skipping.
+2025-04-29 00:36:13,440 - Master - WARNING - Received invalid URL from queue: ''. Skipping.
+2025-04-29 00:36:13,735 - Master - WARNING - Received invalid URL from queue: ''. Skipping.
+2025-04-29 00:36:14,031 - Master - WARNING - Received invalid URL from queue: ''. Skipping.
+2025-04-29 00:36:14,418 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:36:14,561 - Master - WARNING - Received invalid URL from queue: ''. Skipping.
+2025-04-29 00:36:14,843 - Master - WARNING - Received invalid URL from queue: ''. Skipping.
+2025-04-29 00:36:15,125 - Master - WARNING - Received invalid URL from queue: ''. Skipping.
+2025-04-29 00:36:15,513 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:36:15,651 - Master - WARNING - Received invalid URL from queue: ''. Skipping.
+2025-04-29 00:36:15,941 - Master - WARNING - Received invalid URL from queue: ''. Skipping.
+2025-04-29 00:36:16,225 - Master - WARNING - Received invalid URL from queue: ''. Skipping.
+2025-04-29 00:36:16,610 - Master - INFO - Status update from 3: Heartbeat from crawler 3: Active
+2025-04-29 00:36:16,753 - Master - WARNING - Received invalid URL from queue: ''. Skipping.
+2025-04-29 00:36:17,041 - Master - WARNING - Received invalid URL from queue: ''. Skipping.
+2025-04-29 00:36:17,326 - Master - WARNING - Received invalid URL from queue: ''. Skipping.
+2025-04-29 00:36:17,761 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:36:17,904 - Master - WARNING - Received invalid URL from queue: ''. Skipping.
+2025-04-29 00:36:18,189 - Master - WARNING - Received invalid URL from queue: ''. Skipping.
+2025-04-29 00:36:18,519 - Master - WARNING - Received invalid URL from queue: ''. Skipping.
+2025-04-29 00:36:18,917 - Master - INFO - Status update from 2: Heartbeat from crawler 2: Active
+2025-04-29 00:36:19,061 - Master - WARNING - Received invalid URL from queue: ''. Skipping.
+2025-04-29 00:36:20,631 - Master - INFO - Sending shutdown signals to crawler nodes...
+2025-04-29 00:36:20,632 - Master - INFO - Shutdown signal sent to crawler 1
+2025-04-29 00:36:20,632 - Master - INFO - Shutdown signal sent to crawler 2
+2025-04-29 00:36:20,632 - Master - INFO - Shutdown signal sent to crawler 3
+2025-04-29 00:36:20,632 - Master - INFO - Sending shutdown signal to indexer node...
+2025-04-29 00:36:20,634 - Master - INFO - Master node shutting down. Total URLs processed: 0
+2025-04-29 00:36:20,634 - Master - INFO - Crawled: 0, Indexed: 0, Failed: 0

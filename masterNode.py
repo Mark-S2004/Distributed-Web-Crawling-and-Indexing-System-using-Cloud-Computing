@@ -1,12 +1,20 @@
-from mpi4py import MPI
+#!/usr/bin/env python3
 import time
 import logging
 import json
 import os
 from datetime import datetime, timedelta
 from cloud_queue import CloudQueue
+from cloud_storage import CloudStorage
 
-def master_process():
+# Define message types for AWS communication
+MSG_TERMINATE = 'terminate'
+MSG_URLS_DISCOVERED = 'urls_discovered'
+MSG_INDEX_CONTENT = 'index_content'
+MSG_HEARTBEAT = 'heartbeat'
+MSG_ERROR = 'error'
+
+def master_process(sqs_queue=None, status_queue=None, bucket=None):
     """
     Phase 3 Master Node:
       - Distributes crawling tasks (URLs) to the crawler nodes via cloud queue.
@@ -16,11 +24,10 @@ def master_process():
       - Records detailed system metrics for monitoring dashboard.
       - When work is complete, sends shutdown signals to crawler and indexer nodes.
     """
-    # Setup MPI and logging.
-    comm = MPI.COMM_WORLD
-    rank = comm.Get_rank()
-    size = comm.Get_size()
-    status = MPI.Status()
+    # Initialize default queue and bucket names if not provided
+    sqs_queue = sqs_queue or 'crawler-url-queue'
+    status_queue = status_queue or 'crawler-status-queue'
+    bucket = bucket or 'web-crawler-data-storage'
 
     # Enhanced logging for Phase 3
     log_file = os.path.join("logs", "master.log")
@@ -34,25 +41,13 @@ def master_process():
             logging.StreamHandler()
         ]
     )
-    logging.info(f"Master node started with rank {rank} of {size}")
+    logging.info(f"Master node started")
 
-    # Validate that we have at least 1 master, 1 crawler, and 1 indexer.
-    if size < 3:
-        logging.error("Not enough nodes: need at least 1 master, 1 crawler, and 1 indexer.")
-        return
-
-    # Here we assume that the last rank is dedicated to the indexer.
-    indexer_rank = size - 1
-    # All nodes between rank 1 and size-2 are crawler nodes.
-    active_crawler_nodes = list(range(1, size - 1))
-    num_crawlers = len(active_crawler_nodes)
-
-    logging.info(f"Active Crawler Nodes: {active_crawler_nodes}")
-    logging.info(f"Indexer Node: {indexer_rank}")
-
-    # Initialize the cloud queue
-    task_queue = CloudQueue()
+    # Initialize the cloud queue and storage
+    task_queue = CloudQueue(queue_name=sqs_queue, status_queue_name=status_queue)
+    cloud_storage = CloudStorage(bucket_name=bucket)
     logging.info(f"Task queue initialized in {'cloud' if task_queue.is_cloud_mode() else 'local'} mode")
+    logging.info(f"Cloud storage initialized with bucket: {bucket}")
 
     # Real seed URLs for testing
     seed_urls = [
@@ -63,25 +58,23 @@ def master_process():
         "https://www.stackoverflow.com"
     ]
     
-    # Add seed URLs to the cloud queue
+    # Add seed URLs to the queue - just send them as plain strings
+    # This is the simplest method that will work with the crawler
     for url in seed_urls:
-        task_queue.send_message(url, {"type": "seed"})
+        result = task_queue.send_message(url)
+        logging.info(f"Added seed URL to queue: {url}, result: {result}")
     
     logging.info(f"Added {len(seed_urls)} seed URLs to the task queue")
 
-    task_id = 0
-    # Keep track of which URLs are being processed by which crawlers
-    crawler_assignments = {node: None for node in active_crawler_nodes}
-    max_urls_to_process = 20  # Limit the total number of URLs to process
+    # Keep track of active crawler nodes - will be updated based on heartbeats
+    active_crawler_nodes = {}  # Format: {node_id: last_heartbeat_time}
+    max_urls_to_process = 50  # Increase from 20 to 1000 URLs to process
+    min_runtime_seconds = 600   # Increase minimum runtime to 10 minutes
 
     processed_urls = 0
-    next_crawler_index = 0  # For round-robin assignment
 
     # Task timeout and heartbeat tracking - Phase 3 fault tolerance
-    task_timeout_seconds = 30  # Maximum time allowed for a crawler to process a URL
-    heartbeat_timeout_seconds = 10  # Maximum time without a heartbeat before considering a node failed
-    heartbeat_timestamps = {node: datetime.now() for node in active_crawler_nodes}
-    task_start_times = {node: None for node in active_crawler_nodes}
+    heartbeat_timeout_seconds = 30  # Increase from 10 to 30 seconds for better fault tolerance
     
     # Monitoring metrics - for tracking system performance
     system_metrics = {
@@ -89,10 +82,9 @@ def master_process():
         "urls_crawled": 0,
         "urls_indexed": 0,
         "urls_failed": 0,
-        "crawler_status": {str(node): "active" for node in active_crawler_nodes},
+        "crawler_status": {},
         "error_count": 0,
-        "task_assignments": [],
-        "crawler_performance": {str(node): {"assigned": 0, "completed": 0, "failed": 0} for node in active_crawler_nodes}
+        "crawler_performance": {}
     }
 
     # Function to update monitoring data
@@ -106,171 +98,176 @@ def master_process():
     # Initialize monitoring data file
     update_monitoring_data()
 
+    # Function to validate URL before sending to queue
+    def is_valid_url(url):
+        if not url or not isinstance(url, str):
+            return False
+        # Basic validation - ensure URL has a scheme
+        return url.startswith('http://') or url.startswith('https://')
+
+    # Initialize variables for URL discovery
+    visited_urls = set(seed_urls)  # Track URLs but don't prevent initial crawling
+    
+    # Run for at least min_runtime_seconds regardless of queue size, to allow crawler nodes to connect
+    start_time = datetime.now()
+    min_run_time = timedelta(seconds=min_runtime_seconds)
+
     # Main processing loop
+    logging.info("Starting main processing loop")
     queue_size = task_queue.get_queue_size()
-    while (queue_size > 0 or any(assignment is not None for assignment in crawler_assignments.values())) and processed_urls < max_urls_to_process:
+    while ((queue_size > 0 or len(active_crawler_nodes) > 0) and 
+           processed_urls < max_urls_to_process) or (datetime.now() - start_time < min_run_time):
         current_time = datetime.now()
         
-        # Check for timeouts and failed nodes
-        for node, assignment in list(crawler_assignments.items()):
-            if assignment is not None:
-                # Check for task timeout
-                if task_start_times[node] and (current_time - task_start_times[node]).total_seconds() > task_timeout_seconds:
-                    logging.warning(f"Task timeout for crawler {node} on URL: {assignment}")
-                    # Re-queue the URL
-                    task_queue.send_message(assignment, {"type": "retry", "failed_node": str(node)})
-                    crawler_assignments[node] = None
-                    task_start_times[node] = None
-                    system_metrics["urls_failed"] += 1
-                    system_metrics["crawler_performance"][str(node)]["failed"] += 1
-                    system_metrics["error_count"] += 1
-                    system_metrics["task_assignments"].append({
-                        "time": datetime.now().isoformat(),
-                        "task_id": task_id,
-                        "url": assignment,
-                        "crawler": node,
-                        "status": "timeout"
-                    })
-                    update_monitoring_data()
+        # Process status messages to get heartbeats and discover new nodes
+        # IMPORTANT: Only receive from status queue, not task queue!
+        status_messages = []
+        try:
+            # Only get messages from the status queue
+            if task_queue.use_cloud:
+                response = task_queue.sqs.receive_message(
+                    QueueUrl=task_queue.status_queue_url,  # Use status queue URL
+                    MaxNumberOfMessages=10,
+                    WaitTimeSeconds=1,
+                    VisibilityTimeout=30
+                )
+                status_messages = response.get('Messages', [])
+            else:
+                # Use local status queue for testing
+                pass
+        except Exception as e:
+            logging.error(f"Error receiving status messages: {e}")
+            
+        for message in status_messages:
+            try:
+                message_body_raw = message.get('Body', '{}')
                 
-                # Check for heartbeat timeout
-                if (current_time - heartbeat_timestamps[node]).total_seconds() > heartbeat_timeout_seconds:
-                    logging.warning(f"Heartbeat timeout for crawler {node}. Marking as failed.")
-                    # Mark node as failed in metrics
-                    system_metrics["crawler_status"][str(node)] = "failed"
-                    # Re-queue any assigned URL
-                    if assignment is not None:
-                        task_queue.send_message(assignment, {"type": "retry", "failed_node": str(node)})
-                        system_metrics["urls_failed"] += 1
-                        system_metrics["crawler_performance"][str(node)]["failed"] += 1
-                        system_metrics["task_assignments"].append({
-                            "time": datetime.now().isoformat(),
-                            "task_id": task_id,
-                            "url": assignment,
-                            "crawler": node,
-                            "status": "node_failed"
-                        })
-                    crawler_assignments[node] = None
-                    task_start_times[node] = None
-                    update_monitoring_data()
-
-        # Check for incoming messages (non-blocking) from any worker node.
-        if comm.Iprobe(source=MPI.ANY_SOURCE, tag=MPI.ANY_TAG):
-            message = comm.recv(source=MPI.ANY_SOURCE, tag=MPI.ANY_TAG, status=status)
-            sender = status.Get_source()
-            tag = status.Get_tag()
-
-            # Update heartbeat timestamp for the node
-            if sender in heartbeat_timestamps:
-                heartbeat_timestamps[sender] = datetime.now()
-                # If node was previously marked as failed, mark it as active again
-                if system_metrics["crawler_status"][str(sender)] == "failed":
-                    system_metrics["crawler_status"][str(sender)] = "active"
-                    logging.info(f"Crawler {sender} is back online.")
-
-            if tag == 1:
-                # Crawler completed a task and sent back extracted URLs.
-                url_processed = crawler_assignments[sender]
-                crawler_assignments[sender] = None  # Mark crawler as available
-                task_start_times[sender] = None
-                processed_urls += 1
-                system_metrics["urls_crawled"] += 1
-                system_metrics["crawler_performance"][str(sender)]["completed"] += 1
+                # Skip empty messages
+                if not message_body_raw or message_body_raw.strip() == '':
+                    logging.warning("Received empty message, skipping")
+                    if task_queue.use_cloud:
+                        task_queue.sqs.delete_message(
+                            QueueUrl=task_queue.status_queue_url,
+                            ReceiptHandle=message['ReceiptHandle']
+                        )
+                    continue
                 
-                # Record task completion
-                system_metrics["task_assignments"].append({
-                    "time": datetime.now().isoformat(),
-                    "url": url_processed,
-                    "crawler": sender,
-                    "status": "completed",
-                    "urls_extracted": len(message) if isinstance(message, list) else 0
-                })
+                # Try to parse as JSON
+                try:
+                    message_body = json.loads(message_body_raw)
+                except json.JSONDecodeError:
+                    logging.warning(f"Received malformed JSON status message: {message_body_raw[:100]}... (truncated)")
+                    if task_queue.use_cloud:
+                        task_queue.sqs.delete_message(
+                            QueueUrl=task_queue.status_queue_url,
+                            ReceiptHandle=message['ReceiptHandle']
+                        )
+                    continue
                 
-                # Add new URLs to the queue if we haven't reached the limit
-                if processed_urls < max_urls_to_process:
-                    new_urls = message
-                    if new_urls:
-                        # Add up to 5 new URLs to the queue
-                        for url in new_urls[:5]:
-                            task_queue.send_message(url, {"type": "discovered", "source_url": url_processed})
+                message_type = message_body.get('type', '')
+                node_id = message_body.get('node_id', '')
                 
-                logging.info(f"Received URLs from crawler {sender}. "
-                             f"Queue size now: {task_queue.get_queue_size()}, "
-                             f"Processed URLs: {processed_urls}")
-                update_monitoring_data()
-                
-            elif tag == 99:
-                # Status update (heartbeat, completion messages, indexing confirmation, etc.)
-                if "Indexed" in str(message):
-                    system_metrics["urls_indexed"] += 1
-                logging.info(f"Status from node {sender}: {message}")
-                update_monitoring_data()
-                
-            elif tag == 999:
-                # Error message received.
-                logging.error(f"Error reported from node {sender}: {message}")
-                system_metrics["error_count"] += 1
-                update_monitoring_data()
-
-        # Assign tasks to available crawlers from the queue
-        for node in active_crawler_nodes:
-            if crawler_assignments[node] is None and system_metrics["crawler_status"][str(node)] == "active":
-                # Retrieve a message from the queue
-                messages = task_queue.receive_messages(max_messages=1, wait_time=0)
-                if messages:
-                    message = messages[0]
-                    # Extract the URL from the message body
-                    if hasattr(message, 'body'):
-                        url_to_crawl = message.body
-                    else:
-                        url_to_crawl = message.get('MessageBody', '')
+                if node_id and message_type == MSG_HEARTBEAT:
+                    # Update the active crawler nodes with the heartbeat
+                    active_crawler_nodes[node_id] = current_time
+                    # Add to metrics if not already there
+                    if node_id not in system_metrics["crawler_status"]:
+                        system_metrics["crawler_status"][node_id] = "active"
+                        system_metrics["crawler_performance"][node_id] = {"assigned": 0, "completed": 0, "failed": 0}
                     
-                    # Delete the message from the queue
-                    task_queue.delete_message(message)
+                    logging.debug(f"Received heartbeat from crawler {node_id}")
+                
+                elif message_type == MSG_URLS_DISCOVERED and 'urls' in message_body:
+                    # Process discovered URLs
+                    discovered_urls = message_body.get('urls', [])
+                    logging.info(f"Received {len(discovered_urls)} URLs from crawler {node_id}")
                     
-                    task_id += 1
-                    # Assign URL to crawler
-                    crawler_assignments[node] = url_to_crawl
-                    task_start_times[node] = datetime.now()
-                    
-                    # Send the URL to the crawler for processing.
-                    comm.send(url_to_crawl, dest=node, tag=0)
+                    # Add valid URLs to the queue
+                    for url in discovered_urls:
+                        if is_valid_url(url) and url not in visited_urls:
+                            visited_urls.add(url)
+                            # Just send the plain URL - simplest approach
+                            task_queue.send_message(url)
+                            logging.info(f"Added discovered URL to queue: {url}")
                     
                     # Update metrics
-                    system_metrics["crawler_performance"][str(node)]["assigned"] += 1
-                    system_metrics["task_assignments"].append({
-                        "time": datetime.now().isoformat(),
-                        "task_id": task_id,
-                        "url": url_to_crawl,
-                        "crawler": node,
-                        "status": "assigned"
-                    })
-                    logging.info(f"Assigned URL {url_to_crawl} to crawler {node}.")
-                    update_monitoring_data()
+                    if node_id in system_metrics["crawler_performance"]:
+                        system_metrics["crawler_performance"][node_id]["completed"] += 1
+                    system_metrics["urls_crawled"] += 1
+                    completed_urls = len(visited_urls) - len(seed_urls)  # Count non-seed URLs as completed
+                    processed_urls += 1
+                
+                elif message_type == MSG_ERROR:
+                    # Log error
+                    error_msg = message_body.get('error', 'Unknown error')
+                    logging.error(f"Error from crawler {node_id}: {error_msg}")
+                    system_metrics["error_count"] += 1
+                    
+                    # If there's a URL in the error message, requeue it
+                    failed_url = message_body.get('url', '')
+                    if is_valid_url(failed_url) and failed_url not in visited_urls:
+                        task_queue.send_message(failed_url)
+                        logging.info(f"Requeued failed URL: {failed_url}")
+                
+                # Delete the message after processing
+                if task_queue.use_cloud:
+                    task_queue.sqs.delete_message(
+                        QueueUrl=task_queue.status_queue_url,
+                        ReceiptHandle=message['ReceiptHandle']
+                    )
+                
+            except Exception as e:
+                logging.error(f"Error processing status message: {e}")
+                # Still delete the message to prevent endless retries
+                try:
+                    if task_queue.use_cloud:
+                        task_queue.sqs.delete_message(
+                            QueueUrl=task_queue.status_queue_url,
+                            ReceiptHandle=message['ReceiptHandle']
+                        )
+                except Exception:
+                    pass
+        
+        # Check for crawler node timeouts
+        for node_id, last_heartbeat in list(active_crawler_nodes.items()):
+            if (current_time - last_heartbeat).total_seconds() > heartbeat_timeout_seconds:
+                logging.warning(f"Heartbeat timeout for crawler {node_id}. Marking as failed.")
+                # Mark node as failed in metrics
+                system_metrics["crawler_status"][node_id] = "failed"
+                # Remove from active nodes
+                del active_crawler_nodes[node_id]
+        
+        # Update monitoring data
+            update_monitoring_data()
 
-        # Update queue size for the next iteration
+        # Get the current queue size
         queue_size = task_queue.get_queue_size()
         
-        # Pause briefly to prevent CPU overutilization
-        time.sleep(0.1)
-
-    # Send shutdown signals to the crawlers.
-    logging.info("Sending shutdown signals to crawler nodes...")
-    for node in range(1, size - 1):
-        comm.send(None, dest=node, tag=0)
-        logging.info(f"Shutdown signal sent to crawler {node}")
-
-    # Send shutdown signal to the indexer.
-    logging.info("Sending shutdown signal to indexer node...")
-    comm.send(None, dest=indexer_rank, tag=2)
+        # Log current status
+        logging.info(f"Current status: processed_urls={processed_urls}, queue_size={queue_size}, active_nodes={len(active_crawler_nodes)}")
+        
+        # Pause briefly before next iteration
+        time.sleep(1)
+    
+    # All URLs processed or max limit reached
+    logging.info(f"Processing complete. Processed {processed_urls} URLs.")
+    
+    # Send shutdown signals to all nodes
+    for node_id in system_metrics["crawler_status"]:
+        shutdown_message = {
+            'type': MSG_TERMINATE,
+            'node_id': 'master',
+            'target_node': node_id
+        }
+        task_queue.send_message(json.dumps(shutdown_message))
+        logging.info(f"Sent shutdown signal to {node_id}")
     
     # Final metrics update
     system_metrics["end_time"] = datetime.now().isoformat()
-    system_metrics["total_runtime_seconds"] = (datetime.now() - datetime.fromisoformat(system_metrics["start_time"])).total_seconds()
     update_monitoring_data()
     
-    logging.info(f"Master node shutting down. Total URLs processed: {processed_urls}")
-    logging.info(f"Crawled: {system_metrics['urls_crawled']}, Indexed: {system_metrics['urls_indexed']}, Failed: {system_metrics['urls_failed']}")
+    logging.info("Master node shutting down")
+    return
 
 if __name__ == "__main__":
     master_process()

@@ -1,9 +1,10 @@
-from mpi4py import MPI
+#!/usr/bin/env python3
 import time
 import logging
 from bs4 import BeautifulSoup
 import re
 import os
+import json
 from whoosh.index import create_in, open_dir
 from whoosh.fields import Schema, TEXT, ID, STORED
 from whoosh.analysis import StemmingAnalyzer
@@ -13,9 +14,16 @@ import nltk
 from nltk.tokenize import word_tokenize, sent_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
-import json
-# Import CloudStorage for data persistence
+import socket
+from cloud_queue import CloudQueue
 from cloud_storage import CloudStorage
+
+# Define message types for AWS communication
+MSG_TERMINATE = 'terminate'
+MSG_URLS_DISCOVERED = 'urls_discovered'
+MSG_INDEX_CONTENT = 'index_content'
+MSG_HEARTBEAT = 'heartbeat'
+MSG_ERROR = 'error'
 
 # Download required NLTK data
 try:
@@ -220,18 +228,20 @@ class EnhancedIndexer:
                 "error": str(e)
             }
 
-def indexer_process():
+def indexer_process(bucket=None):
     """
     Enhanced Indexer Node Process with cloud storage:
     - Uses Whoosh for robust indexing
     - Implements advanced text processing
     - Provides enhanced search capabilities
     - Stores crawled content in cloud storage for data durability
+    - Communicates with other nodes via SQS queues instead of MPI
     """
-    # Setup MPI and logging
-    comm = MPI.COMM_WORLD
-    rank = comm.Get_rank()
-    size = comm.Get_size()
+    # Initialize default bucket name if not provided
+    bucket = bucket or 'web-crawler-data-storage'
+    
+    # Generate a unique node ID for this indexer instance
+    node_id = f"indexer-{socket.gethostname()}-{os.getpid()}"
     
     # Ensure logs directory exists
     log_file = os.path.join("logs", "indexer.log")
@@ -246,89 +256,184 @@ def indexer_process():
         ]
     )
     
-    logging.info(f"Enhanced Indexer node started with rank {rank} of {size}")
+    logging.info(f"Enhanced Indexer node started with ID: {node_id}")
     
     # Initialize the cloud storage
     try:
-        cloud_storage = CloudStorage()
-        logging.info(f"CloudStorage initialized for data persistence")
+        cloud_storage = CloudStorage(bucket_name=bucket)
+        logging.info(f"CloudStorage initialized for data persistence with bucket: {bucket}")
     except Exception as e:
         logging.error(f"Failed to initialize CloudStorage: {e}. Will continue without cloud storage.")
         cloud_storage = None
     
+    # Initialize the cloud queue for communication
+    # This queue will be used to receive content for indexing and send status updates
+    task_queue = CloudQueue(queue_name='crawler-url-queue', status_queue_name='crawler-status-queue')
+    logging.info(f"Connected to task queue for indexing content")
+    
     # Initialize the enhanced indexer with cloud storage
     indexer = EnhancedIndexer(cloud_storage=cloud_storage)
     processed_urls = set()
+    shutdown_flag = False
     
-    while True:
-        status = MPI.Status()
-        message = comm.recv(source=MPI.ANY_SOURCE, tag=MPI.ANY_TAG, status=status)
-        tag = status.Get_tag()
-        
-        # Handle shutdown signal
-        if tag == 0 and message is None:
-            logging.info("Indexer received shutdown signal. Generating final statistics...")
-            # Generate final statistics
-            with indexer.ix.searcher() as searcher:
-                doc_count = searcher.doc_count()
-                
-            logging.info(f"Final Index Statistics:")
-            logging.info(f"Total documents indexed: {doc_count}")
-            logging.info(f"Total unique URLs processed: {len(processed_urls)}")
+    # Set up a heartbeat thread for the indexer
+    def send_heartbeat():
+        """Send periodic heartbeats to the master node via the status queue"""
+        while not shutdown_flag:
+            try:
+                heartbeat_msg = {
+                    "type": MSG_HEARTBEAT,
+                    "node_id": node_id,
+                    "urls_indexed": len(processed_urls),
+                    "timestamp": time.time()
+                }
+                task_queue.send_status_update(node_id, heartbeat_msg)
+                logging.debug(f"Sent heartbeat to master node")
+            except Exception as e:
+                logging.error(f"Error sending heartbeat: {e}")
             
-            # Example searches to demonstrate functionality
-            example_queries = [
-                "python AND programming",
-                "title:github",
-                '"open source"',
-                "content:machine learning"
-            ]
+            # Sleep for a random time between 5 and 10 seconds
+            time.sleep(5)
+    
+    # Start heartbeat thread
+    import threading
+    heartbeat_thread = threading.Thread(target=send_heartbeat, daemon=True)
+    heartbeat_thread.start()
+    logging.info(f"Heartbeat mechanism started")
+    
+    # Main processing loop
+    try:
+        while not shutdown_flag:
+            # Poll for messages from the queue
+            messages = task_queue.receive_messages(max_messages=5, wait_time=5)
             
-            logging.info("\nExample Search Results:")
-            for query in example_queries:
-                results = indexer.search(query)
-                logging.info(f"\nQuery: {query}")
-                logging.info(f"Found {results['total_results']} results")
-                
-            break
+            if not messages:
+                logging.debug("No messages in queue, continuing...")
+                continue
             
-        if tag == 2:
-            if isinstance(message, dict) and "url" in message and "content" in message:
-                url = message["url"]
-                content = message["content"]
-                sender = status.Get_source()
-                
-                if url not in processed_urls:
+            for message in messages:
+                try:
+                    # Parse the message
+                    message_body = message.get('Body', '')
                     try:
-                        result = indexer.index_document(url, content)
-                        if result["status"] == "success":
-                            processed_urls.add(url)
-                            logging.info(f"Successfully indexed {url}")
-                            logging.info(f"Extracted {len(result['keywords'])} keywords")
-                            
-                            # Add cloud storage info to the success message
-                            storage_info = "with cloud storage" if result.get("cloud_storage") else "without cloud storage"
-                            success_msg = f"Indexed {url} with {len(result['keywords'])} keywords {storage_info}"
-                            
-                            # Send success status to master
-                            comm.send(success_msg, dest=0, tag=99)
-                        else:
-                            logging.error(f"Failed to index {url}: {result['error']}")
-                            comm.send(f"Failed to index {url}: {result['error']}", dest=0, tag=999)
-                            
-                    except Exception as e:
-                        logging.error(f"Error while indexing {url}: {e}")
-                        comm.send(f"Indexer error for {url}: {e}", dest=0, tag=999)
-                else:
-                    logging.info(f"URL already indexed: {url}")
+                        message_data = json.loads(message_body)
+                    except (json.JSONDecodeError, TypeError):
+                        logging.warning(f"Received invalid message format: {message_body[:100]}...")
+                        task_queue.delete_message(message)
+                        continue
                     
-            else:
-                logging.warning("Indexer received message with unknown format")
-                
-        else:
-            logging.warning(f"Indexer received message with unexpected tag {tag}")
+                    # Check if this is a termination message
+                    if message_data.get('type') == MSG_TERMINATE:
+                        if message_data.get('target_node') == node_id or message_data.get('target_node') == 'all':
+                            logging.info(f"Received shutdown signal. Exiting.")
+                            shutdown_flag = True
+                            task_queue.delete_message(message)
+                            break
+                    
+                    # Process indexing requests
+                    if message_data.get('type') == MSG_INDEX_CONTENT:
+                        url = message_data.get('url')
+                        content = message_data.get('content')
+                        
+                        # Check if content was truncated
+                        if message_data.get('truncated'):
+                            original_size = message_data.get('original_size', 0)
+                            current_size = len(content) if content else 0
+                            logging.warning(f"Processing truncated content for {url}. Original: {original_size} bytes, Received: {current_size} bytes")
+                        
+                        if url and content and url not in processed_urls:
+                            try:
+                                logging.info(f"Indexing content from {url}")
+                                result = indexer.index_document(url, content)
+                                
+                                if result["status"] == "success":
+                                    processed_urls.add(url)
+                                    logging.info(f"Successfully indexed {url}")
+                                    logging.info(f"Extracted {len(result['keywords'])} keywords")
+                                    
+                                    # Add cloud storage info to the success message
+                                    storage_info = "with cloud storage" if result.get("cloud_storage") else "without cloud storage"
+                                    success_msg = {
+                                        "type": MSG_HEARTBEAT,
+                                        "node_id": node_id,
+                                        "url": url,
+                                        "status": "indexed",
+                                        "keywords_count": len(result['keywords']),
+                                        "cloud_storage": result.get("cloud_storage", False),
+                                        "timestamp": time.time()
+                                    }
+                                    
+                                    # Send success status to master
+                                    task_queue.send_status_update(node_id, success_msg)
+                                else:
+                                    error_msg = {
+                                        "type": MSG_ERROR,
+                                        "node_id": node_id,
+                                        "url": url,
+                                        "error": f"Failed to index: {result.get('error', 'Unknown error')}",
+                                        "timestamp": time.time()
+                                    }
+                                    task_queue.send_status_update(node_id, error_msg)
+                                    logging.error(f"Failed to index {url}: {result.get('error')}")
+                            
+                            except Exception as e:
+                                error_msg = {
+                                    "type": MSG_ERROR,
+                                    "node_id": node_id,
+                                    "url": url,
+                                    "error": f"Error indexing: {str(e)}",
+                                    "timestamp": time.time()
+                                }
+                                task_queue.send_status_update(node_id, error_msg)
+                                logging.error(f"Error while indexing {url}: {e}")
+                                
+                        elif url in processed_urls:
+                            logging.info(f"URL already indexed: {url}")
+                    
+                    # Delete the message after processing
+                    task_queue.delete_message(message)
+                    
+                except Exception as e:
+                    logging.error(f"Error processing message: {e}")
+                    # Still delete the message to prevent endless retries
+                    task_queue.delete_message(message)
             
-        time.sleep(0.1)
+            # Break out of the loop if shutdown signal received
+            if shutdown_flag:
+                break
+    
+    except Exception as e:
+        logging.error(f"Unexpected error in indexer: {e}")
+        import traceback
+        logging.error(traceback.format_exc())
+    
+    finally:
+        # Clean up and generate final statistics
+        shutdown_flag = True
+        heartbeat_thread.join(timeout=1.0)
+        
+        with indexer.ix.searcher() as searcher:
+            doc_count = searcher.doc_count()
+            
+        logging.info(f"Final Index Statistics:")
+        logging.info(f"Total documents indexed: {doc_count}")
+        logging.info(f"Total unique URLs processed: {len(processed_urls)}")
+        
+        # Example searches to demonstrate functionality
+        example_queries = [
+            "python AND programming",
+            "title:github",
+            '"open source"',
+            "content:machine learning"
+        ]
+        
+        logging.info("\nExample Search Results:")
+        for query in example_queries:
+            results = indexer.search(query)
+            logging.info(f"\nQuery: {query}")
+            logging.info(f"Found {results['total_results']} results")
+        
+        logging.info("Indexer shutting down")
 
 if __name__ == "__main__":
     indexer_process()

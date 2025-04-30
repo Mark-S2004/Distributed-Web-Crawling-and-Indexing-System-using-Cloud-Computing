@@ -1,0 +1,232 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'Auto Scaling Crawler Nodes for Distributed Web Crawler'
+
+Parameters:
+  InstanceType:
+    Description: EC2 instance type
+    Type: String
+    Default: t2.micro
+    AllowedValues:
+      - t2.micro
+      - t2.small
+      - t3.micro
+    ConstraintDescription: Must be a valid EC2 instance type.
+    
+  KeyName:
+    Description: Name of an existing EC2 KeyPair to enable SSH access
+    Type: AWS::EC2::KeyPair::KeyName
+    ConstraintDescription: Must be the name of an existing EC2 KeyPair.
+    
+  MinInstances:
+    Description: Minimum number of crawler instances
+    Type: Number
+    Default: 1
+    
+  MaxInstances:
+    Description: Maximum number of crawler instances
+    Type: Number
+    Default: 5
+    
+  DesiredCapacity:
+    Description: Desired number of crawler instances
+    Type: Number
+    Default: 2
+    
+  S3BucketName:
+    Description: Name of the S3 bucket for crawler data
+    Type: String
+    Default: web-crawler-data-storage
+    
+  SQSQueueName:
+    Description: Name of the SQS queue for task distribution
+    Type: String
+    Default: crawler-url-queue
+    
+  StatusQueueName:
+    Description: Name of the SQS queue for status updates
+    Type: String
+    Default: crawler-status-queue
+
+Resources:
+  CrawlerNodeRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: ec2.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/AmazonS3FullAccess
+        - arn:aws:iam::aws:policy/AmazonSQSFullAccess
+        - arn:aws:iam::aws:policy/CloudWatchFullAccess
+      Path: /
+
+  CrawlerNodeInstanceProfile:
+    Type: AWS::IAM::InstanceProfile
+    Properties:
+      Path: /
+      Roles:
+        - !Ref CrawlerNodeRole
+
+  CrawlerNodeLaunchConfig:
+    Type: AWS::AutoScaling::LaunchConfiguration
+    Properties:
+      # Amazon Linux 2 AMI IDs by region:
+      # us-east-1: ami-05548f9cecf47b442
+      # us-east-2: ami-02a89066c48741345
+      # us-west-1: ami-01f87c43e618bf8f0
+      # us-west-2: ami-0ab193018fec4c7cb
+      # eu-west-1: ami-0a2bf31e37b5453d6
+      # ap-southeast-1: ami-0dc5785603ad4ff54
+      # Choose the appropriate AMI ID for your region
+      ImageId: ami-05548f9cecf47b442  # Amazon Linux 2 AMI for us-east-1 (N. Virginia)
+      InstanceType: !Ref InstanceType
+      KeyName: !Ref KeyName
+      SecurityGroups:
+        - !Ref CrawlerNodeSecurityGroup
+      IamInstanceProfile: !Ref CrawlerNodeInstanceProfile
+      UserData:
+        Fn::Base64: !Sub |
+          #!/bin/bash -xe
+          # Install dependencies
+          yum update -y
+          yum install -y git python3 python3-pip
+          pip3 install --upgrade pip
+          
+          # Clone repository
+          mkdir -p /home/ec2-user/crawler
+          cd /home/ec2-user/crawler
+          # Using the correct repository URL
+          git clone https://github.com/Mark-S2004/Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing.git .
+          git checkout aws-cloud-imp
+          
+          # Install Python dependencies
+          pip3 install -r requirements.txt
+          pip3 install boto3 requests beautifulsoup4 nltk
+          
+          # Configure NLTK data
+          python3 -c "import nltk; nltk.download('punkt'); nltk.download('wordnet'); nltk.download('stopwords')"
+          
+          # Create necessary directories
+          mkdir -p logs data data/monitoring data/queue search_index
+          
+          # Start crawler node
+          nohup python3 main.py --role crawler --sqs-queue ${SQSQueueName} --status-queue ${StatusQueueName} --bucket ${S3BucketName} > /home/ec2-user/crawler.log 2>&1 &
+          
+          # Configure CloudWatch for monitoring
+          yum install -y amazon-cloudwatch-agent
+          cat > /opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent.json << 'EOF'
+          {
+            "metrics": {
+              "append_dimensions": {
+                "InstanceId": "${aws:InstanceId}"
+              },
+              "metrics_collected": {
+                "mem": {
+                  "measurement": ["mem_used_percent"],
+                  "metrics_collection_interval": 60
+                },
+                "swap": {
+                  "measurement": ["swap_used_percent"],
+                  "metrics_collection_interval": 60
+                },
+                "disk": {
+                  "measurement": ["disk_used_percent"],
+                  "metrics_collection_interval": 60,
+                  "resources": ["*"]
+                }
+              }
+            },
+            "logs": {
+              "logs_collected": {
+                "files": {
+                  "collect_list": [
+                    {
+                      "file_path": "/home/ec2-user/crawler.log",
+                      "log_group_name": "crawler-logs",
+                      "log_stream_name": "{instance_id}",
+                      "timezone": "UTC"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+          EOF
+          /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -s -c file:/opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent.json
+
+  CrawlerNodeSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Security group for crawler nodes
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: 0.0.0.0/0  # Restrict this to your IP in production
+        - IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          CidrIp: 0.0.0.0/0  # HTTP access
+        - IpProtocol: tcp
+          FromPort: 443
+          ToPort: 443
+          CidrIp: 0.0.0.0/0  # HTTPS access
+      
+  CrawlerNodeAutoScalingGroup:
+    Type: AWS::AutoScaling::AutoScalingGroup
+    Properties:
+      LaunchConfigurationName: !Ref CrawlerNodeLaunchConfig
+      MinSize: !Ref MinInstances
+      MaxSize: !Ref MaxInstances
+      DesiredCapacity: !Ref DesiredCapacity
+      AvailabilityZones:
+        Fn::GetAZs: !Ref 'AWS::Region'
+      Tags:
+        - Key: Name
+          Value: WebCrawlerNode
+          PropagateAtLaunch: true
+      MetricsCollection:
+        - Granularity: 1Minute
+          Metrics:
+            - GroupMinSize
+            - GroupMaxSize
+            - GroupDesiredCapacity
+            - GroupInServiceInstances
+            - GroupTotalInstances
+
+  QueueSizeScalingPolicy:
+    Type: AWS::AutoScaling::ScalingPolicy
+    Properties:
+      AutoScalingGroupName: !Ref CrawlerNodeAutoScalingGroup
+      PolicyType: TargetTrackingScaling
+      TargetTrackingConfiguration:
+        CustomizedMetricSpecification:
+          MetricName: ApproximateNumberOfMessagesVisible
+          Namespace: AWS/SQS
+          Dimensions:
+            - Name: QueueName
+              Value: !Ref SQSQueueName
+          Statistic: Average
+        TargetValue: 10  # Scale to keep ~10 messages per crawler
+
+  CPUScalingPolicy:
+    Type: AWS::AutoScaling::ScalingPolicy
+    Properties:
+      AutoScalingGroupName: !Ref CrawlerNodeAutoScalingGroup
+      PolicyType: TargetTrackingScaling
+      TargetTrackingConfiguration:
+        PredefinedMetricSpecification:
+          PredefinedMetricType: ASGAverageCPUUtilization
+        TargetValue: 70.0  # Target 70% CPU utilization
+
+Outputs:
+  AutoScalingGroupName:
+    Description: Name of the Auto Scaling Group
+    Value: !Ref CrawlerNodeAutoScalingGroup
+  LaunchConfiguration:
+    Description: Launch Configuration
+    Value: !Ref CrawlerNodeLaunchConfig 

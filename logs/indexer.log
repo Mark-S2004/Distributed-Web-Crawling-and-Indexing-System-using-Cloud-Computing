@@ -1524,3 +1524,444 @@ Query: content:machine learning
 2025-04-26 03:44:56,241 - Indexer - INFO - Stored processed text for https://www.reddit.com/login/ with result: s3
 2025-04-26 03:44:56,337 - Indexer - INFO - Successfully indexed https://www.reddit.com/login/
 2025-04-26 03:44:56,337 - Indexer - INFO - Extracted 3 keywords
+2025-04-27 02:55:42,988 - Indexer - INFO - Enhanced Indexer node started with rank 4 of 5
+2025-04-27 02:55:42,988 - Indexer - INFO - Loaded AWS configuration from aws_config.json
+2025-04-27 02:55:43,010 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-27 02:55:44,244 - Indexer - INFO - Bucket web-crawler-data-storage already exists
+2025-04-27 02:55:44,244 - Indexer - INFO - Successfully connected to AWS S3 in region us-east-1
+2025-04-27 02:55:44,244 - Indexer - INFO - CloudStorage initialized for data persistence
+2025-04-27 02:55:50,358 - Indexer - INFO - Successfully stored raw HTML for https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=bn.wikipedia.org&uselang=en at s3://web-crawler-data-storage/raw_html/2025/04/27/7fca22b48917b4125fbee5e7e57d65e0.html
+2025-04-27 02:55:50,358 - Indexer - INFO - Stored raw HTML for https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=bn.wikipedia.org&uselang=en with result: s3
+2025-04-27 02:55:50,813 - Indexer - INFO - Successfully stored processed text for https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=bn.wikipedia.org&uselang=en at s3://web-crawler-data-storage/processed_text/2025/04/27/7fca22b48917b4125fbee5e7e57d65e0.txt
+2025-04-27 02:55:51,158 - Indexer - INFO - Successfully stored metadata for https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=bn.wikipedia.org&uselang=en at s3://web-crawler-data-storage/metadata/2025/04/27/7fca22b48917b4125fbee5e7e57d65e0.json
+2025-04-27 02:55:51,166 - Indexer - INFO - Stored processed text for https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=bn.wikipedia.org&uselang=en with result: s3
+2025-04-27 02:55:51,363 - Indexer - INFO - Successfully indexed https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=bn.wikipedia.org&uselang=en
+2025-04-27 02:55:51,363 - Indexer - INFO - Extracted 10 keywords
+2025-04-27 02:55:53,133 - Indexer - INFO - Successfully stored raw HTML for https://stackoverflow.blog/ at s3://web-crawler-data-storage/raw_html/2025/04/27/9ddad477209d95b77c290fbf40ec7626.html
+2025-04-27 02:55:53,133 - Indexer - INFO - Stored raw HTML for https://stackoverflow.blog/ with result: s3
+2025-04-27 02:55:53,546 - Indexer - INFO - Successfully stored processed text for https://stackoverflow.blog/ at s3://web-crawler-data-storage/processed_text/2025/04/27/9ddad477209d95b77c290fbf40ec7626.txt
+2025-04-27 02:55:53,925 - Indexer - INFO - Successfully stored metadata for https://stackoverflow.blog/ at s3://web-crawler-data-storage/metadata/2025/04/27/9ddad477209d95b77c290fbf40ec7626.json
+2025-04-27 02:55:53,925 - Indexer - INFO - Stored processed text for https://stackoverflow.blog/ with result: s3
+2025-04-27 02:55:54,019 - Indexer - INFO - Successfully indexed https://stackoverflow.blog/
+2025-04-27 02:55:54,019 - Indexer - INFO - Extracted 10 keywords
+2025-04-27 02:55:55,238 - Indexer - INFO - Successfully stored raw HTML for https://ar.wikipedia.org/wiki/%D9%82%D8%A7%D8%A6%D9%85%D8%A9_%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA_%D9%88%D9%8A%D9%83%D9%8A%D8%A8%D9%8A%D8%AF%D9%8A%D8%A7_%D9%84%D9%84%D9%87%D8%A7%D8%AA%D9%81 at s3://web-crawler-data-storage/raw_html/2025/04/27/859cc6e871b0d27d611b40f8a1875637.html
+2025-04-27 02:55:55,238 - Indexer - INFO - Stored raw HTML for https://ar.wikipedia.org/wiki/%D9%82%D8%A7%D8%A6%D9%85%D8%A9_%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA_%D9%88%D9%8A%D9%83%D9%8A%D8%A8%D9%8A%D8%AF%D9%8A%D8%A7_%D9%84%D9%84%D9%87%D8%A7%D8%AA%D9%81 with result: s3
+2025-04-27 02:55:55,615 - Indexer - INFO - Successfully stored processed text for https://ar.wikipedia.org/wiki/%D9%82%D8%A7%D8%A6%D9%85%D8%A9_%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA_%D9%88%D9%8A%D9%83%D9%8A%D8%A8%D9%8A%D8%AF%D9%8A%D8%A7_%D9%84%D9%84%D9%87%D8%A7%D8%AA%D9%81 at s3://web-crawler-data-storage/processed_text/2025/04/27/859cc6e871b0d27d611b40f8a1875637.txt
+2025-04-27 02:55:56,064 - Indexer - INFO - Successfully stored metadata for https://ar.wikipedia.org/wiki/%D9%82%D8%A7%D8%A6%D9%85%D8%A9_%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA_%D9%88%D9%8A%D9%83%D9%8A%D8%A8%D9%8A%D8%AF%D9%8A%D8%A7_%D9%84%D9%84%D9%87%D8%A7%D8%AA%D9%81 at s3://web-crawler-data-storage/metadata/2025/04/27/859cc6e871b0d27d611b40f8a1875637.json
+2025-04-27 02:55:56,064 - Indexer - INFO - Stored processed text for https://ar.wikipedia.org/wiki/%D9%82%D8%A7%D8%A6%D9%85%D8%A9_%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA_%D9%88%D9%8A%D9%83%D9%8A%D8%A8%D9%8A%D8%AF%D9%8A%D8%A7_%D9%84%D9%84%D9%87%D8%A7%D8%AA%D9%81 with result: s3
+2025-04-27 02:55:58,369 - Indexer - INFO - Successfully indexed https://ar.wikipedia.org/wiki/%D9%82%D8%A7%D8%A6%D9%85%D8%A9_%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA_%D9%88%D9%8A%D9%83%D9%8A%D8%A8%D9%8A%D8%AF%D9%8A%D8%A7_%D9%84%D9%84%D9%87%D8%A7%D8%AA%D9%81
+2025-04-27 02:55:58,369 - Indexer - INFO - Extracted 10 keywords
+2025-04-27 02:55:59,959 - Indexer - INFO - Successfully stored raw HTML for https://stackoverflow.co/advertising/resources/ at s3://web-crawler-data-storage/raw_html/2025/04/27/0900f2834bf3303e0227ecb9ddff320b.html
+2025-04-27 02:55:59,959 - Indexer - INFO - Stored raw HTML for https://stackoverflow.co/advertising/resources/ with result: s3
+2025-04-27 02:56:00,326 - Indexer - INFO - Successfully stored processed text for https://stackoverflow.co/advertising/resources/ at s3://web-crawler-data-storage/processed_text/2025/04/27/0900f2834bf3303e0227ecb9ddff320b.txt
+2025-04-27 02:56:00,649 - Indexer - INFO - Successfully stored metadata for https://stackoverflow.co/advertising/resources/ at s3://web-crawler-data-storage/metadata/2025/04/27/0900f2834bf3303e0227ecb9ddff320b.json
+2025-04-27 02:56:00,649 - Indexer - INFO - Stored processed text for https://stackoverflow.co/advertising/resources/ with result: s3
+2025-04-27 02:56:00,887 - Indexer - INFO - Successfully indexed https://stackoverflow.co/advertising/resources/
+2025-04-27 02:56:00,887 - Indexer - INFO - Extracted 10 keywords
+2025-04-27 02:56:01,564 - Indexer - INFO - Successfully stored raw HTML for https://foundation.wikimedia.org/wiki/Policy:Donor_privacy_policy/Supplement at s3://web-crawler-data-storage/raw_html/2025/04/27/8e9f6a05ce0a19e369efc8459bc2cadf.html
+2025-04-27 02:56:01,564 - Indexer - INFO - Stored raw HTML for https://foundation.wikimedia.org/wiki/Policy:Donor_privacy_policy/Supplement with result: s3
+2025-04-27 02:56:01,925 - Indexer - INFO - Successfully stored processed text for https://foundation.wikimedia.org/wiki/Policy:Donor_privacy_policy/Supplement at s3://web-crawler-data-storage/processed_text/2025/04/27/8e9f6a05ce0a19e369efc8459bc2cadf.txt
+2025-04-27 02:56:02,428 - Indexer - INFO - Successfully stored metadata for https://foundation.wikimedia.org/wiki/Policy:Donor_privacy_policy/Supplement at s3://web-crawler-data-storage/metadata/2025/04/27/8e9f6a05ce0a19e369efc8459bc2cadf.json
+2025-04-27 02:56:02,428 - Indexer - INFO - Stored processed text for https://foundation.wikimedia.org/wiki/Policy:Donor_privacy_policy/Supplement with result: s3
+2025-04-27 02:56:02,543 - Indexer - INFO - Successfully indexed https://foundation.wikimedia.org/wiki/Policy:Donor_privacy_policy/Supplement
+2025-04-27 02:56:02,543 - Indexer - INFO - Extracted 10 keywords
+2025-04-27 02:56:04,402 - Indexer - INFO - Successfully stored raw HTML for https://www.wikipedia.org at s3://web-crawler-data-storage/raw_html/2025/04/27/8d1d8a3956ab5668e1da4e3e7f856f08.html
+2025-04-27 02:56:04,402 - Indexer - INFO - Stored raw HTML for https://www.wikipedia.org with result: s3
+2025-04-27 02:56:04,765 - Indexer - INFO - Successfully stored processed text for https://www.wikipedia.org at s3://web-crawler-data-storage/processed_text/2025/04/27/8d1d8a3956ab5668e1da4e3e7f856f08.txt
+2025-04-27 02:56:05,137 - Indexer - INFO - Successfully stored metadata for https://www.wikipedia.org at s3://web-crawler-data-storage/metadata/2025/04/27/8d1d8a3956ab5668e1da4e3e7f856f08.json
+2025-04-27 02:56:05,137 - Indexer - INFO - Stored processed text for https://www.wikipedia.org with result: s3
+2025-04-27 02:56:05,260 - Indexer - INFO - Successfully indexed https://www.wikipedia.org
+2025-04-27 02:56:05,260 - Indexer - INFO - Extracted 10 keywords
+2025-04-27 02:56:06,295 - Indexer - INFO - Successfully stored raw HTML for https://foundation.wikimedia.org/wiki/Special:LandingCheck?landing_page=Donor_privacy_policy&basic=true&language=en at s3://web-crawler-data-storage/raw_html/2025/04/27/8549b83fb76c34bd8ce8ab273b544a69.html
+2025-04-27 02:56:06,303 - Indexer - INFO - Stored raw HTML for https://foundation.wikimedia.org/wiki/Special:LandingCheck?landing_page=Donor_privacy_policy&basic=true&language=en with result: s3
+2025-04-27 02:56:06,610 - Indexer - INFO - Successfully stored processed text for https://foundation.wikimedia.org/wiki/Special:LandingCheck?landing_page=Donor_privacy_policy&basic=true&language=en at s3://web-crawler-data-storage/processed_text/2025/04/27/8549b83fb76c34bd8ce8ab273b544a69.txt
+2025-04-27 02:56:06,990 - Indexer - INFO - Successfully stored metadata for https://foundation.wikimedia.org/wiki/Special:LandingCheck?landing_page=Donor_privacy_policy&basic=true&language=en at s3://web-crawler-data-storage/metadata/2025/04/27/8549b83fb76c34bd8ce8ab273b544a69.json
+2025-04-27 02:56:06,990 - Indexer - INFO - Stored processed text for https://foundation.wikimedia.org/wiki/Special:LandingCheck?landing_page=Donor_privacy_policy&basic=true&language=en with result: s3
+2025-04-27 02:56:07,171 - Indexer - INFO - Successfully indexed https://foundation.wikimedia.org/wiki/Special:LandingCheck?landing_page=Donor_privacy_policy&basic=true&language=en
+2025-04-27 02:56:07,172 - Indexer - INFO - Extracted 10 keywords
+2025-04-27 02:56:08,209 - Indexer - INFO - Successfully stored raw HTML for https://az.wikipedia.org/wiki/Vikipediya_mobil_t%C9%99tbiql%C9%99rinin_siyah%C4%B1s%C4%B1 at s3://web-crawler-data-storage/raw_html/2025/04/27/4e4383666f271d6d881d5877a20ae938.html
+2025-04-27 02:56:08,209 - Indexer - INFO - Stored raw HTML for https://az.wikipedia.org/wiki/Vikipediya_mobil_t%C9%99tbiql%C9%99rinin_siyah%C4%B1s%C4%B1 with result: s3
+2025-04-27 02:56:08,506 - Indexer - INFO - Successfully stored processed text for https://az.wikipedia.org/wiki/Vikipediya_mobil_t%C9%99tbiql%C9%99rinin_siyah%C4%B1s%C4%B1 at s3://web-crawler-data-storage/processed_text/2025/04/27/4e4383666f271d6d881d5877a20ae938.txt
+2025-04-27 02:56:08,843 - Indexer - INFO - Successfully stored metadata for https://az.wikipedia.org/wiki/Vikipediya_mobil_t%C9%99tbiql%C9%99rinin_siyah%C4%B1s%C4%B1 at s3://web-crawler-data-storage/metadata/2025/04/27/4e4383666f271d6d881d5877a20ae938.json
+2025-04-27 02:56:08,843 - Indexer - INFO - Stored processed text for https://az.wikipedia.org/wiki/Vikipediya_mobil_t%C9%99tbiql%C9%99rinin_siyah%C4%B1s%C4%B1 with result: s3
+2025-04-27 02:56:11,530 - Indexer - INFO - Successfully indexed https://az.wikipedia.org/wiki/Vikipediya_mobil_t%C9%99tbiql%C9%99rinin_siyah%C4%B1s%C4%B1
+2025-04-27 02:56:11,530 - Indexer - INFO - Extracted 10 keywords
+2025-04-27 02:56:14,248 - Indexer - INFO - Successfully stored raw HTML for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 at s3://web-crawler-data-storage/raw_html/2025/04/27/4ab61f2e1910f4ba05089d1f2e2e5e61.html
+2025-04-27 02:56:14,248 - Indexer - INFO - Stored raw HTML for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 with result: s3
+2025-04-27 02:56:14,667 - Indexer - INFO - Successfully stored processed text for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 at s3://web-crawler-data-storage/processed_text/2025/04/27/4ab61f2e1910f4ba05089d1f2e2e5e61.txt
+2025-04-27 02:56:15,105 - Indexer - INFO - Successfully stored metadata for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 at s3://web-crawler-data-storage/metadata/2025/04/27/4ab61f2e1910f4ba05089d1f2e2e5e61.json
+2025-04-27 02:56:15,105 - Indexer - INFO - Stored processed text for https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8 with result: s3
+2025-04-27 02:56:15,337 - Indexer - INFO - Successfully indexed https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8
+2025-04-27 02:56:15,337 - Indexer - INFO - Extracted 10 keywords
+2025-04-27 02:56:15,751 - Indexer - INFO - Successfully stored raw HTML for http://example.com/page_3_0 at s3://web-crawler-data-storage/raw_html/2025/04/27/a9915e4e501d96d5de96719b4b3ca5e4.html
+2025-04-27 02:56:15,751 - Indexer - INFO - Stored raw HTML for http://example.com/page_3_0 with result: s3
+2025-04-27 02:56:16,654 - Indexer - INFO - Successfully stored processed text for http://example.com/page_3_0 at s3://web-crawler-data-storage/processed_text/2025/04/27/a9915e4e501d96d5de96719b4b3ca5e4.txt
+2025-04-27 02:56:17,256 - Indexer - INFO - Successfully stored metadata for http://example.com/page_3_0 at s3://web-crawler-data-storage/metadata/2025/04/27/a9915e4e501d96d5de96719b4b3ca5e4.json
+2025-04-27 02:56:17,256 - Indexer - INFO - Stored processed text for http://example.com/page_3_0 with result: s3
+2025-04-27 02:56:17,396 - Indexer - INFO - Successfully indexed http://example.com/page_3_0
+2025-04-27 02:56:17,396 - Indexer - INFO - Extracted 10 keywords
+2025-04-27 02:56:19,688 - Indexer - INFO - Successfully stored raw HTML for https://diff.wikimedia.org/calendar at s3://web-crawler-data-storage/raw_html/2025/04/27/8c2309c1f6b63c6c1f0dcc3b621bfdde.html
+2025-04-27 02:56:19,688 - Indexer - INFO - Stored raw HTML for https://diff.wikimedia.org/calendar with result: s3
+2025-04-27 02:56:20,004 - Indexer - INFO - Successfully stored processed text for https://diff.wikimedia.org/calendar at s3://web-crawler-data-storage/processed_text/2025/04/27/8c2309c1f6b63c6c1f0dcc3b621bfdde.txt
+2025-04-27 02:56:20,380 - Indexer - INFO - Successfully stored metadata for https://diff.wikimedia.org/calendar at s3://web-crawler-data-storage/metadata/2025/04/27/8c2309c1f6b63c6c1f0dcc3b621bfdde.json
+2025-04-27 02:56:20,380 - Indexer - INFO - Stored processed text for https://diff.wikimedia.org/calendar with result: s3
+2025-04-27 02:56:20,481 - Indexer - INFO - Successfully indexed https://diff.wikimedia.org/calendar
+2025-04-27 02:56:20,481 - Indexer - INFO - Extracted 10 keywords
+2025-04-27 02:56:20,901 - Indexer - INFO - Successfully stored raw HTML for https://www.iana.org/domains/example at s3://web-crawler-data-storage/raw_html/2025/04/27/5c36633c263ae91d241cfd357fa5f04e.html
+2025-04-27 02:56:20,901 - Indexer - INFO - Stored raw HTML for https://www.iana.org/domains/example with result: s3
+2025-04-27 02:56:21,255 - Indexer - INFO - Successfully stored processed text for https://www.iana.org/domains/example at s3://web-crawler-data-storage/processed_text/2025/04/27/5c36633c263ae91d241cfd357fa5f04e.txt
+2025-04-27 02:56:21,552 - Indexer - INFO - Successfully stored metadata for https://www.iana.org/domains/example at s3://web-crawler-data-storage/metadata/2025/04/27/5c36633c263ae91d241cfd357fa5f04e.json
+2025-04-27 02:56:21,552 - Indexer - INFO - Stored processed text for https://www.iana.org/domains/example with result: s3
+2025-04-27 02:56:21,691 - Indexer - INFO - Successfully indexed https://www.iana.org/domains/example
+2025-04-27 02:56:21,691 - Indexer - INFO - Extracted 10 keywords
+2025-04-27 02:56:22,924 - Indexer - INFO - Successfully stored raw HTML for https://diff.wikimedia.org/ at s3://web-crawler-data-storage/raw_html/2025/04/27/11abaff3a46ac02a53b239135eb20e5c.html
+2025-04-27 02:56:22,924 - Indexer - INFO - Stored raw HTML for https://diff.wikimedia.org/ with result: s3
+2025-04-27 02:56:23,373 - Indexer - INFO - Successfully stored processed text for https://diff.wikimedia.org/ at s3://web-crawler-data-storage/processed_text/2025/04/27/11abaff3a46ac02a53b239135eb20e5c.txt
+2025-04-27 02:56:23,730 - Indexer - INFO - Successfully stored metadata for https://diff.wikimedia.org/ at s3://web-crawler-data-storage/metadata/2025/04/27/11abaff3a46ac02a53b239135eb20e5c.json
+2025-04-27 02:56:23,730 - Indexer - INFO - Stored processed text for https://diff.wikimedia.org/ with result: s3
+2025-04-27 02:56:26,408 - Indexer - INFO - Successfully indexed https://diff.wikimedia.org/
+2025-04-27 02:56:26,408 - Indexer - INFO - Extracted 10 keywords
+2025-04-27 02:56:27,964 - Indexer - INFO - Successfully stored raw HTML for https://github.com/security/advanced-security at s3://web-crawler-data-storage/raw_html/2025/04/27/1fe3a393f05c47bb0a664cde7f830a83.html
+2025-04-27 02:56:27,964 - Indexer - INFO - Stored raw HTML for https://github.com/security/advanced-security with result: s3
+2025-04-27 02:56:28,334 - Indexer - INFO - Successfully stored processed text for https://github.com/security/advanced-security at s3://web-crawler-data-storage/processed_text/2025/04/27/1fe3a393f05c47bb0a664cde7f830a83.txt
+2025-04-27 02:56:28,819 - Indexer - INFO - Successfully stored metadata for https://github.com/security/advanced-security at s3://web-crawler-data-storage/metadata/2025/04/27/1fe3a393f05c47bb0a664cde7f830a83.json
+2025-04-27 02:56:28,819 - Indexer - INFO - Stored processed text for https://github.com/security/advanced-security with result: s3
+2025-04-27 02:56:29,075 - Indexer - INFO - Successfully indexed https://github.com/security/advanced-security
+2025-04-27 02:56:29,075 - Indexer - INFO - Extracted 10 keywords
+2025-04-27 02:56:29,958 - Indexer - INFO - Successfully stored raw HTML for https://www.python.org at s3://web-crawler-data-storage/raw_html/2025/04/27/c137682bbb0946674f25d1d4bd9e07a0.html
+2025-04-27 02:56:29,958 - Indexer - INFO - Stored raw HTML for https://www.python.org with result: s3
+2025-04-27 02:56:30,295 - Indexer - INFO - Successfully stored processed text for https://www.python.org at s3://web-crawler-data-storage/processed_text/2025/04/27/c137682bbb0946674f25d1d4bd9e07a0.txt
+2025-04-27 02:56:30,818 - Indexer - INFO - Successfully stored metadata for https://www.python.org at s3://web-crawler-data-storage/metadata/2025/04/27/c137682bbb0946674f25d1d4bd9e07a0.json
+2025-04-27 02:56:30,818 - Indexer - INFO - Stored processed text for https://www.python.org with result: s3
+2025-04-27 02:56:30,944 - Indexer - INFO - Successfully indexed https://www.python.org
+2025-04-27 02:56:30,945 - Indexer - INFO - Extracted 10 keywords
+2025-04-27 02:56:31,692 - Indexer - INFO - Successfully stored raw HTML for https://donate.wikimedia.org/wiki/Special:LandingCheck?landing_page=Problems_donating&basic=true&language=en at s3://web-crawler-data-storage/raw_html/2025/04/27/8742febe1601068a84be5d08dacc962c.html
+2025-04-27 02:56:31,693 - Indexer - INFO - Stored raw HTML for https://donate.wikimedia.org/wiki/Special:LandingCheck?landing_page=Problems_donating&basic=true&language=en with result: s3
+2025-04-27 02:56:32,104 - Indexer - INFO - Successfully stored processed text for https://donate.wikimedia.org/wiki/Special:LandingCheck?landing_page=Problems_donating&basic=true&language=en at s3://web-crawler-data-storage/processed_text/2025/04/27/8742febe1601068a84be5d08dacc962c.txt
+2025-04-27 02:56:32,466 - Indexer - INFO - Successfully stored metadata for https://donate.wikimedia.org/wiki/Special:LandingCheck?landing_page=Problems_donating&basic=true&language=en at s3://web-crawler-data-storage/metadata/2025/04/27/8742febe1601068a84be5d08dacc962c.json
+2025-04-27 02:56:32,466 - Indexer - INFO - Stored processed text for https://donate.wikimedia.org/wiki/Special:LandingCheck?landing_page=Problems_donating&basic=true&language=en with result: s3
+2025-04-27 02:56:32,666 - Indexer - INFO - Successfully indexed https://donate.wikimedia.org/wiki/Special:LandingCheck?landing_page=Problems_donating&basic=true&language=en
+2025-04-27 02:56:32,666 - Indexer - INFO - Extracted 10 keywords
+2025-04-27 02:56:33,544 - Indexer - INFO - Successfully stored raw HTML for https://cs.wikipedia.org/wiki/Seznam_mobiln%C3%ADch_aplikac%C3%AD_Wikipedie at s3://web-crawler-data-storage/raw_html/2025/04/27/79ae30ff97ff6e1e814e1b144589a899.html
+2025-04-27 02:56:33,544 - Indexer - INFO - Stored raw HTML for https://cs.wikipedia.org/wiki/Seznam_mobiln%C3%ADch_aplikac%C3%AD_Wikipedie with result: s3
+2025-04-27 02:56:33,855 - Indexer - INFO - Successfully stored processed text for https://cs.wikipedia.org/wiki/Seznam_mobiln%C3%ADch_aplikac%C3%AD_Wikipedie at s3://web-crawler-data-storage/processed_text/2025/04/27/79ae30ff97ff6e1e814e1b144589a899.txt
+2025-04-27 02:56:34,234 - Indexer - INFO - Successfully stored metadata for https://cs.wikipedia.org/wiki/Seznam_mobiln%C3%ADch_aplikac%C3%AD_Wikipedie at s3://web-crawler-data-storage/metadata/2025/04/27/79ae30ff97ff6e1e814e1b144589a899.json
+2025-04-27 02:56:34,234 - Indexer - INFO - Stored processed text for https://cs.wikipedia.org/wiki/Seznam_mobiln%C3%ADch_aplikac%C3%AD_Wikipedie with result: s3
+2025-04-27 02:56:34,415 - Indexer - INFO - Successfully indexed https://cs.wikipedia.org/wiki/Seznam_mobiln%C3%ADch_aplikac%C3%AD_Wikipedie
+2025-04-27 02:56:34,416 - Indexer - INFO - Extracted 10 keywords
+2025-04-27 02:56:36,576 - Indexer - INFO - Successfully stored raw HTML for https://diff.wikimedia.org/category/technology/ at s3://web-crawler-data-storage/raw_html/2025/04/27/08041bbb9cb102e8aba3cadc6f67e86c.html
+2025-04-27 02:56:36,576 - Indexer - INFO - Stored raw HTML for https://diff.wikimedia.org/category/technology/ with result: s3
+2025-04-27 02:56:36,900 - Indexer - INFO - Successfully stored processed text for https://diff.wikimedia.org/category/technology/ at s3://web-crawler-data-storage/processed_text/2025/04/27/08041bbb9cb102e8aba3cadc6f67e86c.txt
+2025-04-27 02:56:37,283 - Indexer - INFO - Successfully stored metadata for https://diff.wikimedia.org/category/technology/ at s3://web-crawler-data-storage/metadata/2025/04/27/08041bbb9cb102e8aba3cadc6f67e86c.json
+2025-04-27 02:56:37,283 - Indexer - INFO - Stored processed text for https://diff.wikimedia.org/category/technology/ with result: s3
+2025-04-27 02:56:40,230 - Indexer - INFO - Successfully indexed https://diff.wikimedia.org/category/technology/
+2025-04-27 02:56:40,230 - Indexer - INFO - Extracted 10 keywords
+2025-04-27 02:56:41,846 - Indexer - INFO - Successfully stored raw HTML for https://www.github.com at s3://web-crawler-data-storage/raw_html/2025/04/27/1895ab41ad3a81f6fd0a194bbc337a22.html
+2025-04-27 02:56:41,846 - Indexer - INFO - Stored raw HTML for https://www.github.com with result: s3
+2025-04-27 02:56:42,361 - Indexer - INFO - Successfully stored processed text for https://www.github.com at s3://web-crawler-data-storage/processed_text/2025/04/27/1895ab41ad3a81f6fd0a194bbc337a22.txt
+2025-04-27 02:56:42,730 - Indexer - INFO - Successfully stored metadata for https://www.github.com at s3://web-crawler-data-storage/metadata/2025/04/27/1895ab41ad3a81f6fd0a194bbc337a22.json
+2025-04-27 02:56:42,730 - Indexer - INFO - Stored processed text for https://www.github.com with result: s3
+2025-04-27 02:56:42,921 - Indexer - INFO - Successfully indexed https://www.github.com
+2025-04-27 02:56:42,921 - Indexer - INFO - Extracted 10 keywords
+2025-04-27 02:56:45,086 - Indexer - INFO - Successfully stored raw HTML for https://stackoverflow.co/teams/?utm_source=so-owned&utm_medium=blog&utm_campaign=nav-side-bar at s3://web-crawler-data-storage/raw_html/2025/04/27/0dfe3c5f9ba316f505109106159409f2.html
+2025-04-27 02:56:45,086 - Indexer - INFO - Stored raw HTML for https://stackoverflow.co/teams/?utm_source=so-owned&utm_medium=blog&utm_campaign=nav-side-bar with result: s3
+2025-04-27 02:56:45,414 - Indexer - INFO - Successfully stored processed text for https://stackoverflow.co/teams/?utm_source=so-owned&utm_medium=blog&utm_campaign=nav-side-bar at s3://web-crawler-data-storage/processed_text/2025/04/27/0dfe3c5f9ba316f505109106159409f2.txt
+2025-04-27 02:56:45,927 - Indexer - INFO - Successfully stored metadata for https://stackoverflow.co/teams/?utm_source=so-owned&utm_medium=blog&utm_campaign=nav-side-bar at s3://web-crawler-data-storage/metadata/2025/04/27/0dfe3c5f9ba316f505109106159409f2.json
+2025-04-27 02:56:45,927 - Indexer - INFO - Stored processed text for https://stackoverflow.co/teams/?utm_source=so-owned&utm_medium=blog&utm_campaign=nav-side-bar with result: s3
+2025-04-27 02:56:46,067 - Indexer - INFO - Successfully indexed https://stackoverflow.co/teams/?utm_source=so-owned&utm_medium=blog&utm_campaign=nav-side-bar
+2025-04-27 02:56:46,068 - Indexer - INFO - Extracted 10 keywords
+2025-04-27 02:56:47,083 - Indexer - INFO - Successfully stored raw HTML for https://stackoverflowteams.help/en/collections/4145545-enterprise at s3://web-crawler-data-storage/raw_html/2025/04/27/6cae8c515caf1eda6ad3db5f24650e72.html
+2025-04-27 02:56:47,083 - Indexer - INFO - Stored raw HTML for https://stackoverflowteams.help/en/collections/4145545-enterprise with result: s3
+2025-04-27 02:56:47,443 - Indexer - INFO - Successfully stored processed text for https://stackoverflowteams.help/en/collections/4145545-enterprise at s3://web-crawler-data-storage/processed_text/2025/04/27/6cae8c515caf1eda6ad3db5f24650e72.txt
+2025-04-27 02:56:47,748 - Indexer - INFO - Successfully stored metadata for https://stackoverflowteams.help/en/collections/4145545-enterprise at s3://web-crawler-data-storage/metadata/2025/04/27/6cae8c515caf1eda6ad3db5f24650e72.json
+2025-04-27 02:56:47,748 - Indexer - INFO - Stored processed text for https://stackoverflowteams.help/en/collections/4145545-enterprise with result: s3
+2025-04-27 02:56:47,884 - Indexer - INFO - Successfully indexed https://stackoverflowteams.help/en/collections/4145545-enterprise
+2025-04-27 02:56:47,888 - Indexer - INFO - Extracted 10 keywords
+2025-04-27 02:56:48,421 - Indexer - INFO - Successfully stored raw HTML for https://stackoverflowteams.help/en/collections/7850240-stack-overflow-for-teams-university at s3://web-crawler-data-storage/raw_html/2025/04/27/c47e0d1664012dad88167c30d5cbccfc.html
+2025-04-27 02:56:48,421 - Indexer - INFO - Stored raw HTML for https://stackoverflowteams.help/en/collections/7850240-stack-overflow-for-teams-university with result: s3
+2025-04-27 02:56:48,998 - Indexer - INFO - Successfully stored processed text for https://stackoverflowteams.help/en/collections/7850240-stack-overflow-for-teams-university at s3://web-crawler-data-storage/processed_text/2025/04/27/c47e0d1664012dad88167c30d5cbccfc.txt
+2025-04-27 02:56:50,235 - Indexer - INFO - Successfully stored metadata for https://stackoverflowteams.help/en/collections/7850240-stack-overflow-for-teams-university at s3://web-crawler-data-storage/metadata/2025/04/27/c47e0d1664012dad88167c30d5cbccfc.json
+2025-04-27 02:56:50,235 - Indexer - INFO - Stored processed text for https://stackoverflowteams.help/en/collections/7850240-stack-overflow-for-teams-university with result: s3
+2025-04-27 02:56:50,367 - Indexer - INFO - Successfully indexed https://stackoverflowteams.help/en/collections/7850240-stack-overflow-for-teams-university
+2025-04-27 02:56:50,367 - Indexer - INFO - Extracted 10 keywords
+2025-04-27 02:56:54,390 - Indexer - INFO - Successfully stored raw HTML for https://stackoverflow.co/advertising/use-cases/marketing-teams/ at s3://web-crawler-data-storage/raw_html/2025/04/27/16cf9776c29ab240052d6daf47e20a51.html
+2025-04-27 02:56:54,390 - Indexer - INFO - Stored raw HTML for https://stackoverflow.co/advertising/use-cases/marketing-teams/ with result: s3
+2025-04-27 02:56:54,781 - Indexer - INFO - Successfully stored processed text for https://stackoverflow.co/advertising/use-cases/marketing-teams/ at s3://web-crawler-data-storage/processed_text/2025/04/27/16cf9776c29ab240052d6daf47e20a51.txt
+2025-04-27 02:56:55,200 - Indexer - INFO - Successfully stored metadata for https://stackoverflow.co/advertising/use-cases/marketing-teams/ at s3://web-crawler-data-storage/metadata/2025/04/27/16cf9776c29ab240052d6daf47e20a51.json
+2025-04-27 02:56:55,200 - Indexer - INFO - Stored processed text for https://stackoverflow.co/advertising/use-cases/marketing-teams/ with result: s3
+2025-04-27 02:56:57,851 - Indexer - INFO - Successfully indexed https://stackoverflow.co/advertising/use-cases/marketing-teams/
+2025-04-27 02:56:57,851 - Indexer - INFO - Extracted 10 keywords
+2025-04-27 02:56:57,953 - Indexer - WARNING - Indexer received message with unknown format
+2025-04-28 00:10:01,872 - Indexer - INFO - Enhanced Indexer node started with rank 4 of 5
+2025-04-28 00:10:01,880 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-28 00:10:03,890 - Indexer - ERROR - Error checking bucket: An error occurred (403) when calling the HeadBucket operation: Forbidden
+2025-04-28 00:10:03,890 - Indexer - WARNING - Failed to initialize S3, falling back to local storage: An error occurred (403) when calling the HeadBucket operation: Forbidden
+2025-04-28 00:10:03,907 - Indexer - INFO - CloudStorage initialized for data persistence
+2025-04-28 00:10:03,948 - Indexer - INFO - Indexer received shutdown signal. Generating final statistics...
+2025-04-28 00:10:03,965 - Indexer - INFO - Final Index Statistics:
+2025-04-28 00:10:03,965 - Indexer - INFO - Total documents indexed: 53
+2025-04-28 00:10:03,965 - Indexer - INFO - Total unique URLs processed: 0
+2025-04-28 00:10:03,965 - Indexer - INFO - 
+Example Search Results:
+2025-04-28 00:10:03,972 - Indexer - INFO - 
+Query: python AND programming
+2025-04-28 00:10:03,972 - Indexer - INFO - Found 4 results
+2025-04-28 00:10:03,980 - Indexer - INFO - 
+Query: title:github
+2025-04-28 00:10:03,980 - Indexer - INFO - Found 0 results
+2025-04-28 00:10:03,989 - Indexer - INFO - 
+Query: "open source"
+2025-04-28 00:10:03,989 - Indexer - INFO - Found 12 results
+2025-04-28 00:10:03,997 - Indexer - INFO - 
+Query: content:machine learning
+2025-04-28 00:10:03,997 - Indexer - INFO - Found 5 results
+2025-04-28 00:21:00,244 - Indexer - INFO - Enhanced Indexer node started with rank 4 of 5
+2025-04-28 00:21:00,258 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-28 00:21:04,805 - Indexer - ERROR - Error checking bucket: An error occurred (403) when calling the HeadBucket operation: Forbidden
+2025-04-28 00:21:04,805 - Indexer - WARNING - Failed to initialize S3, falling back to local storage: An error occurred (403) when calling the HeadBucket operation: Forbidden
+2025-04-28 00:21:04,805 - Indexer - INFO - CloudStorage initialized for data persistence
+2025-04-28 00:22:20,551 - Indexer - INFO - Enhanced Indexer node started with rank 4 of 5
+2025-04-28 00:22:20,575 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-28 00:22:22,618 - Indexer - ERROR - Error checking bucket: An error occurred (403) when calling the HeadBucket operation: Forbidden
+2025-04-28 00:22:22,618 - Indexer - WARNING - Failed to initialize S3, falling back to local storage: An error occurred (403) when calling the HeadBucket operation: Forbidden
+2025-04-28 00:22:22,618 - Indexer - INFO - CloudStorage initialized for data persistence
+2025-04-28 00:24:51,267 - Indexer - INFO - Enhanced Indexer node started with rank 4 of 5
+2025-04-28 00:24:51,289 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-28 00:25:00,911 - Indexer - ERROR - Error checking bucket: An error occurred (403) when calling the HeadBucket operation: Forbidden
+2025-04-28 00:25:00,911 - Indexer - WARNING - Failed to initialize S3, falling back to local storage: An error occurred (403) when calling the HeadBucket operation: Forbidden
+2025-04-28 00:25:00,911 - Indexer - INFO - CloudStorage initialized for data persistence
+2025-04-28 23:47:32,521 - Indexer - INFO - Enhanced Indexer node started with rank 4 of 5
+2025-04-28 23:47:32,540 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-28 23:47:33,805 - Indexer - ERROR - Error checking bucket: An error occurred (403) when calling the HeadBucket operation: Forbidden
+2025-04-28 23:47:33,806 - Indexer - WARNING - Failed to initialize S3, falling back to local storage: An error occurred (403) when calling the HeadBucket operation: Forbidden
+2025-04-28 23:47:33,806 - Indexer - INFO - CloudStorage initialized for data persistence
+2025-04-28 23:48:59,469 - Indexer - INFO - Indexer received shutdown signal. Generating final statistics...
+2025-04-28 23:48:59,518 - Indexer - INFO - Final Index Statistics:
+2025-04-28 23:48:59,518 - Indexer - INFO - Total documents indexed: 53
+2025-04-28 23:48:59,518 - Indexer - INFO - Total unique URLs processed: 0
+2025-04-28 23:48:59,518 - Indexer - INFO - 
+Example Search Results:
+2025-04-28 23:48:59,560 - Indexer - INFO - 
+Query: python AND programming
+2025-04-28 23:48:59,560 - Indexer - INFO - Found 4 results
+2025-04-28 23:48:59,566 - Indexer - INFO - 
+Query: title:github
+2025-04-28 23:48:59,566 - Indexer - INFO - Found 0 results
+2025-04-28 23:48:59,578 - Indexer - INFO - 
+Query: "open source"
+2025-04-28 23:48:59,578 - Indexer - INFO - Found 12 results
+2025-04-28 23:48:59,588 - Indexer - INFO - 
+Query: content:machine learning
+2025-04-28 23:48:59,588 - Indexer - INFO - Found 5 results
+2025-04-28 23:54:05,372 - Indexer - INFO - Enhanced Indexer node started with rank 4 of 5
+2025-04-28 23:54:05,382 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-28 23:54:06,618 - Indexer - ERROR - Error checking bucket: An error occurred (403) when calling the HeadBucket operation: Forbidden
+2025-04-28 23:54:06,619 - Indexer - WARNING - Failed to initialize S3, falling back to local storage: An error occurred (403) when calling the HeadBucket operation: Forbidden
+2025-04-28 23:54:06,619 - Indexer - INFO - CloudStorage initialized for data persistence
+2025-04-28 23:54:06,630 - Indexer - INFO - Indexer received shutdown signal. Generating final statistics...
+2025-04-28 23:54:06,638 - Indexer - INFO - Final Index Statistics:
+2025-04-28 23:54:06,638 - Indexer - INFO - Total documents indexed: 53
+2025-04-28 23:54:06,638 - Indexer - INFO - Total unique URLs processed: 0
+2025-04-28 23:54:06,638 - Indexer - INFO - 
+Example Search Results:
+2025-04-28 23:54:06,655 - Indexer - INFO - 
+Query: python AND programming
+2025-04-28 23:54:06,656 - Indexer - INFO - Found 4 results
+2025-04-28 23:54:06,659 - Indexer - INFO - 
+Query: title:github
+2025-04-28 23:54:06,659 - Indexer - INFO - Found 0 results
+2025-04-28 23:54:06,668 - Indexer - INFO - 
+Query: "open source"
+2025-04-28 23:54:06,668 - Indexer - INFO - Found 12 results
+2025-04-28 23:54:06,675 - Indexer - INFO - 
+Query: content:machine learning
+2025-04-28 23:54:06,675 - Indexer - INFO - Found 5 results
+2025-04-28 23:54:38,225 - Indexer - INFO - Enhanced Indexer node started with rank 4 of 5
+2025-04-28 23:54:38,236 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-28 23:54:39,517 - Indexer - ERROR - Error checking bucket: An error occurred (403) when calling the HeadBucket operation: Forbidden
+2025-04-28 23:54:39,517 - Indexer - WARNING - Failed to initialize S3, falling back to local storage: An error occurred (403) when calling the HeadBucket operation: Forbidden
+2025-04-28 23:54:39,518 - Indexer - INFO - CloudStorage initialized for data persistence
+2025-04-28 23:54:39,533 - Indexer - INFO - Indexer received shutdown signal. Generating final statistics...
+2025-04-28 23:54:39,545 - Indexer - INFO - Final Index Statistics:
+2025-04-28 23:54:39,545 - Indexer - INFO - Total documents indexed: 53
+2025-04-28 23:54:39,545 - Indexer - INFO - Total unique URLs processed: 0
+2025-04-28 23:54:39,545 - Indexer - INFO - 
+Example Search Results:
+2025-04-28 23:54:39,575 - Indexer - INFO - 
+Query: python AND programming
+2025-04-28 23:54:39,575 - Indexer - INFO - Found 4 results
+2025-04-28 23:54:39,581 - Indexer - INFO - 
+Query: title:github
+2025-04-28 23:54:39,581 - Indexer - INFO - Found 0 results
+2025-04-28 23:54:39,596 - Indexer - INFO - 
+Query: "open source"
+2025-04-28 23:54:39,596 - Indexer - INFO - Found 12 results
+2025-04-28 23:54:39,611 - Indexer - INFO - 
+Query: content:machine learning
+2025-04-28 23:54:39,612 - Indexer - INFO - Found 5 results
+2025-04-28 23:55:22,937 - Indexer - INFO - Enhanced Indexer node started with rank 4 of 5
+2025-04-28 23:55:22,953 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-28 23:55:24,318 - Indexer - ERROR - Error checking bucket: An error occurred (403) when calling the HeadBucket operation: Forbidden
+2025-04-28 23:55:24,318 - Indexer - WARNING - Failed to initialize S3, falling back to local storage: An error occurred (403) when calling the HeadBucket operation: Forbidden
+2025-04-28 23:55:24,318 - Indexer - INFO - CloudStorage initialized for data persistence
+2025-04-28 23:55:24,329 - Indexer - INFO - Indexer received shutdown signal. Generating final statistics...
+2025-04-28 23:55:24,335 - Indexer - INFO - Final Index Statistics:
+2025-04-28 23:55:24,335 - Indexer - INFO - Total documents indexed: 53
+2025-04-28 23:55:24,336 - Indexer - INFO - Total unique URLs processed: 0
+2025-04-28 23:55:24,336 - Indexer - INFO - 
+Example Search Results:
+2025-04-28 23:55:24,352 - Indexer - INFO - 
+Query: python AND programming
+2025-04-28 23:55:24,352 - Indexer - INFO - Found 4 results
+2025-04-28 23:55:24,356 - Indexer - INFO - 
+Query: title:github
+2025-04-28 23:55:24,356 - Indexer - INFO - Found 0 results
+2025-04-28 23:55:24,365 - Indexer - INFO - 
+Query: "open source"
+2025-04-28 23:55:24,365 - Indexer - INFO - Found 12 results
+2025-04-28 23:55:24,371 - Indexer - INFO - 
+Query: content:machine learning
+2025-04-28 23:55:24,371 - Indexer - INFO - Found 5 results
+2025-04-28 23:56:34,047 - Indexer - INFO - Enhanced Indexer node started with rank 4 of 5
+2025-04-28 23:56:34,058 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-28 23:56:35,586 - Indexer - ERROR - Error checking bucket: An error occurred (403) when calling the HeadBucket operation: Forbidden
+2025-04-28 23:56:35,587 - Indexer - WARNING - Failed to initialize S3, falling back to local storage: An error occurred (403) when calling the HeadBucket operation: Forbidden
+2025-04-28 23:56:35,587 - Indexer - INFO - CloudStorage initialized for data persistence
+2025-04-28 23:56:35,598 - Indexer - INFO - Indexer received shutdown signal. Generating final statistics...
+2025-04-28 23:56:35,606 - Indexer - INFO - Final Index Statistics:
+2025-04-28 23:56:35,606 - Indexer - INFO - Total documents indexed: 53
+2025-04-28 23:56:35,606 - Indexer - INFO - Total unique URLs processed: 0
+2025-04-28 23:56:35,606 - Indexer - INFO - 
+Example Search Results:
+2025-04-28 23:56:35,624 - Indexer - INFO - 
+Query: python AND programming
+2025-04-28 23:56:35,624 - Indexer - INFO - Found 4 results
+2025-04-28 23:56:35,627 - Indexer - INFO - 
+Query: title:github
+2025-04-28 23:56:35,627 - Indexer - INFO - Found 0 results
+2025-04-28 23:56:35,636 - Indexer - INFO - 
+Query: "open source"
+2025-04-28 23:56:35,636 - Indexer - INFO - Found 12 results
+2025-04-28 23:56:35,644 - Indexer - INFO - 
+Query: content:machine learning
+2025-04-28 23:56:35,644 - Indexer - INFO - Found 5 results
+2025-04-28 23:59:24,195 - Indexer - INFO - Enhanced Indexer node started with rank 4 of 5
+2025-04-28 23:59:24,205 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-28 23:59:26,346 - Indexer - ERROR - Error checking bucket: An error occurred (403) when calling the HeadBucket operation: Forbidden
+2025-04-28 23:59:26,347 - Indexer - WARNING - Failed to initialize S3, falling back to local storage: An error occurred (403) when calling the HeadBucket operation: Forbidden
+2025-04-28 23:59:26,348 - Indexer - INFO - CloudStorage initialized for data persistence
+2025-04-28 23:59:26,360 - Indexer - INFO - Indexer received shutdown signal. Generating final statistics...
+2025-04-28 23:59:26,367 - Indexer - INFO - Final Index Statistics:
+2025-04-28 23:59:26,367 - Indexer - INFO - Total documents indexed: 53
+2025-04-28 23:59:26,367 - Indexer - INFO - Total unique URLs processed: 0
+2025-04-28 23:59:26,367 - Indexer - INFO - 
+Example Search Results:
+2025-04-28 23:59:26,381 - Indexer - INFO - 
+Query: python AND programming
+2025-04-28 23:59:26,381 - Indexer - INFO - Found 4 results
+2025-04-28 23:59:26,383 - Indexer - INFO - 
+Query: title:github
+2025-04-28 23:59:26,384 - Indexer - INFO - Found 0 results
+2025-04-28 23:59:26,390 - Indexer - INFO - 
+Query: "open source"
+2025-04-28 23:59:26,390 - Indexer - INFO - Found 12 results
+2025-04-28 23:59:26,399 - Indexer - INFO - 
+Query: content:machine learning
+2025-04-28 23:59:26,399 - Indexer - INFO - Found 5 results
+2025-04-28 23:59:39,641 - Indexer - INFO - Enhanced Indexer node started with rank 4 of 5
+2025-04-28 23:59:39,650 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-28 23:59:40,770 - Indexer - ERROR - Error checking bucket: An error occurred (403) when calling the HeadBucket operation: Forbidden
+2025-04-28 23:59:40,770 - Indexer - WARNING - Failed to initialize S3, falling back to local storage: An error occurred (403) when calling the HeadBucket operation: Forbidden
+2025-04-28 23:59:40,772 - Indexer - INFO - CloudStorage initialized for data persistence
+2025-04-29 00:00:31,408 - Indexer - INFO - Enhanced Indexer node started with rank 4 of 5
+2025-04-29 00:00:31,424 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-29 00:00:32,574 - Indexer - ERROR - Error checking bucket: An error occurred (403) when calling the HeadBucket operation: Forbidden
+2025-04-29 00:00:32,575 - Indexer - WARNING - Failed to initialize S3, falling back to local storage: An error occurred (403) when calling the HeadBucket operation: Forbidden
+2025-04-29 00:00:32,575 - Indexer - INFO - CloudStorage initialized for data persistence
+2025-04-29 00:02:35,662 - Indexer - INFO - Indexer received shutdown signal. Generating final statistics...
+2025-04-29 00:02:35,670 - Indexer - INFO - Final Index Statistics:
+2025-04-29 00:02:35,670 - Indexer - INFO - Total documents indexed: 53
+2025-04-29 00:02:35,670 - Indexer - INFO - Total unique URLs processed: 0
+2025-04-29 00:02:35,670 - Indexer - INFO - 
+Example Search Results:
+2025-04-29 00:02:35,687 - Indexer - INFO - 
+Query: python AND programming
+2025-04-29 00:02:35,687 - Indexer - INFO - Found 4 results
+2025-04-29 00:02:35,690 - Indexer - INFO - 
+Query: title:github
+2025-04-29 00:02:35,691 - Indexer - INFO - Found 0 results
+2025-04-29 00:02:35,701 - Indexer - INFO - 
+Query: "open source"
+2025-04-29 00:02:35,701 - Indexer - INFO - Found 12 results
+2025-04-29 00:02:35,709 - Indexer - INFO - 
+Query: content:machine learning
+2025-04-29 00:02:35,709 - Indexer - INFO - Found 5 results
+2025-04-29 00:02:50,845 - Indexer - INFO - Enhanced Indexer node started with rank 4 of 5
+2025-04-29 00:02:50,855 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-29 00:02:52,026 - Indexer - ERROR - Error checking bucket: An error occurred (403) when calling the HeadBucket operation: Forbidden
+2025-04-29 00:02:52,026 - Indexer - WARNING - Failed to initialize S3, falling back to local storage: An error occurred (403) when calling the HeadBucket operation: Forbidden
+2025-04-29 00:02:52,026 - Indexer - INFO - CloudStorage initialized for data persistence
+2025-04-29 00:02:52,040 - Indexer - INFO - Indexer received shutdown signal. Generating final statistics...
+2025-04-29 00:02:52,048 - Indexer - INFO - Final Index Statistics:
+2025-04-29 00:02:52,048 - Indexer - INFO - Total documents indexed: 53
+2025-04-29 00:02:52,049 - Indexer - INFO - Total unique URLs processed: 0
+2025-04-29 00:02:52,049 - Indexer - INFO - 
+Example Search Results:
+2025-04-29 00:02:52,064 - Indexer - INFO - 
+Query: python AND programming
+2025-04-29 00:02:52,064 - Indexer - INFO - Found 4 results
+2025-04-29 00:02:52,067 - Indexer - INFO - 
+Query: title:github
+2025-04-29 00:02:52,068 - Indexer - INFO - Found 0 results
+2025-04-29 00:02:52,075 - Indexer - INFO - 
+Query: "open source"
+2025-04-29 00:02:52,075 - Indexer - INFO - Found 12 results
+2025-04-29 00:02:52,083 - Indexer - INFO - 
+Query: content:machine learning
+2025-04-29 00:02:52,083 - Indexer - INFO - Found 5 results
+2025-04-29 00:03:44,142 - Indexer - INFO - Enhanced Indexer node started with rank 4 of 5
+2025-04-29 00:03:44,153 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-29 00:03:45,428 - Indexer - ERROR - Error checking bucket: An error occurred (403) when calling the HeadBucket operation: Forbidden
+2025-04-29 00:03:45,428 - Indexer - WARNING - Failed to initialize S3, falling back to local storage: An error occurred (403) when calling the HeadBucket operation: Forbidden
+2025-04-29 00:03:45,429 - Indexer - INFO - CloudStorage initialized for data persistence
+2025-04-29 00:03:52,768 - Indexer - INFO - Indexer received shutdown signal. Generating final statistics...
+2025-04-29 00:03:52,777 - Indexer - INFO - Final Index Statistics:
+2025-04-29 00:03:52,778 - Indexer - INFO - Total documents indexed: 53
+2025-04-29 00:03:52,778 - Indexer - INFO - Total unique URLs processed: 0
+2025-04-29 00:03:52,778 - Indexer - INFO - 
+Example Search Results:
+2025-04-29 00:03:52,797 - Indexer - INFO - 
+Query: python AND programming
+2025-04-29 00:03:52,797 - Indexer - INFO - Found 4 results
+2025-04-29 00:03:52,802 - Indexer - INFO - 
+Query: title:github
+2025-04-29 00:03:52,803 - Indexer - INFO - Found 0 results
+2025-04-29 00:03:52,815 - Indexer - INFO - 
+Query: "open source"
+2025-04-29 00:03:52,815 - Indexer - INFO - Found 12 results
+2025-04-29 00:03:52,826 - Indexer - INFO - 
+Query: content:machine learning
+2025-04-29 00:03:52,827 - Indexer - INFO - Found 5 results
+2025-04-29 00:36:10,721 - Indexer - INFO - Enhanced Indexer node started with rank 4 of 5
+2025-04-29 00:36:10,732 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-04-29 00:36:12,032 - Indexer - ERROR - Error checking bucket: An error occurred (403) when calling the HeadBucket operation: Forbidden
+2025-04-29 00:36:12,032 - Indexer - WARNING - Failed to initialize S3, falling back to local storage: An error occurred (403) when calling the HeadBucket operation: Forbidden
+2025-04-29 00:36:12,033 - Indexer - INFO - CloudStorage initialized for data persistence
+2025-04-29 00:36:20,633 - Indexer - INFO - Indexer received shutdown signal. Generating final statistics...
+2025-04-29 00:36:20,640 - Indexer - INFO - Final Index Statistics:
+2025-04-29 00:36:20,640 - Indexer - INFO - Total documents indexed: 53
+2025-04-29 00:36:20,640 - Indexer - INFO - Total unique URLs processed: 0
+2025-04-29 00:36:20,641 - Indexer - INFO - 
+Example Search Results:
+2025-04-29 00:36:20,663 - Indexer - INFO - 
+Query: python AND programming
+2025-04-29 00:36:20,663 - Indexer - INFO - Found 4 results
+2025-04-29 00:36:20,667 - Indexer - INFO - 
+Query: title:github
+2025-04-29 00:36:20,667 - Indexer - INFO - Found 0 results
+2025-04-29 00:36:20,676 - Indexer - INFO - 
+Query: "open source"
+2025-04-29 00:36:20,677 - Indexer - INFO - Found 12 results
+2025-04-29 00:36:20,685 - Indexer - INFO - 
+Query: content:machine learning
+2025-04-29 00:36:20,686 - Indexer - INFO - Found 5 results

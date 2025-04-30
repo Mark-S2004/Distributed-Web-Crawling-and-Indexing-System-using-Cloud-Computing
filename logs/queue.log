@@ -498,3 +498,363 @@
 2025-04-26 03:44:42,388 - CloudQueue - INFO - Received 1 messages from SQS: ['https://www.reddit.com/login/']
 2025-04-26 03:44:42,531 - CloudQueue - INFO - Deleted message from SQS: https://www.reddit.com/login/
 2025-04-26 03:44:42,671 - CloudQueue - INFO - SQS queue size: 151
+2025-04-27 02:55:37,875 - CloudQueue - INFO - Loaded AWS configuration from aws_config.json
+2025-04-27 02:55:39,448 - CloudQueue - INFO - Queue web-crawler-task-queue already exists
+2025-04-27 02:55:39,448 - CloudQueue - INFO - Successfully connected to AWS SQS in region us-east-1
+2025-04-27 02:55:40,067 - CloudQueue - INFO - Loaded AWS configuration from aws_config.json
+2025-04-27 02:55:41,641 - CloudQueue - INFO - Queue web-crawler-task-queue already exists
+2025-04-27 02:55:41,641 - CloudQueue - INFO - Successfully connected to AWS SQS in region us-east-1
+2025-04-27 02:55:41,804 - CloudQueue - INFO - Sent message to SQS: 764cc9a7-48fc-4477-9eb7-7567c6f7b535, content: https://www.python.org
+2025-04-27 02:55:41,999 - CloudQueue - INFO - Sent message to SQS: 534f53da-6fd6-4eb9-a21a-bd89261e18e3, content: https://www.github.com
+2025-04-27 02:55:42,146 - CloudQueue - INFO - Sent message to SQS: d3f0f7c7-c985-4491-b15f-41162defa426, content: https://www.wikipedia.org
+2025-04-27 02:55:42,284 - CloudQueue - INFO - Sent message to SQS: d53f5986-ae3c-4508-aa48-da5a3e8fa6be, content: https://www.reddit.com
+2025-04-27 02:55:42,512 - CloudQueue - INFO - Sent message to SQS: 94477704-0ec8-4489-82b7-229bbadf95fd, content: https://www.stackoverflow.com
+2025-04-27 02:55:42,700 - CloudQueue - INFO - SQS queue size: 155
+2025-04-27 02:55:42,849 - CloudQueue - INFO - Received 1 messages from SQS: ['https://stackoverflow.co/adver...']
+2025-04-27 02:55:42,996 - CloudQueue - INFO - Deleted message from SQS: https://stackoverflow.co/adver...
+2025-04-27 02:55:43,153 - CloudQueue - INFO - Received 1 messages from SQS: ['https://donate.wikimedia.org/?...']
+2025-04-27 02:55:43,332 - CloudQueue - INFO - Deleted message from SQS: https://donate.wikimedia.org/?...
+2025-04-27 02:55:43,489 - CloudQueue - INFO - Received 1 messages from SQS: ['https://ar.wikipedia.org/wiki/...']
+2025-04-27 02:55:43,628 - CloudQueue - INFO - Deleted message from SQS: https://ar.wikipedia.org/wiki/...
+2025-04-27 02:55:43,783 - CloudQueue - INFO - SQS queue size: 152
+2025-04-27 02:55:43,884 - CloudQueue - INFO - SQS queue size: 152
+2025-04-27 02:55:43,987 - CloudQueue - INFO - SQS queue size: 152
+2025-04-27 02:55:44,088 - CloudQueue - INFO - SQS queue size: 152
+2025-04-27 02:55:44,191 - CloudQueue - INFO - SQS queue size: 152
+2025-04-27 02:55:44,293 - CloudQueue - INFO - SQS queue size: 152
+2025-04-27 02:55:44,395 - CloudQueue - INFO - SQS queue size: 152
+2025-04-27 02:55:44,497 - CloudQueue - INFO - SQS queue size: 152
+2025-04-27 02:55:44,597 - CloudQueue - INFO - SQS queue size: 152
+2025-04-27 02:55:44,698 - CloudQueue - INFO - SQS queue size: 152
+2025-04-27 02:55:44,799 - CloudQueue - INFO - SQS queue size: 152
+2025-04-27 02:55:45,078 - CloudQueue - INFO - Sent message to SQS: f65b9568-f4c2-4c5f-8c4f-4d44fd078e82, content: https://donate.wikimedia.org/wiki/Special:LandingC...
+2025-04-27 02:55:45,250 - CloudQueue - INFO - Sent message to SQS: 280e4358-fa1a-4371-be5e-07df5b58e3fe, content: https://foundation.wikimedia.org/wiki/Special:Land...
+2025-04-27 02:55:45,447 - CloudQueue - INFO - Sent message to SQS: 63facdca-b8f2-4a86-8179-c99308e0522c, content: https://foundation.wikimedia.org/wiki/Special:Land...
+2025-04-27 02:55:45,594 - CloudQueue - INFO - Sent message to SQS: b995d1ff-3319-47e8-935e-6d16b292527b, content: https://foundation.wikimedia.org/wiki/Policy:Donor...
+2025-04-27 02:55:45,750 - CloudQueue - INFO - Sent message to SQS: 653a4466-04ac-4dba-a297-4e669278cc96, content: https://donate.wikimedia.org/wiki/Special:LandingC...
+2025-04-27 02:55:46,000 - CloudQueue - INFO - SQS queue size: 157
+2025-04-27 02:55:46,207 - CloudQueue - INFO - Received 1 messages from SQS: ['https://stackoverflow.blog/']
+2025-04-27 02:55:46,352 - CloudQueue - INFO - Deleted message from SQS: https://stackoverflow.blog/
+2025-04-27 02:55:46,499 - CloudQueue - INFO - SQS queue size: 150
+2025-04-27 02:55:46,602 - CloudQueue - INFO - SQS queue size: 150
+2025-04-27 02:55:46,843 - CloudQueue - INFO - Sent message to SQS: be34f066-15d8-4465-8407-23789d57c510, content: https://donate.wikimedia.org/?wmf_source=donate&wm...
+2025-04-27 02:55:46,993 - CloudQueue - INFO - Sent message to SQS: b34adef3-16a2-47dd-80b6-83008fd32b19, content: https://donate.wikimedia.org/?wmf_source=donate&wm...
+2025-04-27 02:55:47,150 - CloudQueue - INFO - Sent message to SQS: e304327c-eb99-464b-9a1c-992baf9c5276, content: https://az.wikipedia.org/wiki/Vikipediya_mobil_t%C...
+2025-04-27 02:55:47,296 - CloudQueue - INFO - Sent message to SQS: 77c8c484-918a-4993-8436-ad9cd29f66e6, content: https://bn.wikipedia.org/wiki/%E0%A6%89%E0%A6%87%E...
+2025-04-27 02:55:47,519 - CloudQueue - INFO - Sent message to SQS: 85bbc9f4-5f7c-4df1-b5df-71f682f5dc65, content: https://cs.wikipedia.org/wiki/Seznam_mobiln%C3%ADc...
+2025-04-27 02:55:47,739 - CloudQueue - INFO - SQS queue size: 160
+2025-04-27 02:55:47,944 - CloudQueue - INFO - Received 1 messages from SQS: ['https://www.wikipedia.org']
+2025-04-27 02:55:48,148 - CloudQueue - INFO - Deleted message from SQS: https://www.wikipedia.org
+2025-04-27 02:55:48,288 - CloudQueue - INFO - SQS queue size: 160
+2025-04-27 02:55:48,575 - CloudQueue - INFO - Sent message to SQS: 76488524-795a-4a5d-8c2e-68fb3228de61, content: https://stackoverflow.com
+2025-04-27 02:55:48,720 - CloudQueue - INFO - Sent message to SQS: 4df5fc80-8ac9-438c-a524-97256d93eb4d, content: https://stackoverflow.com/users/email/settings/cur...
+2025-04-27 02:55:48,863 - CloudQueue - INFO - Sent message to SQS: df41be4d-6a9c-43c2-942d-a75c5ca4dae1, content: https://stackoverflow.co/teams/?utm_source=so-owne...
+2025-04-27 02:55:49,076 - CloudQueue - INFO - Sent message to SQS: 9197a9c8-fb09-4f8f-a0f2-7f431093e8f0, content: https://stackoverflow.co/advertising/?utm_source=s...
+2025-04-27 02:55:49,281 - CloudQueue - INFO - Sent message to SQS: d8a2e901-064c-4c01-afab-4be8da6ae325, content: https://stackoverflow.co/advertising/employer-bran...
+2025-04-27 02:55:49,486 - CloudQueue - INFO - SQS queue size: 156
+2025-04-27 02:55:49,624 - CloudQueue - INFO - Received 1 messages from SQS: ['https://foundation.wikimedia.o...']
+2025-04-27 02:55:49,767 - CloudQueue - INFO - Deleted message from SQS: https://foundation.wikimedia.o...
+2025-04-27 02:55:49,913 - CloudQueue - INFO - SQS queue size: 164
+2025-04-27 02:55:50,019 - CloudQueue - INFO - SQS queue size: 164
+2025-04-27 02:55:50,122 - CloudQueue - INFO - SQS queue size: 164
+2025-04-27 02:55:50,362 - CloudQueue - INFO - Sent message to SQS: 484b0d9d-b71f-4120-98d3-105fdd4d796d, content: https://stackoverflow.co/advertising/
+2025-04-27 02:55:50,609 - CloudQueue - INFO - Sent message to SQS: e7efb141-131f-4eb9-9688-587482e6363b, content: https://stackoverflow.co/advertising/why-stack/
+2025-04-27 02:55:50,813 - CloudQueue - INFO - Sent message to SQS: c241a11b-567d-4bb1-8766-240c1c073221, content: https://stackoverflow.co/advertising/advertise-to-...
+2025-04-27 02:55:51,010 - CloudQueue - INFO - Sent message to SQS: fb6c9ee9-3d1d-4ddd-b3ee-b7cc95052d0f, content: https://stackoverflow.co/advertising/employer-bran...
+2025-04-27 02:55:51,158 - CloudQueue - INFO - Sent message to SQS: 10fb2479-f61f-4fc8-984b-50170b72cf59, content: https://stackoverflow.co/advertising/use-cases/mar...
+2025-04-27 02:55:51,305 - CloudQueue - INFO - SQS queue size: 157
+2025-04-27 02:55:51,472 - CloudQueue - INFO - Received 1 messages from SQS: ['https://foundation.wikimedia.o...']
+2025-04-27 02:55:51,617 - CloudQueue - INFO - Deleted message from SQS: https://foundation.wikimedia.o...
+2025-04-27 02:55:51,939 - CloudQueue - INFO - SQS queue size: 156
+2025-04-27 02:55:52,046 - CloudQueue - INFO - SQS queue size: 156
+2025-04-27 02:55:52,149 - CloudQueue - INFO - SQS queue size: 156
+2025-04-27 02:55:52,254 - CloudQueue - INFO - SQS queue size: 156
+2025-04-27 02:55:52,357 - CloudQueue - INFO - SQS queue size: 156
+2025-04-27 02:55:52,458 - CloudQueue - INFO - SQS queue size: 156
+2025-04-27 02:55:52,559 - CloudQueue - INFO - SQS queue size: 156
+2025-04-27 02:55:52,662 - CloudQueue - INFO - SQS queue size: 156
+2025-04-27 02:55:52,763 - CloudQueue - INFO - SQS queue size: 156
+2025-04-27 02:55:52,864 - CloudQueue - INFO - SQS queue size: 156
+2025-04-27 02:55:52,991 - CloudQueue - INFO - SQS queue size: 156
+2025-04-27 02:55:53,405 - CloudQueue - INFO - Sent message to SQS: 868a9404-c1d6-43cb-9344-af21d395f41e, content: https://wikimediafoundation.org/
+2025-04-27 02:55:54,058 - CloudQueue - INFO - Sent message to SQS: ed986e6a-5d4c-43e0-9906-70caa0734d4b, content: https://wikimediafoundation.org/about/contact/
+2025-04-27 02:55:54,256 - CloudQueue - INFO - Sent message to SQS: 00fddb12-4a74-4322-b1a6-6e5dcdfb68d6, content: https://wikimediafoundation.org/news/
+2025-04-27 02:55:54,525 - CloudQueue - INFO - Sent message to SQS: 99f32dfb-d0af-48e9-afe0-53a0434f3d05, content: https://diff.wikimedia.org/
+2025-04-27 02:55:54,786 - CloudQueue - INFO - Sent message to SQS: dcc1db01-1428-4774-a47d-03794f7879a8, content: https://diff.wikimedia.org/calendar
+2025-04-27 02:55:54,990 - CloudQueue - INFO - SQS queue size: 156
+2025-04-27 02:55:55,148 - CloudQueue - INFO - Received 1 messages from SQS: ['https://diff.wikimedia.org/cal...']
+2025-04-27 02:55:55,291 - CloudQueue - INFO - Deleted message from SQS: https://diff.wikimedia.org/cal...
+2025-04-27 02:55:55,451 - CloudQueue - INFO - SQS queue size: 168
+2025-04-27 02:55:55,554 - CloudQueue - INFO - SQS queue size: 168
+2025-04-27 02:55:55,658 - CloudQueue - INFO - SQS queue size: 168
+2025-04-27 02:55:55,759 - CloudQueue - INFO - SQS queue size: 168
+2025-04-27 02:55:55,862 - CloudQueue - INFO - SQS queue size: 168
+2025-04-27 02:55:56,109 - CloudQueue - INFO - Sent message to SQS: 5d01bb90-af40-4f0d-bef1-572e20368fe3, content: https://meta.wikimedia.org/wiki/Special:MyLanguage...
+2025-04-27 02:55:56,252 - CloudQueue - INFO - Sent message to SQS: c1ef6c56-b05e-4f39-9927-3671e47cf613, content: https://donate.wikimedia.org/?wmf_medium=portal&wm...
+2025-04-27 02:55:56,391 - CloudQueue - INFO - Sent message to SQS: 4f1cdf1a-cfb0-4d7a-95f1-aa7a1d610ae9, content: https://en.wikipedia.org/wiki/List_of_Wikipedia_mo...
+2025-04-27 02:55:56,647 - CloudQueue - INFO - Sent message to SQS: d87a9637-b3e1-44b8-a520-005e4ffc04b4, content: https://play.google.com/store/apps/details?id=org....
+2025-04-27 02:55:56,802 - CloudQueue - INFO - Sent message to SQS: adaeed9a-5896-4ec2-a8a7-80721d0944d7, content: https://itunes.apple.com/app/apple-store/id3247152...
+2025-04-27 02:55:57,090 - CloudQueue - INFO - SQS queue size: 151
+2025-04-27 02:55:57,263 - CloudQueue - INFO - Received 1 messages from SQS: ['https://az.wikipedia.org/wiki/...']
+2025-04-27 02:55:57,410 - CloudQueue - INFO - Deleted message from SQS: https://az.wikipedia.org/wiki/...
+2025-04-27 02:55:58,136 - CloudQueue - INFO - SQS queue size: 168
+2025-04-27 02:55:58,240 - CloudQueue - INFO - SQS queue size: 168
+2025-04-27 02:55:58,343 - CloudQueue - INFO - SQS queue size: 168
+2025-04-27 02:55:58,447 - CloudQueue - INFO - SQS queue size: 168
+2025-04-27 02:55:58,552 - CloudQueue - INFO - SQS queue size: 168
+2025-04-27 02:55:58,654 - CloudQueue - INFO - SQS queue size: 168
+2025-04-27 02:55:58,911 - CloudQueue - INFO - Sent message to SQS: 71456e16-5592-45b7-a375-c90bbd436876, content: https://diff.wikimedia.org/
+2025-04-27 02:55:59,134 - CloudQueue - INFO - Sent message to SQS: c95989b5-7f31-40eb-9138-4cbf92275310, content: https://diff.wikimedia.org/
+2025-04-27 02:55:59,313 - CloudQueue - INFO - Sent message to SQS: 70ba77d5-d3b3-45bc-b3fa-16285976304b, content: https://diff.wikimedia.org/category/equity-inclusi...
+2025-04-27 02:55:59,519 - CloudQueue - INFO - Sent message to SQS: 7acf340e-f0f9-4aee-a6a3-ecd582e42672, content: https://diff.wikimedia.org/category/education-open...
+2025-04-27 02:55:59,727 - CloudQueue - INFO - Sent message to SQS: 6dd0e696-2974-4dcc-b2fa-0d055e145970, content: https://diff.wikimedia.org/category/technology/
+2025-04-27 02:55:59,908 - CloudQueue - INFO - SQS queue size: 177
+2025-04-27 02:56:00,091 - CloudQueue - INFO - Received 1 messages from SQS: ['https://www.python.org']
+2025-04-27 02:56:00,243 - CloudQueue - INFO - Deleted message from SQS: https://www.python.org
+2025-04-27 02:56:00,392 - CloudQueue - INFO - SQS queue size: 177
+2025-04-27 02:56:00,498 - CloudQueue - INFO - SQS queue size: 177
+2025-04-27 02:56:00,747 - CloudQueue - INFO - Sent message to SQS: e1623902-75dc-4800-b400-67c96b724b71, content: https://donate.wikimedia.org/?wmf_source=donate&wm...
+2025-04-27 02:56:00,993 - CloudQueue - INFO - Sent message to SQS: c89b1d5f-125f-407e-ac3c-1fefd2f4717b, content: https://donate.wikimedia.org/?wmf_source=donate&wm...
+2025-04-27 02:56:01,139 - CloudQueue - INFO - Sent message to SQS: f627939f-cf52-49d9-bb57-72ed57551456, content: https://ar.wikipedia.org/wiki/%D9%82%D8%A7%D8%A6%D...
+2025-04-27 02:56:02,716 - CloudQueue - INFO - Sent message to SQS: 075be848-e9ad-445e-ade8-b5244d19f2e2, content: https://bn.wikipedia.org/wiki/%E0%A6%89%E0%A6%87%E...
+2025-04-27 02:56:02,867 - CloudQueue - INFO - Sent message to SQS: 2465df23-5f33-4b67-92da-e43ae8aece48, content: https://cs.wikipedia.org/wiki/Seznam_mobiln%C3%ADc...
+2025-04-27 02:56:03,020 - CloudQueue - INFO - SQS queue size: 178
+2025-04-27 02:56:04,178 - CloudQueue - INFO - Received 1 messages from SQS: ['http://example.com/page_3_0']
+2025-04-27 02:56:04,360 - CloudQueue - INFO - Deleted message from SQS: http://example.com/page_3_0
+2025-04-27 02:56:04,536 - CloudQueue - INFO - SQS queue size: 177
+2025-04-27 02:56:04,636 - CloudQueue - INFO - SQS queue size: 177
+2025-04-27 02:56:04,744 - CloudQueue - INFO - SQS queue size: 177
+2025-04-27 02:56:04,847 - CloudQueue - INFO - SQS queue size: 177
+2025-04-27 02:56:04,999 - CloudQueue - INFO - SQS queue size: 177
+2025-04-27 02:56:05,112 - CloudQueue - INFO - SQS queue size: 177
+2025-04-27 02:56:05,375 - CloudQueue - INFO - Sent message to SQS: 61f163c9-7507-4876-aec9-766204b49d34, content: https://wikimediafoundation.org/
+2025-04-27 02:56:05,544 - CloudQueue - INFO - Sent message to SQS: 34f939f4-d719-4b22-87ba-6300fb177024, content: https://wikimediafoundation.org/about/contact/
+2025-04-27 02:56:05,764 - CloudQueue - INFO - Sent message to SQS: 002fa4b2-797a-432d-9da1-d8b2265ae0f2, content: https://wikimediafoundation.org/news/
+2025-04-27 02:56:06,096 - CloudQueue - INFO - Sent message to SQS: 3b564589-c326-4d3d-b555-57399e198760, content: https://diff.wikimedia.org/
+2025-04-27 02:56:06,295 - CloudQueue - INFO - Sent message to SQS: c39a9dc7-807b-48fd-afcb-0c1e19471cb3, content: https://diff.wikimedia.org/calendar
+2025-04-27 02:56:06,460 - CloudQueue - INFO - SQS queue size: 171
+2025-04-27 02:56:06,601 - CloudQueue - INFO - Received 1 messages from SQS: ['https://itunes.apple.com/app/a...']
+2025-04-27 02:56:06,825 - CloudQueue - INFO - Deleted message from SQS: https://itunes.apple.com/app/a...
+2025-04-27 02:56:06,990 - CloudQueue - INFO - SQS queue size: 176
+2025-04-27 02:56:07,096 - CloudQueue - INFO - SQS queue size: 176
+2025-04-27 02:56:07,202 - CloudQueue - INFO - SQS queue size: 176
+2025-04-27 02:56:07,309 - CloudQueue - INFO - SQS queue size: 176
+2025-04-27 02:56:07,420 - CloudQueue - INFO - SQS queue size: 176
+2025-04-27 02:56:07,523 - CloudQueue - INFO - SQS queue size: 176
+2025-04-27 02:56:07,627 - CloudQueue - INFO - SQS queue size: 176
+2025-04-27 02:56:07,734 - CloudQueue - INFO - SQS queue size: 176
+2025-04-27 02:56:07,837 - CloudQueue - INFO - SQS queue size: 176
+2025-04-27 02:56:07,939 - CloudQueue - INFO - SQS queue size: 176
+2025-04-27 02:56:08,040 - CloudQueue - INFO - SQS queue size: 176
+2025-04-27 02:56:08,291 - CloudQueue - INFO - Sent message to SQS: 0aa8f172-1f68-417b-9037-a0f2ad4084f6, content: https://www.iana.org/domains/example
+2025-04-27 02:56:08,434 - CloudQueue - INFO - SQS queue size: 158
+2025-04-27 02:56:08,588 - CloudQueue - INFO - Received 1 messages from SQS: ['https://diff.wikimedia.org/']
+2025-04-27 02:56:08,745 - CloudQueue - INFO - Deleted message from SQS: https://diff.wikimedia.org/
+2025-04-27 02:56:08,892 - CloudQueue - INFO - SQS queue size: 190
+2025-04-27 02:56:08,997 - CloudQueue - INFO - SQS queue size: 190
+2025-04-27 02:56:09,119 - CloudQueue - INFO - SQS queue size: 190
+2025-04-27 02:56:09,221 - CloudQueue - INFO - SQS queue size: 190
+2025-04-27 02:56:09,323 - CloudQueue - INFO - SQS queue size: 190
+2025-04-27 02:56:09,445 - CloudQueue - INFO - SQS queue size: 190
+2025-04-27 02:56:09,549 - CloudQueue - INFO - SQS queue size: 190
+2025-04-27 02:56:09,651 - CloudQueue - INFO - SQS queue size: 190
+2025-04-27 02:56:09,752 - CloudQueue - INFO - SQS queue size: 190
+2025-04-27 02:56:09,852 - CloudQueue - INFO - SQS queue size: 190
+2025-04-27 02:56:10,138 - CloudQueue - INFO - Sent message to SQS: ea78009a-0df4-4738-bb4e-5101e8be7a96, content: https://www.apple.com/
+2025-04-27 02:56:10,288 - CloudQueue - INFO - Sent message to SQS: 9a12b25c-72a9-4f29-b990-b2581422938b, content: https://www.apple.com/us/shop/goto/store
+2025-04-27 02:56:10,446 - CloudQueue - INFO - Sent message to SQS: 2f333f74-9a85-4ea5-837b-7783d64f0a95, content: https://www.apple.com/mac/
+2025-04-27 02:56:10,769 - CloudQueue - INFO - Sent message to SQS: 1e309e27-3356-42b1-96ef-fab0434055aa, content: https://www.apple.com/ipad/
+2025-04-27 02:56:11,008 - CloudQueue - INFO - Sent message to SQS: 4356acd0-25d0-4457-b6b1-1e9ce0d5ae70, content: https://www.apple.com/iphone/
+2025-04-27 02:56:11,144 - CloudQueue - INFO - SQS queue size: 188
+2025-04-27 02:56:11,333 - CloudQueue - INFO - Received 1 messages from SQS: ['https://www.iana.org/domains/e...']
+2025-04-27 02:56:11,473 - CloudQueue - INFO - Deleted message from SQS: https://www.iana.org/domains/e...
+2025-04-27 02:56:11,629 - CloudQueue - INFO - SQS queue size: 149
+2025-04-27 02:56:11,732 - CloudQueue - INFO - SQS queue size: 149
+2025-04-27 02:56:11,836 - CloudQueue - INFO - SQS queue size: 149
+2025-04-27 02:56:11,941 - CloudQueue - INFO - SQS queue size: 149
+2025-04-27 02:56:12,349 - CloudQueue - INFO - Sent message to SQS: c3159248-a915-406a-bc46-155247c334dc, content: https://diff.wikimedia.org/
+2025-04-27 02:56:12,538 - CloudQueue - INFO - Sent message to SQS: e1b76c4e-f870-4601-8bd3-b1d2bbb461c9, content: https://diff.wikimedia.org/
+2025-04-27 02:56:12,720 - CloudQueue - INFO - Sent message to SQS: 041ba84f-6a91-4380-a954-cd0069a0caa3, content: https://diff.wikimedia.org/category/equity-inclusi...
+2025-04-27 02:56:12,902 - CloudQueue - INFO - Sent message to SQS: 64d4f335-85cf-472a-b170-e8b51d521dc5, content: https://diff.wikimedia.org/category/education-open...
+2025-04-27 02:56:13,099 - CloudQueue - INFO - Sent message to SQS: 719cc9ce-f287-460d-a8d4-de1b3dfada6e, content: https://diff.wikimedia.org/category/technology/
+2025-04-27 02:56:13,289 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:13,469 - CloudQueue - INFO - Received 1 messages from SQS: ['https://www.github.com']
+2025-04-27 02:56:13,653 - CloudQueue - INFO - Deleted message from SQS: https://www.github.com
+2025-04-27 02:56:13,842 - CloudQueue - INFO - SQS queue size: 192
+2025-04-27 02:56:13,945 - CloudQueue - INFO - SQS queue size: 192
+2025-04-27 02:56:14,049 - CloudQueue - INFO - SQS queue size: 192
+2025-04-27 02:56:14,155 - CloudQueue - INFO - SQS queue size: 192
+2025-04-27 02:56:14,469 - CloudQueue - INFO - Sent message to SQS: bd12d721-4da6-4065-a371-3bbc937f9638, content: https://pti.icann.org
+2025-04-27 02:56:14,667 - CloudQueue - INFO - Sent message to SQS: aba3111b-1815-4fe2-9f0b-024a307cfd24, content: http://www.icann.org/
+2025-04-27 02:56:14,882 - CloudQueue - INFO - Sent message to SQS: 9c56d573-8c7c-450a-a7ed-0bba40b2aaf8, content: https://www.icann.org/privacy/policy
+2025-04-27 02:56:15,105 - CloudQueue - INFO - Sent message to SQS: 5a413ae1-5437-44ec-b274-7fc5311054cd, content: https://www.icann.org/privacy/tos
+2025-04-27 02:56:15,246 - CloudQueue - INFO - SQS queue size: 189
+2025-04-27 02:56:15,404 - CloudQueue - INFO - Received 1 messages from SQS: ['https://github.com/security/ad...']
+2025-04-27 02:56:15,585 - CloudQueue - INFO - Deleted message from SQS: https://github.com/security/ad...
+2025-04-27 02:56:15,724 - CloudQueue - INFO - SQS queue size: 162
+2025-04-27 02:56:15,832 - CloudQueue - INFO - SQS queue size: 162
+2025-04-27 02:56:15,936 - CloudQueue - INFO - SQS queue size: 162
+2025-04-27 02:56:16,042 - CloudQueue - INFO - SQS queue size: 162
+2025-04-27 02:56:16,143 - CloudQueue - INFO - SQS queue size: 162
+2025-04-27 02:56:16,245 - CloudQueue - INFO - SQS queue size: 162
+2025-04-27 02:56:16,345 - CloudQueue - INFO - SQS queue size: 162
+2025-04-27 02:56:16,446 - CloudQueue - INFO - SQS queue size: 162
+2025-04-27 02:56:16,547 - CloudQueue - INFO - SQS queue size: 162
+2025-04-27 02:56:16,649 - CloudQueue - INFO - SQS queue size: 162
+2025-04-27 02:56:16,749 - CloudQueue - INFO - SQS queue size: 162
+2025-04-27 02:56:16,850 - CloudQueue - INFO - SQS queue size: 162
+2025-04-27 02:56:16,951 - CloudQueue - INFO - SQS queue size: 162
+2025-04-27 02:56:17,057 - CloudQueue - INFO - SQS queue size: 162
+2025-04-27 02:56:17,158 - CloudQueue - INFO - SQS queue size: 162
+2025-04-27 02:56:17,259 - CloudQueue - INFO - SQS queue size: 162
+2025-04-27 02:56:17,360 - CloudQueue - INFO - SQS queue size: 162
+2025-04-27 02:56:17,462 - CloudQueue - INFO - SQS queue size: 162
+2025-04-27 02:56:17,570 - CloudQueue - INFO - SQS queue size: 162
+2025-04-27 02:56:17,677 - CloudQueue - INFO - SQS queue size: 162
+2025-04-27 02:56:17,784 - CloudQueue - INFO - SQS queue size: 162
+2025-04-27 02:56:17,885 - CloudQueue - INFO - SQS queue size: 162
+2025-04-27 02:56:17,986 - CloudQueue - INFO - SQS queue size: 162
+2025-04-27 02:56:18,087 - CloudQueue - INFO - SQS queue size: 162
+2025-04-27 02:56:18,187 - CloudQueue - INFO - SQS queue size: 162
+2025-04-27 02:56:18,288 - CloudQueue - INFO - SQS queue size: 162
+2025-04-27 02:56:18,389 - CloudQueue - INFO - SQS queue size: 162
+2025-04-27 02:56:18,490 - CloudQueue - INFO - SQS queue size: 162
+2025-04-27 02:56:18,591 - CloudQueue - INFO - SQS queue size: 162
+2025-04-27 02:56:18,695 - CloudQueue - INFO - SQS queue size: 162
+2025-04-27 02:56:18,796 - CloudQueue - INFO - SQS queue size: 162
+2025-04-27 02:56:18,897 - CloudQueue - INFO - SQS queue size: 162
+2025-04-27 02:56:18,998 - CloudQueue - INFO - SQS queue size: 162
+2025-04-27 02:56:19,099 - CloudQueue - INFO - SQS queue size: 162
+2025-04-27 02:56:19,200 - CloudQueue - INFO - SQS queue size: 162
+2025-04-27 02:56:19,301 - CloudQueue - INFO - SQS queue size: 162
+2025-04-27 02:56:19,595 - CloudQueue - INFO - Sent message to SQS: 3f0fa13f-d593-4571-90ee-026df3ffa245, content: https://www.python.org/psf/
+2025-04-27 02:56:19,746 - CloudQueue - INFO - Sent message to SQS: 73ba2b60-2c43-4eb3-bf08-52196cb31159, content: https://docs.python.org
+2025-04-27 02:56:19,894 - CloudQueue - INFO - Sent message to SQS: 6f51c632-28af-4315-886f-d5a0cee0237c, content: https://pypi.org/
+2025-04-27 02:56:20,067 - CloudQueue - INFO - Sent message to SQS: 1fb0f95d-f3ef-4d6b-be1c-8db58ef2acb1, content: https://psfmember.org/civicrm/contribute/transact?...
+2025-04-27 02:56:20,254 - CloudQueue - INFO - Sent message to SQS: 9a12609b-2d54-479b-bf25-eb34b8d1a90e, content: https://www.linkedin.com/company/python-software-f...
+2025-04-27 02:56:20,396 - CloudQueue - INFO - SQS queue size: 193
+2025-04-27 02:56:20,545 - CloudQueue - INFO - Received 1 messages from SQS: ['https://donate.wikimedia.org/w...']
+2025-04-27 02:56:20,686 - CloudQueue - INFO - Deleted message from SQS: https://donate.wikimedia.org/w...
+2025-04-27 02:56:20,835 - CloudQueue - INFO - SQS queue size: 191
+2025-04-27 02:56:20,937 - CloudQueue - INFO - SQS queue size: 191
+2025-04-27 02:56:21,042 - CloudQueue - INFO - SQS queue size: 191
+2025-04-27 02:56:21,297 - CloudQueue - INFO - Sent message to SQS: 455aec88-d92e-4c6c-85c2-53d5aeec0f40, content: https://github.com/features/copilot
+2025-04-27 02:56:21,461 - CloudQueue - INFO - Sent message to SQS: 7ef0b953-5f5d-4dee-bfc3-975372245222, content: https://github.com/security/advanced-security
+2025-04-27 02:56:21,626 - CloudQueue - INFO - Sent message to SQS: 291e4139-dee0-4645-985e-1b7c8d397dab, content: https://github.com/features/actions
+2025-04-27 02:56:21,772 - CloudQueue - INFO - Sent message to SQS: ecd8a708-c0b5-4fc0-b5eb-b522f9423408, content: https://github.com/features/codespaces
+2025-04-27 02:56:21,921 - CloudQueue - INFO - Sent message to SQS: 5009467f-4716-4db9-8a1f-1cb6bb881a24, content: https://github.com/features/issues
+2025-04-27 02:56:22,128 - CloudQueue - INFO - SQS queue size: 199
+2025-04-27 02:56:22,478 - CloudQueue - INFO - Received 1 messages from SQS: ['https://stackoverflowteams.hel...']
+2025-04-27 02:56:22,664 - CloudQueue - INFO - Deleted message from SQS: https://stackoverflowteams.hel...
+2025-04-27 02:56:22,849 - CloudQueue - INFO - SQS queue size: 200
+2025-04-27 02:56:22,952 - CloudQueue - INFO - SQS queue size: 200
+2025-04-27 02:56:23,059 - CloudQueue - INFO - SQS queue size: 200
+2025-04-27 02:56:23,373 - CloudQueue - INFO - Sent message to SQS: 11ebbd7a-3183-49e2-a8b1-f5dd82e4f48d, content: https://wikimediafoundation.org/
+2025-04-27 02:56:23,580 - CloudQueue - INFO - Sent message to SQS: 8e905296-1bae-4c1b-8d00-e4fd51e18147, content: https://donate.wikimedia.org/?uselang=en&wmf_mediu...
+2025-04-27 02:56:23,730 - CloudQueue - INFO - Sent message to SQS: 08a60957-9de4-48b6-9ca5-97af36bebd4d, content: https://www.paypal.com/cgi-bin/helpscr?cmd=_help&t...
+2025-04-27 02:56:24,085 - CloudQueue - INFO - Sent message to SQS: aba4e611-4f3c-4afb-bd4f-25c040767f97, content: https://en.wikipedia.org/wiki/Zendesk
+2025-04-27 02:56:24,298 - CloudQueue - INFO - Sent message to SQS: 989caec4-7968-44c0-a601-9b242ac6ad28, content: https://www.zendesk.com/company/customers-partners...
+2025-04-27 02:56:24,495 - CloudQueue - INFO - SQS queue size: 203
+2025-04-27 02:56:24,709 - CloudQueue - INFO - Received 1 messages from SQS: ['https://cs.wikipedia.org/wiki/...']
+2025-04-27 02:56:24,906 - CloudQueue - INFO - Deleted message from SQS: https://cs.wikipedia.org/wiki/...
+2025-04-27 02:56:25,098 - CloudQueue - INFO - SQS queue size: 186
+2025-04-27 02:56:25,202 - CloudQueue - INFO - SQS queue size: 186
+2025-04-27 02:56:25,308 - CloudQueue - INFO - SQS queue size: 186
+2025-04-27 02:56:25,416 - CloudQueue - INFO - SQS queue size: 186
+2025-04-27 02:56:25,517 - CloudQueue - INFO - SQS queue size: 186
+2025-04-27 02:56:25,618 - CloudQueue - INFO - SQS queue size: 186
+2025-04-27 02:56:25,719 - CloudQueue - INFO - SQS queue size: 186
+2025-04-27 02:56:25,820 - CloudQueue - INFO - SQS queue size: 186
+2025-04-27 02:56:25,926 - CloudQueue - INFO - SQS queue size: 186
+2025-04-27 02:56:26,028 - CloudQueue - INFO - SQS queue size: 186
+2025-04-27 02:56:26,128 - CloudQueue - INFO - SQS queue size: 186
+2025-04-27 02:56:26,229 - CloudQueue - INFO - SQS queue size: 186
+2025-04-27 02:56:26,331 - CloudQueue - INFO - SQS queue size: 186
+2025-04-27 02:56:26,435 - CloudQueue - INFO - SQS queue size: 186
+2025-04-27 02:56:26,542 - CloudQueue - INFO - SQS queue size: 186
+2025-04-27 02:56:26,648 - CloudQueue - INFO - SQS queue size: 186
+2025-04-27 02:56:26,752 - CloudQueue - INFO - SQS queue size: 186
+2025-04-27 02:56:26,854 - CloudQueue - INFO - SQS queue size: 186
+2025-04-27 02:56:26,955 - CloudQueue - INFO - SQS queue size: 186
+2025-04-27 02:56:27,056 - CloudQueue - INFO - SQS queue size: 186
+2025-04-27 02:56:27,161 - CloudQueue - INFO - SQS queue size: 186
+2025-04-27 02:56:27,262 - CloudQueue - INFO - SQS queue size: 186
+2025-04-27 02:56:27,363 - CloudQueue - INFO - SQS queue size: 186
+2025-04-27 02:56:27,464 - CloudQueue - INFO - SQS queue size: 186
+2025-04-27 02:56:27,565 - CloudQueue - INFO - SQS queue size: 186
+2025-04-27 02:56:27,666 - CloudQueue - INFO - SQS queue size: 186
+2025-04-27 02:56:27,766 - CloudQueue - INFO - SQS queue size: 186
+2025-04-27 02:56:27,867 - CloudQueue - INFO - SQS queue size: 186
+2025-04-27 02:56:27,969 - CloudQueue - INFO - SQS queue size: 186
+2025-04-27 02:56:28,214 - CloudQueue - INFO - Sent message to SQS: bd572fb2-3eae-4919-a84d-f3cdd641ded1, content: https://donate.wikimedia.org/?wmf_source=donate&wm...
+2025-04-27 02:56:28,367 - CloudQueue - INFO - Sent message to SQS: 400aace7-da01-47e0-ab44-f0f96080f017, content: https://donate.wikimedia.org/?wmf_source=donate&wm...
+2025-04-27 02:56:28,637 - CloudQueue - INFO - Sent message to SQS: 8dd51f20-8069-429e-a9d7-5e14fd498cc5, content: https://ar.wikipedia.org/wiki/%D9%82%D8%A7%D8%A6%D...
+2025-04-27 02:56:28,802 - CloudQueue - INFO - Sent message to SQS: 709bd1c7-d6f0-4987-a6ca-dd1669f29a64, content: https://az.wikipedia.org/wiki/Vikipediya_mobil_t%C...
+2025-04-27 02:56:28,951 - CloudQueue - INFO - Sent message to SQS: f3e3658b-3f1b-4eba-b518-f7170d8c7651, content: https://bn.wikipedia.org/wiki/%E0%A6%89%E0%A6%87%E...
+2025-04-27 02:56:29,111 - CloudQueue - INFO - SQS queue size: 212
+2025-04-27 02:56:29,293 - CloudQueue - INFO - Received 1 messages from SQS: ['https://diff.wikimedia.org/cat...']
+2025-04-27 02:56:30,986 - CloudQueue - INFO - Deleted message from SQS: https://diff.wikimedia.org/cat...
+2025-04-27 02:56:31,162 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:31,268 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:31,376 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:31,483 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:31,584 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:31,689 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:31,790 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:31,890 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:31,991 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:32,092 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:32,193 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:32,294 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:32,395 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:32,499 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:32,601 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:32,706 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:32,810 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:32,918 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:33,022 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:33,123 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:33,224 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:33,324 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:33,425 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:33,526 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:33,627 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:33,728 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:33,829 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:33,930 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:34,031 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:34,133 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:34,233 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:34,334 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:34,440 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:34,546 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:34,648 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:34,749 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:34,850 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:34,951 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:35,052 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:35,153 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:35,256 - CloudQueue - INFO - SQS queue size: 197
+2025-04-27 02:56:35,494 - CloudQueue - INFO - Sent message to SQS: 59d5b114-362f-47e4-8871-52cc83108d36, content: https://diff.wikimedia.org/
+2025-04-27 02:56:35,667 - CloudQueue - INFO - Sent message to SQS: 66235ac2-150a-498f-a4ef-1e7505ea51ac, content: https://diff.wikimedia.org/
+2025-04-27 02:56:35,999 - CloudQueue - INFO - Sent message to SQS: 6c36be93-6550-4347-8418-00a90f6bffcc, content: https://diff.wikimedia.org/category/equity-inclusi...
+2025-04-27 02:56:36,215 - CloudQueue - INFO - Sent message to SQS: 5e184381-57ba-45e7-90a5-95ecd3f8b804, content: https://diff.wikimedia.org/category/education-open...
+2025-04-27 02:56:36,421 - CloudQueue - INFO - Sent message to SQS: 4c70601f-c3a6-40c7-84e8-71cf9286e7c6, content: https://diff.wikimedia.org/category/technology/
+2025-04-27 02:56:36,576 - CloudQueue - INFO - SQS queue size: 211
+2025-04-27 02:56:36,726 - CloudQueue - INFO - Received 1 messages from SQS: ['https://stackoverflow.co/teams...']
+2025-04-27 02:56:36,900 - CloudQueue - INFO - Deleted message from SQS: https://stackoverflow.co/teams...
+2025-04-27 02:56:37,051 - CloudQueue - INFO - SQS queue size: 215
+2025-04-27 02:56:37,159 - CloudQueue - INFO - SQS queue size: 215
+2025-04-27 02:56:37,540 - CloudQueue - INFO - Sent message to SQS: f5bc6e24-9b67-43b7-ba83-58e00ddb061b, content: https://github.com/features/copilot
+2025-04-27 02:56:37,720 - CloudQueue - INFO - Sent message to SQS: f5e0464a-226d-43e2-a868-84e2fe218819, content: https://github.com/security/advanced-security
+2025-04-27 02:56:37,934 - CloudQueue - INFO - Sent message to SQS: 991cd232-2c05-40d7-8340-517e6192ff82, content: https://github.com/features/actions
+2025-04-27 02:56:38,083 - CloudQueue - INFO - Sent message to SQS: 757b499d-5be6-4f71-a910-91c940f3a7bc, content: https://github.com/features/codespaces
+2025-04-27 02:56:38,299 - CloudQueue - INFO - Sent message to SQS: 9330ec0a-b3b3-4565-b373-158facb5ede9, content: https://github.com/features/issues
+2025-04-27 02:56:38,675 - CloudQueue - INFO - SQS queue size: 220
+2025-04-27 02:56:38,840 - CloudQueue - INFO - Received 1 messages from SQS: ['https://stackoverflowteams.hel...']
+2025-04-27 02:56:38,982 - CloudQueue - INFO - Deleted message from SQS: https://stackoverflowteams.hel...
+2025-04-27 02:56:39,236 - CloudQueue - INFO - SQS queue size: 222
+2025-04-27 02:56:39,338 - CloudQueue - INFO - SQS queue size: 222
+2025-04-27 02:56:39,574 - CloudQueue - INFO - Received 1 messages from SQS: ['https://stackoverflow.co/adver...']
+2025-04-27 02:56:39,738 - CloudQueue - INFO - Deleted message from SQS: https://stackoverflow.co/adver...
+2025-04-27 02:56:39,886 - CloudQueue - INFO - SQS queue size: 220

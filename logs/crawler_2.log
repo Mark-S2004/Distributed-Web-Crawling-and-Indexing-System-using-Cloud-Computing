@@ -627,3 +627,239 @@
 2025-04-26 03:44:46,751 - Crawler-18612 - INFO -   - URLs extracted: 569
 2025-04-26 03:44:46,751 - Crawler-18612 - INFO -   - Errors encountered: 0
 2025-04-26 03:44:46,751 - Crawler-18612 - INFO - Crawler 2 exiting
+2025-04-27 02:55:40,050 - Crawler-20860 - INFO - Crawler node started with rank 2 of 5
+2025-04-27 02:55:40,050 - Crawler-20860 - INFO - Heartbeat mechanism started
+2025-04-27 02:55:43,332 - Crawler-20860 - INFO - Crawler 2 received URL: https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=bn.wikipedia.org&uselang=en
+2025-04-27 02:55:43,332 - Crawler-20860 - INFO - Fetching content from https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=bn.wikipedia.org&uselang=en
+2025-04-27 02:55:44,840 - Crawler-20860 - INFO - Fetched 69957 bytes from https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=bn.wikipedia.org&uselang=en
+2025-04-27 02:55:44,840 - Crawler-20860 - INFO - Parsing content from https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=bn.wikipedia.org&uselang=en
+2025-04-27 02:55:44,865 - Crawler-20860 - INFO - Crawler 2 crawled https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=bn.wikipedia.org&uselang=en and extracted 18 URLs in 1.53 seconds
+2025-04-27 02:55:44,873 - Crawler-20860 - INFO - Sent content to indexer node for https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=bn.wikipedia.org&uselang=en
+2025-04-27 02:55:44,873 - Crawler-20860 - INFO - Task for https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=bn.wikipedia.org&uselang=en completed in 1.54 seconds
+2025-04-27 02:55:46,352 - Crawler-20860 - INFO - Crawler 2 received URL: https://stackoverflow.blog/
+2025-04-27 02:55:46,360 - Crawler-20860 - INFO - Fetching content from https://stackoverflow.blog/
+2025-04-27 02:55:47,018 - Crawler-20860 - INFO - Fetched 342595 bytes from https://stackoverflow.blog/
+2025-04-27 02:55:47,018 - Crawler-20860 - INFO - Parsing content from https://stackoverflow.blog/
+2025-04-27 02:55:47,052 - Crawler-20860 - INFO - Crawler 2 crawled https://stackoverflow.blog/ and extracted 91 URLs in 0.69 seconds
+2025-04-27 02:55:51,470 - Crawler-20860 - INFO - Sent content to indexer node for https://stackoverflow.blog/
+2025-04-27 02:55:51,470 - Crawler-20860 - INFO - Task for https://stackoverflow.blog/ completed in 5.11 seconds
+2025-04-27 02:55:51,572 - Crawler-20860 - INFO - Crawler 2 received URL: https://foundation.wikimedia.org/wiki/Policy:Donor_privacy_policy/Supplement
+2025-04-27 02:55:51,572 - Crawler-20860 - INFO - Fetching content from https://foundation.wikimedia.org/wiki/Policy:Donor_privacy_policy/Supplement
+2025-04-27 02:55:52,980 - Crawler-20860 - INFO - Fetched 53300 bytes from https://foundation.wikimedia.org/wiki/Policy:Donor_privacy_policy/Supplement
+2025-04-27 02:55:52,980 - Crawler-20860 - INFO - Parsing content from https://foundation.wikimedia.org/wiki/Policy:Donor_privacy_policy/Supplement
+2025-04-27 02:55:53,040 - Crawler-20860 - INFO - Crawler 2 crawled https://foundation.wikimedia.org/wiki/Policy:Donor_privacy_policy/Supplement and extracted 23 URLs in 1.47 seconds
+2025-04-27 02:55:54,122 - Crawler-20860 - INFO - Sent content to indexer node for https://foundation.wikimedia.org/wiki/Policy:Donor_privacy_policy/Supplement
+2025-04-27 02:55:54,122 - Crawler-20860 - INFO - Task for https://foundation.wikimedia.org/wiki/Policy:Donor_privacy_policy/Supplement completed in 2.55 seconds
+2025-04-27 02:55:55,291 - Crawler-20860 - INFO - Crawler 2 received URL: https://diff.wikimedia.org/calendar
+2025-04-27 02:55:55,296 - Crawler-20860 - INFO - Fetching content from https://diff.wikimedia.org/calendar
+2025-04-27 02:55:58,382 - Crawler-20860 - INFO - Fetched 452859 bytes from https://diff.wikimedia.org/calendar
+2025-04-27 02:55:58,382 - Crawler-20860 - INFO - Parsing content from https://diff.wikimedia.org/calendar
+2025-04-27 02:55:58,702 - Crawler-20860 - INFO - Crawler 2 crawled https://diff.wikimedia.org/calendar and extracted 241 URLs in 3.41 seconds
+2025-04-27 02:56:17,501 - Crawler-20860 - INFO - Sent content to indexer node for https://diff.wikimedia.org/calendar
+2025-04-27 02:56:17,501 - Crawler-20860 - INFO - Task for https://diff.wikimedia.org/calendar completed in 22.21 seconds
+2025-04-27 02:56:17,603 - Crawler-20860 - INFO - Crawler 2 received URL: https://www.python.org
+2025-04-27 02:56:17,603 - Crawler-20860 - INFO - Fetching content from https://www.python.org
+2025-04-27 02:56:19,214 - Crawler-20860 - INFO - Fetched 51390 bytes from https://www.python.org
+2025-04-27 02:56:19,215 - Crawler-20860 - INFO - Parsing content from https://www.python.org
+2025-04-27 02:56:19,301 - Crawler-20860 - INFO - Crawler 2 crawled https://www.python.org and extracted 71 URLs in 1.70 seconds
+2025-04-27 02:56:21,798 - Crawler-20860 - INFO - Sent content to indexer node for https://www.python.org
+2025-04-27 02:56:21,798 - Crawler-20860 - INFO - Task for https://www.python.org completed in 4.19 seconds
+2025-04-27 02:56:21,900 - Crawler-20860 - INFO - Crawler 2 received URL: https://donate.wikimedia.org/wiki/Special:LandingCheck?landing_page=Problems_donating&basic=true&language=en
+2025-04-27 02:56:21,900 - Crawler-20860 - INFO - Fetching content from https://donate.wikimedia.org/wiki/Special:LandingCheck?landing_page=Problems_donating&basic=true&language=en
+2025-04-27 02:56:23,090 - Crawler-20860 - INFO - Fetched 59420 bytes from https://donate.wikimedia.org/wiki/Special:LandingCheck?landing_page=Problems_donating&basic=true&language=en
+2025-04-27 02:56:23,090 - Crawler-20860 - INFO - Parsing content from https://donate.wikimedia.org/wiki/Special:LandingCheck?landing_page=Problems_donating&basic=true&language=en
+2025-04-27 02:56:23,148 - Crawler-20860 - INFO - Crawler 2 crawled https://donate.wikimedia.org/wiki/Special:LandingCheck?landing_page=Problems_donating&basic=true&language=en and extracted 23 URLs in 1.25 seconds
+2025-04-27 02:56:26,516 - Crawler-20860 - INFO - Sent content to indexer node for https://donate.wikimedia.org/wiki/Special:LandingCheck?landing_page=Problems_donating&basic=true&language=en
+2025-04-27 02:56:26,516 - Crawler-20860 - INFO - Task for https://donate.wikimedia.org/wiki/Special:LandingCheck?landing_page=Problems_donating&basic=true&language=en completed in 4.62 seconds
+2025-04-27 02:56:26,618 - Crawler-20860 - INFO - Crawler 2 received URL: https://cs.wikipedia.org/wiki/Seznam_mobiln%C3%ADch_aplikac%C3%AD_Wikipedie
+2025-04-27 02:56:26,618 - Crawler-20860 - INFO - Fetching content from https://cs.wikipedia.org/wiki/Seznam_mobiln%C3%ADch_aplikac%C3%AD_Wikipedie
+2025-04-27 02:56:27,867 - Crawler-20860 - INFO - Fetched 75401 bytes from https://cs.wikipedia.org/wiki/Seznam_mobiln%C3%ADch_aplikac%C3%AD_Wikipedie
+2025-04-27 02:56:27,867 - Crawler-20860 - INFO - Parsing content from https://cs.wikipedia.org/wiki/Seznam_mobiln%C3%ADch_aplikac%C3%AD_Wikipedie
+2025-04-27 02:56:28,005 - Crawler-20860 - INFO - Crawler 2 crawled https://cs.wikipedia.org/wiki/Seznam_mobiln%C3%ADch_aplikac%C3%AD_Wikipedie and extracted 57 URLs in 1.39 seconds
+2025-04-27 02:56:32,768 - Crawler-20860 - INFO - Sent content to indexer node for https://cs.wikipedia.org/wiki/Seznam_mobiln%C3%ADch_aplikac%C3%AD_Wikipedie
+2025-04-27 02:56:32,768 - Crawler-20860 - INFO - Task for https://cs.wikipedia.org/wiki/Seznam_mobiln%C3%ADch_aplikac%C3%AD_Wikipedie completed in 6.15 seconds
+2025-04-27 02:56:32,869 - Crawler-20860 - INFO - Crawler 2 received URL: https://diff.wikimedia.org/category/technology/
+2025-04-27 02:56:32,869 - Crawler-20860 - INFO - Fetching content from https://diff.wikimedia.org/category/technology/
+2025-04-27 02:56:35,139 - Crawler-20860 - INFO - Fetched 198117 bytes from https://diff.wikimedia.org/category/technology/
+2025-04-27 02:56:35,139 - Crawler-20860 - INFO - Parsing content from https://diff.wikimedia.org/category/technology/
+2025-04-27 02:56:35,214 - Crawler-20860 - INFO - Crawler 2 crawled https://diff.wikimedia.org/category/technology/ and extracted 76 URLs in 2.35 seconds
+2025-04-27 02:56:35,360 - Crawler-20860 - INFO - Sent content to indexer node for https://diff.wikimedia.org/category/technology/
+2025-04-27 02:56:35,360 - Crawler-20860 - INFO - Task for https://diff.wikimedia.org/category/technology/ completed in 2.49 seconds
+2025-04-27 02:56:36,900 - Crawler-20860 - INFO - Crawler 2 received URL: https://stackoverflow.co/teams/?utm_source=so-owned&utm_medium=blog&utm_campaign=nav-side-bar
+2025-04-27 02:56:36,900 - Crawler-20860 - INFO - Fetching content from https://stackoverflow.co/teams/?utm_source=so-owned&utm_medium=blog&utm_campaign=nav-side-bar
+2025-04-27 02:56:38,273 - Crawler-20860 - INFO - Fetched 288497 bytes from https://stackoverflow.co/teams/?utm_source=so-owned&utm_medium=blog&utm_campaign=nav-side-bar
+2025-04-27 02:56:38,273 - Crawler-20860 - INFO - Parsing content from https://stackoverflow.co/teams/?utm_source=so-owned&utm_medium=blog&utm_campaign=nav-side-bar
+2025-04-27 02:56:38,356 - Crawler-20860 - INFO - Crawler 2 crawled https://stackoverflow.co/teams/?utm_source=so-owned&utm_medium=blog&utm_campaign=nav-side-bar and extracted 72 URLs in 1.46 seconds
+2025-04-27 02:56:43,028 - Crawler-20860 - INFO - Sent content to indexer node for https://stackoverflow.co/teams/?utm_source=so-owned&utm_medium=blog&utm_campaign=nav-side-bar
+2025-04-27 02:56:43,028 - Crawler-20860 - INFO - Task for https://stackoverflow.co/teams/?utm_source=so-owned&utm_medium=blog&utm_campaign=nav-side-bar completed in 6.13 seconds
+2025-04-27 02:56:43,129 - Crawler-20860 - INFO - Crawler 2 received URL: https://stackoverflow.co/advertising/use-cases/marketing-teams/
+2025-04-27 02:56:43,129 - Crawler-20860 - INFO - Fetching content from https://stackoverflow.co/advertising/use-cases/marketing-teams/
+2025-04-27 02:56:44,480 - Crawler-20860 - INFO - Fetched 245322 bytes from https://stackoverflow.co/advertising/use-cases/marketing-teams/
+2025-04-27 02:56:44,480 - Crawler-20860 - INFO - Parsing content from https://stackoverflow.co/advertising/use-cases/marketing-teams/
+2025-04-27 02:56:44,529 - Crawler-20860 - INFO - Crawler 2 crawled https://stackoverflow.co/advertising/use-cases/marketing-teams/ and extracted 71 URLs in 1.40 seconds
+2025-04-27 02:56:50,472 - Crawler-20860 - INFO - Sent content to indexer node for https://stackoverflow.co/advertising/use-cases/marketing-teams/
+2025-04-27 02:56:50,472 - Crawler-20860 - INFO - Task for https://stackoverflow.co/advertising/use-cases/marketing-teams/ completed in 7.34 seconds
+2025-04-27 02:56:50,574 - Crawler-20860 - INFO - Crawler 2 received shutdown signal. Exiting.
+2025-04-27 02:56:51,578 - Crawler-20860 - INFO - Crawler 2 shutting down. Final statistics:
+2025-04-27 02:56:51,578 - Crawler-20860 - INFO -   - Total runtime: 71.53 seconds
+2025-04-27 02:56:51,578 - Crawler-20860 - INFO -   - URLs processed: 10
+2025-04-27 02:56:51,578 - Crawler-20860 - INFO -   - URLs extracted: 743
+2025-04-27 02:56:51,579 - Crawler-20860 - INFO -   - Errors encountered: 0
+2025-04-27 02:56:51,579 - Crawler-20860 - INFO - Crawler 2 exiting
+2025-04-28 00:09:58,590 - Crawler-8808 - INFO - Crawler node started with rank 2 of 5
+2025-04-28 00:09:58,590 - Crawler-8808 - INFO - Heartbeat mechanism started
+2025-04-28 00:10:00,791 - Crawler-8808 - INFO - Crawler 2 received shutdown signal. Exiting.
+2025-04-28 00:10:01,806 - Crawler-8808 - INFO - Crawler 2 shutting down. Final statistics:
+2025-04-28 00:10:01,806 - Crawler-8808 - INFO -   - Total runtime: 3.22 seconds
+2025-04-28 00:10:01,806 - Crawler-8808 - INFO -   - URLs processed: 0
+2025-04-28 00:10:01,806 - Crawler-8808 - INFO -   - URLs extracted: 0
+2025-04-28 00:10:01,806 - Crawler-8808 - INFO -   - Errors encountered: 0
+2025-04-28 00:10:01,806 - Crawler-8808 - INFO - Crawler 2 exiting
+2025-04-28 00:20:36,208 - Crawler-15456 - INFO - Crawler node started with rank 2 of 5
+2025-04-28 00:20:36,218 - Crawler-15456 - INFO - Heartbeat mechanism started
+2025-04-28 00:20:39,559 - Crawler-15456 - INFO - Crawler 2 received URL: 
+2025-04-28 00:20:39,568 - Crawler-15456 - INFO - Fetching content from 
+2025-04-28 00:20:39,568 - Crawler-15456 - ERROR - Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-28 00:20:39,568 - Crawler-15456 - INFO - Task for  completed in 0.00 seconds
+2025-04-28 00:22:17,543 - Crawler-17024 - INFO - Crawler node started with rank 2 of 5
+2025-04-28 00:22:17,552 - Crawler-17024 - INFO - Heartbeat mechanism started
+2025-04-28 00:22:20,731 - Crawler-17024 - INFO - Crawler 2 received URL: 
+2025-04-28 00:22:20,731 - Crawler-17024 - INFO - Fetching content from 
+2025-04-28 00:22:20,731 - Crawler-17024 - ERROR - Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-28 00:22:20,731 - Crawler-17024 - INFO - Task for  completed in 0.00 seconds
+2025-04-28 00:24:46,879 - Crawler-20416 - INFO - Crawler node started with rank 2 of 5
+2025-04-28 00:24:46,879 - Crawler-20416 - INFO - Heartbeat mechanism started
+2025-04-28 00:24:49,494 - Crawler-20416 - INFO - Crawler 2 received URL: 
+2025-04-28 00:24:49,494 - Crawler-20416 - INFO - Fetching content from 
+2025-04-28 00:24:49,494 - Crawler-20416 - ERROR - Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-28 00:24:49,494 - Crawler-20416 - INFO - Task for  completed in 0.00 seconds
+2025-04-28 00:25:20,260 - Crawler-20416 - INFO - Crawler 2 received URL: 
+2025-04-28 00:25:20,260 - Crawler-20416 - INFO - Fetching content from 
+2025-04-28 00:25:20,260 - Crawler-20416 - ERROR - Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-28 00:25:20,260 - Crawler-20416 - INFO - Task for  completed in 0.00 seconds
+2025-04-28 23:46:26,328 - Crawler-9940 - INFO - Crawler node started with rank 2 of 5
+2025-04-28 23:46:26,329 - Crawler-9940 - INFO - Heartbeat mechanism started
+2025-04-28 23:46:28,626 - Crawler-9940 - INFO - Crawler 2 received URL: 
+2025-04-28 23:46:28,626 - Crawler-9940 - INFO - Fetching content from 
+2025-04-28 23:46:28,628 - Crawler-9940 - ERROR - Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-28 23:46:28,628 - Crawler-9940 - INFO - Task for  completed in 0.00 seconds
+2025-04-28 23:47:30,085 - Crawler-11596 - INFO - Crawler node started with rank 2 of 5
+2025-04-28 23:47:30,087 - Crawler-11596 - INFO - Heartbeat mechanism started
+2025-04-28 23:47:32,147 - Crawler-11596 - INFO - Crawler 2 received URL: 
+2025-04-28 23:47:32,147 - Crawler-11596 - INFO - Fetching content from 
+2025-04-28 23:47:32,150 - Crawler-11596 - ERROR - Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-28 23:47:32,150 - Crawler-11596 - INFO - Task for  completed in 0.00 seconds
+2025-04-28 23:48:27,918 - Crawler-11596 - INFO - Crawler 2 received URL: 
+2025-04-28 23:48:27,918 - Crawler-11596 - INFO - Fetching content from 
+2025-04-28 23:48:27,919 - Crawler-11596 - ERROR - Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-28 23:48:27,919 - Crawler-11596 - INFO - Task for  completed in 0.00 seconds
+2025-04-28 23:48:59,332 - Crawler-11596 - INFO - Crawler 2 received shutdown signal. Exiting.
+2025-04-28 23:49:00,381 - Crawler-11596 - INFO - Crawler 2 shutting down. Final statistics:
+2025-04-28 23:49:00,382 - Crawler-11596 - INFO -   - Total runtime: 90.30 seconds
+2025-04-28 23:49:00,382 - Crawler-11596 - INFO -   - URLs processed: 0
+2025-04-28 23:49:00,382 - Crawler-11596 - INFO -   - URLs extracted: 0
+2025-04-28 23:49:00,382 - Crawler-11596 - INFO -   - Errors encountered: 2
+2025-04-28 23:49:00,382 - Crawler-11596 - INFO - Crawler 2 exiting
+2025-04-28 23:54:02,520 - Crawler-12880 - INFO - Crawler node started with rank 2 of 5
+2025-04-28 23:54:02,528 - Crawler-12880 - INFO - Heartbeat mechanism started
+2025-04-28 23:54:04,298 - Crawler-12880 - INFO - Crawler 2 received shutdown signal. Exiting.
+2025-04-28 23:54:05,306 - Crawler-12880 - INFO - Crawler 2 shutting down. Final statistics:
+2025-04-28 23:54:05,306 - Crawler-12880 - INFO -   - Total runtime: 2.79 seconds
+2025-04-28 23:54:05,306 - Crawler-12880 - INFO -   - URLs processed: 0
+2025-04-28 23:54:05,307 - Crawler-12880 - INFO -   - URLs extracted: 0
+2025-04-28 23:54:05,307 - Crawler-12880 - INFO -   - Errors encountered: 0
+2025-04-28 23:54:05,307 - Crawler-12880 - INFO - Crawler 2 exiting
+2025-04-28 23:54:35,015 - Crawler-10300 - INFO - Crawler node started with rank 2 of 5
+2025-04-28 23:54:35,038 - Crawler-10300 - INFO - Heartbeat mechanism started
+2025-04-28 23:54:36,969 - Crawler-10300 - INFO - Crawler 2 received shutdown signal. Exiting.
+2025-04-28 23:54:37,979 - Crawler-10300 - INFO - Crawler 2 shutting down. Final statistics:
+2025-04-28 23:54:37,979 - Crawler-10300 - INFO -   - Total runtime: 2.96 seconds
+2025-04-28 23:54:37,979 - Crawler-10300 - INFO -   - URLs processed: 0
+2025-04-28 23:54:37,979 - Crawler-10300 - INFO -   - URLs extracted: 0
+2025-04-28 23:54:37,979 - Crawler-10300 - INFO -   - Errors encountered: 0
+2025-04-28 23:54:37,979 - Crawler-10300 - INFO - Crawler 2 exiting
+2025-04-28 23:55:19,866 - Crawler-14540 - INFO - Crawler node started with rank 2 of 5
+2025-04-28 23:55:19,870 - Crawler-14540 - INFO - Heartbeat mechanism started
+2025-04-28 23:55:21,491 - Crawler-14540 - INFO - Crawler 2 received shutdown signal. Exiting.
+2025-04-28 23:55:22,502 - Crawler-14540 - INFO - Crawler 2 shutting down. Final statistics:
+2025-04-28 23:55:22,502 - Crawler-14540 - INFO -   - Total runtime: 2.64 seconds
+2025-04-28 23:55:22,502 - Crawler-14540 - INFO -   - URLs processed: 0
+2025-04-28 23:55:22,502 - Crawler-14540 - INFO -   - URLs extracted: 0
+2025-04-28 23:55:22,502 - Crawler-14540 - INFO -   - Errors encountered: 0
+2025-04-28 23:55:22,502 - Crawler-14540 - INFO - Crawler 2 exiting
+2025-04-28 23:56:30,567 - Crawler-15800 - INFO - Crawler node started with rank 2 of 5
+2025-04-28 23:56:30,573 - Crawler-15800 - INFO - Heartbeat mechanism started
+2025-04-28 23:56:32,500 - Crawler-15800 - INFO - Crawler 2 received shutdown signal. Exiting.
+2025-04-28 23:56:33,510 - Crawler-15800 - INFO - Crawler 2 shutting down. Final statistics:
+2025-04-28 23:56:33,510 - Crawler-15800 - INFO -   - Total runtime: 2.94 seconds
+2025-04-28 23:56:33,510 - Crawler-15800 - INFO -   - URLs processed: 0
+2025-04-28 23:56:33,510 - Crawler-15800 - INFO -   - URLs extracted: 0
+2025-04-28 23:56:33,510 - Crawler-15800 - INFO -   - Errors encountered: 0
+2025-04-28 23:56:33,510 - Crawler-15800 - INFO - Crawler 2 exiting
+2025-04-28 23:59:00,041 - Crawler-19404 - INFO - Crawler node started with rank 2 of 5
+2025-04-28 23:59:00,055 - Crawler-19404 - INFO - Heartbeat mechanism started
+2025-04-28 23:59:02,707 - Crawler-19404 - INFO - Crawler 2 received shutdown signal. Exiting.
+2025-04-28 23:59:03,711 - Crawler-19404 - INFO - Crawler 2 shutting down. Final statistics:
+2025-04-28 23:59:03,711 - Crawler-19404 - INFO -   - Total runtime: 3.67 seconds
+2025-04-28 23:59:03,711 - Crawler-19404 - INFO -   - URLs processed: 0
+2025-04-28 23:59:03,712 - Crawler-19404 - INFO -   - URLs extracted: 0
+2025-04-28 23:59:03,712 - Crawler-19404 - INFO -   - Errors encountered: 0
+2025-04-28 23:59:03,712 - Crawler-19404 - INFO - Crawler 2 exiting
+2025-04-28 23:59:36,477 - Crawler-7632 - INFO - Crawler node started with rank 2 of 5
+2025-04-28 23:59:36,516 - Crawler-7632 - INFO - Heartbeat mechanism started
+2025-04-28 23:59:39,847 - Crawler-7632 - INFO - Crawler 2 received URL: 
+2025-04-28 23:59:39,847 - Crawler-7632 - INFO - Fetching content from 
+2025-04-28 23:59:39,851 - Crawler-7632 - ERROR - Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-28 23:59:39,851 - Crawler-7632 - INFO - Task for  completed in 0.00 seconds
+2025-04-29 00:00:28,383 - Crawler-13768 - INFO - Crawler node started with rank 2 of 5
+2025-04-29 00:00:28,392 - Crawler-13768 - INFO - Heartbeat mechanism started
+2025-04-29 00:00:31,615 - Crawler-13768 - INFO - Crawler 2 received URL: 
+2025-04-29 00:00:31,615 - Crawler-13768 - INFO - Fetching content from 
+2025-04-29 00:00:31,619 - Crawler-13768 - ERROR - Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-29 00:00:31,619 - Crawler-13768 - INFO - Task for  completed in 0.00 seconds
+2025-04-29 00:01:02,673 - Crawler-13768 - INFO - Crawler 2 received URL: 
+2025-04-29 00:01:02,673 - Crawler-13768 - INFO - Fetching content from 
+2025-04-29 00:01:02,674 - Crawler-13768 - ERROR - Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-29 00:01:02,674 - Crawler-13768 - INFO - Task for  completed in 0.00 seconds
+2025-04-29 00:01:33,258 - Crawler-13768 - INFO - Crawler 2 received URL: 
+2025-04-29 00:01:33,258 - Crawler-13768 - INFO - Fetching content from 
+2025-04-29 00:01:33,259 - Crawler-13768 - ERROR - Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-29 00:01:33,259 - Crawler-13768 - INFO - Task for  completed in 0.00 seconds
+2025-04-29 00:02:03,819 - Crawler-13768 - INFO - Crawler 2 received URL: 
+2025-04-29 00:02:03,820 - Crawler-13768 - INFO - Fetching content from 
+2025-04-29 00:02:03,821 - Crawler-13768 - ERROR - Error crawling : Invalid URL '': No scheme supplied. Perhaps you meant https://?
+2025-04-29 00:02:03,821 - Crawler-13768 - INFO - Task for  completed in 0.00 seconds
+2025-04-29 00:02:35,661 - Crawler-13768 - INFO - Crawler 2 received shutdown signal. Exiting.
+2025-04-29 00:02:36,661 - Crawler-13768 - INFO - Crawler 2 shutting down. Final statistics:
+2025-04-29 00:02:36,661 - Crawler-13768 - INFO -   - Total runtime: 128.28 seconds
+2025-04-29 00:02:36,661 - Crawler-13768 - INFO -   - URLs processed: 0
+2025-04-29 00:02:36,662 - Crawler-13768 - INFO -   - URLs extracted: 0
+2025-04-29 00:02:36,662 - Crawler-13768 - INFO -   - Errors encountered: 4
+2025-04-29 00:02:36,662 - Crawler-13768 - INFO - Crawler 2 exiting
+2025-04-29 00:02:47,999 - Crawler-18836 - INFO - Crawler node started with rank 2 of 5
+2025-04-29 00:02:48,002 - Crawler-18836 - INFO - Heartbeat mechanism started
+2025-04-29 00:02:50,347 - Crawler-18836 - INFO - Crawler 2 received shutdown signal. Exiting.
+2025-04-29 00:02:51,357 - Crawler-18836 - INFO - Crawler 2 shutting down. Final statistics:
+2025-04-29 00:02:51,357 - Crawler-18836 - INFO -   - Total runtime: 3.36 seconds
+2025-04-29 00:02:51,357 - Crawler-18836 - INFO -   - URLs processed: 0
+2025-04-29 00:02:51,357 - Crawler-18836 - INFO -   - URLs extracted: 0
+2025-04-29 00:02:51,357 - Crawler-18836 - INFO -   - Errors encountered: 0
+2025-04-29 00:02:51,358 - Crawler-18836 - INFO - Crawler 2 exiting
+2025-04-29 00:03:41,112 - Crawler-16524 - INFO - Crawler node started with rank 2 of 5
+2025-04-29 00:03:41,117 - Crawler-16524 - INFO - Heartbeat mechanism started
+2025-04-29 00:03:52,767 - Crawler-16524 - INFO - Crawler 2 received shutdown signal. Exiting.
+2025-04-29 00:03:53,478 - Crawler-16524 - INFO - Crawler 2 shutting down. Final statistics:
+2025-04-29 00:03:53,478 - Crawler-16524 - INFO -   - Total runtime: 12.37 seconds
+2025-04-29 00:03:53,478 - Crawler-16524 - INFO -   - URLs processed: 0
+2025-04-29 00:03:53,478 - Crawler-16524 - INFO -   - URLs extracted: 0
+2025-04-29 00:03:53,478 - Crawler-16524 - INFO -   - Errors encountered: 0
+2025-04-29 00:03:53,478 - Crawler-16524 - INFO - Crawler 2 exiting
+2025-04-29 00:36:07,238 - Crawler-12432 - INFO - Crawler node started with rank 2 of 5
+2025-04-29 00:36:07,247 - Crawler-12432 - INFO - Heartbeat mechanism started
+2025-04-29 00:36:20,632 - Crawler-12432 - INFO - Crawler 2 received shutdown signal. Exiting.
+2025-04-29 00:36:21,143 - Crawler-12432 - INFO - Crawler 2 shutting down. Final statistics:
+2025-04-29 00:36:21,143 - Crawler-12432 - INFO -   - Total runtime: 13.90 seconds
+2025-04-29 00:36:21,143 - Crawler-12432 - INFO -   - URLs processed: 0
+2025-04-29 00:36:21,144 - Crawler-12432 - INFO -   - URLs extracted: 0
+2025-04-29 00:36:21,144 - Crawler-12432 - INFO -   - Errors encountered: 0
+2025-04-29 00:36:21,144 - Crawler-12432 - INFO - Crawler 2 exiting

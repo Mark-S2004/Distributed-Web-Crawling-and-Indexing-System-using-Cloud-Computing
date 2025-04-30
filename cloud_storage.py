@@ -6,6 +6,7 @@ import hashlib
 import time
 from botocore.exceptions import ClientError
 from datetime import datetime
+import uuid
 
 class CloudStorage:
     """
@@ -13,13 +14,12 @@ class CloudStorage:
     Provides methods to store both raw HTML and processed text from crawled web pages.
     """
     
-    def __init__(self, bucket_name=None, region_name=None):
+    def __init__(self, bucket_name='crawler-data-bucket'):
         """
         Initialize the CloudStorage class.
         
         Args:
             bucket_name (str): The S3 bucket name to use. If None, will use environment variable or default.
-            region_name (str): The AWS region to use.
         """
         self.logger = logging.getLogger('CloudStorage')
         self.logger.setLevel(logging.INFO)
@@ -38,59 +38,41 @@ class CloudStorage:
             file_handler.setFormatter(formatter)
             self.logger.addHandler(file_handler)
         
-        # Try to load AWS configuration from file
+        self.use_cloud = True
         try:
-            if os.path.exists('aws_config.json'):
-                with open('aws_config.json', 'r') as f:
-                    aws_config = json.load(f)
-                    self.logger.info("Loaded AWS configuration from aws_config.json")
-                    config_bucket = aws_config.get('aws', {}).get('bucket_name')
-                    config_region = aws_config.get('aws', {}).get('region')
-                    
-                    # Use provided values or config values
-                    bucket_name = bucket_name or config_bucket
-                    region_name = region_name or config_region
+            self.s3 = boto3.client('s3')
+            # Check if bucket exists, if not create it
+            self._ensure_bucket_exists(bucket_name)
+            self.bucket_name = bucket_name
+            self.logger.info(f"CloudStorage initialized with S3 bucket: {bucket_name}")
         except Exception as e:
-            self.logger.warning(f"Failed to load AWS configuration file: {e}")
-        
-        # Get bucket name from environment variable if not provided
-        self.bucket_name = bucket_name or os.environ.get('AWS_S3_BUCKET', 'web-crawler-data-storage')
-        self.region_name = region_name or os.environ.get('AWS_DEFAULT_REGION', 'us-east-1')
-        
-        # AWS credentials can be configured in several ways:
-        # 1. Environment variables: AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY
-        # 2. Shared credential file (~/.aws/credentials)
-        # 3. IAM role for EC2 instance
-        try:
-            self.s3_client = boto3.client('s3', region_name=self.region_name)
-            self.s3_resource = boto3.resource('s3', region_name=self.region_name)
-            self._ensure_bucket_exists()
-            self.logger.info(f"Successfully connected to AWS S3 in region {self.region_name}")
-        except Exception as e:
-            self.logger.error(f"Failed to initialize S3 client: {e}")
-            # Initialize to None to allow graceful fallback to local storage
-            self.s3_client = None
-            self.s3_resource = None
+            self.logger.warning(f"Failed to initialize S3, falling back to local storage: {e}")
+            self.use_cloud = False
+            # Create local directories for storage
+            os.makedirs('data/raw_html', exist_ok=True)
+            os.makedirs('data/processed_text', exist_ok=True)
+            os.makedirs('data/metadata', exist_ok=True)
     
-    def _ensure_bucket_exists(self):
+    def _ensure_bucket_exists(self, bucket_name):
         """Ensure the S3 bucket exists, creating it if necessary."""
         try:
-            self.s3_client.head_bucket(Bucket=self.bucket_name)
-            self.logger.info(f"Bucket {self.bucket_name} already exists")
+            self.s3.head_bucket(Bucket=bucket_name)
+            self.logger.info(f"Bucket {bucket_name} already exists")
         except ClientError as e:
             error_code = e.response.get('Error', {}).get('Code')
             
             if error_code == '404':
-                self.logger.info(f"Bucket {self.bucket_name} does not exist. Creating...")
+                self.logger.info(f"Bucket {bucket_name} does not exist. Creating...")
                 try:
-                    if self.region_name == 'us-east-1':
-                        self.s3_client.create_bucket(Bucket=self.bucket_name)
+                    region = boto3.session.Session().region_name
+                    if region == 'us-east-1':
+                        self.s3.create_bucket(Bucket=bucket_name)
                     else:
-                        self.s3_client.create_bucket(
-                            Bucket=self.bucket_name,
-                            CreateBucketConfiguration={'LocationConstraint': self.region_name}
+                        self.s3.create_bucket(
+                            Bucket=bucket_name,
+                            CreateBucketConfiguration={'LocationConstraint': region}
                         )
-                    self.logger.info(f"Successfully created bucket {self.bucket_name}")
+                    self.logger.info(f"Successfully created bucket {bucket_name}")
                 except ClientError as create_error:
                     self.logger.error(f"Failed to create bucket: {create_error}")
                     raise
@@ -130,13 +112,13 @@ class CloudStorage:
         Returns:
             dict: Storage info including success status and storage location
         """
-        if not self.s3_client:
+        if not self.use_cloud:
             self.logger.warning("S3 client not initialized. Falling back to local storage.")
             return self._local_store(url, html_content, 'raw_html')
         
         key = self._generate_key(url, 'raw_html')
         try:
-            self.s3_client.put_object(
+            self.s3.put_object(
                 Bucket=self.bucket_name,
                 Key=key,
                 Body=html_content,
@@ -174,14 +156,14 @@ class CloudStorage:
         Returns:
             dict: Storage info including success status and storage location
         """
-        if not self.s3_client:
+        if not self.use_cloud:
             self.logger.warning("S3 client not initialized. Falling back to local storage.")
             return self._local_store(url, processed_text, 'processed_text', metadata)
         
         text_key = self._generate_key(url, 'processed_text')
         try:
             # Store the processed text
-            self.s3_client.put_object(
+            self.s3.put_object(
                 Bucket=self.bucket_name,
                 Key=text_key,
                 Body=processed_text,
@@ -197,7 +179,7 @@ class CloudStorage:
             # Store metadata if provided
             if metadata:
                 meta_key = self._generate_key(url, 'metadata')
-                self.s3_client.put_object(
+                self.s3.put_object(
                     Bucket=self.bucket_name,
                     Key=meta_key,
                     Body=json.dumps(metadata),
@@ -240,7 +222,7 @@ class CloudStorage:
         """
         try:
             # Create directories if they don't exist
-            local_storage_dir = os.path.join('crawled_data', content_type)
+            local_storage_dir = os.path.join('data', content_type)
             os.makedirs(local_storage_dir, exist_ok=True)
             
             # Create a filename based on URL hash
@@ -255,7 +237,7 @@ class CloudStorage:
             
             # Store metadata if provided
             if metadata:
-                meta_dir = os.path.join('crawled_data', 'metadata')
+                meta_dir = os.path.join('data', 'metadata')
                 meta_filename = f"{url_hash}.json"
                 meta_filepath = os.path.join(meta_dir, meta_filename)
                 os.makedirs(meta_dir, exist_ok=True)
@@ -294,12 +276,12 @@ class CloudStorage:
         Returns:
             str: The raw HTML content or None if not found/error
         """
-        if not self.s3_client:
+        if not self.use_cloud:
             return self._local_retrieve(url, 'raw_html')
         
         key = self._generate_key(url, 'raw_html')
         try:
-            response = self.s3_client.get_object(Bucket=self.bucket_name, Key=key)
+            response = self.s3.get_object(Bucket=self.bucket_name, Key=key)
             html_content = response['Body'].read().decode('utf-8')
             self.logger.info(f"Successfully retrieved raw HTML for {url}")
             return html_content
@@ -326,7 +308,7 @@ class CloudStorage:
         Returns:
             tuple: (text, metadata) where text is the processed text and metadata is a dict or None
         """
-        if not self.s3_client:
+        if not self.use_cloud:
             return self._local_retrieve(url, 'processed_text', with_metadata=True)
         
         text_key = self._generate_key(url, 'processed_text')
@@ -334,13 +316,13 @@ class CloudStorage:
         
         try:
             # Get processed text
-            text_response = self.s3_client.get_object(Bucket=self.bucket_name, Key=text_key)
+            text_response = self.s3.get_object(Bucket=self.bucket_name, Key=text_key)
             processed_text = text_response['Body'].read().decode('utf-8')
             
             # Try to get metadata
             metadata = None
             try:
-                meta_response = self.s3_client.get_object(Bucket=self.bucket_name, Key=meta_key)
+                meta_response = self.s3.get_object(Bucket=self.bucket_name, Key=meta_key)
                 metadata = json.loads(meta_response['Body'].read().decode('utf-8'))
             except ClientError:
                 self.logger.warning(f"No metadata found for {url} in S3")
@@ -378,7 +360,7 @@ class CloudStorage:
             url_hash = hashlib.md5(url.encode()).hexdigest()
             extension = 'html' if content_type == 'raw_html' else 'txt'
             filename = f"{url_hash}.{extension}"
-            filepath = os.path.join('crawled_data', content_type, filename)
+            filepath = os.path.join('data', content_type, filename)
             
             # Check if file exists
             if not os.path.exists(filepath):
@@ -395,7 +377,7 @@ class CloudStorage:
             # Try to read metadata if requested
             metadata = None
             if with_metadata:
-                meta_filepath = os.path.join('crawled_data', 'metadata', f"{url_hash}.json")
+                meta_filepath = os.path.join('data', 'metadata', f"{url_hash}.json")
                 if os.path.exists(meta_filepath):
                     with open(meta_filepath, 'r', encoding='utf-8') as f:
                         metadata = json.load(f)
@@ -417,12 +399,12 @@ class CloudStorage:
         Returns:
             list: List of URLs stored in S3
         """
-        if not self.s3_client:
+        if not self.use_cloud:
             return self._local_list_urls(content_type, limit)
         
         try:
             # List objects in the bucket with the specified prefix
-            response = self.s3_client.list_objects_v2(
+            response = self.s3.list_objects_v2(
                 Bucket=self.bucket_name,
                 Prefix=f"{content_type}/",
                 MaxKeys=limit
@@ -433,7 +415,7 @@ class CloudStorage:
             for obj in response.get('Contents', []):
                 try:
                     # Get object metadata
-                    head = self.s3_client.head_object(Bucket=self.bucket_name, Key=obj['Key'])
+                    head = self.s3.head_object(Bucket=self.bucket_name, Key=obj['Key'])
                     url = head.get('Metadata', {}).get('url')
                     if url:
                         urls.append(url)
@@ -457,7 +439,7 @@ class CloudStorage:
             list: List of URLs stored locally
         """
         try:
-            directory = os.path.join('crawled_data', content_type)
+            directory = os.path.join('data', content_type)
             if not os.path.exists(directory):
                 return []
             
