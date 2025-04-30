@@ -111,8 +111,41 @@ Resources:
           # Create necessary directories
           mkdir -p logs data data/monitoring data/queue search_index
           
-          # Start crawler node
-          nohup python3 main.py --role crawler --sqs-queue ${SQSQueueName} --status-queue ${StatusQueueName} --bucket ${S3BucketName} > /home/ec2-user/crawler.log 2>&1 &
+          # Create a startup script to ensure crawler runs with the correct role
+          cat > /home/ec2-user/start_crawler.sh << EOF
+          #!/bin/bash
+          cd /home/ec2-user/crawler
+          python3 main.py --role crawler --sqs-queue ${SQSQueueName} --status-queue ${StatusQueueName} --bucket ${S3BucketName} > /home/ec2-user/crawler.log 2>&1
+          EOF
+          
+          # Make the script executable
+          chmod +x /home/ec2-user/start_crawler.sh
+          
+          # Create a systemd service for the crawler
+          cat > /etc/systemd/system/webcrawler.service << EOF
+          [Unit]
+          Description=Web Crawler Service
+          After=network.target
+          
+          [Service]
+          User=ec2-user
+          WorkingDirectory=/home/ec2-user/crawler
+          ExecStart=/bin/bash /home/ec2-user/start_crawler.sh
+          Restart=always
+          RestartSec=10
+          Environment=PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+          
+          [Install]
+          WantedBy=multi-user.target
+          EOF
+          
+          # Enable and start the service
+          systemctl daemon-reload
+          systemctl enable webcrawler.service
+          systemctl start webcrawler.service
+          
+          # Also set up a cron job as a backup restart mechanism
+          echo "*/10 * * * * systemctl is-active --quiet webcrawler || systemctl restart webcrawler" | crontab -
 
 Outputs:
   InstanceId:
