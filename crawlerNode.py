@@ -38,6 +38,10 @@ def crawler_process(sqs_queue=None, status_queue=None, bucket=None):
     status_queue = status_queue or 'crawler-status-queue'
     bucket = bucket or 'web-crawler-data-storage'
     
+    # Check for debug mode
+    debug_mode = os.environ.get("DEBUG_CRAWLER", "0") == "1"
+    log_level = logging.DEBUG if debug_mode else logging.INFO
+    
     # Generate a unique node ID for this crawler instance
     node_id = f"crawler-{socket.gethostname()}-{os.getpid()}"
     
@@ -46,14 +50,14 @@ def crawler_process(sqs_queue=None, status_queue=None, bucket=None):
     # Ensure logs directory exists
     os.makedirs(os.path.dirname(log_filename), exist_ok=True)
     logging.basicConfig(
-        level=logging.INFO,
+        level=log_level,
         format='%(asctime)s - Crawler-%(process)d - %(levelname)s - %(message)s',
         handlers=[
             logging.FileHandler(log_filename),
             logging.StreamHandler()
         ]
     )
-    logging.info(f"Crawler node started with ID: {node_id}")
+    logging.info(f"Crawler node started with ID: {node_id}" + (" [DEBUG MODE]" if debug_mode else ""))
 
     # Initialize the cloud queue
     task_queue = CloudQueue(queue_name=sqs_queue, status_queue_name=status_queue)
@@ -150,17 +154,40 @@ def crawler_process(sqs_queue=None, status_queue=None, bucket=None):
                 logging.info(f"Parsing content from {url_to_crawl}")
                 soup = BeautifulSoup(content, 'html.parser')
                 extracted_urls = []
+                base_url = url_to_crawl
+                parsed_base = urlparse(base_url)
+                
                 for a_tag in soup.find_all('a', href=True):
                     href = a_tag['href']
-                    # Basic check: consider only absolute URLs
+                    # Handle both absolute and relative URLs
                     if href.startswith("http"):
+                        # Absolute URL
                         extracted_urls.append(href)
+                    elif href.startswith("/"):
+                        # Relative URL - convert to absolute
+                        absolute_url = f"{parsed_base.scheme}://{parsed_base.netloc}{href}"
+                        extracted_urls.append(absolute_url)
+                    elif href and not href.startswith("#") and not href.startswith("javascript:"):
+                        # Other valid relative URL - convert to absolute
+                        absolute_url = urljoin(base_url, href)
+                        extracted_urls.append(absolute_url)
+                
+                # Log some stats about URL extraction
+                logging.info(f"Extracted {len(extracted_urls)} URLs from {url_to_crawl}")
+                if len(extracted_urls) > 0:
+                    sample_urls = extracted_urls[:5]
+                    logging.info(f"Sample extracted URLs: {sample_urls}")
+                
+                # Limit the number of URLs to avoid queue overload - max 50 URLs per page
+                if len(extracted_urls) > 50:
+                    logging.info(f"Limiting extracted URLs from {len(extracted_urls)} to 50")
+                    extracted_urls = random.sample(extracted_urls, 50)
 
                 # If no URLs are extracted, simulate a couple of URLs
                 if not extracted_urls:
                     extracted_urls = [f"http://example.com/page_{node_id}_{i}" for i in range(2)]
                     logging.info(f"No real URLs found, created {len(extracted_urls)} simulated URLs")
-                
+
                 # Update statistics
                 stats["urls_processed"] += 1
                 stats["urls_extracted"] += len(extracted_urls)
@@ -176,8 +203,42 @@ def crawler_process(sqs_queue=None, status_queue=None, bucket=None):
                     "urls": extracted_urls,
                     "timestamp": time.time()
                 }
-                task_queue.send_message(json.dumps(discovered_urls_message))
-                logging.debug(f"Sent {len(extracted_urls)} URLs to the queue")
+                
+                # Log the message for debugging
+                logging.info(f"Sending URL discovery message with {len(extracted_urls)} URLs")
+                if len(extracted_urls) > 0:
+                    sample_urls = extracted_urls[:3]
+                    logging.info(f"Sample URLs being sent: {sample_urls}")
+                
+                # Make sure message isn't too large for SQS (256KB limit)
+                try:
+                    json_message = json.dumps(discovered_urls_message)
+                    message_size = len(json_message.encode('utf-8'))
+                    
+                    if message_size > 250000:  # SQS limit is 262144 bytes
+                        logging.warning(f"URLs message too large ({message_size} bytes), truncating URL list")
+                        # Keep reducing the URL list until it fits
+                        while message_size > 250000 and len(extracted_urls) > 5:
+                            # Remove half the URLs
+                            extracted_urls = extracted_urls[:len(extracted_urls)//2]
+                            discovered_urls_message["urls"] = extracted_urls
+                            json_message = json.dumps(discovered_urls_message)
+                            message_size = len(json_message.encode('utf-8'))
+                        
+                        logging.info(f"Truncated URL list to {len(extracted_urls)} URLs, new message size: {message_size} bytes")
+                    
+                    # Send the message
+                    task_queue.send_message(json.dumps(discovered_urls_message))
+                    logging.info(f"Sent {len(extracted_urls)} URLs to the queue")
+                except Exception as e:
+                    logging.error(f"Error sending URL discovery message: {e}")
+                    # Try a simpler approach as fallback
+                    logging.info("Attempting fallback URL submission")
+                    for url in extracted_urls[:10]:  # Just send first 10 URLs directly
+                        try:
+                            task_queue.send_message(url)
+                        except Exception:
+                            pass
 
                 # Send the content to the indexer queue 
                 indexing_message = {

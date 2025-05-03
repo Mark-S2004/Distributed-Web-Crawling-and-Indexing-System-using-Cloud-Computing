@@ -105,6 +105,15 @@ class DBManager:
             )
         ''')
         
+        # Add new URL tracking table
+        cursor.execute('''
+            CREATE TABLE IF NOT EXISTS url_tracking (
+                url TEXT PRIMARY KEY,
+                indexed TEXT DEFAULT 'no',
+                last_updated TEXT
+            )
+        ''')
+        
         conn.commit()
         conn.close()
         logging.info("SQLite database initialized")
@@ -380,4 +389,119 @@ class DBManager:
     
     def is_cloud_mode(self):
         """Check if the database is operating in cloud mode"""
-        return self.use_cloud 
+        return self.use_cloud
+    
+    def add_url_to_tracking(self, url):
+        """Add a URL to the tracking table if it doesn't exist"""
+        timestamp = datetime.now().isoformat()
+        
+        if self.use_cloud:
+            try:
+                self.url_tracking_table.put_item(
+                    Item={
+                        'url': url,
+                        'indexed': 'no',
+                        'last_updated': timestamp
+                    },
+                    ConditionExpression='attribute_not_exists(url)'
+                )
+                return True
+            except Exception as e:
+                if 'ConditionalCheckFailedException' not in str(e):
+                    logging.error(f"Error adding URL to tracking table: {e}")
+                return False
+        else:
+            return self._add_url_tracking_sqlite(url, timestamp)
+    
+    def _add_url_tracking_sqlite(self, url, timestamp):
+        """Add a URL to the SQLite tracking table if it doesn't exist"""
+        try:
+            conn = sqlite3.connect(self.db_path)
+            cursor = conn.cursor()
+            
+            cursor.execute(
+                "INSERT OR IGNORE INTO url_tracking (url, indexed, last_updated) VALUES (?, 'no', ?)",
+                (url, timestamp)
+            )
+            
+            conn.commit()
+            conn.close()
+            return True
+        except Exception as e:
+            logging.error(f"Error adding URL to SQLite tracking table: {e}")
+            return False
+    
+    def mark_url_as_indexed(self, url):
+        """Mark a URL as indexed in the tracking table"""
+        timestamp = datetime.now().isoformat()
+        
+        if self.use_cloud:
+            try:
+                self.url_tracking_table.update_item(
+                    Key={'url': url},
+                    UpdateExpression='SET indexed = :indexed, last_updated = :timestamp',
+                    ExpressionAttributeValues={
+                        ':indexed': 'yes',
+                        ':timestamp': timestamp
+                    }
+                )
+                return True
+            except Exception as e:
+                logging.error(f"Error marking URL as indexed: {e}")
+                return False
+        else:
+            return self._mark_url_indexed_sqlite(url, timestamp)
+    
+    def _mark_url_indexed_sqlite(self, url, timestamp):
+        """Mark a URL as indexed in SQLite"""
+        try:
+            conn = sqlite3.connect(self.db_path)
+            cursor = conn.cursor()
+            
+            cursor.execute(
+                "UPDATE url_tracking SET indexed = 'yes', last_updated = ? WHERE url = ?",
+                (timestamp, url)
+            )
+            
+            conn.commit()
+            conn.close()
+            return True
+        except Exception as e:
+            logging.error(f"Error marking URL as indexed in SQLite: {e}")
+            return False
+    
+    def get_unindexed_urls(self, limit=100):
+        """Get a list of unindexed URLs"""
+        if self.use_cloud:
+            try:
+                response = self.url_tracking_table.scan(
+                    FilterExpression='indexed = :indexed',
+                    ExpressionAttributeValues={
+                        ':indexed': 'no'
+                    },
+                    Limit=limit
+                )
+                return [item['url'] for item in response.get('Items', [])]
+            except Exception as e:
+                logging.error(f"Error getting unindexed URLs: {e}")
+                return []
+        else:
+            return self._get_unindexed_urls_sqlite(limit)
+    
+    def _get_unindexed_urls_sqlite(self, limit):
+        """Get unindexed URLs from SQLite"""
+        try:
+            conn = sqlite3.connect(self.db_path)
+            cursor = conn.cursor()
+            
+            cursor.execute(
+                "SELECT url FROM url_tracking WHERE indexed = 'no' LIMIT ?",
+                (limit,)
+            )
+            
+            urls = [row[0] for row in cursor.fetchall()]
+            conn.close()
+            return urls
+        except Exception as e:
+            logging.error(f"Error getting unindexed URLs from SQLite: {e}")
+            return [] 

@@ -235,3 +235,18 @@ class CloudQueue:
     def is_cloud_mode(self):
         """Check if the queue is operating in cloud mode"""
         return self.use_cloud 
+    
+    def purge_queue(self):
+        """Purge all messages from the queue"""
+        if self.use_cloud:
+            try:
+                self.sqs.purge_queue(QueueUrl=self.queue_url)
+                return True
+            except Exception as e:
+                logging.error(f"Error purging SQS queue: {e}")
+                return False
+        else:
+            # Clear local queue
+            self.local_queue.clear()
+            self._persist_local_queue()
+            return True 
