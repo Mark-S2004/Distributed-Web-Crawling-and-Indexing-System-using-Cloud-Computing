@@ -1,364 +1,334 @@
 #!/usr/bin/env python3
+import os
 import time
 import logging
 import requests
-from bs4 import BeautifulSoup
 import threading
 import random
-import os
-import json
-from urllib.parse import urljoin, urlparse
 import socket
+import signal
 import sys
-from cloud_queue import CloudQueue
+import json
+import urllib.parse
+import boto3
+from datetime import datetime
+from bs4 import BeautifulSoup
+from urllib.parse import urljoin, urlparse
 
-# Define message types for AWS communication
-MSG_TERMINATE = 'terminate'
+from cloud_queue   import CloudQueue
+from cloud_storage import CloudStorage
+from db_manager    import DBManager
+
+# Message types
 MSG_URLS_DISCOVERED = 'urls_discovered'
-MSG_INDEX_CONTENT = 'index_content'
-MSG_HEARTBEAT = 'heartbeat'
-MSG_ERROR = 'error'
+MSG_HEARTBEAT       = 'heartbeat'
+MSG_ERROR           = 'error'
+MSG_TERMINATE       = 'terminate'
 
-def crawler_process(sqs_queue=None, status_queue=None, bucket=None):
+# Global variables for graceful shutdown
+shutdown_event = threading.Event()
+
+def normalize_url(base_url, url):
     """
-    Enhanced Crawler Node Process (Phase 3):
-      - Implements regular heartbeat signals to master node via SQS
-      - Provides detailed logging for monitoring
-      - Handles tasks from the queue.
-      - For each received URL:
-          1. Fetches the web page content (using requests).
-          2. Parses the content using BeautifulSoup to extract additional URLs.
-          3. Sends extracted URLs back to the queue (msg type: urls_discovered).
-          4. Sends the fetched content to a separate queue for the indexer (msg type: index_content).
-          5. Sends a status update (heartbeat) via the status queue.
-      - Exits when a shutdown signal is received.
+    Normalize a URL:
+    - Convert relative URLs to absolute
+    - Remove fragments
+    - Handle common edge cases
     """
-    # Initialize default queue and bucket names if not provided
-    sqs_queue = sqs_queue or 'crawler-url-queue'
-    status_queue = status_queue or 'crawler-status-queue'
-    bucket = bucket or 'web-crawler-data-storage'
-    
-    # Check for debug mode
-    debug_mode = os.environ.get("DEBUG_CRAWLER", "0") == "1"
-    log_level = logging.DEBUG if debug_mode else logging.INFO
-    
-    # Generate a unique node ID for this crawler instance
-    node_id = f"crawler-{socket.gethostname()}-{os.getpid()}"
-    
-    # Setup enhanced logging with file output
-    log_filename = os.path.join("logs", f"crawler_{node_id}.log")
-    # Ensure logs directory exists
-    os.makedirs(os.path.dirname(log_filename), exist_ok=True)
+    # Handle empty or None URLs
+    if not url:
+        return None
+
+    # Convert relative URLs to absolute
+    if not url.startswith(('http://', 'https://')):
+        url = urljoin(base_url, url)
+
+    # Parse the URL
+    parsed = urlparse(url)
+
+    # Skip non-HTTP/HTTPS URLs
+    if parsed.scheme not in ('http', 'https'):
+        return None
+
+    # Remove fragments
+    url = parsed.scheme + '://' + parsed.netloc + parsed.path
+
+    # Add query parameters if they exist
+    if parsed.query:
+        url += '?' + parsed.query
+
+    # Remove trailing slash for consistency
+    if url.endswith('/'):
+        url = url[:-1]
+
+    return url
+
+def signal_handler(sig, frame):
+    """Handle termination signals gracefully."""
+    logging.info("Received termination signal. Shutting down gracefully...")
+    shutdown_event.set()
+
+def crawler_process(
+    sqs_queue: str = 'crawler-url-queue',
+    status_queue: str = 'crawler-status-queue',
+    bucket: str = None,
+    region: str = None
+):
+    """
+    Crawler node:
+      - Sets default AWS region for all boto3 clients
+      - Dequeues URLs from SQS
+      - Fetches HTML
+      - Uploads page HTML to S3 under a URL-derived key
+      - Records each fetch in DynamoDB (crawled-urls & node-status tables)
+      - Normalizes and extracts URLs
+      - Sends discovery & heartbeat status messages back to master
+      - Handles graceful shutdown
+    """
+    # ─── Signal handlers for graceful shutdown ─────────────────────────
+    signal.signal(signal.SIGINT, signal_handler)
+    signal.signal(signal.SIGTERM, signal_handler)
+
+    # ─── AWS region setup ─────────────────────────────────────────────
+    if region:
+        boto3.setup_default_session(region_name=region)
+
+    # ─── Logging setup ───────────────────────────────────────────────
+    os.makedirs("logs", exist_ok=True)
     logging.basicConfig(
-        level=log_level,
-        format='%(asctime)s - Crawler-%(process)d - %(levelname)s - %(message)s',
+        level=logging.INFO,
+        format='%(asctime)s - Crawler - %(levelname)s - %(message)s',
         handlers=[
-            logging.FileHandler(log_filename),
+            logging.FileHandler("logs/crawler.log"),
             logging.StreamHandler()
         ]
     )
-    logging.info(f"Crawler node started with ID: {node_id}" + (" [DEBUG MODE]" if debug_mode else ""))
+    logging.info("Crawler node started")
 
-    # Initialize the cloud queue
+    # ─── AWS / DB clients ────────────────────────────────────────────
     task_queue = CloudQueue(queue_name=sqs_queue, status_queue_name=status_queue)
-    logging.info(f"Connected to task queue: {sqs_queue}")
-    logging.info(f"Connected to status queue: {status_queue}")
-    
-    # Statistics for the crawler node
+    storage    = CloudStorage(bucket_name=bucket, region=region)
+    db         = DBManager()
+
+    node_id  = socket.gethostname()
+
+    # ─── Crawler stats ───────────────────────────────────────────────
     stats = {
-        "urls_processed": 0,
-        "urls_extracted": 0,
-        "errors": 0,
-        "start_time": time.time()
+        'urls_crawled': 0,
+        'urls_discovered': 0,
+        'errors': 0,
+        'start_time': datetime.utcnow().isoformat()
     }
-    
-    # Heartbeat mechanism
-    shutdown_flag = False
-    
-    def send_heartbeat():
-        """Send periodic heartbeats to the master node via the status queue"""
-        while not shutdown_flag:
+
+    # ─── Heartbeat thread ───────────────────────────────────────────
+    def heartbeat():
+        while not shutdown_event.is_set():
             try:
-                uptime = time.time() - stats["start_time"]
-                heartbeat_msg = {
-                    "type": MSG_HEARTBEAT,
-                    "node_id": node_id,
-                    "uptime": uptime,
-                    "urls_processed": stats["urls_processed"],
-                    "errors": stats["errors"],
-                    "timestamp": time.time()
-                }
-                task_queue.send_status_update(node_id, heartbeat_msg)
-                logging.debug(f"Sent heartbeat to master node")
+                # 1) SQS heartbeat with stats
+                task_queue.send_status_message({
+                    'type': MSG_HEARTBEAT,
+                    'node_id': node_id,
+                    'timestamp': time.time(),
+                    'stats': stats
+                })
+                # 2) DynamoDB node-status
+                db.update_node_status(node_id, {
+                    'last_beat': datetime.utcnow().isoformat(),
+                    'stats': stats
+                })
             except Exception as e:
-                logging.error(f"Error sending heartbeat: {e}")
-            
-            # Sleep for a random time between 2 and 5 seconds to avoid synchronized heartbeats
-            time.sleep(random.uniform(2, 5))
-    
-    # Start heartbeat thread
-    heartbeat_thread = threading.Thread(target=send_heartbeat, daemon=True)
+                logging.error(f"Error in heartbeat thread: {e}")
+
+            # Sleep for 5 seconds or until shutdown
+            shutdown_event.wait(5)
+
+    heartbeat_thread = threading.Thread(target=heartbeat, daemon=True)
     heartbeat_thread.start()
-    logging.info(f"Heartbeat mechanism started")
 
+    # ─── Main crawl loop ────────────────────────────────────────────
     try:
-        # Main processing loop
-        while not shutdown_flag:
-            # Poll for messages from the queue
-            messages = task_queue.receive_messages(max_messages=1, wait_time=10)
-            
-            if not messages:
-                logging.debug("No messages in queue, continuing...")
-                continue
-                
-            # Process the message
-            message = messages[0]
-            message_body = message.get('Body', '')
-            
-            # Try to parse as JSON, but also handle raw URL strings
+        while not shutdown_event.is_set():
             try:
-                message_data = json.loads(message_body)
-                # Check if this is a termination message
-                if isinstance(message_data, dict) and message_data.get('type') == MSG_TERMINATE:
-                    if message_data.get('target_node') == node_id or message_data.get('target_node') == 'all':
-                        logging.info(f"Received shutdown signal. Exiting.")
-                        shutdown_flag = True
-                        # Delete the termination message
-                        task_queue.delete_message(message)
-                        break
-                    
-                # Get URL from JSON message if available
-                url_to_crawl = message_data.get('url', message_body)
-            except (json.JSONDecodeError, TypeError):
-                # If not JSON, treat as raw URL
-                url_to_crawl = message_body
-            
-            # Skip processing if the message isn't a valid URL
-            if not url_to_crawl or not isinstance(url_to_crawl, str) or not (url_to_crawl.startswith('http://') or url_to_crawl.startswith('https://')):
-                logging.warning(f"Received invalid URL: {url_to_crawl}. Skipping.")
-                task_queue.delete_message(message)
-                continue
+                # Check for termination messages first
+                status_messages = task_queue.receive_status_messages(WaitTimeSeconds=1, MaxNumber=5)
+                for status_msg in status_messages:
+                    try:
+                        body = json.loads(status_msg.get('Body', '{}'))
+                        if body.get('type') == MSG_TERMINATE:
+                            logging.info("Received terminate message from master")
+                            shutdown_event.set()
+                            break
+                    except Exception:
+                        pass  # Ignore malformed messages
+                    finally:
+                        task_queue.delete_status_message(status_msg)
 
-            logging.info(f"Crawler {node_id} received URL: {url_to_crawl}")
-            task_start_time = time.time()
+                # Exit the loop if shutdown is requested
+                if shutdown_event.is_set():
+                    break
 
-            try:
-                # Fetch the webpage
-                logging.info(f"Fetching content from {url_to_crawl}")
-                response = requests.get(url_to_crawl, timeout=10)
-                content = response.text
-                content_size = len(content)
-                logging.info(f"Fetched {content_size} bytes from {url_to_crawl}")
+                # Get a URL to crawl
+                messages = task_queue.receive_messages(WaitTimeSeconds=5, MaxNumber=1)
+                if not messages:
+                    continue
 
-                # Parse the content to extract additional URLs
-                logging.info(f"Parsing content from {url_to_crawl}")
-                soup = BeautifulSoup(content, 'html.parser')
-                extracted_urls = []
-                base_url = url_to_crawl
-                parsed_base = urlparse(base_url)
-                
-                for a_tag in soup.find_all('a', href=True):
-                    href = a_tag['href']
-                    # Handle both absolute and relative URLs
-                    if href.startswith("http"):
-                        # Absolute URL
-                        extracted_urls.append(href)
-                    elif href.startswith("/"):
-                        # Relative URL - convert to absolute
-                        absolute_url = f"{parsed_base.scheme}://{parsed_base.netloc}{href}"
-                        extracted_urls.append(absolute_url)
-                    elif href and not href.startswith("#") and not href.startswith("javascript:"):
-                        # Other valid relative URL - convert to absolute
-                        absolute_url = urljoin(base_url, href)
-                        extracted_urls.append(absolute_url)
-                
-                # Log some stats about URL extraction
-                logging.info(f"Extracted {len(extracted_urls)} URLs from {url_to_crawl}")
-                if len(extracted_urls) > 0:
-                    sample_urls = extracted_urls[:5]
-                    logging.info(f"Sample extracted URLs: {sample_urls}")
-                
-                # Limit the number of URLs to avoid queue overload - max 50 URLs per page
-                if len(extracted_urls) > 50:
-                    logging.info(f"Limiting extracted URLs from {len(extracted_urls)} to 50")
-                    extracted_urls = random.sample(extracted_urls, 50)
-
-                # If no URLs are extracted, simulate a couple of URLs
-                if not extracted_urls:
-                    extracted_urls = [f"http://example.com/page_{node_id}_{i}" for i in range(2)]
-                    logging.info(f"No real URLs found, created {len(extracted_urls)} simulated URLs")
-
-                # Update statistics
-                stats["urls_processed"] += 1
-                stats["urls_extracted"] += len(extracted_urls)
-
-                # Detailed logging
-                logging.info(f"Crawler {node_id} crawled {url_to_crawl} and extracted {len(extracted_urls)} URLs in {time.time() - task_start_time:.2f} seconds")
-
-                # Send the list of newly discovered URLs to the queue for the master
-                discovered_urls_message = {
-                    "type": MSG_URLS_DISCOVERED,
-                    "node_id": node_id,
-                    "url": url_to_crawl,
-                    "urls": extracted_urls,
-                    "timestamp": time.time()
-                }
-                
-                # Log the message for debugging
-                logging.info(f"Sending URL discovery message with {len(extracted_urls)} URLs")
-                if len(extracted_urls) > 0:
-                    sample_urls = extracted_urls[:3]
-                    logging.info(f"Sample URLs being sent: {sample_urls}")
-                
-                # Make sure message isn't too large for SQS (256KB limit)
+                msg = messages[0]
                 try:
-                    json_message = json.dumps(discovered_urls_message)
-                    message_size = len(json_message.encode('utf-8'))
-                    
-                    if message_size > 250000:  # SQS limit is 262144 bytes
-                        logging.warning(f"URLs message too large ({message_size} bytes), truncating URL list")
-                        # Keep reducing the URL list until it fits
-                        while message_size > 250000 and len(extracted_urls) > 5:
-                            # Remove half the URLs
-                            extracted_urls = extracted_urls[:len(extracted_urls)//2]
-                            discovered_urls_message["urls"] = extracted_urls
-                            json_message = json.dumps(discovered_urls_message)
-                            message_size = len(json_message.encode('utf-8'))
-                        
-                        logging.info(f"Truncated URL list to {len(extracted_urls)} URLs, new message size: {message_size} bytes")
-                    
-                    # Send the message
-                    task_queue.send_message(json.dumps(discovered_urls_message))
-                    logging.info(f"Sent {len(extracted_urls)} URLs to the queue")
-                except Exception as e:
-                    logging.error(f"Error sending URL discovery message: {e}")
-                    # Try a simpler approach as fallback
-                    logging.info("Attempting fallback URL submission")
-                    for url in extracted_urls[:10]:  # Just send first 10 URLs directly
-                        try:
-                            task_queue.send_message(url)
-                        except Exception:
-                            pass
+                    url_to_crawl = msg.get('Body', '')
+                    if not url_to_crawl:
+                        url_to_crawl = getattr(msg, 'body', '')
+                except (TypeError, KeyError, AttributeError):
+                    try:
+                        url_to_crawl = msg.body
+                    except (AttributeError, TypeError):
+                        logging.error(f"Could not extract URL from message: {msg}")
+                        task_queue.delete_message(msg)
+                        continue
 
-                # Send the content to the indexer queue 
-                indexing_message = {
-                    "type": MSG_INDEX_CONTENT,
-                    "node_id": node_id,
-                    "url": url_to_crawl, 
-                    "content": content,
-                    "timestamp": time.time()
+                # Skip empty or invalid URLs
+                if not url_to_crawl or not isinstance(url_to_crawl, str):
+                    logging.warning(f"Skipping invalid URL: {url_to_crawl}")
+                    task_queue.delete_message(msg)
+                    continue
+
+                # Delete the message from the queue
+                task_queue.delete_message(msg)
+
+                # Normalize the URL before crawling
+                url_to_crawl = url_to_crawl.strip()
+                if not url_to_crawl.startswith(('http://', 'https://')):
+                    url_to_crawl = 'http://' + url_to_crawl
+
+                # Implement politeness - random delay between 1-3 seconds
+                time.sleep(random.uniform(1, 3))
+
+                # Fetch the page with proper headers and timeout
+                headers = {
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+                    'Accept-Language': 'en-US,en;q=0.5',
+                    'Connection': 'keep-alive',
+                    'Upgrade-Insecure-Requests': '1',
+                    'Cache-Control': 'max-age=0'
                 }
-                
-                # Check the size of the message to avoid SQS size limits
-                message_json = json.dumps(indexing_message)
-                message_size = len(message_json.encode('utf-8'))
-                
-                if message_size > 250000:  # SQS limit is 262144 bytes, use 250000 for safety
-                    logging.warning(f"Content for {url_to_crawl} is too large ({message_size} bytes), truncating")
-                    # Calculate how much to truncate based on current size
-                    truncate_to = int(len(content) * (250000 / message_size) * 0.9)  # 90% of calculated safe size
-                    indexing_message["content"] = content[:truncate_to]
-                    indexing_message["truncated"] = True
-                    indexing_message["original_size"] = len(content)
-                    logging.info(f"Truncated content from {len(content)} to {len(indexing_message['content'])} bytes")
-                
-                # Use the same queue for indexing
-                task_queue.send_message(json.dumps(indexing_message))
-                logging.info(f"Sent content to indexer for {url_to_crawl}")
 
-                # Send a status update
-                status_message = {
-                    "type": MSG_HEARTBEAT,
-                    "node_id": node_id,
-                    "url": url_to_crawl,
-                    "status": "completed",
-                    "found_urls": len(extracted_urls),
-                    "content_size": content_size,
-                    "timestamp": time.time()
-                }
-                task_queue.send_status_update(node_id, status_message)
-                logging.debug(f"Sent completion status to master node")
+                resp = requests.get(url_to_crawl, headers=headers, timeout=15, allow_redirects=True)
+                resp.raise_for_status()  # Raise exception for 4XX/5XX status codes
 
-                # Delete the message after successful processing
-                task_queue.delete_message(message)
+                # Check content type - only process HTML
+                content_type = resp.headers.get('Content-Type', '')
+                if not content_type.startswith('text/html'):
+                    logging.info(f"Skipping non-HTML content: {url_to_crawl} (Content-Type: {content_type})")
+                    continue
 
-                # Simulate occasional failures for testing fault tolerance
-                if random.random() < 0.05:  # 5% chance of simulated failure
-                    logging.warning(f"Simulating a brief node failure (testing fault tolerance)")
-                    time.sleep(12)  # Sleep longer than heartbeat timeout to trigger failure detection
-                
-            except requests.exceptions.Timeout:
-                stats["errors"] += 1
-                error_msg = f"Timeout fetching {url_to_crawl}"
-                logging.error(error_msg)
-                error_message = {
-                    "type": MSG_ERROR,
-                    "node_id": node_id,
-                    "url": url_to_crawl,
-                    "error": error_msg,
-                    "timestamp": time.time()
-                }
-                task_queue.send_status_update(node_id, error_message)
-                
-                # Delete the message to prevent endless retry loops
-                task_queue.delete_message(message)
-                
+                # ─── Upload HTML to S3 ────────────────────────────
+                key = urllib.parse.quote_plus(url_to_crawl)
+                ok = storage.upload_content(key, resp.text.encode('utf-8'))
+                if ok:
+                    logging.info(f"Storage upload OK for key: {key}")
+                    # Mark it in DynamoDB
+                    db.mark_url_as_fetched(url_to_crawl)
+                else:
+                    logging.error(f"Storage upload FAILED for key: {key}")
+
+                # ─── Record crawled URL in DynamoDB ────────────────
+                db.add_crawled_url(
+                    url_to_crawl,
+                    metadata={
+                        'status_code': resp.status_code,
+                        'fetched_at': datetime.now().isoformat(),
+                        'content_type': content_type
+                    }
+                )
+
+                # Update stats
+                stats['urls_crawled'] += 1
+
+                # ─── Extract and normalize links ─────────────────────────────────
+                soup = BeautifulSoup(resp.text, 'html.parser')
+                extracted_raw = []
+
+                # Extract links from <a> tags
+                for a in soup.find_all('a', href=True):
+                    href = a['href']
+                    normalized_url = normalize_url(url_to_crawl, href)
+                    if normalized_url:
+                        extracted_raw.append(normalized_url)
+
+                # Remove duplicates
+                extracted = list(set(extracted_raw))
+
+                # Limit the number of URLs to avoid overwhelming the system
+                if len(extracted) > 50:
+                    extracted = random.sample(extracted, 50)
+
+                # Update stats
+                stats['urls_discovered'] += len(extracted)
+
+                # ─── Send discovered URLs to master ────────────────
+                task_queue.send_status_message({
+                    'type': MSG_URLS_DISCOVERED,
+                    'node_id': node_id,
+                    'url': url_to_crawl,
+                    'urls': extracted,
+                    'timestamp': time.time(),
+                    'stats': {
+                        'url_count': len(extracted),
+                        'content_size': len(resp.text)
+                    }
+                })
+                logging.info(f"Crawled {url_to_crawl}, found {len(extracted)} links")
+
             except requests.exceptions.RequestException as e:
-                stats["errors"] += 1
-                error_msg = f"Error crawling {url_to_crawl}: {str(e)}"
-                logging.error(error_msg)
-                error_message = {
-                    "type": MSG_ERROR,
-                    "node_id": node_id,
-                    "url": url_to_crawl,
-                    "error": error_msg,
-                    "timestamp": time.time()
-                }
-                task_queue.send_status_update(node_id, error_message)
-                
-                # Delete the message to prevent endless retry loops
-                task_queue.delete_message(message)
-                
+                if 'url_to_crawl' in locals():
+                    logging.error(f"Request error for {url_to_crawl}: {e}")
+                    stats['errors'] += 1
+                    task_queue.send_status_message({
+                        'type': MSG_ERROR,
+                        'node_id': node_id,
+                        'url': url_to_crawl,
+                        'error': f"Request error: {str(e)}"
+                    })
             except Exception as e:
-                stats["errors"] += 1
-                error_msg = f"Unexpected error processing URL {url_to_crawl}: {str(e)}"
-                logging.error(error_msg)
-                error_message = {
-                    "type": MSG_ERROR,
-                    "node_id": node_id,
-                    "url": url_to_crawl,
-                    "error": error_msg,
-                    "timestamp": time.time()
-                }
-                task_queue.send_status_update(node_id, error_message)
-                
-                # Delete the message to prevent endless retry loops
-                task_queue.delete_message(message)
+                if 'url_to_crawl' in locals():
+                    logging.error(f"Error crawling {url_to_crawl}: {e}")
+                    stats['errors'] += 1
+                    task_queue.send_status_message({
+                        'type': MSG_ERROR,
+                        'node_id': node_id,
+                        'url': url_to_crawl,
+                        'error': str(e)
+                    })
+                else:
+                    logging.error(f"Unexpected error in crawler: {e}")
 
-            # Log task completion time
-            task_duration = time.time() - task_start_time
-            logging.info(f"Task for {url_to_crawl} completed in {task_duration:.2f} seconds")
-            
-            # Pause briefly to simulate a delay and help stagger requests
-            time.sleep(0.1)
-    
-    except Exception as e:
-        logging.critical(f"Critical error in crawler {node_id}: {e}")
-        import traceback
-        logging.critical(traceback.format_exc())
     finally:
-        # Set shutdown flag for heartbeat thread
-        shutdown_flag = True
-        heartbeat_thread.join(timeout=1.0)
-        
-        # Log final statistics
-        total_runtime = time.time() - stats["start_time"]
-        logging.info(f"Crawler {node_id} shutting down. Final statistics:")
-        logging.info(f"  - Total runtime: {total_runtime:.2f} seconds")
-        logging.info(f"  - URLs processed: {stats['urls_processed']}")
-        logging.info(f"  - URLs extracted: {stats['urls_extracted']}")
-        logging.info(f"  - Errors encountered: {stats['errors']}")
-        logging.info(f"Crawler {node_id} exiting")
+        # Perform cleanup
+        logging.info("Crawler shutting down...")
+
+        # Send final heartbeat with shutdown notification
+        try:
+            task_queue.send_status_message({
+                'type': MSG_HEARTBEAT,
+                'node_id': node_id,
+                'timestamp': time.time(),
+                'stats': stats,
+                'status': 'shutting_down'
+            })
+        except Exception as e:
+            logging.error(f"Error sending final heartbeat: {e}")
+
+        # Wait for heartbeat thread to finish
+        heartbeat_thread.join(timeout=2.0)
+
+        # Shutdown cloud services
+        try:
+            task_queue.shutdown_queue()
+        except Exception as e:
+            logging.error(f"Error shutting down queue: {e}")
+
+        logging.info("Crawler shutdown complete")
 
 if __name__ == "__main__":
-    crawler_process() 
+    import sys
+    crawler_process(*sys.argv[1:])

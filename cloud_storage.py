@@ -1,486 +1,84 @@
 import boto3
-import os
 import logging
-import json
-import hashlib
-import time
 from botocore.exceptions import ClientError
-from datetime import datetime
-import uuid
 
 class CloudStorage:
     """
-    Cloud Storage class for storing crawled data in AWS S3.
-    Provides methods to store both raw HTML and processed text from crawled web pages.
+    CloudStorage class for managing content upload/download using AWS S3.
+    Features:
+    - Bucket existence check and creation if needed
+    - AWS S3 only operation (no local fallback)
     """
-    
-    def __init__(self, bucket_name='crawler-data-bucket'):
-        """
-        Initialize the CloudStorage class.
-        
-        Args:
-            bucket_name (str): The S3 bucket name to use. If None, will use environment variable or default.
-        """
-        self.logger = logging.getLogger('CloudStorage')
-        self.logger.setLevel(logging.INFO)
-        
-        # Make sure the logger has a handler
-        if not self.logger.handlers:
-            handler = logging.StreamHandler()
-            formatter = logging.Formatter('%(asctime)s - CloudStorage - %(levelname)s - %(message)s')
-            handler.setFormatter(formatter)
-            self.logger.addHandler(handler)
-            
-            # Add file handler
-            log_dir = "logs"
-            os.makedirs(log_dir, exist_ok=True)
-            file_handler = logging.FileHandler(os.path.join(log_dir, 'storage.log'))
-            file_handler.setFormatter(formatter)
-            self.logger.addHandler(file_handler)
-        
-        self.use_cloud = True
+
+    def __init__(self, bucket_name: str, region: str = None):
+        self.bucket = bucket_name
+        self.region = region
+
+        # Initialize S3 client and check bucket
+        self._initialize_s3()
+
+    def _initialize_s3(self):
+        """Initialize S3 client and check/create bucket."""
+        # Create a session that respects the passed-in region
+        session = boto3.session.Session(region_name=self.region)
+        self.s3 = session.client('s3')
+
+        # Check if bucket exists
         try:
-            self.s3 = boto3.client('s3')
-            # Check if bucket exists, if not create it
-            self._ensure_bucket_exists(bucket_name)
-            self.bucket_name = bucket_name
-            self.logger.info(f"CloudStorage initialized with S3 bucket: {bucket_name}")
-        except Exception as e:
-            self.logger.warning(f"Failed to initialize S3, falling back to local storage: {e}")
-            self.use_cloud = False
-            # Create local directories for storage
-            os.makedirs('data/raw_html', exist_ok=True)
-            os.makedirs('data/processed_text', exist_ok=True)
-            os.makedirs('data/metadata', exist_ok=True)
-    
-    def _ensure_bucket_exists(self, bucket_name):
-        """Ensure the S3 bucket exists, creating it if necessary."""
-        try:
-            self.s3.head_bucket(Bucket=bucket_name)
-            self.logger.info(f"Bucket {bucket_name} already exists")
+            self.s3.head_bucket(Bucket=self.bucket)
+            logging.info(f"Using existing S3 bucket: {self.bucket}")
         except ClientError as e:
             error_code = e.response.get('Error', {}).get('Code')
-            
             if error_code == '404':
-                self.logger.info(f"Bucket {bucket_name} does not exist. Creating...")
-                try:
-                    region = boto3.session.Session().region_name
-                    if region == 'us-east-1':
-                        self.s3.create_bucket(Bucket=bucket_name)
-                    else:
-                        self.s3.create_bucket(
-                            Bucket=bucket_name,
-                            CreateBucketConfiguration={'LocationConstraint': region}
-                        )
-                    self.logger.info(f"Successfully created bucket {bucket_name}")
-                except ClientError as create_error:
-                    self.logger.error(f"Failed to create bucket: {create_error}")
-                    raise
+                # Bucket doesn't exist, create it
+                self._create_bucket()
             else:
-                self.logger.error(f"Error checking bucket: {e}")
+                # Other error (permissions, etc.)
+                logging.error(f"Error accessing S3 bucket: {e}")
                 raise
-    
-    def _generate_key(self, url, content_type):
-        """
-        Generate a unique S3 key for a URL.
-        
-        Args:
-            url (str): The URL of the crawled page
-            content_type (str): Type of content (raw_html, processed_text, metadata)
-            
-        Returns:
-            str: The S3 key
-        """
-        # Create a hash of the URL to use in the key
-        url_hash = hashlib.md5(url.encode()).hexdigest()
-        
-        # Use the current date as part of the key for organization
-        date_str = datetime.now().strftime('%Y/%m/%d')
-        
-        # Return a key in the format: content_type/YYYY/MM/DD/url_hash.extension
-        extension = 'html' if content_type == 'raw_html' else 'json' if content_type == 'metadata' else 'txt'
-        return f"{content_type}/{date_str}/{url_hash}.{extension}"
-    
-    def store_raw_html(self, url, html_content):
-        """
-        Store raw HTML content in S3.
-        
-        Args:
-            url (str): The URL of the crawled page
-            html_content (str): The raw HTML content
-            
-        Returns:
-            dict: Storage info including success status and storage location
-        """
-        if not self.use_cloud:
-            self.logger.warning("S3 client not initialized. Falling back to local storage.")
-            return self._local_store(url, html_content, 'raw_html')
-        
-        key = self._generate_key(url, 'raw_html')
-        try:
-            self.s3.put_object(
-                Bucket=self.bucket_name,
-                Key=key,
-                Body=html_content,
-                ContentType='text/html',
-                Metadata={
-                    'url': url,
-                    'timestamp': str(int(time.time())),
-                    'storage_type': 'raw_html'
-                }
-            )
-            self.logger.info(f"Successfully stored raw HTML for {url} at s3://{self.bucket_name}/{key}")
-            return {
-                'success': True,
-                'storage_type': 's3',
-                'bucket': self.bucket_name,
-                'key': key,
-                'url': url,
-                'content_type': 'raw_html',
-                'timestamp': datetime.now().isoformat()
-            }
-        except Exception as e:
-            self.logger.error(f"Failed to store raw HTML for {url}: {e}")
-            # Fall back to local storage
-            return self._local_store(url, html_content, 'raw_html')
-    
-    def store_processed_text(self, url, processed_text, metadata=None):
-        """
-        Store processed text content in S3.
-        
-        Args:
-            url (str): The URL of the crawled page
-            processed_text (str): The processed text content
-            metadata (dict): Optional metadata about the processed content
-            
-        Returns:
-            dict: Storage info including success status and storage location
-        """
-        if not self.use_cloud:
-            self.logger.warning("S3 client not initialized. Falling back to local storage.")
-            return self._local_store(url, processed_text, 'processed_text', metadata)
-        
-        text_key = self._generate_key(url, 'processed_text')
-        try:
-            # Store the processed text
-            self.s3.put_object(
-                Bucket=self.bucket_name,
-                Key=text_key,
-                Body=processed_text,
-                ContentType='text/plain',
-                Metadata={
-                    'url': url,
-                    'timestamp': str(int(time.time())),
-                    'storage_type': 'processed_text'
-                }
-            )
-            self.logger.info(f"Successfully stored processed text for {url} at s3://{self.bucket_name}/{text_key}")
-            
-            # Store metadata if provided
-            if metadata:
-                meta_key = self._generate_key(url, 'metadata')
-                self.s3.put_object(
-                    Bucket=self.bucket_name,
-                    Key=meta_key,
-                    Body=json.dumps(metadata),
-                    ContentType='application/json',
-                    Metadata={
-                        'url': url,
-                        'timestamp': str(int(time.time())),
-                        'storage_type': 'metadata'
-                    }
-                )
-                self.logger.info(f"Successfully stored metadata for {url} at s3://{self.bucket_name}/{meta_key}")
-            
-            return {
-                'success': True,
-                'storage_type': 's3',
-                'bucket': self.bucket_name,
-                'text_key': text_key,
-                'meta_key': meta_key if metadata else None,
-                'url': url,
-                'content_type': 'processed_text',
-                'timestamp': datetime.now().isoformat()
-            }
-        except Exception as e:
-            self.logger.error(f"Failed to store processed text for {url}: {e}")
-            # Fall back to local storage
-            return self._local_store(url, processed_text, 'processed_text', metadata)
-    
-    def _local_store(self, url, content, content_type, metadata=None):
-        """
-        Fall back to local storage when S3 storage fails.
-        
-        Args:
-            url (str): The URL of the crawled page
-            content (str): The content to store
-            content_type (str): Type of content (raw_html, processed_text)
-            metadata (dict): Optional metadata about the content
-            
-        Returns:
-            dict: Storage info including success status and storage location
-        """
-        try:
-            # Create directories if they don't exist
-            local_storage_dir = os.path.join('data', content_type)
-            os.makedirs(local_storage_dir, exist_ok=True)
-            
-            # Create a filename based on URL hash
-            url_hash = hashlib.md5(url.encode()).hexdigest()
-            extension = 'html' if content_type == 'raw_html' else 'txt'
-            filename = f"{url_hash}.{extension}"
-            filepath = os.path.join(local_storage_dir, filename)
-            
-            # Write content to file
-            with open(filepath, 'w', encoding='utf-8') as f:
-                f.write(content)
-            
-            # Store metadata if provided
-            if metadata:
-                meta_dir = os.path.join('data', 'metadata')
-                meta_filename = f"{url_hash}.json"
-                meta_filepath = os.path.join(meta_dir, meta_filename)
-                os.makedirs(meta_dir, exist_ok=True)
-                
-                with open(meta_filepath, 'w', encoding='utf-8') as f:
-                    json.dump(metadata, f, indent=2)
-            
-            self.logger.info(f"Successfully stored {content_type} for {url} locally at {filepath}")
-            return {
-                'success': True,
-                'storage_type': 'local',
-                'filepath': filepath,
-                'meta_filepath': meta_filepath if metadata else None,
-                'url': url,
-                'content_type': content_type,
-                'timestamp': datetime.now().isoformat()
-            }
-        except Exception as e:
-            self.logger.error(f"Failed to store {content_type} locally for {url}: {e}")
-            return {
-                'success': False,
-                'storage_type': 'none',
-                'error': str(e),
-                'url': url,
-                'content_type': content_type,
-                'timestamp': datetime.now().isoformat()
-            }
-    
-    def retrieve_raw_html(self, url):
-        """
-        Retrieve raw HTML content from S3.
-        
-        Args:
-            url (str): The URL of the crawled page
-            
-        Returns:
-            str: The raw HTML content or None if not found/error
-        """
-        if not self.use_cloud:
-            return self._local_retrieve(url, 'raw_html')
-        
-        key = self._generate_key(url, 'raw_html')
-        try:
-            response = self.s3.get_object(Bucket=self.bucket_name, Key=key)
-            html_content = response['Body'].read().decode('utf-8')
-            self.logger.info(f"Successfully retrieved raw HTML for {url}")
-            return html_content
-        except ClientError as e:
-            error_code = e.response.get('Error', {}).get('Code')
-            if error_code == 'NoSuchKey':
-                self.logger.warning(f"No raw HTML found for {url} in S3")
-                # Try local storage as fallback
-                return self._local_retrieve(url, 'raw_html')
-            else:
-                self.logger.error(f"Error retrieving raw HTML for {url}: {e}")
-                return None
-        except Exception as e:
-            self.logger.error(f"Error retrieving raw HTML for {url}: {e}")
-            return None
-    
-    def retrieve_processed_text(self, url):
-        """
-        Retrieve processed text content from S3.
-        
-        Args:
-            url (str): The URL of the crawled page
-            
-        Returns:
-            tuple: (text, metadata) where text is the processed text and metadata is a dict or None
-        """
-        if not self.use_cloud:
-            return self._local_retrieve(url, 'processed_text', with_metadata=True)
-        
-        text_key = self._generate_key(url, 'processed_text')
-        meta_key = self._generate_key(url, 'metadata')
-        
-        try:
-            # Get processed text
-            text_response = self.s3.get_object(Bucket=self.bucket_name, Key=text_key)
-            processed_text = text_response['Body'].read().decode('utf-8')
-            
-            # Try to get metadata
-            metadata = None
-            try:
-                meta_response = self.s3.get_object(Bucket=self.bucket_name, Key=meta_key)
-                metadata = json.loads(meta_response['Body'].read().decode('utf-8'))
-            except ClientError:
-                self.logger.warning(f"No metadata found for {url} in S3")
-            
-            self.logger.info(f"Successfully retrieved processed text for {url}")
-            return processed_text, metadata
-        
-        except ClientError as e:
-            error_code = e.response.get('Error', {}).get('Code')
-            if error_code == 'NoSuchKey':
-                self.logger.warning(f"No processed text found for {url} in S3")
-                # Try local storage as fallback
-                return self._local_retrieve(url, 'processed_text', with_metadata=True)
-            else:
-                self.logger.error(f"Error retrieving processed text for {url}: {e}")
-                return None, None
-        except Exception as e:
-            self.logger.error(f"Error retrieving processed text for {url}: {e}")
-            return None, None
-    
-    def _local_retrieve(self, url, content_type, with_metadata=False):
-        """
-        Retrieve content from local storage.
-        
-        Args:
-            url (str): The URL of the crawled page
-            content_type (str): Type of content (raw_html, processed_text)
-            with_metadata (bool): Whether to retrieve metadata as well
-            
-        Returns:
-            Union[str, tuple]: Content string or (content, metadata) tuple if with_metadata
-        """
-        try:
-            # Create filepath
-            url_hash = hashlib.md5(url.encode()).hexdigest()
-            extension = 'html' if content_type == 'raw_html' else 'txt'
-            filename = f"{url_hash}.{extension}"
-            filepath = os.path.join('data', content_type, filename)
-            
-            # Check if file exists
-            if not os.path.exists(filepath):
-                self.logger.warning(f"No {content_type} found for {url} locally")
-                return None if not with_metadata else (None, None)
-            
-            # Read content
-            with open(filepath, 'r', encoding='utf-8') as f:
-                content = f.read()
-            
-            if not with_metadata:
-                return content
-            
-            # Try to read metadata if requested
-            metadata = None
-            if with_metadata:
-                meta_filepath = os.path.join('data', 'metadata', f"{url_hash}.json")
-                if os.path.exists(meta_filepath):
-                    with open(meta_filepath, 'r', encoding='utf-8') as f:
-                        metadata = json.load(f)
-            
-            return content, metadata
-            
-        except Exception as e:
-            self.logger.error(f"Error retrieving {content_type} locally for {url}: {e}")
-            return None if not with_metadata else (None, None)
-    
-    def list_stored_urls(self, content_type='raw_html', limit=100):
-        """
-        List URLs that have been stored in S3.
-        
-        Args:
-            content_type (str): Type of content (raw_html, processed_text)
-            limit (int): Maximum number of URLs to return
-            
-        Returns:
-            list: List of URLs stored in S3
-        """
-        if not self.use_cloud:
-            return self._local_list_urls(content_type, limit)
-        
-        try:
-            # List objects in the bucket with the specified prefix
-            response = self.s3.list_objects_v2(
-                Bucket=self.bucket_name,
-                Prefix=f"{content_type}/",
-                MaxKeys=limit
-            )
-            
-            # Extract URLs from metadata
-            urls = []
-            for obj in response.get('Contents', []):
-                try:
-                    # Get object metadata
-                    head = self.s3.head_object(Bucket=self.bucket_name, Key=obj['Key'])
-                    url = head.get('Metadata', {}).get('url')
-                    if url:
-                        urls.append(url)
-                except Exception as e:
-                    self.logger.error(f"Error retrieving metadata for {obj['Key']}: {e}")
-            
-            return urls
-        except Exception as e:
-            self.logger.error(f"Error listing URLs in S3: {e}")
-            return self._local_list_urls(content_type, limit)
-    
-    def _local_list_urls(self, content_type, limit):
-        """
-        List URLs that have been stored locally.
-        
-        Args:
-            content_type (str): Type of content (raw_html, processed_text)
-            limit (int): Maximum number of URLs to return
-            
-        Returns:
-            list: List of URLs stored locally
-        """
-        try:
-            directory = os.path.join('data', content_type)
-            if not os.path.exists(directory):
-                return []
-            
-            # List files in the directory
-            files = os.listdir(directory)[:limit]
-            
-            # TODO: In a real implementation, we would store URL information with each file
-            # For now, we just return the filenames
-            return [f.split('.')[0] for f in files]
-        except Exception as e:
-            self.logger.error(f"Error listing URLs locally: {e}")
-            return []
 
+    def _create_bucket(self):
+        """Create S3 bucket if it doesn't exist."""
+        if self.region and self.region != 'us-east-1':
+            # For regions other than us-east-1, we need to specify LocationConstraint
+            self.s3.create_bucket(
+                Bucket=self.bucket,
+                CreateBucketConfiguration={'LocationConstraint': self.region}
+            )
+        else:
+            # For us-east-1, we don't specify LocationConstraint
+            self.s3.create_bucket(Bucket=self.bucket)
 
-# For testing
-if __name__ == "__main__":
-    logging.basicConfig(level=logging.INFO)
-    
-    # Create storage instance
-    storage = CloudStorage(bucket_name='test-crawler-bucket')
-    
-    # Test storing raw HTML
-    test_url = "https://example.com/test"
-    test_html = "<html><body><h1>Test Page</h1><p>This is a test.</p></body></html>"
-    result = storage.store_raw_html(test_url, test_html)
-    print(f"Storage result: {result}")
-    
-    # Test storing processed text with metadata
-    test_text = "Test Page\n\nThis is a test."
-    test_metadata = {
-        "title": "Test Page",
-        "keywords": ["test", "example"],
-        "extracted_links": ["https://example.com/link1", "https://example.com/link2"]
-    }
-    result = storage.store_processed_text(test_url, test_text, test_metadata)
-    print(f"Processed text storage result: {result}")
-    
-    # Test retrieval
-    html = storage.retrieve_raw_html(test_url)
-    print(f"Retrieved HTML: {html[:50]}...")
-    
-    text, metadata = storage.retrieve_processed_text(test_url)
-    print(f"Retrieved text: {text}")
-    print(f"Retrieved metadata: {metadata}") 
+        logging.info(f"Created new S3 bucket: {self.bucket}")
+        return True
+
+    def is_cloud_mode(self) -> bool:
+        """Return whether storage is operating in cloud mode."""
+        return True
+
+    def upload_content(self, key: str, content: bytes) -> bool:
+        """
+        Upload bytes content under the given key to S3.
+        """
+        try:
+            self.s3.put_object(Bucket=self.bucket, Key=key, Body=content)
+            logging.info(f"Uploaded to S3: {key}")
+            return True
+        except Exception as e:
+            logging.error(f"S3 upload error for {key}: {e}")
+            return False
+
+    def get_content(self, key: str) -> bytes:
+        """
+        Download the content for the given key from S3.
+        """
+        try:
+            resp = self.s3.get_object(Bucket=self.bucket, Key=key)
+            content = resp['Body'].read()
+            logging.info(f"Downloaded from S3: {key}")
+            return content
+        except Exception as e:
+            logging.error(f"S3 download error for {key}: {e}")
+            return b""
+
+# This method is already defined above
