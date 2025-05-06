@@ -1,0 +1,337 @@
+2025-05-04 02:42:40,057 - Master - INFO - Saved 7218 visited URLs to visited_urls.json
+2025-05-04 02:42:40,057 - Master - INFO - Sending terminate signal to all nodes...
+2025-05-04 02:42:40,064 - Master - INFO - Shutting down CloudQueue
+2025-05-04 02:42:40,064 - Master - INFO - Master shutdown complete
+ubuntu@ip-172-31-19-167:~/crawler$ python3 main.py --role master
+2025-05-04 02:50:38,004 - Master - INFO - Master node starting up
+2025-05-04 02:50:38,067 - Master - INFO - Found existing queue: https://queue.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 02:50:38,072 - Master - INFO - Found existing status queue: https://queue.amazonaws.com/405823273955/crawler-status-queue       
+2025-05-04 02:50:38,072 - Master - INFO - Successfully initialized SQS queues
+2025-05-04 02:50:38,164 - Master - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 02:50:38,167 - Master - INFO - Loaded 7218 visited URLs from visited_urls.json
+2025-05-04 02:50:38,173 - Master - INFO - URL tracking table is empty. Seeding with initial URLs...
+2025-05-04 02:50:38,175 - Master - INFO - Saved 7218 visited URLs to visited_urls.json
+2025-05-04 02:50:38,205 - Master - INFO - Seeded URL → https://www.python.org
+2025-05-04 02:50:38,231 - Master - INFO - Seeded URL → https://en.wikipedia.org/wiki/Python_(programming_language)
+2025-05-04 02:50:38,246 - Master - INFO - Seeded URL → https://github.com/python
+2025-05-04 02:50:38,258 - Master - INFO - Seeded URL → https://stackoverflow.com/questions/tagged/python
+2025-05-04 02:50:38,279 - Master - INFO - Seeded URL → https://docs.python.org/3
+2025-05-04 02:50:38,292 - Master - INFO - Seeded URL → https://pypi.org
+2025-05-04 02:50:38,304 - Master - INFO - Seeded URL → https://www.djangoproject.com
+2025-05-04 02:50:38,316 - Master - INFO - Seeded URL → https://flask.palletsprojects.com
+2025-05-04 02:50:38,326 - Master - INFO - Seeded URL → https://aws.amazon.com
+2025-05-04 02:50:38,339 - Master - INFO - Seeded URL → https://cloud.google.com
+2025-05-04 02:50:38,349 - Master - INFO - Seeded URL → https://azure.microsoft.com
+2025-05-04 02:50:38,361 - Master - INFO - Seeded URL → https://www.reddit.com/r/Python
+2025-05-04 02:50:38,372 - Master - INFO - Seeded URL → https://news.ycombinator.com
+2025-05-04 02:50:38,384 - Master - INFO - Seeded URL → https://www.bbc.com
+2025-05-04 02:50:38,395 - Master - INFO - Seeded URL → https://www.nytimes.com
+2025-05-04 02:50:38,400 - Master - INFO - Saved 7218 visited URLs to visited_urls.json
+2025-05-04 02:50:41,385 - Master - INFO - Queued 35 new URLs from https://www.python.org
+2025-05-04 02:50:45,318 - Master - INFO - Queued 50 new URLs from https://flask.palletsprojects.com
+2025-05-04 02:50:46,644 - Master - INFO - Queued 12 new URLs from https://aws.amazon.com
+2025-05-04 02:50:48,256 - Master - ERROR - [ip-172-31-37-254] Error crawling https://stackoverflow.com/questions/tagged/python: Request error: 403 Client Error: Forbidden for url: https://stackoverflow.com/questions/tagged/python
+2025-05-04 02:50:49,667 - Master - INFO - Queued 30 new URLs from https://www.nytimes.com
+2025-05-04 02:50:51,928 - Master - INFO - Queued 32 new URLs from https://www.python.org/events
+2025-05-04 02:50:55,337 - Master - INFO - Queued 31 new URLs from https://www.python.org/jobs
+2025-05-04 02:51:01,509 - Master - INFO - Queued 14 new URLs from https://www.python.org/psf/annual-report/2021
+2025-05-04 02:51:05,719 - Master - INFO - Queued 50 new URLs from https://pythoninsider.blogspot.com/2025/04/python-3140a7-3133-31210-31112-31017.html
+2025-05-04 02:51:10,226 - Master - ERROR - [ip-172-31-37-254] Error crawling https://www.reddit.com/r/Python: Request error: 403 Client Error: Blocked for url: https://www.reddit.com/r/Python/
+2025-05-04 02:51:15,004 - Master - INFO - Queued 14 new URLs from https://www.python.org/doc/essays
+2025-05-04 02:51:19,737 - Master - INFO - Queued 3 new URLs from https://www.python.org/dev
+^C2025-05-04 02:51:19,848 - Master - INFO - Received termination signal. Shutting down master gracefully...
+2025-05-04 02:51:20,743 - Master - INFO - Master shutting down...
+2025-05-04 02:51:20,749 - Master - INFO - Saved 7489 visited URLs to visited_urls.json
+2025-05-04 02:51:20,749 - Master - INFO - Sending terminate signal to all nodes...
+2025-05-04 02:51:20,756 - Master - INFO - Shutting down CloudQueue
+2025-05-04 02:51:20,756 - Master - INFO - Master shutdown complete
+ubuntu@ip-172-31-19-167:~/crawler$ python3 main.py --role master
+2025-05-04 02:58:19,468 - Master - INFO - Master node starting up
+2025-05-04 02:58:19,536 - Master - INFO - Found existing queue: https://queue.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 02:58:19,540 - Master - INFO - Found existing status queue: https://queue.amazonaws.com/405823273955/crawler-status-queue       
+2025-05-04 02:58:19,541 - Master - INFO - Successfully initialized SQS queues
+2025-05-04 02:58:19,630 - Master - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 02:58:19,632 - Master - INFO - Loaded 7489 visited URLs from visited_urls.json
+2025-05-04 02:58:19,639 - Master - INFO - URL tracking table is empty. Seeding with initial URLs...
+2025-05-04 02:58:19,641 - Master - INFO - Saved 7489 visited URLs to visited_urls.json
+2025-05-04 02:58:19,671 - Master - INFO - Seeded URL → https://www.python.org
+2025-05-04 02:58:19,693 - Master - INFO - Seeded URL → https://en.wikipedia.org/wiki/Python_(programming_language)
+2025-05-04 02:58:19,714 - Master - INFO - Seeded URL → https://github.com/python
+2025-05-04 02:58:19,724 - Master - INFO - Seeded URL → https://stackoverflow.com/questions/tagged/python
+2025-05-04 02:58:19,737 - Master - INFO - Seeded URL → https://docs.python.org/3
+2025-05-04 02:58:19,748 - Master - INFO - Seeded URL → https://pypi.org
+2025-05-04 02:58:19,761 - Master - INFO - Seeded URL → https://www.djangoproject.com
+2025-05-04 02:58:19,772 - Master - INFO - Seeded URL → https://flask.palletsprojects.com
+2025-05-04 02:58:19,789 - Master - INFO - Seeded URL → https://aws.amazon.com
+2025-05-04 02:58:19,800 - Master - INFO - Seeded URL → https://cloud.google.com
+2025-05-04 02:58:19,811 - Master - INFO - Seeded URL → https://azure.microsoft.com
+2025-05-04 02:58:19,823 - Master - INFO - Seeded URL → https://www.reddit.com/r/Python
+2025-05-04 02:58:19,835 - Master - INFO - Seeded URL → https://news.ycombinator.com
+2025-05-04 02:58:19,847 - Master - INFO - Seeded URL → https://www.bbc.com
+2025-05-04 02:58:19,858 - Master - INFO - Seeded URL → https://www.nytimes.com
+2025-05-04 02:58:19,862 - Master - INFO - Saved 7489 visited URLs to visited_urls.json
+2025-05-04 02:58:23,129 - Master - INFO - Queued 49 new URLs from https://en.wikipedia.org/wiki/Python_(programming_language)
+2025-05-04 02:58:29,536 - Master - INFO - Queued 49 new URLs from https://www.bbc.com
+2025-05-04 02:58:30,577 - Master - ERROR - [ip-172-31-4-77] Error crawling https://web.archive.org/web/20210307165521/https://www.theregister.com/2017/01/05/googles_grumpy_makes_python_go: Request error: 429 Client Error: Too Many Requests for url: https://web.archive.org/web/20210307165521/https://www.theregister.com/2017/01/05/googles_grumpy_makes_python_go
+2025-05-04 02:58:36,333 - Master - INFO - Queued 26 new URLs from https://docs.python.org/3
+2025-05-04 02:58:42,946 - Master - INFO - Queued 11 new URLs from https://cloud.google.com
+2025-05-04 02:58:46,828 - Master - ERROR - [ip-172-31-4-77] Error crawling https://web.archive.org/web/20231222000457/https://mypyc.readthedocs.io/en/latest/introduction.html: Request error: 429 Client Error: Too Many Requests for url: https://web.archive.org/web/20231222000457/https://mypyc.readthedocs.io/en/latest/introduction.html
+2025-05-04 02:58:52,573 - Master - INFO - Queued 43 new URLs from https://labs.spotify.com/2013/03/20/how-we-use-python-at-spotify
+2025-05-04 02:58:56,924 - Master - INFO - Queued 50 new URLs from https://en.wikipedia.org/wiki/Special:BookSources/978-0-321-68056-3
+2025-05-04 02:59:00,100 - Master - INFO - Status: 3 active crawlers, 243 URLs queued, 335 URLs discovered, 2 errors
+2025-05-04 02:59:02,759 - Master - INFO - Queued 46 new URLs from https://en.wikipedia.org/wiki/XLispStat
+2025-05-04 02:59:08,271 - Master - INFO - Queued 49 new URLs from https://en.wikipedia.org/wiki/Immutable_object
+2025-05-04 02:59:12,980 - Master - INFO - Queued 9 new URLs from https://azure.microsoft.com
+2025-05-04 02:59:17,034 - Master - INFO - Queued 49 new URLs from https://en.wikipedia.org/wiki/ALGOL
+^C2025-05-04 02:59:19,613 - Master - INFO - Received termination signal. Shutting down master gracefully...
+2025-05-04 02:59:20,094 - Master - INFO - Master shutting down...
+2025-05-04 02:59:20,100 - Master - INFO - Saved 7870 visited URLs to visited_urls.json
+2025-05-04 02:59:20,100 - Master - INFO - Sending terminate signal to all nodes...
+2025-05-04 02:59:20,106 - Master - INFO - Shutting down CloudQueue
+2025-05-04 02:59:20,106 - Master - INFO - Master shutdown complete
+ubuntu@ip-172-31-19-167:~/crawler$ python3 main.py --role master
+2025-05-04 03:03:31,302 - Master - INFO - Master node starting up
+2025-05-04 03:03:31,363 - Master - INFO - Found existing queue: https://queue.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 03:03:31,368 - Master - INFO - Found existing status queue: https://queue.amazonaws.com/405823273955/crawler-status-queue       
+2025-05-04 03:03:31,369 - Master - INFO - Successfully initialized SQS queues
+2025-05-04 03:03:31,462 - Master - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 03:03:31,464 - Master - INFO - Loaded 7870 visited URLs from visited_urls.json
+2025-05-04 03:03:31,471 - Master - INFO - Saved 7870 visited URLs to visited_urls.json
+2025-05-04 03:03:31,475 - Master - INFO - URL tracking table is empty. Seeding with initial URLs...
+2025-05-04 03:03:31,506 - Master - INFO - Seeded URL → https://www.python.org
+2025-05-04 03:03:31,534 - Master - INFO - Seeded URL → https://en.wikipedia.org/wiki/Python_(programming_language)
+2025-05-04 03:03:31,549 - Master - INFO - Seeded URL → https://github.com/python
+2025-05-04 03:03:31,560 - Master - INFO - Seeded URL → https://stackoverflow.com/questions/tagged/python
+2025-05-04 03:03:31,571 - Master - INFO - Seeded URL → https://docs.python.org/3
+2025-05-04 03:03:31,583 - Master - INFO - Seeded URL → https://pypi.org
+2025-05-04 03:03:31,596 - Master - INFO - Seeded URL → https://www.djangoproject.com
+2025-05-04 03:03:31,609 - Master - INFO - Seeded URL → https://flask.palletsprojects.com
+2025-05-04 03:03:31,621 - Master - INFO - Seeded URL → https://aws.amazon.com
+2025-05-04 03:03:31,633 - Master - INFO - Seeded URL → https://cloud.google.com
+2025-05-04 03:03:31,647 - Master - INFO - Seeded URL → https://azure.microsoft.com
+2025-05-04 03:03:31,658 - Master - INFO - Seeded URL → https://www.reddit.com/r/Python
+2025-05-04 03:03:31,672 - Master - INFO - Seeded URL → https://news.ycombinator.com
+2025-05-04 03:03:31,686 - Master - INFO - Seeded URL → https://www.bbc.com
+2025-05-04 03:03:31,697 - Master - INFO - Seeded URL → https://www.nytimes.com
+2025-05-04 03:03:31,701 - Master - INFO - Saved 7870 visited URLs to visited_urls.json
+2025-05-04 03:03:35,311 - Master - INFO - Queued 45 new URLs from https://en.wikipedia.org/wiki/Python_(programming_language)
+2025-05-04 03:03:37,902 - Master - INFO - Queued 42 new URLs from https://en.wikipedia.org/wiki/Category:Python_(programming_language)_web_frameworks
+2025-05-04 03:03:43,758 - Master - INFO - Queued 47 new URLs from https://en.wikipedia.org/wiki/Programming_paradigm
+2025-05-04 03:03:46,945 - Master - ERROR - [ip-172-31-37-254] Error crawling https://web.archive.org/web/20200610050047/https://docs.python.org/3/tutorial/datastructures.html: Request error: 429 Client Error: Too Many Requests for url: https://web.archive.org/web/20200610050047/https://docs.python.org/3/tutorial/datastructures.html
+2025-05-04 03:03:51,994 - Master - ERROR - [ip-172-31-4-77] Error crawling https://web.archive.org/web/20180803065954/http://brython.info: Request error: 429 Client Error: Too Many Requests for url: https://web.archive.org/web/20180803065954/http://brython.info
+2025-05-04 03:03:57,391 - Master - ERROR - [ip-172-31-4-77] Error crawling https://web.archive.org/web/20121023030209/http://docs.python.org/tutorial/classes.html: Request error: 429 Client Error: Too Many Requests for url: https://web.archive.org/web/20121023030209/http://docs.python.org/tutorial/classes.html
+2025-05-04 03:04:06,444 - Master - INFO - Queued 47 new URLs from https://en.wikipedia.org/wiki/NetBSD
+2025-05-04 03:04:17,607 - Master - INFO - Queued 46 new URLs from https://en.wikipedia.org/wiki/Transpile
+2025-05-04 03:04:32,361 - Master - INFO - Queued 46 new URLs from https://en.wikipedia.org/wiki/LLVM
+2025-05-04 03:04:36,351 - Master - ERROR - [ip-172-31-37-254] Error crawling https://web.archive.org/web/20220517173546/https://pythoninsider.blogspot.com/2022/05/python-3913-is-now-available.html: Request error: 429 Client Error: Too Many Requests for url: https://web.archive.org/web/20220517173546/https://pythoninsider.blogspot.com/2022/05/python-3913-is-now-available.html
+2025-05-04 03:04:38,407 - Master - INFO - Queued 49 new URLs from https://en.wikipedia.org/w/index.php?title=Python_(programming_language)&action=edit
+2025-05-04 03:04:46,182 - Master - INFO - Queued 34 new URLs from https://en.wikipedia.org/wiki/Category_talk:Python_(programming_language)_web_frameworks
+2025-05-04 03:04:48,759 - Master - INFO - Queued 49 new URLs from https://en.wikipedia.org/wiki/Special:BookSources/978-1-4493-5936-2
+2025-05-04 03:04:52,284 - Master - INFO - Queued 44 new URLs from https://en.wikipedia.org/wiki/One_Laptop_per_Child
+2025-05-04 03:04:58,439 - Master - INFO - Queued 45 new URLs from https://en.wikipedia.org/wiki/Code_reuse
+2025-05-04 03:05:02,457 - Master - INFO - Queued 49 new URLs from https://en.wikipedia.org/wiki/Special:Random
+2025-05-04 03:05:07,960 - Master - INFO - Queued 42 new URLs from https://en.wikipedia.org/wiki/Software_framework
+2025-05-04 03:05:13,450 - Master - INFO - Queued 48 new URLs from https://en.wikipedia.org/wiki/Portal:Current_events
+2025-05-04 03:05:15,480 - Master - INFO - Queued 23 new URLs from https://en.wikipedia.org/wiki/Category:Notebook_interface
+2025-05-04 03:05:17,602 - Master - INFO - Queued 48 new URLs from https://en.wikipedia.org/wiki/Web.py
+2025-05-04 03:05:23,870 - Master - WARNING - Crawler indexer-ip-172-31-22-171 timed out
+2025-05-04 03:05:25,670 - Master - INFO - Queued 47 new URLs from https://en.wikipedia.org/wiki/GIMP
+2025-05-04 03:05:27,626 - Master - INFO - Queued 43 new URLs from https://en.wikipedia.org/wiki/Randomized_algorithm
+2025-05-04 03:05:34,142 - Master - INFO - Queued 42 new URLs from https://en.wikipedia.org/wiki/Jam.py_(web_framework)
+2025-05-04 03:05:37,140 - Master - INFO - Queued 46 new URLs from https://en.wikipedia.org/wiki/Category:CS1:_unfit_URL
+2025-05-04 03:05:40,702 - Master - INFO - Queued 28 new URLs from https://en.wikipedia.org/wiki/Domain_(software_engineering)
+2025-05-04 03:05:42,435 - Master - INFO - Queued 11 new URLs from https://github.com/apple/swift-evolution/blob/master/process.md
+2025-05-04 03:05:44,898 - Master - INFO - Queued 38 new URLs from https://en.wikipedia.org/wiki/Gratis_versus_libre
+2025-05-04 03:05:47,770 - Master - INFO - Queued 42 new URLs from https://en.wikipedia.org/wiki/Concurrent_logic_programming
+2025-05-04 03:05:52,109 - Master - INFO - Queued 37 new URLs from https://en.wikipedia.org/wiki/Session_(computer_science)
+2025-05-04 03:05:54,054 - Master - INFO - Queued 27 new URLs from https://en.wikipedia.org/w/index.php?title=Special:QrCode&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FCategory%3APython_%28programming_language%29_web_frameworks
+2025-05-04 03:05:57,094 - Master - INFO - Queued 44 new URLs from https://en.wikipedia.org/wiki/Dynamic_web_page
+2025-05-04 03:06:00,961 - Master - INFO - Queued 48 new URLs from https://developer.wikimedia.org
+2025-05-04 03:06:01,419 - Master - INFO - Queued 35 new URLs from https://en.wikipedia.org/wiki/Template_processor
+2025-05-04 03:06:07,013 - Master - INFO - Queued 49 new URLs from https://en.wikipedia.org/wiki/Project_management
+2025-05-04 03:06:09,282 - Master - INFO - Queued 42 new URLs from https://en.wikipedia.org/wiki/Main_Page
+2025-05-04 03:06:14,182 - Master - INFO - Queued 50 new URLs from https://en.wikipedia.org/wiki/Time_Capsule_(Apple)
+2025-05-04 03:06:19,212 - Master - INFO - Queued 44 new URLs from https://wikimediafoundation.org
+2025-05-04 03:06:22,377 - Master - INFO - Queued 44 new URLs from https://en.wikipedia.org/wiki/Category:Programming_languages
+2025-05-04 03:06:34,005 - Master - INFO - Queued 46 new URLs from https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement
+2025-05-04 03:06:37,295 - Master - INFO - Queued 45 new URLs from https://en.wikipedia.org/wiki/Data_model
+2025-05-04 03:06:41,397 - Master - INFO - Queued 47 new URLs from https://en.wikipedia.org/wiki/History_of_Unix
+2025-05-04 03:06:44,406 - Master - INFO - Queued 45 new URLs from https://pt.wikipedia.org/wiki/Categoria:Frameworks_de_aplica%C3%A7%C3%B5es_web_em_Python
+^C2025-05-04 03:06:46,816 - Master - INFO - Received termination signal. Shutting down master gracefully...
+2025-05-04 03:06:48,477 - Master - INFO - Queued 37 new URLs from https://en.wikipedia.org/wiki/Pylons_project
+2025-05-04 03:06:48,484 - Master - INFO - Master shutting down...
+2025-05-04 03:06:48,490 - Master - INFO - Saved 9511 visited URLs to visited_urls.json
+2025-05-04 03:06:48,491 - Master - INFO - Sending terminate signal to all nodes...
+2025-05-04 03:06:48,497 - Master - INFO - Shutting down CloudQueue
+2025-05-04 03:06:48,497 - Master - INFO - Master shutdown complete
+ubuntu@ip-172-31-19-167:~/crawler$ python3 main.py --role master
+2025-05-04 03:27:57,280 - Master - INFO - Master node starting up
+2025-05-04 03:27:57,340 - Master - INFO - Found existing queue: https://queue.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 03:27:57,345 - Master - INFO - Found existing status queue: https://queue.amazonaws.com/405823273955/crawler-status-queue       
+2025-05-04 03:27:57,345 - Master - INFO - Successfully initialized SQS queues
+2025-05-04 03:27:57,432 - Master - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 03:27:57,435 - Master - INFO - Loaded 9511 visited URLs from visited_urls.json
+2025-05-04 03:27:57,442 - Master - INFO - URL tracking table is empty. Seeding with initial URLs...
+2025-05-04 03:27:57,445 - Master - INFO - Saved 9511 visited URLs to visited_urls.json
+2025-05-04 03:27:57,472 - Master - INFO - Seeded URL → https://www.python.org
+2025-05-04 03:27:57,484 - Master - INFO - Seeded URL → https://en.wikipedia.org/wiki/Python_(programming_language)
+2025-05-04 03:27:57,504 - Master - INFO - Seeded URL → https://github.com/python
+2025-05-04 03:27:57,518 - Master - INFO - Seeded URL → https://stackoverflow.com/questions/tagged/python
+2025-05-04 03:27:57,540 - Master - INFO - Seeded URL → https://docs.python.org/3
+2025-05-04 03:27:57,553 - Master - INFO - Seeded URL → https://pypi.org
+2025-05-04 03:27:57,565 - Master - INFO - Seeded URL → https://www.djangoproject.com
+2025-05-04 03:27:57,577 - Master - INFO - Seeded URL → https://flask.palletsprojects.com
+2025-05-04 03:27:57,589 - Master - INFO - Seeded URL → https://aws.amazon.com
+2025-05-04 03:27:57,601 - Master - INFO - Seeded URL → https://cloud.google.com
+2025-05-04 03:27:57,611 - Master - INFO - Seeded URL → https://azure.microsoft.com
+2025-05-04 03:27:57,623 - Master - INFO - Seeded URL → https://www.reddit.com/r/Python
+2025-05-04 03:27:57,646 - Master - INFO - Seeded URL → https://news.ycombinator.com
+2025-05-04 03:27:57,658 - Master - INFO - Seeded URL → https://www.bbc.com
+2025-05-04 03:27:57,668 - Master - INFO - Seeded URL → https://www.nytimes.com
+2025-05-04 03:27:57,674 - Master - INFO - Saved 9511 visited URLs to visited_urls.json
+2025-05-04 03:28:03,787 - Master - INFO - Queued 34 new URLs from https://www.bbc.com
+2025-05-04 03:28:05,435 - Master - INFO - Queued 33 new URLs from https://github.com/python
+2025-05-04 03:28:09,324 - Master - INFO - Queued 15 new URLs from https://www.nytimes.com
+2025-05-04 03:28:13,900 - Master - INFO - Queued 26 new URLs from https://www.bbc.com/reel/video/p0l70zmz/how-your-second-brain-changes-the-way-you-think
+2025-05-04 03:28:15,217 - Master - INFO - Queued 22 new URLs from https://www.bbc.com/innovation/artificial-intelligence
+2025-05-04 03:28:20,922 - Master - INFO - Queued 16 new URLs from https://www.bbc.com/travel/destinations/asia
+2025-05-04 03:28:24,757 - Master - INFO - Queued 6 new URLs from https://www.bbc.com/audio/play/w3ct743p
+2025-05-04 03:28:26,536 - Master - INFO - Queued 23 new URLs from https://www.bbc.com/live
+2025-05-04 03:28:30,799 - Master - INFO - Queued 6 new URLs from https://www.bbc.com/audio/categories
+2025-05-04 03:28:33,401 - Master - INFO - Queued 1 new URLs from https://www.bbc.com/advertisingcontact
+2025-05-04 03:28:36,762 - Master - INFO - Queued 49 new URLs from https://news.ycombinator.com
+^C2025-05-04 03:28:37,270 - Master - INFO - Received termination signal. Shutting down master gracefully...
+2025-05-04 03:28:37,767 - Master - INFO - Master shutting down...
+2025-05-04 03:28:37,772 - Master - INFO - Saved 9742 visited URLs to visited_urls.json
+2025-05-04 03:28:37,772 - Master - INFO - Sending terminate signal to all nodes...
+2025-05-04 03:28:37,780 - Master - INFO - Shutting down CloudQueue
+2025-05-04 03:28:37,780 - Master - INFO - Master shutdown complete
+ubuntu@ip-172-31-19-167:~/crawler$ python3 main.py --role master
+2025-05-04 03:37:11,550 - Master - INFO - Master node starting up
+2025-05-04 03:37:11,609 - Master - INFO - Found existing queue: https://queue.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 03:37:11,614 - Master - INFO - Found existing status queue: https://queue.amazonaws.com/405823273955/crawler-status-queue       
+2025-05-04 03:37:11,614 - Master - INFO - Successfully initialized SQS queues
+2025-05-04 03:37:11,710 - Master - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 03:37:11,713 - Master - INFO - Loaded 9742 visited URLs from visited_urls.json
+2025-05-04 03:37:11,721 - Master - INFO - URL tracking table is empty. Seeding with initial URLs...
+2025-05-04 03:37:11,724 - Master - INFO - Saved 9742 visited URLs to visited_urls.json
+2025-05-04 03:37:11,753 - Master - INFO - Seeded URL → https://www.python.org
+2025-05-04 03:37:11,774 - Master - INFO - Seeded URL → https://en.wikipedia.org/wiki/Python_(programming_language)
+2025-05-04 03:37:11,795 - Master - INFO - Seeded URL → https://github.com/python
+2025-05-04 03:37:11,809 - Master - INFO - Seeded URL → https://stackoverflow.com/questions/tagged/python
+2025-05-04 03:37:11,821 - Master - INFO - Seeded URL → https://docs.python.org/3
+2025-05-04 03:37:11,832 - Master - INFO - Seeded URL → https://pypi.org
+2025-05-04 03:37:11,845 - Master - INFO - Seeded URL → https://www.djangoproject.com
+2025-05-04 03:37:11,857 - Master - INFO - Seeded URL → https://flask.palletsprojects.com
+2025-05-04 03:37:11,868 - Master - INFO - Seeded URL → https://aws.amazon.com
+2025-05-04 03:37:11,885 - Master - INFO - Seeded URL → https://cloud.google.com
+2025-05-04 03:37:11,906 - Master - INFO - Seeded URL → https://azure.microsoft.com
+2025-05-04 03:37:11,917 - Master - INFO - Seeded URL → https://www.reddit.com/r/Python
+2025-05-04 03:37:11,930 - Master - INFO - Seeded URL → https://news.ycombinator.com
+2025-05-04 03:37:11,942 - Master - INFO - Seeded URL → https://www.bbc.com
+2025-05-04 03:37:11,954 - Master - INFO - Seeded URL → https://www.nytimes.com
+2025-05-04 03:37:11,960 - Master - INFO - Saved 9742 visited URLs to visited_urls.json
+2025-05-04 03:37:14,626 - Master - INFO - Queued 7 new URLs from https://www.python.org
+2025-05-04 03:37:16,673 - Master - INFO - Queued 23 new URLs from https://github.com/python
+2025-05-04 03:37:26,135 - Master - INFO - Queued 17 new URLs from https://www.bbc.com
+2025-05-04 03:37:30,133 - Master - ERROR - [ip-172-31-4-77] Error crawling https://www.reddit.com/r/Python: Request error: 403 Client Error: Blocked for url: https://www.reddit.com/r/Python/
+2025-05-04 03:37:30,679 - Master - INFO - Queued 40 new URLs from http://www.ansible.com
+2025-05-04 03:37:36,077 - Master - INFO - Queued 6 new URLs from https://www.bbc.com/news/articles/c20xwxnev8po
+2025-05-04 03:37:39,862 - Master - INFO - Queued 22 new URLs from https://github.com/matrixise
+2025-05-04 03:37:47,853 - Master - INFO - Queued 16 new URLs from https://flask.palletsprojects.com
+2025-05-04 03:37:50,772 - Master - INFO - Queued 19 new URLs from https://www.bbc.com/culture/article/20250502-how-black-men-have-used-bold-fashion-as-resistance
+2025-05-04 03:37:54,726 - Master - INFO - Queued 5 new URLs from https://www.bbc.com/news/articles/c78jpz061j9o
+2025-05-04 03:37:59,314 - Master - INFO - Queued 14 new URLs from https://aws.amazon.com
+2025-05-04 03:38:01,450 - Master - INFO - Queued 16 new URLs from https://www.bbc.com/travel/article/20240412-thailands-cooling-rice-dish-to-beat-the-heat
+2025-05-04 03:38:05,091 - Master - INFO - Queued 26 new URLs from https://github.com/ntoll
+2025-05-04 03:38:05,237 - Master - INFO - Queued 12 new URLs from https://github.com/python/python-docs-zh-tw/issues?q=label%3A%22good+first+issue%22+is%3Aissue+is%3Aopen
+2025-05-04 03:38:16,024 - Master - INFO - Queued 24 new URLs from https://github.com/python/devguide
+2025-05-04 03:38:18,918 - Master - INFO - Queued 39 new URLs from https://github.com/python/mypy/forks
+2025-05-04 03:38:19,484 - Master - INFO - Queued 40 new URLs from https://dearpygui.readthedocs.io/en/latest
+2025-05-04 03:38:25,861 - Master - INFO - Queued 30 new URLs from https://github.com/python/importlib_resources
+2025-05-04 03:38:30,293 - Master - INFO - Queued 16 new URLs from https://github.com/ElecteSrl
+2025-05-04 03:38:40,485 - Master - INFO - Queued 20 new URLs from https://github.com/python/cpython/stargazers
+2025-05-04 03:38:45,669 - Master - INFO - Queued 8 new URLs from https://www.bbc.com/news/articles/c8074n5z597o
+2025-05-04 03:38:50,845 - Master - INFO - Queued 3 new URLs from https://github.com/python/importlib_resources/graphs/commit-activity
+2025-05-04 03:38:53,829 - Master - INFO - Queued 29 new URLs from https://docs.ansible.com
+2025-05-04 03:38:56,328 - Master - INFO - Queued 26 new URLs from https://github.com/python/typeshed
+2025-05-04 03:38:59,646 - Master - INFO - Queued 13 new URLs from https://forum.ansible.com/tag/policy-as-code
+2025-05-04 03:39:02,365 - Master - INFO - Queued 12 new URLs from https://forum.ansible.com
+2025-05-04 03:39:06,997 - Master - INFO - Queued 38 new URLs from https://docs.ansible.com/ansible/latest/getting_started/basic_concepts.html
+2025-05-04 03:39:13,204 - Master - INFO - Queued 43 new URLs from https://www.bbc.co.uk/news/world-australia-45254762
+2025-05-04 03:39:15,316 - Master - INFO - Queued 2 new URLs from https://www.bbc.com/news/world-australia-45254762
+2025-05-04 03:39:16,897 - Master - INFO - Queued 12 new URLs from https://github.com/matrixise/flask-openerp
+2025-05-04 03:39:23,040 - Master - INFO - Queued 25 new URLs from https://github.com/matrixise?tab=stars
+2025-05-04 03:39:26,017 - Master - INFO - Queued 17 new URLs from https://github.com/python/importlib_resources/pulls
+2025-05-04 03:39:28,486 - Master - WARNING - Crawler indexer-ip-172-31-22-171 timed out
+2025-05-04 03:39:31,772 - Master - INFO - Queued 15 new URLs from https://www.bbc.com/culture/article/20250415-jmw-turner-at-250-why-his-greatest-painting-the-fighting-temeraire-is-so-misunderstood
+2025-05-04 03:39:34,905 - Master - INFO - Queued 2 new URLs from https://flask.palletsprojects.com/patterns/lazyloading
+2025-05-04 03:39:37,496 - Master - INFO - Queued 17 new URLs from https://github.com/matrixise/pyactiviti
+2025-05-04 03:39:39,973 - Master - INFO - Queued 25 new URLs from https://github.com/EuroPython
+2025-05-04 03:39:41,761 - Master - INFO - Queued 47 new URLs from https://ansible.readthedocs.io/projects/ansible-core
+2025-05-04 03:39:47,304 - Master - INFO - Queued 8 new URLs from https://docs.ansible.com/ansible/latest/getting_started/introduction.html
+2025-05-04 03:39:51,118 - Master - INFO - Queued 3 new URLs from https://flask.palletsprojects.com/patterns/caching
+2025-05-04 03:39:55,201 - Master - INFO - Queued 4 new URLs from https://flask.palletsprojects.com/extensiondev
+2025-05-04 03:39:58,298 - Master - INFO - Queued 47 new URLs from https://www.redhat.com/en
+2025-05-04 03:40:03,178 - Master - INFO - Queued 13 new URLs from https://github.com/matrixise/dumpyc
+2025-05-04 03:40:08,071 - Master - INFO - Queued 3 new URLs from https://docs.ansible.com/ansible/latest/getting_started/get_started_playbook.html
+2025-05-04 03:40:09,214 - Master - INFO - Queued 7 new URLs from https://www.bbc.com/culture/article/20250422-the-gory-shakespeare-play-that-makes-people-faint
+2025-05-04 03:40:13,435 - Master - INFO - Queued 5 new URLs from https://www.bbc.com/reel/video/p0kl5kcz/the-ww2-experiment-to-make-pigeon-guided-missiles
+2025-05-04 03:40:17,225 - Master - INFO - Queued 42 new URLs from https://www.redhat.com/en/about/all-policies-guidelines
+2025-05-04 03:40:21,092 - Master - INFO - Queued 1 new URLs from https://forum.ansible.com/tag/policy-as-code-partn
+2025-05-04 03:40:24,924 - Master - INFO - Queued 18 new URLs from https://github.com/matrixise?tab=following
+2025-05-04 03:40:27,871 - Master - INFO - Queued 10 new URLs from https://www.bbc.com/culture/article/20241211-quannah-chasinghorse-the-indigenous-american-supermodel-on-bringing-change
+2025-05-04 03:40:36,978 - Master - INFO - Queued 3 new URLs from https://www.bbc.com/reel/video/p0kqd47s/richard-iii-the-accidental-photo-of-a-long-lost-king
+2025-05-04 03:40:42,417 - Master - INFO - Queued 3 new URLs from https://flask.palletsprojects.com/patterns/sqlite3
+2025-05-04 03:40:47,612 - Master - INFO - Queued 2 new URLs from https://www.bbc.com/culture/tags/history
+2025-05-04 03:40:50,363 - Master - INFO - Queued 1 new URLs from https://www.bbc.com/reel/video/p0cx5c9z/the-russian-food-obsession-inspired-by-the-us
+2025-05-04 03:40:55,183 - Master - INFO - Queued 27 new URLs from https://www.redhat.com/en/about/company
+2025-05-04 03:40:57,026 - Master - INFO - Queued 8 new URLs from https://www.bbc.com/news/videos/cvg909x4yzzo
+2025-05-04 03:40:58,978 - Master - INFO - Queued 20 new URLs from https://aws.amazon.com/training/?nc1=f_cc
+2025-05-04 03:41:00,039 - Master - INFO - Status: 2 active crawlers, 966 URLs queued, 2758 URLs discovered, 1 errors
+2025-05-04 03:41:01,410 - Master - INFO - Queued 13 new URLs from https://github.com/matrixise/pyactiviti/forks
+2025-05-04 03:41:08,946 - Master - INFO - Queued 47 new URLs from https://ntoll.org/cv
+2025-05-04 03:41:11,467 - Master - INFO - Queued 2 new URLs from https://www.bbc.com/reel/video/p0jyrzsg/the-history-of-swing-states-in-the-us
+2025-05-04 03:41:13,313 - Master - INFO - Queued 34 new URLs from https://github.com/jazzband
+2025-05-04 03:41:16,306 - Master - INFO - Queued 3 new URLs from https://github.com/matrixise?tab=achievements
+2025-05-04 03:41:21,867 - Master - INFO - Queued 12 new URLs from https://github.com/python/devguide/pulse
+2025-05-04 03:41:23,216 - Master - INFO - Queued 1 new URLs from https://www.bbc.com/reel/video/p0k4x9jb/mary-mallon-the-most-dangerous-woman-in-america-
+2025-05-04 03:41:26,234 - Master - INFO - Queued 7 new URLs from https://github.com/thePsf
+2025-05-04 03:41:29,974 - Master - INFO - Queued 5 new URLs from https://flask.palletsprojects.com/patterns/wtforms
+2025-05-04 03:41:32,357 - Master - INFO - Queued 16 new URLs from https://aws.amazon.com/what-is/generative-ai/?nc1=f_cc
+2025-05-04 03:41:37,373 - Master - INFO - Queued 3 new URLs from https://github.com/matrixise?tab=packages
+2025-05-04 03:41:40,149 - Master - INFO - Queued 18 new URLs from https://github.com/ambv
+2025-05-04 03:41:41,457 - Master - INFO - Queued 3 new URLs from https://github.com/python/devguide/tree/main/testing
+2025-05-04 03:41:43,854 - Master - INFO - Queued 11 new URLs from https://github.com/cielavenir/mypy/issues?state=open
+2025-05-04 03:41:46,518 - Master - INFO - Queued 4 new URLs from https://www.bbc.com/news/world-europe-61816268
+2025-05-04 03:41:49,813 - Master - INFO - Queued 5 new URLs from https://www.bbc.com/news/articles/c045vvwlwr4o
+2025-05-04 03:41:51,183 - Master - INFO - Queued 12 new URLs from https://github.com/nickdrozd/mypy/stargazers
+2025-05-04 03:41:53,847 - Master - INFO - Queued 3 new URLs from https://www.bbc.com/reel/video/p0jnbll0/uncovering-the-sunken-relics-of-an-ancient-city
+2025-05-04 03:41:56,519 - Master - INFO - Queued 17 new URLs from https://aws.amazon.com/partners/?nc2=h_ql_pn
+2025-05-04 03:41:59,917 - Master - INFO - Queued 13 new URLs from https://aws.amazon.com/events/?nc2=h_ql_ev
+2025-05-04 03:42:01,285 - Master - INFO - Queued 15 new URLs from https://aws.amazon.com/training/?nc2=h_mo
+2025-05-04 03:42:06,493 - Master - INFO - Queued 1 new URLs from https://github.com/matrixise?achievement=pair-extraordinaire&tab=achievements
+2025-05-04 03:42:11,732 - Master - INFO - Saved 10938 visited URLs to visited_urls.json
+2025-05-04 03:42:11,788 - Master - INFO - Queued 2 new URLs from https://www.bbc.com/reel/video/p0bkptqw/why-we-should-treat-food-like-medicine
+2025-05-04 03:42:16,047 - Master - INFO - Queued 4 new URLs from https://flask.palletsprojects.com/tutorial/blog
+2025-05-04 03:42:18,115 - Master - INFO - Queued 28 new URLs from https://github.com/cielavenir/mypy
+2025-05-04 03:42:21,711 - Master - INFO - Queued 3 new URLs from https://www.bbc.com/news/articles/cm25lz56rezo
+2025-05-04 03:42:23,742 - Master - INFO - Queued 15 new URLs from https://github.com/abravalheri
+2025-05-04 03:42:26,419 - Master - INFO - Queued 9 new URLs from https://www.bbc.com/news/articles/cr78x889k3xo
+2025-05-04 03:42:31,642 - Master - INFO - Queued 21 new URLs from https://github.com/abravalheri/mypy
+2025-05-04 03:42:37,568 - Master - INFO - Queued 14 new URLs from https://github.com/ntoll?achievement=pull-shark&tab=achievements
+2025-05-04 03:42:41,194 - Master - INFO - Queued 4 new URLs from https://github.com/micropythonfoundation
+2025-05-04 03:42:45,239 - Master - INFO - Queued 12 new URLs from https://github.com/yangkyeongmo
+2025-05-04 03:42:52,231 - Master - INFO - Queued 13 new URLs from https://github.com/sthagen/python-mypy/forks
+2025-05-04 03:42:53,331 - Master - ERROR - [ip-172-31-37-254] Error crawling https://dearpygui.readthedocs.io/en/documentation/menus.html: Request error: 404 Client Error: Not Found for url: https://dearpygui.readthedocs.io/en/documentation/menus.html
+2025-05-04 03:42:56,992 - Master - INFO - Queued 24 new URLs from https://github.com/ntoll?tab=stars
+2025-05-04 03:42:58,470 - Master - INFO - Queued 27 new URLs from https://github.com/mu-editor
+2025-05-04 03:43:01,037 - Master - ERROR - [ip-172-31-37-254] Error crawling https://dearpygui.readthedocs.io/en/documentation/tables.html: Request error: 404 Client Error: Not Found for url: https://dearpygui.readthedocs.io/en/documentation/tables.html
+2025-05-04 03:43:05,365 - Master - INFO - Queued 14 new URLs from https://github.com/sponsors/ntoll
+2025-05-04 03:43:06,787 - Master - INFO - Queued 20 new URLs from https://github.com/ntoll/textsmith/forks
+2025-05-04 03:43:08,277 - Master - INFO - Queued 6 new URLs from https://github.com/ntoll?tab=achievements
+Saved 11171 visited URLs to visited_urls.json
+2025-05-04 03:43:20,522 - Master - INFO - Sending terminate signal to all nodes...
+2025-05-04 03:43:20,530 - Master - INFO - Shutting down CloudQueue
+2025-05-04 03:43:20,530 - Master - INFO - Master shutdown complete
+ubuntu@ip-172-31-19-167:~/crawler$

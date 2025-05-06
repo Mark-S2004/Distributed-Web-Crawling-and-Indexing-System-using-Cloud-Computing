@@ -1965,3 +1965,952 @@ Query: "open source"
 2025-04-29 00:36:20,685 - Indexer - INFO - 
 Query: content:machine learning
 2025-04-29 00:36:20,686 - Indexer - INFO - Found 5 results
+2025-05-04 19:22:34,808 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 19:22:35,942 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 19:22:36,080 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 19:22:36,080 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 19:22:37,263 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 19:22:37,343 - Indexer - ERROR - Failed to initialize AWS services: Unknown service: 'cloudwatch-logs'. Valid service names are: accessanalyzer, account, acm, acm-pca, alexaforbusiness, amp, amplify, amplifybackend, amplifyuibuilder, apigateway, apigatewaymanagementapi, apigatewayv2, appconfig, appconfigdata, appfabric, appflow, appintegrations, application-autoscaling, application-insights, applicationcostprofiler, appmesh, apprunner, appstream, appsync, arc-zonal-shift, athena, auditmanager, autoscaling, autoscaling-plans, backup, backup-gateway, backupstorage, batch, billingconductor, braket, budgets, ce, chime, chime-sdk-identity, chime-sdk-media-pipelines, chime-sdk-meetings, chime-sdk-messaging, chime-sdk-voice, cleanrooms, cloud9, cloudcontrol, clouddirectory, cloudformation, cloudfront, cloudhsm, cloudhsmv2, cloudsearch, cloudsearchdomain, cloudtrail, cloudtrail-data, cloudwatch, codeartifact, codebuild, codecatalyst, codecommit, codedeploy, codeguru-reviewer, codeguru-security, codeguruprofiler, codepipeline, codestar, codestar-connections, codestar-notifications, cognito-identity, cognito-idp, cognito-sync, comprehend, comprehendmedical, compute-optimizer, config, connect, connect-contact-lens, connectcampaigns, connectcases, connectparticipant, controltower, cur, customer-profiles, databrew, dataexchange, datapipeline, datasync, dax, detective, devicefarm, devops-guru, directconnect, discovery, dlm, dms, docdb, docdb-elastic, drs, ds, dynamodb, dynamodbstreams, ebs, ec2, ec2-instance-connect, ecr, ecr-public, ecs, efs, eks, elastic-inference, elasticache, elasticbeanstalk, elastictranscoder, elb, elbv2, emr, emr-containers, emr-serverless, es, events, evidently, finspace, finspace-data, firehose, fis, fms, forecast, forecastquery, frauddetector, fsx, gamelift, gamesparks, glacier, globalaccelerator, glue, grafana, greengrass, greengrassv2, groundstation, guardduty, health, healthlake, honeycode, iam, identitystore, imagebuilder, importexport, inspector, inspector2, internetmonitor, iot, iot-data, iot-jobs-data, iot-roborunner, iot1click-devices, iot1click-projects, iotanalytics, iotdeviceadvisor, iotevents, iotevents-data, iotfleethub, iotfleetwise, iotsecuretunneling, iotsitewise, iotthingsgraph, iottwinmaker, iotwireless, ivs, ivs-realtime, ivschat, kafka, kafkaconnect, kendra, kendra-ranking, keyspaces, kinesis, kinesis-video-archived-media, kinesis-video-media, kinesis-video-signaling, kinesis-video-webrtc-storage, kinesisanalytics, kinesisanalyticsv2, kinesisvideo, kms, lakeformation, lambda, lex-models, lex-runtime, lexv2-models, lexv2-runtime, license-manager, license-manager-linux-subscriptions, license-manager-user-subscriptions, lightsail, location, logs, lookoutequipment, lookoutmetrics, lookoutvision, m2, machinelearning, macie, macie2, managedblockchain, marketplace-catalog, marketplace-entitlement, marketplacecommerceanalytics, mediaconnect, mediaconvert, medialive, mediapackage, mediapackage-vod, mediapackagev2, mediastore, mediastore-data, mediatailor, memorydb, meteringmarketplace, mgh, mgn, migration-hub-refactor-spaces, migrationhub-config, migrationhuborchestrator, migrationhubstrategy, mobile, mq, mturk, mwaa, neptune, network-firewall, networkmanager, nimble, oam, omics, opensearch, opensearchserverless, opsworks, opsworkscm, organizations, osis, outposts, panorama, payment-cryptography, payment-cryptography-data, personalize, personalize-events, personalize-runtime, pi, pinpoint, pinpoint-email, pinpoint-sms-voice, pinpoint-sms-voice-v2, pipes, polly, pricing, privatenetworks, proton, qldb, qldb-session, quicksight, ram, rbin, rds, rds-data, redshift, redshift-data, redshift-serverless, rekognition, resiliencehub, resource-explorer-2, resource-groups, resourcegroupstaggingapi, robomaker, rolesanywhere, route53, route53-recovery-cluster, route53-recovery-control-config, route53-recovery-readiness, route53domains, route53resolver, rum, s3, s3control, s3outposts, sagemaker, sagemaker-a2i-runtime, sagemaker-edge, sagemaker-featurestore-runtime, sagemaker-geospatial, sagemaker-metrics, sagemaker-runtime, savingsplans, scheduler, schemas, sdb, secretsmanager, securityhub, securitylake, serverlessrepo, service-quotas, servicecatalog, servicecatalog-appregistry, servicediscovery, ses, sesv2, shield, signer, simspaceweaver, sms, sms-voice, snow-device-management, snowball, sns, sqs, ssm, ssm-contacts, ssm-incidents, ssm-sap, sso, sso-admin, sso-oidc, stepfunctions, storagegateway, sts, support, support-app, swf, synthetics, textract, timestream-query, timestream-write, tnb, transcribe, transfer, translate, verifiedpermissions, voice-id, vpc-lattice, waf, waf-regional, wafv2, wellarchitected, wisdom, workdocs, worklink, workmail, workmailmessageflow, workspaces, workspaces-web, xray
+2025-05-04 19:22:37,416 - Indexer - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.15:5000
+2025-05-04 19:22:37,417 - Indexer - INFO - [33mPress CTRL+C to quit[0m
+2025-05-04 19:23:06,550 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 19:23:07,432 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 19:23:07,571 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 19:23:07,571 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 19:23:08,666 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 19:23:08,864 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 19:23:08,886 - Indexer - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.15:5000
+2025-05-04 19:23:08,888 - Indexer - INFO - [33mPress CTRL+C to quit[0m
+2025-05-04 19:34:51,938 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 19:34:52,824 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 19:34:52,964 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 19:34:52,965 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 19:34:54,086 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 19:34:54,186 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 19:34:54,232 - Indexer - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.15:5000
+2025-05-04 19:34:54,233 - Indexer - INFO - [33mPress CTRL+C to quit[0m
+2025-05-04 19:34:54,236 - Indexer - INFO -  * Restarting with stat
+2025-05-04 19:34:56,287 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 19:34:57,126 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 19:34:57,263 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 19:34:57,264 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 19:34:58,336 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 19:34:58,435 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 19:34:58,461 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 19:34:58,463 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 19:37:59,368 - Indexer - INFO - 127.0.0.1 - - [04/May/2025 19:37:59] "GET / HTTP/1.1" 200 -
+2025-05-04 19:37:59,447 - Indexer - INFO - 127.0.0.1 - - [04/May/2025 19:37:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-04 19:38:15,400 - Indexer - INFO - Opened existing Whoosh index
+2025-05-04 19:38:15,400 - Indexer - INFO - Whoosh indexer initialized with directory: search_index
+2025-05-04 19:38:15,427 - Indexer - INFO - 127.0.0.1 - - [04/May/2025 19:38:15] "GET /?q=python HTTP/1.1" 200 -
+2025-05-04 19:38:58,683 - Indexer - INFO - Opened existing Whoosh index
+2025-05-04 19:38:58,683 - Indexer - INFO - Whoosh indexer initialized with directory: search_index
+2025-05-04 19:38:58,688 - Indexer - INFO - 127.0.0.1 - - [04/May/2025 19:38:58] "GET /?q=python HTTP/1.1" 200 -
+2025-05-04 19:39:00,322 - Indexer - INFO - Opened existing Whoosh index
+2025-05-04 19:39:00,322 - Indexer - INFO - Whoosh indexer initialized with directory: search_index
+2025-05-04 19:39:00,330 - Indexer - INFO - 127.0.0.1 - - [04/May/2025 19:39:00] "GET /?q=python HTTP/1.1" 200 -
+2025-05-04 19:39:14,201 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 19:39:14,556 - Indexer - INFO -  * Restarting with stat
+2025-05-04 19:39:16,646 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 19:39:17,529 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 19:39:17,669 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 19:39:17,670 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 19:39:18,791 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 19:39:18,896 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 19:39:18,922 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 19:39:18,926 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 19:39:34,356 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 19:39:34,803 - Indexer - INFO -  * Restarting with stat
+2025-05-04 19:39:36,994 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 19:39:37,897 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 19:39:38,034 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 19:39:38,035 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 19:39:39,408 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 19:39:39,510 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 19:39:39,534 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 19:39:39,537 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 19:39:55,947 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 19:39:56,285 - Indexer - INFO -  * Restarting with stat
+2025-05-04 19:39:58,451 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 19:39:59,448 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 19:39:59,790 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 19:39:59,791 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 19:40:01,610 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 19:40:01,716 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 19:40:01,741 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 19:40:01,744 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 19:40:20,625 - Indexer - INFO - Opened existing Whoosh index
+2025-05-04 19:40:20,626 - Indexer - INFO - Whoosh indexer initialized with directory: search_index
+2025-05-04 19:40:20,684 - Indexer - INFO - 127.0.0.1 - - [04/May/2025 19:40:20] "GET /?q=python HTTP/1.1" 200 -
+2025-05-04 19:40:21,151 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 19:40:21,471 - Indexer - INFO -  * Restarting with stat
+2025-05-04 19:40:23,686 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 19:40:24,765 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 19:40:25,106 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 19:40:25,107 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 19:40:26,950 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 19:40:27,052 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 19:40:27,076 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 19:40:27,079 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 19:40:27,594 - Indexer - INFO - Opened existing Whoosh index
+2025-05-04 19:40:27,594 - Indexer - INFO - Whoosh indexer initialized with directory: search_index
+2025-05-04 19:40:27,627 - Indexer - INFO - 127.0.0.1 - - [04/May/2025 19:40:27] "GET /?q=python HTTP/1.1" 200 -
+2025-05-04 19:40:33,594 - Indexer - INFO - 127.0.0.1 - - [04/May/2025 19:40:33] "GET /?q= HTTP/1.1" 200 -
+2025-05-04 19:40:35,635 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 19:40:36,001 - Indexer - INFO -  * Restarting with stat
+2025-05-04 19:40:38,343 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 19:40:39,439 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 19:40:39,773 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 19:40:39,774 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 19:40:41,574 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 19:40:41,693 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 19:40:41,717 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 19:40:41,720 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 19:40:51,558 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 19:40:51,882 - Indexer - INFO -  * Restarting with stat
+2025-05-04 19:40:54,259 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 19:40:55,141 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 19:40:55,287 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 19:40:55,287 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 19:40:57,702 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 19:40:57,808 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 19:40:57,834 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 19:40:57,837 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 19:41:07,034 - Indexer - INFO - 127.0.0.1 - - [04/May/2025 19:41:07] "GET /?q= HTTP/1.1" 200 -
+2025-05-04 19:41:24,487 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 19:41:24,795 - Indexer - INFO -  * Restarting with stat
+2025-05-04 19:41:27,053 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 19:41:27,946 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 19:41:28,118 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 19:41:28,120 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 19:41:30,371 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 19:41:30,474 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 19:41:30,497 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 19:41:30,500 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 19:41:49,937 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 19:41:50,276 - Indexer - INFO -  * Restarting with stat
+2025-05-04 19:41:52,531 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 19:41:53,412 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 19:41:53,548 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 19:41:53,550 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 19:41:55,361 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 19:41:55,462 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 19:41:55,483 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 19:41:55,487 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 19:42:04,855 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 19:42:05,171 - Indexer - INFO -  * Restarting with stat
+2025-05-04 19:42:07,401 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 19:42:08,307 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 19:42:08,580 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 19:42:08,581 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 19:42:10,539 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 19:42:10,648 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 19:42:10,672 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 19:42:10,674 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 19:43:21,601 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 19:43:22,491 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 19:43:22,628 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 19:43:22,629 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 19:43:23,714 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 19:43:23,812 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 19:43:23,841 - Indexer - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.15:5000
+2025-05-04 19:43:23,842 - Indexer - INFO - [33mPress CTRL+C to quit[0m
+2025-05-04 19:43:23,843 - Indexer - INFO -  * Restarting with stat
+2025-05-04 19:43:25,875 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 19:43:26,759 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 19:43:26,896 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 19:43:26,897 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 19:43:28,022 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 19:43:28,123 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 19:43:28,146 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 19:43:28,149 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 19:43:53,657 - Indexer - INFO - 127.0.0.1 - - [04/May/2025 19:43:53] "GET / HTTP/1.1" 200 -
+2025-05-04 19:44:02,892 - Indexer - INFO - 127.0.0.1 - - [04/May/2025 19:44:02] "GET / HTTP/1.1" 200 -
+2025-05-04 19:44:02,964 - Indexer - INFO - 127.0.0.1 - - [04/May/2025 19:44:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-04 19:44:48,065 - Indexer - INFO - 192.168.1.15 - - [04/May/2025 19:44:48] "GET / HTTP/1.1" 200 -
+2025-05-04 19:44:48,167 - Indexer - INFO - 192.168.1.15 - - [04/May/2025 19:44:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-04 19:45:23,086 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 19:45:23,435 - Indexer - INFO -  * Restarting with stat
+2025-05-04 19:45:25,696 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 19:45:26,590 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 19:45:26,729 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 19:45:26,730 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 19:45:27,824 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 19:45:27,936 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 19:45:27,961 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 19:45:27,964 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 19:46:14,540 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 19:46:14,839 - Indexer - INFO -  * Restarting with stat
+2025-05-04 19:46:17,111 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 19:46:18,004 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 19:46:18,137 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 19:46:18,139 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 19:46:19,756 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 19:46:19,865 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 19:46:19,889 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 19:46:19,892 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 19:46:20,413 - Indexer - INFO - 192.168.1.15 - - [04/May/2025 19:46:20] "GET / HTTP/1.1" 200 -
+2025-05-04 19:46:30,912 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 19:46:31,233 - Indexer - INFO -  * Restarting with stat
+2025-05-04 19:46:33,390 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 19:46:34,584 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 19:46:34,933 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 19:46:34,934 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 19:46:36,064 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 19:46:36,179 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 19:46:36,203 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 19:46:36,205 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 19:47:55,970 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 19:47:56,864 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 19:47:57,002 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 19:47:57,003 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 19:47:58,163 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 19:47:58,270 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 19:47:58,304 - Indexer - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.15:5000
+2025-05-04 19:47:58,304 - Indexer - INFO - [33mPress CTRL+C to quit[0m
+2025-05-04 19:47:58,307 - Indexer - INFO -  * Restarting with stat
+2025-05-04 19:48:00,487 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 19:48:01,343 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 19:48:01,477 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 19:48:01,478 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 19:48:02,647 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 19:48:02,750 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 19:48:02,775 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 19:48:02,777 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 19:48:03,215 - Indexer - INFO - 127.0.0.1 - - [04/May/2025 19:48:03] "GET / HTTP/1.1" 200 -
+2025-05-04 19:48:57,284 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 19:48:57,586 - Indexer - INFO -  * Restarting with stat
+2025-05-04 19:48:59,802 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 19:49:44,596 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 19:49:44,734 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 19:49:44,735 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 19:49:45,850 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 19:49:45,953 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 19:49:45,977 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 19:49:45,980 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 19:50:28,215 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 19:50:28,533 - Indexer - INFO -  * Restarting with stat
+2025-05-04 19:50:30,800 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 19:50:32,042 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 19:50:32,433 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 19:50:32,434 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 19:50:33,621 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 19:50:33,737 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 19:50:33,763 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 19:50:33,767 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 19:51:01,096 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 19:51:01,939 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 19:51:02,072 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 19:51:02,073 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 19:51:03,189 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 19:51:03,316 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 19:51:03,345 - Indexer - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.15:5000
+2025-05-04 19:51:03,346 - Indexer - INFO - [33mPress CTRL+C to quit[0m
+2025-05-04 19:51:03,348 - Indexer - INFO -  * Restarting with stat
+2025-05-04 19:51:05,491 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 19:51:06,403 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 19:51:06,539 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 19:51:06,540 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 19:51:07,672 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 19:51:07,778 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 19:51:07,803 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 19:51:07,806 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 19:51:08,258 - Indexer - INFO - 127.0.0.1 - - [04/May/2025 19:51:08] "GET / HTTP/1.1" 200 -
+2025-05-04 19:51:08,267 - Indexer - INFO - 127.0.0.1 - - [04/May/2025 19:51:08] "GET / HTTP/1.1" 200 -
+2025-05-04 19:51:18,515 - Indexer - INFO - 127.0.0.1 - - [04/May/2025 19:51:18] "GET / HTTP/1.1" 200 -
+2025-05-04 19:53:22,739 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 19:53:23,035 - Indexer - INFO -  * Restarting with stat
+2025-05-04 19:53:25,273 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 19:53:26,173 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 19:53:26,318 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 19:53:26,320 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 19:53:27,420 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 19:53:27,519 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 19:53:27,542 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 19:53:27,545 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 19:53:33,855 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 19:53:34,158 - Indexer - INFO -  * Restarting with stat
+2025-05-04 19:53:36,275 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 19:53:37,156 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 19:53:37,293 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 19:53:37,293 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 19:53:39,516 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 19:53:39,617 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 19:53:39,640 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 19:53:39,643 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 19:53:48,769 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 19:53:49,065 - Indexer - INFO -  * Restarting with stat
+2025-05-04 19:53:51,086 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 19:53:51,986 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 19:53:52,124 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 19:53:52,125 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 19:53:54,084 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 19:53:54,185 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 19:53:54,207 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 19:53:54,209 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 19:54:14,650 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 19:54:14,941 - Indexer - INFO -  * Restarting with stat
+2025-05-04 19:54:17,085 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 19:54:17,975 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 19:54:18,111 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 19:54:18,112 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 19:54:20,098 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 19:54:20,201 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 19:54:20,222 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 19:54:20,225 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 19:54:44,202 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 19:54:46,337 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 19:54:46,487 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 19:54:46,488 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 19:54:47,595 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 19:54:47,712 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 19:54:47,744 - Indexer - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.15:5000
+2025-05-04 19:54:47,745 - Indexer - INFO - [33mPress CTRL+C to quit[0m
+2025-05-04 19:54:47,747 - Indexer - INFO -  * Restarting with stat
+2025-05-04 19:54:49,947 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 19:54:50,814 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 19:54:50,948 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 19:54:50,949 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 19:54:52,097 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 19:54:52,202 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 19:54:52,229 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 19:54:52,232 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 19:54:52,719 - Indexer - INFO - 127.0.0.1 - - [04/May/2025 19:54:52] "GET /?section=aws-tab HTTP/1.1" 200 -
+2025-05-04 19:55:17,878 - Indexer - INFO - 127.0.0.1 - - [04/May/2025 19:55:17] "GET /?q=&section=search-tab HTTP/1.1" 200 -
+2025-05-04 19:55:18,117 - Indexer - INFO - 127.0.0.1 - - [04/May/2025 19:55:18] "GET /?q=&section=search-tab HTTP/1.1" 200 -
+2025-05-04 19:55:21,669 - Indexer - INFO - 127.0.0.1 - - [04/May/2025 19:55:21] "GET /?q=&section=search-tab HTTP/1.1" 200 -
+2025-05-04 19:55:23,138 - Indexer - INFO - 127.0.0.1 - - [04/May/2025 19:55:23] "GET /?q=&section=search-tab HTTP/1.1" 200 -
+2025-05-04 19:55:25,085 - Indexer - INFO - 127.0.0.1 - - [04/May/2025 19:55:25] "GET /?q=&section=search-tab HTTP/1.1" 200 -
+2025-05-04 19:55:25,682 - Indexer - INFO - 127.0.0.1 - - [04/May/2025 19:55:25] "GET /?q=&section=search-tab HTTP/1.1" 200 -
+2025-05-04 19:55:29,731 - Indexer - INFO - 127.0.0.1 - - [04/May/2025 19:55:29] "GET /?q=&section=search-tab HTTP/1.1" 200 -
+2025-05-04 19:55:33,239 - Indexer - INFO - 127.0.0.1 - - [04/May/2025 19:55:33] "GET /?q=&section=search-tab HTTP/1.1" 200 -
+2025-05-04 19:55:34,212 - Indexer - INFO - 127.0.0.1 - - [04/May/2025 19:55:34] "GET /?q=&section=search-tab HTTP/1.1" 200 -
+2025-05-04 19:57:19,780 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 19:57:20,078 - Indexer - INFO -  * Restarting with stat
+2025-05-04 19:57:22,297 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 19:57:23,194 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 19:57:23,334 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 19:57:23,335 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 19:57:24,452 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 19:57:24,550 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 19:57:24,574 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 19:57:24,577 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 19:57:40,713 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 19:57:41,017 - Indexer - INFO -  * Restarting with stat
+2025-05-04 19:57:43,133 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 19:57:43,993 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 19:57:44,157 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 19:57:44,158 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 19:57:46,292 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 19:57:46,401 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 19:57:46,422 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 19:57:46,426 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 19:58:09,620 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 19:58:09,920 - Indexer - INFO -  * Restarting with stat
+2025-05-04 19:58:11,997 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 19:58:12,895 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 19:58:13,044 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 19:58:13,044 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 19:58:15,114 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 19:58:15,218 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 19:58:15,243 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 19:58:15,246 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 19:58:27,304 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 19:58:27,628 - Indexer - INFO -  * Restarting with stat
+2025-05-04 19:58:29,948 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 19:58:30,850 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 19:58:31,055 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 19:58:31,056 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 19:58:33,124 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 19:58:33,236 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 19:58:33,260 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 19:58:33,264 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 19:58:57,012 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 19:58:57,351 - Indexer - INFO -  * Restarting with stat
+2025-05-04 19:58:59,660 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 19:59:00,512 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 19:59:00,646 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 19:59:00,647 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 19:59:02,692 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 19:59:02,801 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 19:59:02,824 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 19:59:02,827 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 19:59:33,870 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 19:59:34,187 - Indexer - INFO -  * Restarting with stat
+2025-05-04 19:59:36,288 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 19:59:37,544 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 19:59:37,936 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 19:59:37,937 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 19:59:39,484 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 19:59:39,591 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 19:59:39,613 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 19:59:39,617 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 20:00:28,324 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 20:00:29,292 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 20:00:29,429 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 20:00:29,431 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 20:00:30,537 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 20:00:30,642 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 20:00:30,674 - Indexer - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.15:5000
+2025-05-04 20:00:30,674 - Indexer - INFO - [33mPress CTRL+C to quit[0m
+2025-05-04 20:00:30,677 - Indexer - INFO -  * Restarting with stat
+2025-05-04 20:00:32,824 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 20:00:33,741 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 20:00:33,877 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 20:00:33,878 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 20:00:34,995 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 20:00:35,099 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 20:00:35,121 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 20:00:35,124 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 20:00:37,927 - Indexer - INFO - 127.0.0.1 - - [04/May/2025 20:00:37] "GET / HTTP/1.1" 200 -
+2025-05-04 20:02:01,757 - Indexer - INFO - 127.0.0.1 - - [04/May/2025 20:02:01] "GET / HTTP/1.1" 200 -
+2025-05-04 20:04:54,972 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 20:04:55,331 - Indexer - INFO -  * Restarting with stat
+2025-05-04 20:04:57,647 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 20:04:58,555 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 20:04:58,712 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 20:04:58,713 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 20:04:59,969 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 20:05:00,083 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 20:05:00,106 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 20:05:00,111 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 20:05:35,155 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 20:05:35,502 - Indexer - INFO -  * Restarting with stat
+2025-05-04 20:05:37,829 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 20:05:39,284 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 20:05:39,550 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 20:05:39,552 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 20:05:40,668 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 20:05:40,770 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 20:05:40,797 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 20:05:40,800 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 20:05:52,952 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 20:05:53,267 - Indexer - INFO -  * Restarting with stat
+2025-05-04 20:05:55,494 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 20:05:56,502 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 20:05:56,648 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 20:05:56,650 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 20:05:58,400 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 20:05:58,498 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 20:05:58,521 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 20:05:58,524 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 20:06:34,758 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 20:06:35,070 - Indexer - INFO -  * Restarting with stat
+2025-05-04 20:06:37,298 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 20:06:38,202 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 20:06:38,398 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 20:06:38,399 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 20:06:40,026 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 20:06:40,136 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 20:06:40,159 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 20:06:40,162 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 20:06:49,406 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 20:06:49,712 - Indexer - INFO -  * Restarting with stat
+2025-05-04 20:06:51,875 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 20:06:52,743 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 20:06:52,884 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 20:06:52,885 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 20:06:54,602 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 20:06:54,716 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 20:06:54,736 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 20:06:54,740 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 20:08:14,240 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 20:08:15,177 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 20:08:15,318 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 20:08:15,318 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 20:08:16,610 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 20:08:16,732 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 20:08:16,769 - Indexer - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.15:5000
+2025-05-04 20:08:16,770 - Indexer - INFO - [33mPress CTRL+C to quit[0m
+2025-05-04 20:08:16,773 - Indexer - INFO -  * Restarting with stat
+2025-05-04 20:08:19,136 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 20:08:20,057 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 20:08:20,193 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 20:08:20,194 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 20:08:21,306 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 20:08:21,414 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 20:08:21,439 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 20:08:21,442 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 20:08:22,029 - Indexer - INFO - 127.0.0.1 - - [04/May/2025 20:08:22] "GET / HTTP/1.1" 200 -
+2025-05-04 20:08:43,215 - Indexer - INFO - 127.0.0.1 - - [04/May/2025 20:08:43] "GET /?q= HTTP/1.1" 200 -
+2025-05-04 20:08:45,922 - Indexer - INFO - 127.0.0.1 - - [04/May/2025 20:08:45] "GET /?q= HTTP/1.1" 200 -
+2025-05-04 20:08:46,075 - Indexer - INFO - 127.0.0.1 - - [04/May/2025 20:08:46] "GET /?q= HTTP/1.1" 200 -
+2025-05-04 20:09:54,106 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 20:09:54,464 - Indexer - INFO -  * Restarting with stat
+2025-05-04 20:09:56,955 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 20:09:57,873 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 20:09:58,012 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 20:09:58,013 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 20:09:59,138 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 20:09:59,259 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 20:09:59,283 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 20:09:59,286 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 20:10:06,499 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 20:10:06,864 - Indexer - INFO -  * Restarting with stat
+2025-05-04 20:10:09,276 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 20:10:10,132 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 20:10:10,267 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 20:10:10,269 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 20:10:12,153 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 20:10:12,250 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 20:10:12,274 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 20:10:12,277 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 20:17:33,175 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\deploy_to_ec2.py', reloading
+2025-05-04 20:17:33,526 - Indexer - INFO -  * Restarting with stat
+2025-05-04 20:17:36,038 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 20:17:38,045 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 20:17:38,198 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 20:17:38,198 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 20:17:39,442 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 20:17:39,545 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 20:17:39,574 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 20:17:39,581 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 20:17:57,153 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\deploy_to_ec2.py', reloading
+2025-05-04 20:17:57,473 - Indexer - INFO -  * Restarting with stat
+2025-05-04 20:17:59,875 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 20:18:00,825 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 20:18:00,959 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 20:18:00,959 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 20:18:02,162 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 20:18:02,260 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 20:18:02,277 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 20:18:02,280 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 20:18:30,535 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\deploy_to_ec2.py', reloading
+2025-05-04 20:18:30,865 - Indexer - INFO -  * Restarting with stat
+2025-05-04 20:18:33,151 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 20:18:34,218 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 20:18:34,355 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 20:18:34,356 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 20:18:35,461 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 20:18:35,557 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 20:18:35,579 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 20:18:35,581 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 20:18:59,028 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\deploy_to_ec2.py', reloading
+2025-05-04 20:18:59,547 - Indexer - INFO -  * Restarting with stat
+2025-05-04 20:19:01,772 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 20:19:02,652 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 20:19:02,786 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 20:19:02,787 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 20:19:03,965 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 20:19:04,074 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 20:19:04,095 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 20:19:04,098 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 20:19:28,940 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\deploy_to_ec2.py', reloading
+2025-05-04 20:19:29,254 - Indexer - INFO -  * Restarting with stat
+2025-05-04 20:19:31,492 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 20:19:32,478 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 20:19:32,628 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 20:19:32,629 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 20:19:33,815 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 20:19:33,911 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 20:19:33,934 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 20:19:33,937 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 20:23:09,623 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\deploy_to_ec2.py', reloading
+2025-05-04 20:23:09,916 - Indexer - INFO -  * Restarting with stat
+2025-05-04 20:23:12,059 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 20:23:13,021 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 20:23:13,160 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 20:23:13,161 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 20:23:14,264 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 20:23:14,356 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 20:23:14,377 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 20:23:14,380 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 20:23:23,682 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\deploy_to_ec2.py', reloading
+2025-05-04 20:23:24,008 - Indexer - INFO -  * Restarting with stat
+2025-05-04 20:23:26,222 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 20:23:27,091 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 20:23:27,276 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 20:23:27,277 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 20:23:29,059 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 20:23:29,161 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 20:23:29,182 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 20:23:29,185 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 20:23:38,589 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\deploy_to_ec2.py', reloading
+2025-05-04 20:23:39,014 - Indexer - INFO -  * Restarting with stat
+2025-05-04 20:23:41,390 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 20:23:42,297 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 20:23:42,435 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 20:23:42,436 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 20:23:43,523 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 20:23:43,622 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 20:23:43,644 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 20:23:43,648 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 20:23:52,942 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\deploy_to_ec2.py', reloading
+2025-05-04 20:23:53,272 - Indexer - INFO -  * Restarting with stat
+2025-05-04 20:23:55,579 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 20:23:56,501 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 20:23:56,653 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 20:23:56,654 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 20:23:57,782 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 20:23:57,887 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 20:23:57,910 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 20:23:57,913 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 20:26:06,488 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\deploy_to_ec2.py', reloading
+2025-05-04 20:26:06,881 - Indexer - INFO -  * Restarting with stat
+2025-05-04 20:26:09,658 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 20:26:10,594 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 20:26:10,732 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 20:26:10,733 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 20:26:11,885 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 20:26:11,984 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 20:26:12,007 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 20:26:12,009 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 20:26:23,778 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\deploy_to_ec2.py', reloading
+2025-05-04 20:26:24,150 - Indexer - INFO -  * Restarting with stat
+2025-05-04 20:26:26,592 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 20:26:27,505 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 20:26:27,641 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 20:26:27,641 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 20:26:28,734 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 20:26:28,835 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 20:26:28,858 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 20:26:28,861 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 20:52:07,237 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 20:52:07,531 - Indexer - INFO -  * Restarting with stat
+2025-05-04 20:52:09,563 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 20:52:10,561 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 20:52:10,706 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 20:52:10,707 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 20:52:11,819 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 20:52:11,820 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 20:52:11,846 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 20:52:11,849 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 20:52:15,494 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 20:52:15,776 - Indexer - INFO -  * Restarting with stat
+2025-05-04 20:52:17,824 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 20:52:18,828 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 20:52:18,967 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 20:52:18,968 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 20:52:20,066 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 20:52:20,067 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 20:52:20,091 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 20:52:20,094 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 20:52:23,586 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 20:52:23,859 - Indexer - INFO -  * Restarting with stat
+2025-05-04 20:52:25,966 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 20:52:26,945 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 20:52:27,094 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 20:52:27,095 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 20:52:28,219 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 20:52:28,221 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 20:52:28,249 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 20:52:28,252 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 20:52:40,216 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 20:52:40,496 - Indexer - INFO -  * Restarting with stat
+2025-05-04 20:52:42,484 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 20:52:43,431 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 20:52:43,566 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 20:52:43,567 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 20:52:45,192 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 20:52:45,193 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 20:52:45,219 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 20:52:45,222 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 20:52:51,552 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 20:52:51,827 - Indexer - INFO -  * Restarting with stat
+2025-05-04 20:52:53,974 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 20:52:54,927 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 20:52:55,063 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 20:52:55,065 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 20:52:56,166 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 20:52:56,167 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 20:52:56,192 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 20:52:56,194 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 20:53:23,810 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 20:53:24,089 - Indexer - INFO -  * Restarting with stat
+2025-05-04 20:53:26,192 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 20:53:27,601 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 20:53:27,935 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 20:53:27,936 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 20:53:29,064 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 20:53:29,065 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 20:53:29,092 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 20:53:29,095 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 20:53:45,367 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 20:53:45,652 - Indexer - INFO -  * Restarting with stat
+2025-05-04 20:53:47,688 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 20:53:48,654 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 20:53:48,795 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 20:53:48,796 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 20:53:49,941 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 20:53:49,942 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 20:53:49,973 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 20:53:49,978 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 21:02:27,460 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 21:02:27,773 - Indexer - INFO -  * Restarting with stat
+2025-05-04 21:02:30,092 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 21:02:31,570 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 21:02:31,770 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 21:02:31,771 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 21:02:32,870 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 21:02:32,871 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 21:02:32,900 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 21:02:32,902 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 21:02:38,014 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 21:02:38,297 - Indexer - INFO -  * Restarting with stat
+2025-05-04 21:02:40,391 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 21:02:41,365 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 21:02:41,501 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 21:02:41,502 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 21:02:43,511 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 21:02:43,511 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 21:02:43,533 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 21:02:43,536 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 21:02:52,684 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 21:02:53,012 - Indexer - INFO -  * Restarting with stat
+2025-05-04 21:02:55,013 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 21:02:56,000 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 21:02:56,296 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 21:02:56,298 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 21:02:57,863 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 21:02:57,864 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 21:02:57,886 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 21:02:57,888 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 21:03:11,410 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 21:03:11,691 - Indexer - INFO -  * Restarting with stat
+2025-05-04 21:03:13,882 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 21:03:14,839 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 21:03:14,978 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 21:03:14,980 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 21:03:16,078 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 21:03:16,079 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 21:03:16,101 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 21:03:16,104 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 21:03:21,179 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 21:03:21,525 - Indexer - INFO -  * Restarting with stat
+2025-05-04 21:03:23,595 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 21:03:24,579 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 21:03:24,716 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 21:03:24,717 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 21:03:25,833 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 21:03:25,834 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 21:03:25,861 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 21:03:25,864 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 21:03:36,428 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 21:03:36,740 - Indexer - INFO -  * Restarting with stat
+2025-05-04 21:03:38,768 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 21:03:39,745 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 21:03:39,882 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 21:03:39,883 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 21:03:41,280 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 21:03:41,280 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 21:03:41,302 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 21:03:41,305 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 21:03:54,712 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 21:03:55,002 - Indexer - INFO -  * Restarting with stat
+2025-05-04 21:03:57,235 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 21:03:58,273 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 21:03:58,567 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 21:03:58,567 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 21:04:00,131 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 21:04:00,132 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 21:04:00,155 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 21:04:00,158 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 21:11:06,354 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 21:11:06,689 - Indexer - INFO -  * Restarting with stat
+2025-05-04 21:11:09,131 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 21:11:10,130 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 21:11:10,268 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 21:11:10,270 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 21:11:12,227 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 21:11:12,227 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 21:11:12,249 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 21:11:12,252 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 21:11:30,113 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 21:11:30,536 - Indexer - INFO -  * Restarting with stat
+2025-05-04 21:11:32,839 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 21:11:33,804 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 21:11:33,941 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 21:11:33,942 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 21:11:35,808 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 21:11:35,809 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 21:11:35,834 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 21:11:35,837 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 21:11:49,570 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 21:11:49,867 - Indexer - INFO -  * Restarting with stat
+2025-05-04 21:11:52,038 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 21:11:53,043 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 21:11:53,183 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 21:11:53,184 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 21:11:55,119 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 21:11:55,120 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 21:11:55,148 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 21:11:55,151 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 21:12:08,933 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 21:12:09,274 - Indexer - INFO -  * Restarting with stat
+2025-05-04 21:12:11,536 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 21:12:13,857 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 21:12:14,186 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 21:12:14,186 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 21:12:15,284 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 21:12:15,285 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 21:12:15,313 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 21:12:15,316 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 21:12:28,919 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 21:12:29,222 - Indexer - INFO -  * Restarting with stat
+2025-05-04 21:12:31,408 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 21:12:32,353 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 21:12:32,489 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 21:12:32,489 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 21:12:34,544 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 21:12:34,545 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 21:12:34,569 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 21:12:34,572 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 21:12:43,952 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 21:12:44,258 - Indexer - INFO -  * Restarting with stat
+2025-05-04 21:12:46,513 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 21:12:47,507 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 21:12:47,642 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 21:12:47,643 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 21:12:49,838 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 21:12:49,839 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 21:12:49,866 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 21:12:49,868 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 21:13:03,628 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 21:13:03,934 - Indexer - INFO -  * Restarting with stat
+2025-05-04 21:13:06,174 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 21:13:07,633 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 21:13:07,907 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 21:13:07,907 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 21:13:09,392 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 21:13:09,392 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 21:13:09,416 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 21:13:09,419 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 21:13:21,704 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 21:13:22,009 - Indexer - INFO -  * Restarting with stat
+2025-05-04 21:13:24,204 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 21:13:25,971 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 21:13:26,292 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 21:13:26,294 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 21:13:27,860 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 21:13:27,862 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 21:13:27,891 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 21:13:27,893 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 21:13:41,471 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 21:13:41,771 - Indexer - INFO -  * Restarting with stat
+2025-05-04 21:13:43,922 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 21:13:44,905 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 21:13:45,042 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 21:13:45,042 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 21:13:47,394 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 21:13:47,396 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 21:13:47,423 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 21:13:47,426 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 21:13:59,784 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 21:14:00,092 - Indexer - INFO -  * Restarting with stat
+2025-05-04 21:14:02,174 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 21:14:03,566 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 21:14:03,848 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 21:14:03,849 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 21:14:05,304 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 21:14:05,305 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 21:14:05,329 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 21:14:05,332 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 21:14:14,806 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 21:14:15,172 - Indexer - INFO -  * Restarting with stat
+2025-05-04 21:14:17,446 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 21:14:18,444 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 21:14:18,581 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 21:14:18,581 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 21:14:20,058 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 21:14:20,059 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 21:14:20,086 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 21:14:20,088 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 21:17:46,902 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 21:17:47,215 - Indexer - INFO -  * Restarting with stat
+2025-05-04 21:17:49,517 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 21:17:50,537 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 21:17:50,825 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 21:17:50,826 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 21:17:52,320 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 21:17:52,321 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 21:17:52,348 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 21:17:52,352 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 21:18:03,251 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 21:18:03,552 - Indexer - INFO -  * Restarting with stat
+2025-05-04 21:18:05,787 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 21:18:07,163 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 21:18:07,440 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 21:18:07,441 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 21:18:08,833 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 21:18:08,846 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 21:18:08,875 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 21:18:08,877 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 21:18:24,275 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 21:18:24,598 - Indexer - INFO -  * Restarting with stat
+2025-05-04 21:18:27,076 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 21:18:49,780 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 21:18:49,970 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 21:18:49,970 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 21:18:51,075 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 21:18:51,075 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 21:18:51,102 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 21:18:51,106 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 21:19:16,216 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 21:19:16,519 - Indexer - INFO -  * Restarting with stat
+2025-05-04 21:19:18,801 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 21:19:20,293 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 21:19:20,618 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 21:19:20,619 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 21:19:22,100 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 21:19:22,101 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 21:19:22,129 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 21:19:22,131 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 21:19:42,903 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 21:19:43,276 - Indexer - INFO -  * Restarting with stat
+2025-05-04 21:19:45,578 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 21:19:46,795 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 21:19:47,066 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 21:19:47,066 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 21:19:48,412 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 21:19:48,413 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 21:19:48,441 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 21:19:48,444 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 21:19:59,320 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 21:19:59,639 - Indexer - INFO -  * Restarting with stat
+2025-05-04 21:20:01,891 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 21:20:02,902 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 21:20:03,034 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 21:20:03,043 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 21:20:05,207 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 21:20:05,208 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 21:20:05,236 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 21:20:05,239 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 21:21:16,231 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 21:21:16,528 - Indexer - INFO -  * Restarting with stat
+2025-05-04 21:21:18,811 - Indexer - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-05-04 21:21:20,306 - Indexer - INFO - Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+2025-05-04 21:21:20,609 - Indexer - INFO - Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+2025-05-04 21:21:20,610 - Indexer - INFO - Successfully initialized SQS queues
+2025-05-04 21:21:21,786 - Indexer - INFO - DBManager initialized with DynamoDB tables
+2025-05-04 21:21:21,788 - Indexer - INFO - AWS services initialized successfully
+2025-05-04 21:21:21,813 - Indexer - WARNING -  * Debugger is active!
+2025-05-04 21:21:21,816 - Indexer - INFO -  * Debugger PIN: 380-068-087
+2025-05-04 21:24:09,478 - Indexer - INFO -  * Detected change in 'C:\\Users\\acer\\Distributed-Web-Crawling-and-Indexing-System-using-Cloud-Computing\\web_search.py', reloading
+2025-05-04 21:24:09,830 - Indexer - INFO -  * Restarting with stat

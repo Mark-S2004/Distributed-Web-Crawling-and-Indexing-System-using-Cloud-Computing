@@ -1,0 +1,408 @@
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.bbc.com%2Fnews%2Farticles%2Fc8074n5z597o
+INFO:root:Indexed & marked: https://www.bbc.com/news/articles/c8074n5z597o
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Flemorage
+ERROR:root:Error adding document to index: maximum recursion depth exceeded while calling a Python object
+ERROR:root:Failed to index https://github.com/lemorage
+^CINFO:root:Received termination signal. Shutting down indexer gracefully...
+INFO:root:Indexer shutting down...
+INFO:root:Shutting down CloudQueue
+INFO:root:Indexer shutdown complete
+ubuntu@ip-172-31-22-171:~/temp_crawler$ python3 simple_search.py "python"
+python3: can't open file 'simple_search.py': [Errno 2] No such file or directory
+ubuntu@ip-172-31-22-171:~/temp_crawler$ python3 search.py "python"
+Traceback (most recent call last):
+  File "search.py", line 6, in <module>
+    from enhanced_indexer import WhooshIndexer
+ModuleNotFoundError: No module named 'enhanced_indexer'
+ubuntu@ip-172-31-22-171:~/temp_crawler$ rm -rf search_index/*
+ubuntu@ip-172-31-22-171:~/temp_crawler$ python3 main.py --role indexer
+INFO:botocore.credentials:Found credentials from IAM Role: CrawlerInstanceRole
+INFO:root:Using existing S3 bucket: web-crawler-data-storage
+INFO:botocore.credentials:Found credentials from IAM Role: CrawlerInstanceRole
+INFO:root:DBManager initialized with DynamoDB tables
+INFO:root:Found existing queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-url-queue
+INFO:root:Found existing status queue: https://sqs.us-east-1.amazonaws.com/405823273955/crawler-status-queue
+INFO:root:Successfully initialized SQS queues
+INFO:root:NLP tools initialized successfully
+INFO:root:Created new Whoosh index
+INFO:root:Whoosh indexer initialized with directory: search_index
+INFO:root:Enhanced indexer components initialized
+INFO:root:Found 120 unindexed URLs that have been fetched
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.redhat.com%2Fen%2Ftechnologies%2Fmanagement%2Fansible%2Flearn%3Fsc_cid%3D7015Y000003szaeQAA
+INFO:root:Indexed & marked: https://www.redhat.com/en/technologies/management/ansible/learn?sc_cid=7015Y000003szaeQAA
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.bbc.com%2Fnews%2Ftopics%2Fc46ze6e45vvt
+INFO:root:Indexed & marked: https://www.bbc.com/news/topics/c46ze6e45vvt
+INFO:root:Downloaded from S3: https%3A%2F%2Fflask.palletsprojects.com%2Fextensiondev
+INFO:root:Indexed & marked: https://flask.palletsprojects.com/extensiondev
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.redhat.com%2Fen%2Fabout%2Fdigital-accessibility
+INFO:root:Indexed & marked: https://www.redhat.com/en/about/digital-accessibility
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.redhat.com%2Fen%2Fansible-collaborative
+INFO:root:Indexed & marked: https://www.redhat.com/en/ansible-collaborative
+INFO:root:Found 119 unindexed URLs that have been fetched
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.instagram.com%2Fbbc_culture
+INFO:root:Indexed & marked: https://www.instagram.com/bbc_culture
+INFO:root:Downloaded from S3: https%3A%2F%2Fflask.palletsprojects.com%2Ftutorial%2Ftemplates
+INFO:root:Indexed & marked: https://flask.palletsprojects.com/tutorial/templates
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fpython%2Fdevguide%2Ftree%2Fmain%2Fdeveloper-workflow
+INFO:root:Indexed & marked: https://github.com/python/devguide/tree/main/developer-workflow
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fvim-openerp-team
+INFO:root:Indexed & marked: https://github.com/vim-openerp-team
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Flogin%3Freturn_to%3D%252Fpython%252Fpython-docs-zh-tw
+INFO:root:Indexed & marked: https://github.com/login?return_to=%2Fpython%2Fpython-docs-zh-tw
+INFO:root:Found 116 unindexed URLs that have been fetched
+INFO:root:Downloaded from S3: https%3A%2F%2Fdocs.ansible.com%2Fansible%2Flatest%2Fgetting_started%2Fget_started_playbook.html
+INFO:root:Indexed & marked: https://docs.ansible.com/ansible/latest/getting_started/get_started_playbook.html
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Flogin%3Freturn_to%3Dhttps%253A%252F%252Fgithub.com%252Fpython%252Fpython-docs-zh-tw%252Fissues%253Fq%253Dlabel%25253A%252522good%252Bfirst%252Bissue%252522%252Bis%25253Aissue%252Bis%25253Aopen
+INFO:root:Indexed & marked: https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fpython%2Fpython-docs-zh-tw%2Fissues%3Fq%3Dlabel%253A%2522good%2Bfirst%2Bissue%2522%2Bis%253Aissue%2Bis%253Aopen
+INFO:root:Downloaded from S3: https%3A%2F%2Fflask.palletsprojects.com%2Fpatterns%2Flazyloading
+INFO:root:Indexed & marked: https://flask.palletsprojects.com/patterns/lazyloading
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.bbc.com%2Freel%2Fvideo%2Fp0jphx6z%2Fvarna-necropolis-world-s-oldest-gold-treasure
+INFO:root:Indexed & marked: https://www.bbc.com/reel/video/p0jphx6z/varna-necropolis-world-s-oldest-gold-treasure
+INFO:root:Downloaded from S3: https%3A%2F%2Faws.amazon.com%2Fpartners%2F%3Fnc2%3Dh_mo
+WARNING:root:Content for https://aws.amazon.com/partners/?nc2=h_mo is too large (1511364 bytes), truncating
+WARNING:root:HTML content truncated before parsing due to excessive size
+INFO:root:Indexed & marked: https://aws.amazon.com/partners/?nc2=h_mo
+INFO:root:Found 112 unindexed URLs that have been fetched
+INFO:root:Downloaded from S3: https%3A%2F%2Fflask.palletsprojects.com%2Fpatterns%2Fwtforms
+INFO:root:Indexed & marked: https://flask.palletsprojects.com/patterns/wtforms
+INFO:root:Downloaded from S3: https%3A%2F%2Fansible.readthedocs.io%2Fprojects%2Frulebook
+INFO:root:Indexed & marked: https://ansible.readthedocs.io/projects/rulebook
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fmicrobit-playground
+INFO:root:Indexed & marked: https://github.com/microbit-playground
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fmatrixise%2Fpyactiviti
+INFO:root:Indexed & marked: https://github.com/matrixise/pyactiviti
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fambv
+INFO:root:Indexed & marked: https://github.com/ambv
+INFO:root:Found 111 unindexed URLs that have been fetched
+INFO:root:Downloaded from S3: https%3A%2F%2Faws.amazon.com%2Fevents%2F%3Fnc2%3Dh_ql_ev
+INFO:root:Indexed & marked: https://aws.amazon.com/events/?nc2=h_ql_ev
+INFO:root:Downloaded from S3: https%3A%2F%2Fflask.palletsprojects.com%2Ftutorial%2Finstall
+INFO:root:Indexed & marked: https://flask.palletsprojects.com/tutorial/install
+INFO:root:Downloaded from S3: https%3A%2F%2Fflask.palletsprojects.com%2Fpatterns%2Fviewdecorators
+INFO:root:Indexed & marked: https://flask.palletsprojects.com/patterns/viewdecorators
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fpython%2Fpython-docs-ko
+INFO:root:Indexed & marked: https://github.com/python/python-docs-ko
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.bbc.com%2Ftravel%2Farticle%2F20250502-the-artichoke-so-prized-that-people-sell-fakes
+INFO:root:Indexed & marked: https://www.bbc.com/travel/article/20250502-the-artichoke-so-prized-that-people-sell-fakes
+INFO:root:Found 106 unindexed URLs that have been fetched
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fmatrixise%3Ftab%3Dstars
+INFO:root:Indexed & marked: https://github.com/matrixise?tab=stars
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.redhat.com%2Fen
+INFO:root:Indexed & marked: https://www.redhat.com/en
+INFO:root:Downloaded from S3: https%3A%2F%2Faws.amazon.com%2Fsolutions%2F%3Fnc2%3Dh_ql_sol
+INFO:root:Indexed & marked: https://aws.amazon.com/solutions/?nc2=h_ql_sol
+INFO:root:Downloaded from S3: https%3A%2F%2Fdocs.ansible.com%2Fansible%2Flatest%2Fgetting_started%2Fget_started_inventory.html
+INFO:root:Indexed & marked: https://docs.ansible.com/ansible/latest/getting_started/get_started_inventory.html
+INFO:root:Downloaded from S3: https%3A%2F%2Fdocs.ansible.com%2Fansible%2Flatest%2Fgetting_started%2Fintroduction.html
+INFO:root:Indexed & marked: https://docs.ansible.com/ansible/latest/getting_started/introduction.html
+INFO:root:Found 105 unindexed URLs that have been fetched
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fpython%2Fdevguide%2Ftree%2Fmain%2Fcore-developers
+INFO:root:Indexed & marked: https://github.com/python/devguide/tree/main/core-developers
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fmatrixise%3Fachievement%3Dpair-extraordinaire%26tab%3Dachievements
+INFO:root:Indexed & marked: https://github.com/matrixise?achievement=pair-extraordinaire&tab=achievements
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fcarltongibson%2Fmypy%2Fstargazers
+INFO:root:Indexed & marked: https://github.com/carltongibson/mypy/stargazers
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fmatrixise%3Fachievement%3Dmars-2020-contributor%26tab%3Dachievements
+INFO:root:Indexed & marked: https://github.com/matrixise?achievement=mars-2020-contributor&tab=achievements
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.bbc.com%2Fculture%2Ftags%2Fhistory
+INFO:root:Indexed & marked: https://www.bbc.com/culture/tags/history
+INFO:root:Found 102 unindexed URLs that have been fetched
+INFO:root:Downloaded from S3: https%3A%2F%2Fwirtel.be
+INFO:root:Indexed & marked: https://wirtel.be
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.bbc.com%2Freel%2Fvideo%2Fp0kqd47s%2Frichard-iii-the-accidental-photo-of-a-long-lost-king
+INFO:root:Indexed & marked: https://www.bbc.com/reel/video/p0kqd47s/richard-iii-the-accidental-photo-of-a-long-lost-king
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fjazzband
+INFO:root:Indexed & marked: https://github.com/jazzband
+INFO:root:Downloaded from S3: https%3A%2F%2Faws.amazon.com%2Faccessibility%2F%3Fnc1%3Df_cc
+WARNING:root:HTML content truncated before parsing due to excessive size
+INFO:root:Indexed & marked: https://aws.amazon.com/accessibility/?nc1=f_cc
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.bbc.com%2Fnews%2Fvideos%2Fcvg909x4yzzo
+INFO:root:Indexed & marked: https://www.bbc.com/news/videos/cvg909x4yzzo
+INFO:root:Found 99 unindexed URLs that have been fetched
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.bbc.com%2Freel%2Fvideo%2Fp0bkptqw%2Fwhy-we-should-treat-food-like-medicine
+INFO:root:Indexed & marked: https://www.bbc.com/reel/video/p0bkptqw/why-we-should-treat-food-like-medicine
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fezio-melotti
+INFO:root:Indexed & marked: https://github.com/ezio-melotti
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.redhat.com%2Fen%2Fabout%2Fcompany
+INFO:root:Indexed & marked: https://www.redhat.com/en/about/company
+INFO:root:Downloaded from S3: https%3A%2F%2Fflask.palletsprojects.com%2Fpatterns%2Fcaching
+INFO:root:Indexed & marked: https://flask.palletsprojects.com/patterns/caching
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fpython%2Fimportlib_resources%2Fgraphs%2Fcommit-activity
+INFO:root:Indexed & marked: https://github.com/python/importlib_resources/graphs/commit-activity
+INFO:root:Found 96 unindexed URLs that have been fetched
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fmatrixise%2Fflask-openerp
+INFO:root:Indexed & marked: https://github.com/matrixise/flask-openerp
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fpython%2Fdevguide%2Ftree%2Fmain%2Ftesting
+INFO:root:Indexed & marked: https://github.com/python/devguide/tree/main/testing
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fmatrixise%2Fdumpyc
+INFO:root:Indexed & marked: https://github.com/matrixise/dumpyc
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.bbc.co.uk%2Fnews%2Fworld-australia-45254762
+INFO:root:Indexed & marked: https://www.bbc.co.uk/news/world-australia-45254762
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.bbc.com%2Freel%2Fvideo%2Fp0d47mjl%2Fthe-truth-about-drinking-raw-milk
+INFO:root:Indexed & marked: https://www.bbc.com/reel/video/p0d47mjl/the-truth-about-drinking-raw-milk
+INFO:root:Found 94 unindexed URLs that have been fetched
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.bbc.com%2Fnews%2Farticles%2Fcm25lz56rezo
+INFO:root:Indexed & marked: https://www.bbc.com/news/articles/cm25lz56rezo
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.bbc.com%2Freel%2Fvideo%2Fp0f0cw07%2Fthe-truth-behind-your-favourite-flavours
+INFO:root:Indexed & marked: https://www.bbc.com/reel/video/p0f0cw07/the-truth-behind-your-favourite-flavours
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.bbc.com%2Freel%2Fvideo%2Fp0cx5c9z%2Fthe-russian-food-obsession-inspired-by-the-us
+INFO:root:Indexed & marked: https://www.bbc.com/reel/video/p0cx5c9z/the-russian-food-obsession-inspired-by-the-us
+INFO:root:Downloaded from S3: http%3A%2F%2Fwww.ansible.com%2Fen%2Fansible-collaborative%2Fhow-ansible-works
+INFO:root:Indexed & marked: http://www.ansible.com/en/ansible-collaborative/how-ansible-works
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.bbc.com%2Fnews%2Farticles%2Fc045vvwlwr4o
+INFO:root:Indexed & marked: https://www.bbc.com/news/articles/c045vvwlwr4o
+INFO:root:Found 92 unindexed URLs that have been fetched
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fpradyunsg
+INFO:root:Indexed & marked: https://github.com/pradyunsg
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fabravalheri
+INFO:root:Indexed & marked: https://github.com/abravalheri
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fmatrixise%2Fcpython-vim-syntax
+INFO:root:Indexed & marked: https://github.com/matrixise/cpython-vim-syntax
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fmatrixise%3Ftab%3Dpackages
+INFO:root:Indexed & marked: https://github.com/matrixise?tab=packages
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.bbc.com%2Fnews%2Farticles%2Fcdxgwnj8v5eo
+INFO:root:Indexed & marked: https://www.bbc.com/news/articles/cdxgwnj8v5eo
+INFO:root:Found 89 unindexed URLs that have been fetched
+INFO:root:Downloaded from S3: http%3A%2F%2Fwww.ansible.com%2Fansible-collaborative%2Fecosystem
+INFO:root:Indexed & marked: http://www.ansible.com/ansible-collaborative/ecosystem
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fpython%2Fdevguide%2Fpulse
+INFO:root:Indexed & marked: https://github.com/python/devguide/pulse
+INFO:root:Downloaded from S3: https%3A%2F%2Fansible.readthedocs.io%2Fprojects%2Fdev-tools
+INFO:root:Indexed & marked: https://ansible.readthedocs.io/projects/dev-tools
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fmatrixise%2Fpyactiviti%2Fforks
+INFO:root:Indexed & marked: https://github.com/matrixise/pyactiviti/forks
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.bbc.com%2Fnews%2Fworld-europe-61816268
+INFO:root:Indexed & marked: https://www.bbc.com/news/world-europe-61816268
+INFO:root:Found 86 unindexed URLs that have been fetched
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fabravalheri%2Fmypy
+INFO:root:Indexed & marked: https://github.com/abravalheri/mypy
+INFO:root:Downloaded from S3: https%3A%2F%2Faws.amazon.com%2Fcontact-us%2F%3Fnc2%3Dh_ql_exm
+INFO:root:Indexed & marked: https://aws.amazon.com/contact-us/?nc2=h_ql_exm
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fpython%2Fdevguide%2Fsearch%3Fl%3Djinja
+INFO:root:Indexed & marked: https://github.com/python/devguide/search?l=jinja
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.bbc.com%2Freel%2Fvideo%2Fp0k3vzf7%2Fworld-war-one-relics-live-on-in-the-fields-of-europe
+INFO:root:Indexed & marked: https://www.bbc.com/reel/video/p0k3vzf7/world-war-one-relics-live-on-in-the-fields-of-europe
+INFO:root:Downloaded from S3: https%3A%2F%2Fcloud.email.bbc.com%2FSignUp10_08%3F%26at_bbc_team%3Dstudios%26at_medium%3DOnsite%26at_objective%3Dacquisition%26at_ptr_name%3Dbbc.com%26at_link_origin%3Dfeaturesarticle%26at_campaign%3Dessentiallist%26at_campaign_type%3Downed        
+INFO:root:Indexed & marked: https://cloud.email.bbc.com/SignUp10_08?&at_bbc_team=studios&at_medium=Onsite&at_objective=acquisition&at_ptr_name=bbc.com&at_link_origin=featuresarticle&at_campaign=essentiallist&at_campaign_type=owned
+INFO:root:Found 81 unindexed URLs that have been fetched
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.redhat.com%2Fen%2Fansible-collaborative%2Fansible-community-training
+INFO:root:Indexed & marked: https://www.redhat.com/en/ansible-collaborative/ansible-community-training
+INFO:root:Downloaded from S3: https%3A%2F%2Fdocs.ansible.com%2Fansible%2Flatest%2Fgetting_started%2Fget_started_ansible.html
+INFO:root:Indexed & marked: https://docs.ansible.com/ansible/latest/getting_started/get_started_ansible.html
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.linkedin.com%2Fin%2Fstephanewirtel
+INFO:root:Indexed & marked: https://www.linkedin.com/in/stephanewirtel
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.bbc.com%2Fnews%2Farticles%2Fcvg7x1glvwdo
+INFO:root:Indexed & marked: https://www.bbc.com/news/articles/cvg7x1glvwdo
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fnickdrozd%2Fmypy%2Fstargazers
+INFO:root:Indexed & marked: https://github.com/nickdrozd/mypy/stargazers
+INFO:root:Found 79 unindexed URLs that have been fetched
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.bbc.com%2Freel%2Fvideo%2Fp0k8zt2z%2Fidris-elba-on-moment-he-learned-about-mandela-s-death
+INFO:root:Indexed & marked: https://www.bbc.com/reel/video/p0k8zt2z/idris-elba-on-moment-he-learned-about-mandela-s-death
+INFO:root:Downloaded from S3: https%3A%2F%2Faws.amazon.com%2Ftraining%2F%3Fnc2%3Dh_mo
+WARNING:root:Content for https://aws.amazon.com/training/?nc2=h_mo is too large (1804282 bytes), truncating
+WARNING:root:HTML content truncated before parsing due to excessive size
+INFO:root:Indexed & marked: https://aws.amazon.com/training/?nc2=h_mo
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.redhat.com%2Fen%2Fansible-collaborative%2Fecosystem
+INFO:root:Indexed & marked: https://www.redhat.com/en/ansible-collaborative/ecosystem
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.bbc.com%2Fculture%2Farticle%2F20250415-coachella-looks-from-sabrina-carpenter-to-lady-gaga-the-costumes-that-define-the-stars
+INFO:root:Indexed & marked: https://www.bbc.com/culture/article/20250415-coachella-looks-from-sabrina-carpenter-to-lady-gaga-the-costumes-that-define-the-stars
+INFO:root:Downloaded from S3: https%3A%2F%2Faccess.redhat.com%2Fdocumentation%2Fen-us%2Fred_hat_ansible_automation_platform%3Fsc_cid%3D7015Y000003szaeQAA
+INFO:root:Indexed & marked: https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform?sc_cid=7015Y000003szaeQAA
+INFO:root:Found 76 unindexed URLs that have been fetched
+INFO:root:Downloaded from S3: https%3A%2F%2Faws.amazon.com%2Fdeveloper%2Flanguage%2Fjava%2F%3Fnc1%3Df_dr
+INFO:root:Indexed & marked: https://aws.amazon.com/developer/language/java/?nc1=f_dr
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fntoll%3Fachievement%3Dpull-shark%26tab%3Dachievements
+INFO:root:Indexed & marked: https://github.com/ntoll?achievement=pull-shark&tab=achievements
+INFO:root:Downloaded from S3: https%3A%2F%2Fforum.ansible.com%2Fc%2Fevents%2F8
+INFO:root:Indexed & marked: https://forum.ansible.com/c/events/8
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.bbc.com%2Fnews%2Farticles%2Fc4g21kln9y1o
+INFO:root:Indexed & marked: https://www.bbc.com/news/articles/c4g21kln9y1o
+INFO:root:Downloaded from S3: https%3A%2F%2Fforum.ansible.com%2Ftag%2Fpolicy-as-code-partn
+INFO:root:Indexed & marked: https://forum.ansible.com/tag/policy-as-code-partn
+INFO:root:Found 73 unindexed URLs that have been fetched
+INFO:root:Downloaded from S3: https%3A%2F%2Faws.amazon.com%2Fwhat-is-aws%2F%3Fnc2%3Dh_mo
+INFO:root:Indexed & marked: https://aws.amazon.com/what-is-aws/?nc2=h_mo
+INFO:root:Downloaded from S3: https%3A%2F%2Fflask.palletsprojects.com%2Fpatterns%2Fsqlite3
+INFO:root:Indexed & marked: https://flask.palletsprojects.com/patterns/sqlite3
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.bbc.com%2Freel%2Fvideo%2Fp0jnkzzy%2Fthe-giant-350-year-old-model-of-st-paul-s-cathedral
+INFO:root:Indexed & marked: https://www.bbc.com/reel/video/p0jnkzzy/the-giant-350-year-old-model-of-st-paul-s-cathedral
+INFO:root:Downloaded from S3: https%3A%2F%2Fflask.palletsprojects.com%2Fappcontext
+INFO:root:Indexed & marked: https://flask.palletsprojects.com/appcontext
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fsolutions%2Findustry%2Fmanufacturing
+WARNING:root:HTML content truncated before parsing due to excessive size
+INFO:root:Indexed & marked: https://github.com/solutions/industry/manufacturing
+INFO:root:Found 71 unindexed URLs that have been fetched
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.bbc.com%2Ftravel%2Farticle%2F20240327-the-centuries-old-baba-recipe-made-with-96-egg-yolks
+INFO:root:Indexed & marked: https://www.bbc.com/travel/article/20240327-the-centuries-old-baba-recipe-made-with-96-egg-yolks
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.redhat.com%2Fen%2Fabout%2Fterms-use
+INFO:root:Indexed & marked: https://www.redhat.com/en/about/terms-use
+INFO:root:Downloaded from S3: https%3A%2F%2Fdocs.ansible.com%2Fansible%2Flatest%2Fgetting_started%2Fbasic_concepts.html
+INFO:root:Indexed & marked: https://docs.ansible.com/ansible/latest/getting_started/basic_concepts.html
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fcielavenir%2Fmypy
+INFO:root:Indexed & marked: https://github.com/cielavenir/mypy
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.bbc.com%2Fnews%2Fworld-australia-45254762
+INFO:root:Indexed & marked: https://www.bbc.com/news/world-australia-45254762
+INFO:root:Found 68 unindexed URLs that have been fetched
+INFO:root:Downloaded from S3: https%3A%2F%2Fflask.palletsprojects.com%2Fapi
+WARNING:root:Content for https://flask.palletsprojects.com/api is too large (1007165 bytes), truncating
+WARNING:root:HTML content truncated before parsing due to excessive size
+WARNING:root:Content truncated due to excessive length
+WARNING:root:Content for https://flask.palletsprojects.com/api truncated to 50000 characters for indexing
+INFO:root:Indexed & marked: https://flask.palletsprojects.com/api
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fmatrixise%3Ftab%3Dachievements
+INFO:root:Indexed & marked: https://github.com/matrixise?tab=achievements
+INFO:root:Downloaded from S3: https%3A%2F%2Fflask.palletsprojects.com%2Fdesign
+INFO:root:Indexed & marked: https://flask.palletsprojects.com/design
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.bbc.com%2Fculture%2Farticle%2F20250415-jmw-turner-at-250-why-his-greatest-painting-the-fighting-temeraire-is-so-misunderstood
+INFO:root:Indexed & marked: https://www.bbc.com/culture/article/20250415-jmw-turner-at-250-why-his-greatest-painting-the-fighting-temeraire-is-so-misunderstood
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.bbc.com%2Freel%2Fvideo%2Fp0jyrzsg%2Fthe-history-of-swing-states-in-the-us
+INFO:root:Indexed & marked: https://www.bbc.com/reel/video/p0jyrzsg/the-history-of-swing-states-in-the-us
+INFO:root:Found 66 unindexed URLs that have been fetched
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.bbc.com%2Freel%2Ftopic%2Ffood-hospitality
+INFO:root:Indexed & marked: https://www.bbc.com/reel/topic/food-hospitality
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fsthagen%2Fpython-mypy%2Fforks
+INFO:root:Indexed & marked: https://github.com/sthagen/python-mypy/forks
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.bbc.com%2Fnews%2Farticles%2Fcr78x889k3xo
+INFO:root:Indexed & marked: https://www.bbc.com/news/articles/cr78x889k3xo
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.bbc.com%2Freel%2Fvideo%2Fp0jnbll0%2Funcovering-the-sunken-relics-of-an-ancient-city
+INFO:root:Indexed & marked: https://www.bbc.com/reel/video/p0jnbll0/uncovering-the-sunken-relics-of-an-ancient-city
+INFO:root:Downloaded from S3: https%3A%2F%2Faws.amazon.com%2Fpartners%2F%3Fnc2%3Dh_ql_pn
+WARNING:root:Content for https://aws.amazon.com/partners/?nc2=h_ql_pn is too large (1511364 bytes), truncating
+WARNING:root:HTML content truncated before parsing due to excessive size
+INFO:root:Indexed & marked: https://aws.amazon.com/partners/?nc2=h_ql_pn
+INFO:root:Found 63 unindexed URLs that have been fetched
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Flogin%3Freturn_to%3D%252Fpython%252Fmypy
+INFO:root:Indexed & marked: https://github.com/login?return_to=%2Fpython%2Fmypy
+INFO:root:Downloaded from S3: https%3A%2F%2Fplay.instruqt.com%2Fredhat%2Finvite%2F2uijms9cndx0
+INFO:root:Indexed & marked: https://play.instruqt.com/redhat/invite/2uijms9cndx0
+INFO:root:Downloaded from S3: https%3A%2F%2Faws.amazon.com%2Fwhat-is%2Fgenerative-ai%2F%3Fnc1%3Df_cc
+INFO:root:Indexed & marked: https://aws.amazon.com/what-is/generative-ai/?nc1=f_cc
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.bbc.com%2Fculture%2Farticle%2F20230428-met-gala-2023-eight-of-the-best-looks-over-the-decades
+INFO:root:Indexed & marked: https://www.bbc.com/culture/article/20230428-met-gala-2023-eight-of-the-best-looks-over-the-decades
+INFO:root:Downloaded from S3: https%3A%2F%2Faws.amazon.com%2Ffree%2Fcompute%2Flightsail%2F%3Fsc_icampaign%3Dadopt_GC_editorial_Lightsail_content_hub_freetier_2024_q1_jan_w3y24%26sc_ichannel%3Dha%26sc_icontent%3Dawssm-5052_pac%26sc_iplace%3Ded%26trk%3D69b60da3-431a-48c9-96ee-0ee396890078~ha_awssm-3419_pac
+INFO:root:Indexed & marked: https://aws.amazon.com/free/compute/lightsail/?sc_icampaign=adopt_GC_editorial_Lightsail_content_hub_freetier_2024_q1_jan_w3y24&sc_ichannel=ha&sc_icontent=awssm-5052_pac&sc_iplace=ed&trk=69b60da3-431a-48c9-96ee-0ee396890078~ha_awssm-3419_pac
+INFO:root:Found 60 unindexed URLs that have been fetched
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fpycomic
+INFO:root:Indexed & marked: https://github.com/pycomic
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.bbc.com%2Freel%2Fvideo%2Fp0cg0wgn%2Fhow-sushi-took-over-the-world
+INFO:root:Indexed & marked: https://www.bbc.com/reel/video/p0cg0wgn/how-sushi-took-over-the-world
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fpython%2Ftypeshed
+INFO:root:Indexed & marked: https://github.com/python/typeshed
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fmicropythonfoundation
+INFO:root:Indexed & marked: https://github.com/micropythonfoundation
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2FthePsf
+INFO:root:Indexed & marked: https://github.com/thePsf
+INFO:root:Found 57 unindexed URLs that have been fetched
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fntoll%2Ftextsmith%2Fforks
+INFO:root:Indexed & marked: https://github.com/ntoll/textsmith/forks
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fsponsors%2Fntoll
+INFO:root:Indexed & marked: https://github.com/sponsors/ntoll
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.bbc.com%2Freel%2Fvideo%2Fp0hgl0lh%2Fthe-blunder-that-changed-chickens-forever
+INFO:root:Indexed & marked: https://www.bbc.com/reel/video/p0hgl0lh/the-blunder-that-changed-chickens-forever
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.bbc.com%2Faudio%2Fplay%2Fp0l6hxfj
+INFO:root:Indexed & marked: https://www.bbc.com/audio/play/p0l6hxfj
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fcielavenir%2Fmypy%2Fissues%3Fstate%3Dopen
+INFO:root:Indexed & marked: https://github.com/cielavenir/mypy/issues?state=open
+INFO:root:Found 53 unindexed URLs that have been fetched
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fntoll%3Ftab%3Dachievements
+INFO:root:Indexed & marked: https://github.com/ntoll?tab=achievements
+INFO:root:Downloaded from S3: https%3A%2F%2Fdocs.ansible.com
+INFO:root:Indexed & marked: https://docs.ansible.com
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fpython%2Fimportlib_resources%2Fpulls
+INFO:root:Indexed & marked: https://github.com/python/importlib_resources/pulls
+INFO:root:Downloaded from S3: https%3A%2F%2Fflask.palletsprojects.com%2Fweb-security
+INFO:root:Indexed & marked: https://flask.palletsprojects.com/web-security
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fagriyakhetarpal%2Fmypy%2Fpulls%3Fstate%3Dopen
+INFO:root:Indexed & marked: https://github.com/agriyakhetarpal/mypy/pulls?state=open
+INFO:root:Found 50 unindexed URLs that have been fetched
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fpython%2Fimportlib_resources%2Ftree%2Fmain%2Fdocs
+INFO:root:Indexed & marked: https://github.com/python/importlib_resources/tree/main/docs
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fpython%2Fpython-docs-zh-tw%2Fwiki
+INFO:root:Indexed & marked: https://github.com/python/python-docs-zh-tw/wiki
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fmatrixise%3Ftab%3Drepositories
+INFO:root:Indexed & marked: https://github.com/matrixise?tab=repositories
+INFO:root:Downloaded from S3: https%3A%2F%2Faws.amazon.com%2Fproducts%2F%3Fnc2%3Dh_ql_prod
+INFO:root:Indexed & marked: https://aws.amazon.com/products/?nc2=h_ql_prod
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fagriyakhetarpal%2Fmypy%2Fforks
+INFO:root:Indexed & marked: https://github.com/agriyakhetarpal/mypy/forks
+INFO:root:Found 46 unindexed URLs that have been fetched
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.bbc.com%2Ftravel%2Farticle%2F20240112-yennayer-north-africas-3000-year-old-new-years-celebration
+INFO:root:Indexed & marked: https://www.bbc.com/travel/article/20240112-yennayer-north-africas-3000-year-old-new-years-celebration
+INFO:root:Downloaded from S3: http%3A%2F%2Fwww.ansible.com%2Fen%2Ftechnologies%2Fmanagement%2Fansible%3Fsc_cid%3D7015Y000003szaKQAQ
+INFO:root:Indexed & marked: http://www.ansible.com/en/technologies/management/ansible?sc_cid=7015Y000003szaKQAQ
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.redhat.com%2Fen%2Ftechnologies%2Fmanagement%2Fansible
+INFO:root:Indexed & marked: https://www.redhat.com/en/technologies/management/ansible
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.bbc.com%2Fnews%2Ftopics%2Fc40rjmqdqrlt
+INFO:root:Indexed & marked: https://www.bbc.com/news/topics/c40rjmqdqrlt
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.bbc.com%2Freel%2Fvideo%2Fp0k4x9jb%2Fmary-mallon-the-most-dangerous-woman-in-america-
+INFO:root:Indexed & marked: https://www.bbc.com/reel/video/p0k4x9jb/mary-mallon-the-most-dangerous-woman-in-america-
+INFO:root:Found 43 unindexed URLs that have been fetched
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Flogin%3Freturn_to%3D%252Fpython%252Fimportlib_resources
+INFO:root:Indexed & marked: https://github.com/login?return_to=%2Fpython%2Fimportlib_resources
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fpython%2Fimportlib_resources%2Ftags
+INFO:root:Indexed & marked: https://github.com/python/importlib_resources/tags
+INFO:root:Downloaded from S3: https%3A%2F%2Fpalletsprojects.com%2Fdonate
+INFO:root:Indexed & marked: https://palletsprojects.com/donate
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fntoll%3Ftab%3Dstars
+INFO:root:Indexed & marked: https://github.com/ntoll?tab=stars
+INFO:root:Downloaded from S3: https%3A%2F%2Fgalaxy.ansible.com%2Fui%2Fnamespaces%2Fmiddleware_automation
+INFO:root:Indexed & marked: https://galaxy.ansible.com/ui/namespaces/middleware_automation
+INFO:root:Found 40 unindexed URLs that have been fetched
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2Fmr-c
+INFO:root:Indexed & marked: https://github.com/mr-c
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2FEuroPython
+INFO:root:Indexed & marked: https://github.com/EuroPython
+INFO:root:Downloaded from S3: https%3A%2F%2Fwww.redhat.com%2Fen%2Fabout%2Fprivacy-policy
+INFO:root:Indexed & marked: https://www.redhat.com/en/about/privacy-policy
+INFO:root:Downloaded from S3: https%3A%2F%2Fgithub.com%2FTinche%2Fmypy%2Fpulls%3Fstate%3Dopen
+INFO:root:Indexed & marked: https://github.com/Tinche/mypy/pulls?state=open
+INFO:root:Downloaded from S3: https%3A%2F%2Fntoll.org%2Fcv
+^CINFO:root:Received termination signal. Shutting down indexer gracefully...
+INFO:root:Indexed & marked: https://ntoll.org/cv
+INFO:root:Indexer shutting down...
+INFO:root:Shutting down CloudQueue
+INFO:root:Indexer shutdown complete
+ubuntu@ip-172-31-22-171:~/temp_crawler$ pip3 install flask
+Collecting flask
+  Downloading flask-3.0.3-py3-none-any.whl (101 kB)
+     |████████████████████████████████| 101 kB 9.4 MB/s
+Collecting click>=8.1.3
+  Downloading click-8.1.8-py3-none-any.whl (98 kB)
+     |████████████████████████████████| 98 kB 8.3 MB/s
+Collecting Werkzeug>=3.0.0
+  Downloading werkzeug-3.0.6-py3-none-any.whl (227 kB)
+     |████████████████████████████████| 227 kB 47.8 MB/s
+Collecting itsdangerous>=2.1.2
+  Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+Collecting blinker>=1.6.2
+  Downloading blinker-1.8.2-py3-none-any.whl (9.5 kB)
+Collecting importlib-metadata>=3.6.0; python_version < "3.10"
+  Downloading importlib_metadata-8.5.0-py3-none-any.whl (26 kB)
+Collecting Jinja2>=3.1.2
+  Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+     |████████████████████████████████| 134 kB 61.4 MB/s
+Collecting MarkupSafe>=2.1.1
+  Downloading MarkupSafe-2.1.5-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (26 kB)
+Collecting zipp>=3.20
+  Downloading zipp-3.20.2-py3-none-any.whl (9.2 kB)
+Installing collected packages: click, MarkupSafe, Werkzeug, itsdangerous, blinker, zipp, importlib-metadata, Jinja2, flask
+Successfully installed Jinja2-3.1.6 MarkupSafe-2.1.5 Werkzeug-3.0.6 blinker-1.8.2 click-8.1.8 flask-3.0.3 importlib-metadata-8.5.0 itsdangerous-2.2.0 zipp-3.20.2
+ubuntu@ip-172-31-22-171:~/temp_crawler$ mkdir -p /home/ubuntu/temp_crawler/templates
+ubuntu@ip-172-31-22-171:~/temp_crawler$ python3 web_search.py
+Starting web search interface on http://0.0.0.0:5000
+Press Ctrl+C to stop the server
+ * Serving Flask app 'web_search'
+ * Debug mode: off
+2025-05-04 03:44:17,644 - Indexer - INFO - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.       
+ * Running on all addresses (0.0.0.0)     
+ * Running on http://127.0.0.1:5000       
+ * Running on http://172.31.22.171:5000   
+2025-05-04 03:44:17,645 - Indexer - INFO - Press CTRL+C to quit
+ Opened existing Whoosh index
+2025-05-04 03:48:52,368 - Indexer - INFO - Whoosh indexer initialized with directory: search_index
+2025-05-04 03:48:52,377 - Indexer - INFO - 197.46.119.144 - - [04/May/2025 03:48:52] "GET /?q=python+AND+programming HTTP/1.1" 200 -       
+2025-05-04 03:49:15,803 - Indexer - INFO - Opened existing Whoosh index
+2025-05-04 03:49:15,803 - Indexer - INFO - Whoosh indexer initialized with directory: search_index
+2025-05-04 03:49:15,817 - Indexer - INFO - 197.46.119.144 - - [04/May/2025 03:49:15] "GET /?q=python+OR+programming HTTP/1.1" 200 -        
+2025-05-04 04:00:24,402 - Indexer - INFO - 52.167.144.65 - - [04/May/2025 04:00:24] "GET /robots.txt HTTP/1.1" 404 -
+2025-05-04 04:00:31,583 - Indexer - INFO - 52.167.144.185 - - [04/May/2025 04:00:31] "GET / HTTP/1.1" 200 -

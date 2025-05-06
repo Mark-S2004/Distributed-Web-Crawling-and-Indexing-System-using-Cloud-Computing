@@ -1,123 +1,1218 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Web Crawler Search</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Crawler Search Interface</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        .search-result {
-            margin-bottom: 2rem;
-            padding: 1rem;
-            border-bottom: 1px solid #eee;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
         }
-        .search-result:hover {
-            background-color: #f8f9fa;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        .score-badge {
-            font-size: 0.8rem;
-            color: #6c757d;
+        h1, h2, h3 {
+            color: #333;
         }
-        .keywords {
-            font-size: 0.9rem;
-            color: #28a745;
+        .search-form {
+            margin: 20px 0;
         }
-        .last-updated {
-            font-size: 0.8rem;
-            color: #6c757d;
+        .search-input {
+            width: 70%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
         }
-        #searchHelp {
-            font-size: 0.9rem;
-            color: #6c757d;
-            margin-top: 0.5rem;
+        .search-button, .seed-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4285f4;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .search-button:hover, .seed-button:hover {
+            background-color: #3367d6;
+        }
+        .result {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .result h2 {
+            margin-top: 0;
+            color: #1a0dab;
+        }
+        .result a {
+            color: #1a0dab;
+            text-decoration: none;
+        }
+        .result a:hover {
+            text-decoration: underline;
+        }
+        .result .url {
+            color: #006621;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .result .summary {
+            color: #545454;
+            font-size: 14px;
+        }
+        .result .keywords {
+            color: #777;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        .no-results {
+            margin: 20px 0;
+            color: #777;
+        }
+        .error {
+            color: red;
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #ffeeee;
+            border: 1px solid #ffcccc;
+            border-radius: 4px;
+        }
+        .success {
+            color: green;
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #eeffee;
+            border: 1px solid #ccffcc;
+            border-radius: 4px;
+        }
+        .info-message {
+            color: #0066cc;
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #eeeeff;
+            border: 1px solid #ccccff;
+            border-radius: 4px;
+        }
+        .section {
+            margin: 30px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .section h2 {
+            margin-top: 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #4285f4;
+            color: #333;
+        }
+        .subsection {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: white;
+        }
+        .subsection h3 {
+            margin-top: 0;
+            color: #4285f4;
+        }
+        .seed-form {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+        .seed-input {
+            width: 70%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .log-container {
+            max-height: 400px;
+            overflow-y: auto;
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 14px;
+        }
+        .log-entry {
+            margin: 5px 0;
+            padding: 5px;
+            border-bottom: 1px solid #ddd;
+        }
+        .metrics-card {
+            margin: 10px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+        .metrics-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .metrics-value {
+            font-size: 24px;
+            color: #4285f4;
+        }
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .flex-item {
+            flex: 1;
+            min-width: 300px;
+        }
+        .action-button {
+            padding: 8px 16px;
+            font-size: 14px;
+            background-color: #4285f4;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px 0;
+        }
+        .action-button:hover {
+            background-color: #3367d6;
+        }
+        .action-button.danger {
+            background-color: #dc3545;
+        }
+        .action-button.danger:hover {
+            background-color: #bd2130;
+        }
+        .instance-card {
+            margin: 10px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+        .instance-actions {
+            margin-top: 10px;
+        }
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        .table th, .table td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .table th {
+            background-color: #f2f2f2;
+        }
+        .confirmation-dialog {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .confirmation-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 500px;
+            width: 100%;
+        }
+        .confirmation-buttons {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+        .confirmation-buttons button {
+            margin-left: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="container mt-5">
-        <h1 class="text-center mb-4">Web Crawler Search</h1>
-        
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="input-group mb-3">
-                    <input type="text" id="searchInput" class="form-control" placeholder="Enter your search query...">
-                    <button class="btn btn-primary" onclick="search(1)">Search</button>
+    <div class="container">
+        <h1>Web Crawler Search & Monitoring</h1>
+
+        <!-- Search Section -->
+        <div class="section">
+            <h2>Search</h2>
+            <div class="search-form">
+                <form action="/" method="get">
+                    <input type="text" name="q" class="search-input" value="{{ query }}" placeholder="Enter search query...">
+                    <button type="submit" class="search-button">Search</button>
+                </form>
+            </div>
+
+            {% if error %}
+            <div class="error">
+                <p>{{ error }}</p>
+            </div>
+            {% endif %}
+
+            {% if results %}
+            <div class="results">
+                <p>Found {{ results|length }} results:</p>
+
+                {% for result in results %}
+                <div class="result">
+                    <h2><a href="{{ result.url }}" target="_blank">{{ result.title }}</a></h2>
+                    <div class="url">{{ result.url }}</div>
+                    {% if result.summary %}
+                    <div class="summary">{{ result.summary }}</div>
+                    {% endif %}
+                    {% if result.keywords %}
+                    <div class="keywords">Keywords: {{ result.keywords }}</div>
+                    {% endif %}
                 </div>
-                <div id="searchHelp">
-                    <strong>Search Tips:</strong><br>
-                    • Use AND, OR, NOT for boolean search (e.g., "python AND programming")<br>
-                    • Use quotes for exact phrases (e.g., "machine learning")<br>
-                    • Use field-specific search (e.g., title:github, content:"open source")<br>
+                {% endfor %}
+            </div>
+            {% elif query %}
+            <div class="no-results">
+                <p>No results found for "{{ query }}".</p>
+            </div>
+            {% endif %}
+        </div>
+
+        <!-- Seed URLs Section -->
+        <div class="section">
+            <h2>Seed URLs to Crawler</h2>
+            <p>Add new URLs for the crawler to process:</p>
+
+            <div class="seed-form">
+                <input type="text" id="seed-url" class="seed-input" placeholder="Enter URL to seed (e.g., https://example.com)">
+                <button onclick="seedUrl()" class="seed-button">Add URL</button>
+            </div>
+
+            <div id="seed-result"></div>
+        </div>
+
+        <!-- AWS Monitoring Section -->
+        <div class="section">
+            <h2>AWS Service Monitoring</h2>
+
+            <!-- AWS Status Message -->
+            <div id="aws-status-message"></div>
+
+            <!-- SQS Section -->
+            <div class="subsection">
+                <h3>SQS Queue Metrics</h3>
+                <div id="sqs-metrics" class="flex-container">
+                    <div class="flex-item">
+                        <div class="metrics-card">
+                            <div class="metrics-title">URL Queue Messages</div>
+                            <div class="metrics-value" id="url-queue-messages">Loading...</div>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <div class="metrics-card">
+                            <div class="metrics-title">Status Queue Messages</div>
+                            <div class="metrics-value" id="status-queue-messages">Loading...</div>
+                        </div>
+                    </div>
                 </div>
+
+                <h4>Sample Messages</h4>
+                <div id="sqs-messages" class="log-container">Loading...</div>
+            </div>
+
+            <!-- DynamoDB Section -->
+            <div class="subsection">
+                <h3>DynamoDB Tables</h3>
+                <div id="dynamodb-tables" class="flex-container">Loading...</div>
+            </div>
+
+            <!-- S3 Section -->
+            <div class="subsection">
+                <h3>S3 Bucket Metrics</h3>
+                <div id="s3-metrics" class="flex-container">
+                    <div class="flex-item">
+                        <div class="metrics-card">
+                            <div class="metrics-title">Object Count</div>
+                            <div class="metrics-value" id="s3-object-count">Loading...</div>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <div class="metrics-card">
+                            <div class="metrics-title">Total Size</div>
+                            <div class="metrics-value" id="s3-total-size">Loading...</div>
+                        </div>
+                    </div>
+                </div>
+
+                <h4>Recent Objects</h4>
+                <div id="s3-objects" class="log-container">Loading...</div>
+            </div>
+
+            <!-- EC2 Section -->
+            <div class="subsection">
+                <h3>EC2 Instances</h3>
+                <div id="ec2-instances">Loading...</div>
+            </div>
+
+            <!-- Logs Section -->
+            <div class="subsection">
+                <h3>CloudWatch Logs</h3>
+                <div id="cloudwatch-logs" class="log-container">Loading...</div>
             </div>
         </div>
 
-        <div id="results" class="mt-4">
-            <!-- Search results will be displayed here -->
-        </div>
+        <!-- AWS Management Section -->
+        <div class="section">
+            <h2>AWS Resource Management</h2>
+            <p>Manage AWS resources for the crawler system. <strong>Warning:</strong> These actions can affect the running system.</p>
 
-        <div id="pagination" class="d-flex justify-content-center mt-4">
-            <!-- Pagination will be displayed here -->
+            <!-- EC2 Management Section -->
+            <div class="subsection">
+                <h3>EC2 Instance Management</h3>
+                <p>Start, stop, or restart EC2 instances.</p>
+
+                <div id="ec2-management-list">Loading instances...</div>
+            </div>
+
+            <!-- SQS Management Section -->
+            <div class="subsection">
+                <h3>SQS Queue Management</h3>
+                <p>Purge SQS queues to remove all messages.</p>
+
+                <div class="metrics-card">
+                    <div class="metrics-title">URL Queue</div>
+                    <p>Purge all messages from the crawler URL queue.</p>
+                    <button id="purge-url-queue-btn" class="action-button">Purge URL Queue</button>
+                    <div id="purge-crawlerurlqueue-result"></div>
+                </div>
+
+                <div class="metrics-card">
+                    <div class="metrics-title">Status Queue</div>
+                    <p>Purge all messages from the crawler status queue.</p>
+                    <button id="purge-status-queue-btn" class="action-button">Purge Status Queue</button>
+                    <div id="purge-crawlerstatusqueue-result"></div>
+                </div>
+            </div>
+
+            <!-- DynamoDB Management Section -->
+            <div class="subsection">
+                <h3>DynamoDB Table Management</h3>
+                <p>Clear DynamoDB tables to remove all items.</p>
+
+                <div id="dynamodb-management-list">Loading tables...</div>
+            </div>
+
+            <!-- S3 Management Section -->
+            <div class="subsection">
+                <h3>S3 Bucket Management</h3>
+                <p>Empty S3 bucket to remove all objects.</p>
+
+                <div class="metrics-card">
+                    <div class="metrics-title">Web Crawler Data Storage</div>
+                    <p>Empty the web crawler data storage bucket.</p>
+                    <button id="empty-s3-bucket-btn" class="action-button">Empty Bucket</button>
+                    <div id="empty-webcrawlerdatastorage-result"></div>
+                </div>
+            </div>
+
+            <!-- Reset All Section -->
+            <div class="subsection">
+                <h3>Reset All Resources</h3>
+                <p><strong>Warning:</strong> This will reset all AWS resources related to the crawler system. This action cannot be undone.</p>
+
+                <div class="metrics-card">
+                    <div class="metrics-title">Reset All Resources</div>
+                    <p>Reset all SQS queues, DynamoDB tables, and S3 bucket.</p>
+                    <button id="reset-all-resources-btn" class="action-button danger">Reset All Resources</button>
+                    <div id="reset-all-result"></div>
+                </div>
+            </div>
         </div>
     </div>
 
     <script>
-        function search(page) {
-            const query = document.getElementById('searchInput').value;
-            if (!query) return;
+        // Initialize page when document is ready
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log("Document ready");
 
-            fetch(`/search?q=${encodeURIComponent(query)}&page=${page}`)
+            // Set initial loading messages with timeouts
+            setupLoadingTimeouts();
+
+            // Load AWS metrics
+            loadAwsMetrics();
+
+            // Load EC2 management data
+            loadEc2Management();
+
+            // Load DynamoDB management data
+            loadDynamoDbManagement();
+
+            // Add event listener for seed URL on Enter key
+            var seedUrlInput = document.getElementById("seed-url");
+            if (seedUrlInput) {
+                seedUrlInput.addEventListener("keyup", function(event) {
+                    if (event.key === "Enter") {
+                        seedUrl();
+                    }
+                });
+            }
+
+            // Add event listeners for SQS queue purge buttons
+            var purgeUrlQueueBtn = document.getElementById("purge-url-queue-btn");
+            if (purgeUrlQueueBtn) {
+                purgeUrlQueueBtn.addEventListener("click", function() {
+                    purgeSqsQueue('crawler-url-queue');
+                });
+            }
+
+            var purgeStatusQueueBtn = document.getElementById("purge-status-queue-btn");
+            if (purgeStatusQueueBtn) {
+                purgeStatusQueueBtn.addEventListener("click", function() {
+                    purgeSqsQueue('crawler-status-queue');
+                });
+            }
+
+            // Add event listener for S3 bucket emptying
+            var emptyS3BucketBtn = document.getElementById("empty-s3-bucket-btn");
+            if (emptyS3BucketBtn) {
+                emptyS3BucketBtn.addEventListener("click", function() {
+                    emptyS3Bucket('web-crawler-data-storage');
+                });
+            }
+
+            // Add event listener for Reset All Resources button
+            var resetAllResourcesBtn = document.getElementById("reset-all-resources-btn");
+            if (resetAllResourcesBtn) {
+                resetAllResourcesBtn.addEventListener("click", function() {
+                    resetAllResources();
+                });
+            }
+        });
+
+        // Setup loading timeouts to show helpful messages if loading takes too long
+        function setupLoadingTimeouts() {
+            // List of elements that show loading messages
+            const loadingElements = [
+                "url-queue-messages",
+                "status-queue-messages",
+                "sqs-messages",
+                "dynamodb-tables",
+                "s3-object-count",
+                "s3-total-size",
+                "s3-objects",
+                "ec2-instances",
+                "cloudwatch-logs",
+                "ec2-management-list",
+                "dynamodb-management-list"
+            ];
+
+            // Set a timeout for each element
+            loadingElements.forEach(elementId => {
+                setTimeout(function() {
+                    const element = document.getElementById(elementId);
+                    if (element && element.textContent.includes("Loading")) {
+                        element.innerHTML = '<div class="error">Unable to load data. AWS services may not be available or properly configured. Check your AWS credentials and network connection.</div>';
+                    }
+                }, 5000); // 5 second timeout
+            });
+        }
+
+        // URL seeding functionality
+        function seedUrl() {
+            var url = document.getElementById("seed-url").value;
+            if (!url) {
+                document.getElementById("seed-result").innerHTML = '<div class="error">Please enter a URL</div>';
+                return;
+            }
+
+            // Show loading message
+            document.getElementById("seed-result").innerHTML = '<div>Seeding URL...</div>';
+
+            // Send URL to server
+            fetch('/seed', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: 'url=' + encodeURIComponent(url)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    document.getElementById("seed-result").innerHTML = '<div class="success">' + data.message + '</div>';
+                    document.getElementById("seed-url").value = '';
+                } else {
+                    document.getElementById("seed-result").innerHTML = '<div class="error">' + data.message + '</div>';
+                }
+            })
+            .catch(error => {
+                document.getElementById("seed-result").innerHTML = '<div class="error">Error: ' + error + '</div>';
+            });
+        }
+
+        // AWS metrics loading functionality
+        function loadAwsMetrics() {
+            // Check AWS service status
+            fetch('/api/aws/status')
                 .then(response => response.json())
                 .then(data => {
-                    if (data.error) {
-                        document.getElementById('results').innerHTML = `<div class="alert alert-danger">${data.error}</div>`;
+                    if (!data.aws_available) {
+                        const errorMsg = '<div class="error">AWS services are not available. Make sure your AWS credentials are configured correctly.</div>';
+                        document.getElementById("sqs-metrics").innerHTML = errorMsg;
+                        document.getElementById("dynamodb-tables").innerHTML = errorMsg;
+                        document.getElementById("s3-metrics").innerHTML = errorMsg;
+                        document.getElementById("ec2-instances").innerHTML = errorMsg;
+                        document.getElementById("cloudwatch-logs").innerHTML = errorMsg;
+
+                        // Also update management sections
+                        document.getElementById("ec2-management-list").innerHTML = errorMsg;
+                        document.getElementById("dynamodb-management-list").innerHTML = errorMsg;
+                        document.getElementById("purge-url-queue-result").innerHTML = errorMsg;
+                        document.getElementById("purge-status-queue-result").innerHTML = errorMsg;
+                        document.getElementById("empty-bucket-result").innerHTML = errorMsg;
+                        document.getElementById("reset-all-result").innerHTML = errorMsg;
                         return;
                     }
 
-                    let resultsHtml = '';
-                    if (data.results.length === 0) {
-                        resultsHtml = '<div class="alert alert-info">No results found.</div>';
-                    } else {
-                        data.results.forEach(result => {
-                            resultsHtml += `
-                                <div class="search-result">
-                                    <h4><a href="${result.url}" target="_blank">${result.title}</a></h4>
-                                    <p>${result.summary}</p>
-                                    <div class="keywords">Keywords: ${result.keywords}</div>
-                                    <div class="d-flex justify-content-between align-items-center mt-2">
-                                        <span class="score-badge">Relevance Score: ${result.score.toFixed(2)}</span>
-                                        <span class="last-updated">Last Updated: ${result.last_updated}</span>
-                                    </div>
-                                </div>
-                            `;
-                        });
+                    // Load SQS metrics
+                    loadSqsMetrics();
 
-                        // Add pagination
-                        let paginationHtml = '<nav><ul class="pagination">';
-                        for (let i = 1; i <= data.total_pages; i++) {
-                            paginationHtml += `
-                                <li class="page-item ${i === data.page ? 'active' : ''}">
-                                    <a class="page-link" href="#" onclick="search(${i})">${i}</a>
-                                </li>
-                            `;
-                        }
-                        paginationHtml += '</ul></nav>';
-                        document.getElementById('pagination').innerHTML = paginationHtml;
-                    }
+                    // Load DynamoDB metrics
+                    loadDynamoDbMetrics();
 
-                    document.getElementById('results').innerHTML = resultsHtml;
+                    // Load S3 metrics
+                    loadS3Metrics();
+
+                    // Load EC2 metrics
+                    loadEc2Metrics();
+
+                    // Load CloudWatch logs
+                    loadCloudWatchLogs();
                 })
                 .catch(error => {
-                    document.getElementById('results').innerHTML = `<div class="alert alert-danger">Error: ${error}</div>`;
+                    console.error('Error checking AWS status:', error);
+                    const errorMsg = '<div class="error">Error connecting to server. Please check if the server is running correctly.</div>';
+                    document.getElementById("sqs-metrics").innerHTML = errorMsg;
+                    document.getElementById("dynamodb-tables").innerHTML = errorMsg;
+                    document.getElementById("s3-metrics").innerHTML = errorMsg;
+                    document.getElementById("ec2-instances").innerHTML = errorMsg;
+                    document.getElementById("cloudwatch-logs").innerHTML = errorMsg;
                 });
         }
 
-        // Enable search on Enter key press
-        document.getElementById('searchInput').addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                search(1);
+        // Load SQS metrics
+        function loadSqsMetrics() {
+            fetch('/api/aws/sqs')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        document.getElementById("sqs-metrics").innerHTML = '<div class="error">' + data.error + '</div>';
+                        document.getElementById("sqs-messages").innerHTML = '<div class="error">' + data.error + '</div>';
+                        return;
+                    }
+
+                    // Update URL queue metrics
+                    document.getElementById("url-queue-messages").textContent = data.url_queue.messages_available;
+
+                    // Update status queue metrics
+                    document.getElementById("status-queue-messages").textContent = data.status_queue.messages_available;
+
+                    // Update sample messages
+                    var messagesHtml = '';
+                    if (data.url_queue.sample_messages.length === 0) {
+                        messagesHtml = '<div>No messages in queue</div>';
+                    } else {
+                        for (var i = 0; i < data.url_queue.sample_messages.length; i++) {
+                            messagesHtml += '<div class="log-entry">' + data.url_queue.sample_messages[i].body + '</div>';
+                        }
+                    }
+                    document.getElementById("sqs-messages").innerHTML = messagesHtml;
+                })
+                .catch(error => {
+                    console.error('Error loading SQS metrics:', error);
+                    document.getElementById("sqs-metrics").innerHTML = '<div class="error">Error loading SQS metrics</div>';
+                });
+        }
+
+        // Load DynamoDB metrics
+        function loadDynamoDbMetrics() {
+            fetch('/api/aws/dynamodb')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        document.getElementById("dynamodb-tables").innerHTML = '<div class="error">' + data.error + '</div>';
+                        return;
+                    }
+
+                    var tablesHtml = '';
+                    var tableCount = 0;
+
+                    for (var table in data) {
+                        tableCount++;
+                        tablesHtml += '<div class="flex-item"><div class="metrics-card">';
+                        tablesHtml += '<div class="metrics-title">' + table + '</div>';
+                        tablesHtml += '<div>Items: ' + data[table].item_count + '</div>';
+                        tablesHtml += '<div>Size: ' + formatBytes(data[table].size_bytes) + '</div>';
+                        tablesHtml += '<div>Status: ' + data[table].status + '</div>';
+                        tablesHtml += '</div></div>';
+                    }
+
+                    if (tableCount === 0) {
+                        tablesHtml = '<div>No DynamoDB tables found</div>';
+                    }
+
+                    document.getElementById("dynamodb-tables").innerHTML = tablesHtml;
+                })
+                .catch(error => {
+                    console.error('Error loading DynamoDB metrics:', error);
+                    document.getElementById("dynamodb-tables").innerHTML = '<div class="error">Error loading DynamoDB metrics</div>';
+                });
+        }
+
+        // Load S3 metrics
+        function loadS3Metrics() {
+            fetch('/api/aws/s3')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        document.getElementById("s3-metrics").innerHTML = '<div class="error">' + data.error + '</div>';
+                        document.getElementById("s3-objects").innerHTML = '<div class="error">' + data.error + '</div>';
+                        return;
+                    }
+
+                    // Update object count
+                    document.getElementById("s3-object-count").textContent = data.object_count;
+
+                    // Update total size
+                    document.getElementById("s3-total-size").textContent = formatBytes(data.total_size);
+
+                    // Update recent objects
+                    var objectsHtml = '';
+                    if (data.recent_objects.length === 0) {
+                        objectsHtml = '<div>No objects in bucket</div>';
+                    } else {
+                        for (var i = 0; i < data.recent_objects.length; i++) {
+                            var obj = data.recent_objects[i];
+                            objectsHtml += '<div class="log-entry">';
+                            objectsHtml += '<div><strong>Key:</strong> ' + obj.key + '</div>';
+                            objectsHtml += '<div><strong>Size:</strong> ' + formatBytes(obj.size) + '</div>';
+                            objectsHtml += '<div><strong>Last Modified:</strong> ' + obj.last_modified + '</div>';
+                            objectsHtml += '</div>';
+                        }
+                    }
+                    document.getElementById("s3-objects").innerHTML = objectsHtml;
+                })
+                .catch(error => {
+                    console.error('Error loading S3 metrics:', error);
+                    document.getElementById("s3-metrics").innerHTML = '<div class="error">Error loading S3 metrics</div>';
+                });
+        }
+
+        // Load EC2 metrics
+        function loadEc2Metrics() {
+            fetch('/api/aws/ec2')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        document.getElementById("ec2-instances").innerHTML = '<div class="error">' + data.error + '</div>';
+                        return;
+                    }
+
+                    var instancesHtml = '';
+                    if (data.length === 0) {
+                        instancesHtml = '<div>No EC2 instances found</div>';
+                    } else {
+                        instancesHtml = '<table class="table"><thead><tr>';
+                        instancesHtml += '<th>ID</th><th>Role</th><th>State</th><th>Type</th><th>Public IP</th>';
+                        instancesHtml += '</tr></thead><tbody>';
+
+                        for (var i = 0; i < data.length; i++) {
+                            var instance = data[i];
+                            instancesHtml += '<tr>';
+                            instancesHtml += '<td>' + (instance.id || '') + '</td>';
+                            instancesHtml += '<td>' + (instance.role || '') + '</td>';
+                            instancesHtml += '<td>' + (instance.state || '') + '</td>';
+                            instancesHtml += '<td>' + (instance.type || '') + '</td>';
+                            instancesHtml += '<td>' + (instance.public_ip || '') + '</td>';
+                            instancesHtml += '</tr>';
+                        }
+
+                        instancesHtml += '</tbody></table>';
+                    }
+
+                    document.getElementById("ec2-instances").innerHTML = instancesHtml;
+                })
+                .catch(error => {
+                    console.error('Error loading EC2 metrics:', error);
+                    document.getElementById("ec2-instances").innerHTML = '<div class="error">Error loading EC2 metrics</div>';
+                });
+        }
+
+        // Load CloudWatch logs
+        function loadCloudWatchLogs() {
+            fetch('/api/aws/logs')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        document.getElementById("cloudwatch-logs").innerHTML = '<div class="error">' + data.error + '</div>';
+                        return;
+                    }
+
+                    var logsHtml = '';
+                    var logGroupCount = 0;
+
+                    for (var groupName in data) {
+                        logGroupCount++;
+                        logsHtml += '<div class="log-group">';
+                        logsHtml += '<h4>' + groupName + '</h4>';
+
+                        for (var i = 0; i < data[groupName].length; i++) {
+                            var stream = data[groupName][i];
+                            logsHtml += '<div class="log-stream">';
+                            logsHtml += '<h5>' + stream.stream + '</h5>';
+
+                            for (var j = 0; j < stream.events.length; j++) {
+                                var event = stream.events[j];
+                                var date = new Date(event.timestamp);
+                                logsHtml += '<div class="log-entry">';
+                                logsHtml += '<span class="log-timestamp">' + date.toISOString() + '</span> ';
+                                logsHtml += '<span class="log-message">' + event.message + '</span>';
+                                logsHtml += '</div>';
+                            }
+
+                            logsHtml += '</div>';
+                        }
+
+                        logsHtml += '</div>';
+                    }
+
+                    if (logGroupCount === 0) {
+                        logsHtml = '<div>No CloudWatch logs found</div>';
+                    }
+
+                    document.getElementById("cloudwatch-logs").innerHTML = logsHtml;
+                })
+                .catch(error => {
+                    console.error('Error loading CloudWatch logs:', error);
+                    document.getElementById("cloudwatch-logs").innerHTML = '<div class="error">Error loading CloudWatch logs</div>';
+                });
+        }
+
+        // Format bytes to human-readable format
+        function formatBytes(bytes, decimals = 2) {
+            if (bytes === 0) return '0 Bytes';
+
+            const k = 1024;
+            const dm = decimals < 0 ? 0 : decimals;
+            const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
+
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+
+            return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + ' ' + sizes[i];
+        }
+
+        // Auto-refresh AWS metrics every 30 seconds
+        setInterval(function() {
+            loadAwsMetrics();
+        }, 30000);
+
+        // This event listener is now added in the DOMContentLoaded event
+
+        // AWS Management Functions
+
+        // Load EC2 instances for management
+        function loadEc2Management() {
+            fetch('/api/aws/ec2/list')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        document.getElementById("ec2-management-list").innerHTML = '<div class="error">' + data.error + '</div>';
+                        return;
+                    }
+
+                    var instancesHtml = '';
+                    if (data.length === 0) {
+                        instancesHtml = '<div class="info-message">No EC2 instances found. You may need to create instances for your crawler system.</div>';
+                    } else {
+                        for (var i = 0; i < data.length; i++) {
+                            var instance = data[i];
+                            instancesHtml += '<div class="instance-card">';
+                            instancesHtml += '<div><strong>ID:</strong> ' + instance.id + '</div>';
+                            instancesHtml += '<div><strong>Role:</strong> ' + instance.role + '</div>';
+                            instancesHtml += '<div><strong>State:</strong> ' + instance.state + '</div>';
+                            instancesHtml += '<div><strong>Type:</strong> ' + instance.type + '</div>';
+                            instancesHtml += '<div><strong>Public IP:</strong> ' + instance.public_ip + '</div>';
+
+                            instancesHtml += '<div class="instance-actions">';
+                            if (instance.state === 'running') {
+                                instancesHtml += '<button class="action-button stop-instance-btn" data-instance-id="' + instance.id + '">Stop</button> ';
+                                instancesHtml += '<button class="action-button restart-instance-btn" data-instance-id="' + instance.id + '">Restart</button>';
+                            } else if (instance.state === 'stopped') {
+                                instancesHtml += '<button class="action-button start-instance-btn" data-instance-id="' + instance.id + '">Start</button>';
+                            } else {
+                                instancesHtml += '<button disabled class="action-button">Instance is ' + instance.state + '</button>';
+                            }
+                            instancesHtml += '</div>';
+
+                            instancesHtml += '<div id="' + instance.id + '-result"></div>';
+                            instancesHtml += '</div>';
+                        }
+                    }
+
+                    document.getElementById("ec2-management-list").innerHTML = instancesHtml;
+
+                    // Add event listeners for EC2 instance management buttons
+                    document.querySelectorAll('.start-instance-btn').forEach(function(button) {
+                        button.addEventListener('click', function() {
+                            var instanceId = this.getAttribute('data-instance-id');
+                            startEc2Instance(instanceId);
+                        });
+                    });
+
+                    document.querySelectorAll('.stop-instance-btn').forEach(function(button) {
+                        button.addEventListener('click', function() {
+                            var instanceId = this.getAttribute('data-instance-id');
+                            stopEc2Instance(instanceId);
+                        });
+                    });
+
+                    document.querySelectorAll('.restart-instance-btn').forEach(function(button) {
+                        button.addEventListener('click', function() {
+                            var instanceId = this.getAttribute('data-instance-id');
+                            restartEc2Instance(instanceId);
+                        });
+                    });
+                })
+                .catch(error => {
+                    console.error('Error loading EC2 instances for management:', error);
+                    document.getElementById("ec2-management-list").innerHTML = '<div class="error">Error loading EC2 instances. Check your AWS credentials and network connection.</div>';
+                });
+        }
+
+        // Load DynamoDB tables for management
+        function loadDynamoDbManagement() {
+            fetch('/api/aws/dynamodb')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        document.getElementById("dynamodb-management-list").innerHTML = '<div class="error">' + data.error + '</div>';
+                        return;
+                    }
+
+                    var tablesHtml = '';
+                    var tableCount = 0;
+
+                    for (var table in data) {
+                        tableCount++;
+                        // Create a safe ID by removing special characters
+                        var safeTableName = table.replace(/[^a-zA-Z0-9]/g, '');
+
+                        tablesHtml += '<div class="metrics-card">';
+                        tablesHtml += '<div class="metrics-title">' + table + '</div>';
+                        tablesHtml += '<p>Clear all items from this table.</p>';
+                        tablesHtml += '<div>Items: ' + data[table].item_count + '</div>';
+                        tablesHtml += '<div>Size: ' + formatBytes(data[table].size_bytes) + '</div>';
+                        tablesHtml += '<button class="action-button clear-table-btn" data-table="' + table + '">Clear Table</button>';
+                        tablesHtml += '<div id="clear-' + safeTableName + '-result"></div>';
+                        tablesHtml += '</div>';
+                    }
+
+                    if (tableCount === 0) {
+                        tablesHtml = '<div class="info-message">No DynamoDB tables found. You may need to create tables for your crawler system.</div>';
+                    }
+
+                    document.getElementById("dynamodb-management-list").innerHTML = tablesHtml;
+
+                    // Add event listeners for the Clear Table buttons
+                    document.querySelectorAll('.clear-table-btn').forEach(function(button) {
+                        button.addEventListener('click', function() {
+                            var tableName = this.getAttribute('data-table');
+                            clearDynamoDbTable(tableName);
+                        });
+                    });
+                })
+                .catch(error => {
+                    console.error('Error loading DynamoDB tables for management:', error);
+                    document.getElementById("dynamodb-management-list").innerHTML = '<div class="error">Error loading DynamoDB tables. Check your AWS credentials and network connection.</div>';
+                });
+        }
+
+        // Start EC2 instance
+        function startEc2Instance(instanceId) {
+            if (!confirm('Are you sure you want to start instance ' + instanceId + '?')) {
+                return;
             }
-        });
+
+            document.getElementById(instanceId + '-result').innerHTML = '<div>Starting instance...</div>';
+
+            fetch('/api/aws/ec2/start/' + instanceId, {
+                method: 'POST'
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    document.getElementById(instanceId + '-result').innerHTML = '<div class="success">' + data.message + '</div>';
+                    // Reload EC2 instances after a delay
+                    setTimeout(loadEc2Management, 2000);
+                } else {
+                    document.getElementById(instanceId + '-result').innerHTML = '<div class="error">' + data.error + '</div>';
+                }
+            })
+            .catch(error => {
+                document.getElementById(instanceId + '-result').innerHTML = '<div class="error">Error: ' + error + '</div>';
+            });
+        }
+
+        // Stop EC2 instance
+        function stopEc2Instance(instanceId) {
+            if (!confirm('Are you sure you want to stop instance ' + instanceId + '?')) {
+                return;
+            }
+
+            document.getElementById(instanceId + '-result').innerHTML = '<div>Stopping instance...</div>';
+
+            fetch('/api/aws/ec2/stop/' + instanceId, {
+                method: 'POST'
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    document.getElementById(instanceId + '-result').innerHTML = '<div class="success">' + data.message + '</div>';
+                    // Reload EC2 instances after a delay
+                    setTimeout(loadEc2Management, 2000);
+                } else {
+                    document.getElementById(instanceId + '-result').innerHTML = '<div class="error">' + data.error + '</div>';
+                }
+            })
+            .catch(error => {
+                document.getElementById(instanceId + '-result').innerHTML = '<div class="error">Error: ' + error + '</div>';
+            });
+        }
+
+        // Restart EC2 instance
+        function restartEc2Instance(instanceId) {
+            if (!confirm('Are you sure you want to restart instance ' + instanceId + '?')) {
+                return;
+            }
+
+            document.getElementById(instanceId + '-result').innerHTML = '<div>Restarting instance...</div>';
+
+            fetch('/api/aws/ec2/restart/' + instanceId, {
+                method: 'POST'
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    document.getElementById(instanceId + '-result').innerHTML = '<div class="success">' + data.message + '</div>';
+                    // Reload EC2 instances after a delay
+                    setTimeout(loadEc2Management, 2000);
+                } else {
+                    document.getElementById(instanceId + '-result').innerHTML = '<div class="error">' + data.error + '</div>';
+                }
+            })
+            .catch(error => {
+                document.getElementById(instanceId + '-result').innerHTML = '<div class="error">Error: ' + error + '</div>';
+            });
+        }
+
+        // Purge SQS queue
+        function purgeSqsQueue(queueName) {
+            if (!confirm('Are you sure you want to purge all messages from the ' + queueName + ' queue?')) {
+                return;
+            }
+
+            // Create a safe ID by removing special characters
+            var safeQueueName = queueName.replace(/[^a-zA-Z0-9]/g, '');
+            var resultElementId = 'purge-' + safeQueueName + '-result';
+            var resultElement = document.getElementById(resultElementId);
+
+            if (!resultElement) {
+                console.error('Element with ID ' + resultElementId + ' not found');
+                return;
+            }
+
+            resultElement.innerHTML = '<div>Purging queue...</div>';
+
+            fetch('/api/aws/sqs/purge/' + queueName, {
+                method: 'POST'
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    var element = document.getElementById(resultElementId);
+                    if (element) {
+                        element.innerHTML = '<div class="success">' + data.message + '</div>';
+                    }
+                    // Reload SQS metrics after a delay
+                    setTimeout(loadSqsMetrics, 2000);
+                } else {
+                    var element = document.getElementById(resultElementId);
+                    if (element) {
+                        element.innerHTML = '<div class="error">' + data.error + '</div>';
+                    }
+                }
+            })
+            .catch(error => {
+                var element = document.getElementById(resultElementId);
+                if (element) {
+                    element.innerHTML = '<div class="error">Error: ' + error + '</div>';
+                }
+            });
+        }
+
+        // Clear DynamoDB table
+        function clearDynamoDbTable(tableName) {
+            if (!confirm('Are you sure you want to clear all items from the ' + tableName + ' table?')) {
+                return;
+            }
+
+            // Create a safe ID by removing special characters
+            var safeTableName = tableName.replace(/[^a-zA-Z0-9]/g, '');
+            var resultElementId = 'clear-' + safeTableName + '-result';
+            var resultElement = document.getElementById(resultElementId);
+
+            if (!resultElement) {
+                console.error('Element with ID ' + resultElementId + ' not found');
+                return;
+            }
+
+            resultElement.innerHTML = '<div>Clearing table...</div>';
+
+            fetch('/api/aws/dynamodb/clear/' + tableName, {
+                method: 'POST'
+            })
+            .then(response => response.json())
+            .then(data => {
+                var element = document.getElementById(resultElementId);
+                if (element) {
+                    if (data.success) {
+                        element.innerHTML = '<div class="success">' + data.message + '</div>';
+                        // Reload DynamoDB metrics after a delay
+                        setTimeout(function() {
+                            loadDynamoDbMetrics();
+                            loadDynamoDbManagement();
+                        }, 2000);
+                    } else {
+                        element.innerHTML = '<div class="error">' + data.error + '</div>';
+                    }
+                }
+            })
+            .catch(error => {
+                var element = document.getElementById(resultElementId);
+                if (element) {
+                    element.innerHTML = '<div class="error">Error: ' + error + '</div>';
+                }
+            });
+        }
+
+        // Empty S3 bucket
+        function emptyS3Bucket(bucketName) {
+            if (!confirm('Are you sure you want to empty the ' + bucketName + ' bucket? This will delete all objects in the bucket.')) {
+                return;
+            }
+
+            // Create a safe ID by removing special characters
+            var safeBucketName = bucketName.replace(/[^a-zA-Z0-9]/g, '');
+            var resultElementId = 'empty-' + safeBucketName + '-result';
+            var resultElement = document.getElementById(resultElementId);
+
+            if (!resultElement) {
+                console.error('Element with ID ' + resultElementId + ' not found');
+                // Fall back to the default element
+                resultElement = document.getElementById('empty-bucket-result');
+                if (!resultElement) {
+                    console.error('Fallback element with ID empty-bucket-result not found');
+                    return;
+                }
+            }
+
+            resultElement.innerHTML = '<div>Emptying bucket...</div>';
+
+            fetch('/api/aws/s3/empty/' + bucketName, {
+                method: 'POST'
+            })
+            .then(response => response.json())
+            .then(data => {
+                var element = document.getElementById(resultElementId) || document.getElementById('empty-bucket-result');
+                if (element) {
+                    if (data.success) {
+                        element.innerHTML = '<div class="success">' + data.message + '</div>';
+                        // Reload S3 metrics after a delay
+                        setTimeout(loadS3Metrics, 2000);
+                    } else {
+                        element.innerHTML = '<div class="error">' + data.error + '</div>';
+                    }
+                }
+            })
+            .catch(error => {
+                var element = document.getElementById(resultElementId) || document.getElementById('empty-bucket-result');
+                if (element) {
+                    element.innerHTML = '<div class="error">Error: ' + error + '</div>';
+                }
+            });
+        }
+
+        // Reset all resources
+        function resetAllResources() {
+            if (!confirm('WARNING: This will reset all AWS resources related to the crawler system. This action cannot be undone. Are you sure you want to proceed?')) {
+                return;
+            }
+
+            var resultElement = document.getElementById('reset-all-result');
+            if (!resultElement) {
+                console.error('Element with ID reset-all-result not found');
+                return;
+            }
+
+            resultElement.innerHTML = '<div>Resetting all resources...</div>';
+
+            fetch('/api/aws/reset', {
+                method: 'POST'
+            })
+            .then(response => response.json())
+            .then(data => {
+                var element = document.getElementById('reset-all-result');
+                if (element) {
+                    if (data.success) {
+                        element.innerHTML = '<div class="success">' + data.message + '</div>';
+                        // Reload all metrics after a delay
+                        setTimeout(function() {
+                            loadSqsMetrics();
+                            loadDynamoDbMetrics();
+                            loadS3Metrics();
+                            loadDynamoDbManagement();
+                        }, 2000);
+                    } else {
+                        element.innerHTML = '<div class="error">' + data.error + '</div>';
+                    }
+                }
+            })
+            .catch(error => {
+                var element = document.getElementById('reset-all-result');
+                if (element) {
+                    element.innerHTML = '<div class="error">Error: ' + error + '</div>';
+                }
+            });
+        }
+
+        // This has been replaced by the new DOMContentLoaded event handler above
     </script>
 </body>
-</html> 
+</html>
